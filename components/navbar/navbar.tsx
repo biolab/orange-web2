@@ -1,9 +1,11 @@
+import React from "react";
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav>
       <ul>
-        <li>Link1</li>
-        <li>Link2</li>
+        <Link href="/blog">Blog</Link>
       </ul>
     </nav>
   );

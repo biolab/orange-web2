@@ -17,6 +17,7 @@
     "eslint-config-next": "^13.0.5",
     "gray-matter": "^4.0.3",
     "next": "13.0.5",
+    "next-mdx-remote": "^4.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.6",
