@@ -7,7 +7,7 @@ const H1 = styled.h1`
 export default function Home() {
   return (
     <div>
-      <H1>Hello orange</H1>
+      <H1>Hello orange 2022</H1>
     </div>
   );
 }
