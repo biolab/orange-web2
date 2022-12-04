@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { blogPosts } from "../../cache/blogPosts";
+import { getBlogsMetadata } from '../../scripts/getBlogPosts';
 
 export async function getStaticProps() {
   return {
     props: {
-      posts: blogPosts,
+      posts: getBlogsMetadata(),
     },
   };
 }

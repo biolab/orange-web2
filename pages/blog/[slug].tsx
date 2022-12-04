@@ -2,7 +2,7 @@ import matter from "gray-matter";
 import fs from "fs";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { getBlogsMetadata } from '../../cache/getBlogPosts';
+import { getBlogsMetadata } from '../../scripts/getBlogPosts';
 
 function addRelativePathToImages(content: string, imgRelativePath: string): string {
   if (!imgRelativePath || !content) {

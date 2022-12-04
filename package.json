@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:cache": "node scripts/getBlogPosts",
+    "cypress:open": "generate:cache && cypress open",
+    "cypress:run": "yarn generate:cache && cypress run"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -28,6 +31,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^11.2.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1"
   }
