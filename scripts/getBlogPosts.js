@@ -29,7 +29,7 @@ function getPostsData(files) {
     const {
       data: { title, draft, longExcerpt, url, date },
     } = matter(fileContents);
-    console.log(title);
+
     return {
       fullFilePath: postPath,
       publicFilePath,
@@ -47,19 +47,8 @@ function getBlogsMetadata() {
   return getPostsData(getAllMdFiles());
 }
 
-function buildCache() {
-  const fileContent = `export const blogPosts: {
-    fullFilePath: string,
-    publicFilePath: string,
-    oldSlug: string,
-    draft: boolean,
-    date: string,
-    title: string,
-    longExcerpt: string,
-    url: string,
-  }[] = ${JSON.stringify(getBlogsMetadata())};`;
-
-  fs.writeFile("cache/blogPosts.tsx", fileContent, function (err) {
+function writeCache() {
+  fs.writeFile("blogPosts.json", JSON.stringify(getBlogsMetadata()), function (err) {
     if (err) {
       console.log(err);
       return;
@@ -68,7 +57,7 @@ function buildCache() {
   });
 }
 
-buildCache();
+writeCache();
 
 module.exports = {
   getBlogsMetadata,
