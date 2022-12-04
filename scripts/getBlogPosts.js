@@ -34,11 +34,11 @@ function getPostsData(files) {
       fullFilePath: postPath,
       publicFilePath,
       oldSlug,
-      draft,
-      title,
-      date,
-      longExcerpt,
-      url: (url || title).replaceAll(" ", "-").toLowerCase(),
+      draft: !!draft,
+      title: title || "",
+      date: date || "",
+      longExcerpt: longExcerpt || "",
+      url: (url || title || oldSlug).replaceAll(" ", "-").toLowerCase(),
     };
   });
 }
