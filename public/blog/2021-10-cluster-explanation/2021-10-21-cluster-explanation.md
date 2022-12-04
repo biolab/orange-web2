@@ -1,15 +1,15 @@
 ---
-author = "Blaž Zupan"
-date = "2021-10-21"
-draft = false
-title = "Characterizing Clusters with a Box Plot"
-type = "blog"
-thumbImage = "/blog_img/2021/2021-10-21-cluster-explain.png"
-frontPageImage = "/blog_img/2021/2021-10-21-cluster-explain.png"
-blog = ["clustering", "explanation", "box plot"]
-shortExcerpt = "Box Plot widget offers a simple means for explaining clusters."
-longExcerpt = "Box Plot widget offers a simple means for explaining clusters."
-x2images = true  # true if using retina screenshots, else false
+author: "Blaž Zupan"
+date: "2021-10-21"
+draft: false
+title: "Characterizing Clusters with a Box Plot"
+type: "blog"
+thumbImage: "/blog_img/2021/2021-10-21-cluster-explain.png"
+frontPageImage: "/blog_img/2021/2021-10-21-cluster-explain.png"
+blog: ["clustering", "explanation", "box plot"]
+shortExcerpt: "Box Plot widget offers a simple means for explaining clusters."
+longExcerpt: "Box Plot widget offers a simple means for explaining clusters."
+x2images: true  # true if using retina screenshots, else false
 ---
 
 There are many ways to cluster the data in Orange. [Hiearchical clustering](https://orangedatamining.com/widget-catalog/unsupervised/hierarchicalclustering/), [k-means](https://orangedatamining.com/widget-catalog/unsupervised/kmeans/), and [DBSCAN](https://orangedatamining.com/widget-catalog/unsupervised/DBSCAN/) are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.

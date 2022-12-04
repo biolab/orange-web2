@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2015-08-28 14:05:07+00:00'
-draft= false
-title="Scatter Plot Projection Rank"
-type="blog"
-blog=["orange3" ,"visualization" ,"widget" ]
+author: "AJDA"
+date: '2015-08-28 14:05:07+00:00'
+draft: false
+title: "Scatter Plot Projection Rank"
+type: "blog"
+blog: ["orange3" ,"visualization" ,"widget" ]
 ---
 
 One of the nicest and surely most useful visualization widgets in Orange is **Scatter Plot**. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.

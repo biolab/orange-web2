@@ -1,10 +1,10 @@
 ---
-author="BLAZ"
-date= '2017-04-25 07:35:38+00:00'
-draft= false
-title="Outliers in Traffic Signs"
-type="blog"
-blog=["addons" ,"analysis" ,"images" ,"interactive data visualization" ,"orange3"  ,"visualization" ]
+author: "BLAZ"
+date: '2017-04-25 07:35:38+00:00'
+draft: false
+title: "Outliers in Traffic Signs"
+type: "blog"
+blog: ["addons" ,"analysis" ,"images" ,"interactive data visualization" ,"orange3"  ,"visualization" ]
 ---
 
 Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.

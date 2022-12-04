@@ -1,15 +1,15 @@
 ---
-author="Ajda Pretnar"
-date= '2019-01-28'
-draft= false
-title="The Mystery of Test & Score"
-type="blog"
-thumbImage = "/blog_img/2019/1/28/ts-blog.png"
-image = ""
-blog=["cross validation", "leave one out", "LOO", "test and score"]
-shortExcerpt = "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain each of them in a few lines."
+author: "Ajda Pretnar"
+date: '2019-01-28'
+draft: false
+title: "The Mystery of Test & Score"
+type: "blog"
+thumbImage: "/blog_img/2019/1/28/ts-blog.png"
+image: ""
+blog: ["cross validation", "leave one out", "LOO", "test and score"]
+shortExcerpt: "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain each of them in a few lines."
 
-longExcerpt = "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain cross validation, random sampling, leave one out and cross validation by feature in a few lines."
+longExcerpt: "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain cross validation, random sampling, leave one out and cross validation by feature in a few lines."
 ---
 Test & Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test & Score widget.
 

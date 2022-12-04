@@ -1,15 +1,15 @@
 ---
-author = "Ajda Pretnar Žagar"
-date = "2022-05-20"
-draft = false
-title = "Confusion matrix for regression?"
-type = "blog"
-thumbImage = "/blog_img/2022/2022-05-20-cf-regression.png"
-frontPageImage = "/blog_img/2022/2022-05-20-cf-regression.png"
-blog = ["regression", "confusion matrix", "scatter plot", "prediction error"]
-shortExcerpt = "How to display regression error in Orange?"
-longExcerpt = "Confusion matrix shows classification error, but what is a suitable alternative for observing regression errors in Orange?"
-x2images = true  # true if using retina screenshots, else false
+author: "Ajda Pretnar Žagar"
+date: "2022-05-20"
+draft: false
+title: "Confusion matrix for regression?"
+type: "blog"
+thumbImage: "/blog_img/2022/2022-05-20-cf-regression.png"
+frontPageImage: "/blog_img/2022/2022-05-20-cf-regression.png"
+blog: ["regression", "confusion matrix", "scatter plot", "prediction error"]
+shortExcerpt: "How to display regression error in Orange?"
+longExcerpt: "Confusion matrix shows classification error, but what is a suitable alternative for observing regression errors in Orange?"
+x2images: true  # true if using retina screenshots, else false
 ---
 
 It is easy to inspect misclassifications in the Confusion Matrix widget when building classification models. One can even click on misclassified instances, output them and observe them in various visualizations. But what about regression? Predicting numeric values doesn't even allow connecting Confusion Matrix, nor would it make sense. So how can one inspect prediction error for regression tasks?

@@ -1,14 +1,14 @@
 ---
-author="Blaz Zupan"
-date= '2019-04-24'
-draft= false
-title="Orange at GIS Ostrava"
-type="blog"
-thumbImage = "/blog_img/2019/4/24/ostrava-workshop.jpg"
-blog=["geo", "GIS", "hierarchical clustering"]
-shortExcerpt = "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference."
+author: "Blaz Zupan"
+date: '2019-04-24'
+draft: false
+title: "Orange at GIS Ostrava"
+type: "blog"
+thumbImage: "/blog_img/2019/4/24/ostrava-workshop.jpg"
+blog: ["geo", "GIS", "hierarchical clustering"]
+shortExcerpt: "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference."
 
-longExcerpt = "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference. We have shown how to work with geospatial data in Orange."
+longExcerpt: "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference. We have shown how to work with geospatial data in Orange."
 ---
 
 Ostrava is a city in the north-east of the Czech Republic and is the capital of the Moravian-Silesian Region. {{< link_new url="https://gisak.vsb.cz/gisostrava/index.php" name="GIS Ostrava">}} is a yearly conference organized by Jiří Horák and his team at the {{< link_new url="https://www.vsb.cz/en" name="Technical University of Ostrava">}}. University has a nice campus with a number of new developments. I have learned that this is the largest university campus in central and eastern Europe, as most of the universities, like mine, are city universities with buildings dispersed around the city.

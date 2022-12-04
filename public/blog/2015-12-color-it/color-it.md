@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2015-12-28 10:47:00+00:00'
-draft= false
-title="Color it!"
-type="blog"
-blog=["orange3" ,"plot" ,"visualization" ,"widget" ]
+author: "AJDA"
+date: '2015-12-28 10:47:00+00:00'
+draft: false
+title: "Color it!"
+type: "blog"
+blog: ["orange3" ,"plot" ,"visualization" ,"widget" ]
 ---
 
 Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!

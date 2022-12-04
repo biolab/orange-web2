@@ -1,15 +1,15 @@
 ---
-author = "Ajda Pretnar"
-date = "2022-01-14"
-draft = false
-title = "Orange in Classroom, pt. 2"
-type = "blog"
-thumbImage = "/blog_img/2022/2022-01-14-universities-small.png"
-frontPageImage = "/blog_img/2022/2022-01-14-universities-small.png"
-blog = ["orange", "education", "teaching", "university"]
-shortExcerpt = "Orange is being used in over 300 universities around the world."
-longExcerpt = "Orange is being used inside and outside the classroom, by professors and students in over 300 universities around the world."
-x2images = false  # true if using retina screenshots, else false
+author: "Ajda Pretnar"
+date: "2022-01-14"
+draft: false
+title: "Orange in Classroom, pt. 2"
+type: "blog"
+thumbImage: "/blog_img/2022/2022-01-14-universities-small.png"
+frontPageImage: "/blog_img/2022/2022-01-14-universities-small.png"
+blog: ["orange", "education", "teaching", "university"]
+shortExcerpt: "Orange is being used in over 300 universities around the world."
+longExcerpt: "Orange is being used inside and outside the classroom, by professors and students in over 300 universities around the world."
+x2images: false  # true if using retina screenshots, else false
 ---
 
 A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.

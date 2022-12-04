@@ -1,15 +1,15 @@
 ---
-author = "Blaž Zupan"
-date = "2021-03-05"
-draft = false
-title = "Hands-On Training About Overfitting"
-type = "blog"
-thumbImage = "/blog_img/2021/2021-01-11-orange-in-education-small.png"
-frontPageImage = "/blog_img/2021/2021-03-05-overfitting-tree-small.png"
-blog = ["education", "teaching", "machine learning"]
-shortExcerpt = "We have designed a course on overfitting."
-longExcerpt = "PLOS Computation Biology has just published our paper on training about overfitting."
-x2images = false  # true if using retina screenshots, else false
+author: "Blaž Zupan"
+date: "2021-03-05"
+draft: false
+title: "Hands-On Training About Overfitting"
+type: "blog"
+thumbImage: "/blog_img/2021/2021-01-11-orange-in-education-small.png"
+frontPageImage: "/blog_img/2021/2021-03-05-overfitting-tree-small.png"
+blog: ["education", "teaching", "machine learning"]
+shortExcerpt: "We have designed a course on overfitting."
+longExcerpt: "PLOS Computation Biology has just published our paper on training about overfitting."
+x2images: false  # true if using retina screenshots, else false
 ---
 
 [PLOS Computation Biology](https://journals.plos.org/ploscompbiol/) has just published our paper on training about overfitting:

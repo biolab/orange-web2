@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2015-07-24 08:03:40+00:00'
-draft= false
-title="Visualizing Misclassifications"
-type="blog"
-blog=["analysis" ,"classification" ,"visualization" ]
+author: "AJDA"
+date: '2015-07-24 08:03:40+00:00'
+draft: false
+title: "Visualizing Misclassifications"
+type: "blog"
+blog: ["analysis" ,"classification" ,"visualization" ]
 ---
 
 In data mining **[classification](https://en.wikipedia.org/wiki/Statistical_classification)** is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.

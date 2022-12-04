@@ -1,14 +1,14 @@
 ---
-author = "Zala Gruden"
-date = "2022-06-02"
-draft = false
-title = "How to grow trees in a marmalade factory?"
-type = "blog"
-thumbImage = "/blog_img/2022/otrokorange.jpg"
-frontPageImage = "/blog_img/2022/otrokorange.jpg"
-blog = [ "Education" ]
-shortExcerpt = "We let the fourth grade students build their own decision tree to classify characters into professions."
-longExcerpt = "We visited fourthgraders in our local elementary school and taught them about clustering and data collection."
+author: "Zala Gruden"
+date: "2022-06-02"
+draft: false
+title: "How to grow trees in a marmalade factory?"
+type: "blog"
+thumbImage: "/blog_img/2022/otrokorange.jpg"
+frontPageImage: "/blog_img/2022/otrokorange.jpg"
+blog: [ "Education" ]
+shortExcerpt: "We let the fourth grade students build their own decision tree to classify characters into professions."
+longExcerpt: "We visited fourthgraders in our local elementary school and taught them about clustering and data collection."
 ---
 
 {{< window-screenshot src="/blog_img/2022/2022-06-02-working-together.jpg" >}} 

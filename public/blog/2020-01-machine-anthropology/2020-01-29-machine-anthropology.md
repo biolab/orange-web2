@@ -1,14 +1,14 @@
 ---
-author = "Ajda Pretnar"
-date = "2020-01-29"
-draft = false
-title = "What is Machine Anthropology?"
-type = "blog"
-thumbImage = "/blog_img/2020/2020-01-29-MA-small.png"
-frontPageImage = "/blog_img/2020/2020-01-29-MA-small.png"
-blog = ["machine", "anthropology", "big data", "pivot table"]
-shortExcerpt = "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
-longExcerpt = "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
+author: "Ajda Pretnar"
+date: "2020-01-29"
+draft: false
+title: "What is Machine Anthropology?"
+type: "blog"
+thumbImage: "/blog_img/2020/2020-01-29-MA-small.png"
+frontPageImage: "/blog_img/2020/2020-01-29-MA-small.png"
+blog: ["machine", "anthropology", "big data", "pivot table"]
+shortExcerpt: "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
+longExcerpt: "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
 ---
 
 For those unfamiliar with the field, cultural anthropology is the study of human cultures, practices and habits in a holistic and comparative manner. Its core method is ethnographic fieldwork, which means researchers spend a long time in the field with their subjects, live with them, talk with them, socialize with them, and observe relationships and behaviours. But recently, anthropology has begun to use also machine learning and data mining as a part of its method. The subdiscipline is called computational anthropology (combining ethnographic fieldwork *with* big data) or machine anthropology (ethnography *as* big data).

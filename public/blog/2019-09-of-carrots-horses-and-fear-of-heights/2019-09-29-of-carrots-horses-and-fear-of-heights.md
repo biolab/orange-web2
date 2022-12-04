@@ -1,15 +1,15 @@
 
 ---
-author="Janez Demšar"
-date= '2019-09-29'
-draft= false
-title="Of Carrots and Horses and the Fear of Heights"
-type="blog"
-thumbImage = "/blog_img/2019/2019-09-29-horses.jpg"
-frontPageImage = "/blog_img/2019/2019-09-29-horses.jpg"
-blog=["statistical significance", "hypothesis testing", "p-value", "multiple hypothesis testing"]
-shortExcerpt = "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
-longExcerpt = "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
+author: "Janez Demšar"
+date: '2019-09-29'
+draft: false
+title: "Of Carrots and Horses and the Fear of Heights"
+type: "blog"
+thumbImage: "/blog_img/2019/2019-09-29-horses.jpg"
+frontPageImage: "/blog_img/2019/2019-09-29-horses.jpg"
+blog: ["statistical significance", "hypothesis testing", "p-value", "multiple hypothesis testing"]
+shortExcerpt: "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
+longExcerpt: "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
 ---
 
 A word of warning. When teaching in the US, I am careful enough to not say things like "*consider a binary variable, for instance, gender*". But I'm writing this from Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.

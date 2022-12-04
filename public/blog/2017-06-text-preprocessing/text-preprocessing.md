@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2017-06-19 08:04:03+00:00'
-draft= false
-title="Text Preprocessing"
-type="blog"
-blog=["orange3" ,"preprocessing" ,"text mining" ,"visualization" ]
+author: "AJDA"
+date: '2017-06-19 08:04:03+00:00'
+draft: false
+title: "Text Preprocessing"
+type: "blog"
+blog: ["orange3" ,"preprocessing" ,"text mining" ,"visualization" ]
 ---
 
 In data mining, preprocessing is key. And in text mining, it is the key and the door. In other words, it's the most vital step in the analysis.

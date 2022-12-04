@@ -1,10 +1,10 @@
 ---
-author="LAN"
-date= '2015-12-04 07:20:12+00:00'
-draft= false
-title="2UDA"
-type="blog"
-blog=["sql" ]
+author: "LAN"
+date: '2015-12-04 07:20:12+00:00'
+draft: false
+title: "2UDA"
+type: "blog"
+blog: ["sql" ]
 ---
 
 In one of the [previous blog posts](/blog/2015/10/19/sql-for-orange/) we mentioned that installing the optional dependency _psycopg2_ allows Orange to connect to [PostgreSQL](http://www.postgresql.org/) databases and work directly on the data stored there.

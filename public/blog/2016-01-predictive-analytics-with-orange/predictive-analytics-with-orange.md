@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2016-01-22 16:01:36+00:00'
-draft= false
-title="Making Predictions"
-type="blog"
-blog=["analysis" ,"data" ,"examples" ,"predictive analytics" ,"widget" ]
+author: "AJDA"
+date: '2016-01-22 16:01:36+00:00'
+draft: false
+title: "Making Predictions"
+type: "blog"
+blog: ["analysis" ,"data" ,"examples" ,"predictive analytics" ,"widget" ]
 ---
 
 One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.

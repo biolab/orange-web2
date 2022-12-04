@@ -1,14 +1,14 @@
 ---
-author = "Zala Gruden"
-date = "2022-05-12"
-draft = false
-title = "We have launched a new project on the topic of AI in schools"
-type = "blog"
-thumbImage = "/blog_img/2022/2022-05-12-tides-small.png"
-frontPageImage = "/blog_img/2022/2022-05-12-google-tides.png"
-blog = ["Google", "Tides Foundation", "project", "visualization"]
-shortExcerpt = "Find out more about our new project about AI in Schools."
-longExcerpt = "Read more about the project in the blogpost and Check out the site to find out more about the prepaired activities."
+author: "Zala Gruden"
+date: "2022-05-12"
+draft: false
+title: "We have launched a new project on the topic of AI in schools"
+type: "blog"
+thumbImage: "/blog_img/2022/2022-05-12-tides-small.png"
+frontPageImage: "/blog_img/2022/2022-05-12-google-tides.png"
+blog: ["Google", "Tides Foundation", "project", "visualization"]
+shortExcerpt: "Find out more about our new project about AI in Schools."
+longExcerpt: "Read more about the project in the blogpost and Check out the site to find out more about the prepaired activities."
 ---
 
 {{< window-screenshot src="/blog_img/2022/2022-05-12-google-tides.png" >}} 

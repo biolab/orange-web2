@@ -1,15 +1,15 @@
 
 ---
-author="Ajda Pretnar"
-date= '2019-11-20'
-draft= false
-title="Explaining Models: Workshop in Belgrade"
-type="blog"
-thumbImage = "/blog_img/2019/2019-11-20_workshop_small.jpg"
-frontPageImage = "/blog_img/2019/2019-11-20_workshop_small.jpg"
-blog=["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"]
-shortExcerpt = "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
-longExcerpt = "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
+author: "Ajda Pretnar"
+date: '2019-11-20'
+draft: false
+title: "Explaining Models: Workshop in Belgrade"
+type: "blog"
+thumbImage: "/blog_img/2019/2019-11-20_workshop_small.jpg"
+frontPageImage: "/blog_img/2019/2019-11-20_workshop_small.jpg"
+blog: ["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"]
+shortExcerpt: "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
+longExcerpt: "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
 ---
 
 On Monday, Blaž and I held a technical tutorial *Data Mining through Visual Programming and Interactive Analytics in Orange* at this year's edition of [Data Science Conference](https://datasciconference.com/technical-tutorials/) in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we're going to explore in continuation.

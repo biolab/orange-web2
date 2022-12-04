@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2017-07-14 13:30:47+00:00'
-draft= false
-title="Miniconda Installer"
-type="blog"
-blog=["distribution" ,"download" ,"orange3" ]
+author: "AJDA"
+date: '2017-07-14 13:30:47+00:00'
+draft: false
+title: "Miniconda Installer"
+type: "blog"
+blog: ["distribution" ,"download" ,"orange3" ]
 ---
 
 Orange has a new friend! It's Miniconda, Anaconda's little sister.

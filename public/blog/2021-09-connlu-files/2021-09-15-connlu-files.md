@@ -1,15 +1,15 @@
 ---
-author = "Ajda Pretnar"
-date = "2021-09-15"
-draft = false
-title = "New in Orange: Support for CONLL-U files"
-type = "blog"
-thumbImage = "/blog_img/2021/2021-09-15-conllu.png"
-frontPageImage = "/blog_img/2021/2021-09-15-conllu.png"
-blog = ["conllu", "text mining", "corpus", "lemma"]
-shortExcerpt = "Orange can now work with CONLL-U files!"
-longExcerpt = "Orange can now work with CONLL-U files, including its lemmas, POS tags, and named entities."
-x2images = true  # true if using retina screenshots, else false
+author: "Ajda Pretnar"
+date: "2021-09-15"
+draft: false
+title: "New in Orange: Support for CONLL-U files"
+type: "blog"
+thumbImage: "/blog_img/2021/2021-09-15-conllu.png"
+frontPageImage: "/blog_img/2021/2021-09-15-conllu.png"
+blog: ["conllu", "text mining", "corpus", "lemma"]
+shortExcerpt: "Orange can now work with CONLL-U files!"
+longExcerpt: "Orange can now work with CONLL-U files, including its lemmas, POS tags, and named entities."
+x2images: true  # true if using retina screenshots, else false
 ---
 
 [CONLL-U](https://universaldependencies.org/format.html) files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.

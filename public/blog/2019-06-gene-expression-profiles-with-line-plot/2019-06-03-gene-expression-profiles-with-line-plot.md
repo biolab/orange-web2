@@ -1,15 +1,15 @@
 ---
-author="Ajda Pretnar"
-date= '2019-06-03'
-draft= false
-title="Gene Expression Profiles with Line Plot"
-type="blog"
-thumbImage = "/blog_img/2019/6/3/gene-blog.png"
-frontPageImage = "/blog_img/2019/6/3/gene-blog.png"
-blog=["bioinformatics", "gene expression", "line plot"]
-shortExcerpt = "We show how to explore gene expression profiles with the new Line Plot widget."
+author: "Ajda Pretnar"
+date: '2019-06-03'
+draft: false
+title: "Gene Expression Profiles with Line Plot"
+type: "blog"
+thumbImage: "/blog_img/2019/6/3/gene-blog.png"
+frontPageImage: "/blog_img/2019/6/3/gene-blog.png"
+blog: ["bioinformatics", "gene expression", "line plot"]
+shortExcerpt: "We show how to explore gene expression profiles with the new Line Plot widget."
 
-longExcerpt = "Line Plot shows profiles of data instances – each instance is a line in the plot and its profile are values across all variables in the data. We show how to explore gene expression profiles."
+longExcerpt: "Line Plot shows profiles of data instances – each instance is a line in the plot and its profile are values across all variables in the data. We show how to explore gene expression profiles."
 ---
 
 Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a 'profile'.

@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2015-06-05 06:46:56+00:00'
-draft= false
-title="Data Fusion Add-on for Orange"
-type="blog"
-blog=["addons" ,"bioinformatics" ,"data-fusion" ,"orange3" ]
+author: "AJDA"
+date: '2015-06-05 06:46:56+00:00'
+draft: false
+title: "Data Fusion Add-on for Orange"
+type: "blog"
+blog: ["addons" ,"bioinformatics" ,"data-fusion" ,"orange3" ]
 ---
 
 Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for **predictive modelling** and **recommendation systems**.

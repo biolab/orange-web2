@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2018-02-16 13:20:06+00:00'
-draft= false
-title="How to enable SQL widget in Orange"
-type="blog"
-blog=["data" ,"pypi" ,"sql" ]
+author: "AJDA"
+date: '2018-02-16 13:20:06+00:00'
+draft: false
+title: "How to enable SQL widget in Orange"
+type: "blog"
+blog: ["data" ,"pypi" ,"sql" ]
 ---
 
 A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.

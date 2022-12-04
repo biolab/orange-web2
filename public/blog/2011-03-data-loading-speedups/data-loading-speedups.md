@@ -1,10 +1,10 @@
 ---
-author="MARKO"
-date= '2011-03-28 13:04:00+00:00'
-draft= false
-title="Data loading speedups"
-type="blog"
-blog=["dataloading" ,"performance" ]
+author: "MARKO"
+date: '2011-03-28 13:04:00+00:00'
+draft: false
+title: "Data loading speedups"
+type: "blog"
+blog: ["dataloading" ,"performance" ]
 ---
 
 Orange has been loading data faster since the end of February, especially if there are many attributes in the file.

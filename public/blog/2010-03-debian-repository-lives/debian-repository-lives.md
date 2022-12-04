@@ -1,10 +1,10 @@
 ---
-author="BIOLAB"
-date= '2010-03-04 01:56:00+00:00'
-draft= false
-title="Debian repository lives!"
-type="blog"
-blog=["debian" ,"distribution" ,"download" ,"packaging" ]
+author: "BIOLAB"
+date: '2010-03-04 01:56:00+00:00'
+draft: false
+title: "Debian repository lives!"
+type: "blog"
+blog: ["debian" ,"distribution" ,"download" ,"packaging" ]
 
 ---
 

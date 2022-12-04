@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2016-03-23 09:09:26+00:00'
-draft= false
-title="All I See is Silhouette"
-type="blog"
-blog=["analysis" ,"classification" ,"clustering" ,"examples" ,"forestlearner"  ,"orange3" ,"plot" ,"visualization" ]
+author: "AJDA"
+date: '2016-03-23 09:09:26+00:00'
+draft: false
+title: "All I See is Silhouette"
+type: "blog"
+blog: ["analysis" ,"classification" ,"clustering" ,"examples" ,"forestlearner"  ,"orange3" ,"plot" ,"visualization" ]
 ---
 
 Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn't wait to get it into Orange3. And now we did.

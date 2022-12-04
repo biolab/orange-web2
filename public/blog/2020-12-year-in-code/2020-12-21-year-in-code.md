@@ -1,15 +1,15 @@
 ---
-author = "Ajda Pretnar"
-date = "2020-12-21"
-draft = false
-title = "2020 - Year in Code"
-type = "blog"
-thumbImage = "/blog_img/2020/2020-12-21-github-stats.png"
-frontPageImage = "/blog_img/2020/2020-12-21-github-stats.png"
-blog = ["2020", "code", "overview", "Github"]
-shortExcerpt = "Statistics of Orange development in 2020."
-longExcerpt = "Statistical report on Orange software development and educational content for 2020."
-x2images = true  # true if using retina screenshots, else false
+author: "Ajda Pretnar"
+date: "2020-12-21"
+draft: false
+title: "2020 - Year in Code"
+type: "blog"
+thumbImage: "/blog_img/2020/2020-12-21-github-stats.png"
+frontPageImage: "/blog_img/2020/2020-12-21-github-stats.png"
+blog: ["2020", "code", "overview", "Github"]
+shortExcerpt: "Statistics of Orange development in 2020."
+longExcerpt: "Statistical report on Orange software development and educational content for 2020."
+x2images: true  # true if using retina screenshots, else false
 ---
 
 # 2020 - Year in Code

@@ -1,10 +1,10 @@
 ---
-author="AJDA"
-date= '2015-08-07 13:57:49+00:00'
-draft= false
-title="Creating a new data table in Orange through Python"
-type="blog"
-blog=["data" ,"examples" ,"python" ]
+author: "AJDA"
+date: '2015-08-07 13:57:49+00:00'
+draft: false
+title: "Creating a new data table in Orange through Python"
+type: "blog"
+blog: ["data" ,"examples" ,"python" ]
 ---
 
 **IMPORT DATA**

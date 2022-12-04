@@ -1,14 +1,14 @@
 ---
-author = "Andrej Čopar"
-date = "2020-01-16"
-draft = false
-title = "Orange in the Cloud"
-type = "blog"
-thumbImage = "/blog_img/2020/2020-01-16-orange-cloud.png"
-frontPageImage = "/blog_img/2020/2020-01-16-orange-cloud.png"
-blog = ["cloud", "server", "remote"]
-shortExcerpt = "Use Orange remotely by running it on a remote server as a docker container."
-longExcerpt = "Use Orange remotely by running it on a remote server as a docker container."
+author: "Andrej Čopar"
+date: "2020-01-16"
+draft: false
+title: "Orange in the Cloud"
+type: "blog"
+thumbImage: "/blog_img/2020/2020-01-16-orange-cloud.png"
+frontPageImage: "/blog_img/2020/2020-01-16-orange-cloud.png"
+blog: ["cloud", "server", "remote"]
+shortExcerpt: "Use Orange remotely by running it on a remote server as a docker container."
+longExcerpt: "Use Orange remotely by running it on a remote server as a docker container."
 ---
 
 Many problems are too big and require too much processing power to be efficiently processed on your laptop or PC. In such cases, the data is usually transferred to a remote server and processed using custom code, which is often time consuming. Now, there is a way to run Orange on a remote server so that you can keep using its interactive graphical interface. We will show you how to run Orange on the remote server so that you can use it through your web browser.

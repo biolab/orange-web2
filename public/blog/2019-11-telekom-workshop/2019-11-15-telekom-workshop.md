@@ -1,15 +1,15 @@
 
 ---
-author="Ajda Pretnar"
-date= '2019-11-15'
-draft= false
-title="Explaining Customer Segments for Business"
-type="blog"
-thumbImage = "/blog_img/2019/2019-11-15_ws-title.JPG"
-frontPageImage = "/blog_img/2019/2019-11-15_ws-title.JPG"
-blog=["workshop", "telco", "clustering", "nomogram"]
-shortExcerpt = "Explaining customer base enables businesses to make informed decisions. We present the case for Telco companies."
-longExcerpt = "Explaining customer base for businesses to make informed decisions. We present the case for Telco companies."
+author: "Ajda Pretnar"
+date: '2019-11-15'
+draft: false
+title: "Explaining Customer Segments for Business"
+type: "blog"
+thumbImage: "/blog_img/2019/2019-11-15_ws-title.JPG"
+frontPageImage: "/blog_img/2019/2019-11-15_ws-title.JPG"
+blog: ["workshop", "telco", "clustering", "nomogram"]
+shortExcerpt: "Explaining customer base enables businesses to make informed decisions. We present the case for Telco companies."
+longExcerpt: "Explaining customer base for businesses to make informed decisions. We present the case for Telco companies."
 ---
 
 Last month we held a workshop for a large Slovenian Telco company. Their two key questions were - what machine learning techniques can we use on our data and how do we explain the models afterwards. So the workshop focused on three use cases - product segmentation, modeling churn, and clustering customers. With any kind of models, especially unsupervised ones, we often get the question - but how can we explain the clusters? What do these clusters tell us about the customers?
