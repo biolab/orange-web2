@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-01-27"
 draft = false
@@ -10,7 +10,7 @@ blog = ["text mining", "word distribution", "bar plot", "word cloud"]
 shortExcerpt = "How to inspect word distribution in a corpus with in Orange."
 longExcerpt = "How to inspect word distribution in a corpus with a clever combination of widgets in Orange."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 In text mining, one of key tasks is understanding and inspecting the corpus. It makes it easier to determine the preprocessing techniques and downstream analysis (the selection of document frequency weights, topic modelling technique, lemmatization and so on).
 

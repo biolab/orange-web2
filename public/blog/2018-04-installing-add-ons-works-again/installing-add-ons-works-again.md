@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2018-04-23 08:34:47+00:00'
 draft= false
 title="Installing Add-ons Works Again"
 type="blog"
 blog=["addons" ,"download" ,"pypi" ,"release" ,"update" ]
-+++
+---
 
 Dear Orange users,
 

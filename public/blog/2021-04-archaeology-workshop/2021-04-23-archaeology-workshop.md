@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-04-23"
 draft = false
@@ -10,7 +10,7 @@ blog = ["archaeology", "workshop", "image analytics", "amphorae"]
 shortExcerpt = "The many things archaeologists can do in Orange."
 longExcerpt = "A workshop about different kinds of analyses archaeologists can do in Orange."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
 

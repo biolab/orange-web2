@@ -1,4 +1,4 @@
-+++
+---
 author="Ajda Pretnar"
 date= '2019-01-28'
 draft= false
@@ -10,7 +10,7 @@ blog=["cross validation", "leave one out", "LOO", "test and score"]
 shortExcerpt = "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain each of them in a few lines."
 
 longExcerpt = "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain cross validation, random sampling, leave one out and cross validation by feature in a few lines."
-+++
+---
 Test & Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test & Score widget.
 
 The widget generally accepts two inputs – Data and Learner. Data is the data set that we will be using for modeling, say, iris.tab that is already pre-loaded in the File widget. Learner is any kind of learning algorithm, for example, Logistic Regression. You can only use those learners that support your type of task. If you wish to do classification, you cannot use Linear Regression and for regression you cannot use Logistic Regression. Most other learners support both tasks. You can connect more than one learner to Test & Score.

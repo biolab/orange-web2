@@ -1,4 +1,4 @@
-+++
+---
 author="Ajda Pretnar"
 date= '2019-08-27'
 draft= false
@@ -9,7 +9,7 @@ frontPageImage = "/blog_img/2019/2019-08-27_pivot-preview.png"
 blog=["pivot table", "aggregate", "data", "groupby"]
 shortExcerpt = "Orange's brand new Pivot Table widget with many aggregation and grouping functionalities."
 longExcerpt = "Orange has a brand new Pivot Table widget with many aggregation and grouping functionalities. It can be used to transform the data on-the-fly and use the output for downstream analysis."
-+++
+---
 Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas' aggregate, groupby and pivot_table functions.
 
 {{% figure src="/blog_img/2019/2019-08-27_workflow.png" caption="" %}}

@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2015-10-19 12:36:04+00:00'
 draft= false
 title="SQL for Orange"
 type="blog"
 blog=["data" ,"orange3" ,"sql" ]
-+++
+---
 
 We bet you've always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don't worry, we're coming to the rescue.
 

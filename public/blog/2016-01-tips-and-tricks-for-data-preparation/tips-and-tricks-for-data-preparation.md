@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2016-01-29 14:59:18+00:00'
 draft= false
 title="Tips and Tricks for Data Preparation"
 type="blog"
 blog=["data" ,"dataloading" ]
-+++
+---
 
 Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier. 
 

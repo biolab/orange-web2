@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-05-30"
 draft = false
@@ -10,7 +10,7 @@ blog = ["archaeology", "workshop", "preprocess", "geolocation", "maps"]
 shortExcerpt = "Mapping excavation sites in Orange."
 longExcerpt = "How to preprocess and map archaeological data sets."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 This is the second part of a blog on archaeological data analysis in Orange. In the first part, we wrote about image analytics and how to predict amphora types. This blog will show a simpler analysis, where we will plot excavation sites onto maps and interpret the results.
 

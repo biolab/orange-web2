@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-01-11"
 draft = false
@@ -10,7 +10,7 @@ blog = ["Orange", "education", "teaching", "university"]
 shortExcerpt = "Orange is used in over two hundred universities around the world."
 longExcerpt = "Orange is actively used in classrooms at over two hundred universities from around the world."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 # Orange in Classroom
 

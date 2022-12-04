@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2020-09-28"
 draft = false
@@ -10,7 +10,7 @@ blog = ["text mining", "tutorial", "video", "twitter", "sentiment analysis", "em
 shortExcerpt = "New video tutorials on text mining available on our YouTube channel."
 longExcerpt = "New video tutorials on text mining available on our YouTube channel."
 x2images = false  # true if using retina screenshots, else false
-+++
+---
 
 In July, we were pleasantly surprised to be awarded a [NumFocus](https://numfocus.org/) [Small Development Grant](https://numfocus.org/programs/sustainability), which is intended to support small tasks in open source projects they sponsor. We decided to extend our text mining tutorials with four new videos, which cover the recent additions to the Text Mining add-on. Our YouTube channel already has a playlist for getting started with Orange and several specialized playlists for learning spectroscopy, single-cell analysis, text mining and image analytics with Orange.
 

@@ -1,4 +1,4 @@
-+++
+---
 author="MATEVZKREN"
 date= '2016-08-05 11:52:39+00:00'
 draft= false
@@ -6,7 +6,7 @@ title="Rule Induction (Part I - Scripting)"
 type="blog"
 blog=["classification" ,"gsoc2016" ,"orange3" ]
 post_format=["Quote" ]
-+++
+---
 
 _This is a guest blog from the Google Summer of Code project._
 

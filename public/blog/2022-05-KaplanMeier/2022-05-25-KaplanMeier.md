@@ -1,4 +1,4 @@
-+++
+---
 author = "Ela Praznik"
 date = "2022-05-25"
 draft = false
@@ -10,7 +10,7 @@ blog = ["survival analysis", "kaplan-meier"]
 shortExcerpt = "Understanding the Kaplan-Meier widget in the Survival Analysis add-on."
 longExcerpt = "The Survival Analysis add-on offers accesible tools for survival analysis, the Kaplan-Meier widget being a prime example. In this blogpost we provide an introduction to the Kaplan-Meier Estimator using a simple example and show how the tool can be used in Orange on larger datasets."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 The Kaplan-Meier Estimator is a function that relates time to the probability of an event of interest. It is widely used in survival analysis and with the addition of the Survival Analysis package to Orange it is now readily available for accessible visual analytics. However, any kind of efficient data analysis requires a basic understanding of what the implemented model does. This blog post thus aims to:
 

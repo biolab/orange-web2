@@ -1,4 +1,4 @@
-+++
+---
 author="AJDA"
 date= '2018-11-06 11:45:09+00:00'
 draft= false
@@ -6,7 +6,7 @@ title="Data Mining for Anthropologists?"
 type="blog"
 blog=["education" ,"text mining" ,"workshop" ]
 shortExcerpt="This weekend we were in Lisbon, Portugal, at the [Why the World Needs Anthropologists](https://www.applied-anthropology.com/) conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry."
-+++
+---
 
 This weekend we were in Lisbon, Portugal, at the [Why the World Needs Anthropologists](https://www.applied-anthropology.com/) conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry. I was there to hold a workshop on Data Ethnography, an approach that tries to combine methods from data science and anthropology into a fruitful interdisciplinary mix!
 

@@ -1,4 +1,4 @@
-+++
+---
 author = "Primož Godec and Nikola Đukić"
 date = "2020-10-15"
 draft = false
@@ -10,7 +10,7 @@ blog = ["text mining", "corpus", "classification"]
 shortExcerpt = "New Document embedder widget and its use for classification"
 longExcerpt = "Presenting document embeddings widget and how to identify fake news."
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 Text is described by the sequence of character. Since every machine learning algorithm needs numbers, we need to transform it into vectors of real numbers before we can continue with the analysis. To do this, we can use various approaches. Orange currently offers bag-of-words approach and now also Document embedding by fastText. 
 In this post, we explain what document embedding is, why it is useful, and show its usage on the classification example.

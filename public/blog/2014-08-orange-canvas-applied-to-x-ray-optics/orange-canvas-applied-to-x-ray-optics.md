@@ -1,11 +1,11 @@
-+++
+---
 author="BIOLAB"
 date= '2014-08-26 15:59:00+00:00'
 draft= false
 title="Orange Canvas applied to x-ray optics"
 type="blog"
 blog=["computervision" ]
-+++
+---
 
 Orange Canvas is being appropriated by guys who would like to use it as graphical environment for simulating x-ray optics.
 

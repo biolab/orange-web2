@@ -1,11 +1,11 @@
-+++
+---
 author="BIOLAB"
 date= '2012-06-15 13:21:00+00:00'
 draft= false
 title="Computing joint entropy (in Python)"
 type="blog"
 blog=["orange3" ,"python" ]
-+++
+---
 
 How I wrote a beautiful, general, and super fast joint entropy method (in Python).
 

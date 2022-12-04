@@ -1,4 +1,4 @@
-+++
+---
 author="Ajda Pretnar"
 date= '2018-12-21'
 draft= false
@@ -9,7 +9,7 @@ blog=["interactive visualization", "scatter plot", "visualization"]
 shortExcerpt = "Scatter Plot has recently been renovated and it is time to present some essential tricks for working with the widget!"
 
 longExcerpt = "Scatter Plot has recently been renovated (under the hood and in GUI), so now it is time to present some essential tricks for working with the cool visualization!"
-+++
+---
 
 
 Scatter plots are surely one of the best loved visualizations in Orange. Very often, when we teach, people go back to scatter plots over and over again to see their data. We took people’s love for scatter plots to the heart and we redesigned them a bit to make them even more friendly.

@@ -1,4 +1,4 @@
-+++
+---
 author = "Blaž Zupan"
 date = "2022-04-26"
 draft = false
@@ -10,7 +10,7 @@ blog = ["orange", "workshop"]
 shortExcerpt = "We are announcing a forthcoming webinar for educators and trainers."
 longExcerpt = ""
 x2images = false  # true if using retina screenshots, else false
-+++
+---
 
 **On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using [Orange Data Mining](http://orangedatamining.com) in data science training.**
 

@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-08-05"
 draft = false
@@ -10,7 +10,7 @@ blog = ["visualization", "violin plot", "box plot"]
 shortExcerpt = "Violin plot can tell you more than a box plot."
 longExcerpt = "Box plots with an upgrade - violin plots are your new favorite visualization!"
 x2images = true  # true if using retina screenshots, else false
-+++
+---
 
 There's nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
 

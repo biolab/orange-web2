@@ -1,4 +1,4 @@
-+++
+---
 author = "Zala Gruden"
 date = "2022-05-12"
 draft = false
@@ -9,7 +9,7 @@ frontPageImage = "/blog_img/2022/2022-05-12-google-tides.png"
 blog = ["Google", "Tides Foundation", "project", "visualization"]
 shortExcerpt = "Find out more about our new project about AI in Schools."
 longExcerpt = "Read more about the project in the blogpost and Check out the site to find out more about the prepaired activities."
-+++
+---
 
 {{< window-screenshot src="/blog_img/2022/2022-05-12-google-tides.png" >}} 
 

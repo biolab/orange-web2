@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2017-01-23 12:29:20+00:00'
 draft= false
 title="Preparing Scraped Data"
 type="blog"
 blog=["addons" ,"analysis" ,"data" ,"dataloading" ,"examples" ,"python" ,"scripting"  ]
-+++
+---
 
 One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I'll show you how to easily get the data from the web and transfer it to a file Orange can read.
 

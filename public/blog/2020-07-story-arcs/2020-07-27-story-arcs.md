@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2020-07-27"
 draft = false
@@ -11,7 +11,7 @@ shortExcerpt = "How to detect and analyze story arcs in a corpus."
 longExcerpt = "How to detect sentiment, plot story arcs and analyze the key segments in a corpus."
 x2images = false  # true if using retina screenshots, else false
 aliases = ["/blog/2021/2021-04-16-story-arcs/"]
-+++
+---
 
 Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.
 

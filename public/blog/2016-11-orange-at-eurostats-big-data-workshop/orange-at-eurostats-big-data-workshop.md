@@ -1,4 +1,4 @@
-+++
+---
 author="BLAZ"
 date= '2016-11-02 12:22:59+00:00'
 draft= false
@@ -6,7 +6,7 @@ title="Orange at Eurostat's Big Data Workshop"
 type="blog"
 blog=["conference" ,"education" ,"orange3" ]
 
-+++
+---
 
 A [Eurostat's Big Data Workshop](http://ec.europa.eu/eurostat/cros/content/programme-ess-big-data-workshop-2016_en) recently took place in Ljubljana. In a presentation we have showcased [Orange](http://orange.biolab.si) as a tool to teach data science.
 

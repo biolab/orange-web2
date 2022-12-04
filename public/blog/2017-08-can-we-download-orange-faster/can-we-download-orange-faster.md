@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2017-08-28 09:16:48+00:00'
 draft= false
 title="Can We Download Orange Faster?"
 type="blog"
 blog=["analysis" ,"download" ,"orange3" ]
-+++
+---
 
 One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.
 

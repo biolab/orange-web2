@@ -1,4 +1,4 @@
-+++
+---
 author="Blaz Zupan"
 date= '2019-03-01'
 draft= false
@@ -9,7 +9,7 @@ blog=["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
 shortExcerpt = "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."
 
 longExcerpt = "We have been in Pavia, Italy, to carry out a five-hour workshop covered both the essentials of data analysis and single cell analytics. The topics included working with marker genes, differential expression analysis, and interpretation of clusters through gene ontology analysis."
-+++
+---
 Molecular biologists have in the past twenty years invented technologies that can collect abundant experimental data. One such technique is single-cell RNA-seq, which, very simplified, can measure the activity of genes in possibly large collections of cells. The interpretation of such data can tell us about the heterogeneity of cells, cell types, or provide information on their development.
 
 Typical analysis toolboxes for single-cell data are available in R and Python and, most notably, include {{< link_new url="https://satijalab.org/seurat/" name="Seurat">}} and {{< link_new url="https://scanpy.readthedocs.io/en/stable/" name="scanpy">}}, but they lack interactive visualizations and simplicity of Orange. Since the fall of 2017, we have been developing an extension of Orange, which is now (almost) ready. It has even been packed into its own installer. The first real test of the software was in early 2018 through {{< link_new url="/blog/2018/03/05/single-cell-analytics-workshop-at-hhmi-janelia/" name="a one day workshop at Janelia Research Campus">}}. On March 6, and with a much more refined version of the software, we have now repeated the hands-on workshop at the University of Pavia.

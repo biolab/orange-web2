@@ -1,11 +1,11 @@
-+++
+---
 author="BLAZ"
 date= '2013-01-06 19:30:00+00:00'
 draft= false
 title="New scripting tutorial"
 type="blog"
 blog=["documentation" ,"examples" ,"tutorial" ]
-+++
+---
 
 Orange just got a new, completely rewritten [scripting tutorial](http://docs.biolab.si/orange/2/tutorial/rst/index.html). The tutorial uses Orange class hierarchy as introduced for version 2.5. The tutorial is supposed to be a gentle introduction in Orange scripting. It includes many examples, from really simple ones to those more complex. To give you a hint about the later, here is the code for learner with feature subset selection from:
 

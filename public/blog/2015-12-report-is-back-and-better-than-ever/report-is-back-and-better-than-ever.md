@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2015-12-11 09:53:12+00:00'
 draft= false
 title="Report is back! (and better than ever)"
 type="blog"
 blog=["analysis" ,"data" ,"orange3" ,"report" ]
-+++
+---
 
 
 

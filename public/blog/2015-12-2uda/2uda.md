@@ -1,11 +1,11 @@
-+++
+---
 author="LAN"
 date= '2015-12-04 07:20:12+00:00'
 draft= false
 title="2UDA"
 type="blog"
 blog=["sql" ]
-+++
+---
 
 In one of the [previous blog posts](/blog/2015/10/19/sql-for-orange/) we mentioned that installing the optional dependency _psycopg2_ allows Orange to connect to [PostgreSQL](http://www.postgresql.org/) databases and work directly on the data stored there.
 It is also possible to transfer a whole table to the client machine, keep it in the local memory, and continue working with it as with any other Orange data set loaded from a file. But the true power of this feature lies in the ability of Orange to leave the bulk of the data on the server, delegate some of the computations to the database, and transfer only the needed results. This helps especially when the connection is too slow to transfer all the data and when the data is too big to fit in the memory of the local machine, since SQL databases are much better equipped to work with large quantities of data residing on the disk.

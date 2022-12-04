@@ -1,11 +1,11 @@
-+++
+---
 author="BIOLAB"
 date= '2013-02-06 13:47:00+00:00'
 draft= false
 title="Orange NMF add-on"
 type="blog"
 blog=["addons" ,"matrixfactorization" ,"nmf" ]
-+++
+---
 
 [Nimfa](http://nimfa.biolab.si), a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own [add-on](http://orange.biolab.si/addons/). 
 

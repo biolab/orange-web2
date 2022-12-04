@@ -1,11 +1,11 @@
-+++
+---
 author="BLAZ"
 date= '2017-03-06 21:35:49+00:00'
 draft= false
 title="Orange Workshops: Luxembourg, Pavia, Ljubljana"
 type="blog"
 blog=["bioinformatics" ,"education" ,"embedding" ,"orange3" ,"workshop" ]
-+++
+---
 
 February was a month of [Orange](http://orange.biolab.si) workshops.
 

@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar Žagar"
 date = "2022-02-01"
 draft = false
@@ -10,7 +10,7 @@ blog = ["orange", "education", "machine learning"]
 shortExcerpt = "What do 'target variable', 'attribute', and 'learner' mean?"
 longExcerpt = "Data scientists have a specific language. Learn about what certain terms mean and become more confident in your data science speak!"
 x2images = false  # true if using retina screenshots, else false
-+++
+---
 
 We all know each profession has its own jargon. Most of us remember from any hospital series something like: ""Pass me the scalpel, stat!" Meaning "give me the scalpel quickly".
 

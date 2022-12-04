@@ -1,4 +1,4 @@
-+++
+---
 author="Ajda Pretnar"
 date= '2019-05-18'
 draft= false
@@ -9,7 +9,7 @@ blog=["business intelligence", "HR", "logistic regression", "nomogram", "predict
 shortExcerpt = "At the latest workshop we demonstrated how to predict, which employees are most likely to resign in the future."
 
 longExcerpt = "At the latest workshop in Italy we taught the participants how to identify relevant business use cases and how to predict, which employees are most likely to resign in the future."
-+++
+---
 
 Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. {{< link_new url="https://www.wartsila.com/" name="Wärtsilä">}} is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its {{< link_new url="https://www.wartsila.com/ita/en/about" name="subsidiary in Trieste">}} is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.
 

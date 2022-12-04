@@ -1,11 +1,11 @@
-+++
+---
 author="AJDA"
 date= '2015-09-25 08:00:15+00:00'
 draft= false
 title="Save your graphs!"
 type="blog"
 blog=["analysis" ,"images" ,"visualization" ]
-+++
+---
 
 If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
 

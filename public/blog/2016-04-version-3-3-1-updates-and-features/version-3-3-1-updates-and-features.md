@@ -1,4 +1,4 @@
-+++
+---
 author="AJDA"
 date= '2016-04-01 12:43:53+00:00'
 draft= false
@@ -6,7 +6,7 @@ title="Version 3.3.1 - Updates and Features"
 type="blog"
 blog=["distribution" ,"orange3" ,"release" ,"version" ]
 
-+++
+---
 
 About a week ago we issued an updated stable release of Orange, version 3.3.1. We've introduced some new functionalities and improved a few old ones.
 

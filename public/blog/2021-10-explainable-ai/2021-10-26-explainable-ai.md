@@ -1,4 +1,4 @@
-+++
+---
 author = "Ajda Pretnar"
 date = "2021-11-26"
 draft = false
@@ -10,7 +10,7 @@ blog = ["project", "explainable ai", "teaching"]
 shortExcerpt = "Orange will be used in two Explainable AI courses."
 longExcerpt = "Orange will be used in two courses of the new Explainable AI Master's degree."
 x2images = false  # true if using retina screenshots, else false
-+++
+---
 
 Recently, we have attended an xAIM project meeting in Hannover, Germany. xAIM is an EU project whose aim is to develop a Master's degree tailored to the medical professionals or those wanting to work in the medical field. The focus of the MA is on explainable artificial intelligence, that is on the explanation of machine learning models, ethical aspects of AI, and the translation of models into the medical setting.
 

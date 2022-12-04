@@ -1,4 +1,4 @@
-+++
+---
 author="AJDA"
 date= '2017-11-29 12:26:44+00:00'
 draft= false
@@ -6,7 +6,7 @@ title="How to Properly Test Models"
 type="blog"
 blog=["analysis" ,"classification" ,"education" ,"overfitting" ,
 "predictive  analytics" ,"scoring" ,"workshop" ]
-+++
+---
 
 On Monday we finished the second part of the workshop for the [Statistical Office](http://www.stat.si/StatWeb/en) of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
 

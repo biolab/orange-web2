@@ -1,4 +1,4 @@
-+++
+---
 author = "Blaž Zupan"
 date = "2021-03-05"
 draft = false
@@ -10,7 +10,7 @@ blog = ["education", "teaching", "machine learning"]
 shortExcerpt = "We have designed a course on overfitting."
 longExcerpt = "PLOS Computation Biology has just published our paper on training about overfitting."
 x2images = false  # true if using retina screenshots, else false
-+++
+---
 
 [PLOS Computation Biology](https://journals.plos.org/ploscompbiol/) has just published our paper on training about overfitting:
 

@@ -1,11 +1,11 @@
-+++
+---
 author="BIOLAB"
 date= '2012-05-15 06:00:00+00:00'
 draft= false
 title="Orange GSoC: Computer vision add-on for Orange"
 type="blog"
 blog=["computervision" ,"gsoc" ]
-+++
+---
 
 This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2012).
 
