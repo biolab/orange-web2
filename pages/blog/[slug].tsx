@@ -2,25 +2,21 @@ import matter from "gray-matter";
 import fs from "fs";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import { getBlogsMetadata } from '../../cache/getBlogPosts';
 
-function addRelativePathToImages(
-  content: string,
-  imgRelativePath: string
-): string {
+function addRelativePathToImages(content: string, imgRelativePath: string): string {
   if (!imgRelativePath || !content) {
-      return content;
+    return content;
   }
 
   // Add relative path IF img src does NOT start with 'http' OR '/'
   return content
-      .replace(/src="(?!(http)|(\/))/g, `src="/${imgRelativePath}`)
-      .replace(/\]\((?!(http)|(\/))/g, `](/${imgRelativePath}`);
+    .replace(/src="(?!(http)|(\/))/g, `src="/${imgRelativePath}`)
+    .replace(/\]\((?!(http)|(\/))/g, `](/${imgRelativePath}`);
 }
 
-
 export async function getStaticPaths() {
-  const { blogPosts } = require("../../cache/blogPosts");
-  const paths = blogPosts.map((post: any) => ({ params: { slug: post.url } }));
+  const paths = getBlogsMetadata().map((post: any) => ({ params: { slug: post.url } }));
 
   return {
     paths,
@@ -29,12 +25,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }: { params: { slug: string } }) {
-  const { blogPosts } = require("../../cache/blogPosts");
-
-  const {fullFilePath, publicFilePath} = blogPosts.find((post: any) => post.url === slug);
+  const { fullFilePath, publicFilePath } = getBlogsMetadata().find((post: any) => post.url === slug);
   const mdFile = fs.readFileSync(fullFilePath, "utf-8");
   const { data: frontmatter, content } = matter(mdFile);
-  
+
   const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath));
 
   return {
