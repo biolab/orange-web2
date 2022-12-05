@@ -34,7 +34,6 @@ I had some data that looked like this.
 | 15  | 0.216                   | p            |
 | 16  | 0.183                   | n            |
 
-<p>
 
 The data is made up, so I had to make up its meaning to form an example. In the rush of a moment, I succumbed to classics: "*For each of those 16 people you predicted the probability for being sick. Whom are you going to give the cure?*" Her answer was in line with the best manners of modern medical practice (who cares about bacteria becoming resistant to antibiotics?): "*To all!*" I didn't expect this, but anyway planned to continue with emphasizing that this medicine is not harmless: "*People who take it will vomit for one week.*" She turned by 180 degrees: "*Oh, no. To nobody!*" I didn't expect this either, but it still led nicely to my next condition: "*But if a person is indeed sick and you don't give him the drug, he'll vomit for four weeks.*"
 

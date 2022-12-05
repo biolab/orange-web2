@@ -2,7 +2,8 @@ import matter from "gray-matter";
 import fs from "fs";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { getBlogsMetadata } from '../../scripts/getBlogPosts';
+import { getBlogsMetadata } from "../../scripts/getBlogPosts";
+import remarkGfm from "remark-gfm";
 
 function addRelativePathToImages(content: string, imgRelativePath: string): string {
   if (!imgRelativePath || !content) {
@@ -29,7 +30,9 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   const mdFile = fs.readFileSync(fullFilePath, "utf-8");
   const { data: frontmatter, content } = matter(mdFile);
 
-  const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath));
+  const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath), {
+    mdxOptions: { remarkPlugins: [remarkGfm] }, // Add remarkGfm to support MD tables
+  });
 
   return {
     props: {
