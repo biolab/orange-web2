@@ -4,8 +4,8 @@ date: "2021-03-05"
 draft: false
 title: "Hands-On Training About Overfitting"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-01-11-orange-in-education-small.png"
-frontPageImage: "/blog_img/2021/2021-03-05-overfitting-tree-small.png"
+thumbImage: "2021-01-11-orange-in-education-small.png"
+frontPageImage: "2021-03-05-overfitting-tree-small.png"
 blog: ["education", "teaching", "machine learning"]
 shortExcerpt: "We have designed a course on overfitting."
 longExcerpt: "PLOS Computation Biology has just published our paper on training about overfitting."
@@ -18,7 +18,7 @@ x2images: false  # true if using retina screenshots, else false
 
 Machine learning has recently propelled approaches for the analysis of data, but "for the uninitiated, the technology poses significant difficulties" (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless. It is thus vital to include teaching about overfitting in any data science course.
 
-{{% workflow-screenshot src="/blog_img/2021/2021-03-05-overfitting-tree.png" %}}
+{{% workflow-screenshot src="2021-03-05-overfitting-tree.png" %}}
 
 For years, we have been developing Orange, a data science platform. Since we are also educators, we have designed Orange to support the teaching of concepts in machine learning. In the paper, we lay out a short course that uses Orange to teach about overfitting. The specific advantage of our proposed course is that it is entirely hands-on, can be carried out in few hours, does not require any prerequisites or much background knowledge, and is suitable for students of biomedicine or molecular biology that do not necessarily know how to code. The course layout we are proposing is practical; students learn by analyzing the data, making mistakes in the analysis that lead to overfitting, and correcting these by adjusting the workflows.
 

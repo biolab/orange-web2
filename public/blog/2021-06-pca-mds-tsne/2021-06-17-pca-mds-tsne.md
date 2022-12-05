@@ -4,8 +4,8 @@ date: "2021-06-17"
 draft: false
 title: "PCA vs. MDS vs. t-SNE"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-06-17-tsne.png"
-frontPageImage: "/blog_img/2021/2021-06-17-tsne.png"
+thumbImage: "2021-06-17-tsne.png"
+frontPageImage: "2021-06-17-tsne.png"
 blog: ["embeddding", "PCA", "dimensionality reduction", "workshop"]
 shortExcerpt: "Oh, the joy and variety of data embedding and projection techniques!"
 longExcerpt: "Oh, the joy and variety of data embedding and projection techniques!"
@@ -14,7 +14,7 @@ x2images: false  # true if using retina screenshots, else false
 
 I recently enjoy studying and showing differences between t-SNE and other data embedding and projection techniques. In particular, in some recent hands-on courses, we often introduce data visualization by principal component analysis, multidimensional scaling, and t-SNE. We would start with the zoo data set, where the data set is smaller, and the difference are less pronounced. We then traverse through employee attrition data set with exciting clusters exposed in t-SNE. To finish, and especially for the academic audience, we then show and compare the three different dimensionality reduction techniques on data from single-cell gene expression data. There, t-SNE discovers clusters of same-type cells, while PCA and MDA fail to expose interesting data structures.
 
-{{< window-screenshot src="/blog_img/2021/2021-06-17-mds-and-tsne.png" >}}
+{{< window-screenshot src="2021-06-17-mds-and-tsne.png" >}}
 
 All the data sets I have mentioned above are available in Orange through the Dataset widget.
 

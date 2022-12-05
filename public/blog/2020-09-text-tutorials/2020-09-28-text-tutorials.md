@@ -4,8 +4,8 @@ date: "2020-09-28"
 draft: false
 title: "New Video Tutorials on Text Mining"
 type: "blog"
-thumbImage: "/blog_img/2020/2020-09-28-text-tutorials.png"
-frontPageImage: "/blog_img/2020/2020-09-28-text-tutorials.png"
+thumbImage: "2020-09-28-text-tutorials.png"
+frontPageImage: "2020-09-28-text-tutorials.png"
 blog: ["text mining", "tutorial", "video", "twitter", "sentiment analysis", "embedding"]
 shortExcerpt: "New video tutorials on text mining available on our YouTube channel."
 longExcerpt: "New video tutorials on text mining available on our YouTube channel."

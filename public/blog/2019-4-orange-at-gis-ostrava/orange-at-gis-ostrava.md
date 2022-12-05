@@ -4,7 +4,7 @@ date: '2019-04-24'
 draft: false
 title: "Orange at GIS Ostrava"
 type: "blog"
-thumbImage: "/blog_img/2019/4/24/ostrava-workshop.jpg"
+thumbImage: "ostrava-workshop.jpg"
 blog: ["geo", "GIS", "hierarchical clustering"]
 shortExcerpt: "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference."
 
@@ -18,7 +18,7 @@ During the conference, I gave an invited talk on "Data Science for Everyone" and
 \
 
 
-{{% figure src="/blog_img/2019/4/24/ostrava-workshop-1.jpg" %}}
+{{% figure src="ostrava-workshop-1.jpg" %}}
 \
 \
 
@@ -29,7 +29,7 @@ Admittedly, there was not much GIS in my presentations, as I – as planned – 
 \
 
 
-{{% figure src="/blog_img/2019/4/24/ostrava-workshop-2.png" width="80%"%}}
+{{% figure src="ostrava-workshop-2.png" width="80%"%}}
 \
 \
 

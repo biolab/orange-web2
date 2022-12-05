@@ -4,8 +4,8 @@ date: "2020-02-08"
 draft: false
 title: "Orange Lecture Notes"
 type: "blog"
-thumbImage: "/blog_img/2020/2020-02-08-lecture-notes-small.png"
-frontPageImage: "/blog_img/2020/2020-02-08-lecture-notes-small.png"
+thumbImage: "2020-02-08-lecture-notes-small.png"
+frontPageImage: "2020-02-08-lecture-notes-small.png"
 blog: ["education", "workshop"]
 shortExcerpt: "Lecture notes for Orange workshops on machine learning and data science are now available online."
 longExcerpt: "Lecture notes for Orange workshops on machine learning and data science are now available online."
@@ -26,6 +26,6 @@ We are aware that our lecture notes can be of assistance to other lecturers and 
 
 The lecture notes teach concepts in machine learning and data science. For example, here is a snapshot of one of the pages from our lecture notes.
 
-{{< figure src="/blog_img/2020/2020-02-08-lecture-notes-example-page-a.jpg" >}}
+{{< figure src="2020-02-08-lecture-notes-example-page-a.jpg" >}}
 
 We tend to explain this through examples, and most often avoid any heavy mathematics. Our aim is the democratization of data science and would like to see Orange as an enabling tool that reaches a broad audience and complements toolboxes in R and Python that are intended for more tech savvy.

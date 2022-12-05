@@ -4,8 +4,8 @@ date: "2022-02-11"
 draft: false
 title: "Editing the photographs collection with the help of machine learning"
 type: "blog"
-thumbImage: "/blog_img/2022/2022-02-11-grid-title.jpg"
-frontPageImage: "/blog_img/2022/2022-02-11-grid-title.jpg"
+thumbImage: "2022-02-11-grid-title.jpg"
+frontPageImage: "2022-02-11-grid-title.jpg"
 blog: ["orange", "image analytics", "images", "machine learning"]
 shortExcerpt: "How to use Orange's image embedding to identify similar images, classify them in categories and make an order in your photographs collection?"
 longExcerpt: "The core element of Orange's image analysis is embedding images in the vector space, which just became a feaster with our infrastructure upgrades. We use this opportunity to show possible ways of analyzing images through observing similar images and classifying them."
@@ -22,7 +22,7 @@ We also made some modifications in the implementation on Orange's part, making e
 
 [The Image Embedding widget](/widget-catalog/image-analytics/imageembedding/) gets the table with images' metadata such as an image name, location and size, but they are not ready for analysis. Images are sent to the server to be embedded in a format understandable to machine learning algorithms. The server pushes images through a pre-trained deep neural network and returns the number vectors to the widget.
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-image-embedding-widget.jpg" >}}
+{{< window-screenshot src="2022-02-11-image-embedding-widget.jpg" >}}
 
 Deep neural networks are trained on various specific tasks. [Inception v3](https://arxiv.org/abs/1512.00567), [VGG16, VGG19](https://arxiv.org/abs/1409.1556) and [SqueezeNet](https://arxiv.org/abs/1602.07360) are trained to classify images into 1000 classes according to the object at the image. [Painters](https://www.nature.com/articles/s41467-019-12397-x) are trained to predict paintings' authors, [DeepLoc](https://pubmed.ncbi.nlm.nih.gov/29036616/) to predict yeast's cells structures and [OpenFace](https://ieeexplore.ieee.org/document/8373812) for face recognition. We disregard the classification layer of the network and consider the penultimate layer instead and use that for the image's vector-based representation.
 
@@ -34,13 +34,13 @@ This blog post will show two approaches for identifying categories and sorting i
 
 First, we load photos. We load a folder of images with a collection that we would like to sort in the subfolders ([download dataset](https://github.com/PrimozGodec/datasets/blob/master/image-analytics-collection/test-photos.zip)).
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-inspect-images.jpg" >}}
+{{< window-screenshot src="2022-02-11-inspect-images.jpg" >}}
 
 Both approaches will include embedding images. We connect the [Image Embedding](/widget-catalog/image-analytics/imageembedding/) widget to the Import Images widget to embed pictures and select **Inception v3 embedder**.
 
 *Our server deletes all images immediately after embedding. If you would not like to share your photos with our server anyway, you can select the SqueezeNet embedder that embeds images at your computer.*
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-image-embedding.jpg" >}}
+{{< window-screenshot src="2022-02-11-image-embedding.jpg" >}}
 
 The Image Embedding widget added 2048 columns with numbers to each image in the data table. Those numbers describe properties that neural networks inferred from pictures. Numbers are not understandable to humans but make sense to machine learning algorithms.
 
@@ -50,7 +50,7 @@ The Image Embedding widget added 2048 columns with numbers to each image in the 
 
 We passed embedded images from the Image Embedding to the Image Grid widget.
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-image-grid.jpg" >}}
+{{< window-screenshot src="2022-02-11-image-grid.jpg" >}}
 
 Image Grid has placed similar images closer in the grid. For example, in the top right corner are images of food, in the top left corner are photos of cities, on the right side are pictures of mountains, and at the bottom left are images of sunsets. The Image Grid had more difficulties with snowy photos. Some are placed at the bottom (they seem to include some mountain image elements), and three central ones seem to have elements of cities, mountains and snow.
 
@@ -70,13 +70,13 @@ We prepared a separate training dataset with pictures in 5 subfolders. Folders a
 
 We will first test how accurate the model is. 
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-test-and-score.jpg" >}}
+{{< window-screenshot src="2022-02-11-test-and-score.jpg" >}}
 
 [The Import Images](/widget-catalog/image-analytics/importimages/) widget loads images from the training dataset ([download the training data](https://github.com/PrimozGodec/datasets/raw/master/image-analytics-collection/train-photos.zip)). Since images are sorted in multiple folders, the widget assigns the folder name to images as a category, which we can see in the Data Table. We embed images with Inception v3 embedder in [the Image Embedding widget]((/widget-catalog/image-analytics/imageembedding/)) and performs cross-validation in [the Test and Score widget](/widget-catalog/evaluate/testandscore). The model we use is logistic regression. We are happy with the model with AUC 0.992 and classification accuracy of 0.943.
 
 Now we can train the model that will be used to label an unlabeled set of photos.
 
-{{< window-screenshot src="/blog_img/2022/2022-02-11-image-classification.jpg" >}}
+{{< window-screenshot src="2022-02-11-image-classification.jpg" >}}
 
 We train [the logistic regression model](/widget-catalog/model/logisticregression) on the training images in the top branch on the labelled training dataset. Data that we want to label (sort in subfolders) are loaded and embedded in the bottom branch. We use [the same images](https://github.com/PrimozGodec/datasets/blob/master/image-analytics-collection/test-photos.zip) as in the first part of the blog. [The Predictions widget](/widget-catalog/evaluate/predictions) assigns labels to the images based on the logistic regression model.
 

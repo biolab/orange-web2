@@ -4,8 +4,8 @@ date: "2021-01-11"
 draft: false
 title: "Orange in Classroom"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-01-11-orange-in-education-small.png"
-frontPageImage: "/blog_img/2021/2021-01-11-orange-in-education-small.png"
+thumbImage: "2021-01-11-orange-in-education-small.png"
+frontPageImage: "2021-01-11-orange-in-education-small.png"
 blog: ["Orange", "education", "teaching", "university"]
 shortExcerpt: "Orange is used in over two hundred universities around the world."
 longExcerpt: "Orange is actively used in classrooms at over two hundred universities from around the world."
@@ -18,7 +18,7 @@ About three weeks ago, we put out a short survey asking professors, teaching ass
 
 We sincerely thank everyone for the answers!
 
-{{% workflow-screenshot src="/blog_img/2021/2021-01-11-orange-in-education.png" %}}
+{{% workflow-screenshot src="2021-01-11-orange-in-education.png" %}}
 
 Here is a a list of universities, in alphabetical order, we have compiled from the survey.
 

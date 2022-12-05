@@ -4,8 +4,8 @@ date: "2022-10-10"
 draft: false
 title: "Quick previews in Orange widgets"
 type: "blog"
-thumbImage: "/blog_img/2022/2022_10_10_quick_preview.png"
-frontPageImage: "/blog_img/2022/2022_10_10_quick_preview.png"
+thumbImage: "2022_10_10_quick_preview.png"
+frontPageImage: "2022_10_10_quick_preview.png"
 blog: ["widgets"]
 shortExcerpt: "An exciting new feature in widgets."
 longExcerpt: "Widgets can now show a quick preview of their output data."

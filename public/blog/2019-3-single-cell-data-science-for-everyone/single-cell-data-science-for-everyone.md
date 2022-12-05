@@ -4,7 +4,7 @@ date: '2019-03-01'
 draft: false
 title: "Single-Cell Data Science for Everyone"
 type: "blog"
-thumbImage: "/blog_img/2019/3/1/2019-pavia-blog.jpg"
+thumbImage: "2019-pavia-blog.jpg"
 blog: ["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
 shortExcerpt: "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."
 
@@ -19,7 +19,7 @@ Typical analysis toolboxes for single-cell data are available in R and Python an
 \
 
 
-{{% figure src="/blog_img/2019/3/1/2019-pavia-group.jpg" width="80%" %}}
+{{% figure src="2019-pavia-group.jpg" width="80%" %}}
 \
 \
 
@@ -31,6 +31,6 @@ I want to thank {{< link_new url="http://www.labmedinfo.org/people/bellazzi" nam
 \
 
 
-{{% figure src="/blog_img/2019/3/1/2019-pizzoccheri.jpg" width="80%"%}}
+{{% figure src="2019-pizzoccheri.jpg" width="80%"%}}
 \
 \

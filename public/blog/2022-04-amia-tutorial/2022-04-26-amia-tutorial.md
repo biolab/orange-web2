@@ -4,8 +4,8 @@ date: "2022-04-26"
 draft: false
 title: "Training with Orange: A Tutorial at AIME 2022 in Halifax"
 type: "blog"
-thumbImage: "/blog_img/2022/2022-04-26-wordcloud.png"
-frontPageImage: "/blog_img/2022/2022-04-26-wordcloud.png"
+thumbImage: "2022-04-26-wordcloud.png"
+frontPageImage: "2022-04-26-wordcloud.png"
 blog: ["orange", "workshop"]
 shortExcerpt: "A half-a day tutorial on data science training with Orange on June 14 in Halifax, Canada."
 longExcerpt: "A conference on Artificial Intelligence in Medicine is hosting our tutorial on training of crucial mechanics behind data science and machine learning with Orange."
@@ -30,7 +30,7 @@ We will advocate the workflow-based construction of analytical pipelines with in
 
 The tutorial will be hands-on, and the attendees will be encouraged to bring their laptops and follow me through practical cases.
 
-{{< window-screenshot src="/blog_img/2022/2022-04-26-sc-markers-tsne.png" >}}
+{{< window-screenshot src="2022-04-26-sc-markers-tsne.png" >}}
 
 The tutorial will use Orange, our software tool that features workflows, interactive visualizations, and blends visualizations and machine learning. The figure shows the workflow to analyze the landscape of single cells using their expression data and support highlighting of selected gene markers and gene marker discovery. We plan to run this use case and construct a similar workflow during the proposed tutorial.
 

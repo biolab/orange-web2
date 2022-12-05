@@ -4,7 +4,7 @@ date: '2019-03-08'
 draft: false
 title: "The Changing Status Bar"
 type: "blog"
-thumbImage: "/blog_img/2019/3/8/changing-blog.png"
+thumbImage: "changing-blog.png"
 image: ""
 blog: ["release", "Status Bar"]
 shortExcerpt: "We are constantly optimizing Orange's look-and-feel. New features in the status bar will simplify the user interface."
@@ -21,7 +21,7 @@ Consider the Neighbors widget. The widget considers the input data and reference
 \
 
 
-{{% figure src="/blog_img/2019/3/8/changing-status-bar.png" width="70%"%}}
+{{% figure src="changing-status-bar.png" width="70%"%}}
 \
 \
 

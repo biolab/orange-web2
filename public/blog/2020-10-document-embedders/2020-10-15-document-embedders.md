@@ -4,8 +4,8 @@ date: "2020-10-15"
 draft: false
 title: "How to identify fake news with document embeddings"
 type: "blog"
-thumbImage: "/blog_img/2020/2020-10-15-document-embedding-widget.png"
-frontPageImage: "/blog_img/2020/2020-10-15-document-embedding-title.png"
+thumbImage: "2020-10-15-document-embedding-widget.png"
+frontPageImage: "2020-10-15-document-embedding-title.png"
 blog: ["text mining", "corpus", "classification"]
 shortExcerpt: "New Document embedder widget and its use for classification"
 longExcerpt: "Presenting document embeddings widget and how to identify fake news."
@@ -36,7 +36,7 @@ The shortcoming of the embedders is that they are difficult to understand. For e
 
 Orange now offers document embedders through Document Embedding widget. We decided to use [fastText pretrained embedders](https://fasttext.cc/docs/en/crawl-vectors.html), which support 157 languages. Orange's Document Embedding widget currently supports 31 most common languages.
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-document-embedding-widget.png" %}}
+{{% workflow-screenshot src="2020-10-15-document-embedding-widget.png" %}}
 
 In the widget, the user sets the language of documents and the aggregation method -- it is how embeddings for each word in a document are aggregated into one document embedding. 
 
@@ -48,25 +48,25 @@ For this tutorial, we use the sample of [Fake News dataset](https://www.kaggle.c
 
 Here we present a fake news identification. First, we will load a training part of the dataset with the Corpus widget.
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-corpus.png" %}}
+{{% workflow-screenshot src="2020-10-15-corpus.png" %}}
 
 After the dataset is loaded, we make sure that the `text` variable is selected in the Used text features field. It means that the text in this variable is used in the text analysis. When the dataset is loaded we connect the Corpus widget to the Document embedder widget which will compute text embeddings. Our workflow should look like this now:
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-workflow1.png" %}}
+{{% workflow-screenshot src="2020-10-15-workflow1.png" %}}
 
 In the document embeddings widget, we check that language is set to English since texts in this dataset are English. We will use mean (average) aggregation in this experiment -- it is the most standard one. After minute documents are embedded -- embedding progress is shown with the bar around the widget.
 
 When embeddings are ready, we can train models. In this tutorial, we train two models -- Logistic regression and Random forest. We will use default settings for both learners.
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-workflow2.png" %}}
+{{% workflow-screenshot src="2020-10-15-workflow2.png" %}}
 
 When our models are trained, we prepare the testing data. To load testing data, we use another Corpus widget and connect it to the Document embedder widget. Settings are the same as before. The only difference is that this time we load testing part of the dataset in the second Corpus widget. To make predictions and inspect the prediction results on the testing dataset, we use the prediction widget.
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-workflow3.png" %}}
+{{% workflow-screenshot src="2020-10-15-workflow3.png" %}}
 
 In the bottom part of the widget, we inspect the accuracies. In the column with name CA (classification accuracy), we can see that both models perform with around 80 % accuracy. In the table above, we can find cases where models made mistakes. If we select rows, we can check them in the Corpus Viewer widget which is connected to the Predictions widget. We have also connected the confusion matrix widget to our workflow, which shows the proportions between the predicted and actual classes. 
 
-{{% workflow-screenshot src="/blog_img/2020/2020-10-15-confusion.png" %}}
+{{% workflow-screenshot src="2020-10-15-confusion.png" %}}
 
 We can see that Logistic regression is slightly more accurate in cases of real news while Random forest model is better for predicting fake news.
 

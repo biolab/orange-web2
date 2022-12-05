@@ -4,8 +4,8 @@ date: "2021-09-15"
 draft: false
 title: "New in Orange: Support for CONLL-U files"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-09-15-conllu.png"
-frontPageImage: "/blog_img/2021/2021-09-15-conllu.png"
+thumbImage: "2021-09-15-conllu.png"
+frontPageImage: "2021-09-15-conllu.png"
 blog: ["conllu", "text mining", "corpus", "lemma"]
 shortExcerpt: "Orange can now work with CONLL-U files!"
 longExcerpt: "Orange can now work with CONLL-U files, including its lemmas, POS tags, and named entities."
@@ -31,16 +31,16 @@ Since the release of Text v. 1.5.0, Orange can import CONNL-U files and its text
 
 Here's an example. We are using [ParlaMint-GB v2.1 data](https://www.clarin.si/repository/xmlui/handle/11356/1431) from CLARIN repository, which contains annotated parliament speeches. Using Import Documents widget, we will import all the sessions for the year 2021.
 
-{{< window-screenshot src="/blog_img/2021/2021-09-15-import-documents.png" >}}
+{{< window-screenshot src="2021-09-15-import-documents.png" >}}
 
 In the widget, we can set which parts of the CONLL-U file will be imported. Let us go with lemmas and POS tags. With this, we don't need preprocessing as usual, as lemmas will be automatically considered downstream (for example in bag of words or topic modeling).
 
 However, the new release of Text also enables us to filter on POS tags. Say we wish to keep only nouns and verbs. We can use Preprocess Text to keep only the specified tags. Remember to remove the default preprocessors as they will override the pre-set tokens.
 
-{{< window-screenshot src="/blog_img/2021/2021-09-15-preprocess-text.png" >}}
+{{< window-screenshot src="2021-09-15-preprocess-text.png" >}}
 
 Looking at the Word Cloud, we can see that indeed only verbs and nouns were kept after preprocessing. And not only that! As we have selected to import lemmas, our words will already be normalized. Most of the preprocessing work is done for us! Now you can play with downstream analysis - for example, try to determine which words are significant for which MP using Word Enrichment!
 
-{{< window-screenshot src="/blog_img/2021/2021-09-15-word-cloud.png" >}}
+{{< window-screenshot src="2021-09-15-word-cloud.png" >}}
 
-{{< window-screenshot src="/blog_img/2021/2021-09-15-workflow.png" >}}
+{{< window-screenshot src="2021-09-15-workflow.png" >}}

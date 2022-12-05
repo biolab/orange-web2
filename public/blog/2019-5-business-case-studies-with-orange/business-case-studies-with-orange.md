@@ -4,7 +4,7 @@ date: '2019-05-18'
 draft: false
 title: "Business Case Studies with Orange"
 type: "blog"
-thumbImage: "/blog_img/2019/5/18/wartsila-blog.jpg"
+thumbImage: "wartsila-blog.jpg"
 blog: ["business intelligence", "HR", "logistic regression", "nomogram", "predictive models"]
 shortExcerpt: "At the latest workshop we demonstrated how to predict, which employees are most likely to resign in the future."
 
@@ -15,7 +15,7 @@ Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near T
 
 \
 
-{{% figure src="/blog_img/2019/5/18/business-case-1.png" %}}
+{{% figure src="business-case-1.png" %}}
 \
 \
 
@@ -29,7 +29,7 @@ First, let us load Attrition – Train data set from the Datasets widget. This i
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-2.png" width="70%"%}}
+{{% figure src="business-case-2.png" width="70%"%}}
 \
 \
 
@@ -38,7 +38,7 @@ Now our goal is to construct a predictive model that will successfully predict t
 
 \
 
-{{% figure src="/blog_img/2019/5/18/business-case-3.png" width="60%"%}}
+{{% figure src="business-case-3.png" width="60%"%}}
 \
 \
 Seems like Logistic Regression is the winner here, since its AUC score it the highest of the three.
@@ -46,7 +46,7 @@ Seems like Logistic Regression is the winner here, since its AUC score it the hi
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-4.png" width="80%" %}}
+{{% figure src="business-case-4.png" width="80%" %}}
 \
 \
 A great thing about Logistic Regression is that it is interpretable. We can connect the data from Datasets to Logistic Regression and the resulting model from LR to Nomogram. Nomogram shows the top ten features, ranked by their contribution to the final probability of a class.
@@ -55,7 +55,7 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-5.png" width="60%" %}}
+{{% figure src="business-case-5.png" width="60%" %}}
 \
 \
 
@@ -64,7 +64,7 @@ The length of a line corresponds to the relative importance of the attribute. Se
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-6.png" width="50%"%}}
+{{% figure src="business-case-6.png" width="50%"%}}
 \
 \
 
@@ -73,7 +73,7 @@ Finally, we can take new data and predict the likelihood for leaving. Put anothe
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-7.png" width="80%"%}}
+{{% figure src="business-case-7.png" width="80%"%}}
 \
 \
 
@@ -83,7 +83,7 @@ So who is more likely to leave? We obviously cannot afford to promote everyone, 
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-8.png" width="50%"%}}
+{{% figure src="business-case-8.png" width="50%"%}}
 \
 \
 Seems like John is most likely to leave. He has been at the company for only a year and he works overtime.
@@ -91,7 +91,7 @@ Seems like John is most likely to leave. He has been at the company for only a y
 \
 
 
-{{% figure src="/blog_img/2019/5/18/business-case-9.png" width="80%"%}}
+{{% figure src="business-case-9.png" width="80%"%}}
 \
 \
 

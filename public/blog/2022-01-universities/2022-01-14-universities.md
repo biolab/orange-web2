@@ -4,8 +4,8 @@ date: "2022-01-14"
 draft: false
 title: "Orange in Classroom, pt. 2"
 type: "blog"
-thumbImage: "/blog_img/2022/2022-01-14-universities-small.png"
-frontPageImage: "/blog_img/2022/2022-01-14-universities-small.png"
+thumbImage: "2022-01-14-universities-small.png"
+frontPageImage: "2022-01-14-universities-small.png"
 blog: ["orange", "education", "teaching", "university"]
 shortExcerpt: "Orange is being used in over 300 universities around the world."
 longExcerpt: "Orange is being used inside and outside the classroom, by professors and students in over 300 universities around the world."
@@ -18,7 +18,7 @@ In the past year, we were starting to establish a global community of educators 
 
 We once again thank everyone for your invaluable support!
 
-{{< window-screenshot src="/blog_img/2022/2022-01-14-universities.png" >}}
+{{< window-screenshot src="2022-01-14-universities.png" >}}
 
 - [Aalen University of Applied Sciences](https://www.hs-aalen.de/en/facilities/131), Germany
 - [Afyon Kocatepe University](https://aku.edu.tr/), Turkey

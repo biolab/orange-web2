@@ -4,8 +4,8 @@ date: "2021-12-17"
 draft: false
 title: "Visualizations 101"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-12-17-viz.png"
-frontPageImage: "/blog_img/2021/2021-12-17-viz.png"
+thumbImage: "2021-12-17-viz.png"
+frontPageImage: "2021-12-17-viz.png"
 blog: ["visualization", "data mining", "box plot", "scatter plot", "distributions"]
 shortExcerpt: "How to read different visualizations?"
 longExcerpt: "When to use certain visualization and how to read it?"
@@ -18,7 +18,7 @@ Orange has a wide array of visualizations, which enable exploring the data from 
 
 Scatter plot is suitable for displaying a relationship between two numeric variables. It shows a 2-dimensional plot where points represent data instances (rows). The position of each point is defined by its value for x axis and y axis. The plot can also show relations to the third variable, either numeric or categorical, by setting the color, size, or shape of data points.
 
-{{< window-screenshot src="/blog_img/2021/2021-12-17-scatter-plot.png" >}}
+{{< window-screenshot src="2021-12-17-scatter-plot.png" >}}
 
 In the above image we see a relationship between *age* and *max HR* for the 303 patients in the data set. The color of the point corresponds to the presence or absence of diameter narrowing. We see that the presence of heart disease is slightly more frequent at the age of 60, but the difference is not entirely clear and we should't draw too many conclusions from this. What we can conclude is that the maximum heart rate falls with age - regression lines are sloping downwards. Interestingly, the values of max HR at younger ages are already noticeably lower for patients with diameter narrowing (red points and line). That said, the average maximum heart rate for healthy patients (no diameter narrowing) approaches that for sick patients (with diameter narrowing).
 
@@ -28,13 +28,13 @@ In the above image we see a relationship between *age* and *max HR* for the 303 
 
 Box plot is perfect for initial exploration of the data set. It shows basic statistics for each variable and it can handle both numeric and categorical variables.
 
-{{< window-screenshot src="/blog_img/2021/2021-12-17-box-plot-num2.png" >}}
+{{< window-screenshot src="2021-12-17-box-plot-num2.png" >}}
 
 Box plot for numeric variables shows a whisker plot, which displays essential statistics. Above is an example with the *age* variable, which is by default split by the target variable *diameter narrowing* in Orange. The visualization shows two box plots, one for each target value (patients with and without diameter narrowing).
 
 The yellow vertical line shows the median value for each box. The blue vertical line shows the mean with the standard deviation represented by the horizontal thin blue line, which shows how "spread out" the values in the sample are. The big blue box is the data between the 25th and 75th percentile, that is the central 50% of the data. The line on the left extends to the minimum value, while the line of the right extends to the maximum value.
 
-{{< window-screenshot src="/blog_img/2021/2021-12-17-box-plot-cat.png" >}}
+{{< window-screenshot src="2021-12-17-box-plot-cat.png" >}}
 
 Categorical variables show the number (or proportion) of data instances for each value. These are no longer box plot, but stacked bar charts.
 
@@ -46,7 +46,7 @@ A great option in Orange is setting the *Order by relevance to subgroup* checkbo
 
 Distributions show histograms for numeric variables, where values within a given range will be assigned a bin. For categorical data, they show bar plots, that is the frequency of each value. In the below example, there are two bins, one with values below 50.87 and one with values above 50.78.
 
-{{< window-screenshot src="/blog_img/2021/2021-12-17-distributions.png" >}}
+{{< window-screenshot src="2021-12-17-distributions.png" >}}
 
 The widget can be used to display differences in distributions.
 
@@ -56,7 +56,7 @@ The widget can be used to display differences in distributions.
 
 Sieve diagram is a complex, yet extremely useful visualization. It shows the difference between the expected and observed variable frequency. In other words, if a combination of two values, i.e. being 60 years old and having a heart disease, is more frequent than expected, Sieve diagram will show it. Hence it is primarily intended for categorical variables - numeric variables will be discretized.
 
-{{< window-screenshot src="/blog_img/2021/2021-12-17-sieve.png" >}}
+{{< window-screenshot src="2021-12-17-sieve.png" >}}
 
 In the scatter plot above, we observed a slightly higher incidence of diameter narrowing in patient around 60 years of age. Let us check this is Sieve diagram.
 

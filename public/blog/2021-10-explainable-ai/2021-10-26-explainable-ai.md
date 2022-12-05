@@ -4,8 +4,8 @@ date: "2021-11-26"
 draft: false
 title: "Explainable AI Project Meeting"
 type: "blog"
-thumbImage: "/blog_img/2021/2021-11-26-xaim.jpeg"
-frontPageImage: "/blog_img/2021/2021-11-26-xaim.jpeg"
+thumbImage: "2021-11-26-xaim.jpeg"
+frontPageImage: "2021-11-26-xaim.jpeg"
 blog: ["project", "explainable ai", "teaching"]
 shortExcerpt: "Orange will be used in two Explainable AI courses."
 longExcerpt: "Orange will be used in two courses of the new Explainable AI Master's degree."
@@ -18,4 +18,4 @@ In two days we have finalized the syllabus of the MA, which will consist of thre
 
 After two days of hard work we had to relax a bit, so we visited the Christmas market in the center of Hannover. It smelled of cinnamon, Glühwein, and, of course, of oranges.
 
-{{< window-screenshot src="/blog_img/2021/2021-11-26-market.jpeg" >}}
+{{< window-screenshot src="2021-11-26-market.jpeg" >}}

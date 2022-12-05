@@ -4,8 +4,8 @@ date: '2019-06-03'
 draft: false
 title: "Gene Expression Profiles with Line Plot"
 type: "blog"
-thumbImage: "/blog_img/2019/6/3/gene-blog.png"
-frontPageImage: "/blog_img/2019/6/3/gene-blog.png"
+thumbImage: "gene-blog.png"
+frontPageImage: "gene-blog.png"
 blog: ["bioinformatics", "gene expression", "line plot"]
 shortExcerpt: "We show how to explore gene expression profiles with the new Line Plot widget."
 
@@ -24,7 +24,7 @@ Let us check a simple example. We will use brown-selected data, which is a data 
 \
 \
 
-{{% figure src="/blog_img/2019/6/3/gene-expression-1.png" width="80%" %}}
+{{% figure src="gene-expression-1.png" width="80%" %}}
 \
 \
 
@@ -34,7 +34,7 @@ Since the data has class, which represents a function of the gene, Line Plot wil
 \
 
 
-{{% figure src="/blog_img/2019/6/3/gene-expression-2.png" width="80%" %}}
+{{% figure src="gene-expression-2.png" width="80%" %}}
 \
 \
 
@@ -45,7 +45,7 @@ Another thing we can do is select a subset from the plot. If we press the ‘rec
 \
 
 
-{{% figure src="/blog_img/2019/6/3/gene-expression-3.png" width="80%" %}}
+{{% figure src="gene-expression-3.png" width="80%" %}}
 \
 \
 
@@ -53,11 +53,11 @@ If we click and drag across an area of interest, instances under the thick black
 \
 \
 
-{{% figure src="/blog_img/2019/6/3/gene-expression-4.png" width="80%" %}}
+{{% figure src="gene-expression-4.png" width="80%" %}}
 \
 \
 
-{{% figure src="/blog_img/2019/6/3/gene-expression-5.png" width="50%" %}}
+{{% figure src="gene-expression-5.png" width="50%" %}}
 \
 \
 

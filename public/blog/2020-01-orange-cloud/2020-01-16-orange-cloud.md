@@ -4,8 +4,8 @@ date: "2020-01-16"
 draft: false
 title: "Orange in the Cloud"
 type: "blog"
-thumbImage: "/blog_img/2020/2020-01-16-orange-cloud.png"
-frontPageImage: "/blog_img/2020/2020-01-16-orange-cloud.png"
+thumbImage: "2020-01-16-orange-cloud.png"
+frontPageImage: "2020-01-16-orange-cloud.png"
 blog: ["cloud", "server", "remote"]
 shortExcerpt: "Use Orange remotely by running it on a remote server as a docker container."
 longExcerpt: "Use Orange remotely by running it on a remote server as a docker container."
@@ -13,14 +13,14 @@ longExcerpt: "Use Orange remotely by running it on a remote server as a docker c
 
 Many problems are too big and require too much processing power to be efficiently processed on your laptop or PC. In such cases, the data is usually transferred to a remote server and processed using custom code, which is often time consuming. Now, there is a way to run Orange on a remote server so that you can keep using its interactive graphical interface. We will show you how to run Orange on the remote server so that you can use it through your web browser.
 
-{{< figure src="/blog_img/2020/2020-01-16-weborange.png" >}}
+{{< figure src="2020-01-16-weborange.png" >}}
 \
 
 In a nutshell, you browser opens a remote desktop connection to an Orange instance that runs inside a docker container on a remote server. Now let us go into more details.
 
 In our configuration we used several different technologies such as [Docker](https://www.docker.com/) and [Apache Guacamole](https://guacamole.apache.org/), which are shown in the diagram. First, you need to set up [Nginx](https://nginx.org/en/) (or alternatively [Apache web server](https://httpd.apache.org/)), which is used to ensure that all communication to the server is SSL encrypted. This is very important, because remote desktop protocols such as [Remote Desktop protocol (RDP)](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol) and [Virtual network computing (VNC)](https://en.wikipedia.org/wiki/Virtual_Network_Computing) are not encrypted. Failure to do so will expose your data to anyone listening on the network.
 
-{{< figure src="/blog_img/2020/2020-01-16-stack.png" >}}
+{{< figure src="2020-01-16-stack.png" >}}
 \
 
 Nginx redirects you to the [Apache Guacamole](https://guacamole.apache.org/) web application. In Guacamole you can manage multiple users and specify which of your Orange instances each user has access to. Guacamole then connects you to a selected [Orange-docker](https://github.com/biolab/orange-docker) container through an RDP or VNC connection. Once it is connected, you can see the remote desktop in your browser. You can use Orange just like on a local computer (see the image above), although you may need a few minutes to get used to the Linux environment.

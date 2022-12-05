@@ -4,7 +4,7 @@ date: '2019-01-28'
 draft: false
 title: "The Mystery of Test & Score"
 type: "blog"
-thumbImage: "/blog_img/2019/1/28/ts-blog.png"
+thumbImage: "ts-blog.png"
 image: ""
 blog: ["cross validation", "leave one out", "LOO", "test and score"]
 shortExcerpt: "Test & Score widget is used for evaluating model performance, but what do the methods do? We explain each of them in a few lines."
@@ -19,7 +19,7 @@ The widget generally accepts two inputs – Data and Learner. Data is the data s
 \
 
 
-{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" width="40%"%}}
+{{% figure src="the-mystery-of-test-and-score-1.png" width="40%"%}}
 \
 \
 
@@ -40,6 +40,6 @@ Another scenario is when you have several examples from the same object, for exa
 \
 
 
-{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" width="70%"%}}
+{{% figure src="the-mystery-of-test-and-score-2.png" width="70%"%}}
 \
 \

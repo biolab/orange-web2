@@ -4,8 +4,8 @@ date: "2022-04-26"
 draft: false
 title: "Orange Webinar for Educators #1: Where to Start?"
 type: "blog"
-thumbImage: "/blog_img/2022/2022-04-26-hands-on-workshop.png"
-frontPageImage: "/blog_img/2022/2022-04-26-hands-on-workshop.png"
+thumbImage: "2022-04-26-hands-on-workshop.png"
+frontPageImage: "2022-04-26-hands-on-workshop.png"
 blog: ["orange", "workshop"]
 shortExcerpt: "We are announcing a forthcoming webinar for educators and trainers."
 longExcerpt: ""

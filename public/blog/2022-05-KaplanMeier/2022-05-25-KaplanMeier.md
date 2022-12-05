@@ -4,8 +4,8 @@ date: "2022-05-25"
 draft: false
 title: "An introduction to the Kaplan-Meier Estimator"
 type: "blog"
-thumbImage: "/blog_img/2022/2022-05-26-kmgroups-thumbImage.png"
-frontPageImage: "/blog_img/2022/2022-05-26-kmgroups-thumbImage.png"
+thumbImage: "2022-05-26-kmgroups-thumbImage.png"
+frontPageImage: "2022-05-26-kmgroups-thumbImage.png"
 blog: ["survival analysis", "kaplan-meier"]
 shortExcerpt: "Understanding the Kaplan-Meier widget in the Survival Analysis add-on."
 longExcerpt: "The Survival Analysis add-on offers accesible tools for survival analysis, the Kaplan-Meier widget being a prime example. In this blogpost we provide an introduction to the Kaplan-Meier Estimator using a simple example and show how the tool can be used in Orange on larger datasets."
@@ -24,7 +24,7 @@ The "survival" in survival analysis gets its name from its use in the analysis o
 
 Perhaps the easiest way of getting an understanding of the concepts involved in the estimation of a survival function is with a simple example. Say we get our hands on a tiny dataset from a not-so-grim survival scenario: 10 people received 10 flowers for their birthday and tracked when the flowers wither. The tracking lasted for 10 days. Some flowers wither quicker than others and we are interested in the probability of a flower withering over time. The two main parameters of interest are thus time (in days) and flower withering-status, where "status = 1" means withered and "status = 0" means not-withered. How are we to go about determining the probability of withering over time?
 
-{{< window-screenshot src="/blog_img/2022/2022-04-20-flowerdata.png" >}}
+{{< window-screenshot src="2022-04-20-flowerdata.png" >}}
 
 
 
@@ -50,7 +50,7 @@ The probability of surviving is cumulative and so we have to multiply the probab
 
 On the third day, another flower withered and one stopped being part of the experiment for an unknown reason (probably that pesky cat). We have to remove it from the number of flowers at risk of withering for the next day. So while on the third day there are 7 flowers at risk, since 3 withered away the day before, on the fourth day there are only 5 at risk, since the day before one withered away and one got censored for an unknown reason. So the probability of withering on the fourth day is 1/5 and the probability of surviving is 4/5 multiplied by the probability of surviving the previous day, which was 0.6. Let's display all our calculations in a table:
 
-{{< window-screenshot src="/blog_img/2022/2022-04-20-kmmanually.png" >}}
+{{< window-screenshot src="2022-04-20-kmmanually.png" >}}
 
 
 On the 5th and 6th days, none of the remaining flowers withered but two got censored. There is no need to calculate the probability of survival on days where there are only censored data points, but for the sake of clarity, we included the calculations in the table. We can see that the censored data affects the number of flowers at risk but does not change the survival probability. On the eighth day, there are thus only 2 flowers at risk, and one of them withers. Taking into account the survival probability of the previous day this gives us the probability of survival of 0.24.
@@ -64,7 +64,7 @@ If we plot the survival probability for each day we get the Kaplan-Meier Plot.
 
 Now that we calculated the Kaplan-Meier estimator on a small dataset manually and got an understanding of what's going on, let's perform this on a larger dataset in Orange. We will use the data from the German Breast Cancer Study Group 2, a survival dataset that is made readily available in Orange. First, we load the data using the **Datasets** widget and inspect the data in tabular format with the use of **Data Table**. We see that our data consists of 686 data instances that stand for patients. Each patient is characterized by 8 clinical features and the time at which recurrence of the disease happened or when the patient stopped being part of the experiment due to unknown reasons (censored). We then connect our data with the **Kaplan-Meier widget** that calculates the survival probability at different time points and plots the survival curve. The widget also allows us to choose one of the three categorical features and compare the survival curves of the different categories.
 
-{{< window-screenshot src="/blog_img/2022/2022-04-20-kmworkflow.png" >}}
+{{< window-screenshot src="2022-04-20-kmworkflow.png" >}}
 
 Comparing two or more survival curves can be done by visual inspection or by comparing different statistics. For instance, we can compare the survival curves of patients according to their tumor grade which is a quantitative measure of how abnormal the tumor cells and tissue look under a microscope. For characterizing breast cancer grades doctors most often use the Nottingham grading system which divides the tumor into three grades, where 1 corresponds to low grade, 2 to intermediate grade, and 3 to high grade. The high grade means that the cells and tissue look most abnormal compared to healthy tissue. 
 
@@ -72,6 +72,6 @@ We can see this reflected in the survival curves of the three grades: patients w
 
 Finally, we can compare the median survival times of the groups using the Log-Rank test. The null hypothesis is that there is no difference in survival between the two groups and a p-value below 0.05 allows us to reject the null hypothesis and indicates a significant difference. We can see that there indeed is a significant difference in recurrence-free survival time between the three groups. However, the Log Rank test does not tell us among which groups. This too can be done with additional statistics tests but for this blog post, we've covered more than enough. 
 
-{{< window-screenshot src="/blog_img/2022/2022-04-20-kmgroups.png" >}}
+{{< window-screenshot src="2022-04-20-kmgroups.png" >}}
 
 You now hopefully have a basic understanding of the working of the Kaplan-Meier Estimator and know how to implement it in Orange using just a few clicks.

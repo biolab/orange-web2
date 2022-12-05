@@ -4,7 +4,7 @@ date: '2019-01-04'
 draft: false
 title: "How to Abuse p-Values in Correlations"
 type: "blog"
-thumbImage: "/blog_img/2019/1/4/correlations.png"
+thumbImage: "correlations.png"
 image: ""
 blog: ["correlations", "NHTS", "null hypothesis", "p-value", "statistics"]
 shortExcerpt: "Why doesn't Orange show p-values for correlations coefficients? To save you from data dredging and Texas sharpshooter fallacy..."
@@ -17,7 +17,7 @@ In a parallel universe, not so far from ours, Orange’s Correlation widget look
 \
 
 
-{{% figure src="/blog_img/2019/1/4/correlations-p-values-1.png" width="40%"%}}
+{{% figure src="correlations-p-values-1.png" width="40%"%}}
 \
 \
 
@@ -42,7 +42,7 @@ This is like the {{< link_new url="https://en.wikipedia.org/wiki/Texas_sharpshoo
 \
 
 
-{{% figure src="/blog_img/2019/1/4/TexasSharpShooter.png" width="50%" caption="Illustration by Dirk-Jan Hoek (CC-BY)." %}}
+{{% figure src="TexasSharpShooter.png" width="50%" caption="Illustration by Dirk-Jan Hoek (CC-BY)." %}}
 \
 \
 
