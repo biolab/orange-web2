@@ -15,16 +15,16 @@ But... have you ever wondered how k-means works? In the following three videos w
 
 **#1 Constructing workflow with k-means**
 
-{{< youtube vgmL808eSw4>}}
+<YouTube embedId="vgmL808eSw4" />
 
 
 
 **#2 How k-means works [interactive visualization]**
 
-{{< youtube I0e0Qyev8Ac >}}
+<YouTube embedId="I0e0Qyev8Ac" />
 
 
 **#3 How silhouette score works and why it is useful**
 
-{{< youtube 5TPldC_dC0s >}}
+<YouTube embedId="5TPldC_dC0s" />
 

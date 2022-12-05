@@ -18,13 +18,13 @@ Say you are transforming your data with PCA. There's training data and test data
 
 Transforming the data with PCA is straightforward. Apply the PCA, select a number of components that cover a solid amount of variance and output the transformed data. We can observe the 2-dimensional PCA plot in Scatter Plot.
 
-{{< window-screenshot src="2021-08-13-scatterplot1.png" >}}
+<WindowScreenshot src="2021-08-13-scatterplot1.png" />
 
 Now, let us transform the test data with another PCA, using the same parameters. Use Concatenate to merge all the data points into a single table and plot the points in Scatter Plot. Make sure that *Treat variables with the same name as the same variable* is checked in Concatenate!
 
-{{< window-screenshot src="2021-08-13-workflow1.png" >}}
+<WindowScreenshot src="2021-08-13-workflow1.png" />
 
-{{< window-screenshot src="2021-08-13-scatterplot2.png" >}}
+<WindowScreenshot src="2021-08-13-scatterplot2.png" />
 
 Scatter plot looks strange. The wine types are mixed up, especially in the lower part of the plot. This is because the test data and the train data were not transformed to the same PCA space.
 
@@ -32,8 +32,8 @@ Enter Apply Domain. The widget uses template data to transform new data to the s
 
 Apply Domain outputs transformed data, which can be once again merged with Concatenate (keep the same settings as before). Now, observe the results in a scatter plot.
 
-{{< window-screenshot src="2021-08-13-workflow2.png" >}}
+<WindowScreenshot src="2021-08-13-workflow2.png" />
 
-{{< window-screenshot src="2021-08-13-scatterplot3.png" >}}
+<WindowScreenshot src="2021-08-13-scatterplot3.png" />
 
 Well, look at that! The data is properly transformed and can be nicely discriminated by wine type in the PCA space!

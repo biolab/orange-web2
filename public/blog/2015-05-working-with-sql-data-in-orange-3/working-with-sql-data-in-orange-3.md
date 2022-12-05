@@ -12,7 +12,7 @@ blog: ["orange3","sql" ,"visualization" ]
 We demonstrate how to explore and visualize data stored in a SQL table on a remote server in the following short video. It shows how to connect to the server and load the data with the SqlTable widget, manipulate the data (Select Columns, Select Rows), obtain the summary statistics (Box plot, Distributions), and visualize the data (Heat map, Mosaic Display).
 
 
-{{< youtube MhC2ckTnEgU >}}
+<YouTube embedId="MhC2ckTnEgU" />
 
 
 

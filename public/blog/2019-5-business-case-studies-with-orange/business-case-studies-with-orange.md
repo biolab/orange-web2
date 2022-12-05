@@ -11,15 +11,15 @@ shortExcerpt: "At the latest workshop we demonstrated how to predict, which empl
 longExcerpt: "At the latest workshop in Italy we taught the participants how to identify relevant business use cases and how to predict, which employees are most likely to resign in the future."
 ---
 
-Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. {{< link_new url="https://www.wartsila.com/" name="Wärtsilä">}} is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its {{< link_new url="https://www.wartsila.com/ita/en/about" name="subsidiary in Trieste">}} is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.
+Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. <LinkNew url="https://www.wartsila.com/" name="Wärtsilä"/> is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its <LinkNew url="https://www.wartsila.com/ita/en/about" name="subsidiary in Trieste"/> is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.
 
 \
 
-{{% figure src="business-case-1.png" %}}
+<Figure src="business-case-1.png" />
 \
 \
 
-Related: {{< link_new url="/blog/2017/11/17/data-mining-business-public-administration/" name="Data Mining for Business and Public Administration">}}
+Related: <LinkNew url="/blog/2017/11/17/data-mining-business-public-administration/" name="Data Mining for Business and Public Administration"/>
 
 One such important use case is employee attrition. It is vital for any company to retain its most valuable workers, so they must learn how to identify dissatisfied employees and provide incentive from the to stay. It is easy to construct a workflow in Orange that helps us with this.
 
@@ -29,7 +29,7 @@ First, let us load Attrition – Train data set from the Datasets widget. This i
 \
 
 
-{{% figure src="business-case-2.png" width="70%"%}}
+<Figure src="business-case-2.png" width="70%"/>
 \
 \
 
@@ -38,7 +38,7 @@ Now our goal is to construct a predictive model that will successfully predict t
 
 \
 
-{{% figure src="business-case-3.png" width="60%"%}}
+<Figure src="business-case-3.png" width="60%"/>
 \
 \
 Seems like Logistic Regression is the winner here, since its AUC score it the highest of the three.
@@ -46,7 +46,7 @@ Seems like Logistic Regression is the winner here, since its AUC score it the hi
 \
 
 
-{{% figure src="business-case-4.png" width="80%" %}}
+<Figure src="business-case-4.png" width="80%" />
 \
 \
 A great thing about Logistic Regression is that it is interpretable. We can connect the data from Datasets to Logistic Regression and the resulting model from LR to Nomogram. Nomogram shows the top ten features, ranked by their contribution to the final probability of a class.
@@ -55,7 +55,7 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 \
 
 
-{{% figure src="business-case-5.png" width="60%" %}}
+<Figure src="business-case-5.png" width="60%" />
 \
 \
 
@@ -64,7 +64,7 @@ The length of a line corresponds to the relative importance of the attribute. Se
 \
 
 
-{{% figure src="business-case-6.png" width="50%"%}}
+<Figure src="business-case-6.png" width="50%"/>
 \
 \
 
@@ -73,7 +73,7 @@ Finally, we can take new data and predict the likelihood for leaving. Put anothe
 \
 
 
-{{% figure src="business-case-7.png" width="80%"%}}
+<Figure src="business-case-7.png" width="80%"/>
 \
 \
 
@@ -83,7 +83,7 @@ So who is more likely to leave? We obviously cannot afford to promote everyone, 
 \
 
 
-{{% figure src="business-case-8.png" width="50%"%}}
+<Figure src="business-case-8.png" width="50%"/>
 \
 \
 Seems like John is most likely to leave. He has been at the company for only a year and he works overtime.
@@ -91,7 +91,7 @@ Seems like John is most likely to leave. He has been at the company for only a y
 \
 
 
-{{% figure src="business-case-9.png" width="80%"%}}
+<Figure src="business-case-9.png" width="80%"/>
 \
 \
 

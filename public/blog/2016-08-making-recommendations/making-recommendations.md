@@ -71,17 +71,17 @@ Here are the first few lines from a data set :
 
 This step is pretty simple. To train a model we have to load the data as is described above and connect it to the learner. (_Don't forget to click apply_)
 
-{{% figure src="data-to-brismf.png" width="300" %}}
+<Figure src="data-to-brismf.png" width="300" />
 
 
 If the model uses side information, we only need to add an extra file.
 
-{{% figure src="TrustSVD-1.png" width="300" %}}
+<Figure src="TrustSVD-1.png" width="300" />
 
 
 In addition, we can set the parameters of our model by double-clicking it:
 
-{{% figure src="Screen-Shot-2016-08-22-at-15.49.56.png" width="400" %}}
+<Figure src="Screen-Shot-2016-08-22-at-15.49.56.png" width="400" />
 
 
 By using a fixed seed, we make random numbers predictable. Therefore, this feature is useful if we want to compare results in a deterministic way.
@@ -106,7 +106,7 @@ Still, cross-validation is a robust way to see how our model is performing. I co
 
 We can add a baseline leaner to [Test&Score](/widget-catalog/evaluate/testandscore/) and select the model we want to apply.
 
-{{% figure src="Baselines.png" width="300" %}}
+<Figure src="Baselines.png" width="300" />
 
 
 ### Making recommendations
@@ -114,7 +114,7 @@ We can add a baseline leaner to [Test&Score](/widget-catalog/evaluate/testandsco
 
 The prediction flow is exactly the same as in [Orange3](http://orange.biolab.si).
 
-{{% figure src="Recommendation-predictions.png" width="400" %}}
+<Figure src="Recommendation-predictions.png" width="400" />
 
 
 

@@ -16,7 +16,7 @@ Line Plot is one of our recent additions to the visualization widgets. It shows 
 
 The widget can show four types of information – individual data profiles (lines), data range, mean profile and error bars. It has the same cool features of other Orange visualizations – it is interactive, meaning you can select a subset of data instances from the plot, it allows grouping by a discrete variable, and it highlights an incoming data subset.
 
-Related: {{< link_new url="/blog/2018/12/21/scatter-plots-the-tour/" name="Scatter Plot: The Tour">}}
+Related: <LinkNew url="/blog/2018/12/21/scatter-plots-the-tour/" name="Scatter Plot: The Tour"/>
 
 
 Let us check a simple example. We will use brown-selected data, which is a data on gene expression of baker's yeast. To observe gene expression profiles, we will use Line Plot.
@@ -24,7 +24,7 @@ Let us check a simple example. We will use brown-selected data, which is a data 
 \
 \
 
-{{% figure src="gene-expression-1.png" width="80%" %}}
+<Figure src="gene-expression-1.png" width="80%" />
 \
 \
 
@@ -34,7 +34,7 @@ Since the data has class, which represents a function of the gene, Line Plot wil
 \
 
 
-{{% figure src="gene-expression-2.png" width="80%" %}}
+<Figure src="gene-expression-2.png" width="80%" />
 \
 \
 
@@ -45,7 +45,7 @@ Another thing we can do is select a subset from the plot. If we press the ‘rec
 \
 
 
-{{% figure src="gene-expression-3.png" width="80%" %}}
+<Figure src="gene-expression-3.png" width="80%" />
 \
 \
 
@@ -53,11 +53,11 @@ If we click and drag across an area of interest, instances under the thick black
 \
 \
 
-{{% figure src="gene-expression-4.png" width="80%" %}}
+<Figure src="gene-expression-4.png" width="80%" />
 \
 \
 
-{{% figure src="gene-expression-5.png" width="50%" %}}
+<Figure src="gene-expression-5.png" width="50%" />
 \
 \
 

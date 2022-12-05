@@ -11,7 +11,7 @@ shortExcerpt: "We let the fourth grade students build their own decision tree to
 longExcerpt: "We visited fourthgraders in our local elementary school and taught them about clustering and data collection."
 ---
 
-{{< window-screenshot src="2022-06-02-working-together.jpg" >}} 
+<WindowScreenshot src="2022-06-02-working-together.jpg" /> 
 
 What if we told you that it is possible to teach data mining to kids in elementary school in an enjoyable way? You’d say, 
 
@@ -24,14 +24,14 @@ We say,
 
 A week before our Tuesday visit, the kids from Alojzij Šuštar elementary school in Ljubljana took a trip to the Ljubljana Zoo, paying close attention to animals and their features. They were given a form (Figure 1) into which they had to enter the data for three mammals, three birds, fish, amphibians, reptiles, insects or spiders, and invertebrates (excluding insects and spiders). For every animal, they wrote the species and several features: hairy, "slimy", aquatic, has fingers, has ears, and can fly. After returning to school, the teacher entered the data into a Google Form. The children were split into 7 groups, so we had a data set with around 140 instances (some referred to the same animal, yet possibly with different data).
 
-{{< window-screenshot src="22-05-31 form.png" >}}
+<WindowScreenshot src="22-05-31 form.png" />
 *The form that the kids to enter their animal data into.* 
  
 Remember this; we will be coming back to this story at the end! 
 
 On the day of our visit, Janez gave the fourth-graders from the Zoo a new task - character classification. 
 
-{{< window-screenshot src="2022-06-02-janez-tree.jpg" >}}  
+<WindowScreenshot src="2022-06-02-janez-tree.jpg" />  
 
 We showed them four characters: one working in a marmalade factory (M), an assistant (P), a driver (V), and a firefighter (G) (letters are derived from corresponding Slovenian words). They were all slightly different (having a helmet or not, having a pocket or not, two hairstyles, one- or two-eyed, different mouths). We also showed them two unlabelled images. Children immediately began hypothesizing how to recognize their professions.
 
@@ -41,7 +41,7 @@ The task took the children a few minutes. We wrote the names of unlabelled chara
 
 While there was some dispute on what defines a profession, the children were quick to find their own sets of rules. They determined what defines a firefighter, an assistant, a marmalade chef. We wrote each rule onto the whiteboard, building the decision tree in the process. For example, we chose hair as one of the children's suggestions. Characters with tidy hair are assistants. For the others (no helmet, uncombed hair), they decided we should check whether they have a pocket. If so, we decided they were marmalade producers; otherwise, we decided they were drivers. (Children hypothesized they need pockets to steal marmalade; another idea was they need a pocket for the recipe.)
 
-{{< window-screenshot src="22-05-31-minions-tree.png" >}}
+<WindowScreenshot src="22-05-31-minions-tree.png" />
 
 Having drawn the tree, we took the pictures of unlabelled characters and classified them by following the tree. The children agreed that this was a helpful procedure and could be used for other similar tasks.
 
@@ -51,7 +51,7 @@ We can use the same type of activity with the data the children collected while 
 
 We tested if the tree works correctly by picking an animal and "manually” checking whether the tree made the correct classification. 
 
-{{< window-screenshot src="22-05-31-tree-with-animals.png" >}}
+<WindowScreenshot src="22-05-31-tree-with-animals.png" />
 *A tree that classifies animals into mammals, birds, reptiles etc based on the data collected by children.*
 
 

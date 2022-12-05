@@ -27,10 +27,11 @@ function getPostsData(files) {
     const publicFilePath = postPath.split("public/")[1].replace(fileName, "");
 
     const {
-      data: { title, draft, longExcerpt, url, date },
+      data: { title, draft, longExcerpt, url, date, x2images },
     } = matter(fileContents);
 
     return {
+      x2images: !!x2images,
       fullFilePath: postPath,
       publicFilePath,
       oldSlug,

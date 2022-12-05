@@ -18,4 +18,4 @@ In two days we have finalized the syllabus of the MA, which will consist of thre
 
 After two days of hard work we had to relax a bit, so we visited the Christmas market in the center of Hannover. It smelled of cinnamon, Glühwein, and, of course, of oranges.
 
-{{< window-screenshot src="2021-11-26-market.jpeg" >}}
+<WindowScreenshot src="2021-11-26-market.jpeg" />

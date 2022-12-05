@@ -23,11 +23,11 @@ The six videos cover the topics of
 
 We use two data sets in these videos. One includes imaginary data on student grades. Our task is to find student clusters and understand the characteristics of the students in each group.
 
-{{< window-screenshot src="2022-11-25-grades-clustering.png" >}} 
+<WindowScreenshot src="2022-11-25-grades-clustering.png" /> 
 
 The second data set contains socioeconomic information on countries of the world. Here, we aimed to find clusters of countries with similar socioeconomic characteristics. It is interesting how easy it is to use Orange to find regions of comparable countries and how the world, despite its connectedness, is split and different.
 
-{{< window-screenshot src="2022-11-25-countries.png" >}} 
+<WindowScreenshot src="2022-11-25-countries.png" /> 
 
 
 

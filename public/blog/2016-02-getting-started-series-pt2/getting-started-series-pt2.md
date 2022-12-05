@@ -13,11 +13,11 @@ We've recently published two more videos in our Getting Started with Orange seri
 
 The first video explains how to do hierarchical clustering and select interesting subsets directly in Orange:
 
-{{< youtube dJ5z2SRwzgs >}}
+<YouTube embedId="dJ5z2SRwzgs" />
 
 while the second video introduces classification trees and predictive modelling:
 
-{{< youtube D6zd7m2aYqU >}}
+<YouTube embedId="D6zd7m2aYqU" />
 
 
 

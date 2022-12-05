@@ -12,10 +12,10 @@ Why is Orange so great? Because it helps people solve problems quickly and effic
 [Sašo Jakljevič](https://www.linkedin.com/in/saso-jakljevic-90252095/), a former student of the Faculty of Computer and Information Science at University of Ljubljana, created the following motivational videos for his graduation thesis. He used two belowed datasets, iris and zoo, to showcase how to tackle real-life problems with Orange.
 
 
-{{< youtube 1_vek6FkFeM>}}
+<YouTube embedId="1_vek6FkFeM" />
 
 
-{{< youtube hGdnx4tiDHI>}}
+<YouTube embedId="hGdnx4tiDHI" />
 
 
 

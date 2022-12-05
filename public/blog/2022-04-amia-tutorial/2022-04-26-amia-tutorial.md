@@ -30,7 +30,7 @@ We will advocate the workflow-based construction of analytical pipelines with in
 
 The tutorial will be hands-on, and the attendees will be encouraged to bring their laptops and follow me through practical cases.
 
-{{< window-screenshot src="2022-04-26-sc-markers-tsne.png" >}}
+<WindowScreenshot src="2022-04-26-sc-markers-tsne.png" />
 
 The tutorial will use Orange, our software tool that features workflows, interactive visualizations, and blends visualizations and machine learning. The figure shows the workflow to analyze the landscape of single cells using their expression data and support highlighting of selected gene markers and gene marker discovery. We plan to run this use case and construct a similar workflow during the proposed tutorial.
 

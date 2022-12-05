@@ -26,9 +26,9 @@ Of course he complained that 0.012 is not zero, but I was prepared for this. I a
 
 To do so, I opened Orange and created the following workflow. Widget Random Data from add-on "Orange3-Educational" provides random data drawn from different distributions. I set it up to prepare two variables drawn from Bernoulli distribution, which is a fancy name for a random column of 0's and 1's. The two variables are discrete, so I attached its output to Continuize to make them numeric. Widget Correlations computes the Demšar's ... I mean "Pearson correlation coefficient".
 
-{{% figure src="2019-09-29-random-continuize-correlations.png"  %}}
+<Figure src="2019-09-29-random-continuize-correlations.png"  />
 
-{{% figure src="2019-09-29-random.png" width="50%" %}}
+<Figure src="2019-09-29-random.png" width="50%" />
 
 I checked the coefficient for my pair of random variables. It gave me 0.084, which is more than the score of his -- to his claim related -- pair, 0.012. I went back to Random Data, generated a different sample, and checked the correlation. And repeated it again. And again. Always larger than his 0.012. I told him that I can run this for 1000 times, but then I saw it's more practical to just construct 45 variables instead of 2 by changing parameter Variables in Random data to 45.
 
@@ -88,7 +88,7 @@ But even if he wouldn't cheat and he would pick pairs at random, with 5&nbsp;% t
 
 This being an Orange blog, let us conclude by showing a problem with (careless use of) Orange. Connect Distributions widget to Random data. A dialog will pop-up so you can decide which Correlation's output to use. Connect output "Correlations" to input "Data". Correlations now shows the distribution of Pearson correlation coefficients on this data. Correlation coefficient is significant if it's in the 5 % tail of this distribution. You can fit some curve to this if you wish.
 
-{{% figure src="2019-09-29-distribution.png" caption="" %}} \
+<Figure src="2019-09-29-distribution.png" caption="" /> \
 
 Now connect Sieve to Random data. Open it and click Score Combinations. It will order the pairs according to their significance. For every pair we select, Sieve will also show its chi-square and the corresponding p-value (at the bottom left). Predictably, the first 50 pairs have p-values below 0.05. By using Score Combinations and picking the top ones, we are making the same mistake as my imaginary friend. (Sieve does not compute Pearson coefficients but chi squares, yet in this context the two statistics are completely related. You can check that Correlations and VizRank show the same order of pairs.)
 

@@ -18,7 +18,7 @@ In the past year, we were starting to establish a global community of educators 
 
 We once again thank everyone for your invaluable support!
 
-{{< window-screenshot src="2022-01-14-universities.png" >}}
+<WindowScreenshot src="2022-01-14-universities.png" />
 
 - [Aalen University of Applied Sciences](https://www.hs-aalen.de/en/facilities/131), Germany
 - [Afyon Kocatepe University](https://aku.edu.tr/), Turkey

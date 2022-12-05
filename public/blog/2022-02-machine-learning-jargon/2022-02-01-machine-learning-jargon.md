@@ -16,7 +16,7 @@ We all know each profession has its own jargon. Most of us remember from any hos
 
 Data scientists are no different. We have our own terminology that requires some getting used to. Here's a list of common terms that we use in machine learning. Some terms are specific to Orange and might not be used elsewhere. The post is intended to get you familiar with concepts used in Orange.
 
-{{< window-screenshot src="2022-02-01-word-cloud.png" >}}
+<WindowScreenshot src="2022-02-01-word-cloud.png" />
 
 ### Data
 
@@ -32,7 +32,7 @@ Data scientists are no different. We have our own terminology that requires some
 
 - **datetime** variable. This refers to a variable with time as value, for example date of birth or time of the event. In Orange, these would be marked with a blue T.
 
-{{< window-screenshot src="2022-02-01-file.png" >}}
+<WindowScreenshot src="2022-02-01-file.png" />
 
 - **meta variable** is a variable that adds additional information on a data sample, but it is not used in computation. Such variables are text variables, but they can also be of other types. For example, if we set the age of the person as a meta variable, this variable will not be considered in clustering or classification. In Orange, they will be marked with beige in a data table.
 
@@ -40,7 +40,7 @@ Data scientists are no different. We have our own terminology that requires some
 
 - **class variable** is a target variable with categorical values. It is used for classification tasks.
 
-{{< window-screenshot src="2022-02-01-data-table.png" >}}
+<WindowScreenshot src="2022-02-01-data-table.png" />
 
 - **domain** is something a bit specific to Orange. It contains the information on all the variables in the data set, specifically the type of variables (numeric, categorical, etc.), the role of variables (attributes, metas, target), and the special properties of variables (assigned color, the order of categorical values, etc.).
 
@@ -58,7 +58,7 @@ Data scientists are no different. We have our own terminology that requires some
 
 - **concatenate** is an operation that add additional rows to the data. For example, we have some patients, and then another 10 patients are admitted to the hospital. We can add them to the table by matching by column names.
 
-{{< window-screenshot src="2022-02-01-preprocess.png" >}}
+<WindowScreenshot src="2022-02-01-preprocess.png" />
 
 ### Modelling
 
@@ -70,7 +70,7 @@ Data scientists are no different. We have our own terminology that requires some
 
 - **model** is an a result of training the data with a procedure (a learner) and the training data. A model is essentially a set of all recognized patterns in the data relating to the target variable, which are assembled into a final mathemathical function. The model can be used for prediction.
 
-{{< window-screenshot src="2022-02-01-learner.png" >}}
+<WindowScreenshot src="2022-02-01-learner.png" />
 
 ### To sum up
 

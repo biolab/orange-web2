@@ -12,7 +12,7 @@ longExcerpt: "Orange has a brand new Pivot Table widget with many aggregation an
 ---
 Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas' aggregate, groupby and pivot_table functions.
 
-{{% figure src="2019-08-27_workflow.png" caption="" %}}
+<Figure src="2019-08-27_workflow.png" caption="" />
 \
 
 Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the *heart_disease.tab* data.
@@ -32,17 +32,17 @@ In Orange:
 
 In **Pivot Table** we set *Values* to *age* and set aggregations to *mean*. There is no way to turn off splitting by rows in Pivot Table, but the values in Total report the mean value for the chosen attribute.
 
-{{% figure src="2019-08-27_pivot-aggregate.png" caption="" %}}
+<Figure src="2019-08-27_pivot-aggregate.png" caption="" />
 \
 
 An even better way to observe simple statistics is in **Feature Statistics** widget. The widget also reports on the mean value of each attribute with handy distributions plots included.
 
-{{% figure src="2019-08-27_feature-statistics.png" caption="" %}}
+<Figure src="2019-08-27_feature-statistics.png" caption="" />
 \
 
 Yet another way to observe a mean value is in a **Box Plot**.
 
-{{% figure src="2019-08-27_box-plot.png" caption="" %}}
+<Figure src="2019-08-27_box-plot.png" caption="" />
 \
 \
 
@@ -65,15 +65,15 @@ In Orange:
 
 In **Pivot Table** set *Rows* to *gender* and aggregation method to *mean*. The *Values* option in this example has no effect. Now, connect **Data Table** to Pivot Table. Finally, reset the connections. Pivot Table outputs three types of data - Pivot Table, Filtered Data, and Grouped Data. The output we are looking for here is *Grouped Data*.
 
-{{% figure src="2019-08-27_edit-links.png" caption="" %}}
+<Figure src="2019-08-27_edit-links.png" caption="" />
 \
 
-{{% figure src="2019-08-27_pivot-groupby.png" caption="" %}}
+<Figure src="2019-08-27_pivot-groupby.png" caption="" />
 \
 
 This is our data table. Exactly what we were looking for.
 
-{{% figure src="2019-08-27_groupby-data-table.png" caption="" %}}
+<Figure src="2019-08-27_groupby-data-table.png" caption="" />
 \
 \
 
@@ -94,7 +94,7 @@ In Orange:
 
 In **Pivot Table** set *Rows* to *diameter narrowing*, *Columns* to *gender*, *Values* to *age* and aggregation method to *mean*. The widget already offers a view of the final data table, but we can also output it and use it in other Orange widgets.
 
-{{% figure src="2019-08-27_pivot-table.png" caption="" %}}
+<Figure src="2019-08-27_pivot-table.png" caption="" />
 \
 \
 

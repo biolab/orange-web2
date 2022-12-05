@@ -21,7 +21,7 @@ Consider the Neighbors widget. The widget considers the input data and reference
 \
 
 
-{{% figure src="changing-status-bar.png" width="70%"%}}
+<Figure src="changing-status-bar.png" width="70%"/>
 \
 \
 

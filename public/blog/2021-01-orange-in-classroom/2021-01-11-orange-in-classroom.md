@@ -18,7 +18,7 @@ About three weeks ago, we put out a short survey asking professors, teaching ass
 
 We sincerely thank everyone for the answers!
 
-{{% workflow-screenshot src="2021-01-11-orange-in-education.png" %}}
+<WorkflowScreenshot src="2021-01-11-orange-in-education.png" />
 
 Here is a a list of universities, in alphabetical order, we have compiled from the survey.
 

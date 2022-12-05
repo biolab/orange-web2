@@ -8,6 +8,6 @@ blog: ["addons" ,"image analytics" ,"orange3" ,"tutorial" ,"youtube" ]
 ---
 
 Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet's masterpiece is indeed very similar to Manet's! Use Image Analytics add-on and play with it. Here's how:
-{{< youtube R5uchDa_ba4 >}}
+<YouTube embedId="R5uchDa_ba4" />
 
 

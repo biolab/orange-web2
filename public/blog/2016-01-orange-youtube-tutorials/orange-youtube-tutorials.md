@@ -12,11 +12,11 @@ It's been a long time coming, but finally we've created out our first set of Yo
 
 
 
-{{< youtube HXjnDIgGDuI >}}
+<YouTube embedId="HXjnDIgGDuI" />
 
-{{< youtube lb-x36xqJ-E >}}
+<YouTube embedId="lb-x36xqJ-E" />
 
-{{< youtube 2xS6QjnG714 >}}
+<YouTube embedId="2xS6QjnG714" />
 
 
 

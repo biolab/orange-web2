@@ -14,7 +14,7 @@ x2images: false  # true if using retina screenshots, else false
 
 In July, we were pleasantly surprised to be awarded a [NumFocus](https://numfocus.org/) [Small Development Grant](https://numfocus.org/programs/sustainability), which is intended to support small tasks in open source projects they sponsor. We decided to extend our text mining tutorials with four new videos, which cover the recent additions to the Text Mining add-on. Our YouTube channel already has a playlist for getting started with Orange and several specialized playlists for learning spectroscopy, single-cell analysis, text mining and image analytics with Orange.
 
-Related: {{< link_new url="blog/2016/02/26/getting-started-series-pt2/" name="Getting Started Series Part 2">}}
+Related: <LinkNew url="blog/2016/02/26/getting-started-series-pt2/" name="Getting Started Series Part 2"/>
 
 While [Twitter](https://orange.biolab.si/widget-catalog/text-mining/twitter-widget/) widget is not a new addition to the Text add-on, it has been missing a tutorial all this time. In the video, we describe how to use the widget and how to perform topic modelling on tweets.
 

@@ -17,7 +17,7 @@ In a parallel universe, not so far from ours, Orange’s Correlation widget look
 \
 
 
-{{% figure src="correlations-p-values-1.png" width="40%"%}}
+<Figure src="correlations-p-values-1.png" width="40%"/>
 \
 \
 
@@ -37,18 +37,18 @@ In contrast, the parallel-universe Correlation widget is (ab)used like this:
 2. Test all possible hypotheses.
 3. Cherry pick those that are confirmed.
 
-This is like the {{< link_new url="https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy" name="Texas sharpshooter">}} who fires first and then draws targets around the shots. You should never formulate hypothesis based on some data and then use this same data to prove it. Because it usually (surprise!) works.
+This is like the <LinkNew url="https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy" name="Texas sharpshooter"/> who fires first and then draws targets around the shots. You should never formulate hypothesis based on some data and then use this same data to prove it. Because it usually (surprise!) works.
 
 \
 
 
-{{% figure src="TexasSharpShooter.png" width="50%" caption="Illustration by Dirk-Jan Hoek (CC-BY)." %}}
+<Figure src="TexasSharpShooter.png" width="50%" caption="Illustration by Dirk-Jan Hoek (CC-BY)." />
 \
 \
 
  
 
-Back to the above snapshot. It shows correlations between 100 vegetables based on 100 different measurements (Ca and Mg content, their consumption in Finland, number of mentions in Star Trek DS9 series, likelihood of finding it on the Mars, and so forth). In other words, it’s all made it up. Just a 100×100 matrix of random numbers with column labels from the simple Wikipedia {{< link_new url="https://simple.wikipedia.org/wiki/List_of_vegetables" name="list of vegetables">}}. Yet the similarity between {{< link_new url="https://en.wikipedia.org/wiki/Mung_bean" name="mung bean">}} and {{< link_new url="https://en.wikipedia.org/wiki/Jerusalem_artichoke" name="sunchokes">}} surely cannot be dismissed (p < 0.001). Those who like bell pepper should try cilantro, too, because it’s basically one and the same thing (p = 0.001). And I honestly can’t tell black bean from wasabi (p = 0.001).
+Back to the above snapshot. It shows correlations between 100 vegetables based on 100 different measurements (Ca and Mg content, their consumption in Finland, number of mentions in Star Trek DS9 series, likelihood of finding it on the Mars, and so forth). In other words, it’s all made it up. Just a 100×100 matrix of random numbers with column labels from the simple Wikipedia <LinkNew url="https://simple.wikipedia.org/wiki/List_of_vegetables" name="list of vegetables"/>. Yet the similarity between <LinkNew url="https://en.wikipedia.org/wiki/Mung_bean" name="mung bean"/> and <LinkNew url="https://en.wikipedia.org/wiki/Jerusalem_artichoke" name="sunchokes"/> surely cannot be dismissed (p < 0.001). Those who like bell pepper should try cilantro, too, because it’s basically one and the same thing (p = 0.001). And I honestly can’t tell black bean from wasabi (p = 0.001).
 
 Here are the p-values for the top 100 most correlated pairs.
 
@@ -77,7 +77,7 @@ Roughly 0.05. This is exactly what should have happened, because:
 	0.15236602574520097
 	correlations[int(npairs * 0.30)]
 	0.3026816170584785
-This proves only that p-values for the Pearson correlation coefficient are well calibrated (and that {{< link_new url="https://en.wikipedia.org/wiki/Mersenne_Twister" name="Mersenne twister">}} that is used to generate random numbers in numpy works well). In theory, the p-value for a certain statistics (like Pearson’s r) is the probability of getting such or even more extreme value if the null-hypothesis (of no correlation, in our case) is actually true. 5 % of random hypotheses should have a p-value below 0.05, 10 % a value below 10, and 23 % a value below 23.
+This proves only that p-values for the Pearson correlation coefficient are well calibrated (and that <LinkNew url="https://en.wikipedia.org/wiki/Mersenne_Twister" name="Mersenne twister"/> that is used to generate random numbers in numpy works well). In theory, the p-value for a certain statistics (like Pearson’s r) is the probability of getting such or even more extreme value if the null-hypothesis (of no correlation, in our case) is actually true. 5 % of random hypotheses should have a p-value below 0.05, 10 % a value below 10, and 23 % a value below 23.
 
 Imagine what they can do with the Correlations widget in the parallel universe! They compute correlations between all pairs, print out the first 5 % of them and start writing a paper without bothering to look at p-values at all. They know they should be statistically significant even if the data is random.
 
@@ -85,4 +85,4 @@ Which is precisely the reason why our widget must not compute p-values: because 
 
 If so, why do we have the Correlation widget at all if it’s results are unpublishable? We can use it to find highly correlated pairs in a data sample. But we can’t just attach p-values to them and publish them. By finding these pairs (with assistance of Correlation widget) we just formulate hypotheses. This is only step 1 of the enshrined NHST procedure. We can’t skip the other two: the next step is to collect some new data (existing data won’t do!) and then use it to test the hypotheses (step 3).
 
-Following this procedure doesn’t save us from {{< link_new url="https://en.wikipedia.org/wiki/Data_dredging" name="data dredging">}}. There are still plenty of ways to cheat. It is the most tempting to select the first 100 most correlated pairs (or, actually, any 100 pairs), (re)compute correlations on some new data and publish the top 5 % of these pairs. The official solution for this is a patchwork of various corrections for multiple hypotheses testing, but… Well, they don’t work, but we should say no more here. You know, Christmas ceasefire.
+Following this procedure doesn’t save us from <LinkNew url="https://en.wikipedia.org/wiki/Data_dredging" name="data dredging"/>. There are still plenty of ways to cheat. It is the most tempting to select the first 100 most correlated pairs (or, actually, any 100 pairs), (re)compute correlations on some new data and publish the top 5 % of these pairs. The official solution for this is a patchwork of various corrections for multiple hypotheses testing, but… Well, they don’t work, but we should say no more here. You know, Christmas ceasefire.

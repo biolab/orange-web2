@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  img {
+  img, video {
     max-width: 100%;
     height: auto;
   }

@@ -26,6 +26,6 @@ We are aware that our lecture notes can be of assistance to other lecturers and 
 
 The lecture notes teach concepts in machine learning and data science. For example, here is a snapshot of one of the pages from our lecture notes.
 
-{{< figure src="2020-02-08-lecture-notes-example-page-a.jpg" >}}
+<Figure src="2020-02-08-lecture-notes-example-page-a.jpg" />
 
 We tend to explain this through examples, and most often avoid any heavy mathematics. Our aim is the democratization of data science and would like to see Orange as an enabling tool that reaches a broad audience and complements toolboxes in R and Python that are intended for more tech savvy.
