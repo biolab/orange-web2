@@ -51,7 +51,7 @@ We can use the same type of activity with the data the children collected while 
 
 We tested if the tree works correctly by picking an animal and "manually” checking whether the tree made the correct classification. 
 
-{{< window-screenshot src="/static/blog_img/2022/22-05-31-tree-with-animals.png" >}} 
+{{< window-screenshot src="/blog_img/2022/22-05-31-tree-with-animals.png" >}}
 *A tree that classifies animals into mammals, birds, reptiles etc based on the data collected by children.*
 
 
