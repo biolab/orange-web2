@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "generate:cache": "node scripts/getBlogPosts",
-    "cypress:open": "generate:cache && cypress open",
+    "cypress:open": "yarn generate:cache && cypress open",
     "cypress:run": "yarn generate:cache && cypress run"
   },
   "dependencies": {

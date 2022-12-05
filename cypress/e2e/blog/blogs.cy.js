@@ -20,10 +20,10 @@ describe("test blogs", () => {
     });
   });
 
-  // Enable these tests when all the blogs are copied to the new repo
   oldBlogs.forEach((blog) => {
-    xit(`test old-blogs redirects: ${blog.title}`, () => {
-      cy.visit(`${baseUrl}/${blog.url}`);
+    it(`test old-blogs redirects: ${blog.title}`, () => {
+      cy.visit(`${baseUrl}${blog.uri}`, { failOnStatusCode: false });
+      cy.wait(100);
       cy.get("h1").contains(blog.title);
     });
   });
