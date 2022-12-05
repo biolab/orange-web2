@@ -14,7 +14,7 @@ Since version 3.15.0, Orange remembers which distinct widgets users like to conn
 
 Orange recently implemented a basic form of opt-in usage tracking, specifically targeting how users add widgets to the canvas.
 
-![](/images/2018/11/widgetname-word-cloud.png)
+![](widgetname-word-cloud.png)
 Word cloud of widget popularity in Orange.
 
 
@@ -31,14 +31,14 @@ The information is collected anonymously for the users that opted-in. We will us
 
 
 
-![](/images/2018/11/Screenshot-2018-11-20-at-17.06.15.png)
+![](Screenshot-2018-11-20-at-17.06.15.png)
 A workflow extend action.
 
 
 
 Among Orange users, the most popular way of adding a new widget is by dragging the communication line from the output widget – we think this is the most efficient way of using Orange too. However, the patterns vary among different widgets.
 
-![](/images/2018/11/widgets-add-type.png)
+![](widgets-add-type.png)
 
 How users add widgets to canvas, from 20,775 add widget events.
 
@@ -51,13 +51,13 @@ Users tend to add root nodes such as File via a click or drag from the sidebar, 
 
 <td style="width: 50%; border-style: hidden;">
 
-![](/images/2018/11/file-add-type-1.png)
+![](file-add-type-1.png)
 How users add File to canvas.
 </td>
 
 <td style="width: 50%; border-style: hidden; vertical-align: bottom;">
 
-![](/images/2018/11/data-table-type.png)
+![](data-table-type.png)
 How users add Data Table to canvas.
 </td>
 </tr>
@@ -67,7 +67,7 @@ How users add Data Table to canvas.
 
 The widget popularity contest goes to: **Data Table**! Rightfully so, one should always check their data with Data Table.
 
-![](/images/2018/11/widget-popularity.png)
+![](widget-popularity.png)
 Widget popularity visualization in Box Plot.
 
 

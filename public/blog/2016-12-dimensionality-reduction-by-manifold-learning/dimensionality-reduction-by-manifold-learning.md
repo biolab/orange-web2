@@ -9,7 +9,7 @@ blog: ["analysis" ,"embedding" ,"examples" ,"interactive data visualization"  ,"
 
 The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
 
-![](/images/2016/12/manifold-learning.png)
+![](manifold-learning.png)
 
 Manifold Learning widget has a simple interface with powerful features.
 
@@ -25,7 +25,7 @@ For example, a popular t-SNE requires only a metric (e.g. cosine distance). In t
 
 First, let's load [the data](https://raw.githubusercontent.com/ajdapretnar/datasets/master/data/s-manifold.tab) and open it in Scatter Plot. Not a very informative visualization, right? The dots from an unrecognizable square in 2D.
 
-![](/images/2016/12/SP-normal.png)
+![](SP-normal.png)
 
 S-curve data in Scatter Plot. Data points form an uninformative square.
 
@@ -33,7 +33,7 @@ S-curve data in Scatter Plot. Data points form an uninformative square.
 
 Let's use embeddings to make things a bit more informative. This is how the data looks like with a t-SNE embedding. The data is starting to have a shape and the data points colored according to regression class reveal a beautiful gradient.
 
-![](/images/2016/12/manifold-t-sne.png)
+![](manifold-t-sne.png)
 
 t-SNE embedding shows an S shape of the data.
 
@@ -41,7 +41,7 @@ t-SNE embedding shows an S shape of the data.
 
 Ok, how about MDS? This is beyond our expectations!
 
-![](/images/2016/12/SP-mds.png)
+![](SP-mds.png)
 
 
 

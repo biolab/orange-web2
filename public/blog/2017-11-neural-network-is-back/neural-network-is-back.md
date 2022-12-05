@@ -19,7 +19,7 @@ Then one day a silly novice programmer (a.k.a. me) had enough and just threw sci
 
 Just like that:
 
-![](/images/2017/10/Screen-Shot-2017-11-03-at-13.32.28.png)
+![](Screen-Shot-2017-11-03-at-13.32.28.png)
 
 Have fun with the new widget!
 

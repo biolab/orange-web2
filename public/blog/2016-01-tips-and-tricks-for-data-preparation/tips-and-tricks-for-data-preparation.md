@@ -12,7 +12,7 @@ Probably the most crucial step in your data analysis is purging and cleaning you
 
 * **Use a smart text editor**. We can recommend [Sublime Text](https://www.sublimetext.com/) as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are [other great tools](http://lifehacker.com/five-best-text-editors-1564907215) out there as well. One of the best things you'll keep coming back to in your editor is 'Replace' function that allows you to replace specified values with different ones. You can also use regex to easily find and replace parts of text.
 	
-	![](/images/2016/01/blog-editing-data2.png)
+	![](blog-editing-data2.png)
 	We can replace all instances of 'male' with 'man' in one click.
 
 
@@ -30,7 +30,7 @@ Probably the most crucial step in your data analysis is purging and cleaning you
 
 * **Exploit the widgets in Orange.** Select Columns is your go-to widget for organizing what gets read as a meta attribute, what is your class variable and which features you want to use in your analysis. Another great widget is Edit domain, where you can set the way the values are displayed in the analysis (say you have "grey" in your data, but you want it to say "gray"). Moreover, you can use Concatenate and Merge widgets to put your data together.
 
-	![](/images/2016/01/blog-editing-data1-2.png)
+	![](blog-editing-data1-2.png)
 	Set domain with Edit domain widget.
 
 

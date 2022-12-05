@@ -71,17 +71,17 @@ Here are the first few lines from a data set :
 
 This step is pretty simple. To train a model we have to load the data as is described above and connect it to the learner. (_Don't forget to click apply_)
 
-{{% figure src="/images/2016/08/data-to-brismf.png" width="300" %}}
+{{% figure src="data-to-brismf.png" width="300" %}}
 
 
 If the model uses side information, we only need to add an extra file.
 
-{{% figure src="/images/2016/08/TrustSVD-1.png" width="300" %}}
+{{% figure src="TrustSVD-1.png" width="300" %}}
 
 
 In addition, we can set the parameters of our model by double-clicking it:
 
-{{% figure src="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" width="400" %}}
+{{% figure src="Screen-Shot-2016-08-22-at-15.49.56.png" width="400" %}}
 
 
 By using a fixed seed, we make random numbers predictable. Therefore, this feature is useful if we want to compare results in a deterministic way.
@@ -97,7 +97,7 @@ By using a fixed seed, we make random numbers predictable. Therefore, this feat
 
 This is as simple as it seems. The only thing to point out is that side information must be connected to the model.
 
-![](/images/2016/08/cv-recommendation.png)
+![](cv-recommendation.png)
 
 
 
@@ -106,7 +106,7 @@ Still, cross-validation is a robust way to see how our model is performing. I co
 
 We can add a baseline leaner to [Test&Score](/widget-catalog/evaluate/testandscore/) and select the model we want to apply.
 
-{{% figure src="/images/2016/08/Baselines.png" width="300" %}}
+{{% figure src="Baselines.png" width="300" %}}
 
 
 ### Making recommendations
@@ -114,26 +114,26 @@ We can add a baseline leaner to [Test&Score](/widget-catalog/evaluate/testandsco
 
 The prediction flow is exactly the same as in [Orange3](http://orange.biolab.si).
 
-{{% figure src="/images/2016/08/Recommendation-predictions.png" width="400" %}}
+{{% figure src="Recommendation-predictions.png" width="400" %}}
 
 
 
 ### Analyzing low-rank matrices
 
 
-![](/images/2016/08/all-rank-dis.png)
+![](all-rank-dis.png)
 
 
 Once we've output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the _item-feature matrix_ by simply connecting Data Table with selected instances to the widget [Scatter Plot](/widget-catalog/visualize/scatterplot/).
 
-![](/images/2016/08/Visualizing-vectors.png)
+![](Visualizing-vectors.png)
 
 
 Using similar approaches we can discover pretty interesting things like similarity between movies or users, how movie genres relate with each other, changes in users' behavior, when the popularity of a movie has been raised due to a commercial campaign,... and many others.
 
 Finally, a simple pipeline to do all of the above can be something like this:
 
-![](/images/2016/08/workflow-recommendation.png)
+![](workflow-recommendation.png)
 
 
 On the left side we connected several models to [Test&Score](/widget-catalog/evaluate/testandscore/) in order to cross-validate them. Later, we trained a [SVD++](http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html) model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the _Item-feature matrix._
@@ -142,18 +142,18 @@ On the left side we connected several models to [Test&Score](/widget-catalog/
 ### Analysis (Advanced users)
 
 
-Here we've made a workflow (which can be downloaded [here](/images/2016/08/Orange3-Workflow-Movielens100k.zip)) to perform a really basic analysis on the results obtained through factoring the user and item feature matrices with [BRISMF](http://orange3-recommendation.readthedocs.io/en/latest/widgets/brismf.html) over the [movielens100k](http://grouplens.org/datasets/movielens/) dataset. _(Note: Once downloaded, set the prepared datasets in the folder 'orange'. Probably you're gonna get a couple errors. Don't worry, it's normal. To solve it, apply the scripts sequentially but don't forget previously to select all the rows in the related Table.)_
+Here we've made a workflow (which can be downloaded [here](Orange3-Workflow-Movielens100k.zip)) to perform a really basic analysis on the results obtained through factoring the user and item feature matrices with [BRISMF](http://orange3-recommendation.readthedocs.io/en/latest/widgets/brismf.html) over the [movielens100k](http://grouplens.org/datasets/movielens/) dataset. _(Note: Once downloaded, set the prepared datasets in the folder 'orange'. Probably you're gonna get a couple errors. Don't worry, it's normal. To solve it, apply the scripts sequentially but don't forget previously to select all the rows in the related Table.)_
 
 Instead of explaining how this pipeline works, the best thing you can do is to download it and play with it.
 
-![](/images/2016/08/Complex-flow.png)
+![](Complex-flow.png)
 
 
 
 
 One of the analysis you can do, is to plot the most popular movies across two first vectors of the matrix descomposition. Later, you can try to find clusters, tweak it a bit and find crossed relations (e.g. _male/female_ Vs._ action/drama)._
 
-![](/images/2016/08/Cluster-movies.png)
+![](Cluster-movies.png)
 
 
 

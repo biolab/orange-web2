@@ -9,13 +9,13 @@ blog: ["clustering" ,"images" ,"orange3" ,"workshop" ]
 
 With over 262 member companies, [Station Houston](http://stationhouston.com) is the largest hub for tech startups in Houston.
 
-![](/images/2017/09/station-houston.jpg)
+![](station-houston.jpg)
 
 One of its members is also [Genialis](https://www.genialis.com), a life science data exploration company that emerged from our lab and is now delivering pipelines and user-friendly apps for analytics in systems biology.
 
 Thanks to the invitation by the director of operations [Alex de la Fuente](https://www.linkedin.com/in/alexdelafuente/), we gave a seminar on [Data Science for Everyone](https://www.eventbrite.com/e/data-science-for-everyone-dr-blaz-zupan-baylor-college-of-medicine-tickets-36909445144#). We spoke about how Orange can support anyone to learn about data science and then use machine learning on their own data.
 
-![](/images/2017/09/station-houston-group-photo.jpg)
+![](station-houston-group-photo.jpg)
 
 We pushed on this last point: say you walk in downtown Houston, pick first three passersby, take them to the workshop and train them in machine learning. To the point where they could walk out from the training and use some machine learning at home. Say, cluster their family photos, or figure out what Kickstarter project features to optimize to get the funding.
 
@@ -35,8 +35,8 @@ Seminars at Station Houston need to finish with a homework. So we delivered one.
 
 Data science and startups aside: there are some beautiful views from Station Houston. From the kitchen, there is a straight sight to Houston's medical center looming about 4 miles away.
 
-![](/images/2017/09/station-houston-medical-center.jpg)
+![](station-houston-medical-center.jpg)
 
 And on the other side, there is a great view of the downtown.
 
-![](/images/2017/09/station-houston-downtown.jpg)
+![](station-houston-downtown.jpg)

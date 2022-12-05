@@ -17,7 +17,7 @@ The motivation behind developing a new tree induction algorithm from scratch was
 
 The graph below shows **SimpleTreeLearner** construction times on datasets bundled with Orange normalized to **TreeLearner**. Smaller is better.
 
-![](/images/2011/08/24/simpletree_speed.png__600x641_q95_crop_upscale.png)
+![](simpletree_speed.png__600x641_q95_crop_upscale.png)
 
 
 The harmonic mean (average speedup) on all the benchmarks is 11.4.

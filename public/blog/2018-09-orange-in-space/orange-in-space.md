@@ -9,7 +9,7 @@ blog: ["addons" ,"infraorange" ,"infrared spectra" ,"python" ,"spectroscopy"  ]
 
 Did you know that Orange has already been to space? [Rosario Brunetto](https://www.ias.u-psud.fr/en/content/team-members-0) ([IAS-Orsay](https://www.ias.u-psud.fr/), France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the [JAXA Hayabusa2](http://global.jaxa.jp/projects/sat/hayabusa2/) team. The [Hayabusa2](https://en.wikipedia.org/wiki/Hayabusa2) asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data. And of course, a part of the analysis of Hayabusa's space data has been done in Orange!
 
-![](/images/2018/08/ryugu2.jpg)
+![](ryugu2.jpg)
 An image of the asteroid Ryugu acquired by the Hayabusa2 (_[©JAXA](http://global.jaxa.jp/))_.
 
 
@@ -22,7 +22,7 @@ Once the data was preprocessed and cleaned in Python, separate surface regions w
 
 Moreover, one can quickly test methods and visualize the effects and at the same time have a good overview of the workflow. Workflows can also be reused once the new data comes in or, if the pipeline is standard, used on a completely different data set!
 
-![](/images/2018/08/OrangeBrunetto.png)
+![](OrangeBrunetto.png)
 A simple workflow for the analysis of spectral data. 😁 A great thing about Orange is that you can label parts of the workflow and explore a different aspect of the data in each branch!
 
 
@@ -31,7 +31,7 @@ We would of course love to show you the results of the asteroid analysis, but as
 
 She analyzed the composition of the Paris meteorite, which was discovered in 2008 in a statue. The story of how the [meteorite was found](https://www.mindat.org/loc-264051.html) is quite interesting in itself, but we wanted to know more on how the sample was analyzed in Orange. Dionnet had a slightly larger data set, with 16,000 spectra and 1600 wavenumbers. Just like dr. Brunetto, she used k-Means to discover interesting regions in the sample and Hyperspectra widget to plot the results.
 
-![](/images/2018/08/Orange_paris_meteorite-1.png)
+![](Orange_paris_meteorite-1.png)
 k-Means clusters plotted in the HyperSpectra widget.
 
 

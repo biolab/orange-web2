@@ -16,5 +16,5 @@ We officially supported add-ons in Orange 2.6. You should start by checking the 
 
 Everything should just work. Writing add-ons is as easy as writing your own [Orange Widgets](http://docs.biolab.si/orange/2/extend-widgets/rst/) or [Orange Scripts](http://docs.biolab.si/orange/2/tutorial/rst/). Just follow [this tutorial](http://orange.biolab.si/trac/wiki/AddOns) and you will have your brand-new Orange add-on on PyPi in no time (an hour at most).
 
-![](/images/2013/01/29/orange-add-ons.png__400x382_q95_crop_upscale.png)
+![](orange-add-ons.png__400x382_q95_crop_upscale.png)
 

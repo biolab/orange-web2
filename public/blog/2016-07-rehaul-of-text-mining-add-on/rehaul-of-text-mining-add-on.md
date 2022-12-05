@@ -12,7 +12,7 @@ Google Summer of Code is progressing nicely and some major improvements are alre
 Twitter widget offers many functionalities. Since we wanted to get tweets from specific authors, we entered their Twitter handles as queries and set 'Search by Author'. We only included Author, Content and Date in the query parameters, as we want to predict the author only on the basis of text.
 
 
-![](/images/2016/07/Twitter1-stamped-1.png)
+![](Twitter1-stamped-1.png)
 
 
 
@@ -30,7 +30,7 @@ Twitter widget offers many functionalities. Since we wanted to get tweets from s
 
 We got 208 tweets on the output. Not bad. Now we need to preprocess them first, before we do any predictions. We transformed all the words into lowercase and split (tokenized) them by words. We didn't use any normalization (below turned on just as an example) and applied a simple stopword removal.
 
-![](/images/2016/07/PreprocessText1-stamped.png)
+![](PreprocessText1-stamped.png)
 
 1. Information on the input and output.
 2. Transformation applies basic modifications of text.
@@ -40,16 +40,16 @@ We got 208 tweets on the output. Not bad. Now we need to preprocess them first, 
 
 Then we passed the tokens through a Bag of Words and observed the results in a Word Cloud.
 
-![](/images/2016/07/wordcloud-twitter-1.png)
+![](wordcloud-twitter-1.png)
 
 Then we simply connected Bag of Words to Test & Score and used several classifiers to see which one works best. We used Classification Tree and Nearest Neighbors since they are easy to explain even to teenagers. Especially Classification Tree offers a nice visualization in Classification Tree Viewer that makes the idea of the algorithm easy to understand. Moreover we could observe the most distinctive words in the tree.
 
-![](/images/2016/07/classtree1.png)
+![](classtree1.png)
 
 Do these make any sense? You be the judge. :)
 
 We checked classification results in Test&Score, counted misclassifications in Confusion Matrix and finally observed them in Corpus Viewer. k-NN seems to perform moderately well, while Classification Tree fails miserably. Still, this was trained on barely 200 tweets. Perhaps accumulating results over time might give us much better results. You can now certainly try it on your own! Update your Orange3-Text add-on or install it via 'pip install Orange3-Text'!
 
-![](/images/2016/07/schema-twittet-preprocess.png)
+![](schema-twittet-preprocess.png)
 
 Above is the final workflow. Preprocessing on the left. Testing and scoring on the right bottom. Construction of classification tree right and above.

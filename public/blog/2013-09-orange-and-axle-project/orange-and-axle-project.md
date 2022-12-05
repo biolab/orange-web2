@@ -15,5 +15,5 @@ What have we got so far? Orange 3, which is in early stage of development, featu
 
 We also already have a small suite of widgets that work with this new architecture. Just to wet your appetite, here is the new box plot widget.
 
-![](/images/2013/09/02/boxplot-orange30.png__620x311_q95_crop_upscale.png)
+![](boxplot-orange30.png__620x311_q95_crop_upscale.png)
 

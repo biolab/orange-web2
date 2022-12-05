@@ -15,7 +15,7 @@ Recently we've been participating at [Days of Computer Science](http://www.tms
 
 Orange team has prepared a small demo project called _Celebrity Lookalike_. We found 65 celebrity photos online and loaded them in [Orange](http://orange.biolab.si/). Next we cropped photos to faces and turned them black and white, to avoid bias in background and color. Next we inferred embeddings with [ImageNet](http://image-net.org/) widget and got 2048 features, which are the penultimate result of the ImageNet neural network.
 
-![](/images/2016/11/black-and-white.png)
+![](black-and-white.png)
 
 We find faces in photos and turn them to black and white. This eliminates the effect of the background and distinct colors for embeddings.
 
@@ -23,7 +23,7 @@ We find faces in photos and turn them to black and white. This eliminates the ef
 
 Still, we needed a reference photo to find the celebrity lookalike for. Students could take a selfie and similarly extracted black and white face out of it. Embeddings were computed and sent to Neighbors widget. Neighbors finds n closest neighbors based on the defined distance measure to the provided reference. We decided to output 10 closest neighbors by cosine distance.
 
-![](/images/2016/11/workflow111.png)
+![](workflow111.png)
 
 Celebrity Lookalike workflow. We load photos, find faces and compute embeddings. We do the same for our Webcam Capture. Then we find 10 closest neighbors and observe the results in Lookalike widget.
 
@@ -31,11 +31,11 @@ Celebrity Lookalike workflow. We load photos, find faces and compute embeddings.
 
 Finally, we used Lookalike widget to display the result. Students found it hilarious when curly boys were the Queen of England and girls with glasses Steve Jobs. They were actively trying to discover how the algorithm works by taking photo of a statue, person with or without glasses, with hats on or by making a funny face.
 
-![](/images/2016/11/lookalike6181683.jpg)
+![](lookalike6181683.jpg)
 
 
 Hopefully this inspires a new generation of students to become scientists, researchers and to actively find solutions to their problems. Coding or not. :)
 
-![](/images/2016/11/DSC_4982.jpg)
+![](DSC_4982.jpg)
 
 _Note: __Most widgets we have designed for this projects (like Face Detector, Webcam Capture, and Lookalike) are available in [Orange3-Prototypes](https://github.com/biolab/orange3-prototypes) and are not actively maintained. They can, however, be used for personal projects and sheer fun. Orange does not own the copyright of the images._

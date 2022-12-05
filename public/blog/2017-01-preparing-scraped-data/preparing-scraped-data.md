@@ -122,12 +122,12 @@ This is the entire code:
 
 Now let's load this in Orange. File widget can easily read .csv formats and also correctly identifies the two column types, datetime and numeric. A quick glance into the Data Table...
 
-![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png)
+![](Screen-Shot-2017-01-23-at-12.54.12.png)
 
 Everything looks ok. We can use [Timeseries add-on](https://github.com/biolab/orange3-timeseries) to inspect how many blogs we've written each month since 2010. Connect **As Timeseries** widget to File. Orange will automatically suggest to use Date as our time variable. Finally, we'll plot the data with **Line Chart**. This is the curve of our blog activity.
 
-![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png)
+![](Screen-Shot-2017-01-23-at-12.54.53.png)
 
-![](/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png)
+![](Screen-Shot-2017-01-23-at-12.55.14.png)
 
 The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!

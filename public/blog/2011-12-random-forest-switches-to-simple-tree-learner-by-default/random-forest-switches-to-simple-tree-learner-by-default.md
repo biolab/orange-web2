@@ -29,7 +29,7 @@ The example above loads the iris dataset and trains a random forest classifier w
 
 Using **SimpleTreeLearner** insted of **TreeLearner** substantially reduces the training time. The image below compares construction times of Random Forest classifiers using a SimpleTreeLearner or a TreeLearner as the base learner.
 
-![](/images/2011/12/08/forest_construction.png__600x641_q95_crop_upscale.png)
+![](forest_construction.png__600x641_q95_crop_upscale.png)
 
 
 By setting the base_learner parameter to **TreeLearer** it is possible to revert to the original behaviour:

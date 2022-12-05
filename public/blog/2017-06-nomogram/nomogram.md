@@ -11,11 +11,11 @@ One more exciting visualization has been introduced to Orange - a Nomogram. In g
 
 So, how does it work? First, feed the Nomogram a classification model, say, Logistic Regression. We will use the Titanic survival data that comes with Orange for this example (in File widget, choose "Browse documentation datasets").
 
-![](/images/2017/04/nomogram-workflow.png)
+![](nomogram-workflow.png)
 
 In the nomogram, we see the top ranked attributes and how much they contribute to the target class. Seems like a male third class adult had a much lower survival rate than did female first class child.
 
-![](/images/2017/04/Screen-Shot-2017-04-19-at-14.44.44.png)
+![](Screen-Shot-2017-04-19-at-14.44.44.png)
 
 The first box show the target class, in our case survived=no. The second box shows the most important attribute, sex, and its contribution to the probability of the target class (more for male, almost 0 for female). The final box shows the total probability of the target class for the selected values of attributes (blue dots).
 
@@ -25,6 +25,6 @@ The same goes for all the other attributes - you can interactively explore how m
 
 But it gets even better! Instead of dragging the blue dots in the nomogram, you can feed it the data. In the workflow below, we pass the data through the Data Table widget and then feed the selected data instance to the Nomogram. The Nomogram would then show what is the probability of the target class for this particular instance, and it would "explain" what are the magnitudes of contributions of individual attribute values.
 
-![](/images/2017/04/Screen-Shot-2017-04-19-at-14.38.43.png)
+![](Screen-Shot-2017-04-19-at-14.38.43.png)
 
 This makes Nomogram a great widget for understanding the model and for interactive data exploration.

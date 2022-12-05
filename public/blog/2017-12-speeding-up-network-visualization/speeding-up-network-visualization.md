@@ -9,7 +9,7 @@ blog: ["addons" ,"network" ,"visualization" ]
 
 The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.
 
-![](/images/2017/12/network-schema.png)
+![](network-schema.png)
 
 
 The goal of force-directed methods is to draw connected nodes close to each other as if the edges that connect the nodes were acting as springs. We also don't want all nodes crowded in a single point, but would rather have them spaced evenly. This is achieved by simulating a repulsive force, which decreases with the distance between nodes.
@@ -25,7 +25,7 @@ Fortunately, we found a simple hack to speed things up. When computing the repul
 
 The left layout is obtained without sampling while the right one uses a 10% sampling. The results are pretty similar, but the sampling method is 10 times faster!
 
-![](/images/2017/12/layout-compare.png)
+![](layout-compare.png)
 
 
 Now that the computation is fast enough, it is time to also speed-up the drawing. But that's a task for 2018.

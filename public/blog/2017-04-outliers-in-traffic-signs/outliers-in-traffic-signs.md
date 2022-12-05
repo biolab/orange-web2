@@ -27,15 +27,15 @@ I have assembled a small set of regulatory and warning traffic signs and stored 
 
 The easiest way to display the images is by loading this data file with File widget and then passing the data to the Image Viewer,
 
-![](/images/2017/04/traffic-signs-file-image-viewer.png)
+![](traffic-signs-file-image-viewer.png)
 
 Opening the Image Viewer allows me to see the images:
 
-![](/images/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png)
+![](Screen-Shot-2017-04-25-at-09.59.16.png)
 
 Note that initially the data table we have loaded contains no valuable features on which we can do any machine learning. It includes just a category of traffic sign, its name, and the link to its image.
 
-![](/images/2017/04/traffic-signs-data-table2.png)
+![](traffic-signs-data-table2.png)
 
 
 We will use deep-network embedding to turn these images into numbers to describe them with 2048 real-valued features. Then, we will use Silhouette Plot to find which traffic signs are outliers in their own group. We would like to select these and visualize them in the Image Viewer.
@@ -46,6 +46,6 @@ We will use deep-network embedding to turn these images into numbers to describe
 
 Our final workflow, with selection of three biggest outliers (we used shift-click to select its corresponding silhouettes in the Silhouette Plot), is:
 
-![](/images/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png)
+![](Screen-Shot-2017-04-25-at-10.08.56.png)
 
 Isn't this great? Turns out that traffic signs were carefully designed, such that the three outliers are indeed the signs we should never miss. It is great that we can now reconfirm this design choice by deep learning-based embedding and by using some straightforward machine learning tricks such as Silhouette Plot.

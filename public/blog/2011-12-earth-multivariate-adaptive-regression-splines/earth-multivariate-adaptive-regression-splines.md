@@ -39,7 +39,7 @@ So lets take it out for a spin on a simple toy dataset ([data.tab](http://blog.b
 
 which produces the following plot:
 
-![](/images/2011/12/13/earth_demo_2.png__600x470_q95_subject_location-407%2C297.png)
+![](earth_demo_2.png__600x470_q95_subject_location-407%2C297.png)
 
 
 We can also print the model representation using

@@ -27,7 +27,7 @@ Of course not. We were invited to the workshop to show that there are data scien
 
 We claimed that with such tools, it takes only a few days to train users to master basic and intermediate concepts of data science. And we claimed that this could be done without diving into complex mathematics and statistics.
 
-![](/images/2016/11/ess-big-data-for-owners.jpg)
+![](ess-big-data-for-owners.jpg)
 
 Part of our presentation was a demo in [Orange](http://orange.biolab.si) that showed few tricks we use in such training. The presentation  included:
 
@@ -40,6 +40,6 @@ Part of our presentation was a demo in [Orange](http://orange.biolab.si) that sh
 **Related:** [Data Mining Course at Baylor College of Medicine in Houston](/blog/2016/09/15/data-mining-in-houston-2/)
 
 
-![](/images/2016/11/ess-big-data-cow.jpg)
+![](ess-big-data-cow.jpg)
 
 The Eurostat meeting was very interesting and packed with new ideas. Our thanks to Boro Nikić for inviting us, and thanks to attendees of our session for the many questions and requests we have received during presentation and after the meeting.

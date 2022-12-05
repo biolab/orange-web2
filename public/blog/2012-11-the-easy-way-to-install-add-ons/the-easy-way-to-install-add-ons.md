@@ -11,7 +11,7 @@ The possibility of extending functionality of Orange through [add-ons](http://or
 
 We are happy to report that this is now being taken care of and you are encouraged to test the functionality.
 
-![](/images/2012/11/23/orange-addons-dialog.png__1000x1000_q95.png)
+![](orange-addons-dialog.png__1000x1000_q95.png)
 
 
 Select "Add-ons..." in the Options menu. A dialog will open that will list and describe existing add-ons. You can see the same list on the [appropriate part of Orange website](http://orange.biolab.si/addons/), but there is more. In the dialog, you can simply pick the add-ons you wish to use, confirm the selection and you should be good to go: widgets that come with the selected add-ons will become available immediately.

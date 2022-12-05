@@ -17,15 +17,15 @@ OASYS is basically pure Orange Canvas (Orange but no data mining widgets) that i
 
 In essence, researches in synchrotrons experiment with actual physical objects, such as mirrors and crystals of different shape and size to transmit photons from several light sources of the synchrotron to the experimental endstations. They measure a broad array of material properties through the interaction with the synchrotron light and are trying to simulate different experiment settings before actually building a real-life experiment in the synchrotron. And this is where OASYS truly shines.
 
-![](/images/2016/05/f061dd61-69c6-452c-a73d-3d32ed37622c.png)
+![](f061dd61-69c6-452c-a73d-3d32ed37622c.png)
 
 
-![](/images/2016/05/unnamed-1.png)
+![](unnamed-1.png)
 
 
 Widgets in this case become parts of the simulation pipeline. Each widget has an input and output beam of light, just like real life devices, and the parameters within the widget are physical properties of a particular experimental object. Thus scientists can model the experiment in advance and do it much quicker and easier than before.
 
-![](/images/2016/05/unnamed.png)
+![](unnamed.png)
 
 
 Furthermore, Orange and OASYS provide a user-friendly GUI that domain experts can quickly get used to. There are anecdotal evidences of renowned physicists, who preferred to do their analysis with outdated simulation tools. However, after using OASYS for just a few days, they were already completely comfortable and could reproduce previously calculated results in a software without any problem. Moreover, they did it within several days instead of weeks as before.

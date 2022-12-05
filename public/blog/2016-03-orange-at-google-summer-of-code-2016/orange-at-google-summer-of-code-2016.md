@@ -31,5 +31,5 @@ Spread the word! (and don't forget to apply ;) )
 
 
 
-![](/images/2016/03/1.png)
+![](1.png)
 

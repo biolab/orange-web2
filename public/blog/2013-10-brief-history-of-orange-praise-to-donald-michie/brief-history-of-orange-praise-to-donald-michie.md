@@ -15,10 +15,10 @@ Donald Michie, a pioneer of Artificial Intelligence, was always ahead of time. (
 
 Our paper gives brief account of Orange's history and its developments since WebLab97. For reasons of brevity it does not mention that prior to Qt we have experimented with other GUI platforms. Prior to Qt, we laid our hopes to [Pwm Python megawidgets](http://pmw.sourceforge.net/), a library that helped us to construct the first Orange graphical user interface. The GUI part of Orange was called Orange*First. Its screenshot shows a tab for interactive discretisation, thanks to [Noriaki Aoki](http://www.uthouston.edu/sbmi/faculty-and-staff/noriaki-aoki.htm) who then proposed that this kind of visualisation should be useful in medical data analysis:
 
-![](/images/2013/10/09/orange-first_1.png__600x422_q95_crop_upscale.png)
+![](orange-first_1.png__600x422_q95_crop_upscale.png)
 
 
-PS Somehow, I have lost a latex file with a WebLab97 program. It should be on some backup tape, somewhere. The following scan of the first page (and a [weblab97.pdf](/images/uploads/2013/10/09/weblab97.pdf)), left in some PPT presentation, is all that I can retrieve. The program of the second day is missing, with keynotes from Tom Mitchell, and much talk about then already a success story of R.
+PS Somehow, I have lost a latex file with a WebLab97 program. It should be on some backup tape, somewhere. The following scan of the first page (and a [weblab97.pdf](weblab97.pdf)), left in some PPT presentation, is all that I can retrieve. The program of the second day is missing, with keynotes from Tom Mitchell, and much talk about then already a success story of R.
 
-![](/images/2013/10/09/weblab97_1.jpg__600x794_q95_crop_upscale.jpg)
+![](weblab97_1.jpg__600x794_q95_crop_upscale.jpg)
 

@@ -13,5 +13,5 @@ Jure’s team consisted of several Orange developers and computer science studen
 
 [JRS 2012](http://tunedit.org/challenge/JRS12Contest) is just one in a series of competitions recently organized on servers such as [TunedIT](http://tunedit.org/) and [Kaggle](http://www.kaggle.com/). The price for winning was $1000 and a trip to [Joint Rough Set Symposium](http://sist.swjtu.edu.cn/JRS2012/) in Chengdu, China, to present a winning strategy and developed data mining techiques.
 
-![](/images/2012/04/25/2012-jrs-leaderboard-final.png__600x415_q95_crop_upscale.png)
+![](2012-jrs-leaderboard-final.png__600x415_q95_crop_upscale.png)
 

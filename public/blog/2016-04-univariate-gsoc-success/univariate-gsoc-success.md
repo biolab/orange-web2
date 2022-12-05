@@ -13,7 +13,7 @@ First, we needed to preprocess the data a bit, since it came in a messy form of 
 
 
 
-![](/images/2016/04/blog10.png)
+![](blog10.png)
 
 
 The expression is just a logical statement in Python and works with booleans (0 if False and 1 if True):
@@ -34,29 +34,29 @@ To create three discrete values you would write:
 
 Since we have three values, we need to assign them the corresponding indexes. So if there is 'dogs' in the reply, we would get 0 (which we converted to 'dogs' in the Feature Constructor's 'Values' box), 1 if there's 'cats' in the reply and 2 if none of the above apply.
 
-![](/images/2016/04/blog9.png)
+![](blog9.png)
 
 
 Ok, the next step was to sift through a big pile of attributes. We removed personal information for privacy concerns and selected the ones we cared about the most. For example programming skills, years of experience, contributions to OSS and of course whether someone is a dog or a cat person. :) Select Columns sorts the problem. Here you can download a [mock-up workflow](http://s000.tinyupload.com/?file_id=18444941737485155585) (same as above, but without sensitive data).
 
 Now for some lovely charts. Enjoy!
 
-![](/images/2016/04/blog5.png)
+![](blog5.png)
 Python is our lingua franca, experts wanted!
 
 
 
-![](/images/2016/04/blog8.png)
+![](blog8.png)
 20 years of programming experience? Hello outlier!
 
 
 
-![](/images/2016/04/blog2.png)
+![](blog2.png)
 OSS all the way!
 
 
 
-![](/images/2016/04/blog3.png)
+![](blog3.png)
 Some people love dogs and some love cats. Others prefer elephants and butterflies.
 
 

@@ -9,4 +9,4 @@ blog: ["gsoc" ]
 
 We have made our own recruitment posters for this year's Google Summer of Code inviting students to participate.
 
-![](/images/2011/06/20/gsoc-poster-eng_1.png__160x160_q95_crop_subject_location-354%2C500.jpg)
+![](gsoc-poster-eng_1.png__160x160_q95_crop_subject_location-354%2C500.jpg)

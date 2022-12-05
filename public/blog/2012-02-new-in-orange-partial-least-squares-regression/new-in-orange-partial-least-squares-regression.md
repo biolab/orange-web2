@@ -56,7 +56,7 @@ Output:
      0.422  0.534
 
 
-To test the usefulness of PLS as a multi-target method let's compare it to a single-target method - linear regression. We did this by comparing [Root mean squared error](http://en.wikipedia.org/wiki/Mean_squared_error) (RMSE) of predicted values for a single response variable. We constructed synthetic data sets and performed the RMSE analysis using [this script](/images/2012/02/02/pls_vs_linear.py). The results can be seen in the following output:
+To test the usefulness of PLS as a multi-target method let's compare it to a single-target method - linear regression. We did this by comparing [Root mean squared error](http://en.wikipedia.org/wiki/Mean_squared_error) (RMSE) of predicted values for a single response variable. We constructed synthetic data sets and performed the RMSE analysis using [this script](pls_vs_linear.py). The results can be seen in the following output:
 
     
      Training set sizes      5     10     20     50    100    200    500   1000

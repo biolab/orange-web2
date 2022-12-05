@@ -20,13 +20,13 @@ The main issue was with normalization. While English can do without lemmatizatio
 
 Let us load a simple corpus from Corpus widget, say _grimm-tales-selected.tab_ that contain 44 tales from the Grimm Brothers. Now, pass them through Preprocess Text and keep just the defaults, namely lowercase transformation, tokenization by words, and removal of stopwords. Here we see that we have _came_ as quite a frequent word and _come_ as a bit less frequent. But semantically, they are the same word from the verb _to come_. Shouldn't we consider them as one word?
 
-![](/images/2018/10/Screen-Shot-2018-10-04-at-13.28.50.png)
+![](Screen-Shot-2018-10-04-at-13.28.50.png)
 
 
 
 We can. This is what normalization does - it transforms all words into their lemmas or basic grammatical form. _Came_ and _come_ will become _come_, _sons_ and _son_ will become _son_, _pretty_ and _prettier_ will become _pretty_. This will result in less tokens that capture the text better, semantically speaking.
 
-![](/images/2018/10/Screen-Shot-2018-10-04-at-13.27.03.png)
+![](Screen-Shot-2018-10-04-at-13.27.03.png)
 
 
 
@@ -39,14 +39,14 @@ _I am wearing a tie to work._
 
 Now the word _tie_ is obviously a piece of clothing, which is indicated by the word wearing before it. But _tie_ alone can also be the verb _to tie_. So the UDPipe tokenizer will consider the entire sentence and correctly lemmatize this word, while lemmatization on regular tokens might not. While UDPipe works better, it is also slower, so you might want to work with regular tokenization to speed up the analysis.
 
-![](/images/2018/10/Screen-Shot-2018-10-04-at-13.42.25.png)
+![](Screen-Shot-2018-10-04-at-13.42.25.png)
 In Preprocess Text, you turn on the Normalization button on the right, then select UDPipe Lemmatizer and select the language you wish to use. Finally, if you wish to go with the better albeit slower UDPipe tokenizer, tick the UDPipe tokenizer box.
 
 
 
 Finally, UDPipe does not remove punctuation, so you might end up with words like _rose._ and _away._, with the full stop at the end. This you can fix with using regular tokenization and also by select the Regex option in Filtering, which will remove pure punctuation.
 
-![](/images/2018/10/Screen-Shot-2018-10-04-at-13.26.31.png)
+![](Screen-Shot-2018-10-04-at-13.26.31.png)
 Final workflow, where we compared the results of no normalization and UDPipe normalization in a word cloud.
 
 

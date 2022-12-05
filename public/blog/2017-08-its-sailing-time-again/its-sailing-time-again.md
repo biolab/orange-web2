@@ -24,16 +24,16 @@ forecast. Then, on Saturday, I wrote down if she actually went to the Sea.</bloc
 
 Data on Sara's sailing contains three attributes (Outlook, Company, Sailboat) and a class (Sail).
 
-![](/images/2017/08/sailing-data.png)
+![](sailing-data.png)
 
 
 The data comes with [Orange](http://orange.biolab.si) and you can get them from Data Sets widget (currently in Prototypes Add-On, but soon to be moved to core Orange). It takes time, usually two lecture hours, to go through probabilities, entropy and information gain, but at the end, the data analysis workflow we develop with students looks something like this:
 
-![](/images/2017/08/sailing-tree-model.png)
+![](sailing-tree-model.png)
 
 And here is the classification tree:
 
-![](/images/2017/08/sailing-classification-tree.png)
+![](sailing-classification-tree.png)
 
 
 Turns out that Sara is a social person. When the company is big, she goes sailing no matter what. When the company is smaller, she would not go sailing if the weather is bad. But when it is sunny, sailing is fun, even when being alone.
@@ -44,4 +44,4 @@ Turns out that Sara is a social person. When the company is big, she goes sailin
 
 Classification trees are not very stable classifiers. Even with small changes in the data, the trees can change substantially. This is an important concept that leads to the use of ensembles like random forests. It is also here, during my lecture, that I need to demonstrate this instability. I use Data Sampler and show a classification tree under the current sampling. Pressing on Sample Data button the tree changes every time. The workflow I use is below, but if you really want to see this in action, well, try it in Orange.
 
-![](/images/2017/08/sailing-sampled-trees.png)
+![](sailing-sampled-trees.png)

@@ -14,12 +14,12 @@ It is the time of the year when we adore Christmas trees. But these are not the 
 
 
 Here are six trees in the random forest constructed on the [housing data set](https://archive.ics.uci.edu/ml/datasets/Housing):
-![](/images/2016/12/pythagorean-forest-housing.png)
+![](pythagorean-forest-housing.png)
 
 The random forest for [annealing data set](https://archive.ics.uci.edu/ml/datasets/Annealing) includes a set of smaller-sized trees:
-![](/images/2016/12/random-forest-anneal2.png)
+![](random-forest-anneal2.png)
 
 A Christmas-lit random forest inferred from [pen digits data set](http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits) looks somehow messy in trying to categorize to ten different classes:
-![](/images/2016/12/pythagorean-forest-pendigits.png)
+![](pythagorean-forest-pendigits.png)
 
 The power of beauty! No wonder random forests are one of the best machine learning tools. Orange renders them according to the idea of Fabian Beck and colleagues who proposed [Pythagoras trees for visualizations of hierarchies](http://publications.fbeck.com/ivapp14-pythagoras.pdf). The actual implementation for classification and regression trees for Orange was created by [Pavlin Policar.](https://github.com/pavlin-policar)

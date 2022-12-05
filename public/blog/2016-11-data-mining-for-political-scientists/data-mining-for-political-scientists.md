@@ -13,7 +13,7 @@ But hold on! There are still many social scientists out there who haven't yet he
 
 University of Bologna is the oldest university in the world and has one of the best departments for political sciences in Europe. I held a lecture _Digital Research - Data Mining for Political Scientists_ for [MIREES](http://corsi.unibo.it/2Cycle/mirees/Pages/default.aspx) students, who are specializing in research and studies in Central and Eastern Europe.
 
-![](/images/2016/11/Pretnar-22.jpg)
+![](Pretnar-22.jpg)
 
 Lecture at University of Bologna
 
@@ -21,30 +21,30 @@ The main goal of the lecture was to lay out the possibilities that contemporary 
 
 Perhaps. Our future, data-mining savvy political scientists will decide. Below, you can see some examples of the workflows presented at the workshop.
 
-![](/images/2016/11/Bologna-workflow1.png)
+![](Bologna-workflow1.png)
 
 Author predictions from Tweet content. Logistic Regression reports on 92% classification accuracy and AUC score. Confusion Matrix can output misclassified tweets to Corpus Viewer, where we can inspect these tweets further.
 
 
 
-![](/images/2016/11/Bologna-wordcloud.png)
+![](Bologna-wordcloud.png)
 
 Word Cloud from preprocessed tweets. We removed stopwords and punctuation to find frequencies for meaningful words only.
 
 
 
-![](/images/2016/11/Bologna-enrichment.png)
+![](Bologna-enrichment.png)
 
 Word Enrichment by Author. First we find Donald's tweets with Select Rows and then compare them to the entire corpus in Word Enrichment. The widget outputs a ranked list of significant words for the provided subset. We do the same for Hillary's tweets.
 
 
 
-![](/images/2016/11/Bologna-topicmodelling.png)
+![](Bologna-topicmodelling.png)
 
 Finding potential topics with LDA.
 
 
 
-![](/images/2016/11/Bologna-emotions.png)
+![](Bologna-emotions.png)
 
 Finally, we offered a sneak peek of our recent Tweet Profiler widget. Tweet Profiler is intended for sentiment analysis of tweets and can output classes. probabilities and embeddings. The widget is not yet officially available, but will be included in the upcoming release.

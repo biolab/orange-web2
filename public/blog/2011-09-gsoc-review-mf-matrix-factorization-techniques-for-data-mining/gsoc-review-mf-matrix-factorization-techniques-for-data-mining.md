@@ -131,15 +131,15 @@ Examples with visualized results in bioinformatics, image processing, text analy
 
 Figure 1: Reordered consensus matrix generated for rank = 2 on Leukemia data set.
 
-![](/images/2011/09/04/all_aml_consensus2.png__160x160_q95_crop.png)
+![](all_aml_consensus2.png__160x160_q95_crop.png)
 
 Figure 2: Interpretation of NMF - Divergence basis vectors on Medlars data set. By considering the highest weighted terms in this vector, we can assign a label or topic to basis vector W1, a user might attach the label liver to basis vector W1.
 
-![](/images/2011/09/04/documents_basisw1.png__160x160_q95_crop.png)
+![](documents_basisw1.png__160x160_q95_crop.png)
 
 Figure 3: Basis images of LSNMF obtained after 500 iterations on original face images. The bases trained by LSNMF are additive but not spatially localized for representation of faces.
 
-![](/images/2011/09/04/orl_faces_500_iters_large_lsnmf.png__160x160_q95_crop.png)
+![](orl_faces_500_iters_large_lsnmf.png__160x160_q95_crop.png)
 
 
 ### Relevant Links

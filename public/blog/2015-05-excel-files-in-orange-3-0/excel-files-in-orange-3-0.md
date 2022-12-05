@@ -13,6 +13,6 @@ Since Orange 3.0 is still in the development mode, you will find a smaller selec
 
 
 
-![](/images/2015/05/blog2-compile.png)
+![](blog2-compile.png)
 
 Orange 3.0 can read Excel files.

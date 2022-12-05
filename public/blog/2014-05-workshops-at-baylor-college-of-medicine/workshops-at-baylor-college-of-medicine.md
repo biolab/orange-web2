@@ -13,6 +13,6 @@ Actually, there was a lot of programming, but no Python or alike. The workshop w
 
 The two workshops were organized by [Baylor's Computational and Integrative Biomedical Research Center](https://www.bcm.edu/research/centers/computational-and-integrative-biomedical-research). Over two days, the event was attended by a large audience of 120 attendees.
 
-![](/images/2014/05/26/workshop-a.jpg__610x458_q95_crop_upscale.jpg)
+![](workshop-a.jpg__610x458_q95_crop_upscale.jpg)
 
-![](/images/2014/05/26/workshop-b.jpg__610x458_q95_crop_upscale.jpg)
+![](workshop-b.jpg__610x458_q95_crop_upscale.jpg)

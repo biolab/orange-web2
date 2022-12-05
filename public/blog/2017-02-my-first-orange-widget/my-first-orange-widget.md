@@ -35,7 +35,7 @@ First, I have to set the basic widget class.
 
 This sets up the description of the widget, icon, inputs and so on. `want_control_area` is where we say we only want the main window. Both are on by default in Orange and this simply hides the empty control area on the widget's left side. If your widget has any parameters and controls, leave the control area on and place the buttons there.
 
-![](/images/2017/02/example-area.jpg)
+![](example-area.jpg)
 
 
 
@@ -96,7 +96,7 @@ This is it. This is our widget. Good job. Creating a new widget can indeed be lo
 
 Finally, you can get the [entire widget code in gist](https://gist.github.com/ajdapretnar/e66e1dbecef3bb59abd4137bf8c2ab77).
 
-![](/images/2017/02/Screen-Shot-2017-02-23-at-10.41.27.png)
+![](Screen-Shot-2017-02-23-at-10.41.27.png)
 
 Happy programming, everyone! :)
 

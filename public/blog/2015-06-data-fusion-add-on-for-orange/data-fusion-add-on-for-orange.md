@@ -13,7 +13,7 @@ This widget set can be used either to recommend you the next movie to watch base
 
 The prototype set will be available for download next week, but we are happy to give you a sneak peek below.
 
-![](/images/2015/06/data-fusion-example-workflow-stamped.png)
+![](data-fusion-example-workflow-stamped.png)
 
 Data fusion workflow
 
@@ -24,6 +24,6 @@ Data fusion workflow
 4. In **Latent Factors** we see latent data representation demonstrated by red squares at the side. Let’s select a latent matrix associated with Users as our input for the Data Table.
 5. In **Data Table** we see the latent data matrix of Users. The algorithm infers low-dimensional user profiles by collective consideration of entire data collection, i.e. movie ratings and actor information. In our scenario the algorithm has  transformed 855 movie titles into 70 movie groupings, i.e. latent components.
 
-![](/images/2015/06/fusion.png)
+![](fusion.png)
 
 Data fusion visualized

@@ -17,5 +17,5 @@ The tool prototype has been presented at the [SPIE Optics + Photonic 2014](http:
 
 We're really excited about this novel use of Orange Canvas.
 
-![](/images/2014/08/26/spie.jpg__600x457_q95_upscale.jpg)
+![](spie.jpg__600x457_q95_upscale.jpg)
 

@@ -11,9 +11,9 @@ Did you recently wonder where did Classification Tree go? Or what happened to Ma
 
 Orange 3.4.0 introduced a new widget category, **Model**, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
 
-![](/images/2017/04/Screen-Shot-2017-04-07-at-15.51.36.png)
+![](Screen-Shot-2017-04-07-at-15.51.36.png)
 
-![](/images/2017/04/Screen-Shot-2017-04-07-at-15.41.12.png)
+![](Screen-Shot-2017-04-07-at-15.41.12.png)
 
 This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say _housing.tab_ and _iris.tab_!
 
@@ -35,8 +35,8 @@ Sorry about the last part, we really couldn’t do anything about the very natur
 
 
 
-![](/images/2017/04/Screen-Shot-2017-04-07-at-15.51.12.png)
-![](/images/2017/04/Screen-Shot-2017-04-07-at-15.45.21.png)
+![](Screen-Shot-2017-04-07-at-15.51.12.png)
+![](Screen-Shot-2017-04-07-at-15.45.21.png)
 
 
 

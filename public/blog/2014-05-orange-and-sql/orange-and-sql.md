@@ -39,7 +39,7 @@ Point 9 requires some caution with regard to how the data is retrieved and what 
 
 We have already ported a number of visualizations and other widgets to the new Orange. Here is one nice example: Mosaic needs to discretize the variables and then compute contingency matrices for discrete variables. Within the above scheme, the widget does not care about the storage mechanism, yet its computation is still as efficient as possible.
 
-![](/images/2014/05/29/mosaic.png__600x408_q95_upscale.png)
+![](mosaic.png__600x408_q95_upscale.png)
 
 
 The described activities were funded in part by the European Union's Seventh Framework Programme (FP7/2007-2013) under grant agreement n° 318633.

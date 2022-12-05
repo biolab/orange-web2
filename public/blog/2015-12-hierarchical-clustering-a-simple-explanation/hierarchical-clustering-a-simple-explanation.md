@@ -16,7 +16,7 @@ Our main goal when clustering data is to get groups of data instances where:
 * a union of all groups equals the train data: Ci ∪ Cj = U
 
 This would be ideal. But we rarely get the data, where separation is so clear. One of the easiest techniques to cluster the data is hierarchical clustering. First, we take an instance from, say, 2D plot. Now we want to find its nearest neighbor. Nearest neighbor of course depends on the measure of distance we choose, but let’s go with euclidean for now as it is the easiest to visualize.
-![](/images/2015/12/hier-clust-blog-compare1.jpg)
+![](hier-clust-blog-compare1.jpg)
 First steps of hierarchical clustering.
 
 Euclidean distance is calculated as:
@@ -37,11 +37,11 @@ We can write this down also in a form of a pseudocode:
 	    join closest instances with the group
 
 
-![](/images/2015/12/hier-clust-blog6.png)
+![](hier-clust-blog6.png)
 
 Visualization of this procedure is called a dendrogram, which is what Hierarchical clustering widget displays in Orange.
 
-![](/images/2015/12/hier-clust-blog-compare21.jpg)
+![](hier-clust-blog-compare21.jpg)
 
 Single, complete and average linkage.
  
@@ -53,7 +53,7 @@ Another thing to consider is the distance between instances when we have already
 * Picture C shows the average of all distances in a cluster to the instance – average linkage.
 
 
-![](/images/2015/12/single-vs-complete.jpg)
+![](single-vs-complete.jpg)
 Single vs complete linkage.
  
 

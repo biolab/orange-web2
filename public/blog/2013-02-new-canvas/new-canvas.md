@@ -11,7 +11,7 @@ Orange Canvas, a visual programming environment for Orange, has been around for 
 
 The project started about a year ago, and more than 20 thousand lines of code later, we have something to show you. As of yesterday, the new canvas was merged to the main Orange repository, where it lives alongside the old one. At the moment, it still lacks a lot of testing, some features are not completely implemented, but the main functionality, i.e. visual programming with widgets and links, should work.
 
-![](/images/2013/02/14/screen_shot_2013-02-14_at_144527.png__616x616_q95_upscale.png)
+![](screen_shot_2013-02-14_at_144527.png__616x616_q95_upscale.png)
 
 
 If you are feeling adventurous, you can try it out yourself. Download the latest version from our website and run:
