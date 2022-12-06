@@ -31,6 +31,7 @@ With our story selected, we have to split it into sentences. At the moment, our 
 
 Some Python magic will help us create a new corpus from the existing tokens (sentences). Copy and paste the script below into the **Python Script** widget. Do not forget to press **Run** once you have pasted the script into the widget.
 
+```
     import numpy as np
     from Orange.data import Domain, StringVariable
     from orangecontrib.text.corpus import Corpus
@@ -50,6 +51,7 @@ Some Python magic will help us create a new corpus from the existing tokens (sen
     out_data = Corpus.from_numpy(domain=new_domain, X=np.empty((len(content), 0)),
                                 metas=metas)
     out_data.set_text_features([StringVariable('Sentences')])
+```
 
 <WorkflowScreenshot src="2020-07-27-wf2.png" />
 

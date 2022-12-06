@@ -12,14 +12,14 @@ Random forest classifiers now use **Orange.classification.tree.SimpleTreeLearner
 Using a random forest classifier is easy.
 
 
-
+```
 	import Orange
 
 	iris = Orange.data.Table('iris')
 	forest = Orange.ensemble.forest.RandomForestLearner(iris, trees=200)
 	for instance in iris:
 	    print forest(instance), instance.get_class()
-
+```
 
 
 
@@ -37,9 +37,9 @@ By setting the base_learner parameter to **TreeLearer** it is possible to revert
 
 
 
-    
+```
 	tree_learner = Orange.classification.tree.TreeLearner()
 	forest_orig = Orange.ensemble.forest.RandomForestLearner(base_learner=tree_learner)
-
+```
 
 

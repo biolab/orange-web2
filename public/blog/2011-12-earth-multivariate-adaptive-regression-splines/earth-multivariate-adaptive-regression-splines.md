@@ -14,7 +14,7 @@ So lets take it out for a spin on a simple toy dataset ([data.tab](http://blog.b
 
 
 
-    
+```
     import Orange
     from Orange.regression import earth
     import numpy
@@ -32,7 +32,7 @@ So lets take it out for a spin on a simple toy dataset ([data.tab](http://blog.b
 
     pl.plot(linspace, predictions, "-b")
     pl.show()
-
+```
 
 
 
@@ -44,19 +44,13 @@ which produces the following plot:
 
 We can also print the model representation using
 
-
-
-
-    
+```
     print earth_predictor
-
-
-
-
+```
 
 which outputs:
 
-    
+```
     Y =
        1.013
        +1.198 * max(0, X - 0.485)
@@ -64,7 +58,7 @@ which outputs:
        -1.321 * max(0, X - 0.283)
        -1.609 * max(0, X - 0.640)
        +1.591 * max(0, X - 0.907)
-
+```
 
 See [Orange.regression.earth reference](https://orange-multitarget.readthedocs.io/en/0.9.2/Orange.regression.earth.html) for full documentation.
 

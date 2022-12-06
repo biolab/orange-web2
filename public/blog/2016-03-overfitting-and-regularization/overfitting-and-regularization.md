@@ -31,8 +31,7 @@ While the effects of overfitting and regularization are nicely visible in the pl
 
 Here, I draw the data set (Paint Data, about 20 data instances), assigned y as the target variable (Select Columns), split the data to training and test sets of approximately equal sizes (Data Sampler), and pass training and test data and linear model to the Test & Score widget. Then I can use linear regression with no regularization, and expect how RMSE changes with changing the degree of the polynomial. I can alternate between Test on train data and Test on test data (Test & Score widget). In the class I have used the blackboard to record this dependency. For the data from the figure, I got the following table:
 
-<!-- [table width="500px"]
- -->
+```
 		Poly K, RMSE Train, RMSE Test
 		0,       0.147,      0.138
 		1, 		 0.155, 	 0.192
@@ -44,6 +43,6 @@ Here, I draw the data set (Paint Data, about 20 data instances), assigned y as t
 		7, 		 0.033, 	 2.681
 		8, 		 0.001, 	 5.734
 		9, 		 0.000, 	 4.776
-<!-- [/table] -->
+```
 
 That's it. For the class of computer scientists, one may do all this in scripting, but for any other audience, or for any introductory lesson, explaining of regularization with Orange widgets is a lot of fun.

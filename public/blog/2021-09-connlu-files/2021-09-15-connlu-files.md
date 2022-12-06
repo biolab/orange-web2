@@ -14,6 +14,7 @@ x2images: true  # true if using retina screenshots, else false
 
 [CONLL-U](https://universaldependencies.org/format.html) files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.
 
+```
     # sent_id = ParlaMint-GB_2021-01-05-lords.seg2.2
     # text = The Hybrid Sitting of the House will now begin.
     1 The   the   DET   DT   Definite=Def|PronType=Art   2   det   _   NER=O
@@ -26,6 +27,7 @@ x2images: true  # true if using retina screenshots, else false
     8 now   now   ADV   RB   _   9   advmod   _   NER=O
     9 begin begin   VERB   VB   VerbForm=Inf   0   root   _   NER=O|SpaceAfter=No
     10 .    .   PUNCT   .   _   9   punct   _   NER=O
+```
 
 Since the release of Text v. 1.5.0, Orange can import CONNL-U files and its textual information. Specifically, Orange will import each utterance as a separate text entity. If selected in import options, it will append lemmas as tokens, POS tags as POS tags, and named entities as a separate text column. It will also add meta information to the imported corpus, if present in the folder.
 

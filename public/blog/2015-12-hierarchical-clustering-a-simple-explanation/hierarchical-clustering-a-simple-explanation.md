@@ -28,6 +28,7 @@ Naturally, the shorter the distance the more similar the two instances are. In t
 
 We can write this down also in a form of a pseudocode:
 
+```
 	every instance is in its own cluster
 
 	repeat until instances are all in one group:
@@ -35,7 +36,7 @@ We can write this down also in a form of a pseudocode:
 	    find the closest instances to the group (distance has to be minimum)
 
 	    join closest instances with the group
-
+```
 
 ![](hier-clust-blog6.png)
 

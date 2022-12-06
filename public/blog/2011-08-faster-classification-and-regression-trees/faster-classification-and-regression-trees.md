@@ -48,7 +48,7 @@ At every split an attribute will be skipped with probability skipProb. This para
 
 The code snippet below demonstrates the basic usage of **SimpleTreeLearner**. It behaves much like any other Orange learner would.
 
-
+```
     import Orange
 
     data = Orange.data.Table("iris")
@@ -62,6 +62,6 @@ The code snippet below demonstrates the basic usage of **SimpleTreeLearner**. It
     learner = Orange.classification.tree.SimpleTreeLearner(minExamples=2)
     result = Orange.evaluation.testing.cross_validation([learner], data)
     print 'CA:', Orange.evaluation.scoring.CA(result)[0]
-
+```
 
 

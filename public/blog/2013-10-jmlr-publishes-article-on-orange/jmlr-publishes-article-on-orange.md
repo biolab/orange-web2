@@ -15,7 +15,7 @@ Demšar, J., Curk, T., & Erjavec, A. et al. Orange: Data Mining Toolbox in Pytho
 
 and bibtex entry:
 
-    
+```
     @article{JMLR:demsar13a,
       author  = {Janez Dem\v{s}ar and Toma\v{z} Curk and Ale\v{s} Erjavec and
                  \v{C}rt Gorup and Toma\v{z} Ho\v{c}evar and Mitar Milutinovi\v{c} and
@@ -30,3 +30,4 @@ and bibtex entry:
       pages   = {2349-2353},
       url     = {http://jmlr.org/papers/v14/demsar13a.html}
     }
+```

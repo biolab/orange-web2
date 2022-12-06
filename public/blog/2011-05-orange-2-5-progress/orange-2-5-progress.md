@@ -13,8 +13,7 @@ In the last morning of the camp in Bohinj we decided to use **undercase_separate
 
 A simple example from the documentation of bagging and boosting. The old version first:
 
-
-
+```
     import orange, orngEnsemble, orngTree
     import orngTest, orngStat
 
@@ -29,16 +28,11 @@ A simple example from the documentation of bagging and boosting. The old version
     print "Classification Accuracy:"
     for i in range(len(learners)):
         print ("%15s: %5.3f") % (learners[i].name, orngStat.CA(results)[i])
-
-
-
+```
 
 Orange 2.5 version:
 
-
-
-
-    
+```
     import Orange
 
     tree = Orange.classification.tree.TreeLearner(m_pruning=2, name="tree")
@@ -52,7 +46,7 @@ Orange 2.5 version:
     print "Classification Accuracy:"
     for i in range(len(learners)):
         print ("%15s: %5.3f") % (learners[i].name, Orange.evaluation.scoring.CA(results)[i])
-
+```
 
 
 

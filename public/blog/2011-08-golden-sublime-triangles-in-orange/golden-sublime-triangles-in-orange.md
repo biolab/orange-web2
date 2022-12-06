@@ -12,13 +12,13 @@ Hand in hand with the development of the [new visualization framework](/blog/201
 
 
 
-    
+```
     -        path.moveTo(0, 3)
     -        path.lineTo(0, -3)
     -        path.lineTo(5, 0)
     +        path.moveTo(0, 3.09)
     +        path.lineTo(0, -3.09)
     +        path.lineTo(9.51, 0)
-
+```
 
 

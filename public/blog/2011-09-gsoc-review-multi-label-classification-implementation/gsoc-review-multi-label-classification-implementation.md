@@ -81,6 +81,7 @@ Basically, the way to use multi-label classification and evaluation is nearly th
 
 #### Example for Classification
 
+```
     import Orange
 
     data = Orange.data.Table("emotions.tab")
@@ -105,7 +106,7 @@ Basically, the way to use multi-label classification and evaluation is nearly th
     for e in data:
         c,p = br_cliassifer(e,Orange.classification.Classifier.GetBoth)
         print c,p
-
+```
 
 
 
@@ -114,7 +115,7 @@ Basically, the way to use multi-label classification and evaluation is nearly th
 #### Example for Evaluation
 
 
-
+```
     import Orange
 
     learners = [
@@ -139,7 +140,7 @@ Basically, the way to use multi-label classification and evaluation is nearly th
     print 'accuracy=', accuracy
     print 'precision=', precision
     print 'recall=', recall
-
+```
 
 
 

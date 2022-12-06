@@ -9,7 +9,7 @@ blog: ["documentation" ,"examples" ,"tutorial" ]
 
 Orange just got a new, completely rewritten [scripting tutorial](http://docs.biolab.si/orange/2/tutorial/rst/index.html). The tutorial uses Orange class hierarchy as introduced for version 2.5. The tutorial is supposed to be a gentle introduction in Orange scripting. It includes many examples, from really simple ones to those more complex. To give you a hint about the later, here is the code for learner with feature subset selection from:
 
-    
+```
     class SmallLearner(Orange.classification.PyLearner):
         def __init__(self, base_learner=Orange.classification.bayes.NaiveLearner,
                      name='small', m=5):
@@ -26,7 +26,7 @@ Orange just got a new, completely rewritten [scripting tutorial](http://docs.bio
 
             model = self.base_learner(Orange.data.Table(domain, data), weight)
             return Orange.classification.PyClassifier(classifier=model, name=self.name)
-
+```
 
 
 
@@ -34,7 +34,7 @@ Orange just got a new, completely rewritten [scripting tutorial](http://docs.bio
 The tutorial was first written for Python 2.3. Since, Python and Orange have changed a lot. And so did I. Most of the for loops have become one-liners, list and dictionary comprehension have become a must, and many new and great libraries have emerged. The (boring) tutorial code that used to read
 
 
-    
+```
         c = [0] * len(data.domain.classVar.values)
         for e in data:
             c[int(e.getclass())] += 1
@@ -46,15 +46,14 @@ The tutorial was first written for Python 2.3. Since, Python and Orange have cha
             print ", %d(%4.1f%s) with class %s" % 
                 (c[i], r[i], '%', data.domain.classVar.values[i]),
         print
-
+```
 
 
 is now replaced with
 
-    
+```
     print Counter(str(d.get_class()) for d in data)
-
-
+```
 
 Ok. Pretty print is missing, but that, if not in the same line, could be done in another one.
 

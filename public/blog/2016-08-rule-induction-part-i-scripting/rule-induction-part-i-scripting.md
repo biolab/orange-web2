@@ -20,16 +20,16 @@ The use of the created module is straightforward. New rule induction algorithms 
 
 [Classic CN2](http://dx.doi.org/10.1023/A:1022641700528) inducer constructs a list of ordered rules (decision list). Here, we load the _titanic_ data set and create a simple classifier, which can already be used to predict data.
 
-    
+```
     import Orange
     data = Orange.data.Table('titanic')
     learner = Orange.classification.CN2Learner()
     classifier = learner(data)
-
+```
 
 Similarly, a set of unordered rules can be constructed using [Unordered CN2](http://dx.doi.org/10.1007/BFb0017011) inducer. Rules are learnt for each class individually, in regard to the original learning data. To evaluate found hypotheses, Laplace accuracy measure is used. Having first initialised the learner, we then control the algorithm by modifying its parameters. The underlying components are available to us by accessing the rule finder.
 
-    
+```
     data = Table('iris.tab')
     learner = CN2UnorderedLearner()
     
@@ -46,12 +46,12 @@ Similarly, a set of unordered rules can be constructed using [Unordered CN2](htt
     learner.rule_finder.general_validator.max_rule_length = 2
     
     classifier = learner(data)
-    
+```
 
 
 Induced rules can be quickly reviewed and interpreted. They are each of the form ‘_if_ cond _then_ predict class”. That is, a conjunction of selectors followed by the predicted class.
 
-    
+```
     for rule in classifier.rule_list:
     ... print(rule, rule.curr_class_dist.tolist())
     
@@ -59,7 +59,7 @@ Induced rules can be quickly reviewed and interpreted. They are each of the form
     >>> IF petal length>=3.0 AND petal length<=4.8 THEN iris=Iris-versicolor [0, 46, 3]
     >>> IF petal width>=1.8 AND petal length>=4.9 THEN iris=Iris-virginica [0, 0, 43]
     >>> IF TRUE THEN iris=Iris-virginica [50, 50, 50]  # the default rule
-    
+```
 
 
 If no other rules fire, default rule (majority classification) is used. Specific to each individual rule inducer, the application of the default rule varies.

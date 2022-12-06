@@ -17,7 +17,7 @@ Today, I'll explain how I got started with my widget development. We will create
 
 First, I have to set the basic widget class.
 
-    
+```
     class OWWordFinder(OWWidget):
         name = "Word Finder"
         description = "Display whether a word is in a text or not."
@@ -29,7 +29,7 @@ First, I have to set the basic widget class.
         # outputs = [('Output Name', output_type, 'output_method')]
     
         want_control_area = False
-
+```
 
 
 
@@ -41,7 +41,7 @@ This sets up the description of the widget, icon, inputs and so on. `want_contro
 
 In `__init__` we define widget properties (such as data and queried word) and set the view. I decided to go with a very simple design - I just put everything in the `mainArea`. For such a basic widget this might be ok, but otherwise you might want to dig deeper into models and use `QTableView`, `QGraphicsScene` or something similar. Here we will build just the bare bones of a functioning widget.
 
-    
+```
     def __init__(self):
             super().__init__()
     
@@ -60,7 +60,7 @@ In `__init__` we define widget properties (such as data and queried word) and se
             # place a text label in the mainArea
             self.view = QLabel()
             self.mainArea.layout().addWidget(self.view)
-
+```
 
 Ok, this now sets the `__init__`: what the widget remembers and how it looks like. With our buttons in place, the widget needs some methods, too.
 
@@ -68,13 +68,13 @@ Ok, this now sets the `__init__`: what the widget remembers and how it looks lik
 
 The first method will update the self.corpus attribute, when the widget receives an input.
 
-    
+```
     def set_data(self, data=None):
             if data is not None and not isinstance(data, Corpus):
                 self.corpus = Corpus.from_table(data.domain, data)
             self.corpus = data
             self.search()
-
+```
 
 At the end we called `self.search()` method, which we already met in `__init__` above. This method is key to our widget, as it will run the search every time the word changes. Moreover, it will run the method on the same query word when the widget is provided with a new data set, which is why we set it also in `set_data()`.
 
@@ -82,13 +82,13 @@ At the end we called `self.search()` method, which we already met in `__init__` 
 
 Ok, let's finally write this method.
 
-    
+```
     def search(self):
             self.word = self.input.text()
             # self.corpus.tokens will run a default tokenizer, if no tokens are provided on the input
             result = any(self.word in doc for doc in self.corpus.tokens)
             self.view.setText(str(result))
-
+```
 
 
 

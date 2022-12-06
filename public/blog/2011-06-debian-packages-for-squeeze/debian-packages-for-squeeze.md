@@ -9,10 +9,10 @@ blog: ["debian" ,"distribution" ,"download" ,"packaging" ]
 
 We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your **/etc/apt/sources.list** to:
 
-    
+```
     deb http://orange.biolab.si/debian squeeze main
     deb-src http://orange.biolab.si/debian squeeze main
-
+```
 
 Those packages are compiled for Python 2.6.
 

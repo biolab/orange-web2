@@ -17,26 +17,26 @@ One of the things we did was compute minimum cost of misclassifications. The sto
 
 First, import all the libraries we will need:
 
-    
+```
     import matplotlib.pyplot as plt
     import numpy as np
     
     from Orange.data import Table
     from Orange.classification import NaiveBayesLearner, TreeLearner
     from Orange.evaluation import CrossValidation
-
+```
 
 Then load heart disease data (and print a sample).
 
-    
+```
     heart = Table("heart_disease")
     print(heart[:5])
-    
+```
 
 
 Now, train classifiers and select probabilities of Naive Bayes for a patient being sick.
 
-    
+```
     scores = CrossValidation(heart, [NaiveBayesLearner(), TreeLearner()])
     
     #take probabilites of class 1 (sick) of NaiveBayesLearner
@@ -50,21 +50,21 @@ Now, train classifiers and select probabilities of Naive Bayes for a patient bei
     
     #cost of false negative (patient classified as healthy when sick)
     fn_cost = 800
-    
+```
 
 
 Set counts, where we declare 0 patients being sick (threshold >1).
 
-    
+```
     fp = 0
     #start with threshold above 1 (no one is sick)
     fn = np.sum(y)
-    
+```
 
 
 For each threshold, compute the cost associated with each type of mistake.
 
-    
+```
     ps = []
     costs = []
     
@@ -76,28 +76,28 @@ For each threshold, compute the cost associated with each type of mistake.
             fn -= 1
         ps.append(p1[i])
         costs.append(fp * fp_cost + fn * fn_cost)
-    
+```
 
 
 In the end, we get a list of probability thresholds and associated costs. Now let us find the minimum cost and its probability of a patient being sick.
 
-    
+```
     costs = np.array(costs)
     #find probability of a patient being sick at lowest cost
     print(ps[costs.argmin()])
-    
+```
 
 
 This means the threshold that minimizes our cost for a given classifier is 0.620655. Sara would send all the patients with a probability of being sick higher or equal than 0.620655  for further tests.
 
 At the end, we can also plot the cost to patients sent curve.
 
-    
+```
     fig, ax = plt.subplots()
     plt.plot(ps, costs)
     ax.set_xlabel('Patients sent')
     ax.set_ylabel('Cost')
-    
+```
 
 
 ![](image-1.png)

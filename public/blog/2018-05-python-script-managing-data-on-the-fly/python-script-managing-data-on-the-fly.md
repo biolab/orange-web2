@@ -22,14 +22,14 @@ First, open File widget and load _geo-gds360.tab_ from _Browse documentation dat
 
 Instead, we will connect Python Script to File and use a simple script to apply the same transformation to all attributes.
 
-    
+```
     <code>import numpy as np
     from Orange.data import Table
     
     new_X = np.log(in_data.X)
     out_data = Table(in_data.domain, new_X, in_data.Y, in_data.metas)
     </code>
-
+```
 
 This is really simple. Use in_data.X, which accesses all features in the data set, to transform the data with np.log (or any other numpy function). Set out_data to new_X and, voila, the transformed data is on the output. In a few lines we have instantly handled all 9485 features.
 

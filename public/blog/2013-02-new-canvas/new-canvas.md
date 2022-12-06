@@ -18,21 +18,21 @@ If you are feeling adventurous, you can try it out yourself. Download the latest
 
 Windows:
 
-    
+```
     C:\Python27\python.exe -m Orange.OrangeCanvas.main
-
+```
 
 Mac OS X bundle:
 
-    
+```
     /Applications/Orange.app/Contents/MacOS/python -m Orange.OrangeCanvas.main
-
+```
 
 or, regardless of your operating system,
 
-    
+```
     python -m Orange.OrangeCanvas.main
-
+```
 
 with the python that has Orange installed.
 

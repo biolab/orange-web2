@@ -11,15 +11,15 @@ The last summer, student Wencan Luo participated in [Google Summer of Code](http
 
 You can load multi-label tab-delimited data (e.g. [emotions.tab](http://orange.biolab.si/trac/intertrac/export%3Atrunk/orange/doc/datasets/emotions.tab)) just like any other [tab-delimited data](/doc/reference/Orange.data.formats/#tab-delimited-format):
 
-    
+```
     >>> zoo = Orange.data.Table('zoo')            # single-target
     >>> emotions = Orange.data.Table('emotions')  # multi-label
-
+```
 
 
 The difference is that now zoo's domain has a non-empty **class_var** field, while a list of **emotions**' labels can be obtained through it's domain's **class_vars**:
 
-    
+```
     >>> zoo.domain.class_var
     EnumVariable 'type'
     >>> emotions.domain.class_vars
@@ -29,11 +29,11 @@ The difference is that now zoo's domain has a non-empty **class_var** field, whi
      EnumVariable 'quiet-still',
      EnumVariable 'sad-lonely',
      EnumVariable 'angry-aggresive'>
-
+```
 
 A simple example of a [multi-label classification](/doc/reference/Orange.multilabel/) learner is a "binary relevance" learner. Let's try it out.
 
-    
+```
     >>> learner = Orange.multilabel.BinaryRelevanceLearner()
     >>> classifier = learner(emotions)
     >>> classifier(emotions[0])
@@ -46,7 +46,7 @@ A simple example of a [multi-label classification](/doc/reference/Orange.multila
     >>> classifier(emotions[0], Orange.classification.Classifier.GetProbabilities)
     [<1.000, 0.000>, <0.881, 0.119>, <0.000, 1.000>,
      <0.046, 0.954>, <0.000, 1.000>, <1.000, 0.000>]
-
+```
 
 
 Real values of label variables of **emotions[0]** instance can be obtained by calling **emotions[0].get_classes()**, which is analogous to the **get_class** method in the single-target case.
@@ -54,11 +54,11 @@ Real values of label variables of **emotions[0]** instance can be obtained by ca
 For multi-label classification, we can also perform testing like usual, however, [specialised evaluation measures](/doc/reference/Orange.evaluation.scoring/#scoring-for-multilabel-classification) have to be used:
 
 
-    
+```
     >>> test = Orange.evaluation.testing.cross_validation([learner], emotions)
     >>> Orange.evaluation.scoring.mlc_hamming_loss(test)
     [0.2228780213603148]
-
+```
 
 
 In one of the following blog posts, a multi-target regression method PLS that is in the process of implementation will be described.

@@ -18,9 +18,9 @@ First, we needed to preprocess the data a bit, since it came in a messy form of 
 
 The expression is just a logical statement in Python and works with booleans (0 if False and 1 if True):
 
-    
+```
     'linux' in str(OS_of_choice_and_why_.value).lower() or 'ubuntu' in str(OS_of_choice_and_why_.value).lower()
-
+```
 
 
 
@@ -28,9 +28,9 @@ Another thing we might want to do is create three discrete values for ''Dogs or 
 
 To create three discrete values you would write:
 
-    
+```
     0 if 'dogs' in str(Dogs_or_cats_.value).lower() else 1 if  'cats' in str(Dogs_or_cats_.value).lower() else 2
-
+```
 
 Since we have three values, we need to assign them the corresponding indexes. So if there is 'dogs' in the reply, we would get 0 (which we converted to 'dogs' in the Feature Constructor's 'Values' box), 1 if there's 'cats' in the reply and 2 if none of the above apply.
 

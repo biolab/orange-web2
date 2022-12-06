@@ -12,7 +12,7 @@ blog: ["analysis" ,"network" ,"networkx" ,"visualization" ]
 Complete documentation is available in the [Orange network headquarters](/doc/orange25/Orange.network.html). For a brief overview, take a look at the following example. Let us suppose we would like to analyse the data about patients, having one of two types of leukemia. So, we have a [data set](http://blog.biolab.si/wp-content/uploads/2011/07/29/leukemiagsea.tab) with 72 patient, 4600+ gene expressions and a class variable. We also have a vast [network of human genes](genes_biofuncttar.gz), connected if they share a biological function. What we would like to examine is a sub-network with only several hundred most expressed genes from the data set. To show off a bit, we will also use the [Orange Bioinformatics add-on](/addons/). Here is how we do it:
 
 
-
+```
     import Orange
     import obiExpression
 
@@ -46,7 +46,7 @@ Complete documentation is available in the [Orange network headquarters](/doc/or
 
     # build a subraph of 200 most expressed genes
     G_sub = G.subgraph(indices)
-
+```
 
 
 
@@ -55,7 +55,7 @@ In addition to the power of scripting environment, we also get the benefits of v
 
 
 
-    
+```
     import sys
     import PyQt4
 
@@ -69,6 +69,6 @@ In addition to the power of scripting environment, we also get the benefits of v
     # set the network
     ow.set_graph(G_sub)
     app.exec_()
-
+```
 
 

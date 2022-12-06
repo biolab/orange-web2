@@ -30,7 +30,7 @@ First things first. Orange3-Recommendation can read files in native tab-delimite
 
 Here are the first few lines from a data set:
 
-    
+```
         tid      user        movie       score
         string   discrete    discrete    continuous
         meta     row=1       col=1       class
@@ -40,12 +40,13 @@ Here are the first few lines from a data set:
         4        Ksenija     HarrySally  4
         5        Albert      Matrix      4
         ...
+```
 
 **The third row is mandatory in this kind of datasets***, in order to know which attributes correspond to the users (row=1) and which ones to the items (col=1). For the case of big datasets, users and items must be specified as continuous attributes due to efficiency issues. (*Note: If the meta attributes _row_ or _col_, some simple heuristics will be applied: users=_column 0_, items=_column 1_, class=_last column_)
 
 Here are the first few lines from a data set :
 
-    
+```
         user            movie         score         tid
         continuous      continuous    continuous    time
         row=1           col=1         class         meta
@@ -56,7 +57,7 @@ Here are the first few lines from a data set :
         166             346           1             886397596
         298             474           4             884182806
         ...
-    
+```
 
 
 
@@ -169,35 +170,36 @@ In this tutorial we are going to train a [BRISMF](http://orange3-recommendation
 
 1. First we **import _Orange_ and the learner** that we want to use:
 
+```
         import Orange
         from orangecontrib.recommendation import BRISMFLearner
-
+```
 
 
 2. After that, we have to **load a dataset**:
 
-    
+```
         data = Orange.data.Table('movielens100k.tab')
-
+```
 
 
 
 3. Then we set the **learner parameters**, and finally we **train it** passing the dataset as an argument (the returned value will be our model trained):
 
-    
+```
         learner = BRISMFLearner(num_factors=15, num_iter=25, learning_rate=0.07, lmbda=0.1)
         recommender = learner(data)
-
+```
 
 
 
 4. Finally, we can **make predictions** (in this case, for the first three pairs in the dataset):
 
-    
+```
         prediction = recommender(data[:3])
         print(prediction)
         >>> [ 3.79505151 3.75096513 1.293013 ]
-
+```
 
 
 
@@ -211,7 +213,7 @@ In this tutorial we are going to train a [BRISMF](http://orange3-recommendation
 
 At this point we can try something new, let's make recommendations for a dataset in which only binary relevance is available. For this case, [CLiMF](http://orange3-recommendation.readthedocs.io/en/latest/scripting/ranking.html) is model that will suit our needs.
 
-    
+```
     import Orange
     import numpy as np
     from orangecontrib.recommendation import CLiMFLearner
@@ -226,13 +228,13 @@ At this point we can try something new, let's make recommendations for a datase
     # Make recommendations
     recommender(X=5)
     >>> [ 494,   803,   180, ..., 25520, 25507, 30815]
-
+```
 
 
 
 Later, we can score the model. In this case we're using the _MeanReciprocalRank:_
 
-    
+```
     import Orange
     
     # Load test
@@ -247,7 +249,7 @@ Later, we can score the model. In this case we're using the _MeanReciprocalRank
     mrr, _ = recommender.compute_mrr(data=testdata, users=users_sampled) 
     print('MRR: %.4f' % mrr) 
     >>> MRR: 0.3975
-    
+```
 
 
 

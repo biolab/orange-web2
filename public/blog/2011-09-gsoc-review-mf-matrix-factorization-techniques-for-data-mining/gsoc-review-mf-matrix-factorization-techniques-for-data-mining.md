@@ -83,6 +83,7 @@ General plan for future releases of MF library is to alleviate the usage for non
 
 ### Usage
 
+```
     # Import MF library entry point for factorization
     import mf
 
@@ -117,7 +118,7 @@ General plan for future releases of MF library is to alleviate the usage for non
 
     # Print estimate of target matrix V
     print "Estimate\n", dot(W.todense(), H.todense())
-
+```
 
 
 

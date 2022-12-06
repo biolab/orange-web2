@@ -13,10 +13,7 @@ The conversion script, **orange2to25.py**, resides in Orange's main directory. T
 
 The old code
 
-
-
-
-    
+```
     import orange
     import orngTest, orngStat, orngTree
 
@@ -32,17 +29,12 @@ The old code
     res = orngTest.crossValidation(learners, data, folds=10)
     cm = orngStat.computeConfusionMatrices(res,
             classIndex=data.domain.classVar.values.index('democrat'))
-
-
-
+```
 
 
 is refactored to
 
-
-
-
-    
+```
     import Orange
 
     # set up the learners
@@ -57,7 +49,7 @@ is refactored to
     res = Orange.evaluation.testing.cross_validation(learners, data, folds=10)
     cm = Orange.evaluation.scoring.compute_confusion_matrices(res,
             classIndex=data.domain.classVar.values.index('democrat'))
-
+```
 
 
 
