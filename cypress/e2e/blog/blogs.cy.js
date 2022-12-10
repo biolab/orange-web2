@@ -2,7 +2,7 @@
 import blogPosts from "../../../blogPosts.json";
 import oldBlogs from "./old-blogs.json";
 
-const baseUrl = "http://localhost:3002";
+const baseUrl = "http://localhost:3000";
 
 describe("test blogs", () => {
   blogPosts.forEach((blog, index) => {
