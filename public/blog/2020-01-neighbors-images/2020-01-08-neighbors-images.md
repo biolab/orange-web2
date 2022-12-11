@@ -1,4 +1,3 @@
-
 ---
 author: "Blaž Zupan"
 date: "2020-01-08"
