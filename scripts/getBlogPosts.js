@@ -23,9 +23,13 @@ function getPostsData(files) {
   return files
     .map((postPath) => {
       const fileContents = fs.readFileSync(postPath, "utf8");
-      const [fileName] = /[^/]*$/.exec(postPath);
+
+      const fileName = path.basename(postPath);
       const oldSlug = fileName.replace(/\.md$/, "");
-      const publicFilePath = postPath.split("public/")[1].replace(fileName, "");
+
+      const pulbicFolder = "public";
+      const publicFilePath = postPath.slice(postPath.indexOf(pulbicFolder) + pulbicFolder.length).replace(fileName, "");
+
       const {
         data: { title, draft, longExcerpt, url, date, x2images, thumbImage },
       } = matter(fileContents);
