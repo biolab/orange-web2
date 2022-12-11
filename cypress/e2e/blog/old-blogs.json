@@ -768,7 +768,7 @@
   },
   {
       "uri": "/blog/2019/1/28/the-mystery-of-test-and-score/",
-      "title": "The Mystery of Test &amp;amp; Score",
+      "title": "The Mystery of Test & Score",
       "content": "Test & Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test & Score widget.\nThe widget generally accepts two inputs – Data and Learner. Data is the data set that we will be using for modeling, say, iris.tab that is already pre-loaded in the File widget",
       "image": "",
       "thumbImage": "/blog_img/2019/1/28/ts-blog.png",
@@ -1171,7 +1171,7 @@
   },
   {
       "uri": "/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/",
-      "title": "Understanding Voting Patterns  at AKOS Workshop",
+      "title": "Understanding Voting Patterns at AKOS Workshop",
       "content": "Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (t",
       "image": "",
       "thumbImage": "",
@@ -1210,7 +1210,7 @@
   },
   {
       "uri": "/blog/2017/08/11/its-sailing-time-again/",
-      "title": "It&amp;#39;s Sailing Time (Again)",
+      "title": "It's Sailing Time (Again)",
       "content": "Every fall I teach a course on Introduction to Data Mining. And while the course is really on statistical learning and its applications, I also venture into classification trees. For several reasons. First, I can introduce information gain and with it feature scoring and ranking. Second, classification trees are one of the first machine learning approaches co-invented by engineers (Ross Quinlan) a",
       "image": "",
       "thumbImage": "",
@@ -1535,7 +1535,7 @@
   },
   {
       "uri": "/blog/2016/11/02/orange-at-eurostats-big-data-workshop/",
-      "title": "Orange at Eurostat&amp;#39;s Big Data Workshop",
+      "title": "Orange at Eurostat's Big Data Workshop",
       "content": "A Eurostat’s Big Data Workshop recently took place in Ljubljana. In a presentation we have showcased Orange as a tool to teach data science.\nThe meeting was organised by Statistical Office of Slovenia and by Eurostat, a Statistical Office of the European Union, and was a primary gathering of representatives from national statistical institutes joined within European Statistical System. The m",
       "image": "",
       "thumbImage": "",
@@ -2510,7 +2510,7 @@
   },
   {
       "uri": "/blog/2012/11/27/coming-soon-oranges-new-interface/",
-      "title": "Coming soon: Orange&amp;#39;s new interface",
+      "title": "Coming soon: Orange's new interface",
       "content": "Orange will soon get entirely new interface. The GUI will feature new canvas and icons and new presentation of data flow. Orange will be upgraded with on-line help for widgets and tutorials. The prototype is now in testing and should replace the current version of Orange in early 2013.\n",
       "image": "",
       "thumbImage": "",
