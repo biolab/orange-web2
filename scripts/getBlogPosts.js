@@ -46,7 +46,10 @@ function getPostsData(files) {
         title: title || "",
         date: date || "",
         longExcerpt: longExcerpt || "",
-        url: (url || title || oldSlug).replaceAll(" ", "-").toLowerCase(),
+        url: (url || title || oldSlug)
+          .replaceAll(" ", "-")
+          .replaceAll(/[.,\/#!?%\^&\*;:{}=\_`~()]/g, "")
+          .toLowerCase()
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
