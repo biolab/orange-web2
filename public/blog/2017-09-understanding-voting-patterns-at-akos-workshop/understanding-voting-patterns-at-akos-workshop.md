@@ -2,7 +2,7 @@
 author: "AJDA"
 date: '2017-09-22 11:34:26+00:00'
 draft: false
-title: "Understanding Voting Patterns  at AKOS Workshop"
+title: "Understanding Voting Patterns at AKOS Workshop"
 type: "blog"
 blog: ["clustering" ,"interactive data visualization" ,"unsupervised" ,"visualization"  ,"workshop" ]
 ---

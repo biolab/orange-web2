@@ -45,17 +45,17 @@ How users add widgets to canvas, from 20,775 add widget events.
 
 
 Users tend to add root nodes such as File via a click or drag from the sidebar, while adding leaf nodes such as Data Table via extension from another widget.
-<table style="width: 80%; border-collapse: collapse; border-style: hidden;" border="1" >
+<table style={{width: "80%", borderCollapse: "collapse", borderStyle: "hidden"}} border="1" >
 <tbody >
 <tr >
 
-<td style="width: 50%; border-style: hidden;">
+<td style={{ width: "50%", borderStyle: "hidden"}}>
 
 ![](file-add-type-1.png)
 How users add File to canvas.
 </td>
 
-<td style="width: 50%; border-style: hidden; vertical-align: bottom;">
+<td style={{width: "50%", borderStyle: "hidden", verticalAlign: "bottom"}}>
 
 ![](data-table-type.png)
 How users add Data Table to canvas.
