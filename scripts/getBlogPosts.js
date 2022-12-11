@@ -20,28 +20,30 @@ function getAllMdFiles() {
 }
 
 function getPostsData(files) {
-  return files.map((postPath) => {
-    const fileContents = fs.readFileSync(postPath, "utf8");
-    const [fileName] = /[^/]*$/.exec(postPath);
-    const oldSlug = fileName.replace(/\.md$/, "");
-    const publicFilePath = postPath.split("public/")[1].replace(fileName, "");
+  return files
+    .map((postPath) => {
+      const fileContents = fs.readFileSync(postPath, "utf8");
+      const [fileName] = /[^/]*$/.exec(postPath);
+      const oldSlug = fileName.replace(/\.md$/, "");
+      const publicFilePath = postPath.split("public/")[1].replace(fileName, "");
 
-    const {
-      data: { title, draft, longExcerpt, url, date, x2images },
-    } = matter(fileContents);
+      const {
+        data: { title, draft, longExcerpt, url, date, x2images },
+      } = matter(fileContents);
 
-    return {
-      x2images: !!x2images,
-      fullFilePath: postPath,
-      publicFilePath,
-      oldSlug,
-      draft: !!draft,
-      title: title || "",
-      date: date || "",
-      longExcerpt: longExcerpt || "",
-      url: (url || title || oldSlug).replaceAll(" ", "-").toLowerCase(),
-    };
-  });
+      return {
+        x2images: !!x2images,
+        fullFilePath: postPath,
+        publicFilePath,
+        oldSlug,
+        draft: !!draft,
+        title: title || "",
+        date: date || "",
+        longExcerpt: longExcerpt || "",
+        url: (url || title || oldSlug).replaceAll(" ", "-").toLowerCase(),
+      };
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function getBlogsMetadata() {
