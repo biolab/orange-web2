@@ -47,8 +47,8 @@ function getPostsData(files) {
         date: date || "",
         longExcerpt: longExcerpt || "",
         url: (url || title || oldSlug)
-          .replaceAll(" ", "-")
-          .replaceAll(/[.,\/#!?%\^&\*;:{}=\_`~()]/g, "")
+          .replace(/ /g, "-")
+          .replace(/[.,\/#!?%\^&\*;:{}=\_`~()]/g, "")
           .toLowerCase()
       };
     })
