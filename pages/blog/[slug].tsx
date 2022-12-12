@@ -2,17 +2,18 @@ import matter from "gray-matter";
 import fs from "fs";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { getBlogsMetadata } from "../../scripts/getBlogPosts";
+import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
 import styled from "styled-components";
+import Image from "next/image";
+import { rehypeImageSize } from "@utils/rehypeImageSize";
 
 const Wrapper = styled.div`
   max-width: 800px;
   margin: 0 auto;
 `;
 
-const WSImage = styled.img`
-  max-height: 500px;
+const ScreenshotImage = styled(Image)`
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +60,10 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   const { data: frontmatter, content } = matter(mdFile);
 
   const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath), {
-    mdxOptions: { remarkPlugins: [remarkGfm] }, // Add remarkGfm to support MD tables
+    mdxOptions: {
+      remarkPlugins: [remarkGfm], // Add remarkGfm to support MD tables
+      rehypePlugins: [rehypeImageSize], // Add rehypeImageSize to add width and height to images
+    },
   });
 
   return {
@@ -69,16 +73,25 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
     },
   };
 }
+type ImageProps = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+};
 
-const WorkflowScreenshot = ({ src }: { src: string }) => <WSImage src={src} />;
-const WorkflowScreenshot2x = ({ src }: { src: string }) => <WSImage srcSet={src + " 2x"} />;
-const WindowScreenshot = ({ src }: { src: string }) => <WSImage src={src} />;
 const Video = ({ src }: { src: string }) => (
   <video controls>
     <source src={src} type="video/mp4" />
   </video>
 );
-const Figure = ({ src }: { src: string }) => <img src={src} />;
+const WindowScreenshot = ({ src, alt, width, height }: ImageProps) => (
+  <ScreenshotImage loading="lazy" src={src} alt={alt} width={width} height={height} />
+);
+
+const Figure = ({ src, alt, width, height }: ImageProps) => (
+  <Image loading="lazy" src={src} alt={alt} width={width} height={height} />
+);
 const LinkNew = ({ url, name }: { url: string; name: string }) => {
   return (
     <a href={url} target="_blank">
@@ -111,7 +124,7 @@ export default function BlogPost({ frontmatter, content }: { frontmatter: any; c
           Figure,
           LinkNew,
           WindowScreenshot,
-          WorkflowScreenshot: frontmatter.x2images ? WorkflowScreenshot2x : WorkflowScreenshot,
+          WorkflowScreenshot: WindowScreenshot,
         }}
       />
     </Wrapper>

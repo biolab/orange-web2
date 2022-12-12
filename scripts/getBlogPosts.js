@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+const probe = require("probe-image-size");
 
 function getAllMdFiles() {
   function throughDirectory(dir) {
@@ -17,6 +18,31 @@ function getAllMdFiles() {
   let files = [];
   throughDirectory("public/blog");
   return files;
+}
+
+function getImageSizeAttributes(src) {
+  if (!src) {
+    return null;
+  }
+
+  let size = null;
+
+  try {
+    const img = fs.readFileSync(`public${src}`);
+    size = probe.sync(img);
+  } catch (e) {
+    throw new Error();
+  }
+
+  if (!size) {
+    return null;
+  }
+
+  return {
+    width: size.width,
+    height: size.height,
+    src,
+  };
 }
 
 function getPostsData(files) {
@@ -39,7 +65,7 @@ function getPostsData(files) {
       return {
         x2images: !!x2images,
         fullFilePath: postPath,
-        thumbImage: thumbImagePath,
+        thumbImage: getImageSizeAttributes(thumbImagePath),
         publicFilePath,
         oldSlug,
         draft: !!draft,
@@ -49,7 +75,7 @@ function getPostsData(files) {
         url: (url || title || oldSlug)
           .replace(/ /g, "-")
           .replace(/[.,\/#!?%\^&\*;:{}=\_`~()]/g, "")
-          .toLowerCase()
+          .toLowerCase(),
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
