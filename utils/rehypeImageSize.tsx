@@ -43,7 +43,7 @@ export function rehypeImageSize(this: Processor) {
       let size: ProbeResult | null = null;
 
       try {
-        const imgSrc = node.attributes.find((attribute) => (attribute.name = "src")).value;
+        const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))?.value;
         const img = readFileSync(`public${imgSrc}`);
         size = probe.sync(img);
       } catch (e) {
