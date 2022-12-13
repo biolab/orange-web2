@@ -11,8 +11,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    loader: "akamai",
-    path: "/",
+    loader: "custom",
   },
 };
 

@@ -5,8 +5,8 @@ import { serialize } from "next-mdx-remote/serialize";
 import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
 import styled from "styled-components";
-import Image from "next/image";
 import { rehypeImageSize } from "@utils/rehypeImageSize";
+import Image from "../../components/image";
 
 const Wrapper = styled.div`
   max-width: 800px;

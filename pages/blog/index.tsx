@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import { getBlogsMetadata } from "../../scripts/getBlogPosts";
+import Image from "../../components/image";
 
 const Wrapper = styled.div`
   padding: 100px 38px;
