@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { LightGallery } from "./libs/LightGalery.style";
 
 export const GlobalStyle = createGlobalStyle`
   html, body {
@@ -34,4 +35,6 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+
+  ${LightGallery};
 `;
