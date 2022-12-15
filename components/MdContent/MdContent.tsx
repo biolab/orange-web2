@@ -78,6 +78,7 @@ export default function MdContent({ content }: { content: any }) {
           LinkNew,
           WindowScreenshot,
           WorkflowScreenshot: WindowScreenshot,
+          img: Figure,
         }}
       />
     </ImageGallery>

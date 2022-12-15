@@ -20,7 +20,7 @@ const ThumbImageWrapper = styled.div`
   max-width: 220px;
 `;
 
-const BLOGS_PER_PAGE = 10;
+const BLOGS_PER_PAGE = 200;
 
 export async function getStaticProps() {
   const posts = getBlogsMetadata();

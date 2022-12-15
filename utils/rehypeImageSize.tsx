@@ -15,8 +15,18 @@ interface FlowElement {
   }[];
 }
 
+interface ImgNode {
+  tagName: "img";
+  properties: {
+    src: string;
+    alt: string;
+    height?: number;
+    width?: number;
+  };
+}
+
 export function rehypeImageSize(this: Processor) {
-  function isImageNode(node: any): boolean {
+  function isJsxImageNode(node: any): boolean {
     const img = node as FlowElement;
 
     return Boolean(
@@ -26,24 +36,32 @@ export function rehypeImageSize(this: Processor) {
     );
   }
 
-  return async function transformer(tree: Node, file: VFile): Promise<Node> {
-    const imageNodes: FlowElement[] = [];
+  function imageNode(node: any): boolean {
+    const img = node as ImgNode;
+    return Boolean(img.tagName === "img" && img.properties?.src && !img.properties.src.startsWith("http"));
+  }
 
-    visit(tree, "mdxJsxFlowElement", (node: FlowElement) => {
-      if (isImageNode(node)) {
-        imageNodes.push(node);
+  return async function transformer(tree: Node, file: VFile): Promise<Node> {
+    const JsxNodes: FlowElement[] = [];
+    const imageNodes: ImgNode[] = [];
+
+    visit(tree, "mdxJsxFlowElement", (node: any) => {
+      if (isJsxImageNode(node)) {
+        JsxNodes.push(node as FlowElement);
       }
     });
 
-    if (imageNodes.length === 0) {
-      return tree;
-    }
+    visit(tree, "element", (node: any) => {
+      if (imageNode(node)) {
+        imageNodes.push(node as ImgNode);
+      }
+    });
 
     imageNodes.forEach((node) => {
       let size: ProbeResult | null = null;
 
       try {
-        const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))?.value;
+        const imgSrc = node.properties.src;
         const img = readFileSync(`public${imgSrc}`);
         size = probe.sync(img);
       } catch (e) {
@@ -51,8 +69,28 @@ export function rehypeImageSize(this: Processor) {
       }
 
       if (size) {
+        node.properties = {
+          ...node.properties,
+          width: size.width,
+          height: size.height,
+        };
+      }
+    });
+
+    JsxNodes.forEach((node) => {
+      let size: ProbeResult | null = null;
+
+      try {
+        const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))?.value;
+        const img = readFileSync(`public${imgSrc}`);
+        size = probe.sync(img);
+      } catch (e) {
+        throw new Error(e);
+      }
+
+      if (size) {
         node.attributes.push(
-          { type: "mdxJsxAttribute", name: "width", value: size.width },
+          { type: "mdxJsxAttribute", name: "width", value: "size.width" },
           { type: "mdxJsxAttribute", name: "height", value: size.height }
         );
       }

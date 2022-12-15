@@ -3,6 +3,7 @@ import fs from "fs";
 import { serialize } from "next-mdx-remote/serialize";
 import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
+import remarkUnwrapImages from "remark-unwrap-images";
 import styled from "styled-components";
 import { rehypeImageSize } from "@utils/rehypeImageSize";
 import MdContent from "@components/MdContent/MdContent";
@@ -39,7 +40,7 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
 
   const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath), {
     mdxOptions: {
-      remarkPlugins: [remarkGfm], // Add remarkGfm to support MD tables
+      remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
       rehypePlugins: [rehypeImageSize], // Add rehypeImageSize to add width and height to images
     },
   });

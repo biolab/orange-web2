@@ -14,4 +14,4 @@ If you want to test this feature it is now even easier to do so! A third party d
 
 We hope this will help us reach an even wider audience and introduce Orange to a whole new group of people managing and storing their data in SQL databases. We believe that having lots of data is a great starting point, but the benefits truly kick in with the ability to easily extract useful information from it.
 
-![](2uda-final-logo_thumbnail.jpg)
+![](2uda-final-logo_thumbnail.png)
