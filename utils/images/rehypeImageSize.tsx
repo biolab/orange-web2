@@ -3,8 +3,8 @@ import { Processor } from "unified";
 import { Node } from "unist";
 import { visit } from "unist-util-visit";
 import probe, { ProbeResult } from "probe-image-size";
-import { readFileSync } from "fs";
-
+import { readFileSync, existsSync } from "fs";
+import path from "path";
 interface FlowElement {
   name: "mdxJsxFlowElement";
   tagName: string;
@@ -23,6 +23,15 @@ interface ImgNode {
     height?: number;
     width?: number;
   };
+}
+
+function getWebpPath(imgSrc: string): string {
+  const webpFolder = path.join(path.dirname(imgSrc), "__webp-images__");
+  const baseName = path.basename(imgSrc);
+  const webpBaseName = baseName.slice(0, baseName.lastIndexOf(".")) + ".webp";
+  const webpSrc = path.join(webpFolder, webpBaseName);
+  
+  return existsSync(path.join("public", webpSrc)) ? webpSrc : imgSrc;
 }
 
 export function rehypeImageSize(this: Processor) {
@@ -57,11 +66,12 @@ export function rehypeImageSize(this: Processor) {
       }
     });
 
-    imageNodes.forEach((node) => {
+    imageNodes.forEach(async (node) => {
       let size: ProbeResult | null = null;
 
+      const imgSrc = node.properties.src;
+
       try {
-        const imgSrc = node.properties.src;
         const img = readFileSync(`public${imgSrc}`);
         size = probe.sync(img);
       } catch (e) {
@@ -73,6 +83,7 @@ export function rehypeImageSize(this: Processor) {
           ...node.properties,
           width: size.width,
           height: size.height,
+          src: getWebpPath(imgSrc),
         };
       }
     });
@@ -80,18 +91,22 @@ export function rehypeImageSize(this: Processor) {
     JsxNodes.forEach((node) => {
       let size: ProbeResult | null = null;
 
+      const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))!.value as string;
+
       try {
-        const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))?.value;
         const img = readFileSync(`public${imgSrc}`);
         size = probe.sync(img);
-      } catch (e) {
+      } catch (e: any) {
         throw new Error(e);
       }
 
       if (size) {
+        node.attributes = node.attributes.filter((attribute) => (attribute.name = "src"));
+
         node.attributes.push(
-          { type: "mdxJsxAttribute", name: "width", value: "size.width" },
-          { type: "mdxJsxAttribute", name: "height", value: size.height }
+          { type: "mdxJsxAttribute", name: "width", value: size.width },
+          { type: "mdxJsxAttribute", name: "height", value: size.height },
+          { type: "mdxJsxAttribute", name: "src", value: getWebpPath(imgSrc) }
         );
       }
     });

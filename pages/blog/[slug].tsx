@@ -5,7 +5,7 @@ import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 import styled from "styled-components";
-import { rehypeImageSize } from "@utils/rehypeImageSize";
+import { rehypeImageSize } from "@utils/images/rehypeImageSize";
 import MdContent from "@components/MdContent/MdContent";
 
 const Wrapper = styled.div`
