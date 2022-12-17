@@ -2,15 +2,17 @@
   "name": "orange-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "yarn generate:cache && next dev",
-    "build": "yarn generate:cache && next build",
+    "dev": "next dev",
+    "build": "yarn generate:images && next build",
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "generate:cache": "node scripts/getBlogPosts",
-    "cypress:open": "yarn generate:cache && cypress open",
-    "cypress:run": "yarn generate:cache && cypress run"
+    "generate:images": "node scripts/convertImages",
+    "cacheBlogsMetadata": "node scripts/cacheBlogsMetadata",
+    "cypress:open": "yarn cacheBlogsMetadata && cypress open",
+    "cypress:run": "yarn cacheBlogsMetadata && cypress run"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -20,6 +22,8 @@
     "eslint": "8.28.0",
     "eslint-config-next": "^13.0.5",
     "gray-matter": "^4.0.3",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
     "lightgallery": "^2.7.0",
     "next": "13.0.5",
     "next-mdx-remote": "^4.2.0",
@@ -27,6 +31,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark-gfm": "^3.0.1",
+    "remark-unwrap-images": "^3.0.1",
     "styled-components": "^5.3.6",
     "typescript": "4.9.3"
   },
@@ -34,6 +39,8 @@
     "styled-components": "^5"
   },
   "devDependencies": {
+    "@types/imagemin": "^8.0.0",
+    "@types/imagemin-webp": "^7.0.0",
     "@types/probe-image-size": "^7.2.0",
     "babel-eslint": "^10.1.0",
     "cypress": "^11.2.0",

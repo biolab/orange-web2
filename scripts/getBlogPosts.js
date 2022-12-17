@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const matter = require("gray-matter");
-const probe = require("probe-image-size");
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import probe from "probe-image-size";
 
 function getAllMdFiles() {
   function throughDirectory(dir) {
@@ -53,8 +53,8 @@ function getPostsData(files) {
       const fileName = path.basename(postPath);
       const oldSlug = fileName.replace(/\.md$/, "");
 
-      const pulbicFolder = "public";
-      const publicFilePath = postPath.slice(postPath.indexOf(pulbicFolder) + pulbicFolder.length).replace(fileName, "");
+      const publicFolder = "public";
+      const publicFilePath = postPath.slice(postPath.indexOf(publicFolder) + publicFolder.length).replace(fileName, "");
 
       const {
         data: { title, draft, longExcerpt, url, date, x2images, thumbImage },
@@ -81,22 +81,6 @@ function getPostsData(files) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-function getBlogsMetadata() {
+export function getBlogsMetadata() {
   return getPostsData(getAllMdFiles());
 }
-
-function writeCache() {
-  fs.writeFile("blogPosts.json", JSON.stringify(getBlogsMetadata()), function (err) {
-    if (err) {
-      console.log(err);
-      return;
-    }
-    console.log("Posts cached.");
-  });
-}
-
-writeCache();
-
-module.exports = {
-  getBlogsMetadata,
-};

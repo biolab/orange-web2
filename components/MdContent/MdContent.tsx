@@ -38,12 +38,12 @@ const Video = ({ src }: { src: string }) => (
 );
 const WindowScreenshot = ({ src, alt, width, height }: ImageProps) => (
   <a href={src} data-gallery>
-    <ScreenshotImage loading="lazy" src={src} alt={alt} width={width} height={height} />
+    <ScreenshotImage src={src} alt={alt} width={width} height={height} />
   </a>
 );
 const Figure = ({ src, alt, width, height }: ImageProps) => (
   <a href={src} data-gallery>
-    <Image loading="lazy" src={src} alt={alt} width={width} height={height} />
+    <Image src={src} alt={alt} width={width} height={height} />
   </a>
 );
 const LinkNew = ({ url, name }: { url: string; name: string }) => {
@@ -78,6 +78,7 @@ export default function MdContent({ content }: { content: any }) {
           LinkNew,
           WindowScreenshot,
           WorkflowScreenshot: WindowScreenshot,
+          img: Figure,
         }}
       />
     </ImageGallery>
