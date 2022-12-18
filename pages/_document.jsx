@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {this.props.styleTags}
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" />
         </Head>
         <body>
           <Main />

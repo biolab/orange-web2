@@ -7,18 +7,19 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  /* Reset */
+  html {
+    font-family: ${({ theme }) => theme.baseFont};
+    color: ${({ theme }) => theme.black};
+  }
+
   body {
     background: #fff;
   } 
 
-  /* Reset */
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
 
   *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -32,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   img, video {
+    display: block;
     max-width: 100%;
     height: auto;
   }

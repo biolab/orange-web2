@@ -4,7 +4,7 @@ import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
 
 const Nav = styled.nav<{ $open?: boolean }>`
-  background: coral;
+  background: ${({ theme }) => theme.orangeColor};
   height: 60px;
   display: flex;
   align-items: center;
