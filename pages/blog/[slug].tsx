@@ -7,22 +7,12 @@ import remarkUnwrapImages from "remark-unwrap-images";
 import styled from "styled-components";
 import { rehypeImageSize } from "@utils/images/rehypeImageSize";
 import MdContent from "@components/MdContent/MdContent";
+import addRelativePathToImages from "@utils/images/addRelativePathToImages";
 
 const Wrapper = styled.div`
   max-width: 800px;
   margin: 0 auto;
 `;
-
-function addRelativePathToImages(content: string, imgRelativePath: string): string {
-  if (!imgRelativePath || !content) {
-    return content;
-  }
-
-  // Add relative path IF img src does NOT start with 'http' OR '/'
-  return content
-    .replace(/src="(?!(http)|(\/))/g, `src="${imgRelativePath}`)
-    .replace(/\]\((?!(http)|(\/))/g, `](${imgRelativePath}`);
-}
 
 export async function getStaticPaths() {
   const paths = getBlogsMetadata().map((post: any) => ({ params: { slug: post.url } }));

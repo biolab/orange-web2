@@ -2,23 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import probe from "probe-image-size";
-
-function getAllMdFiles() {
-  function throughDirectory(dir) {
-    fs.readdirSync(dir).forEach((file) => {
-      const absolute = path.join(dir, file);
-      if (fs.statSync(absolute).isDirectory()) {
-        return throughDirectory(absolute);
-      } else if (absolute.endsWith(".md")) {
-        files.push(absolute);
-      }
-    });
-  }
-
-  let files = [];
-  throughDirectory("public/blog");
-  return files;
-}
+import getAllMdFilesInDir from "../utils/getAllMdFilesInDir";
 
 function getImageSizeAttributes(src) {
   if (!src) {
@@ -82,5 +66,5 @@ function getPostsData(files) {
 }
 
 export function getBlogsMetadata() {
-  return getPostsData(getAllMdFiles());
+  return getPostsData(getAllMdFilesInDir("public/blog"));
 }

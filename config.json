@@ -1,0 +1,12 @@
+{
+  "menu": [
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Workflows",
+      "url": "/workflows"
+    }
+  ]
+}
