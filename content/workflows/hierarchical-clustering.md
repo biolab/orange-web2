@@ -1,6 +1,6 @@
 ---
 title: "Hierarchical Clustering"
-images: ["/workflow_images/hierarchical-clustering.png"]
+images: ["/workflow_images/hierarchical-clustering.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

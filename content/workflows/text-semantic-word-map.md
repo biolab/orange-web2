@@ -1,6 +1,6 @@
 ---
 title: "Semantic Word Map"
-images: ["/workflow_images/text-semantic-word-map.png", "/workflow_images/text-semantic-word-map-tsne.png"]
+images: ["/workflow_images/text-semantic-word-map.webp", "/workflow_images/text-semantic-word-map-tsne.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

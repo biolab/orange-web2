@@ -1,6 +1,6 @@
 ---
 title: "Cross Validation for Survival Models"
-images: ["/workflow_images/730_c_index_cross_validation.png"]
+images: ["/workflow_images/730_c_index_cross_validation.webp"]
 type: "workflows"
 blog: ""
 video: ""

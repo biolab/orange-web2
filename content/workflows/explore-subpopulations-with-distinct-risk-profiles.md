@@ -1,6 +1,6 @@
 ---
 title: "Explore Subpopulations with Distinct Risk Profiles"
-images: ["/workflow_images/740_hierarhical_clustering.png"]
+images: ["/workflow_images/740_hierarhical_clustering.webp"]
 type: "workflows"
 blog: ""
 video: ""

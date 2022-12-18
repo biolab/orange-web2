@@ -1,6 +1,6 @@
 ---
 title: "Story Arcs"
-images: ["/workflow_images/story-arcs.png"]
+images: ["/workflow_images/story-arcs.webp"]
 type: "workflows"
 blog_link: "2020/2020-07-27-story-arcs/"
 video: ""

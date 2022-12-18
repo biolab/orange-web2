@@ -1,6 +1,6 @@
 ---
 title: "Feature Ranking"
-images: ["/workflow_images/feature-ranking.png"]
+images: ["/workflow_images/feature-ranking.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

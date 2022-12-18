@@ -1,6 +1,6 @@
 ---
 title: "Inspecting Outliers with Silhouette"
-images: ["/workflow_images/silhouette.png"]
+images: ["/workflow_images/silhouette.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

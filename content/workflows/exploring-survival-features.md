@@ -1,6 +1,6 @@
 ---
 title: "Exploring Survival Features"
-images: ["/workflow_images/710_survival_features.png"]
+images: ["/workflow_images/710_survival_features.webp"]
 type: "workflows"
 blog: ""
 video: ""

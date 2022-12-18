@@ -1,7 +1,7 @@
 
 ---
 title: "Survival Curve Estimation"
-images: ["/workflow_images/700_survival_curve_estimation.png"]
+images: ["/workflow_images/700_survival_curve_estimation.webp"]
 type: "workflows"
 blog: ""
 video: ""

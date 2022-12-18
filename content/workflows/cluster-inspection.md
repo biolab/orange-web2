@@ -1,6 +1,6 @@
 ---
 title: "Cluster Inspection"
-images: ["/workflow_images/cluster-inspection.png"]
+images: ["/workflow_images/cluster-inspection.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

@@ -1,6 +1,6 @@
 ---
 title: "Text Clustering"
-images: ["/workflow_images/text-clustering.png"]
+images: ["/workflow_images/text-clustering.webp"]
 type: "workflows"
 blog_link: ""
 video: "https://youtu.be/rH_vQxQL6oM"

@@ -1,6 +1,6 @@
 ---
 title: "Principal Component Analysis"
-images: ["/workflow_images/pca.png"]
+images: ["/workflow_images/pca.webp"]
 type: "workflows"
 blog_link: ""
 video: ""

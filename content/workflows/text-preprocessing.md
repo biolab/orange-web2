@@ -1,6 +1,6 @@
 ---
 title: "Text Preprocessing"
-images: ["/workflow_images/text-preprocessing.png"]
+images: ["/workflow_images/text-preprocessing.webp"]
 type: "workflows"
 blog_link: "2017/06/19/text-preprocessing/"
 video: "https://youtu.be/V70UwJZWkZ8"

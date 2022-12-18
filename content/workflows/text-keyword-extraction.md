@@ -1,6 +1,6 @@
 ---
 title: "Keyword Extraction from a Set of Text Documents"
-images: ["/workflow_images/text-keyword-extraction.png"]
+images: ["/workflow_images/text-keyword-extraction.webp"]
 type: "workflows"
 blog_link: ""
 video: ""
