@@ -10,6 +10,7 @@ import matter from "gray-matter";
 import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import Image from "@components/Image/Image";
 import TagsList from "@components/TagsList/TagsList";
+import getImageSize, { ImageProps } from "@utils/images/getImageSize";
 
 const Wrapper = styled.div`
   padding: 100px 38px;
@@ -29,7 +30,7 @@ const Item = styled.li`
 
 interface IWorkflow {
   title: string;
-  images: string[];
+  images: ImageProps[];
   workflows: string[];
   content: MDXRemoteSerializeResult;
   download: string;
@@ -57,6 +58,7 @@ export async function getStaticProps() {
     } else {
       workflows.push({
         ...(frontmatter as IWorkflow),
+        images: frontmatter.images?.map((image: string) => getImageSize(image)) || [],
         content: mdxSource,
       });
     }
@@ -103,7 +105,7 @@ export default function Workflows({
           <Item key={index}>
             <div>{title}</div>
 
-            {images && images.map((image) => <Image key={image} src={image} />)}
+            {images && images.map((image) => <Image key={image.src} {...image} />)}
             <TagsList tags={workflowTags} selectedTag={selectedTag} onTagClick={onTagClick} />
 
             <MDXRemote {...content} />
