@@ -9,8 +9,8 @@ const customLoader = ({ src }: { src: string }) => {
 
 export default function Image(props: any) {
   if (!(props.width && props.height)) {
-    return <img {...props} />;
+    return <img {...props} alt={props.alt || ""} />;
   }
 
-  return <NextImage {...props} loader={customLoader} />;
+  return <NextImage {...props} alt={props.alt || ""} loader={customLoader} />;
 }

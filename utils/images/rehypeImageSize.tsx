@@ -30,7 +30,7 @@ function getWebpPath(imgSrc: string): string {
   const baseName = path.basename(imgSrc);
   const webpBaseName = baseName.slice(0, baseName.lastIndexOf(".")) + ".webp";
   const webpSrc = path.join(webpFolder, webpBaseName);
-  
+
   return existsSync(path.join("public", webpSrc)) ? webpSrc : imgSrc;
 }
 

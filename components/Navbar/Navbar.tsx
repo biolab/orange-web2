@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
+import config from "config.json";
 
 const Nav = styled.nav<{ $open?: boolean }>`
   background: ${({ theme }) => theme.orangeColor};
@@ -25,7 +26,7 @@ const Burger = styled.button`
   @media ${device.M} {
     display: block;
   }
-`
+`;
 
 export default function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -33,7 +34,13 @@ export default function Navbar() {
   return (
     <Nav $open={open}>
       <ul>
-        <Link href="/blog">Blog</Link>
+        {config.menu.map(({ name, url }) => {
+          return (
+            <li key={name}>
+              <Link href={url}>{name}</Link>
+            </li>
+          );
+        })}
       </ul>
 
       <Burger onClick={() => setOpen(!open)}>X</Burger>
