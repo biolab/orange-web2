@@ -11,6 +11,7 @@ import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import Image from "@components/Image/Image";
 import TagsList from "@components/TagsList/TagsList";
 import getImageSize, { ImageProps } from "@utils/images/getImageSize";
+import path from "path";
 
 const Wrapper = styled.div`
   padding: 100px 38px;
@@ -37,12 +38,13 @@ interface IWorkflow {
 }
 
 export async function getStaticProps() {
-  const workflowsMdFiles = getAllMdFilesInDir("content/workflows");
+  const workflowsMdFiles = getAllMdFilesInDir("public/workflows");
 
   const workflows: IWorkflow[] = [];
   let page = null;
 
   for (const file of workflowsMdFiles) {
+    const dirInPublic = path.dirname(path.relative("public", file));
     const mdFile = readFileSync(file, "utf-8");
     const { data: frontmatter, content } = matter(mdFile);
 
@@ -58,7 +60,7 @@ export async function getStaticProps() {
     } else {
       workflows.push({
         ...(frontmatter as IWorkflow),
-        images: frontmatter.images?.map((image: string) => getImageSize(image)) || [],
+        images: frontmatter.images?.map((image: string) => getImageSize(path.join(path.sep, dirInPublic, image))) || [],
         content: mdxSource,
       });
     }
