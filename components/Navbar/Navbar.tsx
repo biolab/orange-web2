@@ -5,7 +5,7 @@ import device from "@styles/utils/breakpoints";
 import config from "config.json";
 
 const Nav = styled.nav<{ $open?: boolean }>`
-  background: coral;
+  background: ${({ theme }) => theme.orangeColor};
   height: 60px;
   display: flex;
   align-items: center;
