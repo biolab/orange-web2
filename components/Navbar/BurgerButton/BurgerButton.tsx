@@ -16,6 +16,7 @@ export const StyledBurger = styled.button`
         `linear-gradient(180deg, ${theme.orangeGradientColor1} 74.93%, ${theme.orangeGradientColor2} 100%)`};
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
     cursor: pointer;
+    margin-left: auto;
 
     @media ${device.M} {
         display: flex;
@@ -26,33 +27,19 @@ export const StyledBurger = styled.button`
         background: ${({ theme }) => theme.white};
         transform-origin: 1px;
         transition: all 0.3s linear;
-
-        &:nth-child(1) {
-            transform: ${({ open }) => open ? 'translateX(3px) rotate(45deg)' : 'translateX(0) rotate(0)'};
-        }
-        &:nth-child(2) {
-            opacity: ${({ open }) => open ? 0 : 1};
-          }
-        &:nth-child(3) {
-            transform: ${({ open }) => open ? 'translateX(3px) rotate(-45deg)' : 'translateX(0) rotate(0)'};
-        }
       }
 `;
 
-const BurgerButton = () => {
-    const [open, setOpen] = React.useState(false);
-
+function BurgerButton({ onClick }: { onClick: any }){
+    
     return (
-
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
-            <div />
-            <div />
-            <div />
-            <span className="sr-only">Toggle navigation</span>
+        <StyledBurger onClick={onClick}>
+          <div />
+          <div />
+          <div />
+          <span className="sr-only">Toggle navigation</span>
         </StyledBurger>
-
-    )
+    );
 }
-
 
 export default BurgerButton;
