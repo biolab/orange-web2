@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     background: #fff;
   } 
 
-
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -36,6 +35,22 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+  ::selection {
+    background-color: ${({ theme }) => theme.orange};
+    color: ${({theme}) => theme.white};
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
   }
 
   ${LightGallery};
