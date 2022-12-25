@@ -72,7 +72,7 @@ const MenuList = styled.ul`
 
   @media ${device.M} {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   li {
@@ -101,6 +101,24 @@ const MenuList = styled.ul`
   }
    
 `;
+const MenuTools = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media ${device.M} {
+    display: block;
+  }
+
+  * + * {
+    margin-left: 26px;
+
+    @media ${device.M}{
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+`;
 
 export default function Navbar() {
   const [navOpened, setNavOpened] = React.useState(false);
@@ -124,10 +142,10 @@ export default function Navbar() {
                 );
               })}
             </MenuList>
-            <div>
+            <MenuTools>
               <div>Search</div>  
               <LinkAsButton>Donate</LinkAsButton>
-            </div>
+            </MenuTools>
           </MenuWrapper>
 
           <BurgerButton onClick={() => setNavOpened((val) => !val)} />
