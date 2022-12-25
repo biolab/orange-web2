@@ -6,6 +6,7 @@ import config from "config.json";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import Image from "../../components/Image/Image";
 import LogoImage from "../../public/assets/icons/logo-orange.svg";
+import Adapt from "@components/UiKit/Adapt";
 
 const Nav = styled.nav`
   position: fixed;
@@ -16,24 +17,6 @@ const Nav = styled.nav`
   z-index: 5;
   background: ${({ theme }) => theme.white};
   box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.04);
-`;
-const Adapt = styled.div`
-  position: relative;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 72px;
-  padding-right: 72px;
-  height: 100%;
-
-  @media ${device.L} {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  @media ${device.S} {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 `;
 const NavInner = styled.div`
   display: flex;

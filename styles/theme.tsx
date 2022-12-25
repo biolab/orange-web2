@@ -12,5 +12,7 @@ export const theme = {
   orangeGradientColor1: "#FE7A00",
   orangeGradientColor2: "#F65D18",
 
+  adaptMaxWidth: '1440px',
+
   baseFont: "'Source Sans Pro', sans-serif",
 };
