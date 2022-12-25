@@ -35,10 +35,26 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  figure {
+    margin: 0;
+  }
+
   img, video {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+  a {
+    color: unset;
+    text-decoration: none;
+    
+    &:hover {
+      color: unset;
+    }
+  }
+
+  strong {
+    font-weight: ${({theme})=> theme.fontWeight600};
   }
 
   ::selection {

@@ -28,13 +28,14 @@ const LinkAsButton = styled.a`
         height: 100%;
         border-radius: inherit;
         background-image: ${({ theme }) =>
-            `linear-gradient(180deg, ${theme.orangeHover} 100%, ${theme.orangeGradientColor1} 100%)`};
+        `linear-gradient(180deg, ${theme.orangeHover} 100%, ${theme.orangeGradientColor1} 100%)`};
         opacity: 0;
         z-index: -100;
         transition: opacity 0.45s;
     }
 
     &:hover {
+        color: ${({ theme }) => theme.white};
         &:before {
             opacity: 1;
         }
