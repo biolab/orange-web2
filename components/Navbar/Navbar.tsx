@@ -7,6 +7,7 @@ import BurgerButton from "./BurgerButton/BurgerButton";
 import Image from "../../components/Image/Image";
 import LogoImage from "../../public/assets/icons/logo-orange.svg";
 import Adapt from "@components/UiKit/Adapt";
+import LinkAsButton from "@components/UiKit/LinkAsButton";
 
 const Nav = styled.nav`
   position: fixed;
@@ -24,9 +25,9 @@ const NavInner = styled.div`
   align-items: center;
   height: 100%;
 
-  .logo {
+  .img-logo {
     width: 115px;
-    background-color: #000;
+    margin-top: 18px;
   }
 `;
 const MenuWrapper = styled.div<{ navOpened?: boolean }>`
@@ -109,7 +110,9 @@ export default function Navbar() {
       <Adapt>
         <NavInner>
 
-          <Image src={LogoImage.src} width={LogoImage.width} height={LogoImage.height} alt="Orange Logo"/>
+          <Link href="/">
+            <Image className="img-logo" src={LogoImage.src} width={LogoImage.width} height={LogoImage.height} alt="Orange Logo"/>
+          </Link>
       
           <MenuWrapper navOpened={navOpened}>
             <MenuList>
@@ -122,8 +125,8 @@ export default function Navbar() {
               })}
             </MenuList>
             <div>
-              <div>Search</div>
-              <div>Donate</div>
+              <div>Search</div>  
+              <LinkAsButton>Donate</LinkAsButton>
             </div>
           </MenuWrapper>
 

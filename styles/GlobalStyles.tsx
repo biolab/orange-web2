@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-family: ${({ theme }) => theme.baseFont};
+    font-weight: ${({theme}) => theme.fontWeight400};
     color: ${({ theme }) => theme.black};
   }
 
