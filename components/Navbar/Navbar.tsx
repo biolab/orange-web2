@@ -4,6 +4,8 @@ import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
 import config from "config.json";
 import BurgerButton from "./BurgerButton/BurgerButton";
+import Image from "../../components/Image/Image";
+import LogoImage from "../../public/assets/icons/logo-orange.svg";
 
 const Nav = styled.nav`
   position: fixed;
@@ -124,8 +126,8 @@ export default function Navbar() {
       <Adapt>
         <NavInner>
 
-          <div className="logo">Logo</div>
-
+          <Image src={LogoImage.src} width={LogoImage.width} height={LogoImage.height} alt="Orange Logo"/>
+      
           <MenuWrapper navOpened={navOpened}>
             <MenuList>
               {config.menu.map(({ name, url }) => {
