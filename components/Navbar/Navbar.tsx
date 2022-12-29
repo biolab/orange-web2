@@ -134,13 +134,11 @@ export default function Navbar() {
       
           <MenuWrapper navOpened={navOpened}>
             <MenuList>
-              {config.menu.map(({ name, url }) => {
-                return (
-                  <li key={name}>
-                    <Link href={url}>{name}</Link>
-                  </li>
-                );
-              })}
+              {config.menu.map(({ name, url }) => (
+                <li key={name}>
+                  <Link href={url}>{name}</Link>
+                </li>
+              ))}
             </MenuList>
             <MenuTools>
               <div>Search</div>  
