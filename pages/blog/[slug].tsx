@@ -8,10 +8,10 @@ import styled from "styled-components";
 import { rehypeImageSize } from "@utils/images/rehypeImageSize";
 import MdContent from "@components/MdContent/MdContent";
 import addRelativePathToImages from "@utils/images/addRelativePathToImages";
+import Adapt from "@components/UiKit/Adapt";
 
-const Wrapper = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
+const BlogDetailWrapper = styled.div`
+ 
 `;
 
 export async function getStaticPaths() {
@@ -45,9 +45,11 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
 
 export default function BlogPost({ frontmatter, content }: { frontmatter: any; content: any }) {
   return (
-    <Wrapper>
-      <h1>{frontmatter.title}</h1>
-      <MdContent content={content} />
-    </Wrapper>
+    <BlogDetailWrapper>
+      <Adapt>
+        <h1>{frontmatter.title}</h1>
+        <MdContent content={content} />
+      </Adapt>
+    </BlogDetailWrapper>
   );
 }
