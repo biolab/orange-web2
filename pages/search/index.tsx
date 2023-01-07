@@ -1,6 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import lunr from "lunr";
 import { getBlogsMetadata } from "../../scripts/getBlogPosts";
 import Image from "../../components/Image/Image";
 import { useRouter } from "next/router";
@@ -45,27 +46,57 @@ export default function Search({
     shortExcerpt: string;
     thumbImage: any;
   }[];
-  postsLength: number;
 }) {
   const router = useRouter();
 
   const [page, setPage] = React.useState(0);
+  const [index, setIndex] = React.useState<lunr.Index | null>(null);
+
+  useEffect(() => {
+    const index = lunr(function () {
+      this.ref("url");
+      this.field("title", {
+        boost: 50,
+      });
+      this.field("categories", {
+        boost: 30,
+      });
+      this.field("type", {
+        boost: 70,
+      });
+      this.field("author", {
+        boost: 10,
+      });
+      this.field("content", {
+        boost: 1,
+      });
+
+      posts.forEach((doc: any) => {
+        this.add(doc);
+      }, this);
+    });
+
+    setIndex(index);
+  }, [router.query.q]);
 
   const searchResults = React.useMemo(() => {
     const query = router.query.q?.toString().toLowerCase();
 
-    if (!query) {
+    if (!query || !index) {
       return [];
     }
 
-    return posts.filter((post) => {
-      return (
-        post.title.toLowerCase().includes(query) ||
-        post.longExcerpt.toLowerCase().includes(query) ||
-        post.shortExcerpt.toLowerCase().includes(query)
-      );
-    });
-  }, [posts, router.query.q]);
+    const lunrResults = index.search(query);
+
+    return posts
+      .filter((post) => lunrResults.find((result) => result.ref === post.url))
+      .sort((a, b) => {
+        const aIndex = lunrResults.find((result) => result.ref === a.url)!.score;
+        const bIndex = lunrResults.find((result) => result.ref === b.url)!.score;
+
+        return bIndex - aIndex;
+      });
+  }, [router.query.q, index]);
 
   const noOfPages = React.useMemo(() => Math.ceil(searchResults.length / BLOGS_PER_PAGE), [searchResults]);
   const postsOnPage = React.useMemo(
