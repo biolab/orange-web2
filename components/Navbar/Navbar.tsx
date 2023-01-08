@@ -5,23 +5,9 @@ import BurgerButton from "./BurgerButton/BurgerButton";
 import Image from "../../components/Image/Image";
 import LogoImage from "../../public/assets/icons/logo-orange.svg";
 import Adapt from "@components/UiKit/Adapt";
-import LinkAsButton from "@components/UiKit/LinkAsButton";
 import * as Styled from "./Navbar.styled";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-
-const SearchWrapper = styled.form<{ searchFocused: boolean }>`
-  width: 100px;
-  transition: width 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-
-  ${({ searchFocused: searchOpened }) => searchOpened && "width: 300px;"}
-`;
-
-const SearchInput = styled.input`
-  width: 100%;
-`;
 
 function Search() {
   const [searchOpened, setSearchOpened] = React.useState(false);
@@ -41,8 +27,9 @@ function Search() {
   );
 
   return (
-    <SearchWrapper searchFocused={searchOpened}>
-      <SearchInput
+    <Styled.SearchWrapper>
+      <Styled.SearchInput
+        searchFocused={searchOpened}
         type="text"
         placeholder="Search"
         onFocus={() => setSearchOpened(true)}
@@ -50,10 +37,10 @@ function Search() {
         value={input}
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setInput(e.target.value)}
       />
-      <button type="submit" onClick={search}>
+      <Styled.SearchButton type="submit" onClick={search}>
         Go
-      </button>
-    </SearchWrapper>
+      </Styled.SearchButton>
+    </Styled.SearchWrapper>
   );
 }
 
@@ -74,21 +61,19 @@ export default function Navbar() {
             />
           </Link>
 
-          <BurgerButton onClick={() => setNavOpened((val) => !val)} />
-
-          <Styled.MenuWrapper $navOpened={navOpened}>
-            <Styled.MenuList>
-              {config.menu.map(({ name, url }) => (
-                <li key={name}>
-                  <Link href={url}>{name}</Link>
-                </li>
-              ))}
-            </Styled.MenuList>
-            <Styled.MenuTools>
-              <LinkAsButton>Donate</LinkAsButton>
+          <Styled.NavRightSide>
+            <BurgerButton onClick={() => setNavOpened((val) => !val)} />
+            <Styled.MenuWrapper $navOpened={navOpened}>
+              <Styled.MenuList>
+                {config.menu.map(({ name, url }) => (
+                  <li key={name}>
+                    <Link href={url}>{name}</Link>
+                  </li>
+                ))}
+              </Styled.MenuList>
               <Search />
-            </Styled.MenuTools>
-          </Styled.MenuWrapper>
+            </Styled.MenuWrapper>
+          </Styled.NavRightSide>
         </Styled.NavInner>
       </Adapt>
     </Styled.Nav>
