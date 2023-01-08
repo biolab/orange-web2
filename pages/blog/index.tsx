@@ -130,7 +130,9 @@ export default function Blog({
         </BlogList>
 
         {Array.from({ length: noOfPages }).map((_, index) => (
-          <button onClick={() => setPage(index)}>{index + 1}</button>
+          <button key={index} onClick={() => setPage(index)}>
+            {index + 1}
+          </button>
         ))}
       </Adapt>
     </BlogWrapper>

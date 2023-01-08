@@ -37,7 +37,7 @@ function Search() {
         query: { q: input },
       });
     },
-    [input]
+    [input, router]
   );
 
   return (

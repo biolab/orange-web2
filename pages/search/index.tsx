@@ -77,7 +77,7 @@ export default function Search({
     });
 
     setIndex(index);
-  }, [router.query.q]);
+  }, [posts, router.query.q]);
 
   const searchResults = React.useMemo(() => {
     const query = router.query.q?.toString().toLowerCase();
@@ -96,7 +96,7 @@ export default function Search({
 
         return bIndex - aIndex;
       });
-  }, [router.query.q, index]);
+  }, [router.query.q, index, posts]);
 
   const noOfPages = React.useMemo(() => Math.ceil(searchResults.length / BLOGS_PER_PAGE), [searchResults]);
   const postsOnPage = React.useMemo(
@@ -126,7 +126,9 @@ export default function Search({
       </ul>
 
       {Array.from({ length: noOfPages }).map((_, index) => (
-        <button onClick={() => setPage(index)}>{index + 1}</button>
+        <button key={index} onClick={() => setPage(index)}>
+          {index + 1}
+        </button>
       ))}
     </Wrapper>
   );

@@ -107,7 +107,7 @@ export default function Workflows({
           <Item key={index}>
             <div>{title}</div>
 
-            {images && images.map((image) => <Image key={image.src} {...image} />)}
+            {images && images.map((image) => <Image key={image.src} {...image} alt="" />)}
             <TagsList tags={workflowTags} selectedTag={selectedTag} onTagClick={onTagClick} />
 
             <MDXRemote {...content} />
