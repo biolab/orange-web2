@@ -30,13 +30,13 @@ export const StyledBurger = styled.button`
   }
 `;
 
-function BurgerButton({ onClick }: { onClick: any }) {
+
+function BurgerButton({ onClick }: { onClick: () => void }) {
   return (
-    <StyledBurger onClick={onClick}>
+    <StyledBurger onClick={onClick} aria-label="Toggle navigation">
       <div />
       <div />
       <div />
-      <span className="sr-only">Toggle navigation</span>
     </StyledBurger>
   );
 }
