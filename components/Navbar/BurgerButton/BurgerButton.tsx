@@ -24,7 +24,7 @@ export const StyledBurger = styled.button`
   div {
     width: 22px;
     height: 2px;
-    background: ${({ theme }) => theme.white};
+    background: #fff;
     transform-origin: 1px;
     transition: all 0.3s linear;
   }

@@ -13,12 +13,12 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-family: ${({ theme }) => theme.baseFont};
-    font-weight: ${({ theme }) => theme.fontWeight400};
+    font-weight: 400;
     color: ${({ theme }) => theme.black};
   }
 
   body {
-    background: ${({ theme }) => theme.white};
+    background: #fff;
   } 
 
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -35,15 +35,31 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  figure {
+    margin: 0;
+  }
+
   img, video {
     display: block;
     max-width: 100%;
     height: auto;
   }
+  a {
+    color: unset;
+    text-decoration: none;
+    
+    &:hover {
+      color: unset;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
 
   ::selection {
     background-color: ${({ theme }) => theme.orange};
-    color: ${({ theme }) => theme.white};
+    color: #fff;
   }
 
   ${LightGallery};

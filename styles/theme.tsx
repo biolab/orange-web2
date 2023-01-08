@@ -1,7 +1,6 @@
 export type ThemeType = typeof theme;
 
 export const theme = {
-  white: "#FFFFFF",
   black: "#000000",
   blackLight: "#1F1F1F",
   orange: "#FE7A00",
@@ -16,8 +15,4 @@ export const theme = {
   adaptMaxWidth: "1440px",
 
   baseFont: "'Source Sans Pro', sans-serif",
-
-  fontWeight400: 400,
-  fontWeight600: 600,
-  fontWright700: 700,
 };

@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   width: 100%;
   height: 80px;
   z-index: 5;
-  background: ${({ theme }) => theme.white};
+  background: #fff;
   box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.04);
 `;
 
@@ -40,7 +40,7 @@ export const MenuWrapper = styled.div<{ $navOpened?: boolean }>`
     width: 100%;
     z-index: 1;
     padding: 0 30px 30px;
-    background-color: ${({ theme }) => theme.white};
+    background-color: #fff;
     opacity: 0;
     z-index: -9999;
     pointer-events: none;

@@ -4,11 +4,11 @@ const LinkAsButton = styled.a`
   position: relative;
   display: inline-block;
   max-width: 100%;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.25;
-  font-weight: ${({ theme }) => theme.fontWeight600};
+  font-weight: 600;
   text-decoration: none;
-  color: ${({ theme }) => theme.white};
+  color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
   background-image: ${({ theme }) =>
@@ -35,6 +35,8 @@ const LinkAsButton = styled.a`
   }
 
   &:hover {
+    color: #fff;
+
     &:before {
       opacity: 1;
     }
