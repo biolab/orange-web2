@@ -25,7 +25,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <Styled.MenuWrapper navOpened={navOpened}>
+          <Styled.MenuWrapper $navOpened={navOpened}>
             <Styled.MenuList>
               {config.menu.map(({ name, url }) => (
                 <li key={name}>

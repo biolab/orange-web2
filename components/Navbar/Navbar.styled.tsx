@@ -24,7 +24,7 @@ export const NavInner = styled.div`
   }
 `;
 
-export const MenuWrapper = styled.div<{ navOpened?: boolean }>`
+export const MenuWrapper = styled.div<{ $navOpened?: boolean }>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -47,8 +47,8 @@ export const MenuWrapper = styled.div<{ navOpened?: boolean }>`
     transition: opacity 0.3s ease;
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.04);
 
-    ${({ navOpened }) =>
-      navOpened &&
+    ${({ $navOpened }) =>
+      $navOpened &&
       `
         opacity: 1;
         z-index: 1;
