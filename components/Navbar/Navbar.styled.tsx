@@ -144,10 +144,13 @@ export const SearchInput = styled.input<{ searchFocused: boolean }>`
 `;
 
 export const SearchButton = styled.button`
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   margin-left: auto;
   flex: 0 0 42px;
-  color: #fff;
   height: 41px;
   border: 1px solid #474747;
   border-radius: 0px 5px 5px 0px;
