@@ -25,22 +25,6 @@ export default function Navbar() {
             />
           </Link>
 
-          <MenuWrapper navOpened={navOpened}>
-            <MenuList>
-              {config.menu.map(({ name, url }) => {
-                return (
-                  <li key={name}>
-                    <Link href={url}>{name}</Link>
-                  </li>
-                );
-              })}
-            </MenuList>
-            <MenuTools>
-              <div>Search</div>
-              <LinkAsButton>Donate</LinkAsButton>
-            </MenuTools>
-          </MenuWrapper>
-
           <BurgerButton onClick={() => setNavOpened((val) => !val)} />
 
           <Styled.MenuWrapper $navOpened={navOpened}>
