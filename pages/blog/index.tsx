@@ -6,6 +6,8 @@ import Adapt from "@components/UiKit/Adapt";
 import device from "@styles/utils/breakpoints";
 import styled from "styled-components";
 import { Heading3, BodyText } from "@components/UiKit/Typography";
+import usePagination from "@hooks/usePagination";
+import Pagination from "@components/Pagination/Pagination";
 
 const BlogWrapper = styled.div``;
 const BlogList = styled.ul`
@@ -65,8 +67,6 @@ const BlogTag = styled.p`
   margin-bottom: 10px;
 `;
 
-const BLOGS_PER_PAGE = 200;
-
 export async function getStaticProps() {
   const posts = getBlogsMetadata();
 
@@ -83,12 +83,7 @@ export default function Blog({
   posts: { oldSlug: string; title: string; url: string; date: string; thumbImage: any }[];
   postsLength: number;
 }) {
-  const noOfPages = React.useMemo(() => Math.ceil(posts.length / BLOGS_PER_PAGE), [posts]);
-  const [page, setPage] = React.useState(0);
-  const postsOnPage = React.useMemo(
-    () => posts.slice(page * BLOGS_PER_PAGE, (page + 1) * BLOGS_PER_PAGE),
-    [page, posts]
-  );
+  const { itemsOnPage: postsOnPage, setPage, page, noOfPages } = usePagination(posts);
 
   return (
     <BlogWrapper>
@@ -129,11 +124,7 @@ export default function Blog({
           ))}
         </BlogList>
 
-        {Array.from({ length: noOfPages }).map((_, index) => (
-          <button key={index} onClick={() => setPage(index)}>
-            {index + 1}
-          </button>
-        ))}
+        <Pagination noOfPages={noOfPages} page={page} setPage={setPage} />
       </Adapt>
     </BlogWrapper>
   );
