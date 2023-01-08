@@ -16,7 +16,7 @@ const Nav = styled.nav`
   width: 100%;
   height: 80px;
   z-index: 5;
-  background: ${({ theme }) => theme.white};
+  background: #fff;
   box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.04);
 `;
 const NavInner = styled.div`
@@ -46,14 +46,16 @@ const MenuWrapper = styled.div<{ navOpened?: boolean }>`
     width: 100%;
     z-index: 1;
     padding: 0 30px 30px;
-    background-color: ${({ theme }) => theme.white};
+    background-color: #fff;
     opacity: 0;
     z-index: -9999;
     pointer-events: none;
     transition: opacity 0.3s ease;
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.04);
-   
-    ${({ navOpened }) => navOpened && `
+
+    ${({ navOpened }) =>
+      navOpened &&
+      `
         opacity: 1;
         z-index: 1;
         pointer-events: visible;
@@ -74,7 +76,7 @@ const MenuList = styled.ul`
     display: block;
     margin-bottom: 15px;
   }
-  
+
   li {
     + li {
       margin-left: 26px;
@@ -91,7 +93,7 @@ const MenuList = styled.ul`
     color: ${({ theme }) => theme.black};
     text-decoration: none;
     transition: color 0.3s;
-    
+
     &:hover {
       color: ${({ theme }) => theme.orange};
     }
@@ -99,7 +101,6 @@ const MenuList = styled.ul`
       padding: 8px 0;
     }
   }
-   
 `;
 const MenuTools = styled.div`
   display: flex;
@@ -113,7 +114,7 @@ const MenuTools = styled.div`
   * + * {
     margin-left: 26px;
 
-    @media ${device.M}{
+    @media ${device.M} {
       margin-left: 0;
       margin-top: 15px;
     }
@@ -127,11 +128,16 @@ export default function Navbar() {
     <Nav>
       <Adapt>
         <NavInner>
-
           <Link href="/">
-            <Image className="img-logo" src={LogoImage.src} width={LogoImage.width} height={LogoImage.height} alt="Orange Logo"/>
+            <Image
+              className="img-logo"
+              src={LogoImage.src}
+              width={LogoImage.width}
+              height={LogoImage.height}
+              alt="Orange Logo"
+            />
           </Link>
-      
+
           <MenuWrapper navOpened={navOpened}>
             <MenuList>
               {config.menu.map(({ name, url }) => {
@@ -143,7 +149,7 @@ export default function Navbar() {
               })}
             </MenuList>
             <MenuTools>
-              <div>Search</div>  
+              <div>Search</div>
               <LinkAsButton>Donate</LinkAsButton>
             </MenuTools>
           </MenuWrapper>

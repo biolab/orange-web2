@@ -13,12 +13,12 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-family: ${({ theme }) => theme.baseFont};
-    font-weight: ${({theme}) => theme.fontWeight400};
+    font-weight: ${({ theme }) => theme.fontWeight400};
     color: ${({ theme }) => theme.black};
   }
 
   body {
-    background: ${({ theme }) => theme.white};
+    background: #fff;
   } 
 
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -54,12 +54,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   strong {
-    font-weight: ${({theme})=> theme.fontWeight600};
+    font-weight: ${({ theme }) => theme.fontWeight600};
   }
 
   ::selection {
     background-color: ${({ theme }) => theme.orange};
-    color: ${({ theme }) => theme.white};
+    color: #fff;
   }
 
   .sr-only {
