@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Heading3 = styled.h3`
   font-size: 22px;
   line-height: 1.4;
-  font-weight: ${({ theme }) => theme.fontWeight600};
+  font-weight: 600;
   color: ${({ theme }) => theme.blackLight};
 
   a {
@@ -26,7 +26,7 @@ export const BodyText = styled.p`
 
   a {
     color: ${({ theme }) => theme.orange};
-    font-weight: ${({ theme }) => theme.fontWeight600};
+    font-weight: 600;
 
     &:hover {
       text-decoration: underline;

@@ -7,24 +7,22 @@ import device from "@styles/utils/breakpoints";
 import styled from "styled-components";
 import { Heading3, BodyText } from "@components/UiKit/Typography";
 
-const BlogWrapper = styled.div`
-  
-`;
+const BlogWrapper = styled.div``;
 const BlogList = styled.ul`
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
   border-top: 1px solid ${({ theme }) => theme.borderColor};
 
-  @media ${device.L}{
+  @media ${device.L} {
     column-gap: 35px;
   }
 
-  @media ${device.M}{
+  @media ${device.M} {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media ${device.XS}{
+  @media ${device.XS} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -33,17 +31,17 @@ const BlogListItem = styled.li`
   padding-top: 30px;
   padding-bottom: 40px;
 
-  &:nth-child(n+4) {
+  &:nth-child(n + 4) {
     border-top: 1px solid ${({ theme }) => theme.borderColor};
   }
 
-  @media ${device.M}{
-    &:nth-child(n+3) {
+  @media ${device.M} {
+    &:nth-child(n + 3) {
       border-top: 1px solid ${({ theme }) => theme.borderColor};
     }
   }
-  @media ${device.XS}{
-    &:nth-child(n+2) {
+  @media ${device.XS} {
+    &:nth-child(n + 2) {
       border-top: 1px solid ${({ theme }) => theme.borderColor};
     }
   }
@@ -59,11 +57,11 @@ const BlogListImageWrapper = styled.figure`
   }
 `;
 
-const BlogTag =  styled.p`
+const BlogTag = styled.p`
   font-size: 1rem;
   line-height: 1.25;
-  font-weight: ${({theme})=> theme.fontWeight600};
-  color: ${({theme})=> theme.violet}; 
+  font-weight: 600;
+  color: ${({ theme }) => theme.violet};
   margin-bottom: 10px;
 `;
 
@@ -103,21 +101,30 @@ export default function Blog({
               {thumbImage && (
                 <BlogListImageWrapper>
                   <Link href={`blog/${url}`}>
-                    <Image src={thumbImage.src} loading="lazy" width={thumbImage.width} height={thumbImage.height} alt="" />
+                    <Image
+                      src={thumbImage.src}
+                      loading="lazy"
+                      width={thumbImage.width}
+                      height={thumbImage.height}
+                      alt=""
+                    />
                   </Link>
                 </BlogListImageWrapper>
               )}
 
               <BlogTag>Tag1, Tag2</BlogTag>
-              <Heading3><Link href={`blog/${url}`}>{title}</Link></Heading3>
+              <Heading3>
+                <Link href={`blog/${url}`}>{title}</Link>
+              </Heading3>
               <BodyText>
-                To je statična vsebina, testna vsebina. To je <a href="">testni link</a>.
-                To je statična vsebina, testna vsebina.
+                To je statična vsebina, testna vsebina. To je <a href="">testni link</a>. To je statična vsebina, testna
+                vsebina.
               </BodyText>
-              <BodyText><strong>Janez Demšar</strong>, {date}</BodyText>
+              <BodyText>
+                <strong>Janez Demšar</strong>, {date}
+              </BodyText>
 
               <div>({oldSlug})</div>
-           
             </BlogListItem>
           ))}
         </BlogList>

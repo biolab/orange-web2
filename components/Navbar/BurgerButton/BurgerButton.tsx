@@ -30,7 +30,6 @@ export const StyledBurger = styled.button`
   }
 `;
 
-
 function BurgerButton({ onClick }: { onClick: () => void }) {
   return (
     <StyledBurger onClick={onClick} aria-label="Toggle navigation">
