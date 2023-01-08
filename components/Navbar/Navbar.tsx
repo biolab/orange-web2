@@ -88,7 +88,7 @@ const MenuList = styled.ul`
 
   a {
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1;
     color: ${({ theme }) => theme.black};
     text-decoration: none;

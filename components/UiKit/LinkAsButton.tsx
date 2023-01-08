@@ -4,7 +4,7 @@ const LinkAsButton = styled.a`
   position: relative;
   display: inline-block;
   max-width: 100%;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.25;
   font-weight: ${({ theme }) => theme.fontWeight600};
   text-decoration: none;
