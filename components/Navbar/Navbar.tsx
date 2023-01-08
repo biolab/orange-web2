@@ -63,7 +63,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <Styled.NavRightSide>
+          <div>
             <BurgerButton onClick={() => setNavOpened((val) => !val)} />
             <Styled.MenuWrapper $navOpened={navOpened}>
               <Styled.MenuList>
@@ -75,7 +75,7 @@ export default function Navbar() {
               </Styled.MenuList>
               <Search />
             </Styled.MenuWrapper>
-          </Styled.NavRightSide>
+          </div>
         </Styled.NavInner>
       </Adapt>
     </Styled.Nav>

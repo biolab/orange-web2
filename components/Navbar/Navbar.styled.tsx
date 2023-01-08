@@ -25,8 +25,6 @@ export const NavInner = styled.div`
   }
 `;
 
-export const NavRightSide = styled.div``;
-
 export const MenuWrapper = styled.div<{ $navOpened?: boolean }>`
   display: flex;
   flex-wrap: wrap;
