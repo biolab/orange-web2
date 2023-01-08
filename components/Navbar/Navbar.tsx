@@ -1,49 +1,96 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import Link from "next/link";
-import styled from "styled-components";
-import device from "@styles/utils/breakpoints";
 import config from "config.json";
+import BurgerButton from "./BurgerButton/BurgerButton";
+import Image from "../../components/Image/Image";
+import LogoImage from "../../public/assets/icons/logo-orange.svg";
+import Adapt from "@components/UiKit/Adapt";
+import LinkAsButton from "@components/UiKit/LinkAsButton";
+import * as Styled from "./Navbar.styled";
+import styled from "styled-components";
+import { useRouter } from "next/router";
 
-const Nav = styled.nav<{ $open?: boolean }>`
-  background: ${({ theme }) => theme.orangeColor};
-  height: 60px;
+const SearchWrapper = styled.form<{ searchFocused: boolean }>`
+  width: 100px;
+  transition: width 0.3s ease-in-out;
   display: flex;
   align-items: center;
 
-  @media ${device.M} {
-    ul {
-      display: none;
-      ${({ $open }) => $open && "display: block;"}
-    }
-  }
+  ${({ searchFocused: searchOpened }) => searchOpened && "width: 300px;"}
 `;
 
-const Burger = styled.button`
-  display: none;
-  font-size: 22px;
-  margin-left: auto;
-
-  @media ${device.M} {
-    display: block;
-  }
+const SearchInput = styled.input`
+  width: 100%;
 `;
 
-export default function Navbar() {
-  const [open, setOpen] = React.useState(false);
+function Search() {
+  const [searchOpened, setSearchOpened] = React.useState(false);
+  const router = useRouter();
+  const [input, setInput] = useState("");
+
+  const search = useCallback(
+    (e: React.FormEvent) => {
+      e.preventDefault();
+
+      router.push({
+        pathname: "/search",
+        query: { q: input },
+      });
+    },
+    [input]
+  );
 
   return (
-    <Nav $open={open}>
-      <ul>
-        {config.menu.map(({ name, url }) => {
-          return (
-            <li key={name}>
-              <Link href={url}>{name}</Link>
-            </li>
-          );
-        })}
-      </ul>
+    <SearchWrapper searchFocused={searchOpened}>
+      <SearchInput
+        type="text"
+        placeholder="Search"
+        onFocus={() => setSearchOpened(true)}
+        onBlur={() => setSearchOpened(false)}
+        value={input}
+        onInput={(e: React.ChangeEvent<HTMLInputElement>) => setInput(e.target.value)}
+      />
+      <button type="submit" onClick={search}>
+        Go
+      </button>
+    </SearchWrapper>
+  );
+}
 
-      <Burger onClick={() => setOpen(!open)}>X</Burger>
-    </Nav>
+export default function Navbar() {
+  const [navOpened, setNavOpened] = React.useState(false);
+
+  return (
+    <Styled.Nav>
+      <Adapt>
+        <Styled.NavInner>
+          <Link href="/">
+            <Image
+              className="img-logo"
+              src={LogoImage.src}
+              width={LogoImage.width}
+              height={LogoImage.height}
+              alt="Orange Logo"
+            />
+          </Link>
+
+          <BurgerButton onClick={() => setNavOpened((val) => !val)} />
+
+          <Styled.MenuWrapper $navOpened={navOpened}>
+            <Styled.MenuList>
+              {config.menu.map(({ name, url }) => (
+                <li key={name}>
+                  <Link href={url}>{name}</Link>
+                </li>
+              ))}
+            </Styled.MenuList>
+            <Styled.MenuTools>
+              <LinkAsButton>Donate</LinkAsButton>
+              <Search />
+            </Styled.MenuTools>
+          </Styled.MenuWrapper>
+        </Styled.NavInner>
+      </Adapt>
+    </Styled.Nav>
   );
 }
