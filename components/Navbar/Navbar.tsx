@@ -25,6 +25,8 @@ export default function Navbar() {
             />
           </Link>
 
+          <BurgerButton onClick={() => setNavOpened((val) => !val)} />
+
           <Styled.MenuWrapper $navOpened={navOpened}>
             <Styled.MenuList>
               {config.menu.map(({ name, url }) => (
@@ -38,8 +40,6 @@ export default function Navbar() {
               <LinkAsButton>Donate</LinkAsButton>
             </Styled.MenuTools>
           </Styled.MenuWrapper>
-
-          <BurgerButton onClick={() => setNavOpened((val) => !val)} />
         </Styled.NavInner>
       </Adapt>
     </Styled.Nav>

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
-import SrOnly from "@components/UiKit/SrOnly";
 
 export const StyledBurger = styled.button`
   display: none;
@@ -33,11 +32,10 @@ export const StyledBurger = styled.button`
 
 function BurgerButton({ onClick }: { onClick: () => void }) {
   return (
-    <StyledBurger onClick={onClick}>
+    <StyledBurger onClick={onClick} aria-label="Toggle navigation">
       <div />
       <div />
       <div />
-      <SrOnly>Toggle navigation</SrOnly>
     </StyledBurger>
   );
 }
