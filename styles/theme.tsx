@@ -15,8 +15,4 @@ export const theme = {
   adaptMaxWidth: "1440px",
 
   baseFont: "'Source Sans Pro', sans-serif",
-
-  fontWeight400: 400,
-  fontWeight600: 600,
-  fontWright700: 700,
 };

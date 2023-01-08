@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-family: ${({ theme }) => theme.baseFont};
-    font-weight: ${({ theme }) => theme.fontWeight400};
+    font-weight: 400;
     color: ${({ theme }) => theme.black};
   }
 
@@ -54,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   strong {
-    font-weight: ${({ theme }) => theme.fontWeight600};
+    font-weight: 600;
   }
 
   ::selection {
