@@ -1,27 +1,14 @@
 import React, { useCallback, useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import config from "config.json";
+import Link from "next/link";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import Image from "../../components/Image/Image";
 import LogoImage from "../../public/assets/icons/logo-orange.svg";
+import SearchImage from "../../public/assets/icons/icon-search.svg";
 import Adapt from "@components/UiKit/Adapt";
-import LinkAsButton from "@components/UiKit/LinkAsButton";
+import SrOnly from "@components/UiKit/SrOnly";
 import * as Styled from "./Navbar.styled";
-import styled from "styled-components";
-import { useRouter } from "next/router";
-
-const SearchWrapper = styled.form<{ searchFocused: boolean }>`
-  width: 100px;
-  transition: width 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-
-  ${({ searchFocused: searchOpened }) => searchOpened && "width: 300px;"}
-`;
-
-const SearchInput = styled.input`
-  width: 100%;
-`;
 
 function Search() {
   const [searchOpened, setSearchOpened] = React.useState(false);
@@ -41,8 +28,9 @@ function Search() {
   );
 
   return (
-    <SearchWrapper searchFocused={searchOpened}>
-      <SearchInput
+    <Styled.SearchWrapper>
+      <Styled.SearchInput
+        searchFocused={searchOpened}
         type="text"
         placeholder="Search"
         onFocus={() => setSearchOpened(true)}
@@ -50,10 +38,11 @@ function Search() {
         value={input}
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setInput(e.target.value)}
       />
-      <button type="submit" onClick={search}>
-        Go
-      </button>
-    </SearchWrapper>
+      <Styled.SearchButton type="submit" onClick={search}>
+        <Image src={SearchImage.src} width={SearchImage.width} height={SearchImage.height} alt="Icon for search" />
+        <SrOnly>Search through page</SrOnly>
+      </Styled.SearchButton>
+    </Styled.SearchWrapper>
   );
 }
 
@@ -74,21 +63,19 @@ export default function Navbar() {
             />
           </Link>
 
-          <BurgerButton onClick={() => setNavOpened((val) => !val)} />
-
-          <Styled.MenuWrapper $navOpened={navOpened}>
-            <Styled.MenuList>
-              {config.menu.map(({ name, url }) => (
-                <li key={name}>
-                  <Link href={url}>{name}</Link>
-                </li>
-              ))}
-            </Styled.MenuList>
-            <Styled.MenuTools>
-              <LinkAsButton>Donate</LinkAsButton>
+          <div>
+            <BurgerButton onClick={() => setNavOpened((val) => !val)} />
+            <Styled.MenuWrapper $navOpened={navOpened}>
+              <Styled.MenuList>
+                {config.menu.map(({ name, url }) => (
+                  <li key={name}>
+                    <Link href={url}>{name}</Link>
+                  </li>
+                ))}
+              </Styled.MenuList>
               <Search />
-            </Styled.MenuTools>
-          </Styled.MenuWrapper>
+            </Styled.MenuWrapper>
+          </div>
         </Styled.NavInner>
       </Adapt>
     </Styled.Nav>

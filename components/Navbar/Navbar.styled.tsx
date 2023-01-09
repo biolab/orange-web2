@@ -15,6 +15,7 @@ export const Nav = styled.nav`
 export const NavInner = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
 
@@ -28,9 +29,6 @@ export const MenuWrapper = styled.div<{ $navOpened?: boolean }>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 115px);
-  padding-left: 35px;
 
   @media ${device.M} {
     display: block;
@@ -98,21 +96,64 @@ export const MenuList = styled.ul`
   }
 `;
 
-export const MenuTools = styled.div`
+export const SearchWrapper = styled.form`
+  position: relative;
+  width: 160px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  transition: width 0.3s ease-in-out;
+  margin-left: 26px;
+  @media ${device.M} {
+    width: auto;
+    margin-left: 0;
+  }
+`;
+
+export const SearchInput = styled.input<{ searchFocused: boolean }>`
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 42px;
+  width: calc(100% - 42px);
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 10px 13px;
+  background: #fff;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid ${({ theme }) => theme.borderColor};
+  border-right: none;
+  transition: width 0.3s ease-in-out;
+
+  ${({ searchFocused: searchOpened }) =>
+    searchOpened &&
+    `
+      width: 250%;
+    `}
 
   @media ${device.M} {
-    display: block;
+    display: none;
   }
 
-  * + * {
-    margin-left: 26px;
+  ::placeholder {
+    color: ${({ theme }) => theme.borderColor};
+  }
+`;
 
-    @media ${device.M} {
-      margin-left: 0;
-      margin-top: 15px;
-    }
+export const SearchButton = styled.button`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-left: auto;
+  flex: 0 0 42px;
+  height: 41px;
+  border: 1px solid #474747;
+  border-radius: 0px 5px 5px 0px;
+  background-color: ${({ theme }) => theme.gray};
+  @media ${device.M} {
+    margin-left: 0;
   }
 `;

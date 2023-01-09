@@ -1,12 +1,23 @@
 {
-  "menu": [
-    {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Workflows",
-      "url": "/workflows"
-    }
-  ]
+    "menu": [{
+            "name": "Workflows",
+            "url": "/workflows"
+        },
+        {
+            "name": "Downloads",
+            "url": "/downloads"
+        },
+        {
+            "name": "Blog",
+            "url": "/blog"
+        },
+        {
+            "name": "Docs",
+            "url": "/docs"
+        },
+        {
+            "name": "Workshops",
+            "url": "/workshops"
+        }
+    ]
 }
