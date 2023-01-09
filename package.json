@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "dev:ts": "yarn dev & yarn ts:watch",
+    "ts:watch": "yarn ts --watch",
+    "ts": "tsc --noEmit --incremental",
     "build": "yarn generate:images && next build",
     "start": "next start",
     "export": "next export",
