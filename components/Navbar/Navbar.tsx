@@ -5,7 +5,7 @@ import Link from "next/link";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import Image from "../../components/Image/Image";
 import LogoImage from "../../public/assets/icons/logo-orange.svg";
-import BurgerImage from "../../public/assets/icons/icon-search.svg";
+import SearchImage from "../../public/assets/icons/icon-search.svg";
 import Adapt from "@components/UiKit/Adapt";
 import SrOnly from "@components/UiKit/SrOnly";
 import * as Styled from "./Navbar.styled";
@@ -39,7 +39,7 @@ function Search() {
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setInput(e.target.value)}
       />
       <Styled.SearchButton type="submit" onClick={search}>
-        <Image src={BurgerImage.src} width={BurgerImage.width} height={BurgerImage.height} alt="Icon for search" />
+        <Image src={SearchImage.src} width={SearchImage.width} height={SearchImage.height} alt="Icon for search" />
         <SrOnly>Search through page</SrOnly>
       </Styled.SearchButton>
     </Styled.SearchWrapper>
