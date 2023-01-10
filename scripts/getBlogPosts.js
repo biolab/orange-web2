@@ -41,7 +41,7 @@ function getPostsData(files) {
       const publicFilePath = postPath.slice(postPath.indexOf(publicFolder) + publicFolder.length).replace(fileName, "");
 
       const {
-        data: { title, draft, longExcerpt, shortExcerpt, url, date, author, x2images, thumbImage },
+        data: { title, draft, longExcerpt, shortExcerpt, url, date, author, x2images, thumbImage, blog },
       } = matter(fileContents);
 
       const thumbImagePath = thumbImage ? publicFilePath + thumbImage : null;
@@ -55,6 +55,7 @@ function getPostsData(files) {
         draft: !!draft,
         title: title || "",
         date: date || "",
+        tags: blog || [],
         author: author || "",
         longExcerpt: longExcerpt || "",
         shortExcerpt: shortExcerpt || "",
