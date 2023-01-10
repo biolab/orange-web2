@@ -77,7 +77,7 @@ export default function Search({
     });
 
     setIndex(index);
-  }, [posts, router.query.q]);
+  }, [posts]);
 
   const searchResults = React.useMemo(() => {
     const query = router.query.q?.toString().toLowerCase();
