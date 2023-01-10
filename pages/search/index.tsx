@@ -5,6 +5,8 @@ import lunr from "lunr";
 import { getBlogsMetadata } from "../../scripts/getBlogPosts";
 import Image from "../../components/Image/Image";
 import { useRouter } from "next/router";
+import usePagination from "@hooks/usePagination";
+import Pagination from "@components/Pagination/Pagination";
 
 const Wrapper = styled.div`
   padding: 100px 38px;
@@ -48,8 +50,6 @@ export default function Search({
   }[];
 }) {
   const router = useRouter();
-
-  const [page, setPage] = React.useState(0);
   const [index, setIndex] = React.useState<lunr.Index | null>(null);
 
   useEffect(() => {
@@ -98,11 +98,11 @@ export default function Search({
       });
   }, [router.query.q, index, posts]);
 
-  const noOfPages = React.useMemo(() => Math.ceil(searchResults.length / BLOGS_PER_PAGE), [searchResults]);
-  const postsOnPage = React.useMemo(
-    () => searchResults.slice(page * BLOGS_PER_PAGE, (page + 1) * BLOGS_PER_PAGE),
-    [page, searchResults]
-  );
+  const { itemsOnPage: postsOnPage, setPage, page, noOfPages, setItems } = usePagination();
+
+  React.useEffect(() => {
+    setItems(searchResults);
+  }, [searchResults, setItems]);
 
   return (
     <Wrapper>
@@ -125,11 +125,7 @@ export default function Search({
         ))}
       </ul>
 
-      {Array.from({ length: noOfPages }).map((_, index) => (
-        <button key={index} onClick={() => setPage(index)}>
-          {index + 1}
-        </button>
-      ))}
+      <Pagination noOfPages={noOfPages} page={page} setPage={setPage} />
     </Wrapper>
   );
 }
