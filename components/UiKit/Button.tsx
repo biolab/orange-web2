@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LinkAsButton = styled.a`
+const LinkAsButton = styled.button`
   position: relative;
   display: inline-block;
   max-width: 100%;
