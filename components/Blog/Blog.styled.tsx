@@ -21,8 +21,7 @@ export const BlogList = styled.ul`
 `;
 
 export const BlogListItem = styled.li`
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 30px 0;
 
   &:nth-child(n + 4) {
     border-top: 1px solid ${({ theme }) => theme.borderColor};
@@ -62,5 +61,14 @@ export const BlogTag = styled.p`
 
 export const FeaturedBlog = styled.div`
   display: flex;
-  background: hotpink;
+  gap: 66px;
+  margin-bottom: 30px;
+`;
+
+export const FBImageWrapper = styled.div`
+  width: 76%;
+
+  img {
+    width: 100%;
+  }
 `;

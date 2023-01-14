@@ -28,8 +28,7 @@ export default function Blog({ blogs }: { blogs: BlogMetadata[] }) {
   const { itemsOnPage: blogsOnPage, setPage, page, noOfPages } = usePagination(blogs.slice(1));
 
   return (
-    <Adapt>
-      <h1>Blog</h1>
+    <Adapt $mt>
       <FeaturedBlog blog={blogs[0]} show={page === 0} />
       <BlogList blogs={blogsOnPage} />
       <Pagination noOfPages={noOfPages} page={page} setPage={setPage} />

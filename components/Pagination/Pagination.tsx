@@ -22,7 +22,6 @@ const PageButton = styled.button<{ $active?: boolean }>`
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: color 0.3s;
 
   ${({ $active, theme }) =>
     $active &&

@@ -1,11 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Heading3 = styled.h3`
-  font-size: 22px;
-  line-height: 1.4;
-  font-weight: 600;
-  color: ${({ theme }) => theme.blackLight};
-
+const LinkInsideH = css`
   a {
     transition: color 0.3s;
 
@@ -13,6 +8,26 @@ export const Heading3 = styled.h3`
       color: ${({ theme }) => theme.orange};
     }
   }
+`;
+
+export const Heading1 = styled.h1`
+  font-size: 44px;
+  line-height: 1.13;
+  font-weight: 700;
+  color: ${({ theme }) => theme.blackLight};
+  margin-bottom: 12px;
+
+  ${LinkInsideH};
+`;
+
+export const Heading3 = styled.h3`
+  font-size: 22px;
+  line-height: 1.18;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.blackLight};
+
+  ${LinkInsideH};
 `;
 
 export const BodyText = styled.p`
