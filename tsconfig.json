@@ -5,7 +5,8 @@
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
       "@scripts/*": ["scripts/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"]
     },
     "target": "es2015",
     "lib": ["dom", "dom.iterable", "esnext"],
