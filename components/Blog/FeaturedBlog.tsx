@@ -13,7 +13,15 @@ export default function FeaturedBlog({ blog, show }: { blog: BlogMetadata; show:
   }
   return (
     <Styled.FeaturedBlog>
-      <div>
+      <Styled.FBImageWrapper>
+        {thumbImage && (
+          <Link href={`blog/${url}`}>
+            <Image src={thumbImage.src} width={thumbImage.width} height={thumbImage.height} alt="" />
+          </Link>
+        )}
+      </Styled.FBImageWrapper>
+
+      <Styled.FBContentWrapper>
         <BlogTags tags={tags} />
         <Heading1>
           <Link href={`blog/${url}`}>{title}</Link>
@@ -22,15 +30,7 @@ export default function FeaturedBlog({ blog, show }: { blog: BlogMetadata; show:
         <BodyText>
           <strong>{author}</strong>, {date}
         </BodyText>
-      </div>
-
-      <Styled.FBImageWrapper>
-        {thumbImage && (
-          <Link href={`blog/${url}`}>
-            <Image src={thumbImage.src} width={thumbImage.width} height={thumbImage.height} alt="" />
-          </Link>
-        )}
-      </Styled.FBImageWrapper>
+      </Styled.FBContentWrapper>
     </Styled.FeaturedBlog>
   );
 }

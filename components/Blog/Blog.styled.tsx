@@ -61,14 +61,42 @@ export const BlogTag = styled.p`
 
 export const FeaturedBlog = styled.div`
   display: flex;
-  gap: 66px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   margin-bottom: 30px;
+
+  @media ${device.S} {
+    flex-direction: initial;
+  }
 `;
 
-export const FBImageWrapper = styled.div`
-  width: 76%;
+export const FBImageWrapper = styled.figure`
+  flex: 0 0 56%;
+  max-width: 56%;
+
+  @media ${device.S} {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
   img {
-    width: 100%;
+    aspect-ratio: 1.82;
+    object-fit: cover;
+  }
+`;
+export const FBContentWrapper = styled.div`
+  flex: 0 0 44%;
+  max-width: 44%;
+  padding-right: 5.17%;
+
+  @media ${device.S} {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  p {
+    max-width: 467px;
   }
 `;
