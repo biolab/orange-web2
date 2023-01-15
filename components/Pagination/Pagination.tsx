@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Image from "../../components/Image/Image";
 import ArrowImage from "../../public/assets/icons/icon-arrow.svg";
 
@@ -13,7 +13,6 @@ const PaginationWrapper = styled.div`
 `;
 
 const PageButton = styled.button<{ $active?: boolean }>`
-  display: inline-block;
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.blackLight};
@@ -27,14 +26,13 @@ const PageButton = styled.button<{ $active?: boolean }>`
 
   ${({ $active, theme }) =>
     $active &&
-    `
-    color: #fff;
-    background-color: ${theme.violet}
-  `}
+    css`
+      color: #fff;
+      background-color: ${theme.violet};
+    `}
 `;
 
-const PageButtonNavigation = styled.button`
-  position: relative;
+const PageButtonNavigation = styled.button<{ $previous?: boolean }>`
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.violet};
@@ -45,7 +43,7 @@ const PageButtonNavigation = styled.button`
 
   &:hover {
     img {
-      transform: translateX(3px);
+      transform: ${({ $previous }) => ($previous ? "rotate(180deg) translateX(3px)" : "translateX(3px)")};
     }
   }
 
@@ -53,21 +51,9 @@ const PageButtonNavigation = styled.button`
     display: inline-block;
     margin: 0 4px;
     transition: transform 0.3s;
+    ${({ $previous }) => $previous && `transform: rotate(180deg);`}
   }
 `;
-
-const PageButtonPrev = styled(PageButtonNavigation)`
-  &:hover {
-    img {
-      transform: rotate(180deg) translateX(3px);
-    }
-  }
-  img {
-    transform: rotate(180deg);
-  }
-`;
-
-const PageButtonNext = styled(PageButtonNavigation)``;
 
 export default function Pagination({
   setPage,
@@ -101,14 +87,15 @@ export default function Pagination({
   return (
     <PaginationWrapper>
       {page !== 0 && (
-        <PageButtonPrev
+        <PageButtonNavigation
+          $previous
           onClick={() => {
             setPage((v) => v - 1);
           }}
         >
           <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
           Previous
-        </PageButtonPrev>
+        </PageButtonNavigation>
       )}
 
       <PageButton
@@ -146,14 +133,14 @@ export default function Pagination({
       </PageButton>
 
       {page !== noOfPages - 1 && (
-        <PageButtonNext
+        <PageButtonNavigation
           onClick={() => {
             setPage((v) => v + 1);
           }}
         >
           Next
           <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
-        </PageButtonNext>
+        </PageButtonNavigation>
       )}
     </PaginationWrapper>
   );
