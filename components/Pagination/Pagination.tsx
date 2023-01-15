@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "../../components/Image/Image";
+import ArrowImage from "../../public/assets/icons/icon-arrow.svg";
 
 const PaginationWrapper = styled.div`
   display: flex;
@@ -31,59 +33,41 @@ const PageButton = styled.button<{ $active?: boolean }>`
   `}
 `;
 
-const PageButtonPrev = styled.button`
+const PageButtonNavigation = styled.button`
   position: relative;
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.violet};
-  padding: 3px 5px 3px 10px;
+  padding: 3px 5px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: solid ${({ theme }) => theme.violet};
-    border-width: 0 0 1px 1px;
-    transform: rotate(45deg) translate(-3px, 0px);
-    transition: transform 0.3s;
-  }
   &:hover {
-    &:before {
-      transform: rotate(45deg) translate(-5px, 2px);
+    img {
+      transform: translateX(3px);
     }
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 4px;
+    transition: transform 0.3s;
   }
 `;
 
-const PageButtonNext = styled.button`
-  position: relative;
-  font-size: 16px;
-  line-height: 1.25;
-  color: ${({ theme }) => theme.violet};
-  padding: 3px 10px 3px 5px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: solid ${({ theme }) => theme.violet};
-    border-width: 1px 1px 0 0;
-    transform: rotate(45deg) translate(0, -3px);
-    transition: transform 0.3s;
-  }
+const PageButtonPrev = styled(PageButtonNavigation)`
   &:hover {
-    &:after {
-      transform: rotate(45deg) translate(2px, -5px);
+    img {
+      transform: rotate(180deg) translateX(3px);
     }
   }
+  img {
+    transform: rotate(180deg);
+  }
 `;
+
+const PageButtonNext = styled(PageButtonNavigation)``;
 
 export default function Pagination({
   setPage,
@@ -122,6 +106,7 @@ export default function Pagination({
             setPage((v) => v - 1);
           }}
         >
+          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
           Previous
         </PageButtonPrev>
       )}
@@ -167,6 +152,7 @@ export default function Pagination({
           }}
         >
           Next
+          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
         </PageButtonNext>
       )}
     </PaginationWrapper>
