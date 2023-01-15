@@ -12,7 +12,9 @@ const StyledFooter = styled.footer`
 
 const LinksWrapper = styled.div`
   display: flex;
-  gap: 80px;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 40px;
   margin-bottom: 40px;
 
   h3 {
