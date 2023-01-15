@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { readFileSync } from "fs";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import remarkGfm from "remark-gfm";
-import { rehypeImageSize } from "@utils/images/rehypeImageSize";
+import { getImageData } from "@utils/images/getImageData";
 import remarkUnwrapImages from "remark-unwrap-images";
 import { serialize } from "next-mdx-remote/serialize";
 import matter from "gray-matter";
@@ -51,7 +51,7 @@ export async function getStaticProps() {
     const mdxSource = await serialize(content, {
       mdxOptions: {
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-        rehypePlugins: [rehypeImageSize], // Add rehypeImageSize to add width and height to images
+        rehypePlugins: [getImageData], // Add rehypeImageSize to add width and height to images
       },
     });
 

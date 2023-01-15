@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import probe from "probe-image-size";
 import getAllMdFilesInDir from "../utils/getAllMdFilesInDir";
+import { getWebpPath } from "../utils/images/getWebpPath";
 
 function getImageSizeAttributes(src) {
   if (!src) {
@@ -11,8 +12,10 @@ function getImageSizeAttributes(src) {
 
   let size = null;
 
+  const webpSrc = getWebpPath(src);
+
   try {
-    const img = fs.readFileSync(`public${src}`);
+    const img = fs.readFileSync(`public${webpSrc}`);
     size = probe.sync(img);
   } catch (e) {
     throw new Error();
@@ -25,7 +28,7 @@ function getImageSizeAttributes(src) {
   return {
     width: size.width,
     height: size.height,
-    src,
+    src: webpSrc,
   };
 }
 

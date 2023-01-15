@@ -13,7 +13,7 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
           {thumbImage && (
             <Styled.BlogListImageWrapper>
               <Link href={`blog/${url}`}>
-                <Image src={thumbImage.src} loading="lazy" width={thumbImage.width} height={thumbImage.height} alt="" />
+                <Image src={thumbImage.src} width={thumbImage.width} height={thumbImage.height} alt="" />
               </Link>
             </Styled.BlogListImageWrapper>
           )}

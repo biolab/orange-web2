@@ -3,8 +3,9 @@ import { Processor } from "unified";
 import { Node } from "unist";
 import { visit } from "unist-util-visit";
 import probe, { ProbeResult } from "probe-image-size";
-import { readFileSync, existsSync } from "fs";
-import path from "path";
+import { readFileSync } from "fs";
+import { getWebpPath } from "./getWebpPath";
+
 interface FlowElement {
   name: "mdxJsxFlowElement";
   tagName: string;
@@ -25,16 +26,7 @@ interface ImgNode {
   };
 }
 
-function getWebpPath(imgSrc: string): string {
-  const webpFolder = path.join(path.dirname(imgSrc), "__webp-images__");
-  const baseName = path.basename(imgSrc);
-  const webpBaseName = baseName.slice(0, baseName.lastIndexOf(".")) + ".webp";
-  const webpSrc = path.join(webpFolder, webpBaseName);
-
-  return existsSync(path.join("public", webpSrc)) ? webpSrc : imgSrc;
-}
-
-export function rehypeImageSize(this: Processor) {
+export function getImageData(this: Processor) {
   function isJsxImageNode(node: any): boolean {
     const img = node as FlowElement;
 
