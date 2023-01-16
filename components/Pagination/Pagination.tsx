@@ -1,5 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import Image from "../../components/Image/Image";
+import ArrowImage from "../../public/assets/icons/icon-arrow.svg";
 
 const PaginationWrapper = styled.div`
   display: flex;
@@ -11,7 +13,6 @@ const PaginationWrapper = styled.div`
 `;
 
 const PageButton = styled.button<{ $active?: boolean }>`
-  display: inline-block;
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.blackLight};
@@ -25,63 +26,32 @@ const PageButton = styled.button<{ $active?: boolean }>`
 
   ${({ $active, theme }) =>
     $active &&
-    `
-    color: #fff;
-    background-color: ${theme.violet}
-  `}
+    css`
+      color: #fff;
+      background-color: ${theme.violet};
+    `}
 `;
 
-const PageButtonPrev = styled.button`
-  position: relative;
+const PageButtonNavigation = styled.button<{ $previous?: boolean }>`
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.violet};
-  padding: 3px 5px 3px 10px;
+  padding: 3px 5px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: solid ${({ theme }) => theme.violet};
-    border-width: 0 0 1px 1px;
-    transform: rotate(45deg) translate(-3px, 0px);
-    transition: transform 0.3s;
-  }
   &:hover {
-    &:before {
-      transform: rotate(45deg) translate(-5px, 2px);
+    img {
+      transform: ${({ $previous }) => ($previous ? "rotate(180deg) translateX(3px)" : "translateX(3px)")};
     }
   }
-`;
 
-const PageButtonNext = styled.button`
-  position: relative;
-  font-size: 16px;
-  line-height: 1.25;
-  color: ${({ theme }) => theme.violet};
-  padding: 3px 10px 3px 5px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  &:after {
-    content: "";
+  img {
     display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: solid ${({ theme }) => theme.violet};
-    border-width: 1px 1px 0 0;
-    transform: rotate(45deg) translate(0, -3px);
+    margin: 0 4px;
     transition: transform 0.3s;
-  }
-  &:hover {
-    &:after {
-      transform: rotate(45deg) translate(2px, -5px);
-    }
+    ${({ $previous }) => $previous && `transform: rotate(180deg);`}
   }
 `;
 
@@ -117,13 +87,15 @@ export default function Pagination({
   return (
     <PaginationWrapper>
       {page !== 0 && (
-        <PageButtonPrev
+        <PageButtonNavigation
+          $previous
           onClick={() => {
             setPage((v) => v - 1);
           }}
         >
+          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
           Previous
-        </PageButtonPrev>
+        </PageButtonNavigation>
       )}
 
       <PageButton
@@ -161,13 +133,14 @@ export default function Pagination({
       </PageButton>
 
       {page !== noOfPages - 1 && (
-        <PageButtonNext
+        <PageButtonNavigation
           onClick={() => {
             setPage((v) => v + 1);
           }}
         >
           Next
-        </PageButtonNext>
+          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
+        </PageButtonNavigation>
       )}
     </PaginationWrapper>
   );
