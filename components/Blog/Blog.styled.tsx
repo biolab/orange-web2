@@ -83,6 +83,7 @@ export const FBImageWrapper = styled.figure`
   img {
     aspect-ratio: 1.82;
     object-fit: cover;
+    width: 100%;
   }
 `;
 export const FBContentWrapper = styled.div`
