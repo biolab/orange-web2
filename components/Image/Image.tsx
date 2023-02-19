@@ -1,3 +1,4 @@
+import getImageSize from "@utils/images/getImageSize";
 import NextImage from "next/image";
 
 // Remove this, if it will be deployed on Vercel

@@ -5,6 +5,7 @@ import path from "path";
 import getImageSize from "@utils/images/getImageSize";
 import { serialize } from "next-mdx-remote/serialize";
 import HomeSections from "@components/Home/Sections";
+import HomeHeader from "@components/Home/Header";
 
 export async function getStaticProps() {
   const sections = getAllMdFilesInDir(path.join("public", "home", "sections"));
@@ -34,6 +35,7 @@ export async function getStaticProps() {
 export default function Home({ sections }: { sections: any }) {
   return (
     <div>
+      <HomeHeader />
       <HomeSections sections={sections} />
     </div>
   );

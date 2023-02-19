@@ -6,6 +6,7 @@
       "@utils/*": ["utils/*"],
       "@scripts/*": ["scripts/*"],
       "@components/*": ["components/*"],
+      "@public/*": ["public/*"],
       "@hooks/*": ["hooks/*"]
     },
     "target": "es2015",
