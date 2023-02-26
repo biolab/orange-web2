@@ -8,13 +8,14 @@ import HomeSections from "@components/Home/Sections";
 import HomeHeader from "@components/Home/Header";
 import UsersSection from "@components/Home/UsersSection";
 import DonateSection from "@components/Home/DonateSection";
+import { BlogMetadata } from "./blog";
+import { getBlogsMetadata } from "@scripts/getBlogPosts";
+import HomeBlogs from '@components/Home/HomeBlogs';
 
 export async function getStaticProps() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "home"));
 
   const sections = mdFiles.filter((file) => file.includes("section_"));
-  console.log(mdFiles);
-  console.log(sections);
   const sectionsData = [];
 
   for (const file of sections) {
@@ -57,6 +58,7 @@ export async function getStaticProps() {
         testimonials: testimonialsData,
       },
       donateSection: donateFrontmatter,
+      blogs: getBlogsMetadata().slice(0, 4) as BlogMetadata[],
     },
   };
 }
@@ -65,14 +67,17 @@ export default function Home({
   sections,
   usersSection,
   donateSection,
+  blogs,
 }: {
   sections: any;
   usersSection: any;
   donateSection: any;
-}) {
+  blogs: BlogMetadata[];
+  }) {
   return (
     <div>
       <HomeHeader />
+      <HomeBlogs blogs={blogs} />
       <HomeSections sections={sections} />
       <UsersSection {...usersSection} />
       <DonateSection {...donateSection} />
