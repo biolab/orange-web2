@@ -4,6 +4,8 @@ import matter from "gray-matter";
 import probe from "probe-image-size";
 import getAllMdFilesInDir from "../utils/getAllMdFilesInDir";
 import { getWebpPath } from "../utils/images/getWebpPath";
+import getPublicFilePath from "../utils/getPublicFilePath";
+import slugify from "@utils/slugify";
 
 function getImageSizeAttributes(src) {
   if (!src) {
@@ -40,13 +42,11 @@ function getPostsData(files) {
       const fileName = path.basename(postPath);
       const oldSlug = fileName.replace(/\.md$/, "");
 
-      const publicFolder = "public";
-      const publicFilePath = postPath.slice(postPath.indexOf(publicFolder) + publicFolder.length).replace(fileName, "");
-
       const {
         data: { title, draft, longExcerpt, shortExcerpt, url, date, author, x2images, thumbImage, blog },
       } = matter(fileContents);
 
+      const publicFilePath = getPublicFilePath(postPath);
       const thumbImagePath = thumbImage ? publicFilePath + thumbImage : null;
 
       return {
@@ -62,10 +62,7 @@ function getPostsData(files) {
         author: author || "",
         longExcerpt: longExcerpt || "",
         shortExcerpt: shortExcerpt || "",
-        url: (url || title || oldSlug)
-          .replace(/ /g, "-")
-          .replace(/[.,\/#!?%\^&\*;:{}=\_`~()]/g, "")
-          .toLowerCase(),
+        url: slugify(url || title || oldSlug),
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));

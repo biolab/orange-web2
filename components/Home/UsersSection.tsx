@@ -1,6 +1,6 @@
 import Image from "@components/Image/Image";
+import slugify from '@utils/slugify';
 import Link from "next/link";
-import slugify from "slugify";
 
 export default function UsersSection({
   title,

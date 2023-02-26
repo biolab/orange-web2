@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${({ theme }) => theme.baseFont};
     font-weight: 400;
     color: ${({ theme }) => theme.black};
-    scroll-behavior: smooth;
   }
 
   body {
