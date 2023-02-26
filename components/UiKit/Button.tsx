@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LinkAsButton = styled.button`
+const Button = styled.button`
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -43,4 +43,4 @@ const LinkAsButton = styled.button`
   }
 `;
 
-export default LinkAsButton;
+export default Button;
