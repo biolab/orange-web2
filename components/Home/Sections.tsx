@@ -10,7 +10,7 @@ export default function HomeSections({ sections }: { sections: any }) {
           <Image {...section.image} alt="" />
           <h2>{section.title}</h2>
 
-          {section.excerpt ? <p>{section.excerpt}</p> : <MDXRemote {...section.mdxSource} />}
+          <MDXRemote {...section.mdxSource} />
 
           <div>
             {section.learnMore && <Link href={`home/${section.title}`}> Learn more</Link>}
