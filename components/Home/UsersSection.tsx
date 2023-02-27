@@ -15,7 +15,7 @@ export default function UsersSection({
     <div>
       <h2>{title}</h2>
       <p>{subtitle}</p>
-      <Link href={`/home/${slugify(title, { lower: true })}`}>Learn more</Link>
+      <Link href={`/home/${slugify(title)}`}>Learn more</Link>
 
       {testimonials.map(({ title, position, institution, image, text }) => (
         <div key={title}>
