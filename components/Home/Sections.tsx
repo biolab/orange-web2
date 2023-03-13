@@ -6,7 +6,6 @@ import Adapt from "@components/UiKit/Adapt";
 import styled from "styled-components";
 import { Heading2 } from "@components/UiKit/TypographyHomepage";
 import device from "@styles/utils/breakpoints";
-import ArrowImage from "../../public/assets/icons/icon-arrow.svg";
 
 const SectionSingleItem = styled.div`
   display: flex;
@@ -121,6 +120,7 @@ const LinksWrapper = styled.div`
 
     &:hover {
       opacity: 0.76;
+      color: ${({ theme }) => theme.orange};
       background-position: top 50% right 3px;
     }
   }

@@ -16,7 +16,7 @@ const Button = styled.button`
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
   background-size: 100%;
   cursor: pointer;
-  z-index: 100;
+  z-index: 2;
 
   &:before {
     content: "";
