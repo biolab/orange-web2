@@ -21,12 +21,18 @@ export const Heading2 = styled.h2`
   font-weight: 700;
   color: ${({ theme }) => theme.black};
   margin-bottom: 20px;
+
+  @media ${device.M} {
+    font-size: 50px;
+  }
+  @media ${device.S} {
+    font-size: 42px;
+  }
 `;
 
 export const BodyText = styled.p`
   font-size: 22px;
   line-height: 30px;
-  letter-spacing: 0.01em;
   color: ${({ theme }) => theme.black};
 
   + * {
