@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "@components/Image/Image";
 import { MDXRemote } from "next-mdx-remote";
 import slugify from "@utils/slugify";
@@ -6,6 +5,7 @@ import Adapt from "@components/UiKit/Adapt";
 import styled from "styled-components";
 import { Heading2 } from "@components/UiKit/TypographyHomepage";
 import device from "@styles/utils/breakpoints";
+import LinkMore from "@components/UiKit/LinkMore";
 
 const SectionSingleItem = styled.div`
   display: flex;
@@ -39,8 +39,8 @@ const SectionSingleItem = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 38%;
+  max-width: 38%;
 
   @media ${device.L} {
     flex: 0 0 50%;
@@ -74,8 +74,8 @@ const ContentWrapper = styled.div`
 `;
 
 const ImageWrapper = styled.figure`
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 62%;
+  max-width: 62%;
 
   @media ${device.L} {
     flex: 0 0 50%;
@@ -93,39 +93,6 @@ const ImageWrapper = styled.figure`
   }
 `;
 
-const LinksWrapper = styled.div`
-  margin-top: 15px;
-
-  a {
-    display: inline-block;
-    font-size: 22px;
-    line-height: 1.36;
-    color: ${({ theme }) => theme.orange};
-    font-weight: 600;
-    background-image: url("/assets/icons/icon-arrow--orange.svg");
-    background-position: top 50% right 6px;
-    background-size: 8px;
-    background-repeat: no-repeat;
-    padding-right: 20px;
-    transition: background-position 0.3s, opacity 0.3s;
-    margin: 0 25px 10px 0;
-
-    @media ${device.L} {
-      font-size: 20px;
-    }
-
-    @media ${device.M} {
-      font-size: 18px;
-    }
-
-    &:hover {
-      opacity: 0.76;
-      color: ${({ theme }) => theme.orange};
-      background-position: top 50% right 3px;
-    }
-  }
-`;
-
 export default function HomeSections({ sections }: { sections: any }) {
   return (
     <section>
@@ -134,17 +101,14 @@ export default function HomeSections({ sections }: { sections: any }) {
           <SectionSingleItem key={section.title}>
             <ContentWrapper>
               <Heading2>{section.title}</Heading2>
-
               <MDXRemote {...section.mdxSource} />
 
-              <LinksWrapper>
-                {section.learnMore && <Link href={`home/${slugify(section.title)}`}> Learn more</Link>}
-                {section.video && (
-                  <Link href={`https://www.youtube.com/watch?v=${section.video}&autoplay=1`} target="_blank">
-                    Watch video
-                  </Link>
-                )}
-              </LinksWrapper>
+              {section.learnMore && <LinkMore href={`home/${slugify(section.title)}`}> Learn more</LinkMore>}
+              {section.video && (
+                <LinkMore href={`https://www.youtube.com/watch?v=${section.video}&autoplay=1`} target="_blank">
+                  Watch video
+                </LinkMore>
+              )}
             </ContentWrapper>
 
             <ImageWrapper>

@@ -36,15 +36,9 @@ const Inner = styled.div`
 `;
 
 const ExposedHomeBlog = styled.div`
-  flex: 0 0 55%;
-  max-width: 55%;
-  padding-right: 70px;
+  flex: 0 0 50%;
+  max-width: 50%;
 
-  @media ${device.M} {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-right: 45px;
-  }
   @media ${device.S} {
     flex: 0 0 100%;
     max-width: 100%;
@@ -90,17 +84,18 @@ const ExposedHomeBlog = styled.div`
 `;
 
 const ListHomeBlog = styled.div`
-  flex: 0 0 45%;
-  max-width: 45%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 70px;
 
   @media ${device.M} {
-    flex: 0 0 50%;
-    max-width: 50%;
+    padding-left: 50px;
   }
 
   @media ${device.S} {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0;
   }
 `;
 

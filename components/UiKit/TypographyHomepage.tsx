@@ -32,8 +32,16 @@ export const Heading2 = styled.h2`
 
 export const BodyText = styled.p`
   font-size: 22px;
-  line-height: 30px;
+  line-height: 1.36;
   color: ${({ theme }) => theme.black};
+
+  @media ${device.L} {
+    font-size: 20px;
+  }
+
+  @media ${device.M} {
+    font-size: 18px;
+  }
 
   + * {
     margin-top: 15px;
