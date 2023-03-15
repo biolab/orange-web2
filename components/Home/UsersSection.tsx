@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { Heading2, BodyText } from "@components/UiKit/TypographyHomepage";
 import LinkMore from "@components/UiKit/LinkMore";
 import device from "@styles/utils/breakpoints";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 const Inner = styled.div`
   display: flex;
@@ -61,6 +63,11 @@ export default function UsersSection({
   subtitle: string;
   testimonials: any[];
 }) {
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    drag: true,
+  });
+
   return (
     <section>
       <Adapt>
@@ -71,9 +78,9 @@ export default function UsersSection({
             <LinkMore href={`/home/${slugify(title)}`}>Learn more</LinkMore>
           </Content>
 
-          <ImageSlider>
+          <ImageSlider className="keen-slider" ref={sliderRef}>
             {testimonials.map(({ title, position, institution, image, text }) => (
-              <div key={title}>
+              <div key={title} className="keen-slider__slide">
                 <p>{text}</p>
 
                 <div>

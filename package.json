@@ -27,6 +27,7 @@
     "gray-matter": "^4.0.3",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0",
+    "keen-slider": "^6.8.5",
     "lightgallery": "^2.7.0",
     "lunr": "^2.3.9",
     "next": "13.0.5",
