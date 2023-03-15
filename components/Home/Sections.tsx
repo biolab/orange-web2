@@ -15,7 +15,7 @@ const SectionSingleItem = styled.div`
   padding: 80px 0;
 
   @media ${device.M} {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   @media ${device.S} {
     padding: 40px 0;
