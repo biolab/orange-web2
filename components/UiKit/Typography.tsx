@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import device from "@styles/utils/breakpoints";
 
 const LinkInsideH = css`
   a {
@@ -34,6 +35,10 @@ export const BodyText = styled.p`
   font-size: 20px;
   line-height: 1.4;
   color: ${({ theme }) => theme.blackLight};
+
+  @media ${device.S} {
+    font-size: 18px;
+  }
 
   + p {
     margin-top: 10px;
