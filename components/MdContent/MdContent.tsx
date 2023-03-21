@@ -48,7 +48,7 @@ const Figure = ({ src, alt, width, height }: ImageProps) => (
 );
 const LinkNew = ({ url, name }: { url: string; name: string }) => {
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
       {name}
     </a>
   );

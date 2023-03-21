@@ -1,9 +1,9 @@
 export type ThemeType = typeof theme;
 
 export const theme = {
-  white: "#FFFFFF",
   black: "#000000",
   blackLight: "#1F1F1F",
+  gray: "#474747",
   orange: "#FE7A00",
   orangeHover: "#ffbc44",
   violet: "#837FEB",
@@ -13,11 +13,7 @@ export const theme = {
   orangeGradientColor1: "#FE7A00",
   orangeGradientColor2: "#F65D18",
 
-  adaptMaxWidth: '1440px',
+  adaptMaxWidth: "1296px",
 
   baseFont: "'Source Sans Pro', sans-serif",
-
-  fontWeight400: 400,
-  fontWeight600: 600,
-  fontWright700: 700,
 };

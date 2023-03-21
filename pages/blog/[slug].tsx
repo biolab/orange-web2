@@ -5,7 +5,7 @@ import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 import styled from "styled-components";
-import { rehypeImageSize } from "@utils/images/rehypeImageSize";
+import { getImageData } from "@utils/images/getImageData";
 import MdContent from "@components/MdContent/MdContent";
 import addRelativePathToImages from "@utils/images/addRelativePathToImages";
 import Adapt from "@components/UiKit/Adapt";
@@ -31,7 +31,7 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath), {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-      rehypePlugins: [rehypeImageSize], // Add rehypeImageSize to add width and height to images
+      rehypePlugins: [getImageData], // Adds webp src, width and height to images
     },
   });
 

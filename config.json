@@ -1,12 +1,119 @@
 {
   "menu": [
     {
+      "name": "Workflows",
+      "url": "/workflows"
+    },
+    {
+      "name": "Downloads",
+      "url": "/downloads"
+    },
+    {
       "name": "Blog",
       "url": "/blog"
     },
     {
-      "name": "Workflows",
-      "url": "/workflows"
+      "name": "Docs",
+      "url": "/docs"
+    },
+    {
+      "name": "Workshops",
+      "url": "/workshops"
+    }
+  ],
+  "footer": [
+    {
+      "title": "Orange",
+      "pages": [
+        {
+          "name": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "name": "License",
+          "url": "/license"
+        },
+        {
+          "name": "Privacy",
+          "url": "/privacy"
+        },
+        {
+          "name": "Citation",
+          "url": "/citation"
+        },
+        {
+          "name": "Contact",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "title": "Download",
+      "pages": [
+        {
+          "name": "Windows",
+          "url": "/download#win"
+        },
+        {
+          "name": "Mac OS",
+          "url": "/download#mac"
+        }
+      ]
+    },
+    {
+      "title": "Community",
+      "pages": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/OrangeDataMiner"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/orangedatamining"
+        },
+        {
+          "name": "Stack Exchange",
+          "url": "https://datascience.stackexchange.com/questions/tagged/orange"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g"
+        },
+        {
+          "name": "Discord",
+          "url": "https://discord.com/invite/FWrfeXV"
+        }
+      ]
+    },
+    {
+      "title": "Documentation",
+      "pages": [
+        {
+          "name": "Get started",
+          "url": "/getting-started"
+        },
+        {
+          "name": "Widgets",
+          "url": "/widget-catalogue"
+        },
+        {
+          "name": "Scripting",
+          "url": "https://orange3.readthedocs.io/projects/orange-data-mining-library/en/latest/"
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "pages": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/biolab/orange3"
+        },
+        {
+          "name": "Getting started",
+          "url": "http://docs.biolab.si/3/development/"
+        }
+      ]
     }
   ]
 }

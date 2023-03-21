@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "dev:ts": "yarn dev & yarn ts:watch",
+    "ts:watch": "yarn ts --watch",
+    "ts": "tsc --noEmit --incremental",
     "build": "yarn generate:images && next build",
     "start": "next start",
     "export": "next export",
@@ -24,7 +27,9 @@
     "gray-matter": "^4.0.3",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0",
+    "keen-slider": "^6.8.5",
     "lightgallery": "^2.7.0",
+    "lunr": "^2.3.9",
     "next": "13.0.5",
     "next-mdx-remote": "^4.2.0",
     "probe-image-size": "^7.2.3",
@@ -41,6 +46,7 @@
   "devDependencies": {
     "@types/imagemin": "^8.0.0",
     "@types/imagemin-webp": "^7.0.0",
+    "@types/lunr": "^2.3.4",
     "@types/probe-image-size": "^7.2.0",
     "babel-eslint": "^10.1.0",
     "cypress": "^11.2.0",

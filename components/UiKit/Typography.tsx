@@ -1,35 +1,55 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import device from "@styles/utils/breakpoints";
 
-export const Heading3 = styled.h3`
-    font-size: 1.375rem;
-    line-height: 1.4;
-    font-weight: ${({theme})=> theme.fontWeight600};
-    color: ${({theme})=> theme.blackLight};
+const LinkInsideH = css`
+  a {
+    transition: color 0.3s;
 
-    a {
-        transition: color 0.3s;
-
-        &:hover {
-            color: ${({theme})=> theme.orange};
-        }
+    &:hover {
+      color: ${({ theme }) => theme.orange};
     }
+  }
 `;
 
-export const BodyText =  styled.p`
-    font-size: 1.25rem;
-    line-height: 1.4;
-    color: ${({theme})=> theme.blackLight};
+export const Heading1 = styled.h1`
+  font-size: 44px;
+  line-height: 1.13;
+  font-weight: 700;
+  color: ${({ theme }) => theme.blackLight};
+  margin-bottom: 12px;
 
-    + p {
-        margin-top: 10px;
-    }
+  ${LinkInsideH};
+`;
 
-    a {
-        color: ${({theme})=> theme.orange};
-        font-weight: ${({theme})=> theme.fontWeight600};
-        
-        &:hover {
-            text-decoration: underline;
-        }
+export const Heading3 = styled.h3`
+  font-size: 22px;
+  line-height: 1.18;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.blackLight};
+
+  ${LinkInsideH};
+`;
+
+export const BodyText = styled.p`
+  font-size: 20px;
+  line-height: 1.4;
+  color: ${({ theme }) => theme.blackLight};
+
+  @media ${device.S} {
+    font-size: 18px;
+  }
+
+  + p {
+    margin-top: 10px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.orange};
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
 `;

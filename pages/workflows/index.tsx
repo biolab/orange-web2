@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { readFileSync } from "fs";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import remarkGfm from "remark-gfm";
-import { rehypeImageSize } from "@utils/images/rehypeImageSize";
+import { getImageData } from "@utils/images/getImageData";
 import remarkUnwrapImages from "remark-unwrap-images";
 import { serialize } from "next-mdx-remote/serialize";
 import matter from "gray-matter";
@@ -11,6 +11,7 @@ import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import Image from "@components/Image/Image";
 import TagsList from "@components/TagsList/TagsList";
 import getImageSize, { ImageProps } from "@utils/images/getImageSize";
+import path from "path";
 
 const Wrapper = styled.div`
   padding: 100px 38px;
@@ -37,19 +38,20 @@ interface IWorkflow {
 }
 
 export async function getStaticProps() {
-  const workflowsMdFiles = getAllMdFilesInDir("content/workflows");
+  const workflowsMdFiles = getAllMdFilesInDir("public/workflows");
 
   const workflows: IWorkflow[] = [];
   let page = null;
 
   for (const file of workflowsMdFiles) {
+    const dirInPublic = path.dirname(path.relative("public", file));
     const mdFile = readFileSync(file, "utf-8");
     const { data: frontmatter, content } = matter(mdFile);
 
     const mdxSource = await serialize(content, {
       mdxOptions: {
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-        rehypePlugins: [rehypeImageSize], // Add rehypeImageSize to add width and height to images
+        rehypePlugins: [getImageData], // Add rehypeImageSize to add width and height to images
       },
     });
 
@@ -58,7 +60,7 @@ export async function getStaticProps() {
     } else {
       workflows.push({
         ...(frontmatter as IWorkflow),
-        images: frontmatter.images?.map((image: string) => getImageSize(image)) || [],
+        images: frontmatter.images?.map((image: string) => getImageSize(path.join(path.sep, dirInPublic, image))) || [],
         content: mdxSource,
       });
     }
@@ -105,7 +107,7 @@ export default function Workflows({
           <Item key={index}>
             <div>{title}</div>
 
-            {images && images.map((image) => <Image key={image.src} {...image} />)}
+            {images && images.map((image) => <Image key={image.src} {...image} alt="" />)}
             <TagsList tags={workflowTags} selectedTag={selectedTag} onTagClick={onTagClick} />
 
             <MDXRemote {...content} />
