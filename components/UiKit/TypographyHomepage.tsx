@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
 
-export const Heading1 = styled.h1`
+export const Heading1 = styled.h1<{ $colorBlack?: boolean }>`
   font-size: 62px;
   line-height: 1.04;
   font-weight: 700;
@@ -13,6 +13,7 @@ export const Heading1 = styled.h1`
   @media ${device.S} {
     font-size: 42px;
   }
+  ${({ $colorBlack }) => $colorBlack && "color: #1F1F1F"};
 `;
 
 export const Heading2 = styled.h2`
