@@ -172,7 +172,8 @@ const ContentStyle = styled.div`
     margin-top: 15px;
   }
 
-  * + a[data-gallery] {
+  * + a[data-gallery],
+  * + video {
     margin-top: 40px;
   }
 
@@ -181,7 +182,8 @@ const ContentStyle = styled.div`
     margin-bottom: 40px;
   }
 
-  iframe {
+  iframe,
+  video {
     margin-bottom: 40px;
   }
 `;

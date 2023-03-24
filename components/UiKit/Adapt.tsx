@@ -36,7 +36,7 @@ const Adapt = styled.div<{ $mt?: boolean; $width650?: boolean; $width714?: boole
 
   ${({ $width650 }) => $width650 && `max-width: 650px`};
 
-  ${({ $width714 }) => $width714 && `max-width: 650px`};
+  ${({ $width714 }) => $width714 && `max-width: 714px`};
 `;
 
 export default Adapt;
