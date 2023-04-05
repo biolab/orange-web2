@@ -58,9 +58,11 @@ export default function Download() {
           <code>pip install orange3</code>
 
           <h3>Installing from source</h3>
+
           <p>
-            Clone our repository from GitHub or download the source code tarball. Then follow the instructions in
-            README.md
+            Clone our repository from <a href="https://github.com/biolab/orange3">GitHub</a> or download the{" "}
+            <a href="https://github.com/biolab/orange3/archive/stable.tar.gz">source code tarball</a>. Then follow the
+            instructions in <a href="https://github.com/biolab/orange3/blob/stable/README.md">README.md</a>
           </p>
 
           <p>To run Orange Canvas run</p>
