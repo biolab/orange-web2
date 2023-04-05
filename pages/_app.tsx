@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Layout>
         <Head>
-          <title>My new cool app</title>
+          <title>Orange Data Mining</title>
         </Head>
         <Component {...pageProps} />
       </Layout>
