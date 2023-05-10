@@ -37,12 +37,6 @@ function getOS() {
   return "";
 }
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
-
 function DownloadButton({ os }: { os: string | null }) {
   const href = useMemo(() => {
     if (!os) {
