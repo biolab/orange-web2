@@ -1,12 +1,13 @@
 {
+  "version": "3.34.0",
   "menu": [
     {
       "name": "Workflows",
       "url": "/workflows"
     },
     {
-      "name": "Downloads",
-      "url": "/downloads"
+      "name": "Download",
+      "url": "/download"
     },
     {
       "name": "Blog",
