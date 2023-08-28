@@ -109,6 +109,11 @@ export default function HomeSections({ sections }: { sections: any }) {
                   Watch video
                 </LinkMore>
               )}
+              {section.buttonText && section.buttonURL && (
+                <LinkMore href={section.buttonURL} target="_blank">
+                  {section.buttonText}
+                </LinkMore>
+              )}
             </ContentWrapper>
 
             <ImageWrapper>
