@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={font.className}>
         <Layout>
           <Head>
-            <title>My new cool app</title>
+            <title>Orange Data Mining</title>
           </Head>
           <Component {...pageProps} />
         </Layout>

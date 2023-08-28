@@ -4,6 +4,7 @@ import { LightGallery } from "./libs/LightGalery.style";
 export const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
   }
 
   html, body {
