@@ -18,9 +18,7 @@ function getAllBlogFolders() {
   return folders;
 }
 
-getAllBlogFolders()
-  .forEach((path) => {
-
+getAllBlogFolders().forEach((path) => {
   imagemin([join(path, "*.{jpg,png}")], {
     destination: join(path, "__webp-images__"),
     plugins: [
@@ -29,8 +27,10 @@ getAllBlogFolders()
       }),
     ],
   })
-    .then(() => {
-      console.log("Images converted");
+    .then((images) => {
+      if (images.length > 0) {
+        console.log(`Images converted successfully in folder ${path}`);
+      }
     })
     .catch((err) => {
       console.error(err);
