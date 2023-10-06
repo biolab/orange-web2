@@ -1,4 +1,4 @@
-import widgetCatalog from "public/widget-catalog/widgets.json";
+import widgetCatalog from "@public/widget-catalog/widgets.json";
 import Image from "@components/Image/Image";
 import Link from "next/link";
 

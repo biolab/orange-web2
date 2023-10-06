@@ -1,10 +1,16 @@
-import widgetCatalog from "public/widget-catalog/widgets.json";
+import widgetCatalog from "@public/widget-catalog/widgets.json";
 
 export async function getStaticPaths() {
-  // TODO: get all paths
+  const paths = widgetCatalog.flatMap(([_, widgets]) =>
+    widgets.map((widget) => ({
+      params: { category: widget.category.toLowerCase(), widget: widget.title.toLowerCase() },
+    }))
+  );
+
+  console.log(paths);
 
   return {
-    paths: [{ params: { category: "data", widget: "file" } }],
+    paths,
     fallback: false,
   };
 }
