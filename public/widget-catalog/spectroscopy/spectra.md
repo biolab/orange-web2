@@ -1,7 +1,7 @@
-+++
-"title" = "Spectra"
-"category" = "Spectroscopy"
-+++
+---
+title: "Spectra"
+category: "Spectroscopy"
+---
 Spectra
 =======
 

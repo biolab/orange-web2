@@ -1,7 +1,7 @@
-+++
-"title" = "CSV File Import"
-"category" = "Data"
-+++
+---
+title: "CSV File Import"
+category: "Data"
+---
 CSV File Import
 ===============
 

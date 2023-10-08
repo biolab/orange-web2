@@ -1,7 +1,7 @@
-+++
-"title" = "EnKlik Anketa"
-"category" = "Educational"
-+++
+---
+title: "EnKlik Anketa"
+category: "Educational"
+---
 EnKlik Anketa
 =============
 

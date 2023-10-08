@@ -1,7 +1,7 @@
-+++
-"title" = "Neural Network"
-"category" = "Model"
-+++
+---
+title: "Neural Network"
+category: "Model"
+---
 Neural Network
 ==============
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Unique"
-"category" = "Transform"
-+++
+---
+title: "Unique"
+category: "Transform"
+---
 Unique
 ======
 

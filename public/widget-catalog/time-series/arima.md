@@ -1,7 +1,7 @@
-+++
-"title" = "ARIMA Model"
-"category" = "Time Series"
-+++
+---
+title: "ARIMA Model"
+category: "Time Series"
+---
 ARIMA Model
 ===========
 

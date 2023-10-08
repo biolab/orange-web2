@@ -1,7 +1,7 @@
-+++
-"title" = "Score Cells"
-"category" = "Single Cell"
-+++
+---
+title: "Score Cells"
+category: "Single Cell"
+---
 Score Cells
 ===========
 

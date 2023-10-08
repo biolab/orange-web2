@@ -1,7 +1,7 @@
-+++
-"title" = "Interactive k-Means"
-"category" = "Educational"
-+++
+---
+title: "Interactive k-Means"
+category: "Educational"
+---
 Interactive k-Means
 ===================
 

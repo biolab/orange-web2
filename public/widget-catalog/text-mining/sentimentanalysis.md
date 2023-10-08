@@ -1,7 +1,7 @@
-+++
-"title" = "Sentiment Analysis"
-"category" = "Text Mining"
-+++
+---
+title: "Sentiment Analysis"
+category: "Text Mining"
+---
 Sentiment Analysis
 ==================
 

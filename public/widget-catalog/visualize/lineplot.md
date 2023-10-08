@@ -1,7 +1,7 @@
-+++
-"title" = "Line Plot"
-"category" = "Visualize"
-+++
+---
+title: "Line Plot"
+category: "Visualize"
+---
 Line Plot
 =========
 

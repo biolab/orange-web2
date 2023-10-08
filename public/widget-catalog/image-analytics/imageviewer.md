@@ -1,7 +1,7 @@
-+++
-"title" = "Image Viewer"
-"category" = "Image Analytics"
-+++
+---
+title: "Image Viewer"
+category: "Image Analytics"
+---
 Image Viewer
 ============
 

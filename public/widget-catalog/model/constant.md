@@ -1,7 +1,7 @@
-+++
-"title" = "Constant"
-"category" = "Model"
-+++
+---
+title: "Constant"
+category: "Model"
+---
 Constant
 ========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Geo Map"
-"category" = "Geo"
-+++
+---
+title: "Geo Map"
+category: "Geo"
+---
 Geo Map
 =======
 

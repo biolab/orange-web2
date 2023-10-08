@@ -1,7 +1,7 @@
-+++
-"title" = "Sieve Diagram"
-"category" = "Visualize"
-+++
+---
+title: "Sieve Diagram"
+category: "Visualize"
+---
 Sieve Diagram
 =============
 

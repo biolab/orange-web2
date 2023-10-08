@@ -1,7 +1,7 @@
-+++
-"title" = "Calibration Plot"
-"category" = "Evaluate"
-+++
+---
+title: "Calibration Plot"
+category: "Evaluate"
+---
 Calibration Plot
 ================
 

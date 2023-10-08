@@ -1,7 +1,7 @@
-+++
-"title" = "Network File"
-"category" = "Networks"
-+++
+---
+title: "Network File"
+category: "Networks"
+---
 Network File
 ============
 

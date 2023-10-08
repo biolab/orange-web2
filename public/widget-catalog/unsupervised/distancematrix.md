@@ -1,7 +1,7 @@
-+++
-"title" = "Distance Matrix"
-"category" = "Unsupervised"
-+++
+---
+title: "Distance Matrix"
+category: "Unsupervised"
+---
 Distance Matrix
 ===============
 

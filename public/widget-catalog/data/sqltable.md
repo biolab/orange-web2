@@ -1,7 +1,7 @@
-+++
-"title" = "SQL Table"
-"category" = "Data"
-+++
+---
+title: "SQL Table"
+category: "Data"
+---
 
 SQL Table
 =========

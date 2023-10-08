@@ -1,7 +1,7 @@
-+++
-"title" = "Align Datasets"
-"category" = "Single Cell"
-+++
+---
+title: "Align Datasets"
+category: "Single Cell"
+---
 Align Datasets
 ==============
 

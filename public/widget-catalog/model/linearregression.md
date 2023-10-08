@@ -1,7 +1,7 @@
-+++
-"title" = "Linear Regression"
-"category" = "Model"
-+++
+---
+title: "Linear Regression"
+category: "Model"
+---
 Linear Regression
 =================
 

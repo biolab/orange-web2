@@ -1,7 +1,7 @@
-+++
-"title" = "Tree"
-"category" = "Model"
-+++
+---
+title: "Tree"
+category: "Model"
+---
 Tree
 ====
 

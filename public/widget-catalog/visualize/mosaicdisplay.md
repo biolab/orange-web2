@@ -1,7 +1,7 @@
-+++
-"title" = "Mosaic Display"
-"category" = "Visualize"
-+++
+---
+title: "Mosaic Display"
+category: "Visualize"
+---
 Mosaic Display
 ==============
 

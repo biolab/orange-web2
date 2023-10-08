@@ -1,7 +1,7 @@
-+++
-"title" = "Reshape Map"
-"category" = "Spectroscopy"
-+++
+---
+title: "Reshape Map"
+category: "Spectroscopy"
+---
 Reshape Map
 ===========
 

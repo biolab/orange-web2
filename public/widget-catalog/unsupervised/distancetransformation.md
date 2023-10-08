@@ -1,7 +1,7 @@
-+++
-"title" = "Distance Transformation"
-"category" = "Unsupervised"
-+++
+---
+title: "Distance Transformation"
+category: "Unsupervised"
+---
 Distance Transformation
 =======================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Interferogram to Spectrum"
-"category" = "Spectroscopy"
-+++
+---
+title: "Interferogram to Spectrum"
+category: "Spectroscopy"
+---
 Interferogram to Spectrum
 =========================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Neighbors"
-"category" = "Unsupervised"
-+++
+---
+title: "Neighbors"
+category: "Unsupervised"
+---
 Neighbors
 =========
 

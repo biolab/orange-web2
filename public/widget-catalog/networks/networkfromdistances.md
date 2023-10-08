@@ -1,7 +1,7 @@
-+++
-"title" = "Network From Distances"
-"category" = "Networks"
-+++
+---
+title: "Network From Distances"
+category: "Networks"
+---
 Network From Distances
 ======================
 

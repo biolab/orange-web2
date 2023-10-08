@@ -1,7 +1,7 @@
-+++
-"title" = "Bag of Words"
-"category" = "Text Mining"
-+++
+---
+title: "Bag of Words"
+category: "Text Mining"
+---
 Bag of Words
 ============
 

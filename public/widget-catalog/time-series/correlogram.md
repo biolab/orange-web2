@@ -1,7 +1,7 @@
-+++
-"title" = "Correlogram"
-"category" = "Time Series"
-+++
+---
+title: "Correlogram"
+category: "Time Series"
+---
 Correlogram
 ===========
 

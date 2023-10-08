@@ -1,7 +1,7 @@
-+++
-"title" = "Volcano Plot"
-"category" = "Bioinformatics"
-+++
+---
+title: "Volcano Plot"
+category: "Bioinformatics"
+---
 Volcano Plot
 ============
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Image Grid"
-"category" = "Image Analytics"
-+++
+---
+title: "Image Grid"
+category: "Image Analytics"
+---
 Image Grid
 ==========
 

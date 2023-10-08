@@ -1,7 +1,7 @@
-+++
-"title" = "Scatter Plot"
-"category" = "Visualize"
-+++
+---
+title: "Scatter Plot"
+category: "Visualize"
+---
 Scatter Plot
 ============
 

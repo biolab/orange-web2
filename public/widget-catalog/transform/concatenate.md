@@ -1,7 +1,7 @@
-+++
-"title" = "Concatenate"
-"category" = "Transform"
-+++
+---
+title: "Concatenate"
+category: "Transform"
+---
 Concatenate
 ===========
 

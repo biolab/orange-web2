@@ -23,10 +23,10 @@ def is_absolute(url):
 
 
 def front_matter(widget):
-    return """+++
-"title" = "%s"
-"category" = "%s"
-+++
+    return """---
+title: "%s"
+category: "%s"
+---
 """ % (widget["title"], widget["category"])
 
 

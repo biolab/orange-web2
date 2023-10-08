@@ -1,7 +1,7 @@
-+++
-"title" = "Violin Plot"
-"category" = "Visualize"
-+++
+---
+title: "Violin Plot"
+category: "Visualize"
+---
 Violin Plot
 ===========
 

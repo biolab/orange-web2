@@ -1,7 +1,7 @@
-+++
-"title" = "Twitter"
-"category" = "Text Mining"
-+++
+---
+title: "Twitter"
+category: "Text Mining"
+---
 Twitter
 =======
 

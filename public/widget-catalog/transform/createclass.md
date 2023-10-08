@@ -1,7 +1,7 @@
-+++
-"title" = "Create Class"
-"category" = "Transform"
-+++
+---
+title: "Create Class"
+category: "Transform"
+---
 Create Class
 ============
 

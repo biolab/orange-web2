@@ -1,7 +1,7 @@
-+++
-"title" = "Differential Expression"
-"category" = "Bioinformatics"
-+++
+---
+title: "Differential Expression"
+category: "Bioinformatics"
+---
 Differential Expression
 =======================
 

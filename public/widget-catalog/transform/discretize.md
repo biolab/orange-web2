@@ -1,7 +1,7 @@
-+++
-"title" = "Discretize"
-"category" = "Transform"
-+++
+---
+title: "Discretize"
+category: "Transform"
+---
 Discretize
 ==========
 

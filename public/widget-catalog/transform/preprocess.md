@@ -1,7 +1,7 @@
-+++
-"title" = "Preprocess"
-"category" = "Transform"
-+++
+---
+title: "Preprocess"
+category: "Transform"
+---
 Preprocess
 ==========
 

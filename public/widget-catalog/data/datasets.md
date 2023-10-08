@@ -1,7 +1,7 @@
-+++
-"title" = "Datasets"
-"category" = "Data"
-+++
+---
+title: "Datasets"
+category: "Data"
+---
 Datasets
 ========
 

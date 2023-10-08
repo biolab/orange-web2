@@ -1,7 +1,7 @@
-+++
-"title" = "Randomize"
-"category" = "Transform"
-+++
+---
+title: "Randomize"
+category: "Transform"
+---
 Randomize
 =========
 

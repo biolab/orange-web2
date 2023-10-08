@@ -1,7 +1,7 @@
-+++
-"title" = "Distance Map"
-"category" = "Unsupervised"
-+++
+---
+title: "Distance Map"
+category: "Unsupervised"
+---
 Distance Map
 ============
 

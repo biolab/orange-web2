@@ -1,7 +1,7 @@
-+++
-"title" = "Distance File"
-"category" = "Unsupervised"
-+++
+---
+title: "Distance File"
+category: "Unsupervised"
+---
 Distance File
 =============
 

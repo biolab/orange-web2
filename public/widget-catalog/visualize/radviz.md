@@ -1,7 +1,7 @@
-+++
-"title" = "Radviz"
-"category" = "Visualize"
-+++
+---
+title: "Radviz"
+category: "Visualize"
+---
 Radviz
 ======
 

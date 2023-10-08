@@ -1,7 +1,7 @@
-+++
-"title" = "Formula"
-"category" = "Transform"
-+++
+---
+title: "Formula"
+category: "Transform"
+---
 Formula
 =======
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Self-Organizing Map"
-"category" = "Unsupervised"
-+++
+---
+title: "Self-Organizing Map"
+category: "Unsupervised"
+---
 Self-Organizing Map
 ===================
 

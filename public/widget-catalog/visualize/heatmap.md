@@ -1,7 +1,7 @@
-+++
-"title" = "Heat Map"
-"category" = "Visualize"
-+++
+---
+title: "Heat Map"
+category: "Visualize"
+---
 Heat Map
 ========
 

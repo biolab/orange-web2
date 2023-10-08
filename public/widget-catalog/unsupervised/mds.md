@@ -1,7 +1,7 @@
-+++
-"title" = "MDS"
-"category" = "Unsupervised"
-+++
+---
+title: "MDS"
+category: "Unsupervised"
+---
 MDS
 ===
 

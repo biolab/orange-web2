@@ -1,7 +1,7 @@
-+++
-"title" = "Corpus to Network"
-"category" = "Text Mining"
-+++
+---
+title: "Corpus to Network"
+category: "Text Mining"
+---
 Corpus to Network
 =================
 

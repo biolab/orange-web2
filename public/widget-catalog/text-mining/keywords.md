@@ -1,7 +1,7 @@
-+++
-"title" = "Extract Keywords"
-"category" = "Text Mining"
-+++
+---
+title: "Extract Keywords"
+category: "Text Mining"
+---
 Extract Keywords
 ================
 

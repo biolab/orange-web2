@@ -1,7 +1,7 @@
-+++
-"title" = "Network Analysis"
-"category" = "Networks"
-+++
+---
+title: "Network Analysis"
+category: "Networks"
+---
 Network Analysis
 ================
 

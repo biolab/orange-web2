@@ -1,7 +1,7 @@
-+++
-"title" = "File"
-"category" = "Data"
-+++
+---
+title: "File"
+category: "Data"
+---
 
 File
 ====

@@ -1,7 +1,7 @@
-+++
-"title" = "Load Model"
-"category" = "Model"
-+++
+---
+title: "Load Model"
+category: "Model"
+---
 Load Model
 ==========
 

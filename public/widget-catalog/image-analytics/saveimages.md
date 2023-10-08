@@ -1,7 +1,7 @@
-+++
-"title" = "Save Images"
-"category" = "Image Analytics"
-+++
+---
+title: "Save Images"
+category: "Image Analytics"
+---
 Save Images
 ===========
 

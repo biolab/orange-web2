@@ -1,7 +1,7 @@
-+++
-"title" = "Pivot Table"
-"category" = "Transform"
-+++
+---
+title: "Pivot Table"
+category: "Transform"
+---
 Pivot Table
 ===========
 

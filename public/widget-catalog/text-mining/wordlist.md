@@ -1,7 +1,7 @@
-+++
-"title" = "Word List"
-"category" = "Text Mining"
-+++
+---
+title: "Word List"
+category: "Text Mining"
+---
 Word List
 =========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Silhouette Plot"
-"category" = "Visualize"
-+++
+---
+title: "Silhouette Plot"
+category: "Visualize"
+---
 
 Silhouette Plot
 ===============

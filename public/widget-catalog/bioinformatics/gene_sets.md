@@ -1,7 +1,7 @@
-+++
-"title" = "Gene Sets"
-"category" = "Bioinformatics"
-+++
+---
+title: "Gene Sets"
+category: "Bioinformatics"
+---
 Gene Sets
 =================
 

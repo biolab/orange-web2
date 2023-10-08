@@ -1,7 +1,7 @@
-+++
-"title" = "Topic Modelling"
-"category" = "Text Mining"
-+++
+---
+title: "Topic Modelling"
+category: "Text Mining"
+---
 Topic Modelling
 ===============
 

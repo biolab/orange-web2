@@ -1,7 +1,7 @@
-+++
-"title" = "Pubmed"
-"category" = "Text Mining"
-+++
+---
+title: "Pubmed"
+category: "Text Mining"
+---
 Pubmed
 ======
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Nomogram"
-"category" = "Visualize"
-+++
+---
+title: "Nomogram"
+category: "Visualize"
+---
 Nomogram
 ========
 

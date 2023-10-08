@@ -1,7 +1,7 @@
-+++
-"title" = "Test and Score"
-"category" = "Evaluate"
-+++
+---
+title: "Test and Score"
+category: "Evaluate"
+---
 Test and Score
 ==============
 

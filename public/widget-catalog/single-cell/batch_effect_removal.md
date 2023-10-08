@@ -1,7 +1,7 @@
-+++
-"title" = "Batch Effect Removal"
-"category" = "Single Cell"
-+++
+---
+title: "Batch Effect Removal"
+category: "Single Cell"
+---
 Batch Effect Removal
 ====================
 

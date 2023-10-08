@@ -1,7 +1,7 @@
-+++
-"title" = "Explain Model"
-"category" = "Explain"
-+++
+---
+title: "Explain Model"
+category: "Explain"
+---
 Explain Model
 =============
 

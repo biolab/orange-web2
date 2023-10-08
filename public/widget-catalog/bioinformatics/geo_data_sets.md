@@ -1,7 +1,7 @@
-+++
-"title" = "GEO Data Sets"
-"category" = "Bioinformatics"
-+++
+---
+title: "GEO Data Sets"
+category: "Bioinformatics"
+---
 GEO Data Sets
 =============
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Gradient Boosting"
-"category" = "Model"
-+++
+---
+title: "Gradient Boosting"
+category: "Model"
+---
 Gradient Boosting
 =================
 

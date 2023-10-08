@@ -1,7 +1,7 @@
-+++
-"title" = "Single Mode"
-"category" = "Networks"
-+++
+---
+title: "Single Mode"
+category: "Networks"
+---
 Single Mode
 ===========
 

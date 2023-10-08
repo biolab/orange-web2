@@ -1,7 +1,7 @@
-+++
-"title" = "Kaplan-Meier Plot"
-"category" = "Survival Analysis"
-+++
+---
+title: "Kaplan-Meier Plot"
+category: "Survival Analysis"
+---
 Kaplan-Meier Plot
 ================
 Visualisation of Kaplan-Meier estimator.

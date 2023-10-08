@@ -1,7 +1,7 @@
-+++
-"title" = "Granger Causality"
-"category" = "Time Series"
-+++
+---
+title: "Granger Causality"
+category: "Time Series"
+---
 Granger Causality
 =================
 

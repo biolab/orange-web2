@@ -1,7 +1,7 @@
-+++
-"title" = "Annotated Corpus Map"
-"category" = "Text Mining"
-+++
+---
+title: "Annotated Corpus Map"
+category: "Text Mining"
+---
 Annotated Corpus Map
 ====================
 

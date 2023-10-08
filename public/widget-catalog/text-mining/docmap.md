@@ -1,7 +1,7 @@
-+++
-"title" = "Document Map"
-"category" = "Text Mining"
-+++
+---
+title: "Document Map"
+category: "Text Mining"
+---
 Document Map
 ============
 

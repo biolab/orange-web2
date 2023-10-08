@@ -1,7 +1,7 @@
-+++
-"title" = "Distances"
-"category" = "Unsupervised"
-+++
+---
+title: "Distances"
+category: "Unsupervised"
+---
 Distances
 =========
 

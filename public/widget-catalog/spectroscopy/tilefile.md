@@ -1,7 +1,7 @@
-+++
-"title" = "Tile File"
-"category" = "Spectroscopy"
-+++
+---
+title: "Tile File"
+category: "Spectroscopy"
+---
 Tile File
 =========
 

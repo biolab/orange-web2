@@ -1,7 +1,7 @@
-+++
-"title" = "Tree Viewer"
-"category" = "Visualize"
-+++
+---
+title: "Tree Viewer"
+category: "Visualize"
+---
 Tree Viewer
 ===========
 

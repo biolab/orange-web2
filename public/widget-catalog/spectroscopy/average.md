@@ -1,7 +1,7 @@
-+++
-"title" = "Average Spectra"
-"category" = "Spectroscopy"
-+++
+---
+title: "Average Spectra"
+category: "Spectroscopy"
+---
 Average Spectra
 ===============
 

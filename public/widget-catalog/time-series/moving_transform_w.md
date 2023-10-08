@@ -1,7 +1,7 @@
-+++
-"title" = "Moving Transform"
-"category" = "Time Series"
-+++
+---
+title: "Moving Transform"
+category: "Time Series"
+---
 Moving Transform
 ================
 

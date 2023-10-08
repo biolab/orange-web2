@@ -1,7 +1,7 @@
-+++
-"title" = "ICE"
-"category" = "Explain"
-+++
+---
+title: "ICE"
+category: "Explain"
+---
 ICE
 ===
 

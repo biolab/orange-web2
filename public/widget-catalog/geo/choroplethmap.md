@@ -1,7 +1,7 @@
-+++
-"title" = "Choropleth Map"
-"category" = "Geo"
-+++
+---
+title: "Choropleth Map"
+category: "Geo"
+---
 Choropleth Map
 ==============
 

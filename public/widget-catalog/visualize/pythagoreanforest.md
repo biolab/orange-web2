@@ -1,7 +1,7 @@
-+++
-"title" = "Pythagorean Forest"
-"category" = "Visualize"
-+++
+---
+title: "Pythagorean Forest"
+category: "Visualize"
+---
 Pythagorean Forest
 ==================
 

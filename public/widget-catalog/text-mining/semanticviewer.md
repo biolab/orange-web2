@@ -1,7 +1,7 @@
-+++
-"title" = "Semantic Viewer"
-"category" = "Text Mining"
-+++
+---
+title: "Semantic Viewer"
+category: "Text Mining"
+---
 Semantic Viewer
 ===============
 

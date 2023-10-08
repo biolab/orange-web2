@@ -1,7 +1,7 @@
-+++
-"title" = "Impute"
-"category" = "Transform"
-+++
+---
+title: "Impute"
+category: "Transform"
+---
 Impute
 ======
 

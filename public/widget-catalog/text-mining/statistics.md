@@ -1,7 +1,7 @@
-+++
-"title" = "Statistics"
-"category" = "Text Mining"
-+++
+---
+title: "Statistics"
+category: "Text Mining"
+---
 Statistics
 ==========
 

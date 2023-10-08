@@ -1,7 +1,7 @@
-+++
-"title" = "Louvain Clustering"
-"category" = "Unsupervised"
-+++
+---
+title: "Louvain Clustering"
+category: "Unsupervised"
+---
 Louvain Clustering
 ==================
 

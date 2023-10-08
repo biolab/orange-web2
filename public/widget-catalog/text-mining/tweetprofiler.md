@@ -1,7 +1,7 @@
-+++
-"title" = "Tweet Profiler"
-"category" = "Text Mining"
-+++
+---
+title: "Tweet Profiler"
+category: "Text Mining"
+---
 Tweet Profiler
 ==============
 

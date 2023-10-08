@@ -1,7 +1,7 @@
-+++
-"title" = "Preprocess Spectra"
-"category" = "Spectroscopy"
-+++
+---
+title: "Preprocess Spectra"
+category: "Spectroscopy"
+---
 Preprocess Spectra
 ==================
 

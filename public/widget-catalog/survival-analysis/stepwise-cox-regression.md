@@ -1,7 +1,7 @@
-+++
-"title" = "Stepwise Cox Regression"
-"category" = "Survival Analysis"
-+++
+---
+title: "Stepwise Cox Regression"
+category: "Survival Analysis"
+---
 Stepwise Cox Regression
 =======================
 Perform feature selection through backward elimination process.

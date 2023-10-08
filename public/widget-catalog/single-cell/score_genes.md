@@ -1,7 +1,7 @@
-+++
-"title" = "Score Genes"
-"category" = "Single Cell"
-+++
+---
+title: "Score Genes"
+category: "Single Cell"
+---
 Score Genes
 ===========
 

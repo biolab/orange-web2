@@ -1,7 +1,7 @@
-+++
-"title" = "CN2 Rule Viewer"
-"category" = "Visualize"
-+++
+---
+title: "CN2 Rule Viewer"
+category: "Visualize"
+---
 CN2 Rule Viewer
 ===============
 

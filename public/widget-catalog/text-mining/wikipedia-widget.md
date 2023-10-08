@@ -1,7 +1,7 @@
-+++
-"title" = "Wikipedia"
-"category" = "Text Mining"
-+++
+---
+title: "Wikipedia"
+category: "Text Mining"
+---
 Wikipedia
 =========
 

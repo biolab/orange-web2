@@ -1,7 +1,7 @@
-+++
-"title" = "Marker Genes"
-"category" = "Bioinformatics"
-+++
+---
+title: "Marker Genes"
+category: "Bioinformatics"
+---
 Marker Genes
 ============
 

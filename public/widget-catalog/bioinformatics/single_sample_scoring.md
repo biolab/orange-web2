@@ -1,7 +1,7 @@
-+++
-"title" = "Single sample scoring"
-"category" = "Bioinformatics"
-+++
+---
+title: "Single sample scoring"
+category: "Bioinformatics"
+---
 Single Sample Scoring
 ============
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Apply Domain"
-"category" = "Transform"
-+++
+---
+title: "Apply Domain"
+category: "Transform"
+---
 Apply Domain
 ============
 

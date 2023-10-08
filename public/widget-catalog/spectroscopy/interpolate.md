@@ -1,7 +1,7 @@
-+++
-"title" = "Interpolate"
-"category" = "Spectroscopy"
-+++
+---
+title: "Interpolate"
+category: "Spectroscopy"
+---
 Interpolate
 ===========
 

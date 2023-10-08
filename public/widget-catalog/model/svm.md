@@ -1,7 +1,7 @@
-+++
-"title" = "SVM"
-"category" = "Model"
-+++
+---
+title: "SVM"
+category: "Model"
+---
 SVM
 ===
 

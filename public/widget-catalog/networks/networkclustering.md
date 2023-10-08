@@ -1,7 +1,7 @@
-+++
-"title" = "Network Clustering"
-"category" = "Networks"
-+++
+---
+title: "Network Clustering"
+category: "Networks"
+---
 Network Clustering
 ==================
 

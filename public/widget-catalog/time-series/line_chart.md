@@ -1,7 +1,7 @@
-+++
-"title" = "Line Chart"
-"category" = "Time Series"
-+++
+---
+title: "Line Chart"
+category: "Time Series"
+---
 Line Chart
 ==========
 

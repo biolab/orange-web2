@@ -1,7 +1,7 @@
-+++
-"title" = "Manifold Learning"
-"category" = "Unsupervised"
-+++
+---
+title: "Manifold Learning"
+category: "Unsupervised"
+---
 Manifold Learning
 =================
 

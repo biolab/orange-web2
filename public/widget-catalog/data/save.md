@@ -1,7 +1,7 @@
-+++
-"title" = "Save Data"
-"category" = "Data"
-+++
+---
+title: "Save Data"
+category: "Data"
+---
 Save Data
 =========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Feature Importance"
-"category" = "Explain"
-+++
+---
+title: "Feature Importance"
+category: "Explain"
+---
 Feature Importance
 ==================
 

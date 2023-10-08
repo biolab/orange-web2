@@ -1,7 +1,7 @@
-+++
-"title" = "KEGG Pathways"
-"category" = "Bioinformatics"
-+++
+---
+title: "KEGG Pathways"
+category: "Bioinformatics"
+---
 KEGG Pathways
 =============
 

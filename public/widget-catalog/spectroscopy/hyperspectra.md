@@ -1,7 +1,7 @@
-+++
-"title" = "HyperSpectra"
-"category" = "Spectroscopy"
-+++
+---
+title: "HyperSpectra"
+category: "Spectroscopy"
+---
 HyperSpectra
 ============
 

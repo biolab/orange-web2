@@ -1,7 +1,7 @@
-+++
-"title" = "SNR"
-"category" = "Spectroscopy"
-+++
+---
+title: "SNR"
+category: "Spectroscopy"
+---
 SNR
 ===============
 

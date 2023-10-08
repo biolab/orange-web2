@@ -1,7 +1,7 @@
-+++
-"title" = "Logistic Regression"
-"category" = "Model"
-+++
+---
+title: "Logistic Regression"
+category: "Model"
+---
 Logistic Regression
 ===================
 

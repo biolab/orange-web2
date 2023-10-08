@@ -1,7 +1,7 @@
-+++
-"title" = "PCA"
-"category" = "Unsupervised"
-+++
+---
+title: "PCA"
+category: "Unsupervised"
+---
 PCA
 ===
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Hierarchical Clustering"
-"category" = "Unsupervised"
-+++
+---
+title: "Hierarchical Clustering"
+category: "Unsupervised"
+---
 Hierarchical Clustering
 =======================
 

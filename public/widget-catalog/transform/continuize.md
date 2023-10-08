@@ -1,7 +1,7 @@
-+++
-"title" = "Continuize"
-"category" = "Transform"
-+++
+---
+title: "Continuize"
+category: "Transform"
+---
 Continuize
 ==========
 

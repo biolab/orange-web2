@@ -1,7 +1,7 @@
-+++
-"title" = "Data Sampler"
-"category" = "Transform"
-+++
+---
+title: "Data Sampler"
+category: "Transform"
+---
 Data Sampler
 ============
 

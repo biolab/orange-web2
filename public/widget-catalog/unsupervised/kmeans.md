@@ -1,7 +1,7 @@
-+++
-"title" = "k-Means"
-"category" = "Unsupervised"
-+++
+---
+title: "k-Means"
+category: "Unsupervised"
+---
 k-Means
 =======
 

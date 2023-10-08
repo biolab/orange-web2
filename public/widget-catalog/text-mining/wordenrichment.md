@@ -1,7 +1,7 @@
-+++
-"title" = "Word Enrichment"
-"category" = "Text Mining"
-+++
+---
+title: "Word Enrichment"
+category: "Text Mining"
+---
 Word Enrichment
 ===============
 

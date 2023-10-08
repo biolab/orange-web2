@@ -1,7 +1,7 @@
-+++
-"title" = "Polynomial Regression"
-"category" = "Educational"
-+++
+---
+title: "Polynomial Regression"
+category: "Educational"
+---
 Polynomial Regression
 =====================
 

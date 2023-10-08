@@ -1,7 +1,7 @@
-+++
-"title" = "Load Data"
-"category" = "Single Cell"
-+++
+---
+title: "Load Data"
+category: "Single Cell"
+---
 Load Data
 =========
 

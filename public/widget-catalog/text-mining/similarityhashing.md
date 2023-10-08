@@ -1,7 +1,7 @@
-+++
-"title" = "Similarity Hashing"
-"category" = "Text Mining"
-+++
+---
+title: "Similarity Hashing"
+category: "Text Mining"
+---
 Similarity Hashing
 ==================
 

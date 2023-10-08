@@ -1,7 +1,7 @@
-+++
-"title" = "Color"
-"category" = "Data"
-+++
+---
+title: "Color"
+category: "Data"
+---
 Color
 =====
 

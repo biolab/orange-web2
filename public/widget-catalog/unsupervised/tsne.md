@@ -1,7 +1,7 @@
-+++
-"title" = "t-SNE"
-"category" = "Unsupervised"
-+++
+---
+title: "t-SNE"
+category: "Unsupervised"
+---
 t-SNE
 =====
 

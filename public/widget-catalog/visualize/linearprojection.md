@@ -1,7 +1,7 @@
-+++
-"title" = "Linear Projection"
-"category" = "Visualize"
-+++
+---
+title: "Linear Projection"
+category: "Visualize"
+---
 Linear Projection
 =================
 

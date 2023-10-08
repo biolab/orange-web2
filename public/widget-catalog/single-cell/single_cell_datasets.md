@@ -1,7 +1,7 @@
-+++
-"title" = "Single Cell Datasets"
-"category" = "Single Cell"
-+++
+---
+title: "Single Cell Datasets"
+category: "Single Cell"
+---
 Single Cell Datasets
 ====================
 

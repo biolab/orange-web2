@@ -1,7 +1,7 @@
-+++
-"title" = "Document Embedding"
-"category" = "Text Mining"
-+++
+---
+title: "Document Embedding"
+category: "Text Mining"
+---
 Document Embedding
 ==================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "LDAvis"
-"category" = "Text Mining"
-+++
+---
+title: "LDAvis"
+category: "Text Mining"
+---
 LDAvis
 ======
 

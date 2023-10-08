@@ -1,7 +1,7 @@
-+++
-"title" = "Network Of Groups"
-"category" = "Networks"
-+++
+---
+title: "Network Of Groups"
+category: "Networks"
+---
 Network Of Groups
 =================
 

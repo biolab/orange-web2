@@ -1,7 +1,7 @@
-+++
-"title" = "Ontology"
-"category" = "Text Mining"
-+++
+---
+title: "Ontology"
+category: "Text Mining"
+---
 Ontology
 ========
 

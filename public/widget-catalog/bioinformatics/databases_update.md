@@ -1,7 +1,7 @@
-+++
-"title" = "Databases Update"
-"category" = "Bioinformatics"
-+++
+---
+title: "Databases Update"
+category: "Bioinformatics"
+---
 Databases Update
 ================
 

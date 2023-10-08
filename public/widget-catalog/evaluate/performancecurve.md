@@ -1,7 +1,7 @@
-+++
-"title" = "Performance Curve"
-"category" = "Evaluate"
-+++
+---
+title: "Performance Curve"
+category: "Evaluate"
+---
 Performance Curve
 =================
 

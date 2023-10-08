@@ -1,7 +1,7 @@
-+++
-"title" = "Seasonal Adjustment"
-"category" = "Time Series"
-+++
+---
+title: "Seasonal Adjustment"
+category: "Time Series"
+---
 Seasonal Adjustment
 ===================
 

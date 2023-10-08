@@ -1,7 +1,7 @@
-+++
-"title" = "Filter"
-"category" = "Single Cell"
-+++
+---
+title: "Filter"
+category: "Single Cell"
+---
 Filter
 ======
 

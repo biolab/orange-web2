@@ -1,7 +1,7 @@
-+++
-"title" = "CN2 Rule Induction"
-"category" = "Model"
-+++
+---
+title: "CN2 Rule Induction"
+category: "Model"
+---
 CN2 Rule Induction
 ==================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Create Corpus"
-"category" = "Text Mining"
-+++
+---
+title: "Create Corpus"
+category: "Text Mining"
+---
 Create Corpus
 =============
 

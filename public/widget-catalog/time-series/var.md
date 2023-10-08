@@ -1,7 +1,7 @@
-+++
-"title" = "VAR Model"
-"category" = "Time Series"
-+++
+---
+title: "VAR Model"
+category: "Time Series"
+---
 VAR Model
 =========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Cox regression"
-"category" = "Survival Analysis"
-+++
+---
+title: "Cox regression"
+category: "Survival Analysis"
+---
 Cox Regression
 ================
 Fit the Cox regression model on input data.

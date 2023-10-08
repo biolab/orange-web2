@@ -1,7 +1,7 @@
-+++
-"title" = "Homologs"
-"category" = "Bioinformatics"
-+++
+---
+title: "Homologs"
+category: "Bioinformatics"
+---
 Homologs
 ============
 

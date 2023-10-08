@@ -1,7 +1,7 @@
-+++
-"title" = "Confusion Matrix"
-"category" = "Evaluate"
-+++
+---
+title: "Confusion Matrix"
+category: "Evaluate"
+---
 Confusion Matrix
 ================
 

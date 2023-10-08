@@ -1,7 +1,7 @@
-+++
-"title" = "Venn Diagram"
-"category" = "Visualize"
-+++
+---
+title: "Venn Diagram"
+category: "Visualize"
+---
 Venn Diagram
 ============
 

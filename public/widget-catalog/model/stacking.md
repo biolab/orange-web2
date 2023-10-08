@@ -1,7 +1,7 @@
-+++
-"title" = "Stacking"
-"category" = "Model"
-+++
+---
+title: "Stacking"
+category: "Model"
+---
 Stacking
 ========
 

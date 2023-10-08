@@ -1,7 +1,7 @@
-+++
-"title" = "Association Rules"
-"category" = "Associate"
-+++
+---
+title: "Association Rules"
+category: "Associate"
+---
 Association Rules
 =================
 

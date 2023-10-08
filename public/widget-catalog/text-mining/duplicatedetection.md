@@ -1,7 +1,7 @@
-+++
-"title" = "Duplicate Detection"
-"category" = "Text Mining"
-+++
+---
+title: "Duplicate Detection"
+category: "Text Mining"
+---
 Duplicate Detection
 ===================
 

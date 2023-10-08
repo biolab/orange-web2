@@ -1,7 +1,7 @@
-+++
-"title" = "Group by"
-"category" = "Transform"
-+++
+---
+title: "Group by"
+category: "Transform"
+---
 Group by
 ========
 

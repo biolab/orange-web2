@@ -1,7 +1,7 @@
-+++
-"title" = "Score Documents"
-"category" = "Text Mining"
-+++
+---
+title: "Score Documents"
+category: "Text Mining"
+---
 Score Documents
 ===============
 

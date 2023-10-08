@@ -1,7 +1,7 @@
-+++
-"title" = "Curve Fit"
-"category" = "Model"
-+++
+---
+title: "Curve Fit"
+category: "Model"
+---
 Curve Fit
 =========
 

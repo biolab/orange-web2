@@ -1,7 +1,7 @@
-+++
-"title" = "Rank Survival Features"
-"category" = "Survival Analysis"
-+++
+---
+title: "Rank Survival Features"
+category: "Survival Analysis"
+---
 Rank Survival Features
 ======================
 Rank features according to univariate estimate of importance by Cox regression model.

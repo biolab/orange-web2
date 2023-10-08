@@ -1,7 +1,7 @@
-+++
-"title" = "Import Images"
-"category" = "Image Analytics"
-+++
+---
+title: "Import Images"
+category: "Image Analytics"
+---
 Import Images
 =============
 

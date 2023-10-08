@@ -1,7 +1,7 @@
-+++
-"title" = "Cohorts"
-"category" = "Survival Analysis"
-+++
+---
+title: "Cohorts"
+category: "Survival Analysis"
+---
 Cohorts
 =======
 Calculate the risk score for each data instance and stratify into high and low-risk cohorts.

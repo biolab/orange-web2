@@ -1,7 +1,7 @@
-+++
-"title" = "Select by Data Index"
-"category" = "Transform"
-+++
+---
+title: "Select by Data Index"
+category: "Transform"
+---
 Select by Data Index
 ====================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "FreeViz"
-"category" = "Visualize"
-+++
+---
+title: "FreeViz"
+category: "Visualize"
+---
 FreeViz
 =======
 

@@ -1,7 +1,7 @@
-+++
-"title" = "AdaBoost"
-"category" = "Model"
-+++
+---
+title: "AdaBoost"
+category: "Model"
+---
 AdaBoost
 ========
 

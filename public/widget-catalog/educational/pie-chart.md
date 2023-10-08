@@ -1,7 +1,7 @@
-+++
-"title" = "Pie Chart"
-"category" = "Educational"
-+++
+---
+title: "Pie Chart"
+category: "Educational"
+---
 Pie Chart
 =========
 

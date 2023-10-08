@@ -1,7 +1,7 @@
-+++
-"title" = "Network Explorer"
-"category" = "Networks"
-+++
+---
+title: "Network Explorer"
+category: "Networks"
+---
 Network Explorer
 ================
 

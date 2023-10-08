@@ -1,7 +1,7 @@
-+++
-"title" = "Corpus"
-"category" = "Text Mining"
-+++
+---
+title: "Corpus"
+category: "Text Mining"
+---
 Corpus
 ======
 

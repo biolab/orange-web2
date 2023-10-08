@@ -1,7 +1,7 @@
-+++
-"title" = "Concordance"
-"category" = "Text Mining"
-+++
+---
+title: "Concordance"
+category: "Text Mining"
+---
 Concordance
 ===========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "The Guardian"
-"category" = "Text Mining"
-+++
+---
+title: "The Guardian"
+category: "Text Mining"
+---
 The Guardian
 ============
 

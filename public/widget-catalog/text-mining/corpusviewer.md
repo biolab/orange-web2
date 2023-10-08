@@ -1,7 +1,7 @@
-+++
-"title" = "Corpus Viewer"
-"category" = "Text Mining"
-+++
+---
+title: "Corpus Viewer"
+category: "Text Mining"
+---
 Corpus Viewer
 =============
 

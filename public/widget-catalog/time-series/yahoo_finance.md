@@ -1,7 +1,7 @@
-+++
-"title" = "Yahoo Finance"
-"category" = "Time Series"
-+++
+---
+title: "Yahoo Finance"
+category: "Time Series"
+---
 Yahoo Finance
 =============
 

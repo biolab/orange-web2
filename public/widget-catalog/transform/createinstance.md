@@ -1,7 +1,7 @@
-+++
-"title" = "Create Instance"
-"category" = "Transform"
-+++
+---
+title: "Create Instance"
+category: "Transform"
+---
 Create Instance
 ===============
 

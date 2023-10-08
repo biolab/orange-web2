@@ -1,7 +1,7 @@
-+++
-"title" = "Spiralogram"
-"category" = "Time Series"
-+++
+---
+title: "Spiralogram"
+category: "Time Series"
+---
 Spiralogram
 ===========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Correlations"
-"category" = "Unsupervised"
-+++
+---
+title: "Correlations"
+category: "Unsupervised"
+---
 Correlations
 ============
 

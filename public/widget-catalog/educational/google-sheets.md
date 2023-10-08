@@ -1,7 +1,7 @@
-+++
-"title" = "Google Sheets"
-"category" = "Educational"
-+++
+---
+title: "Google Sheets"
+category: "Educational"
+---
 Google Sheets
 =============
 

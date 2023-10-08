@@ -1,7 +1,7 @@
-+++
-"title" = "Multifile"
-"category" = "Spectroscopy"
-+++
+---
+title: "Multifile"
+category: "Spectroscopy"
+---
 Multifile
 =========
 

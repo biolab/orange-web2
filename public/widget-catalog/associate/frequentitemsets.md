@@ -1,7 +1,7 @@
-+++
-"title" = "Frequent Itemsets"
-"category" = "Associate"
-+++
+---
+title: "Frequent Itemsets"
+category: "Associate"
+---
 Frequent Itemsets
 =================
 

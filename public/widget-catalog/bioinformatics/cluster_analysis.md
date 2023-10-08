@@ -1,7 +1,7 @@
-+++
-"title" = "Cluster Analysis"
-"category" = "Bioinformatics"
-+++
+---
+title: "Cluster Analysis"
+category: "Bioinformatics"
+---
 Cluster Analysis
 ================
 

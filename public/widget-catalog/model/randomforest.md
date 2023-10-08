@@ -1,7 +1,7 @@
-+++
-"title" = "Random Forest"
-"category" = "Model"
-+++
+---
+title: "Random Forest"
+category: "Model"
+---
 Random Forest
 =============
 

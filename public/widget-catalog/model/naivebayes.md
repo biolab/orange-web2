@@ -1,7 +1,7 @@
-+++
-"title" = "Naive Bayes"
-"category" = "Model"
-+++
+---
+title: "Naive Bayes"
+category: "Model"
+---
 Naive Bayes
 ===========
 

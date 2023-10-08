@@ -1,7 +1,7 @@
-+++
-"title" = "Random Data"
-"category" = "Educational"
-+++
+---
+title: "Random Data"
+category: "Educational"
+---
 Random Data
 ===========
 

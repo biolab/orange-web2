@@ -1,7 +1,7 @@
-+++
-"title" = "Aggregate Columns"
-"category" = "Transform"
-+++
+---
+title: "Aggregate Columns"
+category: "Transform"
+---
 Aggregate Columns
 =================
 

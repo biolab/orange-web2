@@ -1,7 +1,7 @@
-+++
-"title" = "Merge Data"
-"category" = "Transform"
-+++
+---
+title: "Merge Data"
+category: "Transform"
+---
 Merge Data
 ==========
 

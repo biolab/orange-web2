@@ -1,7 +1,7 @@
-+++
-"title" = "As Survival Data"
-"category" = "Survival Analysis"
-+++
+---
+title: "As Survival Data"
+category: "Survival Analysis"
+---
 As Survival Data
 ================
 Mark features Time and Event as target variables.

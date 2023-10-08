@@ -1,7 +1,7 @@
-+++
-"title" = "DBSCAN"
-"category" = "Unsupervised"
-+++
+---
+title: "DBSCAN"
+category: "Unsupervised"
+---
 DBSCAN
 ======
 

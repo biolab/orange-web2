@@ -1,7 +1,7 @@
-+++
-"title" = "Edit Domain"
-"category" = "Data"
-+++
+---
+title: "Edit Domain"
+category: "Data"
+---
 Edit Domain
 ===========
 

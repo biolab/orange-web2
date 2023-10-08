@@ -1,7 +1,7 @@
-+++
-"title" = "Integrate Spectra"
-"category" = "Spectroscopy"
-+++
+---
+title: "Integrate Spectra"
+category: "Spectroscopy"
+---
 Integrate Spectra
 =================
 

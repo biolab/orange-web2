@@ -1,7 +1,7 @@
-+++
-"title" = "Interpolate"
-"category" = "Time Series"
-+++
+---
+title: "Interpolate"
+category: "Time Series"
+---
 Interpolate
 ===========
 

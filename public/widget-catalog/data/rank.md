@@ -1,7 +1,7 @@
-+++
-"title" = "Rank"
-"category" = "Data"
-+++
+---
+title: "Rank"
+category: "Data"
+---
 Rank
 ====
 

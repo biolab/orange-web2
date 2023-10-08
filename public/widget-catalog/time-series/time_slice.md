@@ -1,7 +1,7 @@
-+++
-"title" = "Time Slice"
-"category" = "Time Series"
-+++
+---
+title: "Time Slice"
+category: "Time Series"
+---
 Time Slice
 ==========
 

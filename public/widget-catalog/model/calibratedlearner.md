@@ -1,7 +1,7 @@
-+++
-"title" = "Calibrated Learner"
-"category" = "Model"
-+++
+---
+title: "Calibrated Learner"
+category: "Model"
+---
 Calibrated Learner
 ==================
 

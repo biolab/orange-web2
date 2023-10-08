@@ -1,7 +1,7 @@
-+++
-"title" = "Annotator"
-"category" = "Bioinformatics"
-+++
+---
+title: "Annotator"
+category: "Bioinformatics"
+---
 Annotator
 =========
 

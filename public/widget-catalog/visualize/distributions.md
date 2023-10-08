@@ -1,7 +1,7 @@
-+++
-"title" = "Distributions"
-"category" = "Visualize"
-+++
+---
+title: "Distributions"
+category: "Visualize"
+---
 Distributions
 =============
 

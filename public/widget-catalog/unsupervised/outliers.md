@@ -1,7 +1,7 @@
-+++
-"title" = "Outliers"
-"category" = "Unsupervised"
-+++
+---
+title: "Outliers"
+category: "Unsupervised"
+---
 Outliers
 ========
 

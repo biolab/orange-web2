@@ -1,7 +1,7 @@
-+++
-"title" = "Difference"
-"category" = "Time Series"
-+++
+---
+title: "Difference"
+category: "Time Series"
+---
 Difference
 ==========
 

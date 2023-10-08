@@ -1,7 +1,7 @@
-+++
-"title" = "Word Cloud"
-"category" = "Text Mining"
-+++
+---
+title: "Word Cloud"
+category: "Text Mining"
+---
 Word Cloud
 ==========
 

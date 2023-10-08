@@ -1,7 +1,7 @@
-+++
-"title" = "Transpose"
-"category" = "Transform"
-+++
+---
+title: "Transpose"
+category: "Transform"
+---
 Transpose
 =========
 

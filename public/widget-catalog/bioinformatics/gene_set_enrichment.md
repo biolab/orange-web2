@@ -1,7 +1,7 @@
-+++
-"title" = "Gene Set Enrichment"
-"category" = "Bioinformatics"
-+++
+---
+title: "Gene Set Enrichment"
+category: "Bioinformatics"
+---
 Gene Set Enrichment
 ===================
 

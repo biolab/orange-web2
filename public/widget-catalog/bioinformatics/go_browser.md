@@ -1,7 +1,7 @@
-+++
-"title" = "GO Browser"
-"category" = "Bioinformatics"
-+++
+---
+title: "GO Browser"
+category: "Bioinformatics"
+---
 GO Browser
 ==========
 

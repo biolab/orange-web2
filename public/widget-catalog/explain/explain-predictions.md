@@ -1,7 +1,7 @@
-+++
-"title" = "Explain Predictions"
-"category" = "Explain"
-+++
+---
+title: "Explain Predictions"
+category: "Explain"
+---
 Explain Predictions
 ===================
 

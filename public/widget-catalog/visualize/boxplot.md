@@ -1,7 +1,7 @@
-+++
-"title" = "Box Plot"
-"category" = "Visualize"
-+++
+---
+title: "Box Plot"
+category: "Visualize"
+---
 Box Plot
 ========
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Purge Domain"
-"category" = "Transform"
-+++
+---
+title: "Purge Domain"
+category: "Transform"
+---
 Purge Domain
 ============
 

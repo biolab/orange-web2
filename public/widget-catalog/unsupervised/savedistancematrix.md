@@ -1,7 +1,7 @@
-+++
-"title" = "Save Distance Matrix"
-"category" = "Unsupervised"
-+++
+---
+title: "Save Distance Matrix"
+category: "Unsupervised"
+---
 Save Distance Matrix
 ====================
 

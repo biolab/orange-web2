@@ -1,7 +1,7 @@
-+++
-"title" = "Feature Statistics"
-"category" = "Data"
-+++
+---
+title: "Feature Statistics"
+category: "Data"
+---
 Feature Statistics
 ==================
 

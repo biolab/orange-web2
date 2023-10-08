@@ -1,7 +1,7 @@
-+++
-"title" = "Stochastic Gradient Descent"
-"category" = "Model"
-+++
+---
+title: "Stochastic Gradient Descent"
+category: "Model"
+---
 Stochastic Gradient Descent
 ===========================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Correspondence Analysis"
-"category" = "Unsupervised"
-+++
+---
+title: "Correspondence Analysis"
+category: "Unsupervised"
+---
 Correspondence Analysis
 =======================
 

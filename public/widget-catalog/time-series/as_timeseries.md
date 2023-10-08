@@ -1,7 +1,7 @@
-+++
-"title" = "As Timeseries"
-"category" = "Time Series"
-+++
+---
+title: "As Timeseries"
+category: "Time Series"
+---
 As Timeseries
 =============
 

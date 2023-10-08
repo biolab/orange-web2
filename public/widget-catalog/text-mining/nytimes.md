@@ -1,7 +1,7 @@
-+++
-"title" = "NY Times"
-"category" = "Text Mining"
-+++
+---
+title: "NY Times"
+category: "Text Mining"
+---
 NY Times
 ========
 

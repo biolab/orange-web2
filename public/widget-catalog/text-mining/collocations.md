@@ -1,7 +1,7 @@
-+++
-"title" = "Collocations"
-"category" = "Text Mining"
-+++
+---
+title: "Collocations"
+category: "Text Mining"
+---
 Collocations
 ============
 

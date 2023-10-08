@@ -1,7 +1,7 @@
-+++
-"title" = "kNN"
-"category" = "Model"
-+++
+---
+title: "kNN"
+category: "Model"
+---
 kNN
 ===
 

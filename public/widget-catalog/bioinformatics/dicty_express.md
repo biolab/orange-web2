@@ -1,7 +1,7 @@
-+++
-"title" = "dictyExpress"
-"category" = "Bioinformatics"
-+++
+---
+title: "dictyExpress"
+category: "Bioinformatics"
+---
 dictyExpress
 ============
 

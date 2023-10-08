@@ -1,7 +1,7 @@
-+++
-"title" = "Paint Data"
-"category" = "Data"
-+++
+---
+title: "Paint Data"
+category: "Data"
+---
 Paint Data
 ==========
 

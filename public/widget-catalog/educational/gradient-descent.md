@@ -1,7 +1,7 @@
-+++
-"title" = "Gradient Descent"
-"category" = "Educational"
-+++
+---
+title: "Gradient Descent"
+category: "Educational"
+---
 Gradient Descent
 ================
 

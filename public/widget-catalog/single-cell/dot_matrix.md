@@ -1,7 +1,7 @@
-+++
-"title" = "Dot Matrix"
-"category" = "Single Cell"
-+++
+---
+title: "Dot Matrix"
+category: "Single Cell"
+---
 Dot Matrix
 ==========
 

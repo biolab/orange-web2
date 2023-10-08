@@ -1,7 +1,7 @@
-+++
-"title" = "Polynomial Classification"
-"category" = "Educational"
-+++
+---
+title: "Polynomial Classification"
+category: "Educational"
+---
 Polynomial Classification
 =========================
 

@@ -1,7 +1,7 @@
-+++
-"title" = "Single Cell Preprocess"
-"category" = "Single Cell"
-+++
+---
+title: "Single Cell Preprocess"
+category: "Single Cell"
+---
 Single Cell Preprocess
 ======================
 

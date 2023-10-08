@@ -1,7 +1,7 @@
-+++
-"title" = "Select Columns"
-"category" = "Transform"
-+++
+---
+title: "Select Columns"
+category: "Transform"
+---
 Select Columns
 ==============
 

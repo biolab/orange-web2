@@ -1,7 +1,7 @@
-+++
-"title" = "Geocoding"
-"category" = "Geo"
-+++
+---
+title: "Geocoding"
+category: "Geo"
+---
 Geocoding
 =========
 

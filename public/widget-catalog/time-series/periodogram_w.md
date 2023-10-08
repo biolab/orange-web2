@@ -1,7 +1,7 @@
-+++
-"title" = "Periodogram"
-"category" = "Time Series"
-+++
+---
+title: "Periodogram"
+category: "Time Series"
+---
 Periodogram
 ===========
 

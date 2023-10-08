@@ -1,7 +1,7 @@
-+++
-"title" = "Import Documents"
-"category" = "Text Mining"
-+++
+---
+title: "Import Documents"
+category: "Text Mining"
+---
 Import Documents
 ================
 

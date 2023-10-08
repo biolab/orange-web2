@@ -1,7 +1,7 @@
-+++
-"title" = "Preprocess Text"
-"category" = "Text Mining"
-+++
+---
+title: "Preprocess Text"
+category: "Text Mining"
+---
 Preprocess Text
 ===============
 

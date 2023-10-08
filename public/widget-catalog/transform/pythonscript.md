@@ -1,7 +1,7 @@
-+++
-"title" = "Python Script"
-"category" = "Transform"
-+++
+---
+title: "Python Script"
+category: "Transform"
+---
 Python Script
 =============
 

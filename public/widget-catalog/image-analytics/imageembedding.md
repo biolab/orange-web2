@@ -1,7 +1,7 @@
-+++
-"title" = "Image Embedding"
-"category" = "Image Analytics"
-+++
+---
+title: "Image Embedding"
+category: "Image Analytics"
+---
 Image Embedding
 ================
 

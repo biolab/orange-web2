@@ -1,7 +1,7 @@
-+++
-"title" = "Network Generator"
-"category" = "Networks"
-+++
+---
+title: "Network Generator"
+category: "Networks"
+---
 Network Generator
 =================
 

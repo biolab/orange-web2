@@ -1,7 +1,7 @@
-+++
-"title" = "Peak Fit"
-"category" = "Spectroscopy"
-+++
+---
+title: "Peak Fit"
+category: "Spectroscopy"
+---
 Peak Fit
 ========
 

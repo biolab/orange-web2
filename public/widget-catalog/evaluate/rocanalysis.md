@@ -1,7 +1,7 @@
-+++
-"title" = "ROC Analysis"
-"category" = "Evaluate"
-+++
+---
+title: "ROC Analysis"
+category: "Evaluate"
+---
 ROC Analysis
 ============
 
