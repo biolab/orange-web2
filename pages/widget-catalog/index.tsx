@@ -1,32 +1,126 @@
 import widgetCatalog from "@public/widget-catalog/widgets.json";
 import Image from "@components/Image/Image";
 import Link from "next/link";
+import Adapt from "@components/UiKit/Adapt";
+import { Heading1 } from "@components/UiKit/Typography";
+import React from "react";
+import styled from "styled-components";
+
+const StCategoryWrapper = styled.div`
+  margin-bottom: 80px;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+`;
+const StWidgetsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+`;
+
+const StInputWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px;
+`;
+
+const StSearchInput = styled.input`
+  width: 233px;
+  height: 42px;
+  border: 1px solid #999;
+  padding: 11px 13px;
+  border-radius: 5px;
+`;
+
+const StWidget = styled.div`
+  width: 135px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  gap: 8px;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  p {
+    max-width: 110px;
+    text-align: center;
+  }
+`;
 
 export async function getStaticProps() {
   return {
     props: {
-      catalog: widgetCatalog,
+      widgetCatalog,
     },
   };
 }
 
-export default function Home({ catalog }: { catalog: any[] }) {
-  return (
-    <div>
-      {catalog.map(([category, widgets]) => (
-        <div key={category}>
-          <h2>{category}</h2>
+export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
+  const [query, setQuery] = React.useState("");
 
-          <div>
-            {widgets.map((w: any) => (
-              <Link href={`/widget-catalog/${category.toLowerCase()}/${w.url}`} key={w.title}>
-                <Image src={`widget-catalog/${w.icon}`} width={100} height={100} alt="" />
-                {w.title}
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+  const catalog = React.useMemo(() => {
+    if (!query) {
+      return widgetCatalog;
+    }
+
+    return widgetCatalog
+      .map(([category, widgets]: any) => {
+        const _widgets = widgets.filter(
+          (w: any) => w.title.replace(/\s/g, "").toLowerCase().indexOf(query.replace(/\s/g, "").toLowerCase()) !== -1
+        );
+
+        if (_widgets.length === 0) {
+          return null;
+        }
+
+        return [category, _widgets];
+      })
+      .filter(Boolean);
+  }, [widgetCatalog, query]);
+
+  return (
+    <Adapt $mt>
+      <Heading1>Widgets catalog</Heading1>
+
+      <StInputWrapper>
+        <StSearchInput
+          type="text"
+          placeholder="Search widgets"
+          value={query}
+          onInput={(e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
+        />
+      </StInputWrapper>
+
+      <div>
+        {catalog.map(([category, widgets]) => (
+          <StCategoryWrapper key={category}>
+            <h2>{category}</h2>
+
+            <StWidgetsWrapper>
+              {widgets.map((w: any) => {
+                return (
+                  <Link scroll={false} href={`/widget-catalog/${category.toLowerCase()}/${w.url}`} key={w.title}>
+                    <StWidget>
+                      <Image src={`widget-catalog/${w.icon}`} width={60} height={60} alt="" />
+                      <p>{w.title}</p>
+                    </StWidget>
+                  </Link>
+                );
+              })}
+            </StWidgetsWrapper>
+          </StCategoryWrapper>
+        ))}
+      </div>
+    </Adapt>
   );
 }

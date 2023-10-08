@@ -4,7 +4,6 @@ import { Heading1 } from "@components/UiKit/TypographyHomepage";
 import Adapt from "@components/UiKit/Adapt";
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
-import Link from "next/link";
 import img from "@public/home/orange_illustration_landing.png";
 
 const SectionHeader = styled.section`
