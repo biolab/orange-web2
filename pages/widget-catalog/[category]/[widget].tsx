@@ -1,13 +1,38 @@
+import MdContent from "@components/MdContent/MdContent";
 import widgetCatalog from "@public/widget-catalog/widgets.json";
+import fs from "fs";
+import matter from "gray-matter";
+import { serialize } from "next-mdx-remote/serialize";
+import path from "path";
+interface Widget {
+  title: string;
+  category: string;
+  keywords: string[];
+  background: string;
+  icon: string;
+  url: string;
+}
+
+function addRelativePathToImages(content: string, imgRelativePath: string): string {
+  if (!imgRelativePath || !content) {
+    return content;
+  }
+
+  // Widgets specific fix
+  return content.replaceAll("../images", imgRelativePath);
+}
 
 export async function getStaticPaths() {
-  const paths = widgetCatalog.flatMap(([_, widgets]) =>
-    widgets.map((widget) => ({
-      params: { category: widget.category.toLowerCase(), widget: widget.title.toLowerCase() },
-    }))
+  const paths = widgetCatalog.flatMap(([_, widgets]: any) =>
+    widgets
+      .map((widget: Widget) => {
+        if (!widget.url) {
+          return undefined;
+        }
+        return { params: { category: widget.category.toLowerCase(), widget: widget.url.toLowerCase() } };
+      })
+      .filter((p) => p)
   );
-
-  console.log(paths);
 
   return {
     paths,
@@ -15,15 +40,33 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   console.log(params);
-  return { props: params };
+  const dir = path.join("public", "widget-catalog", params.category);
+  const mdFile = path.join(dir, `${params.widget}.md`);
+  const fileContents = fs.readFileSync(mdFile, "utf8");
+
+  const { data: frontmatter, content } = matter(
+    addRelativePathToImages(fileContents, path.join("/widget-catalog", params.category, "images"))
+  );
+
+  const mdxSource = await serialize(content);
+
+  return {
+    props: {
+      frontmatter,
+      mdxSource,
+    },
+  };
 }
 
-export default function Home({ category, widget }: any) {
+export default function Home({ frontmatter, mdxSource }: any) {
+  console.log(frontmatter);
+  console.log(mdxSource);
   return (
     <div>
-      {category} {widget}
+      {/* {frontmatter.title} */}
+      <MdContent content={mdxSource} />
     </div>
   );
 }

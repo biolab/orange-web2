@@ -51,7 +51,7 @@ export async function getStaticProps() {
     const mdxSource = await serialize(content, {
       mdxOptions: {
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-        rehypePlugins: [getImageData], // Add rehypeImageSize to add width and height to images
+        rehypePlugins: [getImageData], // Add getImageData to add width and height to images
       },
     });
 
