@@ -7,10 +7,10 @@ const H1 = styled(Heading1)`
   text-align: center;
 `;
 
-const MainLayout = ({ children, title }: { children: React.ReactNode | React.ReactNode[]; title: string }) => {
+const MainLayout = ({ children, title }: { children: React.ReactNode | React.ReactNode[]; title?: string }) => {
   return (
-    <Adapt $mt>
-      <H1> {title}</H1>
+    <Adapt $mt $mb>
+      {title && <H1> {title}</H1>}
       {children}
     </Adapt>
   );

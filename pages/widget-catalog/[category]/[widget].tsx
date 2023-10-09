@@ -1,10 +1,14 @@
 import MdContent from "@components/MdContent/MdContent";
 import MainLayout from "@components/UiKit/MainLayout";
 import widgetCatalog from "@public/widget-catalog/widgets.json";
+import { getImageData } from "@utils/images/getImageData";
 import fs from "fs";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
+import remarkGfm from "remark-gfm";
+import remarkUnwrapImages from "remark-unwrap-images";
+import styled from "styled-components";
 interface Widget {
   title: string;
   category: string;
@@ -42,33 +46,50 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  console.log(params);
   const dir = path.join("public", "widget-catalog", params.category);
   const mdFile = path.join(dir, `${params.widget}.md`);
   const fileContents = fs.readFileSync(mdFile, "utf8");
 
-  const { data: frontmatter, content } = matter(
+  const { content } = matter(
     addRelativePathToImages(fileContents, path.join("/widget-catalog", params.category, "images"))
   );
 
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
+      rehypePlugins: [getImageData], // Add getImageData to add width and height to images
+    },
+  });
 
   return {
     props: {
-      frontmatter,
       mdxSource,
     },
   };
 }
 
-export default function Home({ frontmatter, mdxSource }: any) {
-  console.log(frontmatter);
-  console.log(mdxSource);
+export default function Home({ mdxSource }: any) {
   return (
-    <MainLayout title="Widget Catalog">
-      {/* {frontmatter.title} */}
-
-      <MdContent content={mdxSource} />
+    <MainLayout>
+      <StWrapper>
+        <StSidebar>
+          <div>Sidebar</div>
+        </StSidebar>
+        <StMainWrapper>
+          <MdContent content={mdxSource} />
+        </StMainWrapper>
+      </StWrapper>
     </MainLayout>
   );
 }
+
+const StWrapper = styled.div`
+  display: flex;
+`;
+const StMainWrapper = styled.div`
+  width: 714px;
+`;
+
+const StSidebar = styled.aside`
+  width: 356px;
+`;
