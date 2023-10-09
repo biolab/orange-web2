@@ -1,10 +1,9 @@
 import widgetCatalog from "@public/widget-catalog/widgets.json";
 import Image from "@components/Image/Image";
 import Link from "next/link";
-import Adapt from "@components/UiKit/Adapt";
-import { Heading1 } from "@components/UiKit/Typography";
 import React from "react";
 import styled from "styled-components";
+import MainLayout from "@components/UiKit/MainLayout";
 
 const StCategoryWrapper = styled.div`
   margin-bottom: 80px;
@@ -89,9 +88,7 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
   }, [widgetCatalog, query]);
 
   return (
-    <Adapt $mt>
-      <Heading1>Widgets catalog</Heading1>
-
+    <MainLayout title="Widget Catalog">
       <StInputWrapper>
         <StSearchInput
           type="text"
@@ -121,6 +118,6 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
           </StCategoryWrapper>
         ))}
       </div>
-    </Adapt>
+    </MainLayout>
   );
 }

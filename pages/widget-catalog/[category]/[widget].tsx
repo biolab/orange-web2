@@ -1,4 +1,5 @@
 import MdContent from "@components/MdContent/MdContent";
+import MainLayout from "@components/UiKit/MainLayout";
 import widgetCatalog from "@public/widget-catalog/widgets.json";
 import fs from "fs";
 import matter from "gray-matter";
@@ -64,9 +65,10 @@ export default function Home({ frontmatter, mdxSource }: any) {
   console.log(frontmatter);
   console.log(mdxSource);
   return (
-    <div>
+    <MainLayout title="Widget Catalog">
       {/* {frontmatter.title} */}
+
       <MdContent content={mdxSource} />
-    </div>
+    </MainLayout>
   );
 }
