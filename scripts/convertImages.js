@@ -3,7 +3,7 @@ import imageminWebp from "imagemin-webp";
 import fs from "fs";
 import { join } from "path";
 
-function getAllBlogFolders() {
+function getAllFolders(path) {
   function throughDirectory(dir) {
     fs.readdirSync(dir).forEach((file) => {
       const absolute = join(dir, file);
@@ -14,13 +14,15 @@ function getAllBlogFolders() {
   }
 
   let folders = [];
-  throughDirectory("public/blog");
+  throughDirectory(path);
   return folders;
 }
 
-getAllBlogFolders()
-  .forEach((path) => {
-
+[
+  ...getAllFolders("public/blog"),
+  ...getAllFolders("public/widget-catalog").flatMap((path) => getAllFolders(path)),
+  "public/widget-catalog/widget-icons",
+].forEach((path) => {
   imagemin([join(path, "*.{jpg,png}")], {
     destination: join(path, "__webp-images__"),
     plugins: [
@@ -29,8 +31,10 @@ getAllBlogFolders()
       }),
     ],
   })
-    .then(() => {
-      console.log("Images converted");
+    .then((images) => {
+      if (images.length > 0) {
+        console.log(`Images converted successfully in folder ${path}`);
+      }
     })
     .catch((err) => {
       console.error(err);

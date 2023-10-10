@@ -45,3 +45,5 @@ cypress/screenshots
 # generated files
 blogPosts.json
 public/**/__webp-images__
+
+external
