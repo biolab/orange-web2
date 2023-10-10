@@ -34,13 +34,10 @@ function addRelativePathToImages(content: string, imgRelativePath: string): stri
 export async function getStaticPaths() {
   const paths = widgetCatalog.flatMap(([_, widgets]: any) =>
     widgets
-      .map((widget: Widget) => {
-        if (!widget.url) {
-          return undefined;
-        }
-        return { params: { category: slugify(widget.category), widget: widget.url.toLowerCase() } };
-      })
-      .filter((p) => p)
+      .map((widget: Widget) =>
+        widget.url ? { params: { category: slugify(widget.category), widget: widget.url.toLowerCase() } } : undefined
+      )
+      .filter(Boolean)
   );
 
   return {
