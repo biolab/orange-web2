@@ -6,6 +6,12 @@ import styled from "styled-components";
 import MainLayout from "@components/UiKit/MainLayout";
 import slugify from "@utils/slugify";
 
+const getIconWebpPath = (icon: string) => {
+  return `widget-catalog/${icon}`
+    .replace("widget-icons", "widget-icons/__webp-images__")
+    .replace(".png", ".webp");
+};
+
 const StCategoryWrapper = styled.div`
   margin-bottom: 80px;
   h2 {
@@ -76,7 +82,11 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
     return widgetCatalog
       .map(([category, widgets]: any) => {
         const _widgets = widgets.filter(
-          (w: any) => w.title.replace(/\s/g, "").toLowerCase().indexOf(query.replace(/\s/g, "").toLowerCase()) !== -1
+          (w: any) =>
+            w.title
+              .replace(/\s/g, "")
+              .toLowerCase()
+              .indexOf(query.replace(/\s/g, "").toLowerCase()) !== -1
         );
 
         if (_widgets.length === 0) {
@@ -95,7 +105,9 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
           type="text"
           placeholder="Search widgets"
           value={query}
-          onInput={(e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
+          onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setQuery(e.target.value)
+          }
         />
       </StInputWrapper>
 
@@ -107,9 +119,18 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
             <StWidgetsWrapper>
               {widgets.map((w: any) => {
                 return (
-                  <Link scroll={false} href={`/widget-catalog/${slugify(category)}/${w.url}`} key={w.title}>
+                  <Link
+                    scroll={false}
+                    href={`/widget-catalog/${slugify(category)}/${w.url}`}
+                    key={w.title}
+                  >
                     <StWidget>
-                      <Image src={`widget-catalog/${w.icon}`} width={60} height={60} alt="" />
+                      <Image
+                        src={getIconWebpPath(w.icon)}
+                        width={60}
+                        height={60}
+                        alt={w.title}
+                      />
                       <p>{w.title}</p>
                     </StWidget>
                   </Link>
