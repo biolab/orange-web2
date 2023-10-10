@@ -1,6 +1,7 @@
 import MdContent from "@components/MdContent/MdContent";
 import MainLayout from "@components/UiKit/MainLayout";
 import widgetCatalog from "@public/widget-catalog/widgets.json";
+import device from "@styles/utils/breakpoints";
 import { getImageData } from "@utils/images/getImageData";
 import slugify from "@utils/slugify";
 import fs from "fs";
@@ -185,7 +186,11 @@ const StLink = styled(Link)<{ $active?: boolean }>`
 
 const StWrapper = styled.div`
   display: flex;
+  @media ${device.M} {
+    justify-content: center;
+  }
 `;
+
 const StMainWrapper = styled.div`
   width: 714px;
 `;
@@ -193,4 +198,8 @@ const StMainWrapper = styled.div`
 const StSidebar = styled.nav`
   width: 356px;
   margin-top: 28px;
+
+  @media ${device.M} {
+    display: none;
+  }
 `;
