@@ -42,7 +42,7 @@ export async function getStaticPaths() {
           ? {
               params: {
                 category: slugify(widget.category),
-                widget: widget.url.toLowerCase(),
+                widget: widget.url,
               },
             }
           : undefined
