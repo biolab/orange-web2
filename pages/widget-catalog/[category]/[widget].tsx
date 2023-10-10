@@ -22,7 +22,10 @@ interface Widget {
   url: string;
 }
 
-function addRelativePathToImages(content: string, imgRelativePath: string): string {
+function addRelativePathToImages(
+  content: string,
+  imgRelativePath: string
+): string {
   if (!imgRelativePath || !content) {
     return content;
   }
@@ -35,7 +38,14 @@ export async function getStaticPaths() {
   const paths = widgetCatalog.flatMap(([_, widgets]: any) =>
     widgets
       .map((widget: Widget) =>
-        widget.url ? { params: { category: slugify(widget.category), widget: widget.url.toLowerCase() } } : undefined
+        widget.url
+          ? {
+              params: {
+                category: slugify(widget.category),
+                widget: widget.url.toLowerCase(),
+              },
+            }
+          : undefined
       )
       .filter(Boolean)
   );
@@ -52,7 +62,10 @@ export async function getStaticProps({ params }: any) {
   const fileContents = fs.readFileSync(mdFile, "utf8");
 
   const { content } = matter(
-    addRelativePathToImages(fileContents, path.join("/widget-catalog", params.category, "images"))
+    addRelativePathToImages(
+      fileContents,
+      path.join("/widget-catalog", params.category, "images")
+    )
   );
 
   const mdxSource = await serialize(content, {
@@ -72,7 +85,12 @@ export async function getStaticProps({ params }: any) {
   };
 }
 
-export default function Home({ mdxSource, widgetCatalog, category, widget }: any) {
+export default function Home({
+  mdxSource,
+  widgetCatalog,
+  category,
+  widget,
+}: any) {
   const [openedCategory, setOpenedCategory] = React.useState(category);
 
   const toggleCategory = React.useCallback(
@@ -90,7 +108,9 @@ export default function Home({ mdxSource, widgetCatalog, category, widget }: any
           {widgetCatalog.map(([category, widgets]: any) => {
             return (
               <React.Fragment key={category}>
-                <StCategory onClick={() => toggleCategory(slugify(category))}>{category}</StCategory>
+                <StCategory onClick={() => toggleCategory(slugify(category))}>
+                  {category}
+                </StCategory>
 
                 {openedCategory === slugify(category) && (
                   <StUl>
@@ -100,7 +120,12 @@ export default function Home({ mdxSource, widgetCatalog, category, widget }: any
                       }
                       return (
                         <li key={w.url}>
-                          <StLink href={`/widget-catalog/${slugify(category)}/${w.url}`} $active={widget === w.url}>
+                          <StLink
+                            href={`/widget-catalog/${slugify(category)}/${
+                              w.url
+                            }`}
+                            $active={widget === w.url}
+                          >
                             {w.title}
                           </StLink>
                         </li>
