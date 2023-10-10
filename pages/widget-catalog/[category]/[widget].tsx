@@ -72,6 +72,7 @@ export async function getStaticProps({ params }: any) {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
       rehypePlugins: [getImageData], // Add getImageData to add width and height to images
+      format: "md",
     },
   });
 
