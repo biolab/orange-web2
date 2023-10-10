@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -10,11 +10,29 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
+
+      - name: Install linux system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y glibc-tools  # required for catchsegv
+          sudo apt-get install -y libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libegl1-mesa libxcb-shape0 libxcb-cursor0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Build widget catalog
+        run: |
+          pip install -U setuptools pip
+          pip install orange-canvas-core pyqt6==6.5.*
+          bash scripts/build-widget-catalog.sh
+
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: "16.x"
 
       - name: Installing my packages
         run: yarn install --frozen-lockfile
