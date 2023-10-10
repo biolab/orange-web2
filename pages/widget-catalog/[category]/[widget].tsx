@@ -2,13 +2,17 @@ import MdContent from "@components/MdContent/MdContent";
 import MainLayout from "@components/UiKit/MainLayout";
 import widgetCatalog from "@public/widget-catalog/widgets.json";
 import { getImageData } from "@utils/images/getImageData";
+import slugify from "@utils/slugify";
 import fs from "fs";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
+import Link from "next/link";
 import path from "path";
+import React from "react";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
 interface Widget {
   title: string;
   category: string;
@@ -34,7 +38,7 @@ export async function getStaticPaths() {
         if (!widget.url) {
           return undefined;
         }
-        return { params: { category: widget.category.toLowerCase(), widget: widget.url.toLowerCase() } };
+        return { params: { category: slugify(widget.category), widget: widget.url.toLowerCase() } };
       })
       .filter((p) => p)
   );
@@ -64,16 +68,52 @@ export async function getStaticProps({ params }: any) {
   return {
     props: {
       mdxSource,
+      widgetCatalog,
+      category: params.category,
+      widget: params.widget,
     },
   };
 }
 
-export default function Home({ mdxSource }: any) {
+export default function Home({ mdxSource, widgetCatalog, category, widget }: any) {
+  const [openedCategory, setOpenedCategory] = React.useState(category);
+
+  const toggleCategory = React.useCallback(
+    (category: string) => {
+      setOpenedCategory(openedCategory === category ? "" : category);
+    },
+    [openedCategory]
+  );
+
   return (
     <MainLayout>
       <StWrapper>
         <StSidebar>
-          <div>Sidebar</div>
+          <StH3>Widgets</StH3>
+          {widgetCatalog.map(([category, widgets]: any) => {
+            return (
+              <React.Fragment key={category}>
+                <StCategory onClick={() => toggleCategory(slugify(category))}>{category}</StCategory>
+
+                {openedCategory === slugify(category) && (
+                  <StUl>
+                    {widgets.map((w: any) => {
+                      if (!w.url) {
+                        return null;
+                      }
+                      return (
+                        <li key={w.url}>
+                          <StLink href={`/widget-catalog/${slugify(category)}/${w.url}`} $active={widget === w.url}>
+                            {w.title}
+                          </StLink>
+                        </li>
+                      );
+                    })}
+                  </StUl>
+                )}
+              </React.Fragment>
+            );
+          })}
         </StSidebar>
         <StMainWrapper>
           <MdContent content={mdxSource} />
@@ -83,6 +123,43 @@ export default function Home({ mdxSource }: any) {
   );
 }
 
+const StH3 = styled.h3`
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+`;
+
+const StCategory = styled.h4`
+  cursor: pointer;
+  user-select: none;
+  margin-top: 8px;
+  font-size: 18px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const StUl = styled.ul`
+  padding-left: 12px;
+  margin-top: 6px;
+  li + li {
+    margin-top: 4px;
+  }
+`;
+
+const StLink = styled(Link)<{ $active?: boolean }>`
+  ${(props) =>
+    props.$active &&
+    css`
+      font-weight: 600;
+    `}
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const StWrapper = styled.div`
   display: flex;
 `;
@@ -90,6 +167,7 @@ const StMainWrapper = styled.div`
   width: 714px;
 `;
 
-const StSidebar = styled.aside`
+const StSidebar = styled.nav`
   width: 356px;
+  margin-top: 28px;
 `;

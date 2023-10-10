@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import MainLayout from "@components/UiKit/MainLayout";
+import slugify from "@utils/slugify";
 
 const StCategoryWrapper = styled.div`
   margin-bottom: 80px;
@@ -106,7 +107,7 @@ export default function Home({ widgetCatalog }: { widgetCatalog: any[] }) {
             <StWidgetsWrapper>
               {widgets.map((w: any) => {
                 return (
-                  <Link scroll={false} href={`/widget-catalog/${category.toLowerCase()}/${w.url}`} key={w.title}>
+                  <Link scroll={false} href={`/widget-catalog/${slugify(category)}/${w.url}`} key={w.title}>
                     <StWidget>
                       <Image src={`widget-catalog/${w.icon}`} width={60} height={60} alt="" />
                       <p>{w.title}</p>
