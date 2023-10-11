@@ -14,7 +14,7 @@ import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 import styled, { css } from "styled-components";
 
-interface Widget {
+export interface Widget {
   title: string;
   category: string;
   keywords: string[];
@@ -51,6 +51,7 @@ export async function getStaticPaths() {
       .filter(Boolean)
   );
 
+  console.log(paths);
   return {
     paths,
     fallback: false,

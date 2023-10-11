@@ -63,6 +63,7 @@ function getPostsData(files) {
         longExcerpt: longExcerpt || "",
         shortExcerpt: shortExcerpt || "",
         url: slugify(url || title || oldSlug),
+        _type: "blog",
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
