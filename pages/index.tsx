@@ -10,7 +10,7 @@ import UsersSection from "@components/Home/UsersSection";
 import DonateSection from "@components/Home/DonateSection";
 import { BlogMetadata } from "./blog";
 import { getBlogsMetadata } from "@scripts/getBlogPosts";
-import HomeBlogs from '@components/Home/HomeBlogs';
+import HomeBlogs from "@components/Home/HomeBlogs";
 
 export async function getStaticProps() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "home"));
@@ -27,15 +27,21 @@ export async function getStaticProps() {
     sectionsData.push({
       ...frontmatter,
       mdxSource,
-      image: frontmatter.image ? getImageSize(path.join(path.sep, "home", frontmatter.image)) : null,
+      image: frontmatter.image
+        ? getImageSize(path.join(path.sep, "home", frontmatter.image))
+        : null,
     });
   }
 
   const donateMdFile = mdFiles.find((file) => file.includes("donate.md"));
-  const { data: donateFrontmatter } = matter(fs.readFileSync(donateMdFile!, "utf-8")!);
+  const { data: donateFrontmatter } = matter(
+    fs.readFileSync(donateMdFile!, "utf-8")!
+  );
 
   const usersMdFile = mdFiles.find((file) => file.includes("orange_users.md"));
-  const { data: usersFrontmatter } = matter(fs.readFileSync(usersMdFile!, "utf-8")!);
+  const { data: usersFrontmatter } = matter(
+    fs.readFileSync(usersMdFile!, "utf-8")!
+  );
 
   const testimonials = mdFiles.filter((file) => file.includes("testimonials"));
   const testimonialsData = [];
@@ -46,7 +52,9 @@ export async function getStaticProps() {
 
     testimonialsData.push({
       ...frontmatter,
-      image: frontmatter.image ? getImageSize(path.join(path.sep, "home", frontmatter.image)) : null,
+      image: frontmatter.image
+        ? getImageSize(path.join(path.sep, "home", frontmatter.image))
+        : null,
     });
   }
 
@@ -68,12 +76,13 @@ export default function Home({
   usersSection,
   donateSection,
   blogs,
+  ...data
 }: {
   sections: any;
   usersSection: any;
   donateSection: any;
   blogs: BlogMetadata[];
-  }) {
+}) {
   return (
     <div>
       <HomeHeader />

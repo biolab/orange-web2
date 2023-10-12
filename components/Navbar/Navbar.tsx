@@ -9,37 +9,28 @@ import SearchImage from "../../public/assets/icons/icon-search.svg";
 import Adapt from "@components/UiKit/Adapt";
 import SrOnly from "@components/UiKit/SrOnly";
 import * as Styled from "./Navbar.styled";
+import { SearchContext } from "@components/Search/Search.context";
 
-function Search() {
-  const [searchOpened, setSearchOpened] = React.useState(false);
-  const router = useRouter();
-  const [input, setInput] = useState("");
-
-  const search = useCallback(
-    (e: React.FormEvent) => {
-      e.preventDefault();
-
-      router.push({
-        pathname: "/search",
-        query: { q: input },
-      });
-    },
-    [input, router]
-  );
+function Search({ onSearchClick }: { onSearchClick: () => void }) {
+  const { setShowSearch } = React.useContext(SearchContext);
 
   return (
-    <Styled.SearchWrapper>
-      <Styled.SearchInput
-        searchFocused={searchOpened}
-        type="text"
-        placeholder="Search"
-        onFocus={() => setSearchOpened(true)}
-        onBlur={() => setSearchOpened(false)}
-        value={input}
-        onInput={(e: React.ChangeEvent<HTMLInputElement>) => setInput(e.target.value)}
-      />
-      <Styled.SearchButton type="submit" onClick={search}>
-        <Image src={SearchImage.src} width={SearchImage.width} height={SearchImage.height} alt="Icon for search" />
+    <Styled.SearchWrapper
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setShowSearch(true);
+        onSearchClick();
+      }}
+    >
+      <Styled.SearchInput>Search</Styled.SearchInput>
+      <Styled.SearchButton>
+        <Image
+          src={SearchImage.src}
+          width={SearchImage.width}
+          height={SearchImage.height}
+          alt="Icon for search"
+        />
         <SrOnly>Search through page</SrOnly>
       </Styled.SearchButton>
     </Styled.SearchWrapper>
@@ -73,7 +64,11 @@ export default function Navbar() {
                   </li>
                 ))}
               </Styled.MenuList>
-              <Search />
+              <Search
+                onSearchClick={() => {
+                  setNavOpened(false);
+                }}
+              />
             </Styled.MenuWrapper>
           </div>
         </Styled.NavInner>

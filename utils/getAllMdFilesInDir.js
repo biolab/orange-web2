@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-export default function getAllMdFilesInDir(dir: string) {
-  function throughDirectory(dir: string) {
+export default function getAllMdFilesInDir(dir) {
+  function throughDirectory(dir) {
     fs.readdirSync(dir).forEach((file) => {
       const absolute = path.join(dir, file);
       if (fs.statSync(absolute).isDirectory()) {
@@ -13,7 +13,7 @@ export default function getAllMdFilesInDir(dir: string) {
     });
   }
 
-  const files: string[] = [];
+  const files = [];
   throughDirectory(dir);
   return files;
 }
