@@ -9,6 +9,7 @@ export const theme = {
   violet: "#837FEB",
   grayBackground: "#F5F5F5",
   borderColor: "#D9D9D9",
+  purple: "#5651EC",
 
   orangeGradientColor1: "#FE7A00",
   orangeGradientColor2: "#F65D18",

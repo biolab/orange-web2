@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
 
-const Adapt = styled.div<{ $mb?: boolean; $mt?: boolean; $width650?: boolean; $width714?: boolean }>`
+const Adapt = styled.div<{
+  $mb?: boolean;
+  $mt?: boolean;
+  $width650?: boolean;
+  $width714?: boolean;
+  $width924?: boolean;
+}>`
   position: relative;
   max-width: ${({ theme }) => theme.adaptMaxWidth};
   margin-right: auto;
@@ -49,8 +55,8 @@ const Adapt = styled.div<{ $mb?: boolean; $mt?: boolean; $width650?: boolean; $w
   `};
 
   ${({ $width650 }) => $width650 && `max-width: 650px`};
-
   ${({ $width714 }) => $width714 && `max-width: 714px`};
+  ${({ $width924 }) => $width924 && `max-width: 924px`};
 `;
 
 export default Adapt;

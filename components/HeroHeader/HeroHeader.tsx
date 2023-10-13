@@ -52,7 +52,7 @@ const ImageWrapper = styled.figure`
 `;
 
 const BodyText = styled.p`
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.25;
   color: #fff;
   margin: 10px 0 30px;
@@ -66,7 +66,17 @@ const BodyText = styled.p`
   }
 `;
 
-export default function HeroHeader({ title, extra, bodyText, img }) {
+export default function HeroHeader({
+  title,
+  extra,
+  bodyText,
+  img,
+}: {
+  title: string;
+  bodyText: string;
+  img: { src: string; width: number; height: number };
+  extra?: JSX.Element;
+}) {
   return (
     <SectionHeader>
       <Adapt>
@@ -77,7 +87,13 @@ export default function HeroHeader({ title, extra, bodyText, img }) {
             {extra}
           </ContentWrapper>
           <ImageWrapper>
-            <Image src={img.src} width={img.width} height={img.height} alt="" />
+            <Image
+              src={img.src}
+              priority
+              width={img.width}
+              height={img.height}
+              alt=""
+            />
           </ImageWrapper>
         </SectionHeaderInner>
       </Adapt>

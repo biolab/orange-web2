@@ -21,7 +21,7 @@ export const Heading1 = styled.h1`
   ${LinkInsideH};
 `;
 
-export const Heading3 = styled.h3`
+export const Heading2 = styled.h2`
   font-size: 22px;
   line-height: 1.18;
   font-weight: 600;
