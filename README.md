@@ -2,11 +2,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+Generate images
+
+```bash
+yarn generate:images
+```
+
+Run development server
+
+```bash
 yarn dev
 ```
 
