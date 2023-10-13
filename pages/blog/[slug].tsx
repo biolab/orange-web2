@@ -107,7 +107,6 @@ export default function BlogPost({
   frontmatter: any;
   content: any;
 }) {
-  console.log(frontmatter);
   return (
     <BlogDetailWrapper>
       <Adapt $width714>
@@ -122,7 +121,13 @@ export default function BlogPost({
             <Text>
               <strong>{frontmatter.author}</strong>
             </Text>
-            <Text>{frontmatter.date}</Text>
+            <Text>
+              {new Date(frontmatter.date).toLocaleDateString("en-EN", {
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+              })}
+            </Text>
           </Author>
 
           <MdContent content={content} />
