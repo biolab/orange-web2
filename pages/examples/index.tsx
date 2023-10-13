@@ -38,7 +38,7 @@ interface IWorkflow {
 }
 
 export async function getStaticProps() {
-  const workflowsMdFiles = getAllMdFilesInDir("public/workflows");
+  const workflowsMdFiles = getAllMdFilesInDir("public/examples");
 
   const workflows: IWorkflow[] = [];
   let page = null;
