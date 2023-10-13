@@ -1,4 +1,3 @@
-
 ---
 title: "Survival Curve Estimation"
 images: ["700_survival_curve_estimation.webp"]
