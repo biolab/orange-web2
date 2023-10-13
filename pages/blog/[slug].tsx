@@ -47,7 +47,7 @@ const Author = styled.div`
   }
 `;
 
-const Text = styled.p<{ $colorViolet?: boolean }>`
+const Text = styled.p<{ $colorViolet?: boolean; $capitalize?: boolean }>`
   font-size: 20px;
   line-height: 1.25;
   color: ${({ theme }) => theme.blackLight};
@@ -56,11 +56,14 @@ const Text = styled.p<{ $colorViolet?: boolean }>`
     font-size: 18px;
   }
 
+  ${({ $capitalize }) => $capitalize && "text-transform: capitalize;"}
   ${({ $colorViolet }) => $colorViolet && "color: #837FEB"}
 `;
 
 export async function getStaticPaths() {
-  const paths = getBlogsMetadata().map((post: any) => ({ params: { slug: post.url } }));
+  const paths = getBlogsMetadata().map((post: any) => ({
+    params: { slug: post.url },
+  }));
 
   return {
     paths,
@@ -68,17 +71,26 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }: { params: { slug: string } }) {
-  const { fullFilePath, publicFilePath } = getBlogsMetadata().find((post: any) => post.url === slug);
+export async function getStaticProps({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const { fullFilePath, publicFilePath } = getBlogsMetadata().find(
+    (post: any) => post.url === slug
+  );
   const mdFile = fs.readFileSync(fullFilePath, "utf-8");
   const { data: frontmatter, content } = matter(mdFile);
 
-  const mdxSource = await serialize(addRelativePathToImages(content, publicFilePath), {
-    mdxOptions: {
-      remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-      rehypePlugins: [getImageData], // Adds webp src, width and height to images
-    },
-  });
+  const mdxSource = await serialize(
+    addRelativePathToImages(content, publicFilePath),
+    {
+      mdxOptions: {
+        remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
+        rehypePlugins: [getImageData], // Adds webp src, width and height to images
+      },
+    }
+  );
 
   return {
     props: {
@@ -88,22 +100,34 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   };
 }
 
-export default function BlogPost({ frontmatter, content }: { frontmatter: any; content: any }) {
+export default function BlogPost({
+  frontmatter,
+  content,
+}: {
+  frontmatter: any;
+  content: any;
+}) {
   return (
     <BlogDetailWrapper>
       <Adapt $width714>
         <BlogDetailHeader>
-          <Text $colorViolet>
-            <strong>Statičen izpis!</strong>
+          <Text $colorViolet $capitalize>
+            <strong>{frontmatter.blog.join(", ")}</strong>
           </Text>
           <Heading1 $colorBlack>{frontmatter.title}</Heading1>
         </BlogDetailHeader>
         <BlogDetailContent>
           <Author>
             <Text>
-              <strong>Marko Statičen</strong>
+              <strong>{frontmatter.author}</strong>
             </Text>
-            <Text>Nov 14, 2022</Text>
+            <Text>
+              {new Date(frontmatter.date).toLocaleDateString("en-EN", {
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+              })}
+            </Text>
           </Author>
 
           <MdContent content={content} />

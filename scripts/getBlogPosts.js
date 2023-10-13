@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import probe from "probe-image-size";
-import getAllMdFilesInDir from "../utils/getAllMdFilesInDir";
-import { getWebpPath } from "../utils/images/getWebpPath";
-import getPublicFilePath from "../utils/getPublicFilePath";
-import slugify from "@utils/slugify";
+import getAllMdFilesInDir from "../utils/getAllMdFilesInDir.js";
+import { getWebpPath } from "../utils/images/getWebpPath.js";
+import getPublicFilePath from "../utils/getPublicFilePath.js";
+import slugify from "../utils/slugify.js";
 
 function getImageSizeAttributes(src) {
   if (!src) {
@@ -43,7 +43,18 @@ function getPostsData(files) {
       const oldSlug = fileName.replace(/\.md$/, "");
 
       const {
-        data: { title, draft, longExcerpt, shortExcerpt, url, date, author, x2images, thumbImage, blog },
+        data: {
+          title,
+          draft,
+          longExcerpt,
+          shortExcerpt,
+          url,
+          date,
+          author,
+          x2images,
+          thumbImage,
+          blog,
+        },
       } = matter(fileContents);
 
       const publicFilePath = getPublicFilePath(postPath);
@@ -63,6 +74,7 @@ function getPostsData(files) {
         longExcerpt: longExcerpt || "",
         shortExcerpt: shortExcerpt || "",
         url: slugify(url || title || oldSlug),
+        _type: "blog",
       };
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));

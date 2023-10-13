@@ -21,7 +21,6 @@ export const NavInner = styled.div`
 
   .img-logo {
     width: 115px;
-    margin-top: 18px;
   }
 `;
 
@@ -110,7 +109,7 @@ export const SearchWrapper = styled.form`
   }
 `;
 
-export const SearchInput = styled.input<{ searchFocused: boolean }>`
+export const SearchInput = styled.div`
   display: inline-block;
   position: absolute;
   top: 0;
@@ -125,12 +124,6 @@ export const SearchInput = styled.input<{ searchFocused: boolean }>`
   border: 1px solid ${({ theme }) => theme.borderColor};
   border-right: none;
   transition: width 0.3s ease-in-out;
-
-  ${({ searchFocused: searchOpened }) =>
-    searchOpened &&
-    `
-      width: 250%;
-    `}
 
   @media ${device.M} {
     display: none;
