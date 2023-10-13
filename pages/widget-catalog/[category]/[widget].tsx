@@ -51,7 +51,6 @@ export async function getStaticPaths() {
       .filter(Boolean)
   );
 
-  console.log(paths);
   return {
     paths,
     fallback: false,
