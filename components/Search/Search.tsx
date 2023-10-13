@@ -46,19 +46,31 @@ const useSearchResults = (input: string) => {
       this.ref("url");
 
       this.field("title", {
-        boost: 50,
+        boost: 100,
       });
-      this.field("categories", {
-        boost: 30,
+      this.field("shortExcerpt", {
+        boost: 70,
       });
       this.field("longExcerpt", {
-        boost: 10,
+        boost: 60,
       });
-      this.field("type", {
-        boost: 70,
+      this.field("tags", {
+        boost: 30,
+      });
+      this.field("keywords", {
+        boost: 30,
+      });
+      this.field("category", {
+        boost: 25,
       });
       this.field("author", {
         boost: 20,
+      });
+      this.field("url", {
+        boost: 15,
+      });
+      this.field("_type", {
+        boost: 10,
       });
       this.field("content", {
         boost: 5,
@@ -77,7 +89,7 @@ const useSearchResults = (input: string) => {
       return [];
     }
 
-    const lunrResults = blogIndex.search(query + "~2");
+    const lunrResults = blogIndex.search(query + "~1");
 
     return search
       .filter((post) => lunrResults.find((result) => result.ref === post.url))

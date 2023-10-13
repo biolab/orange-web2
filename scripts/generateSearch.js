@@ -14,6 +14,7 @@ function writeSearch() {
               category: widget.category,
               title: widget.title,
               url: `${slugify(widget.category)}/${widget.url}`,
+              keywords: widget.keywords,
               _type: "widget",
             }
           : undefined
