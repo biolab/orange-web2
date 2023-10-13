@@ -29,7 +29,7 @@ const Item = styled.li`
   }
 `;
 
-interface IWorkflow {
+interface IExample {
   title: string;
   images: ImageProps[];
   workflows: string[];
@@ -38,12 +38,12 @@ interface IWorkflow {
 }
 
 export async function getStaticProps() {
-  const workflowsMdFiles = getAllMdFilesInDir("public/workflows");
+  const examplesMdFiles = getAllMdFilesInDir("public/examples");
 
-  const workflows: IWorkflow[] = [];
+  const examples: IExample[] = [];
   let page = null;
 
-  for (const file of workflowsMdFiles) {
+  for (const file of examplesMdFiles) {
     const dirInPublic = path.dirname(path.relative("public", file));
     const mdFile = readFileSync(file, "utf-8");
     const { data: frontmatter, content } = matter(mdFile);
@@ -58,32 +58,32 @@ export async function getStaticProps() {
     if (file.endsWith("_index.md")) {
       page = frontmatter;
     } else {
-      workflows.push({
-        ...(frontmatter as IWorkflow),
+      examples.push({
+        ...(frontmatter as IExample),
         images: frontmatter.images?.map((image: string) => getImageSize(path.join(path.sep, dirInPublic, image))) || [],
         content: mdxSource,
       });
     }
   }
 
-  const tags = [...new Set(workflows.flatMap((workflow) => workflow.workflows).filter(Boolean))];
+  const tags = [...new Set(examples.flatMap((example) => example.workflows).filter(Boolean))];
 
   return {
     props: {
       page,
-      workflows,
+      examples,
       tags,
     },
   };
 }
 
-export default function Workflows({
+export default function Examples({
   page,
-  workflows,
+  examples,
   tags,
 }: {
   page: { title: string };
-  workflows: IWorkflow[];
+  examples: IExample[];
   tags: string[];
 }) {
   const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
@@ -91,9 +91,9 @@ export default function Workflows({
     (tag: string) => setSelectedTag((selectedTag) => (selectedTag === tag ? null : tag)),
     []
   );
-  const filteredWorkflows = React.useMemo(
-    () => (selectedTag ? workflows.filter((workflow) => workflow.workflows?.includes(selectedTag)) : workflows),
-    [workflows, selectedTag]
+  const filteredExamples = React.useMemo(
+    () => (selectedTag ? examples.filter((example) => example.workflows?.includes(selectedTag)) : examples),
+    [examples, selectedTag]
   );
 
   return (
@@ -103,7 +103,7 @@ export default function Workflows({
       <TagsList tags={tags} selectedTag={selectedTag} onTagClick={onTagClick} />
 
       <ul>
-        {filteredWorkflows.map(({ title, images, content, workflows: workflowTags, download }, index) => (
+        {filteredExamples.map(({ title, images, content, workflows: workflowTags, download }, index) => (
           <Item key={index}>
             <div>{title}</div>
 
