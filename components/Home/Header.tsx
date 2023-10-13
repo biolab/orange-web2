@@ -4,7 +4,7 @@ import { Heading1 } from "@components/UiKit/TypographyHomepage";
 import Adapt from "@components/UiKit/Adapt";
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
-import img from "@public/home/orange_illustration_landing.png";
+import img from "@public/home/orange_illustration_landing.webp";
 
 const SectionHeader = styled.section`
   background-color: ${({ theme }) => theme.violet};
@@ -75,7 +75,9 @@ export default function HomeHeader() {
         <SectionHeaderInner>
           <ContentWrapper>
             <Heading1>Data mining Fruitful and fun</Heading1>
-            <BodyText>Open source machine learning and data visualization.</BodyText>
+            <BodyText>
+              Open source machine learning and data visualization.
+            </BodyText>
             <Button as="a" href="/download">
               Download Orange 3.33.0
             </Button>

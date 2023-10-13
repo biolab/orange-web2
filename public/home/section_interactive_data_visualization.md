@@ -1,6 +1,6 @@
 ---
 title: "Interactive Data Visualization"
-image: "interactive_data_visualization.png"
+image: "interactive_data_visualization.webp"
 learnMore: true
 weight: 20
 ---
