@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Data Mining"
+image: "Intro-to-Data-Mining.webp"
 ---
 
 ### Why should you attend?

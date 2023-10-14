@@ -12,13 +12,19 @@ import fs from "fs";
 import MdContent from "@components/MdContent/MdContent";
 import Button from "@components/UiKit/Button";
 import React from "react";
+import Image from "@components/Image/Image";
+import getImageSize from "@utils/images/getImageSize";
+import TestimonialImage from "@public/workshops/janez.webp";
 
 export async function getStaticProps() {
-  const mdFiles = getAllMdFilesInDir(path.join("public", "workshops"));
+  const relativePath = path.join("public", "workshops");
+  const mdFiles = getAllMdFilesInDir(relativePath);
 
   const sections = [];
 
   for (const file of mdFiles) {
+    const dirInPublic = path.dirname(path.relative("public", file));
+
     const mdFile = fs.readFileSync(file, "utf-8");
     const { data: frontmatter, content } = matter(mdFile);
 
@@ -26,6 +32,9 @@ export async function getStaticProps() {
 
     sections.push({
       ...frontmatter,
+      image: frontmatter.image
+        ? getImageSize(path.join(path.sep, dirInPublic, frontmatter.image))
+        : null,
       mdxSource,
     });
   }
@@ -40,7 +49,7 @@ export async function getStaticProps() {
 export default function Workshops({
   sections,
 }: {
-  sections: { title: string; mdxSource: any }[];
+  sections: { title: string; image: any; mdxSource: any }[];
 }) {
   const [active, setActive] = React.useState(sections[0].title);
 
@@ -54,12 +63,11 @@ export default function Workshops({
         }
       />
       <MainLayout title="Pick the right course for you">
+        <StSubtitle>
+          or <Link href={"/training-inquiry"}>contact us</Link> for a
+          custom-designed course
+        </StSubtitle>
         <Adapt $width924>
-          <StSubtitle>
-            or <Link href={"/training-inquiry"}>contact us</Link> for a
-            custom-designed course
-          </StSubtitle>
-
           <StTabs>
             {sections.map(({ title }) => {
               return (
@@ -74,36 +82,91 @@ export default function Workshops({
             })}
           </StTabs>
           <StBox>
-            <Adapt $width650 $mb>
-              {sections.map((section) => {
-                if (section.title !== active) {
-                  return null;
-                }
+            {sections.map((section) => {
+              if (section.title !== active) {
+                return null;
+              }
 
-                return (
-                  <StMdContent>
-                    <MdContent
-                      key={section.title}
-                      content={section.mdxSource}
-                    />
-                  </StMdContent>
-                );
-              })}
-
-              <Button as="a" href={"/training-inquiry"}>
-                Get in touch
-              </Button>
-            </Adapt>
+              return (
+                <>
+                  <Adapt $width650 $mb>
+                    <StMdContent key={section.title}>
+                      <MdContent
+                        key={section.title}
+                        content={section.mdxSource}
+                      />
+                    </StMdContent>
+                    <Button as="a" href={"/training-inquiry"}>
+                      Get in touch
+                    </Button>
+                  </Adapt>
+                  {section.image && (
+                    <StImage {...section.image} alt={section.title} />
+                  )}
+                </>
+              );
+            })}
           </StBox>
+
+          <StTestimonialWrapper>
+            <p>
+              “Playing with data is fun. It&apos;s like a detective story, where
+              data gives you clues and you dig ever deeper into the mystery
+              until finding the hidden treasure, the cunning murderer, or the
+              mischievous gene.”
+            </p>
+
+            <StAuthorWrapper>
+              <Image {...TestimonialImage} alt="Janez Demšar" />
+              <div>
+                <p>
+                  <b>Janez Demšar, prof. dr.</b>
+                </p>
+                <p>Lecturer</p>
+              </div>
+            </StAuthorWrapper>
+          </StTestimonialWrapper>
         </Adapt>
       </MainLayout>
     </>
   );
 }
 
+const StAuthorWrapper = styled.div`
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  > div {
+    p + p {
+      margin-top: 6px;
+    }
+  }
+`;
+
+const StTestimonialWrapper = styled.div`
+  background: #fff;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -39%);
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.06);
+  border: 1px solid ${({ theme }) => theme.borderColor};
+  padding: 60px;
+  border-radius: 6px;
+  max-width: 655px;
+  font-size: 20px;
+
+  img {
+    width: 94px;
+    height: 94px;
+  }
+`;
+
 const StSubtitle = styled.p`
   font-size: 22px;
   text-align: center;
+  margin-top: -40px;
 
   a {
     color: ${({ theme }) => theme.orange};
@@ -122,6 +185,7 @@ const StBox = styled.div`
 const StTabs = styled.div`
   display: flex;
   align-items: end;
+  margin-top: 68px;
 `;
 
 const StTab = styled.div<{ $active?: boolean }>`
@@ -133,7 +197,6 @@ const StTab = styled.div<{ $active?: boolean }>`
   padding: 12px 8px;
   background: ${({ theme }) => theme.purple};
   color: #fff;
-  margin-top: 68px;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.purple};
@@ -163,4 +226,8 @@ const StMdContent = styled.div`
   h3 {
     font-weight: 700;
   }
+`;
+
+const StImage = styled(Image)`
+  width: 100%;
 `;
