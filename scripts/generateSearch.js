@@ -4,7 +4,29 @@ import fs from "fs";
 import slugify from "../utils/slugify.js";
 
 function writeSearch() {
-  const _posts = getBlogsMetadata();
+  const _posts = getBlogsMetadata()
+    .map(
+      ({
+        draft,
+        title,
+        tags,
+        author,
+        longExcerpt,
+        shortExcerpt,
+        url,
+        _type,
+      }) => ({
+        draft,
+        title,
+        tags,
+        author,
+        longExcerpt,
+        shortExcerpt,
+        url,
+        _type,
+      })
+    )
+    .filter(({ draft }) => !draft);
 
   const widgets = widgetCatalog.flatMap(([_, widgets]) =>
     widgets
@@ -22,9 +44,17 @@ function writeSearch() {
       .filter(Boolean)
   );
 
-  const posts = [..._posts, ...widgets];
+  const workshops = {
+    title: "Workshops",
+    shortExcerpt: "We offer data science classes on request.",
+    tags: ["Workshops", "classes", "education"],
+    url: "/workshops",
+    _type: "workshops",
+  };
 
-  fs.writeFile("search.json", JSON.stringify(posts), function (err) {
+  const results = [..._posts, ...widgets, workshops];
+
+  fs.writeFile("search.json", JSON.stringify(results), function (err) {
     if (err) {
       console.log(err);
       return;

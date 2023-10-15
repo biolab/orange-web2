@@ -36,7 +36,7 @@ const getPath = (url: string, _type: string) => {
     case "widget":
       return `/widget-catalog/${url}`;
     default:
-      return "";
+      return `/${url}`;
   }
 };
 
@@ -83,7 +83,7 @@ const useSearchResults = (input: string) => {
   }, []);
 
   return React.useMemo(() => {
-    const query = input.toLowerCase();
+    const query = input.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, ""); // remove all symbols. Search twos an error if you enter ~
 
     if (!query || !blogIndex) {
       return [];
