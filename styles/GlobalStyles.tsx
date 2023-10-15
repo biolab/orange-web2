@@ -61,16 +61,15 @@ export const GlobalStyle = createGlobalStyle`
 
   pre {
     display: block;
-    padding: 9.5px;
+    padding: 10px 14px;
     margin: 0 0 10px;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.42857143;
     word-break: break-all;
     word-wrap: break-word;
-    color: #333;
+    color: #000;
     background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     overflow-x: auto;
     word-wrap: normal;
     
@@ -92,6 +91,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #f9f2f4;
     white-space: nowrap;
     border-radius: 4px;
+    white-space: pre-wrap;
   }
 
   ::selection {

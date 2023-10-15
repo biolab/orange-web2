@@ -3,24 +3,15 @@ import Button from "@components/UiKit/Button";
 import config from "config.json";
 import styled from "styled-components";
 import Adapt from "@components/UiKit/Adapt";
+import HeroImage from "@public/download/download-hero-image.webp";
+import Image from "@components/Image/Image";
+import device from "@styles/utils/breakpoints";
 
 const downloadLinks = {
   macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`,
+  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12-arm64.dmg`,
   win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
 };
-
-const HeaderWrapper = styled.div`
-  background-color: ${({ theme }) => theme.violet};
-  height: 255px;
-  padding-top: 66px;
-
-  h1 {
-    font-size: 44px;
-    margin-bottom: 30px;
-    color: #fff;
-    font-weight: 700;
-  }
-`;
 
 function getOS() {
   let userAgent = window.navigator.userAgent.toLowerCase(),
@@ -66,11 +57,44 @@ export default function DownloadHeader() {
   return (
     <HeaderWrapper>
       <Adapt>
-        <div>
-          <h1>{os ? "Suggested download" : "Download"}</h1>
-          <DownloadButton os={os} />
-        </div>
+        <StInnerWrapper>
+          <div>
+            <h1>{os ? "Suggested download" : "Download"}</h1>
+            <DownloadButton os={os} />
+          </div>
+          <Image
+            src={HeroImage.src}
+            width={HeroImage.width}
+            height={HeroImage.height}
+            alt="Download orange"
+          />
+        </StInnerWrapper>
       </Adapt>
     </HeaderWrapper>
   );
 }
+
+const StInnerWrapper = styled.div`
+  display: flex;
+
+  img {
+    transform: translateY(19px);
+
+    @media ${device.M} {
+      display: none;
+    }
+  }
+`;
+
+const HeaderWrapper = styled.div`
+  background-color: ${({ theme }) => theme.violet};
+  height: 255px;
+  padding-top: 66px;
+
+  h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+  }
+`;

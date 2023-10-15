@@ -17,4 +17,6 @@ export const theme = {
   adaptMaxWidth: "1296px",
 
   baseFont: "'Source Sans Pro', sans-serif",
+
+  boxShadow: "0px 6px 20px 0px rgba(0, 0, 0, 0.06);",
 };

@@ -172,7 +172,7 @@ const StTestimonialWrapper = styled.div`
   position: relative;
   left: 50%;
   transform: translate(-50%, -39%);
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: ${({ theme }) => theme.boxShadow}
   border: 1px solid ${({ theme }) => theme.borderColor};
   padding: 60px;
   border-radius: 6px;
