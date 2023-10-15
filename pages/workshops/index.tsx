@@ -15,6 +15,7 @@ import React from "react";
 import Image from "@components/Image/Image";
 import getImageSize from "@utils/images/getImageSize";
 import TestimonialImage from "@public/workshops/janez.webp";
+import device from "@styles/utils/breakpoints";
 
 export async function getStaticProps() {
   const relativePath = path.join("public", "workshops");
@@ -53,6 +54,11 @@ export default function Workshops({
 }) {
   const [active, setActive] = React.useState(sections[0].title);
 
+  const activeSection = React.useMemo(
+    () => sections.find((s) => s.title === active),
+    [active, sections]
+  );
+
   return (
     <>
       <HeroHeader
@@ -67,7 +73,7 @@ export default function Workshops({
           or <Link href={"/training-inquiry"}>contact us</Link> for a
           custom-designed course
         </StSubtitle>
-        <Adapt $width924>
+        <StAdapt $width924>
           <StTabs>
             {sections.map(({ title }) => {
               return (
@@ -82,30 +88,29 @@ export default function Workshops({
             })}
           </StTabs>
           <StBox>
-            {sections.map((section) => {
-              if (section.title !== active) {
-                return null;
-              }
-
-              return (
-                <>
-                  <Adapt $width650 $mb>
-                    <StMdContent key={section.title}>
-                      <MdContent
-                        key={section.title}
-                        content={section.mdxSource}
-                      />
-                    </StMdContent>
-                    <Button as="a" href={"/training-inquiry"}>
-                      Get in touch
-                    </Button>
-                  </Adapt>
-                  {section.image && (
-                    <StImage {...section.image} alt={section.title} />
-                  )}
-                </>
-              );
-            })}
+            {activeSection && (
+              <>
+                <Adapt $width650 $mb>
+                  <StMdContent key={activeSection.title}>
+                    <MdContent
+                      key={activeSection.title}
+                      content={activeSection.mdxSource}
+                    />
+                  </StMdContent>
+                  <Button as="a" href={"/training-inquiry"}>
+                    Get in touch
+                  </Button>
+                </Adapt>
+                {activeSection.image && (
+                  <StImage
+                    src={activeSection.image.src}
+                    width={activeSection.image.width}
+                    height={activeSection.image.height}
+                    alt={activeSection.title}
+                  />
+                )}
+              </>
+            )}
           </StBox>
 
           <StTestimonialWrapper>
@@ -117,7 +122,12 @@ export default function Workshops({
             </p>
 
             <StAuthorWrapper>
-              <Image {...TestimonialImage} alt="Janez Demšar" />
+              <Image
+                src={TestimonialImage.src}
+                width={TestimonialImage.width}
+                height={TestimonialImage.height}
+                alt="Janez Demšar"
+              />
               <div>
                 <p>
                   <b>Janez Demšar, prof. dr.</b>
@@ -126,17 +136,29 @@ export default function Workshops({
               </div>
             </StAuthorWrapper>
           </StTestimonialWrapper>
-        </Adapt>
+        </StAdapt>
       </MainLayout>
     </>
   );
 }
+
+const StAdapt = styled(Adapt)`
+  @media ${device.S} {
+    padding-left: 0;
+    padding-right: 0;
+  }
+`;
 
 const StAuthorWrapper = styled.div`
   margin-top: 42px;
   display: flex;
   align-items: center;
   gap: 30px;
+
+  @media ${device.S} {
+    margin-top: 32px;
+    /* gap: 40px; */
+  }
 
   > div {
     p + p {
@@ -157,16 +179,38 @@ const StTestimonialWrapper = styled.div`
   max-width: 655px;
   font-size: 20px;
 
+  @media ${device.M} {
+    padding: 48px;
+  }
+
+  @media ${device.S} {
+    padding: 32px;
+    max-width: 92%;
+    font-size: 16px;
+    transform: translate(-50%, -12%);
+  }
+
   img {
     width: 94px;
     height: 94px;
+
+    @media ${device.S} {
+      width: 82px;
+      height: 82px;
+    }
   }
 `;
 
 const StSubtitle = styled.p`
   font-size: 22px;
   text-align: center;
-  margin-top: -40px;
+  margin: -40px auto 0;
+
+  @media ${device.M} {
+    font-size: 20px;
+    max-width: 240px;
+    text-align: center;
+  }
 
   a {
     color: ${({ theme }) => theme.orange};
@@ -200,6 +244,15 @@ const StTab = styled.div<{ $active?: boolean }>`
   font-weight: 600;
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.purple};
+  text-align: center;
+  font-size: 18px;
+
+  @media ${device.L} {
+    font-size: 16px;
+  }
+  @media ${device.S} {
+    font-size: 14px;
+  }
 
   &:last-child {
     border-top-right-radius: 6px;
