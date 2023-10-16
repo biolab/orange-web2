@@ -45,7 +45,7 @@ export const BlogListImageWrapper = styled.figure`
 
   img {
     aspect-ratio: 1.79;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
   }
 `;
@@ -82,7 +82,7 @@ export const FBImageWrapper = styled.figure`
 
   img {
     aspect-ratio: 1.82;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
   }
 `;
