@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import Tag from "./Tag";
 
 export default function TagsList({
@@ -15,12 +16,23 @@ export default function TagsList({
   }
 
   return (
-    <div>
+    <StTagsList>
       {tags.map((tag) => (
-        <Tag onClick={() => onTagClick(tag)} $active={selectedTag === tag} key={tag}>
+        <Tag
+          onClick={() => onTagClick(tag)}
+          $active={selectedTag === tag}
+          key={tag}
+        >
           {tag}
         </Tag>
       ))}
-    </div>
+    </StTagsList>
   );
 }
+
+const StTagsList = styled.div`
+  display: flex;
+  gap: 12px;
+  padding-bottom: 23px;
+  flex-wrap: wrap;
+`;

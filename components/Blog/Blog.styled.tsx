@@ -45,7 +45,7 @@ export const BlogListImageWrapper = styled.figure`
 
   img {
     aspect-ratio: 1.79;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 `;
@@ -64,6 +64,8 @@ export const FeaturedBlog = styled.div`
   flex-wrap: wrap;
   flex-direction: row-reverse;
   margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid ${({ theme }) => theme.borderColor};
 
   @media ${device.S} {
     flex-direction: initial;
@@ -82,7 +84,7 @@ export const FBImageWrapper = styled.figure`
 
   img {
     aspect-ratio: 1.82;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 `;
