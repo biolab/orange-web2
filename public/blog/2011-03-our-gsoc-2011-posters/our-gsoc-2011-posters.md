@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-03-29 10:12:00+00:00'
 draft: false
 title: "Our GSoC 2011 posters"
-type: "blog"
 blog: ["gsoc" ]
 ---
 

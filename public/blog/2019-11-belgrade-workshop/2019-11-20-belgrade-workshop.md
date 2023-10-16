@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-11-20'
 draft: false
 title: "Explaining Models: Workshop in Belgrade"
-type: "blog"
 thumbImage: "2019-11-20_workshop_small.jpg"
 frontPageImage: "2019-11-20_workshop_small.jpg"
 blog: ["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"]

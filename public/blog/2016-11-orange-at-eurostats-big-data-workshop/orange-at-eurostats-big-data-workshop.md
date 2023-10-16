@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2016-11-02 12:22:59+00:00'
 draft: false
 title: "Orange at Eurostat's Big Data Workshop"
-type: "blog"
 blog: ["conference" ,"education" ,"orange3" ]
 
 ---

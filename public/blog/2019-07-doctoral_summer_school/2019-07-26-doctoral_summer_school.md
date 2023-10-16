@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-07-26'
 draft: false
 title: "Doctoral Summer School"
-type: "blog"
 thumbImage: "2019-07-26_ekonomska_small.jpg"
 frontPageImage: "2019-07-26_ekonomska_small.jpg"
 blog: ["workshop", "education", "data science", "summer school"]

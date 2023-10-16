@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-07-29 11:52:54+00:00'
 draft: false
 title: "Pythagorean Trees and Forests"
-type: "blog"
 blog: ["classification" ,"examples" ,"interactive data visualization" ,"orange3"  ,"plot" ,"tree" ,"visualization" ]
 ---
 

@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-01-03 08:59:00+00:00'
 draft: false
 title: "Parallel Orange?"
-type: "blog"
 blog: ["parallelization" ]
 ---
 

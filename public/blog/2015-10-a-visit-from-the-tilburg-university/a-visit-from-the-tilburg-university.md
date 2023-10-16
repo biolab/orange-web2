@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-10-02 12:52:27+00:00'
 draft: false
 title: "A visit from the Tilburg University"
-type: "blog"
 blog: ["education" ,"examples" ,"overfitting" ,"regression" ,"visualization"  ]
 ---
 

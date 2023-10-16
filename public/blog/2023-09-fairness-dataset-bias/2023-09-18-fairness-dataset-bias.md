@@ -3,7 +3,6 @@ author: "Žan Mervič"
 date: "2023-09-18"
 draft: false
 title: "Orange Fairness - Dataset Bias"
-type: "blog"
 thumbImage: "2023-09-18-fairness-dataset-bias-thumb.png"
 frontPageImage: "2023-09-18-fairness-dataset-bias-thumb.png"
 blog: ["fairness", "dataset bias"]

@@ -3,7 +3,6 @@ author: "ANDREJA"
 date: '2018-08-27 16:02:36+00:00'
 draft: false
 title: "Explaining Kickstarter Success"
-type: "blog"
 blog: ["addons" ,"orange3" ,"prediction" ,"widget" ]
 ---
 

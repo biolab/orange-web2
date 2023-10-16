@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-07-03 12:31:00+00:00'
 draft: false
 title: "Fink packages now also 64-bit"
-type: "blog"
 blog: ["distribution" ,"download" ,"packaging" ]
 ---
 

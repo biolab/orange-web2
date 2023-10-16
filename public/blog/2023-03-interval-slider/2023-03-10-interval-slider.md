@@ -3,7 +3,6 @@ author: "Janez Demšar"
 date: "2023-03-10"
 draft: false
 title: "Interval Sliders"
-type: "blog"
 thumbImage: "2023-03-10-interval-slider-thumb.png"
 frontPageImage: "2023-03-10-interval-slider-thumb.png"
 blog: ["development"]

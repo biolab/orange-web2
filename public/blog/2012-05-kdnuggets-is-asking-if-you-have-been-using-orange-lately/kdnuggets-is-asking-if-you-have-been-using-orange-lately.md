@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-05-19 23:38:00+00:00'
 draft: false
 title: "KDnuggets is asking if you have been using Orange lately"
-type: "blog"
 blog: ["orange3" ]
 ---
 

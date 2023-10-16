@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-04-07 14:27:44+00:00'
 draft: false
 title: "Model replaces Classify and Regression"
-type: "blog"
 blog: ["classification" ,"features" ,"interface" ,"orange3" ,"prediction" ,"predictive  analytics" ,"regression" ,"toolbox" ,"update" ]
 ---
 

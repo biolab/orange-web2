@@ -3,7 +3,6 @@ author: "Primož Godec"
 date: "2022-02-11"
 draft: false
 title: "Editing the photographs collection with the help of machine learning"
-type: "blog"
 thumbImage: "2022-02-11-grid-title.jpg"
 frontPageImage: "2022-02-11-grid-title.jpg"
 blog: ["orange", "image analytics", "images", "machine learning"]

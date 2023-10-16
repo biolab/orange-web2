@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-02-06 13:47:00+00:00'
 draft: false
 title: "Orange NMF add-on"
-type: "blog"
 blog: ["addons" ,"matrixfactorization" ,"nmf" ]
 ---
 

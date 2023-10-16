@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-07-20 07:21:04+00:00'
 draft: false
 title: "Explorative data analysis with Hierarchical Clustering"
-type: "blog"
 blog: ["analysis" ,"clustering" ,"orange3" ,"visualization","principal component analysis" ,"visualization" ,"workflow" ]
 ---
 

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-06-05 06:46:56+00:00'
 draft: false
 title: "Data Fusion Add-on for Orange"
-type: "blog"
 blog: ["addons" ,"bioinformatics" ,"data-fusion" ,"orange3" ]
 ---
 

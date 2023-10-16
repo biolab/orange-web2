@@ -3,7 +3,6 @@ author: "LAN"
 date: '2015-05-05 07:20:47+00:00'
 draft: false
 title: "Working with SQL data in Orange 3"
-type: "blog"
 blog: ["orange3","sql" ,"visualization" ]
 ---
 

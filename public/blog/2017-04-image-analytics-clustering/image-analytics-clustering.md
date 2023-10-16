@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-04-03 12:36:22+00:00'
 draft: false
 title: "Image Analytics: Clustering"
-type: "blog"
 blog: ["addons" ,"analysis" ,"clustering" ,"embedding" ,"images" ,"interactive  data visualization" ,"orange3" ,"unsupervised" ]
 ---
 

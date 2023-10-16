@@ -3,7 +3,6 @@ author: "Žan Mervič"
 date: "2023-09-19"
 draft: false
 title: "Orange Fairness - Adversarial Debiasing"
-type: "blog"
 thumbImage: "2023-09-19-fairness-adversarial-debiasing-thumb.png"
 frontPageImage: "2023-09-19-fairness-adversarial-debiasing-thumb.png"
 blog: ["fairness", "adversarial debiasing"]

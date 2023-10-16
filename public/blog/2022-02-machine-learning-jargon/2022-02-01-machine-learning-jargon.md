@@ -3,7 +3,6 @@ author: "Ajda Pretnar Žagar"
 date: "2022-02-01"
 draft: false
 title: "Machine Learning Jargon"
-type: "blog"
 thumbImage: "2022-02-01-word-cloud.png"
 frontPageImage: "2022-02-01-word-cloud.png"
 blog: ["orange", "education", "machine learning"]

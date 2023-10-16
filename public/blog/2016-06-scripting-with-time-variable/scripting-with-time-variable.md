@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-06-10 12:37:50+00:00'
 draft: false
 title: "Scripting with Time Variable"
-type: "blog"
 blog: ["data" ,"examples" ,"scripting", "orange3" ]
 ---
 

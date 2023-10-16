@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-01-29 09:00:00+00:00'
 draft: false
 title: "Writing Orange Add-ons"
-type: "blog"
 blog: ["addons" ,"pypi" ]
 ---
 

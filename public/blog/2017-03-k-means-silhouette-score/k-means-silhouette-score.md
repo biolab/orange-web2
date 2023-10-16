@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-03-17 17:05:25+00:00'
 draft: false
 title: "k-Means and Silhouette Score"
-type: "blog"
 blog: ["clustering" ,"tutorial" ,"unsupervised" ,"youtube" ]
 ---
 

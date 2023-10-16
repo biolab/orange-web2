@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-07-20 11:35:00+00:00'
 draft: false
 title: "Orange GSoC: Multi-label Classification Implementation"
-type: "blog"
 blog: ["gsoc" ,"multilabel" ]
 ---
 

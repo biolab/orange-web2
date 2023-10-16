@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2011-05-20 15:08:00+00:00'
 draft: false
 title: "Orange 2.5 progress"
-type: "blog"
 blog: ["orange25" ]
 ---
 

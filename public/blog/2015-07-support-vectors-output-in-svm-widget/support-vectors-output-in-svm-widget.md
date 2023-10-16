@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-07-03 06:46:50+00:00'
 draft: false
 title: "Support vectors output in SVM widget"
-type: "blog"
 blog: ["classification" ,"orange3" ,"visualization" ]
 ---
 

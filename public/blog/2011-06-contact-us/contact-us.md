@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-06-14 11:50:00+00:00'
 draft: false
 title: "Contact us!"
-type: "blog"
 blog: ["website" ]
 ---
 

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-09-04 13:00:18+00:00'
 draft: false
 title: "Updated Widget Documentation"
-type: "blog"
 blog: ["documentation" ,"orange3" ,"widget" ]
 ---
 

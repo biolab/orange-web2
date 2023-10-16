@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-09-25 08:00:15+00:00'
 draft: false
 title: "Save your graphs!"
-type: "blog"
 blog: ["analysis" ,"images" ,"visualization" ]
 ---
 

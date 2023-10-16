@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-07-10 07:00:54+00:00'
 draft: false
 title: "Learn with Paint Data"
-type: "blog"
 blog: ["classification" ,"clustering" ,"data" ,"examples" ,"plot" ,"visualization"  ]
 ---
 

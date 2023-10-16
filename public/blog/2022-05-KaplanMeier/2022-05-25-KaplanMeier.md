@@ -3,7 +3,6 @@ author: "Ela Praznik"
 date: "2022-05-25"
 draft: false
 title: "An introduction to the Kaplan-Meier Estimator"
-type: "blog"
 thumbImage: "2022-05-26-kmgroups-thumbImage.png"
 frontPageImage: "2022-05-26-kmgroups-thumbImage.png"
 blog: ["survival analysis", "kaplan-meier"]

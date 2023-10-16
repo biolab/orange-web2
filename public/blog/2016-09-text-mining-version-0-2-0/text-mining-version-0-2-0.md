@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-09-23 14:50:38+00:00'
 draft: false
 title: "Text Mining: version 0.2.0"
-type: "blog"
 blog: ["addons" ,"clustering" ,"examples" ,"orange3" ,"preprocessing" ,"release"  ,"text mining" ,"widget" ]
 ---
 

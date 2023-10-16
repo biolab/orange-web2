@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2015-02-19 15:18:32+00:00'
 draft: false
 title: "Orange in Pavia, Italy"
-type: "blog"
 blog: ["orange3" ,"python" ,"workshop" ]
 post_format: ["Image" ]
 ---

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-12-21"
 draft: false
 title: "2020 - Year in Code"
-type: "blog"
 thumbImage: "2020-12-21-github-stats.png"
 frontPageImage: "2020-12-21-github-stats.png"
 blog: ["2020", "code", "overview", "Github"]

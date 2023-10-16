@@ -3,7 +3,6 @@ author: "Anja Mejač, Janez Demšar"
 date: "2023-05-26"
 draft: false
 title: "Pumice challenge"
-type: "blog"
 thumbImage: "2023-05-26-majice-pumice.jpg"
 frontPageImage: "2023-05-26-majice-pumice.jpg"
 blog: ["education"]

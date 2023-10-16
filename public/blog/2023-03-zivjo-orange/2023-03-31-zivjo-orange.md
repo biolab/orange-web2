@@ -3,7 +3,6 @@ author: "Janez Demšar"
 date: "2023-04-24"
 draft: false
 title: "Živjo, Orange!"
-type: "blog"
 thumbImage: "2023-03-31-zemljevid.png"
 frontPageImage: "2023-03-31-zemljevid.png"
 blog: ["gui"]

@@ -3,7 +3,6 @@ author: "Žan Mervič"
 date: "2023-09-19"
 draft: false
 title: "Why Removing Features Isn't Enough"
-type: "blog"
 thumbImage: "2023-09-19-fairness-hiding-protected-attribute-thumb.png"
 frontPageImage: "2023-09-19-fairness-hiding-protected-attribute-thumb.png"
 blog: ["fairness"]

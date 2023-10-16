@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-05-30 09:02:59+00:00'
 draft: false
 title: "Spectroscopy Workshop at BioSpec and How to Merge Data"
-type: "blog"
 blog: ["addons" ,"bioinformatics" ,"data" ,"education" ,"spectroscopy" ,"workshop"  ]
 ---
 

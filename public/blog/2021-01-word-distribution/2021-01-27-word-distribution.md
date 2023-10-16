@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-01-27"
 draft: false
 title: "Observing Word Distribution"
-type: "blog"
 thumbImage: "2021-01-27-word-distribution-small.png"
 frontPageImage: "2021-01-27-word-distribution-small.png"
 blog: ["text mining", "word distribution", "bar plot", "word cloud"]

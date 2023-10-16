@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-10-26 11:29:00+00:00'
 draft: false
 title: "GSoC Mentor Summit"
-type: "blog"
 blog: ["gsoc" ]
 ---
 

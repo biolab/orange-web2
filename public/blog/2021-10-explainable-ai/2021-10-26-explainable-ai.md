@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-11-26"
 draft: false
 title: "Explainable AI Project Meeting"
-type: "blog"
 thumbImage: "2021-11-26-xaim.jpeg"
 frontPageImage: "2021-11-26-xaim.jpeg"
 blog: ["project", "explainable ai", "teaching"]

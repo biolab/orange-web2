@@ -3,7 +3,6 @@ author: "THOCEVAR"
 date: '2017-12-23 17:05:52+00:00'
 draft: false
 title: "Speeding Up Network Visualization"
-type: "blog"
 blog: ["addons" ,"network" ,"visualization" ]
 ---
 

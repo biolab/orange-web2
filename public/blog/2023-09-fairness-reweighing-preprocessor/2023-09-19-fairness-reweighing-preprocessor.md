@@ -3,7 +3,6 @@ author: "Žan Mervič"
 date: "2023-09-19"
 draft: false
 title: "Orange Fairness - Reweighing as a preprocessor"
-type: "blog"
 thumbImage: "2023-09-19-fairness-reweighing-preprocessor-thumb.png"
 frontPageImage: "2023-09-19-fairness-reweighing-preprocessor-thumb.png"
 blog: ["fairness", "reweighing"]

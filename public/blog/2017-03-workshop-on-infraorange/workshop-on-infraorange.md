@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-03-08 14:51:43+00:00'
 draft: false
 title: "Workshop on InfraOrange"
-type: "blog"
 blog: ["infraorange" ,"infrared spectra" ,"interactive data visualization"  ,"orange3" ,"workshop" ]
 ---
 

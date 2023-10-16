@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-11-17 12:35:40+00:00'
 draft: false
 title: "Data Mining for Business and Public Administration"
-type: "blog"
 blog: ["business intelligence" ,"clustering" ,"examples" ,"workshop" ]
 ---
 

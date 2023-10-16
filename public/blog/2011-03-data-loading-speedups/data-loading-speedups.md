@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2011-03-28 13:04:00+00:00'
 draft: false
 title: "Data loading speedups"
-type: "blog"
 blog: ["dataloading" ,"performance" ]
 ---
 

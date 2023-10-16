@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-11-03 12:40:06+00:00'
 draft: false
 title: "Neural Network is Back!"
-type: "blog"
 blog: ["classification" ,"neuralnetwork" ,"orange3" ,"regression" ,"widget"  ]
 ---
 

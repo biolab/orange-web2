@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2016-12-22 08:55:36+00:00'
 draft: false
 title: "The Beauty of Random Forest"
-type: "blog"
 blog: ["classification" ,"interactive data visualization" ,"orange3" ,"regression"  ,"tree" ,"visualization" ]
 ---
 

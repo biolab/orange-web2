@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-08-24 22:26:00+00:00'
 draft: false
 title: "Faster classification and regression trees"
-type: "blog"
 blog: ["classification" ,"regression" ,"tree" ]
 ---
 

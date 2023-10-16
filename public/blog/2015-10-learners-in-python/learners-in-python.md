@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-10-16 08:32:43+00:00'
 draft: false
 title: "Learners in Python"
-type: "blog"
 blog: ["classification" ,"examples" ,"orange3" ,"python" ,"scripting" ]
 ---
 

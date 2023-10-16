@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-11-15'
 draft: false
 title: "Explaining Customer Segments for Business"
-type: "blog"
 thumbImage: "2019-11-15_ws-title.JPG"
 frontPageImage: "2019-11-15_ws-title.JPG"
 blog: ["workshop", "telco", "clustering", "nomogram"]

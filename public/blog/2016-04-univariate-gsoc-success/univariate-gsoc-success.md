@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-04-14 08:55:14+00:00'
 draft: false
 title: "Univariate GSoC Success"
-type: "blog"
 blog: ["analysis" ,"data" ,"distribution" ,"gsoc" ,"gsoc2016" ,"plot" ,"visualization"  ]
 ---
 

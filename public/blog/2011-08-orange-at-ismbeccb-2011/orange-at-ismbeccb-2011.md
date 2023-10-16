@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2011-08-03 09:14:00+00:00'
 draft: false
 title: "Orange at ISMB/ECCB 2011"
-type: "blog"
 blog: ["bioinformatics" ,"bioorange" ,"conference" ]
 ---
 

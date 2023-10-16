@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-02-23 10:11:16+00:00'
 draft: false
 title: "My First Orange Widget"
-type: "blog"
 blog: ["examples" ,"orange3" ,"programming" ,"widget" ]
 ---
 

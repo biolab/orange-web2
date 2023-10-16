@@ -3,7 +3,6 @@ author: "PRIMOZGODEC"
 date: '2016-08-12 12:45:36+00:00'
 draft: false
 title: "Interactive k-Means"
-type: "blog"
 blog: ["addons" ,"clustering" ,"education" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
 ---
 

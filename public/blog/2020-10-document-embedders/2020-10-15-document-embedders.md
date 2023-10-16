@@ -3,7 +3,6 @@ author: "Primož Godec and Nikola Đukić"
 date: "2020-10-15"
 draft: false
 title: "How to identify fake news with document embeddings"
-type: "blog"
 thumbImage: "2020-10-15-document-embedding-widget.png"
 frontPageImage: "2020-10-15-document-embedding-title.png"
 blog: ["text mining", "corpus", "classification"]

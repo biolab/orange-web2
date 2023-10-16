@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2022-04-26"
 draft: false
 title: "Orange Webinar for Educators #1: Where to Start?"
-type: "blog"
 thumbImage: "2022-04-26-hands-on-workshop.png"
 frontPageImage: "2022-04-26-hands-on-workshop.png"
 blog: ["orange", "workshop"]

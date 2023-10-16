@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-01-05 15:37:34+00:00'
 draft: false
 title: "Stack Everything!"
-type: "blog"
 blog: ["classification" ,"examples" ,"widget" ]
 ---
 

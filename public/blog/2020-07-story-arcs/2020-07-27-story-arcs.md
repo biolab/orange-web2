@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-07-27"
 draft: false
 title: "Detecting Story Arcs with Orange"
-type: "blog"
 thumbImage: "2020-07-27-story-arcs-small.png"
 frontPageImage: "2020-07-27-story-arcs-small.png"
 blog: ["text mining", "sentiment analysis", "corpus", "story arc", "heat map", "line chart"]

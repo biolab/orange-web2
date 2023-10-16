@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2015-12-19 19:27:51+00:00'
 draft: false
 title: "Model-Based Feature Scoring"
-type: "blog"
 blog: ["analysis" ,"classification" ,"features" ,"regression" ,"scoring" ]
 ---
 

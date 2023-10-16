@@ -3,7 +3,6 @@ author: "Žan Mervič"
 date: "2023-09-19"
 draft: false
 title: "Orange Fairness - Equal Odds Postprocessing"
-type: "blog"
 thumbImage: "2023-09-19-fairness-equal-odds-postprocessing.png"
 frontPageImage: "2023-09-19-fairness-equal-odds-postprocessing.png"
 blog: ["fairness", "equal odds postprocessing"]

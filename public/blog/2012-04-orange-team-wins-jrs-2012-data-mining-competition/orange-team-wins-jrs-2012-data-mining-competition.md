@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2012-04-25 13:08:00+00:00'
 draft: false
 title: "Orange team wins JRS 2012 Data Mining Competition"
-type: "blog"
 blog: ["competition" ,"prediction" ]
 ---
 

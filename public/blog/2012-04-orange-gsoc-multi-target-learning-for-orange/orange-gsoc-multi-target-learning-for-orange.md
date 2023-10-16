@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-04-30 12:00:00+00:00'
 draft: false
 title: "Orange GSoC: Multi-Target Learning for Orange"
-type: "blog"
 blog: ["classification" ,"gsoc" ,"multitarget" ]
 ---
 

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-11-25 14:55:39+00:00'
 draft: false
 title: "Celebrity Lookalike or How to Make Students Love Machine Learning"
-type: "blog"
 blog: ["education" ,"images" ,"interactive data visualization" ,"orange3" ]
 ---
 

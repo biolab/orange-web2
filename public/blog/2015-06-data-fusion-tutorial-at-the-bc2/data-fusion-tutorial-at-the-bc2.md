@@ -3,7 +3,6 @@ author: "MARINKAZ"
 date: '2015-06-08 15:13:22+00:00'
 draft: false
 title: "Data Fusion Tutorial at the [BC]^2"
-type: "blog"
 blog: ["bioinformatics" ,"data-fusion" ,"orange3" ]
 ---
 

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-01-28'
 draft: false
 title: "The Mystery of Test & Score"
-type: "blog"
 thumbImage: "ts-blog.png"
 image: ""
 blog: ["cross validation", "leave one out", "LOO", "test and score"]

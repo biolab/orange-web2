@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2022-06-16"
 draft: false
 title: "Ideas and Notes for Teachers"
-type: "blog"
 thumbImage: "2022-06-16-randomized-data.png"
 frontPageImage: "2022-06-16-randomized-data.png"
 blog: ["education"]

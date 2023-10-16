@@ -3,7 +3,6 @@ author: "Blaz Zupan"
 date: '2019-04-24'
 draft: false
 title: "Orange at GIS Ostrava"
-type: "blog"
 thumbImage: "ostrava-workshop.jpg"
 blog: ["geo", "GIS", "hierarchical clustering"]
 shortExcerpt: "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference."

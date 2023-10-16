@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2011-08-19 14:18:00+00:00'
 draft: false
 title: "Golden (sublime) triangles in Orange"
-type: "blog"
 blog: ["visualization" ]
 ---
 

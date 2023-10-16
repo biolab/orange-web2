@@ -3,7 +3,6 @@ author: "Zala Gruden"
 date: "2022-05-12"
 draft: false
 title: "We have launched a new project on the topic of AI in schools"
-type: "blog"
 thumbImage: "2022-05-12-tides-small.png"
 frontPageImage: "2022-05-12-google-tides.png"
 blog: ["Google", "Tides Foundation", "project", "visualization"]

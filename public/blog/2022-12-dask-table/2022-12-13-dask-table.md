@@ -3,7 +3,6 @@ author: "Noah Novšak"
 date: "2022-12-13"
 draft: false
 title: "Orange you going to ask about dask?"
-type: "blog"
 thumbImage: "2022-12-13_dask_data.png"
 frontPageImage: "2022-12-13_dask_data.png"
 blog: ["dask", "widgets"]

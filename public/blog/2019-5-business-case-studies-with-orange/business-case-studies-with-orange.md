@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-05-18'
 draft: false
 title: "Business Case Studies with Orange"
-type: "blog"
 thumbImage: "wartsila-blog.jpg"
 blog: ["business intelligence", "HR", "logistic regression", "nomogram", "predictive models"]
 shortExcerpt: "At the latest workshop we demonstrated how to predict, which employees are most likely to resign in the future."

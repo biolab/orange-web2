@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-01-09 12:41:00+00:00'
 draft: false
 title: "Multi-label classification (and Multi-target prediction) in Orange"
-type: "blog"
 blog: ["classification" ,"gsoc" ,"mlc" ,"multilabel" ]
 ---
 

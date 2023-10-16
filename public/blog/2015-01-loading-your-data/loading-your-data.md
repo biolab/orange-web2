@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2015-01-18 17:36:13+00:00'
 draft: false
 title: "Loading your data"
-type: "blog"
 blog: ["data" ,"dataloading" ,"orange3" ]
 ---
 

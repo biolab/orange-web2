@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-04-25 08:22:00+00:00'
 draft: false
 title: "Accepted GSoC 2011 students announced"
-type: "blog"
 blog: ["gsoc" ]
 ---
 

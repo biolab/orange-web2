@@ -3,7 +3,6 @@ author: "Jaka Kokošar"
 date: "2023-01-27"
 draft: false
 title: "Cox regression in Orange"
-type: "blog"
 thumbImage: "2023-01-27-cox-test-and-score-thumbImage.png"
 frontPageImage: "2023-01-27-cox-test-and-score.png"
 blog: ["survival analysis", "cox regression"]

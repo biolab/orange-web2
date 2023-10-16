@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-07-05 06:51:55+00:00'
 draft: false
 title: "Rehaul of Text Mining Add-On"
-type: "blog"
 blog: ["addons" ,"analysis" ,"business intelligence" ,"classification" ,"examples"  ,"orange3" ,"preprocessing" ,"text mining" ]
 ---
 

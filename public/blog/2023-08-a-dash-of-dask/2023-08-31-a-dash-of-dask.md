@@ -3,7 +3,6 @@ author: "Noah Novšak"
 date: "2023-08-31"
 draft: false
 title: "A dash of Dask"
-type: "blog"
 thumbImage: "2023-08-31-dask-logistic-regression.png"
 frontPageImage: "2023-08-31-dask-logistic-regression.png"
 blog: ["dask", "development"]

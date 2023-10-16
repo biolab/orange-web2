@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-06-19 08:04:03+00:00'
 draft: false
 title: "Text Preprocessing"
-type: "blog"
 blog: ["orange3" ,"preprocessing" ,"text mining" ,"visualization" ]
 ---
 

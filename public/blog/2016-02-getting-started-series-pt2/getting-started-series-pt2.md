@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-02-26 10:35:33+00:00'
 draft: false
 title: "Getting Started Series: Part Two"
-type: "blog"
 blog: ["tutorial" ,"youtube" ]
 ---
 

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-09-15"
 draft: false
 title: "New in Orange: Support for CONLL-U files"
-type: "blog"
 thumbImage: "2021-09-15-conllu.png"
 frontPageImage: "2021-09-15-conllu.png"
 blog: ["conllu", "text mining", "corpus", "lemma"]

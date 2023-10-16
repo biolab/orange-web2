@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-11-18 13:28:09+00:00'
 draft: false
 title: "Top 100 Changemakers in Central and Eastern Europe"
-type: "blog"
 blog: ["article" ,"orange3" ]
 ---
 

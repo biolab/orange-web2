@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-12-20 20:19:00+00:00'
 draft: false
 title: "Paint Your Data"
-type: "blog"
 blog: ["data" ,"visualization" ]
 ---
 

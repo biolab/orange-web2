@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-05-03 11:37:28+00:00'
 draft: false
 title: "Data Mining Course at Higher School of Economics, Moscow"
-type: "blog"
 blog: ["analysis" ,"business intelligence" ,"classification" ,"education" ,"examples"  ,"python" ,"scripting" ,"workshop" ]
 ---
 
