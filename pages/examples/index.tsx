@@ -15,18 +15,11 @@ import path from "path";
 import MainLayout from "@components/UiKit/MainLayout";
 import useTags from "@components/TagsList/useTags";
 import getTopTags from "@utils/getTopTags";
-
-const Item = styled.li`
-  padding: 38px 0;
-
-  & + & {
-    border-top: 1px solid #ccc;
-  }
-
-  img {
-    width: 250px;
-  }
-`;
+import usePagination from "@hooks/usePagination";
+import Pagination from "@components/Pagination/Pagination";
+import BlogTags from "@components/Blog/Tags";
+import device from "@styles/utils/breakpoints";
+import Button from "@components/UiKit/Button";
 
 interface IExample {
   title: string;
@@ -85,40 +78,97 @@ export default function Examples({
     "workflows"
   );
 
+  const { itemsOnPage, setPage, page, noOfPages, setItems } = usePagination(
+    examples,
+    5
+  );
+
+  React.useEffect(() => {
+    setItems(selectedTag ? filteredData : examples);
+    setPage(0);
+  }, [examples, filteredData, selectedTag, setItems, setPage]);
+
   return (
     <MainLayout title="Examples">
       <TagsList tags={tags} selectedTag={selectedTag} onTagClick={onTagClick} />
+      <StyledListWrapper>
+        {itemsOnPage.map(
+          ({ title, images, content, workflows: workflowTags, download }) => (
+            <Item key={title}>
+              <ItemContent>
+                <BlogTags tags={workflowTags} />
+                <h2>{title}</h2>
+                <MDXRemote {...content} />
 
-      <ul>
-        {filteredData.map(
-          (
-            { title, images, content, workflows: workflowTags, download },
-            index
-          ) => (
-            <Item key={index}>
-              <div>{title}</div>
+                <Button
+                  as="a"
+                  href={`https://download.biolab.si/download/files/workflows/orange/${download}`}
+                >
+                  Download
+                </Button>
+              </ItemContent>
 
-              {images &&
-                images.map((image) => (
-                  <Image key={image.src} {...image} alt="" />
-                ))}
-              <TagsList
-                tags={workflowTags}
-                selectedTag={selectedTag}
-                onTagClick={onTagClick}
-              />
-
-              <MDXRemote {...content} />
-
-              <a
-                href={`https://download.biolab.si/download/files/workflows/orange/${download}`}
-              >
-                Download
-              </a>
+              <ItemImage>
+                {images &&
+                  images.map((image: any) => (
+                    <Image key={image.src} {...image} alt="" />
+                  ))}
+              </ItemImage>
             </Item>
           )
         )}
-      </ul>
+      </StyledListWrapper>
+
+      <Pagination noOfPages={noOfPages} page={page} setPage={setPage} />
     </MainLayout>
   );
 }
+
+const StyledListWrapper = styled.ul`
+  padding-top: 30px;
+  border-top: 1px solid ${({ theme }) => theme.borderColor};
+`;
+
+const Item = styled.li`
+  display: flex;
+  gap: 60px;
+
+  @media ${device.M} {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  a {
+    margin-top: 30px;
+  }
+
+  & + & {
+    margin-top: 130px;
+  }
+
+  img {
+    width: 250px;
+  }
+`;
+
+const ItemContent = styled.div`
+  flex: 20;
+`;
+const ItemImage = styled.div`
+  flex: 30;
+
+  img {
+    width: 100%;
+  }
+`;
