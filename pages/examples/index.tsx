@@ -12,10 +12,9 @@ import Image from "@components/Image/Image";
 import TagsList from "@components/TagsList/TagsList";
 import getImageSize, { ImageProps } from "@utils/images/getImageSize";
 import path from "path";
-
-const Wrapper = styled.div`
-  padding: 100px 38px;
-`;
+import MainLayout from "@components/UiKit/MainLayout";
+import useTags from "@components/TagsList/useTags";
+import getTopTags from "@utils/getTopTags";
 
 const Item = styled.li`
   padding: 38px 0;
@@ -41,7 +40,6 @@ export async function getStaticProps() {
   const examplesMdFiles = getAllMdFilesInDir("public/examples");
 
   const examples: IExample[] = [];
-  let page = null;
 
   for (const file of examplesMdFiles) {
     const dirInPublic = path.dirname(path.relative("public", file));
@@ -55,67 +53,72 @@ export async function getStaticProps() {
       },
     });
 
-    if (file.endsWith("_index.md")) {
-      page = frontmatter;
-    } else {
-      examples.push({
-        ...(frontmatter as IExample),
-        images: frontmatter.images?.map((image: string) => getImageSize(path.join(path.sep, dirInPublic, image))) || [],
-        content: mdxSource,
-      });
-    }
+    examples.push({
+      ...(frontmatter as IExample),
+      images:
+        frontmatter.images?.map((image: string) =>
+          getImageSize(path.join(path.sep, dirInPublic, image))
+        ) || [],
+      content: mdxSource,
+    });
   }
 
-  const tags = [...new Set(examples.flatMap((example) => example.workflows).filter(Boolean))];
+  const tags = examples.flatMap((example) => example.workflows).filter(Boolean);
 
   return {
     props: {
-      page,
       examples,
-      tags,
+      tags: getTopTags(tags),
     },
   };
 }
 
 export default function Examples({
-  page,
   examples,
   tags,
 }: {
-  page: { title: string };
   examples: IExample[];
   tags: string[];
 }) {
-  const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
-  const onTagClick = React.useCallback(
-    (tag: string) => setSelectedTag((selectedTag) => (selectedTag === tag ? null : tag)),
-    []
-  );
-  const filteredExamples = React.useMemo(
-    () => (selectedTag ? examples.filter((example) => example.workflows?.includes(selectedTag)) : examples),
-    [examples, selectedTag]
+  const { filteredData, selectedTag, onTagClick } = useTags(
+    examples,
+    "workflows"
   );
 
   return (
-    <Wrapper>
-      <h1>{page.title}</h1>
-
+    <MainLayout title="Examples">
       <TagsList tags={tags} selectedTag={selectedTag} onTagClick={onTagClick} />
 
       <ul>
-        {filteredExamples.map(({ title, images, content, workflows: workflowTags, download }, index) => (
-          <Item key={index}>
-            <div>{title}</div>
+        {filteredData.map(
+          (
+            { title, images, content, workflows: workflowTags, download },
+            index
+          ) => (
+            <Item key={index}>
+              <div>{title}</div>
 
-            {images && images.map((image) => <Image key={image.src} {...image} alt="" />)}
-            <TagsList tags={workflowTags} selectedTag={selectedTag} onTagClick={onTagClick} />
+              {images &&
+                images.map((image) => (
+                  <Image key={image.src} {...image} alt="" />
+                ))}
+              <TagsList
+                tags={workflowTags}
+                selectedTag={selectedTag}
+                onTagClick={onTagClick}
+              />
 
-            <MDXRemote {...content} />
+              <MDXRemote {...content} />
 
-            <a href={`https://download.biolab.si/download/files/workflows/orange/${download}`}>Download</a>
-          </Item>
-        ))}
+              <a
+                href={`https://download.biolab.si/download/files/workflows/orange/${download}`}
+              >
+                Download
+              </a>
+            </Item>
+          )
+        )}
       </ul>
-    </Wrapper>
+    </MainLayout>
   );
 }
