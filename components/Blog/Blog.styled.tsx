@@ -64,6 +64,8 @@ export const FeaturedBlog = styled.div`
   flex-wrap: wrap;
   flex-direction: row-reverse;
   margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid ${({ theme }) => theme.borderColor};
 
   @media ${device.S} {
     flex-direction: initial;

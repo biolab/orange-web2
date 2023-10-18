@@ -21,7 +21,11 @@ export async function getStaticProps() {
     sections.push({
       ...frontmatter,
       mdxSource,
-      image: frontmatter.image ? getImageSize(path.join(path.sep, "getting-started", frontmatter.image)) : null,
+      image: frontmatter.image
+        ? getImageSize(
+            path.join(path.sep, "getting-started", frontmatter.image)
+          )
+        : null,
     });
   }
 

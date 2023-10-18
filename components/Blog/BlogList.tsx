@@ -4,6 +4,7 @@ import { BlogMetadata } from "pages/blog";
 import { BodyText, Heading2 } from "@components/UiKit/Typography";
 import BlogTags from "./Tags";
 import * as Styled from "./Blog.styled";
+import formateDate from "@utils/formatDate";
 
 export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
   return (
@@ -30,7 +31,7 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
             </Heading2>
             <BodyText>{shortExcerpt}</BodyText>
             <BodyText>
-              <strong>{author}</strong>, {date}
+              <strong>{author}</strong>, {formateDate(date)}
             </BodyText>
           </Styled.BlogListItem>
         )

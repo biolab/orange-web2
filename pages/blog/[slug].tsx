@@ -11,6 +11,7 @@ import addRelativePathToImages from "@utils/images/addRelativePathToImages";
 import Adapt from "@components/UiKit/Adapt";
 import { Heading1 } from "@components/UiKit/TypographyHomepage";
 import device from "@styles/utils/breakpoints";
+import formatDate from "@utils/formatDate";
 
 const BlogDetailWrapper = styled.div`
   padding: 80px 0;
@@ -121,13 +122,7 @@ export default function BlogPost({
             <Text>
               <strong>{frontmatter.author}</strong>
             </Text>
-            <Text>
-              {new Date(frontmatter.date).toLocaleDateString("en-EN", {
-                year: "numeric",
-                month: "short",
-                day: "2-digit",
-              })}
-            </Text>
+            <Text>{formatDate(frontmatter.date)}</Text>
           </Author>
 
           <MdContent content={content} />
