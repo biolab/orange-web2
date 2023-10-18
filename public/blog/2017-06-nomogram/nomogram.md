@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-06-05 11:39:12+00:00'
 draft: false
 title: "Nomogram"
-type: "blog"
 blog: ["analysis" ,"classification" ,"features" ,"interactive data visualization"  ,"visualization" ]
 ---
 

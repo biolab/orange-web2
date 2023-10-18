@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-02-05 20:30:00+00:00'
 draft: false
 title: "Random decisions behind your back"
-type: "blog"
 blog: ["tree" ]
 ---
 

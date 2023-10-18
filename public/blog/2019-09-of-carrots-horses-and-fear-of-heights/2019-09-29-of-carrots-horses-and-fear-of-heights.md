@@ -3,7 +3,6 @@ author: "Janez Demšar"
 date: '2019-09-29'
 draft: false
 title: "Of Carrots and Horses and the Fear of Heights"
-type: "blog"
 thumbImage: "2019-09-29-horses.jpg"
 frontPageImage: "2019-09-29-horses.jpg"
 blog: ["statistical significance", "hypothesis testing", "p-value", "multiple hypothesis testing"]

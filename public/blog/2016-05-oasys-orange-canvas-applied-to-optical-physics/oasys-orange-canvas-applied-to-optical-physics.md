@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-05-20 08:05:21+00:00'
 draft: false
 title: "Oasys: Orange Canvas applied to Optical Physics"
-type: "blog"
 blog: ["elettra" ,"esrf" ,"oasys" ,"orangecanvas" ,"physics" ,"synchrotron" ]
 ---
 

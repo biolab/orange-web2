@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-08-14 12:31:57+00:00'
 draft: false
 title: "Classifying instances with Orange in Python"
-type: "blog"
 blog: ["classification" ,"data" ,"examples" ,"orange3" ,"python" ,"tree" ]
 ---
 

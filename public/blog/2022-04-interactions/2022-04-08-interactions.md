@@ -3,7 +3,6 @@ author: "Noah Novšak"
 date: "2022-05-13"
 draft: false
 title: "Predictive Modelling with Attribute Interactions"
-type: "blog"
 thumbImage: "2022-05-06-interactions.png"
 frontPageImage: "2022-05-06-interactions.png"
 blog: ["orange", "interaction", "addons"]

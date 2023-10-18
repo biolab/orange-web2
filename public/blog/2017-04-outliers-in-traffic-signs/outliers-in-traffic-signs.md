@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2017-04-25 07:35:38+00:00'
 draft: false
 title: "Outliers in Traffic Signs"
-type: "blog"
 blog: ["addons" ,"analysis" ,"images" ,"interactive data visualization" ,"orange3"  ,"visualization" ]
 ---
 

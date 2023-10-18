@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-05-15 09:15:58+00:00'
 draft: false
 title: "Python Script: Managing Data on the Fly"
-type: "blog"
 blog: ["orange3" ,"python" ,"scripting" ]
 ---
 

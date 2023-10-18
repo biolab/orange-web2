@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-07-28 12:46:29+00:00'
 draft: false
 title: "Support Orange Developers"
-type: "blog"
 blog: ["orange3" ]
 ---
 

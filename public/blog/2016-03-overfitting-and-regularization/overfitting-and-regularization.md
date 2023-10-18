@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2016-03-12 16:48:38+00:00'
 draft: false
 title: "Overfitting and Regularization"
-type: "blog"
 blog: ["analysis" ,"education" ,"examples" ,"orange3" ,"overfitting" ,"plot"  ,"regression" ,"tutorial" ]
 ---
 

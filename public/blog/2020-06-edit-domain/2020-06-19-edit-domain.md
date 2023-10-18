@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-06-19"
 draft: false
 title: "Managing Data with Edit Domain"
-type: "blog"
 thumbImage: "2020-06-19-edit-domain-small.png"
 frontPageImage: "2020-06-19-edit-domain-small.png"
 blog: ["edit", "domain", "data"]

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-10-19 12:36:04+00:00'
 draft: false
 title: "SQL for Orange"
-type: "blog"
 blog: ["data" ,"orange3" ,"sql" ]
 ---
 

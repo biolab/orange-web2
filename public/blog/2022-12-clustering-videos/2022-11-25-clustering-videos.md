@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2022-11-25"
 draft: false
 title: "Videos on hierarchical clustering"
-type: "blog"
 thumbImage: "2022-11-25-video-series-clustering.png"
 frontPageImage: "2022-11-25-video-series-clustering.png"
 blog: ["education"]

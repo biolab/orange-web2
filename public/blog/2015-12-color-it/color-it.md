@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-12-28 10:47:00+00:00'
 draft: false
 title: "Color it!"
-type: "blog"
 blog: ["orange3" ,"plot" ,"visualization" ,"widget" ]
 ---
 

@@ -3,7 +3,6 @@ author: "Zala Gruden"
 date: "2022-06-02"
 draft: false
 title: "How to grow trees in a marmalade factory?"
-type: "blog"
 thumbImage: "otrokorange.jpg"
 frontPageImage: "otrokorange.jpg"
 blog: [ "Education" ]

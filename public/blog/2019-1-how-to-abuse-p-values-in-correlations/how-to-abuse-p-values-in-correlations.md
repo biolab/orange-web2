@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-01-04'
 draft: false
 title: "How to Abuse p-Values in Correlations"
-type: "blog"
 thumbImage: "correlations.png"
 image: ""
 blog: ["correlations", "NHTS", "null hypothesis", "p-value", "statistics"]

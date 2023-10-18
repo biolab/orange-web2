@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-09-21 07:32:17+00:00'
 draft: false
 title: "Orange in Space"
-type: "blog"
 blog: ["addons" ,"infraorange" ,"infrared spectra" ,"python" ,"spectroscopy"  ]
 ---
 

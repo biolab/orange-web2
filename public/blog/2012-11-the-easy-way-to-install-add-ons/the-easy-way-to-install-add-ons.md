@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-11-30 08:00:00+00:00'
 draft: false
 title: "The easy way to install add-ons"
-type: "blog"
 blog: ["addons" ,"orange25" ,"pypi" ]
 ---
 

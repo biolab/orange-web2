@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-05-09 08:19:34+00:00'
 draft: false
 title: "Clustering of Monet and Manet"
-type: "blog"
 blog: ["addons" ,"image analytics" ,"orange3" ,"tutorial" ,"youtube" ]
 ---
 

@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2018-03-05 22:22:49+00:00'
 draft: false
 title: "Single cell analytics workshop at HHMI | Janelia"
-type: "blog"
 blog: ["orange3" ]
 ---
 

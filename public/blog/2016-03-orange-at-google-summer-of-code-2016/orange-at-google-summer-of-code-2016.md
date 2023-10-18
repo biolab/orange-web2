@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-03-03 08:31:39+00:00'
 draft: false
 title: "Orange at Google Summer of Code 2016"
-type: "blog"
 blog: ["gsoc" ,"gsoc2016" ,"orange3" ]
 ---
 

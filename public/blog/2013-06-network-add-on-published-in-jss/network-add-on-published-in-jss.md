@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-06-03 20:15:00+00:00'
 draft: false
 title: "Network Add-on Published in JSS"
-type: "blog"
 blog: ["addons" ,"network" ]
 ---
 

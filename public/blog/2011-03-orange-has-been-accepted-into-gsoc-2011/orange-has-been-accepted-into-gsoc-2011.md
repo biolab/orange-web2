@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: "2011-03-18 21:10:00+00:00"
 draft: false
 title: "Orange has been accepted into GSoC 2011"
-type: "blog"
 blog: ["gsoc"]
 ---
 

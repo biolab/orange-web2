@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-03-28 10:36:18+00:00'
 draft: false
 title: "Orange with Spectroscopy Add-on Workshop"
-type: "blog"
 blog: ["addons" ,"education" ,"examples" ,"infrared spectra" ,"workshop" ]
 ---
 

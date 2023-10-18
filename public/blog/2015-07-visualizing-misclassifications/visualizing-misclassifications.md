@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-07-24 08:03:40+00:00'
 draft: false
 title: "Visualizing Misclassifications"
-type: "blog"
 blog: ["analysis" ,"classification" ,"visualization" ]
 ---
 

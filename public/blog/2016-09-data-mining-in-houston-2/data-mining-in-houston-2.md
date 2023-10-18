@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2016-09-15 13:38:30+00:00'
 draft: false
 title: "Data Mining Course in Houston #2"
-type: "blog"
 blog: ["orange3" ,"tutorial" ,"workshop" ]
 ---
 

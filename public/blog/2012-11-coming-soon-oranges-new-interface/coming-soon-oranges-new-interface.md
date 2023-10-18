@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2012-11-27 09:01:00+00:00'
 draft: false
 title: "Coming soon: Orange's new interface"
-type: "blog"
 blog: ["interface" ]
 ---
 

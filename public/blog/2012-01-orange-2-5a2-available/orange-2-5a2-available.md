@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-01-23 11:23:00+00:00'
 draft: false
 title: "Orange 2.5a2 available"
-type: "blog"
 blog: ["gsoc" ,"pypi" ,"release" ]
 ---
 

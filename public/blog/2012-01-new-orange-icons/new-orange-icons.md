@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-01-06 14:54:00+00:00'
 draft: false
 title: "New Orange icons"
-type: "blog"
 blog: ["icons" ]
 ---
 

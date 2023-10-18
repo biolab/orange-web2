@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-09-28"
 draft: false
 title: "New Video Tutorials on Text Mining"
-type: "blog"
 thumbImage: "2020-09-28-text-tutorials.png"
 frontPageImage: "2020-09-28-text-tutorials.png"
 blog: ["text mining", "tutorial", "video", "twitter", "sentiment analysis", "embedding"]

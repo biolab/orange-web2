@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-06-21 09:23:09+00:00'
 draft: false
 title: "Girls Go Data Mining"
-type: "blog"
 blog: ["clustering" ,"education" ,"interactive data visualization" ,"workshop"  ]
 ---
 

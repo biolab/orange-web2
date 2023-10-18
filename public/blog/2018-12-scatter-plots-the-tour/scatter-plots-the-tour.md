@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2018-12-21'
 draft: false
 title: "Scatter Plots: the Tour"
-type: "blog"
 thumbImage: "scatter-blog.png"
 blog: ["interactive visualization", "scatter plot", "visualization"]
 shortExcerpt: "Scatter Plot has recently been renovated and it is time to present some essential tricks for working with the widget!"

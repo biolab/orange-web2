@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2014-04-29 21:28:00+00:00'
 draft: false
 title: "Viewing Images"
-type: "blog"
 blog: ["clustering" ,"images" ,"visualization" ]
 ---
 

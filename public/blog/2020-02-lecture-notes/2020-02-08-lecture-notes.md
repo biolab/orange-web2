@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2020-02-08"
 draft: false
 title: "Orange Lecture Notes"
-type: "blog"
 thumbImage: "2020-02-08-lecture-notes-small.png"
 frontPageImage: "2020-02-08-lecture-notes-small.png"
 blog: ["education", "workshop"]

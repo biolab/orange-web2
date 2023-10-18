@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-05-15 06:00:00+00:00'
 draft: false
 title: "Orange GSoC: Computer vision add-on for Orange"
-type: "blog"
 blog: ["computervision" ,"gsoc" ]
 ---
 

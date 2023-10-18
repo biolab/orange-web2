@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2013-01-06 19:30:00+00:00'
 draft: false
 title: "New scripting tutorial"
-type: "blog"
 blog: ["documentation" ,"examples" ,"tutorial" ]
 ---
 

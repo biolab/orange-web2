@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-07-18 13:42:34+00:00'
 draft: false
 title: "Network Analysis with Orange"
-type: "blog"
 blog: ["addons" ,"analysis" ,"examples" ,"network" ,"orange3" ,"visualization"  ]
 ---
 

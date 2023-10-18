@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-07-17 09:20:50+00:00'
 draft: false
 title: "Data Mining and Machine Learning for Economists"
-type: "blog"
 blog: ["addons" ,"clustering" ,"education" ,"geo" ,"workshop" ]
 ---
 

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-09-17"
 draft: false
 title: "Semantic Analysis of Documents"
-type: "blog"
 thumbImage: "2021-09-17-seman.png"
 frontPageImage: "2021-09-17-seman.png"
 blog: ["semantic analysis", "text mining", "corpus", "keywords"]

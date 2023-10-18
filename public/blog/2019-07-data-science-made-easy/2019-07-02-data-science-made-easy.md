@@ -3,7 +3,6 @@ author: "Dr. Sven Bingert & Steffen Rörtgen"
 date: '2019-07-02'
 draft: false
 title: "Data Science Made Easy: How To Identify Hate Comments with AI"
-type: "blog"
 thumbImage: "twitter-police-workshop-picture.jpeg"
 frontPageImage: "twitter-police-workshop-picture.jpeg"
 blog: ["education", "text mining", "workshop"]

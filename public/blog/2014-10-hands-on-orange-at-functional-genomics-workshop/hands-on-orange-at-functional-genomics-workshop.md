@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2014-10-24 13:03:02+00:00'
 draft: false
 title: "Hands-on Orange at Functional Genomics Workshop"
-type: "blog"
 blog: ["bioinformatics" ]
 ---
 

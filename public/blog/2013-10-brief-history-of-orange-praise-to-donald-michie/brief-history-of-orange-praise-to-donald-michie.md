@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2013-10-09 06:33:00+00:00'
 draft: false
 title: "Brief History of Orange, Praise to Donald Michie"
-type: "blog"
 blog: ["history" ]
 ---
 

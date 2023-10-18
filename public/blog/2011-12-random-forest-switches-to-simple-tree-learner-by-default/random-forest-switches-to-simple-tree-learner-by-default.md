@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-12-08 15:28:00+00:00'
 draft: false
 title: "Random forest switches to Simple tree learner by default"
-type: "blog"
 blog: ["forestlearner" ,"simpletreelearner" ]
 ---
 

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-08-28 14:05:07+00:00'
 draft: false
 title: "Scatter Plot Projection Rank"
-type: "blog"
 blog: ["orange3" ,"visualization" ,"widget" ]
 ---
 

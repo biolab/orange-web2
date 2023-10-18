@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-02-16 13:20:06+00:00'
 draft: false
 title: "How to enable SQL widget in Orange"
-type: "blog"
 blog: ["data" ,"pypi" ,"sql" ]
 ---
 

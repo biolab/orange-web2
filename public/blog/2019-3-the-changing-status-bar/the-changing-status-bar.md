@@ -3,7 +3,6 @@ author: "Blaz Zupan"
 date: '2019-03-08'
 draft: false
 title: "The Changing Status Bar"
-type: "blog"
 thumbImage: "changing-blog.png"
 image: ""
 blog: ["release", "Status Bar"]

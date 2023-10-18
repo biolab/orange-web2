@@ -3,7 +3,6 @@ author: "Ajda Pretnar Žagar"
 date: "2022-08-04"
 draft: false
 title: "Timeseries add-on lost a lot of weight"
-type: "blog"
 thumbImage: "2022-08-04_spiralo.png"
 frontPageImage: "2022-08-04_spiralo.png"
 blog: ["timeseries", "line chart", "spiralogram", "prediction", "VAR model"]

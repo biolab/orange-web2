@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2017-09-15 21:29:23+00:00'
 draft: false
 title: "Orange at Station Houston"
-type: "blog"
 blog: ["clustering" ,"images" ,"orange3" ,"workshop" ]
 ---
 

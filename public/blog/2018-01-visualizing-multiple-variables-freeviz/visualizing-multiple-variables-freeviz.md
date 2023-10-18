@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-01-26 11:00:09+00:00'
 draft: false
 title: "Visualizing multiple variables: FreeViz"
-type: "blog"
 blog: ["analysis" ,"features" ,"interactive data visualization" ,"visualization"  ]
 ---
 

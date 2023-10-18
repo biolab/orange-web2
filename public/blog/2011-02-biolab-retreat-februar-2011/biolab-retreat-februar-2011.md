@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-02-11 13:41:00+00:00'
 draft: false
 title: "Biolab retreat Februar 2011"
-type: "blog"
 blog: ["bohinj" ,"orange25" ,"retreat" ]
 ---
 

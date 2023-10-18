@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-02-10"
 draft: false
 title: "Explaining Predictive Models"
-type: "blog"
 thumbImage: "2021-02-10-explain-models-small.png"
 frontPageImage: "2021-02-10-explain-models-small.png"
 blog: ["model explanation", "explainable AI", "explain", "predictive modelling"]

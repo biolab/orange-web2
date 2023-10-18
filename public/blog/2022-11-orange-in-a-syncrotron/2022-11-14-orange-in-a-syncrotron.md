@@ -3,7 +3,6 @@ author: "Marko Toplak"
 date: "2022-11-14"
 draft: false
 title: "Orange in a synchrotron"
-type: "blog"
 thumbImage: "20221101_inside.jpg"
 frontPageImage: "20221101_inside_s.jpg"
 blog: ["workshop", "addons"]

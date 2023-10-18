@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-10-30 15:07:34+00:00'
 draft: false
 title: "Ghostbusters"
-type: "blog"
 blog: ["analysis" ,"data" ,"distribution" ,"orange3" ]
 ---
 

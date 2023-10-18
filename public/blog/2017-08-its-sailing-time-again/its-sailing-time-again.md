@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2017-08-11 08:59:54+00:00'
 draft: false
 title: "It's Sailing Time (Again)"
-type: "blog"
 blog: ["classification" ,"tree" ]
 ---
 

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-02-24"
 draft: false
 title: "Installing with Anaconda Navigator"
-type: "blog"
 thumbImage: "2020-02-24-navigator-small.png"
 frontPageImage: "2020-02-24-navigator-small.png"
 blog: ["installation", "anaconda", "navigator"]

@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2018-04-05 08:22:20+00:00'
 draft: false
 title: "Unfreezing Orange"
-type: "blog"
 blog: ["neuralnetwork" ,"orange3" ,"parallelization" ,"performance" ,"programming"  ,"python" ,"qt" ]
 ---
 

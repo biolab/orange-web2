@@ -3,7 +3,6 @@ author: "MARKO"
 date: '2011-12-20 12:21:00+00:00'
 draft: false
 title: "Orange 2.5: code conversion"
-type: "blog"
 blog: ["orange25" ]
 ---
 

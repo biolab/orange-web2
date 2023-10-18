@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2016-10-02 11:21:20+00:00'
 draft: false
 title: "Intro to Data Mining for Life Scientists"
-type: "blog"
 blog: ["bioinformatics" ,"bioorange" ,"education" ,"orange3" ,"tutorial" ,"workshop"  ]
 ---
 

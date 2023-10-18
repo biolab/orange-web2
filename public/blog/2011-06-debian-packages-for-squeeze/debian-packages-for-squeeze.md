@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-06-30 00:44:00+00:00'
 draft: false
 title: "Debian packages for Squeeze"
-type: "blog"
 blog: ["debian" ,"distribution" ,"download" ,"packaging" ]
 ---
 

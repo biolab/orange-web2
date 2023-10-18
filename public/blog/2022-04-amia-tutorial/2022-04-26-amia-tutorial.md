@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2022-04-26"
 draft: false
 title: "Training with Orange: A Tutorial at AIME 2022 in Halifax"
-type: "blog"
 thumbImage: "2022-04-26-wordcloud.png"
 frontPageImage: "2022-04-26-wordcloud.png"
 blog: ["orange", "workshop"]

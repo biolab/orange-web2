@@ -3,7 +3,6 @@ author: "Blaz Zupan"
 date: '2019-03-01'
 draft: false
 title: "Single-Cell Data Science for Everyone"
-type: "blog"
 thumbImage: "2019-pavia-blog.jpg"
 blog: ["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
 shortExcerpt: "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."

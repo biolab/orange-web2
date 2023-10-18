@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-04-25 07:46:33+00:00'
 draft: false
 title: "Association Rules in Orange"
-type: "blog"
 blog: ["addons" ,"analysis" ,"association rules" ,"business intelligence" ,"examples"  ,"orange3" ,"toolbox" ]
 ---
 

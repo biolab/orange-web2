@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-11-29 12:26:44+00:00'
 draft: false
 title: "How to Properly Test Models"
-type: "blog"
 blog: ["analysis" ,"classification" ,"education" ,"overfitting" ,
 "predictive  analytics" ,"scoring" ,"workshop" ]
 ---

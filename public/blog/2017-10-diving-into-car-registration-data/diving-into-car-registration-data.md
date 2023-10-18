@@ -3,7 +3,6 @@ author: "ASTARIC"
 date: '2017-10-13 12:04:32+00:00'
 draft: false
 title: "Diving Into Car Registration Data"
-type: "blog"
 blog: ["addons" ,"analysis" ,"interactive data visualization" ,"orange3" ,"visualization"  ]
 ---
 

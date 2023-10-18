@@ -3,7 +3,6 @@ author: "Janez Demšar"
 date: "2022-10-10"
 draft: false
 title: "Quick previews in Orange widgets"
-type: "blog"
 thumbImage: "2022_10_10_quick_preview.png"
 frontPageImage: "2022_10_10_quick_preview.png"
 blog: ["widgets"]

@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2014-05-26 00:51:00+00:00'
 draft: false
 title: "Workshops at Baylor College of Medicine"
-type: "blog"
 blog: ["bioinformatics" ,"workshop" ]
 ---
 

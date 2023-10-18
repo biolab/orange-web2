@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2021-10-21"
 draft: false
 title: "Characterizing Clusters with a Box Plot"
-type: "blog"
 thumbImage: "2021-10-21-cluster-explain.png"
 frontPageImage: "2021-10-21-cluster-explain.png"
 blog: ["clustering", "explanation", "box plot"]

@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-12-17"
 draft: false
 title: "Visualizations 101"
-type: "blog"
 thumbImage: "2021-12-17-viz.png"
 frontPageImage: "2021-12-17-viz.png"
 blog: ["visualization", "data mining", "box plot", "scatter plot", "distributions"]

@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-07-29 18:56:00+00:00'
 draft: false
 title: "NetworkX in Orange"
-type: "blog"
 blog: ["analysis" ,"network" ,"networkx" ,"visualization" ]
 ---
 

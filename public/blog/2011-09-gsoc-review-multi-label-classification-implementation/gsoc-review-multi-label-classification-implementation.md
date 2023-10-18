@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-09-02 05:47:00+00:00'
 draft: false
 title: "GSoC Review: Multi-label Classification Implementation"
-type: "blog"
 blog: ["classification" ,"gsoc" ,"multilabel" ]
 ---
 
