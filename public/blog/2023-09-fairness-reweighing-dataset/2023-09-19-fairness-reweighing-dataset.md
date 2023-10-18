@@ -1,6 +1,6 @@
 ---
 author: "Žan Mervič"
-date: "2023-09-19"
+date: "2023-09-19 03:00:00+00:00"
 draft: false
 title: "Orange Fairness - Reweighing a Dataset"
 thumbImage: "2023-09-19-fairness-reweighing-dataset-thumb.png"

@@ -1,6 +1,6 @@
 ---
 author: "Žan Mervič"
-date: "2023-09-19"
+date: "2023-09-19 02:00:00+00:00"
 draft: false
 title: "Orange Fairness - Equal Odds Postprocessing"
 thumbImage: "2023-09-19-fairness-equal-odds-postprocessing.png"

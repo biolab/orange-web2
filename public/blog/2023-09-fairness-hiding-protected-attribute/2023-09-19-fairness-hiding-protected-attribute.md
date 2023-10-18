@@ -1,6 +1,6 @@
 ---
 author: "Žan Mervič"
-date: "2023-09-19"
+date: "2023-09-19 05:00:00+00:00"
 draft: false
 title: "Why Removing Features Isn't Enough"
 thumbImage: "2023-09-19-fairness-hiding-protected-attribute-thumb.png"

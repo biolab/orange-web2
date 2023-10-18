@@ -1,6 +1,6 @@
 ---
 author: "Žan Mervič"
-date: "2023-09-19"
+date: "2023-09-19 01:00:00+00:00"
 draft: false
 title: "Orange Fairness - Adversarial Debiasing"
 thumbImage: "2023-09-19-fairness-adversarial-debiasing-thumb.png"
