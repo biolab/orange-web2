@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-05-22 14:42:32+00:00'
 draft: false
 title: "Orange Fridays"
-type: "blog"
 blog: ["orange3" ]
 ---
 

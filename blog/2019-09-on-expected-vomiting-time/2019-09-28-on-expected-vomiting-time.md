@@ -3,7 +3,6 @@ author: "Janez Demšar"
 date: '2019-09-28'
 draft: false
 title: "On Expected Vomiting Time"
-type: "blog"
 thumbImage: "2019-09-28-vomiting-pumpkin.jpg"
 frontPageImage: "2019-09-28-vomiting-pumpkin.jpg"
 blog: ["model performance", "confusion matrix", "education"]

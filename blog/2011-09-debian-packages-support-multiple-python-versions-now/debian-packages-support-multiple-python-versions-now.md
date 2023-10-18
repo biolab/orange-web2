@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-09-13 00:32:00+00:00'
 draft: false
 title: "Debian packages support multiple Python versions now"
-type: "blog"
 blog: ["debian" ,"packaging" ,"python" ]
 ---
 

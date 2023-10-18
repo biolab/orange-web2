@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-09-01 23:48:00+00:00'
 draft: false
 title: "GSoC Review: MF - Matrix Factorization Techniques for Data Mining"
-type: "blog"
 blog: ["gsoc" ,"matrixfactorization" ]
 ---
 

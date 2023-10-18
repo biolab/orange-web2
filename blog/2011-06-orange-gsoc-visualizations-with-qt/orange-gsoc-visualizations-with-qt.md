@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-06-30 12:55:00+00:00'
 draft: false
 title: "Orange GSoC: Visualizations with Qt"
-type: "blog"
 blog: ["gsoc" ,"visualization" ]
 ---
 

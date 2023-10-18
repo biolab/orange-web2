@@ -3,7 +3,6 @@ author: "PRIMOZGODEC"
 date: '2016-08-25 11:31:04+00:00'
 draft: false
 title: "Visualizing Gradient Descent"
-type: "blog"
 blog: ["addons" ,"education" ,"gsoc2016" ,"interactive data visualization"  ,"orange3" ]
 ---
 

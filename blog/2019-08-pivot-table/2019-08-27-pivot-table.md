@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-08-27'
 draft: false
 title: "Aggregate, Group By and Pivot with... Pivot Table!"
-type: "blog"
 thumbImage: "2019-08-27_pivot-preview.png"
 frontPageImage: "2019-08-27_pivot-preview.png"
 blog: ["pivot table", "aggregate", "data", "groupby"]

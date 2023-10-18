@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-01-11"
 draft: false
 title: "Orange in Classroom"
-type: "blog"
 thumbImage: "2021-01-11-orange-in-education-small.png"
 frontPageImage: "2021-01-11-orange-in-education-small.png"
 blog: ["Orange", "education", "teaching", "university"]

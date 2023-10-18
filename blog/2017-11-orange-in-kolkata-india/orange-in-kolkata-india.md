@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2017-11-08 09:11:29+00:00'
 draft: false
 title: "Orange in Kolkata, India"
-type: "blog"
 blog: ["education" ,"orange3" ,"workshop" ]
 ---
 

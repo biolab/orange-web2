@@ -3,7 +3,6 @@ author: "Ajda Pretnar Žagar"
 date: "2022-08-31"
 draft: false
 title: "Socio-economic data at your fingertips"
-type: "blog"
 thumbImage: "2022-08-31_happy.png"
 frontPageImage: "2022-08-31_happy.png"
 blog: ["data", "add-on", "widgets", "economy"]

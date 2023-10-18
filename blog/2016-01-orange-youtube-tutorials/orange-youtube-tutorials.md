@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-01-04 08:09:24+00:00'
 draft: false
 title: "Orange YouTube Tutorials"
-type: "blog"
 blog: ["analysis" ,"data" ,"examples" ,"orange3" ,"tutorial" ,"youtube" ]
 ---
 

@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-12-20 12:22:00+00:00'
 draft: false
 title: "Earth - Multivariate adaptive regression splines"
-type: "blog"
 blog: ["regression" ]
 ---
 

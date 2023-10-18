@@ -3,7 +3,6 @@ author: "LAN"
 date: '2015-12-04 07:20:12+00:00'
 draft: false
 title: "2UDA"
-type: "blog"
 blog: ["sql" ]
 ---
 

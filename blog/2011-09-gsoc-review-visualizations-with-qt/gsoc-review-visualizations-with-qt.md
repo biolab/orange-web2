@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-09-03 08:28:00+00:00'
 draft: false
 title: "GSoC Review: Visualizations with Qt"
-type: "blog"
 blog: ["gsoc" ,"plot" ,"qt" ,"visualization" ]
 ---
 

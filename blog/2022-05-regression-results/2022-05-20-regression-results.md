@@ -3,7 +3,6 @@ author: "Ajda Pretnar Žagar"
 date: "2022-05-20"
 draft: false
 title: "Confusion matrix for regression?"
-type: "blog"
 thumbImage: "2022-05-20-cf-regression.png"
 frontPageImage: "2022-05-20-cf-regression.png"
 blog: ["regression", "confusion matrix", "scatter plot", "prediction error"]

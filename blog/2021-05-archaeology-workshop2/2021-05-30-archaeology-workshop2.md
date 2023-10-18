@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-05-30"
 draft: false
 title: "Data Mining for Archaeologists, part II"
-type: "blog"
 thumbImage: "2021-05-30-archaeology-small.png"
 frontPageImage: "2021-05-30-archaeology-small.png"
 blog: ["archaeology", "workshop", "preprocess", "geolocation", "maps"]

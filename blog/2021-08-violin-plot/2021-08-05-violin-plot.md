@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-08-05"
 draft: false
 title: "Box Plot Alternative: Violin Plot"
-type: "blog"
 thumbImage: "2021-08-05-violin.png"
 frontPageImage: "2021-08-05-violin.png"
 blog: ["visualization", "violin plot", "box plot"]

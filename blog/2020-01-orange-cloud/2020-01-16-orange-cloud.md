@@ -3,7 +3,6 @@ author: "Andrej Čopar"
 date: "2020-01-16"
 draft: false
 title: "Orange in the Cloud"
-type: "blog"
 thumbImage: "2020-01-16-orange-cloud.png"
 frontPageImage: "2020-01-16-orange-cloud.png"
 blog: ["cloud", "server", "remote"]

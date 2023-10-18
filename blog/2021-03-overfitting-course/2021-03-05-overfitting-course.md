@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2021-03-05"
 draft: false
 title: "Hands-On Training About Overfitting"
-type: "blog"
 thumbImage: "2021-01-11-orange-in-education-small.png"
 frontPageImage: "2021-03-05-overfitting-tree-small.png"
 blog: ["education", "teaching", "machine learning"]

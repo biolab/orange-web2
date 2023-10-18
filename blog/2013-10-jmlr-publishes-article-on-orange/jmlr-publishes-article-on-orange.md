@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2013-10-03 02:50:00+00:00'
 draft: false
 title: "JMLR Publishes Article on Orange"
-type: "blog"
 blog: ["article" ,"jmlr" ,"scripting" ,"toolbox" ]
 ---
 

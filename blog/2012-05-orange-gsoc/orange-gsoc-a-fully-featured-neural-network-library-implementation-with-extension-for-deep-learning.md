@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-05-06 09:24:00+00:00'
 draft: false
 title: "Orange GSoC: A Fully-Featured Neural Network Library Implementation with Extension for Deep Learning"
-type: "blog"
 blog: ["gsoc" ,"neuralnetwork" ]
 ---
 

@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-09-02 21:27:00+00:00'
 draft: false
 title: "Orange and AXLE project"
-type: "blog"
 blog: ["dataloading" ,"features" ,"future" ,"orange3" ,"sql" ]
 ---
 

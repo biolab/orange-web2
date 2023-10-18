@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-06-09 13:04:32+00:00'
 draft: false
 title: "Workshop: Text Analysis for Social Scientists"
-type: "blog"
 blog: ["education" ,"text mining" ,"workshop" ]
 ---
 

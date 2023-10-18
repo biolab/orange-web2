@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-02-03 13:16:37+00:00'
 draft: false
 title: "For When You Want to Transpose a Data Table..."
-type: "blog"
 blog: ["analysis" ,"bioinformatics" ,"feature engineering" ,"features" ,"orange3"  ]
 ---
 

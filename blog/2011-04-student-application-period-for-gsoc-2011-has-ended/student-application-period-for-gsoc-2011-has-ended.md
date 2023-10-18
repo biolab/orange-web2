@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-04-08 07:53:00+00:00'
 draft: false
 title: "Student application period for GSoC 2011 has ended"
-type: "blog"
 blog: ["gsoc" ]
 ---
 

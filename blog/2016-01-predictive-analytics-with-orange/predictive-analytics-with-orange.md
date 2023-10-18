@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-01-22 16:01:36+00:00'
 draft: false
 title: "Making Predictions"
-type: "blog"
 blog: ["analysis" ,"data" ,"examples" ,"predictive analytics" ,"widget" ]
 ---
 

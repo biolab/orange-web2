@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2020-01-08"
 draft: false
 title: "Look-alike Images"
-type: "blog"
 thumbImage: "2020-01-08-neighbors-images-small.png"
 frontPageImage: "2020-01-08-neighbors-images-small.png"
 blog: ["neighbors", "images"]

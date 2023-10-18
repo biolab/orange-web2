@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-02-14 14:37:00+00:00'
 draft: false
 title: "New canvas"
-type: "blog"
 blog: ["canvas" ,"features" ]
 ---
 

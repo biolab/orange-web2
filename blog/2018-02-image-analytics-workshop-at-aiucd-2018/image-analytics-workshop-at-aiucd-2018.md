@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-02-02 10:32:28+00:00'
 draft: false
 title: "Image Analytics Workshop at AIUCD 2018"
-type: "blog"
 blog: ["addons" ,"analysis" ,"conference" ,"embedding" ,"images" ,"visualization"  ,"workshop" ]
 ---
 

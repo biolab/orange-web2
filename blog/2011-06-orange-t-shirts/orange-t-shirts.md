@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-06-24 10:43:00+00:00'
 draft: false
 title: "Orange T-shirts"
-type: "blog"
 blog: ["orange3" ]
 ---
 

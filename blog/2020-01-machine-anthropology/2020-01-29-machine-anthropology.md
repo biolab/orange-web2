@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2020-01-29"
 draft: false
 title: "What is Machine Anthropology?"
-type: "blog"
 thumbImage: "2020-01-29-MA-small.png"
 frontPageImage: "2020-01-29-MA-small.png"
 blog: ["machine", "anthropology", "big data", "pivot table"]

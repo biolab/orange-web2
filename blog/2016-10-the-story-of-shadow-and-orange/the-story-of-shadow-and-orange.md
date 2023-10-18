@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-10-10 10:09:56+00:00'
 draft: false
 title: "The Story of Shadow and Orange"
-type: "blog"
 blog: ["canvas" ,"interface" ,"oasys" ]
 ---
 

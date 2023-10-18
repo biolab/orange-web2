@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-06-24 22:10:00+00:00'
 draft: false
 title: "Orange GSoC: MF Techniques for Data Mining"
-type: "blog"
 blog: ["gsoc" ,"matrixfactorization" ]
 ---
 

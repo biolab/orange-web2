@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-10-26 11:03:10+00:00'
 draft: false
 title: "Analyzing Surveys"
-type: "blog"
 blog: ["analysis" ,"clustering" ,"data" ,"dataloading" ,"orange3" ,"visualization"  ,"workshop" ]
 ---
 

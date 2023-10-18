@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-05-29 11:58:39+00:00'
 draft: false
 title: "Excel files in Orange 3.0"
-type: "blog"
 blog: ["data" ,"dataloading" ,"orange3" ]
 ---
 

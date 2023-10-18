@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-01-13 09:25:58+00:00'
 draft: false
 title: "Data Preparation for Machine Learning"
-type: "blog"
 blog: ["analysis" ,"business intelligence" ,"data" ,"feature engineering" ,"preprocessing"  ]
 ---
 

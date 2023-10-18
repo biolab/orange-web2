@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2017-01-23 12:29:20+00:00'
 draft: false
 title: "Preparing Scraped Data"
-type: "blog"
 blog: ["addons" ,"analysis" ,"data" ,"dataloading" ,"examples" ,"python" ,"scripting"  ]
 ---
 

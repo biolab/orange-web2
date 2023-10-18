@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2013-03-04 11:50:00+00:00'
 draft: false
 title: "Problems With Orange Website"
-type: "blog"
 blog: ["website" ]
 ---
 

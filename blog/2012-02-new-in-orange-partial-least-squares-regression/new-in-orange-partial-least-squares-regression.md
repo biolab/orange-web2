@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2012-02-02 16:21:00+00:00'
 draft: false
 title: "New in Orange: Partial least squares regression"
-type: "blog"
 blog: ["multitarget" ,"pls" ,"regression" ]
 ---
 

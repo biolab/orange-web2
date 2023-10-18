@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-11-30 08:24:53+00:00'
 draft: false
 title: "Data Mining for Political Scientists"
-type: "blog"
 blog: ["analysis" ,"classification" ,"education" ,"examples" ,"orange3" ,"prediction"  ,"predictive analytics" ,"preprocessing" ,"text mining" ,"tutorial" ,"widget" ]
 ---
 

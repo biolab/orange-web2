@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: "2021-08-13"
 draft: false
 title: "Why You Should Use Apply Domain"
-type: "blog"
 thumbImage: "2021-08-13-applydomain.png"
 frontPageImage: "2021-08-13-applydomain.png"
 blog: ["domain", "PCA", "transformation", "apply domain"]

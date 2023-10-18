@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2015-02-12 11:03:43+00:00'
 draft: false
 title: "Towards Orange 3"
-type: "blog"
 blog: ["orange3" ]
 ---
 

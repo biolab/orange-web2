@@ -3,7 +3,6 @@ author: "Blaž Zupan"
 date: "2021-06-17"
 draft: false
 title: "PCA vs. MDS vs. t-SNE"
-type: "blog"
 thumbImage: "2021-06-17-tsne.png"
 frontPageImage: "2021-06-17-tsne.png"
 blog: ["embeddding", "PCA", "dimensionality reduction", "workshop"]

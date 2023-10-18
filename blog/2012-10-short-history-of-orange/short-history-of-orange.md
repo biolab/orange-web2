@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2012-10-23 08:58:00+00:00'
 draft: false
 title: "Short history of Orange"
-type: "blog"
 blog: ["future" ,"history" ]
 ---
 

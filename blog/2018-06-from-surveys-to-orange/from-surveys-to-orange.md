@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-06-12 07:54:17+00:00'
 draft: false
 title: "From Surveys to Orange"
-type: "blog"
 blog: ["data" ,"dataloading" ,"orange3" ,"workshop" ]
 ---
 

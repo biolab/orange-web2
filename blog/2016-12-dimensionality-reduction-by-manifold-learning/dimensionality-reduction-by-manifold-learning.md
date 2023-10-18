@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-12-12 07:57:27+00:00'
 draft: false
 title: "Dimensionality Reduction by Manifold Learning"
-type: "blog"
 blog: ["analysis" ,"embedding" ,"examples" ,"interactive data visualization"  ,"orange3" ,"unsupervised" ,"visualization" ,"widget" ]
 ---
 

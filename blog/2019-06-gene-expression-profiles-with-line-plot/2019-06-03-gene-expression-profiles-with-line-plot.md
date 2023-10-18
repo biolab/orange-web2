@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-06-03'
 draft: false
 title: "Gene Expression Profiles with Line Plot"
-type: "blog"
 thumbImage: "gene-blog.png"
 frontPageImage: "gene-blog.png"
 blog: ["bioinformatics", "gene expression", "line plot"]

@@ -3,7 +3,6 @@ author: "BLAZ"
 date: '2012-04-09 11:25:00+00:00'
 draft: false
 title: "Redesign of GUI icons"
-type: "blog"
 blog: ["icons" ]
 ---
 

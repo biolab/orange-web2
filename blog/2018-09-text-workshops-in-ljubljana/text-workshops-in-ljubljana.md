@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2018-09-11 13:49:28+00:00'
 draft: false
 title: "Text Workshops in Ljubljana"
-type: "blog"
 blog: ["addons" ,"text mining" ,"update" ,"workshop" ]
 ---
 

@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2015-11-27 08:37:03+00:00'
 draft: false
 title: "Mining our own data"
-type: "blog"
 blog: ["analysis" ,"data" ,"distribution" ,"orange3" ,"visualization" ]
 ---
 

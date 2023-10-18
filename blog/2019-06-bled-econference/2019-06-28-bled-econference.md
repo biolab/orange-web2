@@ -3,7 +3,6 @@ author: "Ajda Pretnar"
 date: '2019-06-28'
 draft: false
 title: "Orange at 32nd Bled eConference"
-type: "blog"
 thumbImage: "2019-06-28_bled-small.png"
 frontPageImage: "2019-06-28_bled-small.png"
 blog: ["workshop", "education", "data science"]

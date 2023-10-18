@@ -3,7 +3,6 @@ author: "AJDA"
 date: '2016-03-23 09:09:26+00:00'
 draft: false
 title: "All I See is Silhouette"
-type: "blog"
 blog: ["analysis" ,"classification" ,"clustering" ,"examples" ,"forestlearner"  ,"orange3" ,"plot" ,"visualization" ]
 ---
 

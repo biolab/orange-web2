@@ -3,7 +3,6 @@ author: "BIOLAB"
 date: '2011-09-07 10:30:00+00:00'
 draft: false
 title: "3D Visualizations in Orange"
-type: "blog"
 blog: ["opengl" ,"visualization" ]
 ---
 
