@@ -1,5 +1,5 @@
 import device from "@styles/utils/breakpoints";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const BlogList = styled.ul`
   display: inline-grid;
@@ -50,13 +50,19 @@ export const BlogListImageWrapper = styled.figure`
   }
 `;
 
-export const BlogTag = styled.p`
+export const BlogTag = styled.p<{ $big?: boolean }>`
   font-size: 16px;
-  line-height: 1.25;
   font-weight: 600;
-  color: ${({ theme }) => theme.violet};
-  margin-bottom: 10px;
+  color: ${({ theme }) => theme.purple};
+  margin-bottom: 6px;
   text-transform: capitalize;
+
+  ${({ $big }) =>
+    $big &&
+    css`
+      font-size: 20px;
+      margin-bottom: 10px;
+    `}
 `;
 
 export const FeaturedBlog = styled.div`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import device from "@styles/utils/breakpoints";
 
 const Adapt = styled.div<{
@@ -28,31 +28,27 @@ const Adapt = styled.div<{
 
   ${({ $mt }) =>
     $mt &&
-    `
-    margin-top: 80px;
+    css`
+      margin-top: 80px;
 
-    @media ${device.M} {
-      margin-top: 60px;
-    }
-    
-    @media ${device.S} {
-      margin-top: 40px;
-    }
-  `};
+      @media ${device.M} {
+        margin-top: 60px;
+      }
+
+      @media ${device.S} {
+        margin-top: 40px;
+      }
+    `};
 
   ${({ $mb }) =>
     $mb &&
-    `
-    margin-bottom: 80px;
+    css`
+      margin-bottom: 80px;
 
-    @media ${device.M} {
-      margin-bottom: 60px;
-    }
-    
-    @media ${device.S} {
-      margin-bottom: 40px;
-    }
-  `};
+      @media ${device.M} {
+        margin-bottom: 60px;
+      }
+    `};
 
   ${({ $width650 }) => $width650 && `max-width: 650px`};
   ${({ $width714 }) => $width714 && `max-width: 714px`};

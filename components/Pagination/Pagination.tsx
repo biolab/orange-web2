@@ -28,14 +28,14 @@ const PageButton = styled.button<{ $active?: boolean }>`
     $active &&
     css`
       color: #fff;
-      background-color: ${theme.violet};
+      background-color: ${theme.purple};
     `}
 `;
 
 const PageButtonNavigation = styled.button<{ $previous?: boolean }>`
   font-size: 16px;
   line-height: 1.25;
-  color: ${({ theme }) => theme.violet};
+  color: ${({ theme }) => theme.purple};
   padding: 3px 5px;
   border: none;
   background-color: transparent;
@@ -43,7 +43,8 @@ const PageButtonNavigation = styled.button<{ $previous?: boolean }>`
 
   &:hover {
     img {
-      transform: ${({ $previous }) => ($previous ? "rotate(180deg) translateX(3px)" : "translateX(3px)")};
+      transform: ${({ $previous }) =>
+        $previous ? "rotate(180deg) translateX(3px)" : "translateX(3px)"};
     }
   }
 
@@ -93,7 +94,12 @@ export default function Pagination({
             setPage((v) => v - 1);
           }}
         >
-          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
+          <Image
+            src={ArrowImage.src}
+            width={ArrowImage.width}
+            height={ArrowImage.height}
+            alt=""
+          />
           Previous
         </PageButtonNavigation>
       )}
@@ -121,7 +127,9 @@ export default function Pagination({
         </PageButton>
       ))}
 
-      {!!buttons.length && buttons[buttons.length - 1] !== noOfPages - 2 && <span>...</span>}
+      {!!buttons.length && buttons[buttons.length - 1] !== noOfPages - 2 && (
+        <span>...</span>
+      )}
 
       <PageButton
         $active={page === noOfPages - 1}
@@ -139,7 +147,12 @@ export default function Pagination({
           }}
         >
           Next
-          <Image src={ArrowImage.src} width={ArrowImage.width} height={ArrowImage.height} alt="" />
+          <Image
+            src={ArrowImage.src}
+            width={ArrowImage.width}
+            height={ArrowImage.height}
+            alt=""
+          />
         </PageButtonNavigation>
       )}
     </PaginationWrapper>

@@ -4,7 +4,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { getBlogsMetadata } from "@scripts/getBlogPosts";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { getImageData } from "@utils/images/getImageData";
 import MdContent from "@components/MdContent/MdContent";
 import addRelativePathToImages from "@utils/images/addRelativePathToImages";
@@ -48,7 +48,7 @@ const Author = styled.div`
   }
 `;
 
-const Text = styled.p<{ $colorViolet?: boolean; $capitalize?: boolean }>`
+const Text = styled.p<{ $colorPurple?: boolean; $capitalize?: boolean }>`
   font-size: 20px;
   line-height: 1.25;
   color: ${({ theme }) => theme.blackLight};
@@ -57,8 +57,16 @@ const Text = styled.p<{ $colorViolet?: boolean; $capitalize?: boolean }>`
     font-size: 18px;
   }
 
-  ${({ $capitalize }) => $capitalize && "text-transform: capitalize;"}
-  ${({ $colorViolet }) => $colorViolet && "color: #837FEB"}
+  ${({ $capitalize }) =>
+    $capitalize &&
+    css`
+      text-transform: capitalize;
+    `}
+  ${({ $colorPurple, theme }) =>
+    $colorPurple &&
+    css`
+      color: ${theme.purple};
+    `}
 `;
 
 export async function getStaticPaths() {
@@ -112,7 +120,7 @@ export default function BlogPost({
     <BlogDetailWrapper>
       <Adapt $width714>
         <BlogDetailHeader>
-          <Text $colorViolet $capitalize>
+          <Text $colorPurple $capitalize>
             <strong>{frontmatter.blog.join(", ")}</strong>
           </Text>
           <Heading1 $colorBlack>{frontmatter.title}</Heading1>

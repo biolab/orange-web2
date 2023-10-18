@@ -87,12 +87,16 @@ const StAsideContent = styled.div`
   }
 `;
 
+const StAdapt = styled(Adapt)`
+  overflow: hidden;
+`;
+
 export default function Download() {
   return (
     <div>
       <DownloadHeader />
 
-      <Adapt>
+      <StAdapt>
         <StDownloadWrapper>
           <StLeftColumn>
             <div>
@@ -225,7 +229,7 @@ export default function Download() {
             </StAsideContent>
           </StAside>
         </StDownloadWrapper>
-      </Adapt>
+      </StAdapt>
     </div>
   );
 }

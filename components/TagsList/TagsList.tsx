@@ -32,7 +32,7 @@ export default function TagsList({
 
 const StTagsList = styled.div`
   display: flex;
-  gap: 12px;
+  gap: 8px;
   padding-bottom: 23px;
   flex-wrap: wrap;
 `;

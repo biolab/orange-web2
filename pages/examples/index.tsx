@@ -98,7 +98,10 @@ export default function Examples({
               <ItemContent>
                 <BlogTags tags={workflowTags} />
                 <h2>{title}</h2>
-                <MDXRemote {...content} />
+
+                <StContentWrapper>
+                  <MDXRemote {...content} />
+                </StContentWrapper>
 
                 <Button
                   as="a"
@@ -129,6 +132,13 @@ const StyledListWrapper = styled.ul`
   border-top: 1px solid ${({ theme }) => theme.borderColor};
 `;
 
+const StContentWrapper = styled.div`
+  p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+`;
+
 const Item = styled.li`
   display: flex;
   gap: 60px;
@@ -142,11 +152,6 @@ const Item = styled.li`
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 20px;
-    letter-spacing: 0.2px;
   }
 
   a {

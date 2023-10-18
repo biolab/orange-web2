@@ -1,8 +1,14 @@
 import * as Styled from "./Blog.styled";
 
-export default function BlogTags({ tags }: { tags: string[] }) {
+export default function BlogTags({
+  tags,
+  big,
+}: {
+  tags: string[];
+  big?: boolean;
+}) {
   return (
-    <Styled.BlogTag>
+    <Styled.BlogTag $big={big}>
       {tags.map((tag: string, index: number) => (
         <span key={tag}>
           <span>{tag}</span>

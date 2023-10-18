@@ -57,44 +57,46 @@ export default function DownloadHeader() {
   return (
     <HeaderWrapper>
       <Adapt>
-        <StInnerWrapper>
-          <div>
-            <h1>{os ? "Suggested download" : "Download"}</h1>
-            <DownloadButton os={os} />
-          </div>
-          <Image
-            src={HeroImage.src}
-            width={HeroImage.width}
-            height={HeroImage.height}
-            alt="Download orange"
-          />
-        </StInnerWrapper>
+        <Image
+          src={HeroImage.src}
+          width={HeroImage.width}
+          height={HeroImage.height}
+          alt="Download orange"
+        />
+
+        <h1>{os ? "Suggested download" : "Download"}</h1>
+        <DownloadButton os={os} />
       </Adapt>
     </HeaderWrapper>
   );
 }
 
-const StInnerWrapper = styled.div`
-  display: flex;
-
-  img {
-    transform: translateY(19px);
-
-    @media ${device.M} {
-      display: none;
-    }
-  }
-`;
-
 const HeaderWrapper = styled.div`
   background-color: ${({ theme }) => theme.violet};
-  height: 255px;
   padding-top: 66px;
+  padding-bottom: 66px;
+  min-height: 262px;
 
   h1 {
+    position: relative;
+    z-index: 10;
     font-size: 44px;
     margin-bottom: 30px;
     color: #fff;
     font-weight: 700;
+  }
+
+  img {
+    transform: translateY(27px);
+    position: absolute;
+    right: 20%;
+    z-index: 1;
+
+    @media ${device.M} {
+      right: 15%;
+    }
+    @media ${device.S} {
+      display: none;
+    }
   }
 `;
