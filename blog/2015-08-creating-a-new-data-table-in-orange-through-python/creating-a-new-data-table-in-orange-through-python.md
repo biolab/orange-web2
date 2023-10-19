@@ -4,6 +4,7 @@ date: '2015-08-07 13:57:49+00:00'
 draft: false
 title: "Creating a new data table in Orange through Python"
 blog: ["data" ,"examples" ,"python" ]
+oldUrl: "/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/"
 ---
 
 **IMPORT DATA**

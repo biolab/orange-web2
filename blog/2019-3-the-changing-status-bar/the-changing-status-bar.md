@@ -9,6 +9,7 @@ blog: ["release", "Status Bar"]
 shortExcerpt: "We are constantly optimizing Orange's look-and-feel. New features in the status bar will simplify the user interface."
 
 longExcerpt: "We are constantly optimizing Orange's look-and-feel. New features in the status bar will simplify the user interface. We are getting rid of the infobox on the top of the control tab, and moving it to the status bar."
+oldUrl: "/blog/2019/3/8/the-changing-status-bar/"
 ---
 
 Every week on Friday, when the core team of Orange developers meets, we are designing new improvements of Orange's graphical interface. This time, it was the status bar. Well, actually, it was the status bar quite a while ago and required the change of the core widget library, but it is materializing these days and you will see the changes in the next release.

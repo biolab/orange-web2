@@ -4,6 +4,7 @@ date: '2011-06-24 10:43:00+00:00'
 draft: false
 title: "Orange T-shirts"
 blog: ["orange3" ]
+oldUrl: "/blog/2011/06/24/orange-t-shirts/"
 ---
 
 If you maybe missed on [our Facebook page](https://www.facebook.com/orangedm): we have made our own fruity t-shirts. They are simply awesome and show to everybody around you that you have a taste! Just check the handsomeness:

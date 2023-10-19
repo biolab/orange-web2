@@ -4,6 +4,7 @@ date: '2017-11-03 12:40:06+00:00'
 draft: false
 title: "Neural Network is Back!"
 blog: ["classification" ,"neuralnetwork" ,"orange3" ,"regression" ,"widget"  ]
+oldUrl: "/blog/2017/11/03/neural-network-is-back/"
 ---
 
 We know you've missed it. We've been getting many requests to bring back Neural Network widget, but we also had many reservations about it.

@@ -4,7 +4,7 @@ date: '2010-03-04 01:56:00+00:00'
 draft: false
 title: "Debian repository lives!"
 blog: ["debian" ,"distribution" ,"download" ,"packaging" ]
-
+oldUrl: "/blog/2010/03/04/debian-repository-lives/"
 ---
 
 We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.

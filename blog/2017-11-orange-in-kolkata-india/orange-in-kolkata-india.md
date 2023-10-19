@@ -4,6 +4,7 @@ date: '2017-11-08 09:11:29+00:00'
 draft: false
 title: "Orange in Kolkata, India"
 blog: ["education" ,"orange3" ,"workshop" ]
+oldUrl: "/blog/2017/11/08/orange-in-kolkata-india/"
 ---
 
 We have just completed the hands-on course on data science at one the most famous Indian educational institutions, [Indian Statistical Institute](http://www.isical.ac.in). A one week course was invited by Institute's director [Prof. Dr. Sanghamitra ](http://www.isical.ac.in/~sanghami/)Bandyopadhyay, and financially supported by the founding of India's [Global Initiative of Academic Networks](http://www.gian.iitkgp.ac.in).

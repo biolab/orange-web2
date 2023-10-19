@@ -9,6 +9,7 @@ blog: ["domain", "PCA", "transformation", "apply domain"]
 shortExcerpt: "Apply Domain is a mystery widget with an amazing functionality."
 longExcerpt: "What does Apply Domain even do? Actually, it is an extremely useful widget for all your data transformation problems!"
 x2images: true  # true if using retina screenshots, else false
+oldUrl: "/blog/2021/2021-08-13-apply-domain/"
 ---
 
 It can happen you'd see a widget in Orange and think: "What on Earth does this even do?" We admit, finding informative widget names is not always easy and Apply Domain had a least 5 different names so far. While it might not be clear what the widget does from its name, the actual functionality is one of the nicer ones Orange has to offer.

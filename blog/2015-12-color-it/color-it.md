@@ -4,6 +4,7 @@ date: '2015-12-28 10:47:00+00:00'
 draft: false
 title: "Color it!"
 blog: ["orange3" ,"plot" ,"visualization" ,"widget" ]
+oldUrl: "/blog/2015/12/28/color-it/"
 ---
 
 Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!

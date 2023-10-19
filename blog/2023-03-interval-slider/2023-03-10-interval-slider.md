@@ -8,6 +8,7 @@ frontPageImage: "2023-03-10-interval-slider-thumb.png"
 blog: ["development"]
 shortExcerpt: "What does it take to add a second handle to a slider."
 longExcerpt: "What does it take to add a second handle to a slider."
+oldUrl: "/blog/2023/2023-03-10-interval-slider/"
 ---
 
 <WindowScreenshot src="2023-03-10-heatmap.png" />

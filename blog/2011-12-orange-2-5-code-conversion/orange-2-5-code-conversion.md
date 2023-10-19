@@ -4,6 +4,7 @@ date: '2011-12-20 12:21:00+00:00'
 draft: false
 title: "Orange 2.5: code conversion"
 blog: ["orange25" ]
+oldUrl: "/blog/2011/12/20/orange-2-5-code-conversion/"
 ---
 
 Orange 2.5 unifies Orange's C++ core and Python modules into a single module hierarchy. To use the new module hierarchy, import **Orange** instead of **orange** and accompanying **orng*** modules. While we will maintain backward compatibility in 2.* releases, we nevertheless suggest programmers to use the new interface. The provided [conversion tool](http://orange.biolab.si/trac/intertrac/wiki%3AOrange25/RefactoringTool) can help refactor your code to use the new interface.

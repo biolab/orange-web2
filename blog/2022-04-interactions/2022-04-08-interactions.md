@@ -9,6 +9,7 @@ blog: ["orange", "interaction", "addons"]
 shortExcerpt: "A quick introduction to using the new Interactions widget in Orange 3"
 longExcerpt: "The Interactions widget has been added back to Orange 3. Illustrating how to use attribute interactions to improve predictive models."
 x2images: true  # true if using retina screenshots, else false
+oldUrl: "/blog/2022/2022-04-08-interactions/"
 ---
 
 The *Interactions* widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of [compiling older versions](/blog/2022/2022-01-10-orange2/) anymore.

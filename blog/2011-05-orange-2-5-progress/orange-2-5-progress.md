@@ -4,6 +4,7 @@ date: '2011-05-20 15:08:00+00:00'
 draft: false
 title: "Orange 2.5 progress"
 blog: ["orange25" ]
+oldUrl: "/blog/2011/05/20/orange-2-5-progress/"
 ---
 
 We decided that we should reorganize Orange to provide more intuitive interface to the scripting interface. The next release, Orange 2.5 is getting better every day. But fear not, dear reader, we are working hard to ensure that your scripts will still work.

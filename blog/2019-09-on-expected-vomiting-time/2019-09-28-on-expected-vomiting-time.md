@@ -8,6 +8,7 @@ frontPageImage: "2019-09-28-vomiting-pumpkin.jpg"
 blog: ["model performance", "confusion matrix", "education"]
 shortExcerpt: "Computing meaningful performance scores of models should be creative"
 longExcerpt: "A report of an interesting ending to a lecture about setting probability thresholds for predictive models"
+oldUrl: "/blog/2019/2019-09-28-on-expected-vomiting-time/"
 ---
 
 We just finished a lecture and a student came with a question. The lecture was, in short, about how predictive models compute probabilities; to use a model for making decisions, we must find a threshold that will minimize the cost, maximize the profit, strike a good balance between sensitivity and specificity, or increase the general human well-being in some other way. So this student came with a question about something I didn't explain well, and she gave me one last chance.

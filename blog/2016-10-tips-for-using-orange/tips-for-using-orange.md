@@ -4,6 +4,7 @@ date: '2016-10-17 12:18:23+00:00'
 draft: false
 title: "10 Tips and Tricks for Using Orange"
 blog: ["documentation" ,"education" ,"features" ,"interface" ,"orange3" ]
+oldUrl: "/blog/2016/10/17/tips-for-using-orange/"
 ---
 
 TIP #1: **Follow tutorials and example workflows to get started.**

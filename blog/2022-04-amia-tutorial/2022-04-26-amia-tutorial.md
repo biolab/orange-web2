@@ -9,6 +9,7 @@ blog: ["orange", "workshop"]
 shortExcerpt: "A half-a day tutorial on data science training with Orange on June 14 in Halifax, Canada."
 longExcerpt: "A conference on Artificial Intelligence in Medicine is hosting our tutorial on training of crucial mechanics behind data science and machine learning with Orange."
 x2images: false  # true if using retina screenshots, else false
+oldUrl: "/blog/2022/2022-04-26-amia-tutorial/"
 ---
 
 ## When

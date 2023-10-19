@@ -8,6 +8,7 @@ frontPageImage: "2023-09-19-fairness-reweighing-dataset-thumb.png"
 blog: ["fairness", "reweighing"]
 shortExcerpt: "Introducing the Reweighing widget in Orange, a solution for dataset bias mitigation."
 longExcerpt: "Building on our exploration of the Orange fairness addon, this blog delves into the Reweighing widget. By adjusting weights for dataset instances, the widget addresses bias, focusing on underrepresented groups. Using the Compas dataset as an example, we demonstrate how bias decreases post-reweighting, presenting visual insights into the distribution of adjusted weights and their impact on dataset fairness."
+oldUrl: "/blog/2023/2023-09-19-fairness-reweighing-dataset/"
 ---
 
 In the [previous blog post](/blog/2023-09-18-fairness-dataset-bias/), we introduced the Orange fairness addon along with the Dataset Bias and As Fairness widgets. We also demonstrated how to use them to detect bias in a dataset and visualized the results for a better understanding. In this blog, we will introduce the Reweighing widget, which we can use to mitigate bias in a dataset, resulting in fairer machine learning models learning from it.

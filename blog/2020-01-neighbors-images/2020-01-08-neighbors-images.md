@@ -8,6 +8,7 @@ frontPageImage: "2020-01-08-neighbors-images-small.png"
 blog: ["neighbors", "images"]
 shortExcerpt: "We show how to use Neighbors widget on image embedding space to find image look-alikes."
 longExcerpt: "We show how to use Neighbors widget on image embedding space to find image look-alikes."
+oldUrl: "/blog/2020/2020-01-08-neighbors-images/"
 ---
 
 There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.

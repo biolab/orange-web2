@@ -4,6 +4,7 @@ date: '2011-06-24 22:10:00+00:00'
 draft: false
 title: "Orange GSoC: MF Techniques for Data Mining"
 blog: ["gsoc" ,"matrixfactorization" ]
+oldUrl: "/blog/2011/06/24/orange-gsoc-mf-techniques-for-data-mining/"
 ---
 
 I am one of three students who are working on GSoC projects for Orange this year. The objective of the project Matrix Factorization Techniques for Data Mining is to provide the Orange community with a unified and efficient interface to matrix factorization algorithms and methods. 

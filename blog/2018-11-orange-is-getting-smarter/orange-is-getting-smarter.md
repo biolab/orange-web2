@@ -5,6 +5,7 @@ draft: false
 title: "Orange is Getting Smarter"
 blog: ["analysis" ,"interface" ,"orange3" ]
 shortExcerpt: "Orange recently implemented a basic form of opt-in usage tracking, specifically targeting how users add widgets to the canvas."
+oldUrl: "/blog/2018/11/22/orange-is-getting-smarter/"
 ---
 
 In the past few months, Orange has been getting smarter and sleeker.

@@ -5,6 +5,7 @@ draft: false
 title: "BDTN 2016 Workshop: Introduction to Data Science"
 blog: ["education" ,"interactive data visualization" ,"tutorial" ,"workshop"  ]
 
+oldUrl: "/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/"
 ---
 
 Every year [BEST Ljubljana](http://www.bestljubljana.si/) organizes BEST Days of Technology and Sciences, an event hosting a broad variety of workshops, hackathons and lectures for the students of natural sciences and technology. **Introduction to Data Science**, organized by our own Laboratory for Bioinformatics, was this year one of them.

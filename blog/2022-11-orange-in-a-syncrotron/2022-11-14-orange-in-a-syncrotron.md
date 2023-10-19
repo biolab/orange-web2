@@ -8,6 +8,7 @@ frontPageImage: "20221101_inside_s.jpg"
 blog: ["workshop", "addons"]
 shortExcerpt: "Workshop about spectral data analysis in a synchrotron."
 longExcerpt: "We taught a three-day workshop on Orange for spectral data in UK’s national synchrotron, Diamond Light Source."
+oldUrl: "/blog/2022/2022-11-14-orange-in-a-syncrotron/"
 ---
 
 Orange has a cousin. His name is [Quasar](https://quasar.codes/). Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
