@@ -1,5 +1,6 @@
 import Adapt from "@components/UiKit/Adapt";
 import Button from "@components/UiKit/Button";
+import device from "@styles/utils/breakpoints";
 import config from "config.json";
 import Link from "next/link";
 import styled from "styled-components";
@@ -16,6 +17,12 @@ const LinksWrapper = styled.div`
   column-gap: 80px;
   row-gap: 40px;
   margin-bottom: 40px;
+
+  @media ${device.S} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 
   h3 {
     font-size: 16px;

@@ -8,7 +8,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import MdContent from "@components/MdContent/MdContent";
 import MainLayout from "@components/UiKit/MainLayout";
 import styled from "styled-components";
-import device from "@styles/utils/breakpoints";
 
 export async function getStaticProps() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "docs"));

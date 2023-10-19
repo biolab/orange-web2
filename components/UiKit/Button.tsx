@@ -1,3 +1,4 @@
+import device from "@styles/utils/breakpoints";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -17,6 +18,10 @@ const Button = styled.button`
   background-size: 100%;
   cursor: pointer;
   z-index: 2;
+
+  @media ${device.S} {
+    font-size: 18px;
+  }
 
   &:before {
     content: "";
