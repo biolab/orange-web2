@@ -2,21 +2,34 @@ import MainLayout from "@components/UiKit/MainLayout";
 import styled from "styled-components";
 import { useForm, SubmitHandler, UseFormRegister } from "react-hook-form";
 import React from "react";
+import Adapt from "@components/UiKit/Adapt";
+import Button from "@components/UiKit/Button";
+import device from "@styles/utils/breakpoints";
 
 type Inputs = {
   name: string;
   affiliation: string;
-  course: string;
-  "number of participants": string;
-  "online course": string;
+  course: CourseOptions;
+  "number of participants": number;
+  "online course": boolean;
   email: string;
   message: string;
+  continent: ContinentOptions;
 };
 
 enum CourseOptions {
   IDM = "Introduction to Data Mining",
   TMSS = "Text Mining for Social Sciences",
   DMB = "Data Mining for Business",
+}
+
+enum ContinentOptions {
+  Europe = "Europe",
+  Asia = "Asia",
+  Africa = "Africa",
+  NorthAmerica = "North America",
+  SouthAmerica = "South America",
+  Australia = "Australia and Oceania",
 }
 
 const FormField = ({
@@ -59,7 +72,7 @@ const RadioFormField = ({
       <p>{name}</p>
 
       {options.map((option, index) => (
-        <label htmlFor={option}>
+        <label htmlFor={option} key={option}>
           <input
             {...register(name)}
             defaultChecked={index === 0}
@@ -81,7 +94,7 @@ const OptionsFormField = ({
 }: {
   name: keyof Inputs;
   register: UseFormRegister<Inputs>;
-  options: string[];
+  options: string[] | number[];
 }) => {
   return (
     <StFormField>
@@ -89,7 +102,9 @@ const OptionsFormField = ({
 
       <select {...register(name)}>
         {options.map((option) => (
-          <option value={option}>{option}</option>
+          <option key={option} value={option}>
+            {option}
+          </option>
         ))}
       </select>
     </StFormField>
@@ -104,73 +119,235 @@ export default function TrainingInquiry() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  console.log(errors);
-  console.log(watch("name"));
+  const formValues = watch();
 
-  const onSubmit: SubmitHandler<Inputs> = React.useCallback((data) => {
-    console.log(data);
+  const {
+    travelExpenses,
+    numberOfLecturers,
+    discount,
+    courseCost,
+    numberOfParticipants,
+    total,
+    discountValue,
+  } = React.useMemo(() => {
+    let travelExpenses = 0;
+    let courseCost = formValues.course === CourseOptions.DMB ? 1600 : 800;
+    let numberOfLecturers = 1;
+
+    if (formValues["number of participants"] > 10) {
+      numberOfLecturers = 2;
+    }
+    if (formValues["number of participants"] > 20) {
+      numberOfLecturers = 3;
+    }
+
+    let discount = formValues["number of participants"] > 10;
+
+    if (!formValues["online course"]) {
+      switch (formValues.continent) {
+        default:
+        case ContinentOptions.Europe:
+          travelExpenses = 600;
+          break;
+        case ContinentOptions.NorthAmerica:
+        case ContinentOptions.Asia:
+        case ContinentOptions.Africa:
+          travelExpenses = 1100;
+          break;
+        case ContinentOptions.SouthAmerica:
+          travelExpenses = 1600;
+          break;
+        case ContinentOptions.Australia:
+          travelExpenses = 2100;
+          break;
+      }
+    }
+
+    let numberOfParticipants = formValues["number of participants"] || 5;
+
+    let expenses =
+      travelExpenses * numberOfLecturers + courseCost * numberOfParticipants;
+
+    let discountValue = 0.15 * expenses;
+
+    let total = discount ? expenses - discountValue : expenses;
+
+    return {
+      travelExpenses,
+      numberOfLecturers,
+      discount,
+      courseCost,
+      numberOfParticipants,
+      total,
+      discountValue,
+    };
+  }, [formValues]);
+
+  const onSubmit: SubmitHandler<Inputs> = React.useCallback(async (data) => {
+    const response = await fetch("https://service.biolab.si/contact/training", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    console.log(response.json());
   }, []);
 
   return (
     <MainLayout title="Get in touch">
-      <StForm onSubmit={handleSubmit(onSubmit)}>
-        <FormField
-          name="name"
-          placeholder="Enter your name"
-          register={register}
-          required
-        />
-        <FormField
-          name="affiliation"
-          placeholder="Enter the name of your company/university"
-          register={register}
-        />
-        <RadioFormField
-          name="course"
-          options={Object.values(CourseOptions)}
-          register={register}
-        />
+      <Adapt $width650>
+        <StForm onSubmit={handleSubmit(onSubmit)}>
+          <FormField
+            name="name"
+            placeholder="Enter your name"
+            register={register}
+            required
+          />
+          <FormField
+            name="affiliation"
+            placeholder="Enter the name of your company/university"
+            register={register}
+          />
+          <RadioFormField
+            name="course"
+            options={Object.values(CourseOptions)}
+            register={register}
+          />
 
-        <OptionsFormField
-          name="number of participants"
-          options={["1", "2", "3"]}
-          register={register}
-        />
+          <FormField name="online course" type="checkbox" register={register} />
 
-        <FormField name="online course" type="checkbox" register={register} />
-        <FormField
-          name="email"
-          placeholder="Enter a contact email"
-          type="email"
-          register={register}
-        />
+          <OptionsFormField
+            name="number of participants"
+            options={[5, 10, 15, 20, 50, 100]}
+            register={register}
+          />
+          <OptionsFormField
+            name="continent"
+            options={Object.values(ContinentOptions)}
+            register={register}
+          />
 
-        <StFormField>
-          <label htmlFor={"message"}>message</label>
-          <textarea
-            placeholder="Write us a message"
-            {...register("message", { required: true })}
-          ></textarea>
-        </StFormField>
+          <FormField
+            name="email"
+            placeholder="Enter a contact email"
+            type="email"
+            register={register}
+          />
 
-        <label>
-          Message:
-          <textarea name="message"></textarea>
-        </label>
-        <input type="submit" value="Submit" />
-      </StForm>
+          <StFormField>
+            <label htmlFor={"message"}>message</label>
+            <textarea
+              placeholder="Write us a message"
+              {...register("message", { required: false })}
+            ></textarea>
+          </StFormField>
+
+          <StCostWrapper>
+            <p>
+              Course cost:{" "}
+              <b>
+                ${courseCost} x {numberOfParticipants}
+              </b>
+            </p>
+
+            <p>
+              Travel expenses:{" "}
+              <b>
+                ${travelExpenses} x {numberOfLecturers}
+              </b>
+            </p>
+
+            {discount && (
+              <p>
+                Discount (15%): <b>${discountValue}</b>
+              </p>
+            )}
+            <p>
+              Total: <b>${total}</b>
+            </p>
+          </StCostWrapper>
+
+          <StButton type="submit" value="Submit">
+            Submit
+          </StButton>
+        </StForm>
+      </Adapt>
     </MainLayout>
   );
 }
+
+const StButton = styled(Button)`
+  border: none;
+`;
+
+const StCostWrapper = styled.div`
+  margin-bottom: 32px;
+  p {
+    font-size: 16px;
+    padding: 6px 4px;
+  }
+
+  p + p {
+    border-top: 1px solid ${(props) => props.theme.borderColor};
+  }
+
+  b {
+    font-weight: 600;
+  }
+`;
 
 const StForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 38px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f8f8f8;
+  box-shadow: ${(props) => props.theme.boxShadow};
+
+  @media ${device.S} {
+    border: none;
+    box-shadow: none;
+    padding: 38px 0;
+  }
 `;
 
-const StFormField = styled.div``;
+const StFormField = styled.div`
+  label,
+  p {
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+  }
+
+  textarea,
+  input,
+  select {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 10px 8px;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border: 1px solid ${({ theme }) => theme.borderColor};
+    font-family: inherit;
+
+    &[type="radio"],
+    &[type="checkbox"] {
+      width: auto;
+      min-width: auto;
+      max-width: auto;
+    }
+
+    &[type="checkbox"] {
+      margin: auto;
+      width: 16px;
+      height: 16px;
+    }
+  }
+`;
