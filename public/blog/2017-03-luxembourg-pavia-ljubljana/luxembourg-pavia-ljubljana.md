@@ -4,6 +4,7 @@ date: '2017-03-06 21:35:49+00:00'
 draft: false
 title: "Orange Workshops: Luxembourg, Pavia, Ljubljana"
 blog: ["bioinformatics" ,"education" ,"embedding" ,"orange3" ,"workshop" ]
+oldUrl: "/blog/2017/03/06/luxembourg-pavia-ljubljana/"
 ---
 
 February was a month of [Orange](http://orange.biolab.si) workshops.

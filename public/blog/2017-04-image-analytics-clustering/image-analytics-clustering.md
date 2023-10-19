@@ -4,6 +4,7 @@ date: '2017-04-03 12:36:22+00:00'
 draft: false
 title: "Image Analytics: Clustering"
 blog: ["addons" ,"analysis" ,"clustering" ,"embedding" ,"images" ,"interactive  data visualization" ,"orange3" ,"unsupervised" ]
+oldUrl: "/blog/2017/04/03/image-analytics-clustering/"
 ---
 
 Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.

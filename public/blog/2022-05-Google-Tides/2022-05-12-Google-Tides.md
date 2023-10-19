@@ -8,6 +8,7 @@ frontPageImage: "2022-05-12-google-tides.png"
 blog: ["Google", "Tides Foundation", "project", "visualization"]
 shortExcerpt: "Find out more about our new project about AI in Schools."
 longExcerpt: "Read more about the project in the blogpost and Check out the site to find out more about the prepaired activities."
+oldUrl: "/blog/2022/2022-05-12-Google-Tides/"
 ---
 
 <WindowScreenshot src="2022-05-12-google-tides.png" /> 

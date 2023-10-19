@@ -4,6 +4,7 @@ date: '2018-08-27 16:02:36+00:00'
 draft: false
 title: "Explaining Kickstarter Success"
 blog: ["addons" ,"orange3" ,"prediction" ,"widget" ]
+oldUrl: "/blog/2018/08/27/explaining-kickstarter-success/"
 ---
 
 On Kickstarter most app ideas don't get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.

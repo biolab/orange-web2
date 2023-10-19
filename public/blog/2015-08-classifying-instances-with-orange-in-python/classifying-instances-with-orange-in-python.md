@@ -4,6 +4,7 @@ date: '2015-08-14 12:31:57+00:00'
 draft: false
 title: "Classifying instances with Orange in Python"
 blog: ["classification" ,"data" ,"examples" ,"orange3" ,"python" ,"tree" ]
+oldUrl: "/blog/2015/08/14/classifying-instances-with-orange-in-python/"
 ---
 
 Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily **classify data** with Orange.

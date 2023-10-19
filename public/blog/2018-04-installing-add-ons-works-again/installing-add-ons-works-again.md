@@ -4,6 +4,7 @@ date: '2018-04-23 08:34:47+00:00'
 draft: false
 title: "Installing Add-ons Works Again"
 blog: ["addons" ,"download" ,"pypi" ,"release" ,"update" ]
+oldUrl: "/blog/2018/04/23/installing-add-ons-works-again/"
 ---
 
 Dear Orange users,

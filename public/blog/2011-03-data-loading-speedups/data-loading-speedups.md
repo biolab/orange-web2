@@ -4,6 +4,7 @@ date: '2011-03-28 13:04:00+00:00'
 draft: false
 title: "Data loading speedups"
 blog: ["dataloading" ,"performance" ]
+oldUrl: "/blog/2011/03/28/data-loading-speedups/"
 ---
 
 Orange has been loading data faster since the end of February, especially if there are many attributes in the file.

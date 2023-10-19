@@ -8,6 +8,7 @@ frontPageImage: "2023-09-19-fairness-hiding-protected-attribute-thumb.png"
 blog: ["fairness"]
 shortExcerpt: "Find out why merely removing protected attributes will not fix bias. Features often correlate, letting models infer biases. Fairness algorithms are key for genuine bias mitigation."
 longExcerpt: "In this blog, we confront the common misconception that merely removing a protected attribute from a dataset eliminates bias in model predictions. Our case study reveals that models trained without these attributes still produce biased results. This is due to feature correlations that indirectly capture the protected information. Our conclusion? You cannot sidestep the need for specialized fairness algorithms."
+oldUrl: "/blog/2023/2023-09-19-fairness-hiding-protected-attribute/"
 ---
 
 Previously, we introduced and explained different fairness algorithms that can be used to mitigate bias in a dataset or model predictions. Here, we will discuss a common misconception: removing the protected attribute from the dataset will remove bias. We show why this is not the case and why it is essential to use fairness algorithms.

@@ -9,6 +9,7 @@ blog: ["semantic analysis", "text mining", "corpus", "keywords"]
 shortExcerpt: "How to use Text add-on for semantic analysis of documents."
 longExcerpt: "How to use Text add-on to extract keywords from documents, score documents on keywords, and display semantic content in a map."
 x2images: true  # true if using retina screenshots, else false
+oldUrl: "/blog/2021/2021-09-17-semantic-analysis/"
 ---
 
 Our recent project with the Ministry of Public Administration comprises building a [semantic analysis pipeline in Orange](https://nio.gov.si/nio/asset/semanticni+analizator+besedil?lang=en), enabling the users to quickly and efficiently explore the content of documents, compare a subset against the corpus, extract keywords, and semantically explore document maps. If this sounds too vague, don't worry, here's a quick demo on how to perform semantic analysis in Orange.

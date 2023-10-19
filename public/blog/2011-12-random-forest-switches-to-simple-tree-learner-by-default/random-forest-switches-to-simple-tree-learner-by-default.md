@@ -4,6 +4,7 @@ date: '2011-12-08 15:28:00+00:00'
 draft: false
 title: "Random forest switches to Simple tree learner by default"
 blog: ["forestlearner" ,"simpletreelearner" ]
+oldUrl: "/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/"
 ---
 
 Random forest classifiers now use **Orange.classification.tree.SimpleTreeLearner**by default, which considerably shortens their construction times.

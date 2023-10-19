@@ -7,8 +7,8 @@ thumbImage: "2019-06-28_bled-small.png"
 frontPageImage: "2019-06-28_bled-small.png"
 blog: ["workshop", "education", "data science"]
 shortExcerpt: "We held a short workshop for the participants of the 32nd Bled eConference."
-
 longExcerpt: "We held a short workshop covering the basics of Data Science for the participants of the 32nd Bled eConference. We focused on predictive modeling and explorations of predictions."
+oldUrl: "/blog/2019/2019-06-28-bled-econference/"
 ---
 
 At the invitation of dr. Mirjana Kljajić, we participated in the [32nd Bled eConference](http://bledconference.org/index.php/about/). The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.

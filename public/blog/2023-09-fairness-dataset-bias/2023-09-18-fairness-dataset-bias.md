@@ -8,6 +8,7 @@ frontPageImage: "2023-09-18-fairness-dataset-bias-thumb.png"
 blog: ["fairness", "dataset bias"]
 shortExcerpt: "Orange now supports methods for detecting and mitigating bias in machine learning."
 longExcerpt: "In an era where AI drives decisions impacting real lives, fairness in machine learning is paramount. Take the `Adult` dataset, which shows discrepancies in salary predictions based on gender. Addressing such concerns, Orange introduces a fairness add-on. Using new widgets, users can identify and mitigate biases in their datasets or model predictions."
+oldUrl: "/blog/2023/2023-09-18-fairness-dataset-bias/"
 ---
 
 ## Fairness in Machine Learning

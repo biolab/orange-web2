@@ -8,6 +8,7 @@ frontPageImage: "2023-10-17-LogRegress.png"
 blog: ["update", "video series"]
 shortExcerpt: "Updates in the Introduction to Data Science Video Series, new video logistic regression nomogram."
 longExcerpt: "Updates in the Introduction to Data Science Video Series, new video logistic regression nomogram."
+oldUrl: "/blog/2023/2023-09-01-announcement-nomogram/"
 ---
 
 What better time than the charming fall season to bring to light a long-awaited new batch of videos to our [Introduction to Data Science Series](https://www.youtube.com/playlist?list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab). The crisp air and the gentle rustle of leaves create the perfect backdrop for staying in with a hot drink and diving into a new chapter of data analysis and processing.

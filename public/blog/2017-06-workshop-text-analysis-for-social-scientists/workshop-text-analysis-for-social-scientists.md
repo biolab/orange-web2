@@ -4,6 +4,7 @@ date: '2017-06-09 13:04:32+00:00'
 draft: false
 title: "Workshop: Text Analysis for Social Scientists"
 blog: ["education" ,"text mining" ,"workshop" ]
+oldUrl: "/blog/2017/06/09/workshop-text-analysis-for-social-scientists/"
 ---
 
 Yesterday was no ordinary day at the Faculty of Computer and Information Science, University of Ljubljana - there was an unusually high proportion of Social Sciences students, researchers and other professionals in our classrooms. It was all because of a Text Analysis for Social Scientists workshop.

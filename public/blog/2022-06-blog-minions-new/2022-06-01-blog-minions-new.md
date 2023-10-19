@@ -8,6 +8,7 @@ frontPageImage: "otrokorange.jpg"
 blog: [ "Education" ]
 shortExcerpt: "We let the fourth grade students build their own decision tree to classify characters into professions."
 longExcerpt: "We visited fourthgraders in our local elementary school and taught them about clustering and data collection."
+oldUrl: "/blog/2022/2022-06-01-blog-minions-new/"
 ---
 
 <WindowScreenshot src="2022-06-02-working-together.jpg" /> 

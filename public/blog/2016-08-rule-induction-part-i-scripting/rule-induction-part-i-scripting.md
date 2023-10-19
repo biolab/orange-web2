@@ -5,6 +5,7 @@ draft: false
 title: "Rule Induction (Part I - Scripting)"
 blog: ["classification" ,"gsoc2016" ,"orange3" ]
 post_format: ["Quote" ]
+oldUrl: "/blog/2016/08/05/rule-induction-part-i-scripting/"
 ---
 
 _This is a guest blog from the Google Summer of Code project._

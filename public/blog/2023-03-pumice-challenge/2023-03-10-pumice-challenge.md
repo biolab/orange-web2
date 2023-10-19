@@ -8,6 +8,7 @@ frontPageImage: "2023-05-26-majice-pumice.jpg"
 blog: ["education"]
 shortExcerpt: "One thousand Slovenian students took part in a data mining challenge"
 longExcerpt: "One thousand Slovenian students took part in a data mining challenge"
+oldUrl: "/blog/2023/2023-03-10-pumice-challenge/"
 ---
 
 <WindowScreenshot src="2023-05-26-majice-pumice.jpg" />

@@ -8,6 +8,7 @@ blog: ["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
 shortExcerpt: "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."
 
 longExcerpt: "We have been in Pavia, Italy, to carry out a five-hour workshop covered both the essentials of data analysis and single cell analytics. The topics included working with marker genes, differential expression analysis, and interpretation of clusters through gene ontology analysis."
+oldUrl: "/blog/2019/3/1/single-cell-data-science-for-everyone/"
 ---
 Molecular biologists have in the past twenty years invented technologies that can collect abundant experimental data. One such technique is single-cell RNA-seq, which, very simplified, can measure the activity of genes in possibly large collections of cells. The interpretation of such data can tell us about the heterogeneity of cells, cell types, or provide information on their development.
 

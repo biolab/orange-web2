@@ -8,6 +8,7 @@ frontPageImage: "2023-09-19-fairness-reweighing-preprocessor-thumb.png"
 blog: ["fairness", "reweighing"]
 shortExcerpt: "Expanding on the Orange fairness Reweighing widget: using it as a preprocessor and integrating new fairness scoring metrics."
 longExcerpt: "Diving deeper into the Orange fairness Reweighing widget, we explore its use as a preprocessor for models. Discover the new widgets and fairness scoring metrics; all illustrated using the German credit dataset, supplemented with visual insights through box plots."
+oldUrl: "/blog/2023/2023-09-19-fairness-reweighing-preprocessor/"
 ---
 
 In the [previous blog post](/blog/2023-09-19-fairness-reweighing-dataset/), we introduced the Orange fairness Reweighing widget and used it to reweigh a dataset. In this blog, we will explore another use case for the Reweighing widget: using it as a preprocessor for a specific model.

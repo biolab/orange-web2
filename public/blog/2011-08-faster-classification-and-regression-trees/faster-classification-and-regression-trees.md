@@ -4,6 +4,7 @@ date: '2011-08-24 22:26:00+00:00'
 draft: false
 title: "Faster classification and regression trees"
 blog: ["classification" ,"regression" ,"tree" ]
+oldUrl: "/blog/2011/08/24/faster-classification-and-regression-trees/"
 ---
 
 **SimpleTreeLearner** is an implementation of classification and regression trees that sacrifices flexibility for speed. A benchmark on 42 different datasets reveals that **SimpleTreeLearner** is **11 times faster** than the original **TreeLearner**.

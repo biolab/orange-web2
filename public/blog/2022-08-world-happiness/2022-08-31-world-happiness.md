@@ -8,6 +8,7 @@ frontPageImage: "2022-08-31_happy.png"
 blog: ["data", "add-on", "widgets", "economy"]
 shortExcerpt: "New World Happiness add-on joins the Orange family"
 longExcerpt: "New World Happiness add-on for retrieving socio-economic data from the OECD database joins the Orange family"
+oldUrl: "/blog/2022/2022-08-31-world-happiness/"
 ---
 
 A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options --> Add-ons and select World Happiness from the list to install it.

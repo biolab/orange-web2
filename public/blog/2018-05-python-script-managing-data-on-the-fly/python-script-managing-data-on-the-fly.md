@@ -4,6 +4,7 @@ date: '2018-05-15 09:15:58+00:00'
 draft: false
 title: "Python Script: Managing Data on the Fly"
 blog: ["orange3" ,"python" ,"scripting" ]
+oldUrl: "/blog/2018/05/15/python-script-managing-data-on-the-fly/"
 ---
 
 Python Script is this mysterious widget most people don't know how to use, even those versed in Python. Python Script is the widget that supplements Orange functionalities with (almost) everything that Python can offer. And it's time we unveil some of its functionalities with a simple example.

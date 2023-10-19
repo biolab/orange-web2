@@ -9,6 +9,7 @@ blog: ["2020", "code", "overview", "Github"]
 shortExcerpt: "Statistics of Orange development in 2020."
 longExcerpt: "Statistical report on Orange software development and educational content for 2020."
 x2images: true  # true if using retina screenshots, else false
+oldUrl: "/blog/2020/2020-12-21-year-in-code/"
 ---
 
 # 2020 - Year in Code

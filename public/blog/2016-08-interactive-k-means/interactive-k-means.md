@@ -4,6 +4,7 @@ date: '2016-08-12 12:45:36+00:00'
 draft: false
 title: "Interactive k-Means"
 blog: ["addons" ,"clustering" ,"education" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
+oldUrl: "/blog/2016/08/12/interactive-k-means/"
 ---
 
 _This is a guest blog from the Google Summer of Code project._

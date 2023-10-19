@@ -4,6 +4,7 @@ date: '2012-04-24 10:50:00+00:00'
 draft: false
 title: "This year five students participate in Google Summer of Code"
 blog: ["gsoc" ]
+oldUrl: "/blog/2012/04/24/this-year-five-students-participate-in-google-summer-of-code/"
 ---
 
 This year five students have been accepted to participate in [Google Summer of Code](https://www.google-melange.com/gsoc/homepage/google/gsoc2012) and contribute to Orange in their summer time. Congratulations!  

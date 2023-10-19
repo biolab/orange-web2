@@ -4,6 +4,7 @@ date: '2012-05-15 06:00:00+00:00'
 draft: false
 title: "Orange GSoC: Computer vision add-on for Orange"
 blog: ["computervision" ,"gsoc" ]
+oldUrl: "/blog/2012/05/15/orange-gsoc-computer-vision-add-on-for-orange/"
 ---
 
 This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2012).

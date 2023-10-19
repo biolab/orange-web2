@@ -9,6 +9,7 @@ blog: ["model explanation", "explainable AI", "explain", "predictive modelling"]
 shortExcerpt: "New Orange add-on for explaining predictive models."
 longExcerpt: "New Orange Explain add-on for understanding predictions and predictive models."
 x2images: false  # true if using retina screenshots, else false
+oldUrl: "/blog/2021/2021-02-10-explaining-models/"
 ---
 
 It is easy to build powerful predictive models in Orange. But how does the model "look like"? Which attributes and which values of those attributes are important? And when making predictions, which attributes contributed to the decision? **Orange's new Explain add-on** helps you answer all those questions.

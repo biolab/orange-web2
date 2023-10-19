@@ -4,6 +4,7 @@ date: '2016-08-16 17:32:20+00:00'
 draft: false
 title: "Visualization of Classification Probabilities"
 blog: ["addons" ,"classification" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
+oldUrl: "/blog/2016/08/16/polynomial-classification/"
 ---
 
 _This is a guest blog from the Google Summer of Code project._

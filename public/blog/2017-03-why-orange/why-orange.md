@@ -4,6 +4,7 @@ date: '2017-03-09 10:54:13+00:00'
 draft: false
 title: "Why Orange?"
 blog: ["data" ,"examples" ,"youtube" ]
+oldUrl: "/blog/2017/03/09/why-orange/"
 ---
 
 Why is Orange so great? Because it helps people solve problems quickly and efficiently.

@@ -4,6 +4,7 @@ date: '2012-01-06 14:54:00+00:00'
 draft: false
 title: "New Orange icons"
 blog: ["icons" ]
+oldUrl: "/blog/2012/01/06/new-orange-icons/"
 ---
 
 As new and new widgets with new features are added to Orange, icons for them have to be drawn. Most of the time those are just some quick sketches or even missing altogether. But now we are starting to redraw and unify them. A few of them have already been made.

@@ -4,6 +4,7 @@ date: '2017-07-28 12:46:29+00:00'
 draft: false
 title: "Support Orange Developers"
 blog: ["orange3" ]
+oldUrl: "/blog/2017/07/28/support-orange-developers/"
 ---
 
 Do you love Orange? Do you think it is the best thing since sliced bread? Want to thank all the developers for their hard work?

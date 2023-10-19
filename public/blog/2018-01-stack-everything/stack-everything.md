@@ -4,6 +4,7 @@ date: '2018-01-05 15:37:34+00:00'
 draft: false
 title: "Stack Everything!"
 blog: ["classification" ,"examples" ,"widget" ]
+oldUrl: "/blog/2018/01/05/stack-everything/"
 ---
 
 We all know that sometimes many is better than few. Therefore we are happy to introduce the Stack widget. It is available in [Prototypes add-on](https://github.com/biolab/orange3-prototypes) for now.

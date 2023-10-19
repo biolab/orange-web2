@@ -8,6 +8,7 @@ frontPageImage: "2023-03-31-zemljevid.png"
 blog: ["gui"]
 shortExcerpt: "Orange speaks Slovenian!"
 longExcerpt: "Orange speaks Slovenian!"
+oldUrl: "/blog/2023/2021-03-31-zivjo-orange/"
 ---
 
 <WindowScreenshot src="2023-03-31-zemljevid.png" />

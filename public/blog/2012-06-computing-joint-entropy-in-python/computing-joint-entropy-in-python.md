@@ -4,6 +4,7 @@ date: '2012-06-15 13:21:00+00:00'
 draft: false
 title: "Computing joint entropy (in Python)"
 blog: ["orange3" ,"python" ]
+oldUrl: "/blog/2012/06/15/computing-joint-entropy-in-python/"
 ---
 
 How I wrote a beautiful, general, and super fast joint entropy method (in Python).

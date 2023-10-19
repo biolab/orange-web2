@@ -8,6 +8,7 @@ frontPageImage: "2023-08-31-dask-logistic-regression.png"
 blog: ["dask", "development"]
 shortExcerpt: "Updates in the dask project, integrating machine learning methods and enhancing efficiency in a data preprocessor."
 longExcerpt: "Updates in the dask project, integrating machine learning methods and enhancing efficiency in a data preprocessor."
+oldUrl: "/blog/2023/2023-08-31-a-dash-of-dask/"
 ---
 
 It's been a while since our last progress update on [Dask](/blog/2022-12-13-dask-table), and quite a bit has happened since. Most noticeably, we've got some more visualization widgets working, but I leave that for another blog post. Today, I want to focus on our updated machine-learning methods. K-Means, PCA, Naive Bayes, Linear, and Logistic Regression are now running. Well, maybe not flawlessly, but hey, they work.

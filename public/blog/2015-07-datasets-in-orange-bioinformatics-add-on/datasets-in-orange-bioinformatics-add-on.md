@@ -5,6 +5,7 @@ draft: false
 title: "Datasets in Orange Bioinformatics Add-On"
 blog: ["addons" ,"analysis" ,"bioinformatics" ,"bioorange" ,"data" ,"dataloading"  ]
 
+oldUrl: "/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/"
 ---
 
 As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a **bioinformatics add-on**, which is our specialty.

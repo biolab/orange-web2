@@ -4,6 +4,7 @@ date: '2016-07-29 11:52:54+00:00'
 draft: false
 title: "Pythagorean Trees and Forests"
 blog: ["classification" ,"examples" ,"interactive data visualization" ,"orange3"  ,"plot" ,"tree" ,"visualization" ]
+oldUrl: "/blog/2016/07/29/pythagorean-trees-and-forests/"
 ---
 
 Classification Trees are great, but how about when they overgrow even your 27'' screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.

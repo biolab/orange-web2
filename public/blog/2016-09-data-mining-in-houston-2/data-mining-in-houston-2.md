@@ -4,6 +4,7 @@ date: '2016-09-15 13:38:30+00:00'
 draft: false
 title: "Data Mining Course in Houston #2"
 blog: ["orange3" ,"tutorial" ,"workshop" ]
+oldUrl: "/blog/2016/09/15/data-mining-in-houston-2/"
 ---
 
 This was already the second installment of Introduction to Data Mining Course at [Baylor College of Medicine in Houston, Texas](https://www.bcm.edu). Just [like the last year](/blog/2015/10/09/data-mining-course-in-houston/), the course was packed. About 50 graduate students, post-docs and a few faculty attended, making the course one of the largest elective PhD courses from over a hundred offered at this prestigious medical school.

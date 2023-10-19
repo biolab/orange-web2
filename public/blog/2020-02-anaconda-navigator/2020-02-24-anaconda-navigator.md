@@ -8,6 +8,7 @@ frontPageImage: "2020-02-24-navigator-small.png"
 blog: ["installation", "anaconda", "navigator"]
 shortExcerpt: "Essential information for installing Orange via Anaconda Navigator."
 longExcerpt: "Essential information for installing Orange via Anaconda Navigator."
+oldUrl: "/blog/2020/2020-02-24-anaconda-navigator/"
 ---
 
 We are fortunate enough to be featured on the front page of Anaconda Navigator, a graphical user interface for conda package management. Orange has been a conda package for some time now, since this is the easiest way to provide pre-compiled packages for Windows. And since most of our user base uses Windows, this was the way to go.

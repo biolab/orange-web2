@@ -8,6 +8,7 @@ frontPageImage: "2023-09-19-fairness-adversarial-debiasing-thumb.png"
 blog: ["fairness", "adversarial debiasing"]
 shortExcerpt: "Learn how to use the Adversarial Debiasing model in Orange for fairer machine learning."
 longExcerpt: "This blog post focuses on the Adversarial Debiasing model in Orange, a tool for enhancing fairness in your machine learning algorithms. We will walk through how to use it and explain the trade-offs that come with using fairness algorithms."
+oldUrl: "/blog/2023/2023-09-19-fairness-adversarial-debiasing/"
 ---
 
 In the [previous blog post](/blog/2023-09-19-fairness-reweighing-preprocessor/), we talked about how to use the Reweighing widget as a preprocessor for a model. This blog post will discuss the Adversarial Debiasing model, a bias-aware model. We will also show how to use it in Orange.
