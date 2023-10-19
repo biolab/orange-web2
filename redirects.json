@@ -1,5 +1,61 @@
 [
   {
+    "source": "/blog/2023/2023-09-19-fairness-hiding-protected-attribute",
+    "destination": "/blog/why-removing-features-isn't-enough"
+  },
+  {
+    "source": "/blog/2023/2023-09-19-fairness-reweighing-preprocessor",
+    "destination": "/blog/orange-fairness---reweighing-as-a-preprocessor"
+  },
+  {
+    "source": "/blog/2023/2023-09-19-fairness-reweighing-dataset",
+    "destination": "/blog/orange-fairness---reweighing-a-dataset"
+  },
+  {
+    "source": "/blog/2023/2023-09-19-fairness-equal-odds-postprocessing",
+    "destination": "/blog/orange-fairness---equal-odds-postprocessing"
+  },
+  {
+    "source": "/blog/2023/2023-09-19-fairness-adversarial-debiasing",
+    "destination": "/blog/orange-fairness---adversarial-debiasing"
+  },
+  {
+    "source": "/blog/2023/2023-09-18-fairness-dataset-bias",
+    "destination": "/blog/orange-fairness---dataset-bias"
+  },
+  {
+    "source": "/blog/2023/2023-08-31-a-dash-of-dask",
+    "destination": "/blog/a-dash-of-dask"
+  },
+  {
+    "source": "/blog/2023/2023-03-10-pumice-challenge",
+    "destination": "/blog/pumice-challenge"
+  },
+  {
+    "source": "/blog/2023/2021-03-31-zivjo-orange",
+    "destination": "/blog/živjo-orange"
+  },
+  {
+    "source": "/blog/2023/2023-03-10-interval-slider",
+    "destination": "/blog/interval-sliders"
+  },
+  {
+    "source": "/blog/2023/2023-02-23-ssgsea",
+    "destination": "/blog/single-sample-gsea-is-now-in-orange"
+  },
+  {
+    "source": "/blog/2023/2023-01-27-cox-regression-in-orange",
+    "destination": "/blog/cox-regression-in-orange"
+  },
+  {
+    "source": "/blog/2023/2023-01-17-trubar",
+    "destination": "/blog/meet-trubar-a-friend-of-orange"
+  },
+  {
+    "source": "/blog/2022/2022-12-13-dask-table,",
+    "destination": "/blog/orange-you-going-to-ask-about-dask,"
+  },
+  {
     "source": "/blog/2022/2022-25-11-clustering-videos",
     "destination": "/blog/videos-on-hierarchical-clustering"
   },
