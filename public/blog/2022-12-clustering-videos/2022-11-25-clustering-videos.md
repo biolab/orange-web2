@@ -8,6 +8,7 @@ frontPageImage: "2022-11-25-video-series-clustering.png"
 blog: ["education"]
 shortExcerpt: "Six new videos explaining hierarchical clustering in Orange are now online on YouTube."
 longExcerpt: "Six new videos explaining hierarchical clustering in Orange are now online on YouTube."
+oldUrl: "/blog/2022/2022-25-11-clustering-videos/"
 ---
 
 The six videos explaining hierarchical clustering in Orange are a part of [Introduction to Data Science series](https://www.youtube.com/playlist?list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab). We are preparing the videos for an online course aimed at students interested in data science. The course does not assume any background knowledge in math, statistics, and computer science and is, therefore, aimed at data science beginners. We are designing the course as a part of [Explainable AI in Healthcare Management](http://xaim.eu). A grant from European Union supports its creation. 

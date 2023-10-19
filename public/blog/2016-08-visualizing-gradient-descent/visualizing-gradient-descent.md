@@ -4,6 +4,7 @@ date: '2016-08-25 11:31:04+00:00'
 draft: false
 title: "Visualizing Gradient Descent"
 blog: ["addons" ,"education" ,"gsoc2016" ,"interactive data visualization"  ,"orange3" ]
+oldUrl: "/blog/2016/08/25/visualizing-gradient-descent/"
 ---
 
 _This is a guest blog from the Google Summer of Code project._

@@ -4,6 +4,7 @@ date: '2013-09-02 21:27:00+00:00'
 draft: false
 title: "Orange and AXLE project"
 blog: ["dataloading" ,"features" ,"future" ,"orange3" ,"sql" ]
+oldUrl: "/blog/2013/09/02/orange-and-axle-project/"
 ---
 
 Our group at University of Ljubljana is a partner in the EU 7FP project [Advanced Analytics for Extremely Large European Databases (AXLE)](http://axleproject.eu/). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).

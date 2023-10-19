@@ -4,6 +4,7 @@ date: '2018-03-05 22:22:49+00:00'
 draft: false
 title: "Single cell analytics workshop at HHMI | Janelia"
 blog: ["orange3" ]
+oldUrl: "/blog/2018/03/05/single-cell-analytics-workshop-at-hhmi-janelia/"
 ---
 
 [HHMI | Janelia](https://www.janelia.org) is one of the prettiest researcher campuses I have ever visited. Located in Ashburn, VA, about 20 minutes from Washington Dulles airport, it is conveniently located yet, in a way, secluded from the buzz of the capital. We adored the guest house with a view of the lake, tasty Janelia-style breakfast (hash-browns with two eggs and sausage, plus a bagel with cream cheese) in the on-campus pub, beautifully-designed interiors to foster collaborations and interactions, and late-evening discussions in the in-house pub.

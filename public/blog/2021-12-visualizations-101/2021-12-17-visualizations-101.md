@@ -9,6 +9,7 @@ blog: ["visualization", "data mining", "box plot", "scatter plot", "distribution
 shortExcerpt: "How to read different visualizations?"
 longExcerpt: "When to use certain visualization and how to read it?"
 x2images: false  # true if using retina screenshots, else false
+oldUrl: "/blog/2021/2021-12-17-visualizations-101/"
 ---
 
 Orange has a wide array of visualizations, which enable exploring the data from different perspectives. But each visualization is unique - it is used for a specific purpose, which is closely related to how one interprets the plot. Let's have a look at the most common visualizations in Orange, when to use them and how to read them. We will use the *heart_disease.tab* data set from the File widget in the next examples.

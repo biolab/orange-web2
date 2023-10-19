@@ -4,6 +4,7 @@ date: '2017-02-03 13:16:37+00:00'
 draft: false
 title: "For When You Want to Transpose a Data Table..."
 blog: ["analysis" ,"bioinformatics" ,"feature engineering" ,"features" ,"orange3"  ]
+oldUrl: "/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/"
 ---
 
 Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.

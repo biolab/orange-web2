@@ -5,6 +5,7 @@ draft: false
 title: "Version 3.3.1 - Updates and Features"
 blog: ["distribution" ,"orange3" ,"release" ,"version" ]
 
+oldUrl: "/blog/2016/04/01/version-3-3-1-updates-and-features/"
 ---
 
 About a week ago we issued an updated stable release of Orange, version 3.3.1. We've introduced some new functionalities and improved a few old ones.

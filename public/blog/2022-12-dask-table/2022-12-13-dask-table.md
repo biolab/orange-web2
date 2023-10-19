@@ -8,6 +8,7 @@ frontPageImage: "2022-12-13_dask_data.png"
 blog: ["dask", "widgets"]
 shortExcerpt: "A brief glimpse into the future of Orange and how we can effectively process large datasets with dask."
 longExcerpt: "What we are doing to improve Orange's data processing abilities, how we can tackle the huge amounts of data already available today, and what role dask plays in all this."
+oldUrl: "/blog/2022/2022-12-13-dask-table/"
 ---
 
 As great as Orange is at simplifying machine learning and bringing it closer to your [everyday regular normal guy](https://www.youtube.com/watch?v=5PsnxDQvQpw), it turns out, there are some major drawbacks that stem from it's very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in their right mind would want to throw a very large dataset at it. So most of Orange's components assume they can fit all the data into memory at once, process it on a single core, and expect results fairly quickly.

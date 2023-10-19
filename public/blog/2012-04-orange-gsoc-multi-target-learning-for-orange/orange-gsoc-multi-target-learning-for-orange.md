@@ -4,6 +4,7 @@ date: '2012-04-30 12:00:00+00:00'
 draft: false
 title: "Orange GSoC: Multi-Target Learning for Orange"
 blog: ["classification" ,"gsoc" ,"multitarget" ]
+oldUrl: "/blog/2012/04/30/orange-gsoc-multi-target-learning-for-orange/"
 ---
 
 Orange already supports multi-target classification, but the current implementation of clustering trees is written in Python. One of the five projects Orange has chosen at this year's Google Summer of Code is the implementation of clustering trees in C. The goal of my project is to speed up the building time of clustering trees and lower their spatial complexity, especially when used in random forests. Implementation will be based on Orange's SimpleTreeLearner and will be integrated with Orange 3.0.

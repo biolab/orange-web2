@@ -8,6 +8,7 @@ frontPageImage: "2023-01-27-cox-test-and-score.png"
 blog: ["survival analysis", "cox regression"]
 shortExcerpt: "Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression."
 longExcerpt: "Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression."
+oldUrl: "/blog/2023/2023-01-27-cox-regression-in-orange/"
 ---
 
 In our [previous blog post](/blog/2022-05-25-KaplanMeier), we discussed the basic concepts of survival analysis, the types of problems it aims to solve and briefly introduced the Kaplan-Meier method. We used the [Kaplan-Meier widget](/widget-catalog/survival-analysis/kaplan-meier-plot/) to estimate a population's survival probability over time, taking into account a specific covariate. However, we did not account for the impact of other covariates on the survival outcome.

@@ -4,6 +4,7 @@ date: '2013-01-29 09:00:00+00:00'
 draft: false
 title: "Writing Orange Add-ons"
 blog: ["addons" ,"pypi" ]
+oldUrl: "/blog/2013/01/29/writing-orange-add-ons/"
 ---
 
 We officially supported add-ons in Orange 2.6. You should start by checking the [list of available add-ons](http://orange.biolab.si/addons/). We pull those automatically from the [PyPi](http://pypi.python.org/pypi), which is our preferred distribution channel. Try to install an add-on by either:

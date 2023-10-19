@@ -8,6 +8,7 @@ frontPageImage: "2022_10_10_quick_preview.png"
 blog: ["widgets"]
 shortExcerpt: "An exciting new feature in widgets."
 longExcerpt: "Widgets can now show a quick preview of their output data."
+oldUrl: "/blog/2022/2022-10-10-quick-preview/"
 ---
 
 Orange 3.33 comes with a simple new feature that we adore.

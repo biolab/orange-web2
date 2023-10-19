@@ -8,6 +8,7 @@ frontPageImage: "2022-08-04_spiralo.png"
 blog: ["timeseries", "line chart", "spiralogram", "prediction", "VAR model"]
 shortExcerpt: "We've updated most visualizations in the Timeseries add-on"
 longExcerpt: "Timeseries' visualizations are becoming fully PyQt, making them easier to maintain. We've also fixed many bugs, which should make working with the timeseries a joy once again."
+oldUrl: "/blog/2022/2022-08-04-timeseries/"
 ---
 
 The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in [Highcharts](https://www.highcharts.com/), a visualization library built on JavaScript. We're Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.

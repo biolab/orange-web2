@@ -8,6 +8,7 @@ frontPageImage: "2023-09-19-fairness-equal-odds-postprocessing.png"
 blog: ["fairness", "equal odds postprocessing"]
 shortExcerpt: "Explore the Equal Odds Postprocessing widget in Orange, designed to fine-tune your model's fairness. We explain how the algorithm operates and showcase its effectiveness with an example using the German credit dataset."
 longExcerpt: "In this blog, we delve into the Equal Odds Postprocessing widget, a tool designed to enhance fairness in machine learning models. We break down how the algorithm works by modifying predictions to meet Equalized Odds criteria. Using a real-world example with the German credit dataset, we demonstrate its efficacy in improving fairness metrics while marginally affecting accuracy."
+oldUrl: "/blog/2023/2023-09-19-fairness-equal-odds-postprocessing/"
 ---
 
 

@@ -4,6 +4,7 @@ date: '2017-04-07 14:27:44+00:00'
 draft: false
 title: "Model replaces Classify and Regression"
 blog: ["classification" ,"features" ,"interface" ,"orange3" ,"prediction" ,"predictive  analytics" ,"regression" ,"toolbox" ,"update" ]
+oldUrl: "/blog/2017/04/07/model-replaces-classify-and-regression/"
 ---
 
 Did you recently wonder where did Classification Tree go? Or what happened to Majority?

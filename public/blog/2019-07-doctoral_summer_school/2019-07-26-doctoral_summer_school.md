@@ -9,6 +9,7 @@ blog: ["workshop", "education", "data science", "summer school"]
 shortExcerpt: "This year's Data Science course at the Doctoral Summer School."
 
 longExcerpt: "For the second year in a row we took part in the Ljubljana Doctoral Summer School, organized by the School of Economics and Business."
+oldUrl: "/blog/2019/2019-07-26-doctoral_summer_school/"
 ---
 
 For the second year in a row, the Orange team was a part of the [Ljubljana Doctoral Summer School](https://summerprogrammes.ef.uni-lj.si/programmes/doctoral_summer_school/), which is organized by the [School of Economics and Business, University of Ljubljana](http://www.ef.uni-lj.si/en). Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.

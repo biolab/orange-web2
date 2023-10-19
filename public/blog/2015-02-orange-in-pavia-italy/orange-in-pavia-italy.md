@@ -5,6 +5,7 @@ draft: false
 title: "Orange in Pavia, Italy"
 blog: ["orange3" ,"python" ,"workshop" ]
 post_format: ["Image" ]
+oldUrl: "/blog/2015/02/19/orange-in-pavia-italy/"
 ---
 
 These days, we (Blaz Zupan and Marinka Zitnik, with full background support of entire [Bioinformatics Lab](http://www.biolab.si/en/)) are running a three-day course on Data Mining in Python. [Riccardo Bellazzi](http://www.labmedinfo.org/people/bellazzi), a professor at [University of Pavia](http://www.unipv.eu/), a world-renown researcher in biomedical informatics, and most of all, a great friend, has invited us to run the elective course for Pavia's grad students. The enrollment was, he says, overwhelming, as with over 50 students this is by far the best attended grad course at Pavia's faculty of engineering in the past years.

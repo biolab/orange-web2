@@ -4,6 +4,7 @@ date: '2016-06-10 12:37:50+00:00'
 draft: false
 title: "Scripting with Time Variable"
 blog: ["data" ,"examples" ,"scripting", "orange3" ]
+oldUrl: "/blog/2016/06/10/scripting-with-time-variable/"
 ---
 
 It's always fun to play around with data. And since Orange can, as of a few months ago, read temporal data, we decided to parse some data we had and put it into Orange.

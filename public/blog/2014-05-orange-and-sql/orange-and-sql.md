@@ -4,6 +4,7 @@ date: '2014-05-29 22:34:00+00:00'
 draft: false
 title: "Orange and SQL"
 blog: ["orange3" ]
+oldUrl: "/blog/2014/05/29/orange-and-sql/"
 ---
 
 Orange 3.0 will also support working with data stored in a database.

@@ -4,6 +4,7 @@ date: '2011-09-13 00:32:00+00:00'
 draft: false
 title: "Debian packages support multiple Python versions now"
 blog: ["debian" ,"packaging" ,"python" ]
+oldUrl: "/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/"
 ---
 
 We have created Debian packages for multiple Python versions. This means that they work now with both Python 2.6 and 2.7 out of the box, or if you compile them manually, with any (supported) version you have installed on your (Debian-based) system.

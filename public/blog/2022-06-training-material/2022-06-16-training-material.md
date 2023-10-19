@@ -9,6 +9,7 @@ blog: ["education"]
 shortExcerpt: "We are crafting free educational material to help in data science training."
 longExcerpt: "We are crafting free educational material to help in data science training."
 x2images: true  # true if using retina screenshots, else false
+oldUrl: "/blog/2022/2022-06-16-training-material/"
 ---
 
 On May 26, 2002, we had our first [webinar targeting teaching with Orange](https://orangedatamining.com/blog/2022/2022-04-26-edu-webinar/). During the first part of the webinar, I demonstrated how we could use Orange to introduce classification trees. On their own, classification trees are quite lousy classifiers. They are, nevertheless, important as we can assemble them into very powerful classifiers. The lessons I have presented deal with overfitting and the idea that we should never report classification accuracy on the training data. The trick we use when teaching this is to show the trainees that classification trees also perform well on data with random, that is, useless labels (see the figure below). And then, of course, we ask the audience what went wrong and why and how we should fix the workflow. 

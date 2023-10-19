@@ -9,6 +9,7 @@ blog: ["orange", "image analytics", "images", "machine learning"]
 shortExcerpt: "How to use Orange's image embedding to identify similar images, classify them in categories and make an order in your photographs collection?"
 longExcerpt: "The core element of Orange's image analysis is embedding images in the vector space, which just became a feaster with our infrastructure upgrades. We use this opportunity to show possible ways of analyzing images through observing similar images and classifying them."
 x2images: false  # true if using retina screenshots, else false
+oldUrl: "/blog/2022/2022-02-11-edit-image-collection/"
 ---
 
 The core element of Orange's image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding. 
