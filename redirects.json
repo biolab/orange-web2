@@ -1,5 +1,9 @@
 [
   {
+    "source": "/blog/2023/2023-09-01-announcement-nomogram",
+    "destination": "/blog/fall-season-brings-fresh-content-to-the-introduction-to-data-science-series"
+  },
+  {
     "source": "/blog/2023/2023-09-19-fairness-hiding-protected-attribute",
     "destination": "/blog/why-removing-features-isn't-enough"
   },
