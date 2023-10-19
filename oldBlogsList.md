@@ -1,3 +1,4 @@
+/blog/2023/2023-09-01-announcement-nomogram/
 /blog/2023/2023-09-19-fairness-hiding-protected-attribute/
 /blog/2023/2023-09-19-fairness-reweighing-preprocessor/
 /blog/2023/2023-09-19-fairness-reweighing-dataset/
