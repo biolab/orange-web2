@@ -30,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
   main {
     padding-top: 80px;
+    flex: 1;
   }
 
   ol, ul {

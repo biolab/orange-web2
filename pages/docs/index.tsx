@@ -6,6 +6,9 @@ import fs from "fs";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import MdContent from "@components/MdContent/MdContent";
+import MainLayout from "@components/UiKit/MainLayout";
+import styled from "styled-components";
+import device from "@styles/utils/breakpoints";
 
 export async function getStaticProps() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "docs"));
@@ -41,19 +44,53 @@ export async function getStaticProps() {
   };
 }
 
-export default function Docs({ sections, index }: { sections: any[]; index: any }) {
+export default function Docs({
+  sections,
+  index,
+}: {
+  sections: any[];
+  index: any;
+}) {
   return (
-    <Adapt $mt>
-      <h1>{index.title}</h1>
-
-      {sections.map(({ title, mdxSource, image }) => (
-        <React.Fragment key={title}>
-          <h2>{title}</h2>
-          <MdContent key={title} content={mdxSource} />
-        </React.Fragment>
-      ))}
+    <MainLayout title={index.title}>
+      <StSectionsWrapper>
+        {sections.map(({ title, mdxSource }) => (
+          <div key={title}>
+            <h2>{title}</h2>
+            <MdContent key={title} content={mdxSource} />
+          </div>
+        ))}
+      </StSectionsWrapper>
 
       <MdContent content={index.mdxSource} />
-    </Adapt>
+    </MainLayout>
   );
 }
+
+const StSectionsWrapper = styled.div`
+  padding: 0 30px;
+  max-width: 1000px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+  }
+
+  a + a {
+    margin-top: 10px;
+  }
+`;
