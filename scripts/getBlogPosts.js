@@ -54,6 +54,7 @@ function getPostsData(files) {
           x2images,
           thumbImage,
           blog,
+          oldUrl,
         },
       } = matter(fileContents);
 
@@ -74,6 +75,7 @@ function getPostsData(files) {
         longExcerpt: longExcerpt || "",
         shortExcerpt: shortExcerpt || "",
         url: slugify(url || title || oldSlug),
+        oldUrl: oldUrl || "",
         _type: "blog",
       };
     })
