@@ -198,7 +198,10 @@ export default function TrainingInquiry() {
       setSuccess(false);
       setError(false);
 
-      const searchParams = new URLSearchParams({ ...data, price: total });
+      const searchParams = new URLSearchParams({
+        ...data,
+        price: total,
+      } as any);
 
       try {
         const response = await fetch(
