@@ -3,9 +3,9 @@ import Navbar from "./Navbar/Navbar";
 import Search from "@components/Search/Search";
 import SearchContextProvider from "./Search/Search.context";
 import styled from "styled-components";
-import { Source_Sans_Pro } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
-const font = Source_Sans_Pro({
+const font = Source_Sans_3({
   style: "normal",
   weight: ["400", "600", "700"],
   subsets: ["latin"],
