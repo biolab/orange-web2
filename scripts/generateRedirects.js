@@ -13,7 +13,6 @@ function writeRedirects() {
     destination: "/examples"
   })
 
-
   fs.writeFile("redirects.json", JSON.stringify(redirects), function (err) {
     if (err) {
       console.log(err);
