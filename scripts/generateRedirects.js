@@ -8,6 +8,10 @@ function writeRedirects() {
       source: post.oldUrl,
       destination: `/blog/${post.url}`
     }))
+  redirects.push({
+    source: "/workflows/",
+    destination: "/examples"
+  })
 
 
   fs.writeFile("redirects.json", JSON.stringify(redirects), function (err) {
