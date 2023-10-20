@@ -14,6 +14,7 @@
     "lint": "next lint",
     "generate:images": "node scripts/convertImages",
     "generateSearch": "node scripts/generateSearch",
+    "generateRedirects": "node scripts/generateRedirects",
     "cacheBlogsMetadata": "node scripts/cacheBlogsMetadata",
     "cypress:open": "yarn cacheBlogsMetadata && cypress open",
     "cypress:run": "yarn cacheBlogsMetadata && cypress run"
