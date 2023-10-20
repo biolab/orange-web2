@@ -10,11 +10,11 @@ type Inputs = {
   name: string;
   affiliation: string;
   course: CourseOptions;
-  "number of participants": number;
-  "online course": boolean;
-  email: string;
+  numberOf: number;
+  online: boolean;
+  "E-mail": string;
   message: string;
-  continent: ContinentOptions;
+  country: ContinentOptions;
 };
 
 enum CourseOptions {
@@ -119,6 +119,8 @@ export default function TrainingInquiry() {
     formState: { errors },
   } = useForm<Inputs>();
 
+  const [loading, setLoading] = React.useState(false);
+
   const formValues = watch();
 
   const {
@@ -134,17 +136,17 @@ export default function TrainingInquiry() {
     let courseCost = formValues.course === CourseOptions.DMB ? 1600 : 800;
     let numberOfLecturers = 1;
 
-    if (formValues["number of participants"] > 10) {
+    if (formValues.numberOf > 10) {
       numberOfLecturers = 2;
     }
-    if (formValues["number of participants"] > 20) {
+    if (formValues.numberOf > 20) {
       numberOfLecturers = 3;
     }
 
-    let discount = formValues["number of participants"] > 10;
+    let discount = formValues.numberOf > 10;
 
-    if (!formValues["online course"]) {
-      switch (formValues.continent) {
+    if (!formValues.online) {
+      switch (formValues.country) {
         default:
         case ContinentOptions.Europe:
           travelExpenses = 600;
@@ -163,7 +165,7 @@ export default function TrainingInquiry() {
       }
     }
 
-    let numberOfParticipants = formValues["number of participants"] || 5;
+    let numberOfParticipants = formValues.numberOf || 5;
 
     let expenses =
       travelExpenses * numberOfLecturers + courseCost * numberOfParticipants;
@@ -183,17 +185,31 @@ export default function TrainingInquiry() {
     };
   }, [formValues]);
 
-  const onSubmit: SubmitHandler<Inputs> = React.useCallback(async (data) => {
-    const response = await fetch("https://service.biolab.si/contact/training", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+  const onSubmit: SubmitHandler<Inputs> = React.useCallback(
+    async (data) => {
+      const searchParams = new URLSearchParams({ ...data, price: total });
 
-    console.log(response.json());
-  }, []);
+      setLoading(true);
+
+      try {
+        const response = await fetch(
+          "https://service.biolab.si/contact/training",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type":
+                "application/x-www-form-urlencoded; charset=UTF-8",
+            },
+            body: searchParams.toString(),
+          }
+        );
+        setLoading(false);
+      } catch (error) {
+        setLoading(false);
+      }
+    },
+    [total]
+  );
 
   return (
     <MainLayout title="Get in touch">
@@ -216,21 +232,21 @@ export default function TrainingInquiry() {
             register={register}
           />
 
-          <FormField name="online course" type="checkbox" register={register} />
+          <FormField name="online" type="checkbox" register={register} />
 
           <OptionsFormField
-            name="number of participants"
+            name="numberOf"
             options={[5, 10, 15, 20, 50, 100]}
             register={register}
           />
           <OptionsFormField
-            name="continent"
+            name="country"
             options={Object.values(ContinentOptions)}
             register={register}
           />
 
           <FormField
-            name="email"
+            name="E-mail"
             placeholder="Enter a contact email"
             type="email"
             register={register}
@@ -272,6 +288,7 @@ export default function TrainingInquiry() {
           <StButton type="submit" value="Submit">
             Submit
           </StButton>
+          {loading && <p>Loading</p>}
         </StForm>
       </Adapt>
     </MainLayout>
