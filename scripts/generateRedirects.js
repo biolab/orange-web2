@@ -3,10 +3,10 @@ import {getBlogsMetadata} from "./getBlogPosts.js";
 
 function writeRedirects() {
   const redirects = getBlogsMetadata()
-    .filter((post) => (post.oldUrl != ""))
+    .filter((post) => !!post.oldUrl)
     .map((post) => ({
-      "source": post.oldUrl.slice(0, -1),
-      "destination": "/blog/" + post.url
+      source: post.oldUrl,
+      destination: `/blog/${post.url}`
     }))
 
 
