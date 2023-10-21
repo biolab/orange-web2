@@ -31,7 +31,9 @@ export function getImageData(this: Processor) {
     const img = node as FlowElement;
 
     return Boolean(
-      ["WindowScreenshot", "Figure", "Figure", "WorkflowScreenshot"].includes(img.name) &&
+      ["WindowScreenshot", "Figure", "Figure", "WorkflowScreenshot"].includes(
+        img.name
+      ) &&
         img.attributes &&
         img.attributes.find((attribute) => (attribute.name = "src"))
     );
@@ -39,7 +41,11 @@ export function getImageData(this: Processor) {
 
   function imageNode(node: any): boolean {
     const img = node as ImgNode;
-    return Boolean(img.tagName === "img" && img.properties?.src && !img.properties.src.startsWith("http"));
+    return Boolean(
+      img.tagName === "img" &&
+        img.properties?.src &&
+        !img.properties.src.startsWith("http")
+    );
   }
 
   return async function transformer(tree: Node, file: VFile): Promise<Node> {
@@ -58,7 +64,7 @@ export function getImageData(this: Processor) {
       }
     });
 
-    imageNodes.forEach(async (node) => {
+    for (let node of imageNodes) {
       let size: ProbeResult | null = null;
 
       const imgSrc = node.properties.src;
@@ -78,12 +84,14 @@ export function getImageData(this: Processor) {
           src: getWebpPath(imgSrc),
         };
       }
-    });
+    }
 
-    JsxNodes.forEach((node) => {
+    for (let node of JsxNodes) {
       let size: ProbeResult | null = null;
 
-      const imgSrc = node.attributes.find((attribute) => (attribute.name = "src"))!.value as string;
+      const imgSrc = node.attributes.find(
+        (attribute) => (attribute.name = "src")
+      )!.value as string;
 
       try {
         const img = readFileSync(`public${imgSrc}`);
@@ -93,7 +101,9 @@ export function getImageData(this: Processor) {
       }
 
       if (size) {
-        node.attributes = node.attributes.filter((attribute) => (attribute.name = "src"));
+        node.attributes = node.attributes.filter(
+          (attribute) => (attribute.name = "src")
+        );
 
         node.attributes.push(
           { type: "mdxJsxAttribute", name: "width", value: size.width },
@@ -101,7 +111,7 @@ export function getImageData(this: Processor) {
           { type: "mdxJsxAttribute", name: "src", value: getWebpPath(imgSrc) }
         );
       }
-    });
+    }
 
     return tree;
   };

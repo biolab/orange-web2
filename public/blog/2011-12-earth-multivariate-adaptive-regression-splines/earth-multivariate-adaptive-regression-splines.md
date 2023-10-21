@@ -1,18 +1,15 @@
 ---
 author: "BIOLAB"
-date: '2011-12-20 12:22:00+00:00'
+date: "2011-12-20 12:22:00+00:00"
 draft: false
 title: "Earth - Multivariate adaptive regression splines"
-blog: ["regression" ]
+blog: ["regression"]
 oldUrl: "/blog/2011/12/20/earth-multivariate-adaptive-regression-splines/"
 ---
 
 There have recently been some additions to the lineup of Orange learners. One of these is Orange.regression.earth.EarthLearner. It is an Orange interface to the [Earth](http://www.milbo.users.sonic.net/earth/) library written by Stephen Milborrow implementing [Multivariate adaptive regression splines](http://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines).
 
 So lets take it out for a spin on a simple toy dataset ([data.tab](http://blog.biolab.si/wp-content/uploads/2011/12/13/data.tab) - created using the Paint Data widget in the Orange Canvas):
-
-
-
 
 ```
     import Orange
@@ -34,13 +31,9 @@ So lets take it out for a spin on a simple toy dataset ([data.tab](http://blog.b
     pl.show()
 ```
 
-
-
-
 which produces the following plot:
 
-![](earth_demo_2.png__600x470_q95_subject_location-407%2C297.png)
-
+![](earth_demo_2.png)
 
 We can also print the model representation using
 
