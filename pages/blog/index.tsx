@@ -8,6 +8,7 @@ import MainLayout from "@components/UiKit/MainLayout";
 import TagsList from "@components/TagsList/TagsList";
 import useTags from "@components/TagsList/useTags";
 import getTopTags from "@utils/getTopTags";
+import { NextSeo } from "next-seo";
 
 export interface BlogMetadata {
   title: string;
