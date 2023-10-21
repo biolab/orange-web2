@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
 import { GlobalStyle } from "../styles/GlobalStyles";
 import { theme } from "../styles/theme";
+import img from "@public/assets/orange-cover.webp";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,6 +17,13 @@ export default function App({ Component, pageProps }: AppProps) {
           type: "website",
           url: "https://orangedatamining.com",
           siteName: "Orange Data Mining",
+          images: [
+            {
+              width: img.width,
+              height: img.height,
+              url: img.src,
+            },
+          ],
         }}
       />
       <Head>
