@@ -147,8 +147,10 @@ export default function Search() {
         {searchResults.length > 0 && (
           <Styled.StListWrapper>
             <Command.List>
-              {searchResults.map(({ title, url, _type }) => {
+              {searchResults.map(({ title, url, category, _type }) => {
                 const path = getPath(url, _type);
+                const _title =
+                  _type === "widget" ? `${category} - ${title}` : title;
 
                 return (
                   <Link
@@ -156,16 +158,16 @@ export default function Search() {
                     onClick={() => {
                       setShowSearch(false);
                     }}
-                    key={url}
+                    key={_title}
                   >
                     <Command.Item
-                      value={`${title} - ${searchResults.length}`}
+                      value={`${_title} - ${searchResults.length}`}
                       onSelect={() => {
                         router.push(path);
                         setShowSearch(false);
                       }}
                     >
-                      <div>{title}</div>
+                      <div>{_title}</div>
                       <Styled.ItemType $type={_type}>{_type}</Styled.ItemType>
                     </Command.Item>
                   </Link>
