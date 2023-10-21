@@ -1,3 +1,4 @@
+import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
@@ -8,11 +9,23 @@ import { theme } from "../styles/theme";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
+      <DefaultSeo
+        title="Orange Data Mining"
+        description="Orange Data Mining Toolbox"
+        openGraph={{
+          type: "website",
+          url: "https://orangedatamining.com",
+          siteName: "Orange Data Mining",
+        }}
+      />
+      <Head>
+        <meta
+          name="author"
+          content="Bioinformatics Laboratory, University of Ljubljana"
+        />
+      </Head>
       <GlobalStyle />
       <Layout>
-        <Head>
-          <title>Orange Data Mining</title>
-        </Head>
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

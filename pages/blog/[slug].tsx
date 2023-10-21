@@ -12,6 +12,7 @@ import Adapt from "@components/UiKit/Adapt";
 import { Heading1 } from "@components/UiKit/TypographyHomepage";
 import device from "@styles/utils/breakpoints";
 import formatDate from "@utils/formatDate";
+import MainLayout from "@components/UiKit/MainLayout";
 
 const BlogDetailWrapper = styled.div`
   padding: 80px 0;
@@ -85,7 +86,7 @@ export async function getStaticProps({
 }: {
   params: { slug: string };
 }) {
-  const { fullFilePath, publicFilePath } = getBlogsMetadata().find(
+  const { fullFilePath, publicFilePath, thumbImage } = getBlogsMetadata().find(
     (post: any) => post.url === slug
   );
   const mdFile = fs.readFileSync(fullFilePath, "utf-8");
@@ -105,6 +106,7 @@ export async function getStaticProps({
     props: {
       frontmatter,
       content: mdxSource,
+      thumbImage,
     },
   };
 }
@@ -112,30 +114,50 @@ export async function getStaticProps({
 export default function BlogPost({
   frontmatter,
   content,
+  thumbImage,
 }: {
   frontmatter: any;
   content: any;
+  thumbImage: any;
 }) {
   return (
-    <BlogDetailWrapper>
-      <Adapt $width714>
-        <BlogDetailHeader>
-          <Text $colorPurple $capitalize>
-            <strong>{frontmatter.blog.join(", ")}</strong>
-          </Text>
-          <Heading1 $colorBlack>{frontmatter.title}</Heading1>
-        </BlogDetailHeader>
-        <BlogDetailContent>
-          <Author>
-            <Text>
-              <strong>{frontmatter.author}</strong>
+    <MainLayout
+      title={frontmatter.title}
+      justSEO
+      openGraph={{
+        type: "blog",
+        description: frontmatter.shortExcerpt,
+        images: thumbImage
+          ? [
+              {
+                width: thumbImage.width,
+                height: thumbImage.height,
+                url: thumbImage.src,
+              },
+            ]
+          : [],
+      }}
+    >
+      <BlogDetailWrapper>
+        <Adapt $width714>
+          <BlogDetailHeader>
+            <Text $colorPurple $capitalize>
+              <strong>{frontmatter.blog.join(", ")}</strong>
             </Text>
-            <Text>{formatDate(frontmatter.date)}</Text>
-          </Author>
+            <Heading1 $colorBlack>{frontmatter.title}</Heading1>
+          </BlogDetailHeader>
+          <BlogDetailContent>
+            <Author>
+              <Text>
+                <strong>{frontmatter.author}</strong>
+              </Text>
+              <Text>{formatDate(frontmatter.date)}</Text>
+            </Author>
 
-          <MdContent content={content} />
-        </BlogDetailContent>
-      </Adapt>
-    </BlogDetailWrapper>
+            <MdContent content={content} />
+          </BlogDetailContent>
+        </Adapt>
+      </BlogDetailWrapper>
+    </MainLayout>
   );
 }
