@@ -32,7 +32,16 @@ function addRelativePathToImages(
   }
 
   // Widgets specific fix
-  return content.replaceAll("../images", imgRelativePath);
+  // some images have source ![](../../data/images/Preprocess-Models1.png)
+  const replacedImagesInDifferentFolder = content.replaceAll(
+    "../../",
+    "/widget-catalog/"
+  );
+
+  return replacedImagesInDifferentFolder.replaceAll(
+    "../images",
+    imgRelativePath
+  );
 }
 
 export async function getStaticPaths() {
@@ -68,6 +77,8 @@ export async function getStaticProps({ params }: any) {
       path.join("/widget-catalog", params.category, "images")
     )
   );
+
+  console.log(content);
 
   const mdxSource = await serialize(content, {
     mdxOptions: {
