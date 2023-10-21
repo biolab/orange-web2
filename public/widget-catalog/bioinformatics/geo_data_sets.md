@@ -23,7 +23,7 @@ This Orange widget provides access to all its data sets and outputs a
 data set selected for further processing. For convenience, each
 dowloaded data set is stored locally.
 
-![](../images/geo_data_sets/GEO-Data-Sets-stamped.png)
+![](/widget-catalog/bioinformatics/images/geo_data_sets/GEO-Data-Sets-stamped.png)
 
 1.  Information on the GEO data set collection. Cached data sets are the
     ones currently stored on the computer.
@@ -49,4 +49,4 @@ Example
 
 **GEO Data Sets** is similar to the **File** widget, since it is used to load the data. In the example below we selected *Caffeine effect: time course and dose response* dataset from the GEO data base. Do not forget to press *Commit* to output the data. We can inspect the data in *Data Table*.
 
-![](../images/geo_data_sets/GEO-Data-Sets-Example.png)
+![](/widget-catalog/bioinformatics/images/geo_data_sets/GEO-Data-Sets-Example.png)

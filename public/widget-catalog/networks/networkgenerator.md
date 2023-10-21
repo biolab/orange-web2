@@ -13,7 +13,7 @@ Construct example graphs.
 
 **Network Generator** constructs exemplary networks. It is mostly intended for teaching/learning about networks.
 
-![](../images/network-generator.png)
+![](/widget-catalog/networks/images/network-generator.png)
 
 Graph options:
 
@@ -37,6 +37,6 @@ Example
 
 **Network Generator** is a nice tool to explore typical graph structures.
 
-![](../images/network-generator-example.png)
+![](/widget-catalog/networks/images/network-generator-example.png)
 
-Here, we generated a *Grid* graph of height 4 and width 5 and sent it to [Network Analysis](networkanalysis.md). We computed node degrees and sent the data to [Network Explorer](../networkexplorer/). Finally, we observed the generated graph in the visualization and set the size and color of the nodes to *Degree*. This is a nice tool to observe and explain the properties of networks.
+Here, we generated a *Grid* graph of height 4 and width 5 and sent it to [Network Analysis](networkanalysis.md). We computed node degrees and sent the data to [Network Explorer](/widget-catalog/networks/networkexplorer). Finally, we observed the generated graph in the visualization and set the size and color of the nodes to *Degree*. This is a nice tool to observe and explain the properties of networks.

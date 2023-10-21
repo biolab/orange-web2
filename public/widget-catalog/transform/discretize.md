@@ -17,7 +17,7 @@ Converts numeric attributes to categorical.
 
 The **Discretize** widget [discretizes](https://en.wikipedia.org/wiki/Discretization) numeric variables.
 
-![](../images/Discretize.png)
+![](/widget-catalog/transform/images/Discretize.png)
 
 1. Set default method for discretization.
 
@@ -47,4 +47,4 @@ In the schema below, we took the *Heart disease* data set and
 - removed *Cholesterol*,
 - and used *entropy-mdl* for the remaining variables, which resulted in removing *rest SBP* and in two intervals for *ST by exercise* and *major vessels colored*.
 
-![](../images/Discretize-Example.png)
+![](/widget-catalog/transform/images/Discretize-Example.png)

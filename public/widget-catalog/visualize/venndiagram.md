@@ -18,9 +18,9 @@ Plots a [Venn diagram](http://en.wikipedia.org/wiki/Venn_diagram) for two or mor
 
 The **Venn Diagram** widget displays logical relations between datasets by showing the number of common data instances (rows) or the number of shared features (columns). Selecting a part of the visualization outputs the corresponding instances or features.
 
-![](../images/venn-workflow.png)
+![](/widget-catalog/visualize/images/venn-workflow.png)
 
-![](../images/VennDiagram-stamped.png)
+![](/widget-catalog/visualize/images/VennDiagram-stamped.png)
 
 1. Select whether to count common features or instances.
 2. Select whether to include duplicates or to output only unique rows; applicable only when matching instances by values of variables.
@@ -33,12 +33,12 @@ Rows can be matched
 Examples
 --------
 
-The easiest way to use the **Venn Diagram** is to select data subsets and find matching instances in the visualization. We use the *breast-cancer* dataset to select two subsets with [Select Rows](../../data/selectrows/) widget - the first subset is that of breast cancer patients aged between 40 and 49 and the second is that of patients with a tumor size between 20 and 29. The **Venn Diagram** helps us find instances that correspond to both criteria, which can be found in the intersection of the two circles.
+The easiest way to use the **Venn Diagram** is to select data subsets and find matching instances in the visualization. We use the *breast-cancer* dataset to select two subsets with [Select Rows](/widget-catalog/visualize/../data/selectrows) widget - the first subset is that of breast cancer patients aged between 40 and 49 and the second is that of patients with a tumor size between 20 and 29. The **Venn Diagram** helps us find instances that correspond to both criteria, which can be found in the intersection of the two circles.
 
-![](../images/VennDiagram-Example1.png)
+![](/widget-catalog/visualize/images/VennDiagram-Example1.png)
 
-The **Venn Diagram** widget can be also used for exploring different prediction models. In the following example, we analysed 3 prediction methods, namely [Naive Bayes](../model/naivebayes.md), [SVM](../model/svm.md) and [Random Forest](../../model/randomforest/), according to their misclassified instances.
+The **Venn Diagram** widget can be also used for exploring different prediction models. In the following example, we analysed 3 prediction methods, namely [Naive Bayes](../model/naivebayes.md), [SVM](../model/svm.md) and [Random Forest](/widget-catalog/visualize/../model/randomforest), according to their misclassified instances.
 
-By selecting misclassifications in the three [Confusion Matrix](../evaluate/confusionmatrix.md) widgets and sending them to Venn diagram, we can see all the misclassification instances visualized per method used. Then we open **Venn Diagram** and select, for example, the misclassified instances that were identified by all three methods. This is represented as an intersection of all three circles. Click on the intersection to see this two instances marked in the [Scatter Plot](../../visualize/scatterplot/) widget. Try selecting different diagram sections to see how the scatter plot visualization changes.
+By selecting misclassifications in the three [Confusion Matrix](../evaluate/confusionmatrix.md) widgets and sending them to Venn diagram, we can see all the misclassification instances visualized per method used. Then we open **Venn Diagram** and select, for example, the misclassified instances that were identified by all three methods. This is represented as an intersection of all three circles. Click on the intersection to see this two instances marked in the [Scatter Plot](/widget-catalog/visualize/../visualize/scatterplot) widget. Try selecting different diagram sections to see how the scatter plot visualization changes.
 
-![](../images/VennDiagram-Example2.png)
+![](/widget-catalog/visualize/images/VennDiagram-Example2.png)

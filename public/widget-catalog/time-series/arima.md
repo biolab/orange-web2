@@ -9,7 +9,7 @@ Model the time series using [ARMA](https://en.wikipedia.org/wiki/Autoregressive%
 
 **Inputs**
 
-- Time series: Time series as output by [As Timeseries](../as_timeseries/) widget.
+- Time series: Time series as output by [As Timeseries](/widget-catalog/time-series/as_timeseries) widget.
 - Exogenous data: Time series of additional independent variables that can be used in an ARIMAX model.
 
 **Outputs**
@@ -21,7 +21,7 @@ Model the time series using [ARMA](https://en.wikipedia.org/wiki/Autoregressive%
 
 Using this widget, you can model the time series with ARIMA model.
 
-![](../images/arima-model-stamped.png)
+![](/widget-catalog/time-series/images/arima-model-stamped.png)
 
 1. Model's name. By default, the name is derived from the model and its parameters.
 2. ARIMA's [p, d, q parameters](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average).
@@ -33,8 +33,8 @@ Using this widget, you can model the time series with ARIMA model.
 Example
 -------
 
-![](../images/arima-model-ex1.png)
+![](/widget-catalog/time-series/images/arima-model-ex1.png)
 
 #### See also
 
-[VAR Model](var.md), [Model Evaluation](../model_evaluation_w/)
+[VAR Model](var.md), [Model Evaluation](/widget-catalog/time-series/model_evaluation_w)

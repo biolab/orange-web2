@@ -18,7 +18,7 @@ Provides access to Gene Ontology database.
 
 **GO Browser** widget provides access to [Gene Ontology database](http://geneontology.org/). Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology. The widget takes any data on genes as an input (it is best to input statistically significant genes, for example from the output of the **Differential Expression** widget) and shows a ranked list of GO terms with p-values. This is a great tool for finding biological processes that are over- or under-represented in a particular gene set. The user can filter input data by selecting terms in a list.
 
-![](../images/go_browser/GO-Browser-stamped.png)
+![](/widget-catalog/bioinformatics/images/go_browser/GO-Browser-stamped.png)
 
 **INPUT tab**
 
@@ -55,7 +55,7 @@ Provides access to Gene Ontology database.
     -   [Enrichment](http://geneontology.org/page/go-enrichment-analysis)
         level
 
-![](../images/go_browser/Filter-Select.png)
+![](/widget-catalog/bioinformatics/images/go_browser/Filter-Select.png)
 
 **FILTER tab**
 
@@ -106,4 +106,4 @@ this term has a high enrichment rate. To learn more about which genes
 are annotated to this GO term, select it in the view and observe the results in a **Data Table**, where we
 see all the genes participating in this process listed. The other output of **GO Browser** widget is enrichment report, which we observe in the second **Data Table**.
 
-![](../images/go_browser/GO-Browser-Example.png)
+![](/widget-catalog/bioinformatics/images/go_browser/GO-Browser-Example.png)

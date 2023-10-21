@@ -20,7 +20,7 @@ The **Score Genes** widget considers gene expression data with genes in columns 
 expression profiles in rows. It scores the genes based on statistics of gene expression. For examples, it can sort
 the genes by their mean expression. The widget supports selection of best scored genes and performs gene filtering.
 
-![](../images/ScoreGenes-stamped.png)
+![](/widget-catalog/single-cell/images/ScoreGenes-stamped.png)
 
 1. Scoring method. Those selected will be shown in the scoring table.
 2. Table with gene scores. Click on the column header to sort by specific score.

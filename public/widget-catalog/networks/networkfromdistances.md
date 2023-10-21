@@ -19,7 +19,7 @@ Constructs a network from distances between instances.
 
 **Network from Distances** constructs a network graph from a given distance matrix. Graph is constructed by connecting nodes from the matrix where the distance between nodes is below the given threshold. In other words, all instances with a distance lower than the selected threshold, will be connected.
 
-![](../images/network-from-distances-stamped.png)
+![](/widget-catalog/networks/images/network-from-distances-stamped.png)
 
 1. Edges:
    - Distance threshold: a closeness threshold for the formation of edges.
@@ -42,8 +42,8 @@ Example
 
 **Network from Distances** creates networks from distance matrices. It can transform data sets from a data table via distance matrix into a network graph. This widget is great for visualizing instance similarity as a graph of connected instances.
 
-![](../images/network-from-distances-example.png)
+![](/widget-catalog/networks/images/network-from-distances-example.png)
 
 We took *iris.tab* to visualize instance similarity in a graph. We sent the output of **File** widget to **Distances**, where we computed Euclidean distances between rows (instances). Then we sent the output of **Distances** to **Network from Distances**, where we set the distance threshold (how similar the instances have to be to draw an edge between them) to 0.222. We kept all nodes and set edge weights to *proportional to distance*.
 
-Then we observed the constructed network in a [Network Explorer](../networkexplorer/). We colored the nodes by *iris* attribute.
+Then we observed the constructed network in a [Network Explorer](/widget-catalog/networks/networkexplorer). We colored the nodes by *iris* attribute.

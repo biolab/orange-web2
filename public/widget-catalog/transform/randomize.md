@@ -17,7 +17,7 @@ Shuffles classes, attributes and/or metas of an input dataset.
 
 The **Randomize** widget receives a dataset in the input and outputs the same dataset in which the classes, attributes or/and metas are shuffled.
 
-![](../images/Randomize-Default.png)
+![](/widget-catalog/transform/images/Randomize-Default.png)
 
 1. Select group of columns of the dataset you want to shuffle.
 2. Select proportion of the dataset you want to shuffle.
@@ -28,10 +28,10 @@ The **Randomize** widget receives a dataset in the input and outputs the same da
 Example
 -------
 
-The **Randomize** widget is usually placed right after (e.g. [File](../../data/file/) widget. The basic usage is shown in the following workflow, where values of class variable of Iris dataset are randomly shuffled.
+The **Randomize** widget is usually placed right after (e.g. [File](/widget-catalog/transform/../data/file) widget. The basic usage is shown in the following workflow, where values of class variable of Iris dataset are randomly shuffled.
 
-![](../images/Randomize-Example1.png)
+![](/widget-catalog/transform/images/Randomize-Example1.png)
 
 In the next example we show how shuffling class values influences model performance on the same dataset as above.
 
-![](../images/Randomize-Example2.png)
+![](/widget-catalog/transform/images/Randomize-Example2.png)

@@ -22,7 +22,7 @@ The **Linear Regression** widget constructs a learner/predictor that learns a [l
 
 Linear regression works only on regression tasks.
 
-![](../images/Linear-Regression.png)
+![](/widget-catalog/model/images/Linear-Regression.png)
 
 1. The learner/predictor name
 2. Parameters: Fit intercept. Unchecking the option forces the intercept to zero.
@@ -42,25 +42,25 @@ Linear Regression uses default preprocessing when no other preprocessors are giv
 - removes empty columns
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Feature Scoring
 ---------------
 
-Linear Regression can be used with Rank for feature scoring. See [Learners as Scorers](../../../learners-as-scorers/index/) for an example.
+Linear Regression can be used with Rank for feature scoring. See [Learners as Scorers](/widget-catalog/model/../../learners-as-scorers/index) for an example.
 
 Observing Coefficients
 ----------------------
 
-To observe coefficients of linear regression, first build a model, then pass the model to the [Data Table](../../data/datatable/). This will automatically connect the *Coefficients* output to the Data Table, where you can sort the table by coefficients and observe which variables positively and negatively correlate with the prediction.
+To observe coefficients of linear regression, first build a model, then pass the model to the [Data Table](/widget-catalog/model/../data/datatable). This will automatically connect the *Coefficients* output to the Data Table, where you can sort the table by coefficients and observe which variables positively and negatively correlate with the prediction.
 
-![](../images/Linear-Regression-workflow.png)
-![](../images/Linear-Regression-coefficients.png)
+![](/widget-catalog/model/images/Linear-Regression-workflow.png)
+![](/widget-catalog/model/images/Linear-Regression-coefficients.png)
 
 
 Example
 -------
 
-Below, is a simple workflow with *housing* dataset. We trained **Linear Regression** and [Random Forest](../model/randomforest.md) and evaluated their performance in [Test & Score](../../evaluate/testandscore/).
+Below, is a simple workflow with *housing* dataset. We trained **Linear Regression** and [Random Forest](../model/randomforest.md) and evaluated their performance in [Test & Score](/widget-catalog/model/../evaluate/testandscore).
 
-![](../images/LinearRegression-regression.png)
+![](/widget-catalog/model/images/LinearRegression-regression.png)

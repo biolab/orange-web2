@@ -21,7 +21,7 @@ Load a corpus of text documents, (optionally) tagged with categories, or change 
     The widget reads data from Excel (**.xlsx**), comma-separated (**.csv**) and native tab-delimited (**.tab**) files.
 - When the user provides data to the input, it transforms data into the corpus. Users can select which features are used as text features.
 
-![](../images/Corpus-stamped.png)
+![](/widget-catalog/text-mining/images/Corpus-stamped.png)
 
 1. Browse through previously opened data files, or load any of the sample ones.
 2. Browse for a data file.
@@ -37,11 +37,11 @@ You can drag and drop features between the two boxes and also change the order i
 Example
 -------
 
-The first example shows a very simple use of **Corpus** widget. Place **Corpus** onto canvas and connect it to [Corpus Viewer](../corpusviewer/). We've used *book-excerpts.tab* data set, which comes with the add-on, and inspected it in **Corpus Viewer**.
+The first example shows a very simple use of **Corpus** widget. Place **Corpus** onto canvas and connect it to [Corpus Viewer](/widget-catalog/text-mining/corpusviewer). We've used *book-excerpts.tab* data set, which comes with the add-on, and inspected it in **Corpus Viewer**.
 
-![](../images/Corpus-Example1.png)
+![](/widget-catalog/text-mining/images/Corpus-Example1.png)
 
-The second example demonstrates how to quickly visualize your corpus with [Word Cloud](../wordcloud/). We could connect **Word Cloud** directly to **Corpus**, but instead, we decided to apply some preprocessing
-with [Preprocess Text](../preprocesstext/). We are again working with *book-excerpts.tab*. We've put all text to lowercase, tokenized (split) the text to words only, filtered out English stopwords and selected 100 most frequent tokens.
+The second example demonstrates how to quickly visualize your corpus with [Word Cloud](/widget-catalog/text-mining/wordcloud). We could connect **Word Cloud** directly to **Corpus**, but instead, we decided to apply some preprocessing
+with [Preprocess Text](/widget-catalog/text-mining/preprocesstext). We are again working with *book-excerpts.tab*. We've put all text to lowercase, tokenized (split) the text to words only, filtered out English stopwords and selected 100 most frequent tokens.
 
-![](../images/Corpus-Example2.png)
+![](/widget-catalog/text-mining/images/Corpus-Example2.png)

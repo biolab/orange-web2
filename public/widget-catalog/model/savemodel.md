@@ -13,16 +13,16 @@ If the file is saved to the same directory as the workflow or in the subtree of 
 
 - Model: trained model
 
-![](../images/SaveModel-stamped.png)
+![](/widget-catalog/model/images/SaveModel-stamped.png)
 
 1. Choose from previously saved models.
 2. Save the created model with the *Browse* icon. Click on the icon and enter the name of the file. The model will be saved to a pickled file.
-![](../images/SaveModel-save.png)
+![](/widget-catalog/model/images/SaveModel-save.png)
 3. Save the model.
 
 Example
 -------
 
-When you want to save a custom-set model, feed the data to the model (e.g. [Logistic Regression](../model/logisticregression.md)) and connect it to **Save Model**. Name the model; load it later into workflows with [Load Model](../../model/loadmodel/). Datasets used with **Load Model** have to contain compatible attributes.
+When you want to save a custom-set model, feed the data to the model (e.g. [Logistic Regression](../model/logisticregression.md)) and connect it to **Save Model**. Name the model; load it later into workflows with [Load Model](/widget-catalog/model/../model/loadmodel). Datasets used with **Load Model** have to contain compatible attributes.
 
-![](../images/SaveModel-example.png)
+![](/widget-catalog/model/images/SaveModel-example.png)

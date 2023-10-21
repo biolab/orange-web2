@@ -20,11 +20,11 @@ Fetching data from [The Twitter Search API](https://dev.twitter.com/rest/public/
 **Note**: After the [API plans changed on March 30, 2023](https://twittercommunity.com/t/announcing-new-access-tiers-for-the-twitter-api/188728
 ), Twitter no longer supports free Tweet retrieval with free access. At least Basic access is required.
 
-![](../images/Twitter-stamped.png)
+![](/widget-catalog/text-mining/images/Twitter-stamped.png)
 
 1. To begin your queries, insert Twitter key and secret. They are securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won't be deleted when clearing widget settings. You must first create a [Twitter app](https://apps.twitter.com/) to get API keys.
 
-   ![](../images/Twitter-key.png)
+   ![](/widget-catalog/text-mining/images/Twitter-key.png)
 
 2. Set query parameters:
    - *Query word list*: list desired queries, one per line. Queries are automatically joined by OR.
@@ -42,15 +42,15 @@ Examples
 
 First, let's try a simple query. We will search for tweets containing either 'data mining' or 'machine learning' in the content and allow retweets. We will further limit our search to only a 100 tweets in English.
 
-![](../images/Twitter-Example1.png)
+![](/widget-catalog/text-mining/images/Twitter-Example1.png)
 
-First, we're checking the output in [Corpus Viewer](corpusviewer.md) to get the initial idea about our results. Then we're preprocessing the tweets with lowercase, url removal, tweet tokenizer and removal of stopword and punctuation. The best way to see the results is with [Word Cloud](../wordcloud). This will display the most popular words in field of data mining and machine learning in the past two weeks.
+First, we're checking the output in [Corpus Viewer](corpusviewer.md) to get the initial idea about our results. Then we're preprocessing the tweets with lowercase, url removal, tweet tokenizer and removal of stopword and punctuation. The best way to see the results is with [Word Cloud](/widget-catalog/text-mining/wordcloud). This will display the most popular words in field of data mining and machine learning in the past two weeks.
 
 Our next example is a bit more complex. We're querying tweets from Hillary Clinton and Donald Trump from the presidential campaign 2016.
 
-![](../images/Twitter-Example2.png)
+![](/widget-catalog/text-mining/images/Twitter-Example2.png)
 
-Then we've used [Preprocess Text](preprocesstext.md) to get suitable tokens on our output. We've connected **Preprocess Text** to [Bag of Words](../bagofwords-widget/) in order to create a table with words as features and their counts as values. A quick check in **Word Cloud** gives us an idea about the results.
+Then we've used [Preprocess Text](preprocesstext.md) to get suitable tokens on our output. We've connected **Preprocess Text** to [Bag of Words](/widget-catalog/text-mining/bagofwords-widget) in order to create a table with words as features and their counts as values. A quick check in **Word Cloud** gives us an idea about the results.
 
 Now we would like to predict the author of the tweet. With **Select Columns** we're setting 'Author' as our target variable. Then we connect **Select Columns** to **Test & Score**. We'll be using **Logistic Regression** as our learner, which we also connect to **Test & Score**.
 

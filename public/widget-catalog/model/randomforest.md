@@ -23,7 +23,7 @@ Predict using an ensemble of decision trees.
 
 **Random Forest** works for both classification and regression tasks.
 
-![](../images/RandomForest.png)
+![](/widget-catalog/model/images/RandomForest.png)
 
 1. Specify the name of the model. The default name is "Random Forest".
 2. Basic properties:
@@ -46,23 +46,23 @@ Random Forest uses default preprocessing when no other preprocessors are given. 
 - removes empty columns
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Feature Scoring
 ---------------
 
-Random Forest can be used with Rank for feature scoring. See [Learners as Scorers](../../../learners-as-scorers/index/) for an example.
+Random Forest can be used with Rank for feature scoring. See [Learners as Scorers](/widget-catalog/model/../../learners-as-scorers/index) for an example.
 
 Examples
 --------
 
-For classification tasks, we use *iris* dataset. Connect it to [Predictions](../../evaluate/predictions/). Then, connect [File](../data/file.md) to **Random Forest** and [Tree](../model/tree.md) and connect them further to [Predictions](../../evaluate/predictions/). Finally, observe the predictions for the two models.
+For classification tasks, we use *iris* dataset. Connect it to [Predictions](/widget-catalog/model/../evaluate/predictions). Then, connect [File](../data/file.md) to **Random Forest** and [Tree](../model/tree.md) and connect them further to [Predictions](/widget-catalog/model/../evaluate/predictions). Finally, observe the predictions for the two models.
 
-![](../images/RandomForest-classification.png)
+![](/widget-catalog/model/images/RandomForest-classification.png)
 
-For regressions tasks, we will use *housing* data. Here, we will compare different models, namely **Random Forest**, [Linear Regression](../model/linearregression.md) and [Constant](../model/constant.md), in the [Test & Score](../../evaluate/testandscore/) widget.
+For regressions tasks, we will use *housing* data. Here, we will compare different models, namely **Random Forest**, [Linear Regression](../model/linearregression.md) and [Constant](../model/constant.md), in the [Test & Score](/widget-catalog/model/../evaluate/testandscore) widget.
 
-![](../images/RandomForest-regression.png)
+![](/widget-catalog/model/images/RandomForest-regression.png)
 
 References
 ----------

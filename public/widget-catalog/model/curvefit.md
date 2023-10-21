@@ -23,7 +23,7 @@ The widget uses [scipy.curve_fit](https://docs.scipy.org/doc/scipy/reference/gen
 
 The widget works only on regression tasks and only numerical features can be used for fitting.
 
-![](../images/CurveFit-stamped.png)
+![](/widget-catalog/model/images/CurveFit-stamped.png)
 
 1. The learner/predictor name.
 2. Introduce model parameters.
@@ -43,11 +43,11 @@ Curve fit uses default preprocessing when no other preprocessors are given. It e
 - removes empty columns
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Example
 -------
 
-Below, is a simple workflow with *housing* dataset. Due to example simplicity we used only a single feature. Unlike the other modelling widgets, the Curve Fit needs data on the input. We trained **Curve Fit** and [Linear Regression](../model/linearregression.md) and evaluated their performance in [Test & Score](../../evaluate/testandscore/).
+Below, is a simple workflow with *housing* dataset. Due to example simplicity we used only a single feature. Unlike the other modelling widgets, the Curve Fit needs data on the input. We trained **Curve Fit** and [Linear Regression](../model/linearregression.md) and evaluated their performance in [Test & Score](/widget-catalog/model/../evaluate/testandscore).
 
-![](../images/CurveFit-example.png)
+![](/widget-catalog/model/images/CurveFit-example.png)

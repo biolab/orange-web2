@@ -19,7 +19,7 @@ Outlier detection widget.
 
 The **Outliers** widget applies one of the four methods for outlier detection. All methods apply classification to the dataset. *One-class SVM with non-linear kernels (RBF)* performs well with non-Gaussian distributions, while *Covariance estimator* works only for data with Gaussian distribution. One efficient way to perform outlier detection on moderately high dimensional datasets is to use the *Local Outlier Factor* algorithm. The algorithm computes a score reflecting the degree of abnormality of the observations. It measures the local density deviation of a given data point with respect to its neighbors. Another efficient way of performing outlier detection in high-dimensional datasets is to use random forests (*Isolation Forest*).
 
-![](../images/Outliers-stamped.png)
+![](/widget-catalog/unsupervised/images/Outliers-stamped.png)
 
 1. Method for outlier detection:
    - [One Class SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html)
@@ -48,6 +48,6 @@ The **Outliers** widget applies one of the four methods for outlier detection. A
 Example
 -------
 
-Below is an example of how to use this widget. We used subset (*versicolor* and *virginica* instances) of the *Iris* dataset to detect the outliers. We chose the *Local Outlier Factor* method, with *Euclidean* distance. Then we observed the annotated instances in the [Scatter Plot](../visualize/scatterplot.md) widget. In the next step we used the *setosa* instances to demonstrate novelty detection using [Apply Domain](../../data/applydomain/) widget. After concatenating both outputs we examined the outliers in the *Scatter Plot (1)*.
+Below is an example of how to use this widget. We used subset (*versicolor* and *virginica* instances) of the *Iris* dataset to detect the outliers. We chose the *Local Outlier Factor* method, with *Euclidean* distance. Then we observed the annotated instances in the [Scatter Plot](../visualize/scatterplot.md) widget. In the next step we used the *setosa* instances to demonstrate novelty detection using [Apply Domain](/widget-catalog/unsupervised/../data/applydomain) widget. After concatenating both outputs we examined the outliers in the *Scatter Plot (1)*.
 
-![](../images/Outliers-Example.png)
+![](/widget-catalog/unsupervised/images/Outliers-Example.png)

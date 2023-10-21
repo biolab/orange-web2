@@ -57,10 +57,12 @@ def change_references(md_file, content, category, dest):
                 content = content.replace(
                     ref, "https://docs.biolab.si/3/visual-programming/loading-your-data/index.html")
             elif ref.endswith(".md") and not ref.startswith("/"):
-                new = "../" + ref[:-3] + "/"
+                new = f"/widget-catalog/{category}/{ref[:-3]}"
                 content = content.replace(ref, new)
-            elif not ref.startswith("/"):
-                new = "../" + ref
+            elif not ref.startswith("/") and not ref.startswith("/widget-catalog"):
+                new = f"/widget-catalog/{category}/{ref}"
+                if new in content:
+                    continue
                 content = content.replace(ref, new)
             else:
                 print("WARNING (%s): not handled" % md_file, ref)

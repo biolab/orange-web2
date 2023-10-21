@@ -21,7 +21,7 @@ The CN2 algorithm is a classification technique designed for the efficient induc
 
 **CN2 Rule Induction** works only for classification.
 
-![](../images/CN2-stamped.png)
+![](/widget-catalog/model/images/CN2-stamped.png)
 
 1. Name under which the learner appears in other widgets. The default name is *CN2 Rule Induction*.
 2. *Rule ordering*:
@@ -52,18 +52,18 @@ CN2 Rule Induction uses default preprocessing when no other preprocessors are gi
 - removes instances with unknown target values
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Examples
 --------
 
-For the example below, we have used *zoo* dataset and passed it to **CN2 Rule Induction**. We can review and interpret the built model with [CN2 Rule Viewer](../../visualize/cn2ruleviewer/) widget.
+For the example below, we have used *zoo* dataset and passed it to **CN2 Rule Induction**. We can review and interpret the built model with [CN2 Rule Viewer](/widget-catalog/model/../visualize/cn2ruleviewer) widget.
 
-![](../images/CN2-visualize.png)
+![](/widget-catalog/model/images/CN2-visualize.png)
 
-The second workflow tests evaluates **CN2 Rule Induction** and [Tree](../model/tree.md) in [Test & Score](../../evaluate/testandscore/).
+The second workflow tests evaluates **CN2 Rule Induction** and [Tree](../model/tree.md) in [Test & Score](/widget-catalog/model/../evaluate/testandscore).
 
-![](../images/CN2-classification.png)
+![](/widget-catalog/model/images/CN2-classification.png)
 
 References
 ----------

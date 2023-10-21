@@ -13,7 +13,7 @@ Import images from a directory(s).
 
 **Import Images** walks through a directory and returs one row per located image. Columns include image name, path to image, width, height and image size. Column with image path is later used as an attribute for image visualization and embedding.
 
-![](../images/ImportImages-stamped.png)
+![](/widget-catalog/image-analytics/images/ImportImages-stamped.png)
 
 1. Currently loaded folder.
 2. Select the folder to load.
@@ -21,7 +21,7 @@ Import images from a directory(s).
 4. Information on the input.
 5. Access help.
 
-![](../images/ImportImages-class.png)
+![](/widget-catalog/image-analytics/images/ImportImages-class.png)
 
 You can load a folder containing subfolders. In this case Orange will consider each folder as a class value. In the example above, **Import Images** loaded 26 images belonging to two categories. These two categories will be used as class values.
 
@@ -32,8 +32,8 @@ Example
 
 We can observe the result in a **Data Table**. See how Orange added an extra class attribute with values Monet and Manet?
 
-Now we can proceed with standard machine learning methods. We will send images to [Image Embedding](../imageembedding/), where we will use *Painters* embedder to retrieve image vectors.
+Now we can proceed with standard machine learning methods. We will send images to [Image Embedding](/widget-catalog/image-analytics/imageembedding), where we will use *Painters* embedder to retrieve image vectors.
 
 Then we will use **Test & Score** and **Logistic Regression**, to build a model for predicting the author of a painting. We get a perfect score? How come? It turns out, these were the images the *Painters* embedder was trained on, so a high accuracy is expected.
 
-![](../images/ImportImages-Example.png)
+![](/widget-catalog/image-analytics/images/ImportImages-Example.png)

@@ -21,7 +21,7 @@ your data. In this widget, you can chose the interpolation method to impute
 the missing values with. By default, it's linear interpolation (fast and
 reasonable default).
 
-![](../images/interpolate-stamped.png)
+![](/widget-catalog/time-series/images/interpolate-stamped.png)
 
 1. Interpolation type. You can select one of linear, cubic spline, nearest, or mean interpolation:
 
@@ -39,4 +39,4 @@ Example
 
 Pass a time series with missing values in, get interpolated time series out.
 
-![](../images/interpolate-ex1.png)
+![](/widget-catalog/time-series/images/interpolate-ex1.png)

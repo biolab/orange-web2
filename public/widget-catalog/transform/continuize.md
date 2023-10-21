@@ -17,7 +17,7 @@ Turns discrete variables (attributes) into numeric ("continuous") dummy variable
 
 The **Continuize** widget receives a data set in the input and outputs the same data set in which some or all categorical variables are replaced with continuous ones and numeric variables are scaled.
 
-![](../images/Continuize-stamped.png)
+![](/widget-catalog/transform/images/Continuize-stamped.png)
 
 1. Select a categorical attribute to define its specific treatmen, or click the "Deafult" option above to set the default treatment for all categorical attributes without specific settings.
 
@@ -31,7 +31,7 @@ The **Continuize** widget receives a data set in the input and outputs the same 
 
    - **Leave categorical**: leave the attribute as it is.
 
-   - **First value as base**: a N-valued categorical variable will be transformed into N-1 numeric variables, each serving as an indicator for one of the original values except for the base value. The base value is the first value in the list. By default, the values are ordered alphabetically; their order can be changed in [Edit Domain](../../../data/editdomain).
+   - **First value as base**: a N-valued categorical variable will be transformed into N-1 numeric variables, each serving as an indicator for one of the original values except for the base value. The base value is the first value in the list. By default, the values are ordered alphabetically; their order can be changed in [Edit Domain](/widget-catalog/transform/../data/editdomain).
 
        In the above case, the three-valued variable *status* is transformed into two numeric variables, *status=middle* with values 0 or 1 indicating whether the original variable had value *middle* on a particular example, and similarly, *status=high*.
 
@@ -43,7 +43,7 @@ The **Continuize** widget receives a data set in the input and outputs the same 
 
    - **Remove**: removes the attribute.
 
-   - **Treat as ordinal**: converts the variable into a single numeric variable enumerating the original values. In the above case, the new variable would have the value of 0 for *low*, 1 for *middle* and 2 for *high*. Again note that the order of values can be set in  [Edit Domain](../../../data/editdomain).
+   - **Treat as ordinal**: converts the variable into a single numeric variable enumerating the original values. In the above case, the new variable would have the value of 0 for *low*, 1 for *middle* and 2 for *high*. Again note that the order of values can be set in  [Edit Domain](/widget-catalog/transform/../data/editdomain).
 
    - **Treat as normalized ordinal**: same as above, except that values are normalized into range 0-1. In our example, the values of the new variable would be 0, 0.5 and 1.
 
@@ -64,10 +64,10 @@ The **Continuize** widget receives a data set in the input and outputs the same 
 Examples
 --------
 
-First, let's see what is the output of the **Continuize** widget. We feed the original data (the *Heart disease* data set) into the [Data Table](../../data/datatable) and see how they look like. Then we continuize the discrete values using various options and observe them in another [Data Table](../../data/datatable).
+First, let's see what is the output of the **Continuize** widget. We feed the original data (the *Heart disease* data set) into the [Data Table](/widget-catalog/transform/../data/datatable) and see how they look like. Then we continuize the discrete values using various options and observe them in another [Data Table](/widget-catalog/transform/../data/datatable).
 
-![](../images/Continuize-Example1.png)
+![](/widget-catalog/transform/images/Continuize-Example1.png)
 
 In the second example, we show a typical use of this widget - in order to properly plot the linear projection of the data, discrete attributes need to be converted to continuous ones and that is why we put the data through the **Continuize** widget before drawing it. Gender, for instance, is transformed into two attributes "*gender=female*" and *gender=male*.
 
-![](../images/Continuize-Example2.png)
+![](/widget-catalog/transform/images/Continuize-Example2.png)

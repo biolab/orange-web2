@@ -17,7 +17,7 @@ Fetching data from [MediaWiki RESTful web service API](https://www.mediawiki.org
 
 **Wikipedia** widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.
 
-![](../images/Wikipedia-stamped.png)
+![](/widget-catalog/text-mining/images/Wikipedia-stamped.png)
 
 1. Query parameters:
    - Query word list, where each query is listed in a new line.
@@ -31,8 +31,8 @@ Fetching data from [MediaWiki RESTful web service API](https://www.mediawiki.org
 Example
 -------
 
-This is a simple example, where we use **Wikipedia** and retrieve the articles on 'Slovenia' and 'Germany'. Then we simply apply default preprocessing with [Preprocess Text](preprocesstext.md) and observe the most frequent words in those articles with [Word Cloud](../wordcloud/).
+This is a simple example, where we use **Wikipedia** and retrieve the articles on 'Slovenia' and 'Germany'. Then we simply apply default preprocessing with [Preprocess Text](preprocesstext.md) and observe the most frequent words in those articles with [Word Cloud](/widget-catalog/text-mining/wordcloud).
 
-![](../images/Wikipedia-Example.png)
+![](/widget-catalog/text-mining/images/Wikipedia-Example.png)
 
-Wikipedia works just like any other corpus widget ([NY Times](nytimes.md), [Twitter](../twitter-widget/)) and can be used accordingly.
+Wikipedia works just like any other corpus widget ([NY Times](nytimes.md), [Twitter](/widget-catalog/text-mining/twitter-widget)) and can be used accordingly.

@@ -19,7 +19,7 @@ Predict using gradient boosting on decision trees.
 
 [Gradient Boosting](https://en.wikipedia.org/wiki/Gradient_boosting) is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
 
-![](../images/GradientBoosting-stamped.png)
+![](/widget-catalog/model/images/GradientBoosting-stamped.png)
 
 1. Specify the name of the model. The default name is "Gradient Boosting".
 2. Select a gradient boosting method:
@@ -52,16 +52,16 @@ Gradient Boosting uses default preprocessing when no other preprocessors are giv
 - removes empty columns
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Feature Scoring
 ---------------
 
-Gradient Boosting can be used with Rank for feature scoring. See [Learners as Scorers](../../../learners-as-scorers/index/) for an example.
+Gradient Boosting can be used with Rank for feature scoring. See [Learners as Scorers](/widget-catalog/model/../../learners-as-scorers/index) for an example.
 
 Example
 -------
 
-For a classification tasks, we use the *heart disease* data. Here, we compare all available methods in the [Test & Score](../../evaluate/testandscore/) widget.
+For a classification tasks, we use the *heart disease* data. Here, we compare all available methods in the [Test & Score](/widget-catalog/model/../evaluate/testandscore) widget.
 
-![](../images/GradientBoosting-example.png)
+![](/widget-catalog/model/images/GradientBoosting-example.png)

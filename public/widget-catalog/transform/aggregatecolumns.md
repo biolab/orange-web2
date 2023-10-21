@@ -17,7 +17,7 @@ Compute a sum, max, min ... of selected columns.
 
 **Aggregate Columns** outputs an aggregation of selected columns, for example a sum, min, max, etc.
 
-![](../images/AggregateColumns.png)
+![](/widget-catalog/transform/images/AggregateColumns.png)
 
 1. Selected attributes.
 2. Operator for aggregation:
@@ -34,8 +34,8 @@ Compute a sum, max, min ... of selected columns.
 Example
 -------
 
-We will use iris data from the [File](../../data/file/) widget for this example and connect it to **Aggregate Columns**.
+We will use iris data from the [File](/widget-catalog/transform/../data/file) widget for this example and connect it to **Aggregate Columns**.
 
 Say we wish to compute a sum of *sepal_length* and *sepal_width* attributes. We select the two attributes from the list.
 
-![](../images/AggregateColumns-Example.png)
+![](/widget-catalog/transform/images/AggregateColumns-Example.png)

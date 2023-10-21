@@ -13,7 +13,7 @@ Save images in the directory structure.
 
 **Save Images** is a simple widget that saves images sent to its input. Images will be saved as separate files in their own directory. When a class is present in the data, images will be saved in subdirectories based on the class variable.
 
-![](../images/SaveImages.png)
+![](/widget-catalog/image-analytics/images/SaveImages.png)
 
 1. Attribute containing the path to the image.
 2. If *Scale images to* is ticked, images will be resized to the size used in the selected embedder:
@@ -46,4 +46,4 @@ Example
 
 Here is a simple example how to use **Save Images**. We loaded 14 paintings from Picasso, sent them to [Image Embedding](imageembedding.md) using *Painters* embedder, then to [Distances](https://orange-visual-programming.readthedocs.io/widgets/unsupervised/distances.html) using cosine distance and finally to [Hierarchical Clustering](https://orange-visual-programming.readthedocs.io/widgets/unsupervised/hierarchicalclustering.html) to construct a dendrogram. Then we selected a cluster from the plot and saved the images belonging to the selected cluster with **Save Images**.
 
-![](../images/SaveImages-Example.png)
+![](/widget-catalog/image-analytics/images/SaveImages-Example.png)

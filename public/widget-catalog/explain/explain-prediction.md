@@ -18,7 +18,7 @@ Explains which features contribute the most to the prediction for a single insta
 - Scores: The SHAP value of each features value. Features that contribute more to prediction have higher score deviation from the 0.
 
 **Explain Prediction** widget explains classification or regression model's prediction for the provided data instance. The widget shows what features affect the prediction of selected class the most and how they contribute (towards or against the prediction). The explanation is computed with removing features, replacing them with different options from the background data, and observing the change in the prediction.
-![](../images/Explain-Prediction.png)
+![](/widget-catalog/explain/images/Explain-Prediction.png)
 
 1. Select the target class -- the plot will show explanations for this class.
 2. Zoom in/out the plot.
@@ -36,4 +36,4 @@ First, we open heart disease dataset in File widget. With the Data Sampler widge
 Explain Prediction widget accept three inputs. First is the model from the Logistic Regression widget, background data from the Data Sampler (we usually use model's training data as background data), and the data instance whose prediction we want to explain with the Explain Prediction widget. In the widget we select class 1 as a target class, it means we are explaining what features and how they affect the prediction probability for the selected class 1. Numbers in the gray boxes in the plot indicate that the prediction probability for the selected class is 0.6 (border between red and yellow tape) and the baseline probability is 0.45 (the average probability in the data).
 
 Features marked red on the tape push probabilities from the baseline probability toward probability 1.0 (prediction of the selected class), and blue features push against the prediction of the selected class. Numbers on the tape are SHAP values for each feature -- this is how much the feature (and its value) changes the probability toward or against the selected class. We can see that the highest impact on the prediction has the feature *major vessels coloured* with the value 2 and *ST by exercise* with the value 2.8. Two important features that push against the prediction of class 1 are *gender=male* with value 0 (which means that the patient is not male) and *gender=female* with the value 1 (patient is female - actually another feature with the same meaning that previous).  
-![](../images/Explain-Prediction-Example.png)
+![](/widget-catalog/explain/images/Explain-Prediction-Example.png)

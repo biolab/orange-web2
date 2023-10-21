@@ -19,7 +19,7 @@ Enrich gene sets.
 
 [Gene Set Enrichment Analysis](https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis) (GSEA) is a method to find gene sets overrepresented in a large group of genes, possibly associated with different phenotypes. For each gene set in the given set of gene sets, the widget calculates the enrichment using the [hypergeometric test](https://en.wikipedia.org/wiki/Hypergeometric_distribution#Hypergeometric_test) which determines the probability of observing the overlap between the genes in the gene set and the input genes by chance, given the total number of genes in the genome and the number of genes in the gene set.
 
-![](../images/gene_set_enrichment/Gene-Set-Enrichment-stamped.png)
+![](/widget-catalog/bioinformatics/images/gene_set_enrichment/Gene-Set-Enrichment-stamped.png)
 
 1. Select the *Organism*.
 2. *Gene Sets*: A list of available gene sets that can be selected for enrichment analysis. Select multiple gene sets by ticking the checkbox next to the gene set name.
@@ -34,6 +34,6 @@ From **GEO Data Sets** widget we select the [GDS3900](https://pubmed.ncbi.nlm.ni
 
 
 
-![](../images/gene_set_enrichment/Gene-Set-Enrichment-Example.png)
+![](/widget-catalog/bioinformatics/images/gene_set_enrichment/Gene-Set-Enrichment-Example.png)
 
 

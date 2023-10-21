@@ -25,10 +25,10 @@ Database sources:
   	<cite>[CellMarker: a manually curated resource of cell markers in human and mouse.][1] Nucleic Acids Research. 2018.</cite>
  
 
-Data is preprocessed in Orange readable format and it is hosted [here.][2] One can use [Databases update](../databases_update/)
+Data is preprocessed in Orange readable format and it is hosted [here.][2] One can use [Databases update](/widget-catalog/bioinformatics/databases_update)
 widget to download (or update) files locally.
 
-![](../images/marker_genes/Marker-Genes-stamped.png)
+![](/widget-catalog/bioinformatics/images/marker_genes/Marker-Genes-stamped.png)
 
 1.  Select the *Database*, *Organism*, and choose whether to group marker genes by *Cell Type* or *Function*. 
 2.  *Filter marker genes* allows you to search for a particular marker gene.
@@ -42,7 +42,7 @@ Example
 
 We can use the **Marker Genes** in a combination with many other widgets. For example, we can use it to annotate cell types in the **Annotator** widget. In order to do that, we first need to load the data. From **GEO Data Sets** widget we select the [GDS3900][3] data set *Fear conditioning effect on hybrid mouse diversity panel* and feed the data to the **t-SNE** widget. We add the **Marker Genes** widget to annotate the cell types, select *Mouse* as *Organism* and select all marker genes. Finally, we connect both widgets to the **Annotator** widget to visualize the results.
 
-![](../images/marker_genes/Marker-Genes-example.png)
+![](/widget-catalog/bioinformatics/images/marker_genes/Marker-Genes-example.png)
 
 A workflow that implements this widget can be accessed [here](https://download.biolab.si/download/files/workflows/orange/bioinformatics_annotator.ows).
 

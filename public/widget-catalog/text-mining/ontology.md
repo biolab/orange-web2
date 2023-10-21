@@ -31,7 +31,7 @@ The fitness function also accounts for the average number of children each word 
 and their children along with their respective lengths (this term is intended to push 
 more general words above the less general ones).
 
-![](../images/Ontology.png)
+![](/widget-catalog/text-mining/images/Ontology.png)
 
 1. Switch between saved ontologies, add or remove ontology to the library, load or save ontology from/to file.
 2. Browse words from the widget's input, include selected terms automatically in the existing ontology with the `Include` button or grab a word from the list and drop it in the ontology on the right.
@@ -56,4 +56,4 @@ the ontology, we can manually perform some minor changes to make ontology even m
 meaningful.
 
 
-![](../images/Ontology-Example.png)
+![](/widget-catalog/text-mining/images/Ontology-Example.png)

@@ -26,7 +26,7 @@ Visually explore the network and its properties.
 
 The visualization in **Network Explorer** works just like the one for **Scatter Plot**. To select a subset of nodes, draw a rectangle around the subset. Shift will add a new group. Ctrl-Shift (Cmd-Shift) will add to the existing group. Alt (Option) will remove from the group. Pressing outside of the network will remove the selection.
 
-![](../images/Network-Explorer-overview-stamped.png)
+![](/widget-catalog/networks/images/Network-Explorer-overview-stamped.png)
 
 1. Information on the network. Reports on the number (and proportion) of nodes and edges. Press 'Re-layout' to re-compute nodes with Fruchterman-Reingold optimization. Select 'Randomize positions' starts from random position of nodes.
 2. Set the color, shape, size and label of the nodes by attribute. Color will display the 10 most frequent values and color the rest as 'Other'. Shape is assigned to the 5 most frequent values and the rest is marked as 'Other'. *Label only selection and subset* is handy for keeping the projection organized.
@@ -38,7 +38,7 @@ The visualization in **Network Explorer** works just like the one for **Scatter 
 
 Pressing *Select* will select and output the highlighted nodes. *Add to Group* adds to the existing selection, while *Add New Group* creates a new group.
 
-![](../images/Network-Explorer-select-options.png)
+![](/widget-catalog/networks/images/Network-Explorer-select-options.png)
 
 The widget enables selection of nodes by the specified criterium:
 
@@ -62,7 +62,7 @@ In the example below, we selected a single node (blue). Then we used *Mark nodes
 
 *Add to Group* would add the highlighted (light blue) nodes to the last (green) group. This make this widget a nice tool for visualizing hops and network propagation.
 
-![](../images/Network-Explorer-selection.png)
+![](/widget-catalog/networks/images/Network-Explorer-selection.png)
 
 Example
 -------
@@ -71,4 +71,4 @@ In this example we will use the *lastfm* data set that can be loaded in the **Ne
 
 The entire data set is visualized in **Network Explorer**. In the widget, we removed the coloring and set the size of the nodes to correspond to the *album count*. Then we selected some nodes from the network. We can observe the selection in **Network Explorer (1)**.
 
-![](../images/Network-Explorer-Example.png)
+![](/widget-catalog/networks/images/Network-Explorer-Example.png)
