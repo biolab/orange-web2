@@ -13,7 +13,7 @@ Load a single cell data from an online repository.
 **Single Cell Datasets** retrieves a selected data set from the data base server and sends the data to the output. Gene expression data sets include cells in rows and genes in columns. The data set file is downloaded to the local memory, and for subsequent requests instantly available
 even without the internet connection.
 
-![](../images/SingleCellDatasets-stamped.png)
+![](/widget-catalog/single-cell/images/SingleCellDatasets-stamped.png)
 
 1. Information on the number of data sets available and the number of them downloaded to the local memory.
 2. List of available data sets with information on the number of cells (instances) and genes (variables).

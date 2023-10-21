@@ -19,7 +19,7 @@ Two-dimensional data projection with t-SNE.
 
 The **t-SNE** widget plots the data with a t-distributed stochastic neighbor embedding method. [t-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.
 
-![](../images/tSNE-stamped.png)
+![](/widget-catalog/unsupervised/images/tSNE-stamped.png)
 
 1. [Parameters](https://opentsne.readthedocs.io/en/latest/parameters.html) for plot optimization:
    - measure of [perplexity](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html). Roughly speaking, it can be interpreted as the number of nearest neighbors to distances will be preserved from each point. Using smaller values can reveal small, local clusters, while using large values tends to reveal the broader, global relationships between data points.
@@ -42,14 +42,14 @@ t-SNE uses default preprocessing if necessary. It executes it in the following o
 - continuizes categorical variables (with one feature per value)
 - imputes missing values with mean values
 
-To override default preprocessing, preprocess the data beforehand with [Preprocess](../../data/preprocess/) widget.
+To override default preprocessing, preprocess the data beforehand with [Preprocess](/widget-catalog/unsupervised/../data/preprocess) widget.
 
 Examples
 --------
 
-The first example is a simple t-SNE plot of *brown-selected* data set. Load *brown-selected* with the [File](../data/file.md) widget. Then connect **t-SNE** to it. The widget will show a 2D map of yeast samples, where samples with similar gene expression profiles will be close together. Select the region, where the gene function is mixed and inspect it in a [Data Table](../../data/datatable/).
+The first example is a simple t-SNE plot of *brown-selected* data set. Load *brown-selected* with the [File](../data/file.md) widget. Then connect **t-SNE** to it. The widget will show a 2D map of yeast samples, where samples with similar gene expression profiles will be close together. Select the region, where the gene function is mixed and inspect it in a [Data Table](/widget-catalog/unsupervised/../data/datatable).
 
-![](../images/tSNE-Example1.png)
+![](/widget-catalog/unsupervised/images/tSNE-Example1.png)
 
 For the second example, use [Single Cell Datasets](https://orangedatamining.com/widget-catalog/single-cell/single_cell_datasets/) widget from the Single Cell add-on to load *Bone marrow mononuclear cells with AML (sample)* data. Then pass it through **k-Means** and select 2 clusters from Silhouette Scores. Ok, it looks like there might be two distinct clusters here.
 
@@ -57,4 +57,4 @@ But can we find subpopulations in these cells? Select a few marker genes with th
 
 In **t-SNE**, use *Cluster* attribute to color the points and *Score* attribute to set their size. We see that killer cells are nicely clustered together and that t-SNE indeed found subpopulations.
 
-![](../images/tSNE-Example2.png)
+![](/widget-catalog/unsupervised/images/tSNE-Example2.png)

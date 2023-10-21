@@ -16,7 +16,7 @@ Encode region names into geographical coordinates, or reverse-geocode latitude a
 
 **Geocoding** widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return the latitude and longitude of geometric centre.
 
-![](../images/Geocoding-stamped.png)
+![](/widget-catalog/geo/images/Geocoding-stamped.png)
 
 1. Use region names to extract the corresponding latitude/longitude pairs:
    - Region identifier: attribute with the information on region names. Can be discrete or string.
@@ -38,5 +38,5 @@ Connect **Geocoding** to **Datasets**. Region identifier in our case is the attr
 
 Finally, we can observe the data in the second **Data Table**. We can see our data now has two additional attributes, one for the latitude and one for the longitude of the region of interest. Now, you can plot the data on the map!
 
-![](../images/Geocoding-Example.png)
+![](/widget-catalog/geo/images/Geocoding-Example.png)
 

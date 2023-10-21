@@ -19,7 +19,7 @@ Group instances by feature and connect related groups.
 
 **Network of Groups** is the network version of the group-by operation. Nodes with the same values of the attribute, selected in the dropdown, will be represented as a single node.
 
-![](../images/Network-of-Groups-stamped.png)
+![](/widget-catalog/networks/images/Network-of-Groups-stamped.png)
 
 1. Information on the input and output network.
 2. Select the attribute to group by.
@@ -32,10 +32,10 @@ Group instances by feature and connect related groups.
 Example
 -------
 
-In this example we are using *airtraffic* data set, that we loaded in the [Network File](../networkfile/) widget. We see the entire data set in **Network Explorer (1)**.
+In this example we are using *airtraffic* data set, that we loaded in the [Network File](/widget-catalog/networks/networkfile) widget. We see the entire data set in **Network Explorer (1)**.
 
 Then we use **Network of Groups** to group the network by the *FAA Classifications* attribute. All nodes with the same value of this attribute will be represented as a single node in the output. There is an edge between the two nodes, if they share connections in the original network.
 
-The grouped network is shown in [Network Explorer](../networkexplorer/).
+The grouped network is shown in [Network Explorer](/widget-catalog/networks/networkexplorer).
 
-![](../images/Network-of-Groups-Example.png)
+![](/widget-catalog/networks/images/Network-of-Groups-Example.png)

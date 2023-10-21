@@ -18,7 +18,7 @@ Finds frequent itemsets in the data.
 The widget finds [frequent items](https://en.wikipedia.org/wiki/Association_rule_learning) in a data set based on a measure of
 support for the rule.
 
-![](../images/frequent-itemsets-stamped.png)
+![](/widget-catalog/associate/images/frequent-itemsets-stamped.png)
 
 1. Information on the data set. 'Expand all' expands the frequent itemsets tree, while 'Collapse all' collapses it.
 2. In *Find itemsets by* you can set criteria for itemset search:
@@ -37,6 +37,6 @@ support for the rule.
 Example
 -------
 
-Frequent Itemsets can be used directly with the [File](../../data/file/) widget.
+Frequent Itemsets can be used directly with the [File](/widget-catalog/associate/../data/file) widget.
 
-![](../images/frequent-itemsets-example1.png)
+![](/widget-catalog/associate/images/frequent-itemsets-example1.png)

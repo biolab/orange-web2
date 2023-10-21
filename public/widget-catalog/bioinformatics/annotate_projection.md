@@ -25,7 +25,7 @@ p-value of each cell types for a cell based on the selected statistical
 test. It visualizes groups of cells and for each group, it shows few
 most present cell types.
 
-![](../images/annotate_projection/annotator-stamped.png)
+![](/widget-catalog/bioinformatics/images/annotate_projection/annotator-stamped.png)
 
 1. This box contains settings for attribute selection and annotation:
     - *Axis X* and *Axis Y* let you select attributes you will show in
@@ -85,7 +85,7 @@ The widget shows clustered cells projected to the two-dimensional plane.
 Clusters labels show annotation with the most common label in the
 cluster. This workflow can be accessed [here](https://download.biolab.si/download/files/workflows/orange/bioinformatics_annotator.ows).
 
-![](../images/annotate_projection/annotator-example.png)
+![](/widget-catalog/bioinformatics/images/annotate_projection/annotator-example.png)
 
 The second example shows how to use *Secondary Data* input
 of the widget. We load data with two *Single Cell Datasets* widgets.
@@ -100,4 +100,4 @@ them in the reference space. The Annotator window shows the mapping of
 secondary data (colored points) to clusters generated on the reference
 data.
 
-![](../images/annotate_projection/annotator-example2.png)
+![](/widget-catalog/bioinformatics/images/annotate_projection/annotator-example2.png)

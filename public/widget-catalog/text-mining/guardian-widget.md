@@ -17,11 +17,11 @@ Fetching data from [The Guardian Open Platform](http://open-platform.theguardian
 
 **Guardian** retrieves articles from the Guardian newspaper via their API. For the widget to work, you need to provide the API key, which you can get at [their access platform](https://open-platform.theguardian.com/access/).
 
-![](../images/Guardian-stamped.png)
+![](/widget-catalog/text-mining/images/Guardian-stamped.png)
 
 1. Insert the API key for the widget to work.
 
-   ![](../images/Guardian-API.png)
+   ![](/widget-catalog/text-mining/images/Guardian-API.png)
 
 2. Provide the query and set the time frame from which to retrieve the articles.
 3. Define which features to retrieve from the Guardian platform.
@@ -31,10 +31,10 @@ Fetching data from [The Guardian Open Platform](http://open-platform.theguardian
 Example
 -------
 
-**Guardian** can be used just like any other data retrieval widget in Orange, namely [NY Times](nytimes.md), [Wikipedia](wikipedia-widget.md), [Twitter](twitter-widget.md) or [PubMed](../pubmed/).
+**Guardian** can be used just like any other data retrieval widget in Orange, namely [NY Times](nytimes.md), [Wikipedia](wikipedia-widget.md), [Twitter](twitter-widget.md) or [PubMed](/widget-catalog/text-mining/pubmed).
 
 We will retrieve 240 articles mentioning *slovenia* between september 2017 and september 2018. The text will include article headline and content. Upon pressing *Search*, the articles will be retrieved.
 
-We can observe the results in the [Corpus Viewer](../corpusviewer/) widget.
+We can observe the results in the [Corpus Viewer](/widget-catalog/text-mining/corpusviewer) widget.
 
-![](../images/Guardian-Example.png)
+![](/widget-catalog/text-mining/images/Guardian-Example.png)

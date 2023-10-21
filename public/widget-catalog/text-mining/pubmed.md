@@ -17,7 +17,7 @@ Fetch data from [PubMed](http://www.ncbi.nlm.nih.gov/pubmed) journals.
 
 [PubMed](http://www.ncbi.nlm.nih.gov/pubmed) comprises more than 26 million citations for biomedical literature from MEDLINE, life science journals, and online books. The widget allows you to query and retrieve these entries. You can use regular search or construct advanced queries.
 
-![](../images/Pubmed-stamped.png)
+![](/widget-catalog/text-mining/images/Pubmed-stamped.png)
 
 1. Enter a valid e-mail to retrieve queries.
 2. *Regular search*:
@@ -34,6 +34,6 @@ Example
 
 **PubMed** can be used just like any other data widget. In this example we've queried the database for records on orchids. We retrieved 1000 records and kept only 'abstract' in our meta features to limit the construction of tokens only to this feature.
 
-![](../images/Pubmed-Example.png)
+![](/widget-catalog/text-mining/images/Pubmed-Example.png)
 
-We used [Preprocess Text](preprocesstext.md) to remove stopword and words shorter than 3 characters (regexp `\b\w{1,2}\b`). This will perhaps get rid of some important words denoting chemicals, so we need to be careful with what we filter out. For the sake of quick inspection we only retained longer words, which are displayed by frequency in [Word Cloud](../wordcloud/).
+We used [Preprocess Text](preprocesstext.md) to remove stopword and words shorter than 3 characters (regexp `\b\w{1,2}\b`). This will perhaps get rid of some important words denoting chemicals, so we need to be careful with what we filter out. For the sake of quick inspection we only retained longer words, which are displayed by frequency in [Word Cloud](/widget-catalog/text-mining/wordcloud).

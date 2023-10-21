@@ -13,7 +13,7 @@ Write/paste documents to create a corpus
 
 **Create Corpus** is a widget for quick creation of a sample of documents. It enables manual entry or copy-pasting content from clipboard. The widget would typically be used in an educational setting or for predicting a sample of documents.
 
-![](../images/Create-Corpus.png)
+![](/widget-catalog/text-mining/images/Create-Corpus.png)
 
 1. The title of the document.
 2. Remove a document.
@@ -23,6 +23,6 @@ Write/paste documents to create a corpus
 Example
 -------
 
-In this simple example we entered three new documents in the **Create Corpus** widget and sent them to [Corpus Viewer](../corpusviewer/) to display them.
+In this simple example we entered three new documents in the **Create Corpus** widget and sent them to [Corpus Viewer](/widget-catalog/text-mining/corpusviewer) to display them.
 
-![](../images/Create-Corpus-Example.png)
+![](/widget-catalog/text-mining/images/Create-Corpus-Example.png)

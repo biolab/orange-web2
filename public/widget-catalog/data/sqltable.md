@@ -16,7 +16,7 @@ The **SQL** widget accesses data stored in an SQL database. It can connect to Po
 
 To handle large databases, Orange attempts to execute a part of the computation in the database itself without downloading the data. This only works with PostgreSQL database and requires quantile and tsm_system_time [extensions](https://github.com/biolab/orange3/wiki/Installation-of-SQL-extensions) installed on server. If these extensions are not installed, the data will be downloaded locally.
 
-![](../images/SQLTable-stamped.png)
+![](/widget-catalog/data/images/SQLTable-stamped.png)
 
 1. Database type (can be either PostgreSQL or MSSQL).
 2. Host name.
@@ -56,6 +56,6 @@ If you are encountering issues, follow [these instructions](https://github.com/b
 
 Here is a simple example on how to use the **SQL Table** widget. Place the widget on the canvas, enter your database credentials and connect to your database. Then select the table you wish to analyse.
 
-Connect **SQL Table** to [Data Table](../data/datatable.md) widget to inspect the output. If the table is populated, your data has transferred correctly. Now, you can use the **SQL Table** widget in the same way as the [File](../../data/file/) widget.
+Connect **SQL Table** to [Data Table](../data/datatable.md) widget to inspect the output. If the table is populated, your data has transferred correctly. Now, you can use the **SQL Table** widget in the same way as the [File](/widget-catalog/data/../data/file) widget.
 
-![](../images/SQLTable-Example.png)
+![](/widget-catalog/data/images/SQLTable-Example.png)

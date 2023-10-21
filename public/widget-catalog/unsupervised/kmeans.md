@@ -18,7 +18,7 @@ Groups items using the k-Means clustering algorithm.
 
 The widget applies the [k-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) algorithm to the data and outputs a new dataset in which the cluster label is added as a meta attribute. Silhouette scores of clustering results for various k are also shown in the widget. When using the silhouette score option, the higher the silhouette score, the better the clustering.
 
-![](../images/kMeans-stamped.png)
+![](/widget-catalog/unsupervised/images/kMeans-stamped.png)
 
 1. Select the number of clusters.
    - **Fixed**: algorithm clusters data to a specified number of clusters.
@@ -38,21 +38,21 @@ k-Means uses default preprocessing if necessary. It executes it in the following
 - continuizes categorical variables (with one feature per value)
 - imputes missing values with mean values
 
-To override default preprocessing, preprocess the data beforehand with [Preprocess](../../data/preprocess/) widget.
+To override default preprocessing, preprocess the data beforehand with [Preprocess](/widget-catalog/unsupervised/../data/preprocess) widget.
 
 Examples
 --------
 
-First, we load the *Iris* dataset, run k-Means with three clusters, and show it in the [Scatter Plot](../visualize/scatterplot.md). To interactively explore the clusters, we can use [Select Rows](../../data/selectrows/) to select the cluster of interest (say, C1) and plot it in the scatter plot using interactive data analysis. That means if we pass a subset to the scatter plot, the subset will be exposed in the plot.
+First, we load the *Iris* dataset, run k-Means with three clusters, and show it in the [Scatter Plot](../visualize/scatterplot.md). To interactively explore the clusters, we can use [Select Rows](/widget-catalog/unsupervised/../data/selectrows) to select the cluster of interest (say, C1) and plot it in the scatter plot using interactive data analysis. That means if we pass a subset to the scatter plot, the subset will be exposed in the plot.
 
 Try the same procedure for 2 or 4 clusters or explore different clusters in the plot (C2, C3).
 
-![](../images/kMeans-Example1.png)
+![](/widget-catalog/unsupervised/images/kMeans-Example1.png)
 
-But as we used silhouette score to estimate our cluster quality, we can plot the clusters in the [Silhouette Plot](../../visualize/silhouetteplot/) to observe inliers and outliers. Place Silhouette Plot in place of Select Rows.
+But as we used silhouette score to estimate our cluster quality, we can plot the clusters in the [Silhouette Plot](/widget-catalog/unsupervised/../visualize/silhouetteplot) to observe inliers and outliers. Place Silhouette Plot in place of Select Rows.
 
 Silhouette Plot shows silhouette scores for individual data instances. High, positive scores represent instances that are highly representative of the clusters, while negative scores represent instances that are outliers (don't fit well with the cluster). Select negative scores from the green cluster C3 and plot them in a scatter plot as a subset.
 
 It seems like these are mostly iris versicolors, which are bordering the iris virginica region. Note that the green color of the cluster C3 doesn't coincide with the green color of the iris labels - these are two different things.
 
-![](../images/kMeans-Example2.png)
+![](/widget-catalog/unsupervised/images/kMeans-Example2.png)

@@ -18,7 +18,7 @@ Transform [wide data to narrow](https://en.wikipedia.org/wiki/Wide_and_narrow_da
 The **Melt** widget receives a dataset in the more common wide format and outputs a table of (row_id, variable, value) triplets.
 
 
-![](../images/Melt-Default-stamped.png)
+![](/widget-catalog/transform/images/Melt-Default-stamped.png)
 
 1. Select the variable used as id. The widget offers only columns without duplicated values. Alternatively, row number can be used as id.
 2. Select whether to include non-numeric variables, and whether to exclude zero values.
@@ -33,8 +33,8 @@ We pass it to Melt, where we designate the name as the row id, and discard zero 
 
 An interesting immediate use for this is to pass this data to Distributions and see what are the most and the least common features of animals.
 
-![](../images/Melt-Workflow.png)
+![](/widget-catalog/transform/images/Melt-Workflow.png)
 
 In the next example we show how shuffling class values influences model performance on the same dataset as above.
 
-![](../images/Melt-Distribution.png)
+![](/widget-catalog/transform/images/Melt-Distribution.png)

@@ -19,7 +19,7 @@ Inspect model using the Permutation Feature Importance technique.
 
 **Feature Importance** widget explains classification and regression models. The widget gets a trained model and reference data on input. It uses the provided data to compute the contribution of each feature toward the prediction, by measuring the increase in the prediction error of the model after we permuted the feature's values, which breaks the relationship between the feature and the target.
 
-![](../images/Permutation-Importance.png)
+![](/widget-catalog/explain/images/Permutation-Importance.png)
 
 1. Select the scoring metric.
 2. Select the number of times to permute a feature.
@@ -38,4 +38,4 @@ The features in the plot are ordered by their relevance (e.g. Major vessels colo
 
 By selecting some arbitrary features, a filtered input dataset appears on the output of the Feature Importance widget.
 
-![](../images/Permutation-Importance-Example.png)
+![](/widget-catalog/explain/images/Permutation-Importance-Example.png)

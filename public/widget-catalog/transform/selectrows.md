@@ -23,7 +23,7 @@ Criteria for data selection are presented as a collection of conjunct terms (i.e
 
 Condition terms are defined through selecting an attribute, selecting an operator from a list of operators, and, if needed, defining the value to be used in the condition term. Operators are different for discrete, continuous and string attributes.
 
-![](../images/SelectRows-stamped.png)
+![](/widget-catalog/transform/images/SelectRows-stamped.png)
 
 1. Conditions you want to apply, their operators and related values
 2. Add a new condition to the list of conditions.
@@ -41,10 +41,10 @@ If *Send automatically* is selected, then the output is updated on any change in
 Example
 -------
 
-In the workflow below, we used the *Zoo* data from the [File](../data/file.md) widget and fed it into the **Select Rows** widget. In the widget, we chose to output only two animal types, namely fish and reptiles. We can inspect both the original dataset and the dataset with selected rows in the [Data Table](../../data/datatable/) widget.
+In the workflow below, we used the *Zoo* data from the [File](../data/file.md) widget and fed it into the **Select Rows** widget. In the widget, we chose to output only two animal types, namely fish and reptiles. We can inspect both the original dataset and the dataset with selected rows in the [Data Table](/widget-catalog/transform/../data/datatable) widget.
 
-![](../images/SelectRows-Example.png)
+![](/widget-catalog/transform/images/SelectRows-Example.png)
 
-In the next example, we used the data from the *Titanic* dataset and similarly fed it into the [Box Plot](../../visualize/boxplot/) widget. We first observed the entire dataset based on survival. Then we selected only first class passengers in the **Select Rows** widget and fed it again into the [Box Plot](../../visualize/boxplot/). There we could see all the first class passengers listed by their survival rate and grouped by gender.
+In the next example, we used the data from the *Titanic* dataset and similarly fed it into the [Box Plot](/widget-catalog/transform/../visualize/boxplot) widget. We first observed the entire dataset based on survival. Then we selected only first class passengers in the **Select Rows** widget and fed it again into the [Box Plot](/widget-catalog/transform/../visualize/boxplot). There we could see all the first class passengers listed by their survival rate and grouped by gender.
 
-![](../images/SelectRows-Workflow.png)
+![](/widget-catalog/transform/images/SelectRows-Workflow.png)

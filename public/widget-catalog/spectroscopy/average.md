@@ -17,7 +17,7 @@ Average spectra.
 
 The **Average Spectra** widget enables you to calculate average spectra. It can output the average of the entire dataset, or average into groups defined by a Categorical feature.
 
-![](../images/Average-Spectra-stamped.png)
+![](/widget-catalog/spectroscopy/images/Average-Spectra-stamped.png)
 
 Use *Group by* to output averages defined by a Categorical feature.
 

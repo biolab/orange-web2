@@ -19,7 +19,7 @@ Reshape data table based on column values.
 
 **Pivot Table** summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The widget also allows selecting a subset from the table and grouping by row values, which have to be a discrete variable. Data with only numeric variables cannot be displayed in the table.
 
-![](../images/Pivot-stamped.png)
+![](/widget-catalog/transform/images/Pivot-stamped.png)
 
 1. Discrete or numeric variable used for row values. Numeric variables are considered as integers.
 2. Discrete variable used for column values. Variable values will appear as columns in the table.
@@ -43,7 +43,7 @@ Reshape data table based on column values.
 Discrete variables
 ------------------
 
-![](../images/Pivot-discrete.png)
+![](/widget-catalog/transform/images/Pivot-discrete.png)
 
 Example of a pivot table with only discrete variables selected. We are using *heart-disease* data set for this example. Rows correspond to values of *diameter narrowing* variable. Our columns are values of *gender*, namely female and male. We are using *thal* as values in our cells.
 
@@ -54,7 +54,7 @@ The second row shows majority. This means most female patients that don't have d
 Numeric variables
 -----------------
 
-![](../images/Pivot-continuous.png)
+![](/widget-catalog/transform/images/Pivot-continuous.png)
 
 Example of a pivot table with numeric variables. We are using *heart-disease* data set for this example. Rows correspond to values of *diameter narrowing* variable. Our columns are values of *gender*, namely female and male. We are using *rest SBP* as values in our cells.
 
@@ -63,10 +63,10 @@ We have selected *Count*, *Sum* and *Median* as aggregation methods. Under *Coun
 Example
 -------
 
-We are using *Forest Fires* for this example. The data is loaded in the [Datasets](../../data/datasets/) widget and passed to **Pivot Table**. *Forest Fires* datasets reports forest fires by the month and day they happened. We can aggregate all occurrences of forest fires by selecting *Count* as aggregation method and using *month* as row and *day* as column values. Since we are using *Count*, *Values* variable will have no effect.
+We are using *Forest Fires* for this example. The data is loaded in the [Datasets](/widget-catalog/transform/../data/datasets) widget and passed to **Pivot Table**. *Forest Fires* datasets reports forest fires by the month and day they happened. We can aggregate all occurrences of forest fires by selecting *Count* as aggregation method and using *month* as row and *day* as column values. Since we are using *Count*, *Values* variable will have no effect.
 
-We can plot the counts in [Line Plot](../visualize/lineplot.md). But first, let us organize our data a bit. With [Edit Domain](../data/editdomain.md), we will reorder rows values so that months will appear in the correct order, namely from January to December. To do the same for columns, we will use [Select Columns](../../data/selectcolumns/) and reorder day to go from Monday to Sunday.
+We can plot the counts in [Line Plot](../visualize/lineplot.md). But first, let us organize our data a bit. With [Edit Domain](../data/editdomain.md), we will reorder rows values so that months will appear in the correct order, namely from January to December. To do the same for columns, we will use [Select Columns](/widget-catalog/transform/../data/selectcolumns) and reorder day to go from Monday to Sunday.
 
 Finally, our data is ready. Let us pass it to **Line Plot**. We can see that forest fires are most common in August and September, while their frequency is higher during the weekend than during weekdays.
 
-![](../images/Pivot-example.png)
+![](/widget-catalog/transform/images/Pivot-example.png)

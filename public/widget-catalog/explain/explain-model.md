@@ -19,7 +19,7 @@ Explains a classification or regression model. Explains which features contribut
 
 **Explain Model** widget explains classification and regression models with SHAP library. The widget gets a trained model and reference data on input. It uses the provided data to compute the contribution of each feature toward the prediction for a selected class. 
 
-![](../images/Explain-Model.png)
+![](/widget-catalog/explain/images/Explain-Model.png)
 
 1. Select the target class -- the plot will show explanations for this class.
 2. Select number of the features shown in the plot.
@@ -35,4 +35,4 @@ In the flowing example, we use the Explain Model widget to explain Logistic regr
 
 Features in the plot are ordered by their relevance to the prediction. Major vessels coloured is the most important for the prediction in class 1. Instances with higher values of this feature (red colour) have higher SHAP values which mean they contribute toward the prediction of class 1. Lower values of this attribute (blue) contribute against the prediction of this class. The second most important attribute is chest pain (categorical attribute) with value asymptomatic. The presence of this category for the patient (red colour) contributes toward the prediction of class 1, while the absence of this category contributes against class 1.  
 
-![](../images/Explain-Model-Example.png)
+![](/widget-catalog/explain/images/Explain-Model-Example.png)

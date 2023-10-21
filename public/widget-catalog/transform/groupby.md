@@ -20,7 +20,7 @@ Group By widget first identifies groups based on selected variables in the **Gro
 In the second step, the widget computes aggregations defined in the table on the right side of the widget for each group.
 
 
-![](../images/Group-by-stamped.png)
+![](/widget-catalog/transform/images/Group-by-stamped.png)
 
 1. Select variables that define groups
 2. View variables and their aggregations. To change aggregation for one or more variables, select them in the table.
@@ -40,4 +40,4 @@ In the **Data Table** widget, we can see that both females and males have lower 
 You can also observe differences between median **cholesterol** level and mean value of **major vessel colored** between groups.
 
 
-![](../images/Group-by-example.png)
+![](/widget-catalog/transform/images/Group-by-example.png)

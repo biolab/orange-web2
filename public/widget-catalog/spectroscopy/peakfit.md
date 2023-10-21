@@ -22,10 +22,10 @@ The **Peak Fit** widget computes the least-squares minimization curve fit for ar
 user-defined composite peak models. It outputs the best fit parameters for the defined model and the
 resulting total fit.
 
-![](../images/Peak-Fit-stamped.png)
+![](/widget-catalog/spectroscopy/images/Peak-Fit-stamped.png)
 
-1. Add a [model](../#models-and-parameters) component from the dropdown menu.
-2. Input model initial parameters and [constraints](../#constraints).
+1. Add a [model](/widget-catalog/spectroscopy/#models-and-parameters) component from the dropdown menu.
+2. Input model initial parameters and [constraints](/widget-catalog/spectroscopy/#constraints).
 3. Visualize the initial peak and peak color.
 4. Select subsample of data for preview fit calculation.
 5. Preview plot of fit results for subsample. Center line of selected model is visualized along with

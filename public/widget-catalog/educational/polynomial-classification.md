@@ -28,7 +28,7 @@ By default, the widget uses non-regularized logistic regreesion. Manually attach
 
 The outline of the shown data points indicates the actual class, and the inside shows the prediction by the model. In non-binary classification, points predicted to non-target classes are painted gray.
 
-![](../images/polyclassification.png)
+![](/widget-catalog/educational/images/polyclassification.png)
 
 1. Classifier name.
 2. Variables: variables used for classification; options shown only if data contains more than two independent variables.
@@ -48,7 +48,7 @@ Red points with blue outline are "blue" data instances that are misclassified as
 
 Changing the regularization (in Logistic regression widget) allows us to observe how the contour lines spread and shrink.
 
-![](../images/polyclassification-2-classes.png)
+![](/widget-catalog/educational/images/polyclassification-2-classes.png)
 
 We added another class, chose C2 as the target, increased the polynomial expansion to 4 and weaken the regularization (in Logistic regression widget).
 
@@ -56,4 +56,4 @@ Outlines still represent the original classes. Instances of the target classes a
 
 Hovering at any point shows us the probability for red (e.g. 0.264).
 
-![](../images/polyclassification-3-classes.png)
+![](/widget-catalog/educational/images/polyclassification-3-classes.png)

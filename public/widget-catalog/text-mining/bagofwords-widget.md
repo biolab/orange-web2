@@ -15,9 +15,9 @@ Generates a bag of words from the input corpus.
 
 - Corpus: Corpus with bag of words features appended.
 
-**Bag of Words** model creates a corpus with word counts for each data instance (document). The count can be either absolute, binary (contains or does not contain) or sublinear (logarithm of the term frequency). Bag of words model is required in combination with [Word Enrichment](../wordenrichment/) and could be used for predictive modelling.
+**Bag of Words** model creates a corpus with word counts for each data instance (document). The count can be either absolute, binary (contains or does not contain) or sublinear (logarithm of the term frequency). Bag of words model is required in combination with [Word Enrichment](/widget-catalog/text-mining/wordenrichment) and could be used for predictive modelling.
 
-![](../images/Bag-of-Words-stamped.png)
+![](/widget-catalog/text-mining/images/Bag-of-Words-stamped.png)
 
 1. Parameters for [bag of words](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) model:
     - Term Frequency:
@@ -38,14 +38,14 @@ Generates a bag of words from the input corpus.
 Example
 -------
 
-In the first example we will simply check how the bag of words model looks like. Load *book-excerpts.tab* with [Corpus](../corpus-widget/) widget and connect it to **Bag of Words**. Here we kept the defaults - a simple count of term frequencies. Check what the **Bag of Words** outputs with **Data Table**. The final column in white represents term frequencies for each document.
+In the first example we will simply check how the bag of words model looks like. Load *book-excerpts.tab* with [Corpus](/widget-catalog/text-mining/corpus-widget) widget and connect it to **Bag of Words**. Here we kept the defaults - a simple count of term frequencies. Check what the **Bag of Words** outputs with **Data Table**. The final column in white represents term frequencies for each document.
 
-![](../images/Bag-of-Words-Example1.png)
+![](/widget-catalog/text-mining/images/Bag-of-Words-Example1.png)
 
-In the second example we will try to predict document category. We are still using the *book-excerpts.tab* data set, which we sent through [Preprocess Text](../preprocesstext/) with default parameters. Then we connected **Preprocess Text** to **Bag of Words** to obtain term frequencies by which we will compute the model.
+In the second example we will try to predict document category. We are still using the *book-excerpts.tab* data set, which we sent through [Preprocess Text](/widget-catalog/text-mining/preprocesstext) with default parameters. Then we connected **Preprocess Text** to **Bag of Words** to obtain term frequencies by which we will compute the model.
 
-![](../images/Bag-of-Words-Example2.png)
+![](/widget-catalog/text-mining/images/Bag-of-Words-Example2.png)
 
 Connect **Bag of Words** to **Test & Score** for predictive modelling. Connect **SVM** or any other classifier to **Test & Score** as well (both on the left side). **Test & Score** will now compute performance scores for each learner on the input. Here we got quite impressive results with SVM. Now we can check, where the model made a mistake.
 
-Add **Confusion Matrix** to **Test & Score**. Confusion matrix displays correctly and incorrectly classified documents. *Select Misclassified* will output misclassified documents, which we can further inspect with [Corpus Viewer](../corpusviewer/).
+Add **Confusion Matrix** to **Test & Score**. Confusion matrix displays correctly and incorrectly classified documents. *Select Misclassified* will output misclassified documents, which we can further inspect with [Corpus Viewer](/widget-catalog/text-mining/corpusviewer).

@@ -9,13 +9,13 @@ Compute aggregations over a sliding window, consecutive blocks or time periods o
 
 **Inputs**
 
-- Time series: Time series (e.g. one provided by [As Timeseries](../as_timeseries/) widget).
+- Time series: Time series (e.g. one provided by [As Timeseries](/widget-catalog/time-series/as_timeseries) widget).
 
 **Outputs**
 
 - Time series: Data with computed aggregations
 
-![](../images/moving-transform.png)
+![](/widget-catalog/time-series/images/moving-transform.png)
 
 1. Define the method for forming blocks of data:
    - *Sliding window*: use a sliding window of the specified width. The function is often used for smoothing the data.
@@ -53,14 +53,14 @@ Compute aggregations over a sliding window, consecutive blocks or time periods o
 Examples
 --------
 
-A simple use case for **Moving Transform** is applying a smoothing function over the timeseries. We used the [Yahoo Finance](yahoo_finance.md) to retrieve the daily stock value for Amazon (AMZN) and passed the data to Moving Transform. To get a 5-day moving average, we used a rolling window with *mean* aggregation. In [Line Chart](../line_chart/), we can see the initial (blue) values of *High* variable are now smoothed (red line).
+A simple use case for **Moving Transform** is applying a smoothing function over the timeseries. We used the [Yahoo Finance](yahoo_finance.md) to retrieve the daily stock value for Amazon (AMZN) and passed the data to Moving Transform. To get a 5-day moving average, we used a rolling window with *mean* aggregation. In [Line Chart](/widget-catalog/time-series/line_chart), we can see the initial (blue) values of *High* variable are now smoothed (red line).
 
-![](../images/Moving-Transform-Example1.png)
+![](/widget-catalog/time-series/images/Moving-Transform-Example1.png)
 
-Another way of using Moving Transform is to aggregated the data by a given period. Let's say we wish to observe the yearly averages for the *Cyber security breaches* data from the [Datasets](https://orangedatamining.com/widget-catalog/data/datasets/) widget. We set *breach_start* as our time variable in [As Timeseries](../as_timeseries/). In Moving Transform, we aggregated by years, and used mode for *US State* and *Type of Breach* variables and sum for the *Individuals Affected* variable. In the [Data Table](https://orangedatamining.com/widget-catalog/data/datatable/) we see the aggregated data. There are 14 instances, each representing a single year.
+Another way of using Moving Transform is to aggregated the data by a given period. Let's say we wish to observe the yearly averages for the *Cyber security breaches* data from the [Datasets](https://orangedatamining.com/widget-catalog/data/datasets/) widget. We set *breach_start* as our time variable in [As Timeseries](/widget-catalog/time-series/as_timeseries). In Moving Transform, we aggregated by years, and used mode for *US State* and *Type of Breach* variables and sum for the *Individuals Affected* variable. In the [Data Table](https://orangedatamining.com/widget-catalog/data/datatable/) we see the aggregated data. There are 14 instances, each representing a single year.
 
-![](../images/Moving-Transform-Example2.png)
+![](/widget-catalog/time-series/images/Moving-Transform-Example2.png)
 
 #### See also
 
-[Seasonal Adjustment](../seasonal_adjustment/)
+[Seasonal Adjustment](/widget-catalog/time-series/seasonal_adjustment)

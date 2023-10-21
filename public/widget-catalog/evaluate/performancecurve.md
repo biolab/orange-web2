@@ -23,7 +23,7 @@ The **Performance Curve** shows the curves for analysing the proportion of true 
 
 **Precision-recall curve** shows the ratio between precision (ratio of true positives in positive predictions) and recall (ratio of true positives in positive class) at different thresholds. Ideally one aims at a high area under the curve.
 
-![](../images/PerformanceCurve.png)
+![](/widget-catalog/evaluate/images/PerformanceCurve.png)
 
 1. Choose the desired *Target class*. The default is chosen alphabetically. Choose whether to observe lift curve, cumulative gains or precision-recall.
 2. If test results contain more than one classifier, the user can choose which curves she or he wants to see plotted. Click on a classifier to select or deselect the curve.
@@ -34,16 +34,16 @@ The **Performance Curve** shows the curves for analysing the proportion of true 
 Examples
 --------
 
-The widgets that provide the right type of the signal needed by the **Performance Curve** (evaluation data) are [Test and Score](../../evaluate/testandscore/) and [Predictions](../../evaluate/predictions/).
+The widgets that provide the right type of the signal needed by the **Performance Curve** (evaluation data) are [Test and Score](/widget-catalog/evaluate/../evaluate/testandscore) and [Predictions](/widget-catalog/evaluate/../evaluate/predictions).
 
-In the first example, we observe the lift curve and cumulative gain for the *iris* data, where the classification goal is to predict the type of iris based on the measurements of the flower. We run [Logistic Regression](../model/logisticregression.md) and [Random Forest](../model/randomforest.md) in the [Test and Score](../../evaluate/testandscore/) widget and send the results to **Performance Curve** to see their performance against a random model. Of the two algorithms tested, logistic regression outperforms the random forest. The curve tells us that by picking the first 34% of irises as ranked by the model and setting the probability threshold at 0.276, we are going to retain a perfect lift.
+In the first example, we observe the lift curve and cumulative gain for the *iris* data, where the classification goal is to predict the type of iris based on the measurements of the flower. We run [Logistic Regression](../model/logisticregression.md) and [Random Forest](../model/randomforest.md) in the [Test and Score](/widget-catalog/evaluate/../evaluate/testandscore) widget and send the results to **Performance Curve** to see their performance against a random model. Of the two algorithms tested, logistic regression outperforms the random forest. The curve tells us that by picking the first 34% of irises as ranked by the model and setting the probability threshold at 0.276, we are going to retain a perfect lift.
 
-![](../images/PerformanceCurve-Example1.png)
+![](/widget-catalog/evaluate/images/PerformanceCurve-Example1.png)
 
 In the second example, we show how to calibrate a model in the **Performance Curve** widget. We are using the *heart-disease* data. First, the widget requires a single model on the input. This means cross-validation from Test and Score won't work, but there are as many models as there are folds. To pass a single model, use the *Test on test data* option.
 
 In Performance Curve, we then observe the curve for the positive (1) class. The model has the optimal balance between precision and recall at the probability threshold of 0.475. We select this threshold and the model with the given threshold is sent to the output.
 
-We can use this model in [Predictions](../../evaluate/predictions/) to predict on new data with the calibrated model. See also [Calibrated Learner](../../model/calibratedlearner/) for more calibration options.
+We can use this model in [Predictions](/widget-catalog/evaluate/../evaluate/predictions) to predict on new data with the calibrated model. See also [Calibrated Learner](/widget-catalog/evaluate/../model/calibratedlearner) for more calibration options.
 
-![](../images/PerformanceCurve-Example2.png)
+![](/widget-catalog/evaluate/images/PerformanceCurve-Example2.png)

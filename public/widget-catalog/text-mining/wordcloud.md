@@ -15,12 +15,12 @@ Generates a word cloud from corpus.
 **Outputs**
 
 - Corpus: Documents that match the selection.
-- Selected Word: Selected word that can be used as query in [Concordance](../concordance/).
+- Selected Word: Selected word that can be used as query in [Concordance](/widget-catalog/text-mining/concordance).
 - Word Counts: Words and their weights.
 
 **Word Cloud** displays tokens in the corpus, their size denoting the frequency of the word in corpus or an average bag of words count, when bag of words features are at the input of the widget. Words are listed by their frequency (weight) in the widget. The widget outputs documents, containing selected tokens from the word cloud.
 
-![](../images/Word-Cloud-stamped.png)
+![](/widget-catalog/text-mining/images/Word-Cloud-stamped.png)
 
 1. Information on the input.
    - number of words (tokens) in a topic
@@ -37,8 +37,8 @@ Example
 
 **Word Cloud** is an excellent widget for displaying the current state of the corpus and for monitoring the effects of preprocessing.
 
-Use [Corpus](corpus-widget.md) to load the data. Connect [Preprocess Text](../preprocesstext/) to it and set your parameters. We've used defaults here, just to see the difference between the default preprocessing in the **Word Cloud** widget and the **Preprocess Text** widget.
+Use [Corpus](corpus-widget.md) to load the data. Connect [Preprocess Text](/widget-catalog/text-mining/preprocesstext) to it and set your parameters. We've used defaults here, just to see the difference between the default preprocessing in the **Word Cloud** widget and the **Preprocess Text** widget.
 
-![](../images/Word-Cloud-Example.png)
+![](/widget-catalog/text-mining/images/Word-Cloud-Example.png)
 
 We can see from the two widgets, that **Preprocess Text** displays only words, while default preprocessing in the **Word Cloud** tokenizes by word and punctuation.

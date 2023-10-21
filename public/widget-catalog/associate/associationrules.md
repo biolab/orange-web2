@@ -17,7 +17,7 @@ Induction of association rules.
 
 This widget implements FP-growth [frequent pattern mining](https://en.wikipedia.org/wiki/Association_rule_learning) algorithm [1] with bucketing optimization [2] for conditional databases of few items. For inducing classification rules, it generates rules for the entire itemset and skips the rules where the consequent does not match one of the class' values.
 
-![](../images/association-rules-stamped.png)
+![](/widget-catalog/associate/images/association-rules-stamped.png)
 
 1. Information on the data set.
 2. In *Find association rules* you can set criteria for rule induction:
@@ -47,7 +47,7 @@ Example
 
 Association Rules can be used directly with the [File](https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/data/file.html) widget.
 
-![](../images/association-rules-example1.png)
+![](/widget-catalog/associate/images/association-rules-example1.png)
 
 References and further reading
 ------------------------------

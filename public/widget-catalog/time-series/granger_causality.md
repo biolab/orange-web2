@@ -9,11 +9,11 @@ Test if one time series Granger-causes (i.e. can be an indicator of) another tim
 
 **Inputs**
 
-- Time series: Time series as output by [As Timeseries](../as_timeseries/) widget.
+- Time series: Time series as output by [As Timeseries](/widget-catalog/time-series/as_timeseries) widget.
 
 This widgets performs a series of statistical tests to determine the series that cause other series so we can use the former to forecast the latter.
 
-![](../images/granger-causality-stamped.png)
+![](/widget-catalog/time-series/images/granger-causality-stamped.png)
 
 1. Desired level of confidence.
 2. Maximum lag to test to.
@@ -22,4 +22,4 @@ This widgets performs a series of statistical tests to determine the series that
 5. The causing (antecedent) series.
 6. The effect (consequent) series.
 
-The time series that Granger-cause the series you are interested in are good candidates to have in the same [VAR](../var/) model. But careful, even if one series is said to Granger-cause another, this doesn't mean there really exists a causal relationship. Mind your conclusions.
+The time series that Granger-cause the series you are interested in are good candidates to have in the same [VAR](/widget-catalog/time-series/var) model. But careful, even if one series is said to Granger-cause another, this doesn't mean there really exists a causal relationship. Mind your conclusions.

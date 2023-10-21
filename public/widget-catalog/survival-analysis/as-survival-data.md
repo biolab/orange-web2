@@ -22,4 +22,4 @@ The available survival datasets in Orange already have correctly defined Time an
 
 In the example bellow, we use one of the survival datasets already available in Orange, the METABRIC dataset, which offers two clinical endpoints to choose from: OS and RFS. We load the dataset using [Datasets](https://orangedatamining.com/widget-catalog/data/datasets/) and simply connect the widget output to **As Survival**. We can then select either Overall Survival Time/Overall Survival or Relapse-Free Survival Time/Relapse-Free Survival as our designated target variables. We use [Data Table](https://orangedatamining.com/widget-catalog/data/datatable/) to inspect the data.
 
-![](../images/AsSurvival-Example.png)
+![](/widget-catalog/survival-analysis/images/AsSurvival-Example.png)

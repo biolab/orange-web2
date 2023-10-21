@@ -20,12 +20,12 @@ Visually explore series of spectra with no spatial information.
 The **Spectra** widget allows visual exploration of multiple spectra.
 To output some spectra, select them by clicking.
 For multiple selection, hold the modifier key (Ctrl or Cmd) or use
-line selection (see the [plot options menu](../../#PlotOptions)). Selected spectra
+line selection (see the [plot options menu](/widget-catalog/spectroscopy/#PlotOptions)). Selected spectra
 will appear dashed.
 
-![](../images/Spectra-stamped.png)
+![](/widget-catalog/spectroscopy/images/Spectra-stamped.png)
 
-1. Open the [plot options menu](../../#PlotOptions)
+1. Open the [plot options menu](/widget-catalog/spectroscopy/#PlotOptions)
 2. A spectrum
 3. The X and Y position of the cursor
 4. The legend (appears only is spectra are colored)
@@ -69,4 +69,4 @@ Now, let's say I am interested in those spectra, that are quite separated from t
 
 I can observe the selection in another **Spectra** widget or use it for further analysis.
 
-![](../images/Spectra-Example1.png)
+![](/widget-catalog/spectroscopy/images/Spectra-Example1.png)

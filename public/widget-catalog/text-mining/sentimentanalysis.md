@@ -17,7 +17,7 @@ Predict sentiment from text.
 
 **Sentiment Analysis** predicts sentiment for each document in a corpus. It uses Liu & Hu and Vader sentiment modules from [NLTK](http://www.nltk.org/api/nltk.sentiment.html), multilingual sentiment lexicons from the [Data Science Lab](https://sites.google.com/site/datascienceslab/projects/multilingualsentiment), [SentiArt](https://www.frontiersin.org/articles/10.3389/frobt.2019.00053/full) from Arthur Jacobs, and [LiLaH sentiment](http://hdl.handle.net/11356/1318) from Walter Daelemans et al. All of them are lexicon-based. For Liu & Hu, you can choose English or Slovenian version. Vader works only on English. Multilingual sentiment supports several languages, which are listed at the bottom of this page. SentiArt works on English and German. LiLaH sentiment supports Slovenian, Croatian, and Dutch. Custom dictionary enables one to upload custom positive and negative sentiment dictionaries. Custom files should be plain text files (.txt) with each word in its own line.
 
-![](../images/SentimentAnalysis-stamped.png)
+![](/widget-catalog/text-mining/images/SentimentAnalysis-stamped.png)
 
 1. *Liu Hu*: lexicon-based sentiment analysis (supports English and Slovenian). The final score is the difference between the sum of positive and sum of negative words, normalized by the length of the document and multiplied by a 100. The final score reflects the percentage of sentiment difference in the document.
 2. *Vader*: lexicon- and rule-based sentiment analysis
@@ -30,29 +30,29 @@ Predict sentiment from text.
 Example
 -------
 
-*Sentiment Analysis* can be used for constructing additional features with sentiment prediction from corpus. First, we load *Election-2016-tweets.tab* in [Corpus](../corpus-widget/). Then we connect **Corpus** to **Sentiment Analysis**. The widget will append 4 new features for Vader method: positive score, negative score, neutral score and compound (combined score).
+*Sentiment Analysis* can be used for constructing additional features with sentiment prediction from corpus. First, we load *Election-2016-tweets.tab* in [Corpus](/widget-catalog/text-mining/corpus-widget). Then we connect **Corpus** to **Sentiment Analysis**. The widget will append 4 new features for Vader method: positive score, negative score, neutral score and compound (combined score).
 
 We can observe new features in a **Data Table**, where we sorted the *compound* by score. Compound represents the total sentiment of a tweet, where -1 is the most negative and 1 the most positive.
 
-![](../images/Sentiment-DataTable.png)
+![](/widget-catalog/text-mining/images/Sentiment-DataTable.png)
 
 Now let us visualize the data. We have some features we are currently not interested in, so we will remove them with **Select Columns**.
 
-![](../images/Sentiment-SelectColumns.png)
+![](/widget-catalog/text-mining/images/Sentiment-SelectColumns.png)
 
 Then we will make our corpus a little smaller, so it will be easier to visualize. Pass the data to **Data Sampler** and retain a random 10% of the tweets.
 
-![](../images/Sentiment-DataSampler.png)
+![](/widget-catalog/text-mining/images/Sentiment-DataSampler.png)
 
 Now pass the filtered corpus to **Heat Map**. Use *Merge by k-means* to merge tweets with the same polarity into one line. Then use *Cluster* by *rows* to create a clustered visualization where similar tweets are grouped together. Click on a cluster to select a group of tweets - we selected the negative cluster.
 
-![](../images/Sentiment-HeatMap.png)
+![](/widget-catalog/text-mining/images/Sentiment-HeatMap.png)
 
-To observe the selected subset, pass the tweets to [Corpus Viewer](../corpusviewer/).
+To observe the selected subset, pass the tweets to [Corpus Viewer](/widget-catalog/text-mining/corpusviewer).
 
-![](../images/Sentiment-CorpusViewer.png)
+![](/widget-catalog/text-mining/images/Sentiment-CorpusViewer.png)
 
-![](../images/Sentiment-workflow.png)
+![](/widget-catalog/text-mining/images/Sentiment-workflow.png)
 
 References
 ----------

@@ -13,7 +13,7 @@ Generate time series from Yahoo Finance stock market data.
 
 This widget fetches historical stock market data from Yahoo Finance and outputs it as a time series data table.
 
-![](../images/yahoo-finance-stamped.png)
+![](/widget-catalog/time-series/images/yahoo-finance-stamped.png)
 
 1. Stock (e.g. GOOG) or index (e.g. DJI) symbol you are interested in.
 2. Date range you are interested in.
@@ -24,4 +24,4 @@ Example
 
 Since the output data type is inherently a **Table**, you can connect it to wherever a data table is expected. Naturally, you can use it to test some functions in the Timeseries add-on.
 
-![](../images/yahoo-finance-ex1.png)
+![](/widget-catalog/time-series/images/yahoo-finance-ex1.png)

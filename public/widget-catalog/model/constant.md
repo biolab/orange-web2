@@ -19,13 +19,13 @@ Predict the most frequent class or mean value from the training set.
 
 This learner produces a model that always predicts the[majority](https://en.wikipedia.org/wiki/Predictive_modelling#Majority_classifier) for classification tasks and [mean value](https://en.wikipedia.org/wiki/Mean) for regression tasks.
 
-For classification, when predicting the class value with [Predictions](../../evaluate/predictions/), the widget will return relative frequencies of the classes in the training set. When there are two or more majority classes, the classifier chooses the predicted class randomly, but always returns the same class for a particular example.
+For classification, when predicting the class value with [Predictions](/widget-catalog/model/../evaluate/predictions), the widget will return relative frequencies of the classes in the training set. When there are two or more majority classes, the classifier chooses the predicted class randomly, but always returns the same class for a particular example.
 
 For regression, it *learns* the mean of the class variable and returns a predictor with the same mean value.
 
 The widget is typically used as a baseline for other models.
 
-![](../images/Constant-stamped.png)
+![](/widget-catalog/model/images/Constant-stamped.png)
 
 This widget provides the user with two options:
 
@@ -42,10 +42,10 @@ Constant does not use any preprocessing.
 Examples
 --------
 
-In a typical classification example, we would use this widget to compare the scores of other learning algorithms (such as kNN) with the default scores. Use *iris* dataset and connect it to [Test & Score](../evaluate/testandscore.md). Then connect **Constant** and [kNN](../../model/knn/) to [Test & Score](../evaluate/testandscore.md) and observe how well [kNN](../../model/knn/) performs against a constant baseline.
+In a typical classification example, we would use this widget to compare the scores of other learning algorithms (such as kNN) with the default scores. Use *iris* dataset and connect it to [Test & Score](../evaluate/testandscore.md). Then connect **Constant** and [kNN](/widget-catalog/model/../model/knn) to [Test & Score](../evaluate/testandscore.md) and observe how well [kNN](/widget-catalog/model/../model/knn) performs against a constant baseline.
 
-![](../images/Constant-classification.png)
+![](/widget-catalog/model/images/Constant-classification.png)
 
-For regression, we use **Constant** to construct a predictor in [Predictions](../../evaluate/predictions/). We used the *housing* dataset. In **Predictions**, you can see that *Mean Learner* returns one (mean) value for all instances.
+For regression, we use **Constant** to construct a predictor in [Predictions](/widget-catalog/model/../evaluate/predictions). We used the *housing* dataset. In **Predictions**, you can see that *Mean Learner* returns one (mean) value for all instances.
 
-![](../images/Constant-regression.png)
+![](/widget-catalog/model/images/Constant-regression.png)

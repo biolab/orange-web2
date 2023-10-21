@@ -18,7 +18,7 @@ Scores documents based on word appearance.
 
 **Score Document** assigns scores to each document based on words at the input. The score with the selected scoring method is calculated for each word and aggregated together with the selected aggregation function on the document level.
 
-![](../images/Score-Documents.png)
+![](/widget-catalog/text-mining/images/Score-Documents.png)
 
 1. Select one or more scoring methods for words:
    - **Word frequency**: The count of the frequency of a word in the text.  
@@ -38,12 +38,12 @@ Scores documents based on word appearance.
 Example
 -------
 
-Score Documents is used to find documents that are semantically similar to the input word list. In the example below, we are using the *book-excerpts* corpus from the [Corpus](../corpus-widget/) widget.
+Score Documents is used to find documents that are semantically similar to the input word list. In the example below, we are using the *book-excerpts* corpus from the [Corpus](/widget-catalog/text-mining/corpus-widget) widget.
 
-We pass the corpus to [Preprocess Text](../preprocesstext/), where we lowercase the text, split it into words with tokenization, use Lemmagen lemmatizer to cover tokens to their base form and finally remove stopwords.
+We pass the corpus to [Preprocess Text](/widget-catalog/text-mining/preprocesstext), where we lowercase the text, split it into words with tokenization, use Lemmagen lemmatizer to cover tokens to their base form and finally remove stopwords.
 
-Next, we find characteristic words with [Extract Keywords](keywords.md) widget and send these words to [Word List](../wordlist/). There, we add some of our own words, such as princess, prince, king and queen.
+Next, we find characteristic words with [Extract Keywords](keywords.md) widget and send these words to [Word List](/widget-catalog/text-mining/wordlist). There, we add some of our own words, such as princess, prince, king and queen.
 
 Finally, we pass the preprocess corpus from Preprocess Text to Score Documents and the word list from Word List widget. Score Documents scores each document based on how frequently the input words appear in it.
 
-![](../images/Score-Documents-Example.png)
+![](/widget-catalog/text-mining/images/Score-Documents-Example.png)

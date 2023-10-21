@@ -18,7 +18,7 @@ Preprocesses data with selected methods.
 
 Preprocessing is crucial for achieving better-quality analysis results. The **Preprocess** widget offers several preprocessing methods that can be combined in a single preprocessing pipeline. Some methods are available as separate widgets, which offer advanced techniques and greater parameter tuning.
 
-![](../images/preprocess-stamped.png)
+![](/widget-catalog/transform/images/preprocess-stamped.png)
 
 1. List of preprocessors. Double click the preprocessors you wish to use and shuffle their order by dragging them up or down. You can also add preprocessors by dragging them from the left menu to the right.
 2. Preprocessing pipeline.
@@ -27,7 +27,7 @@ Preprocessing is crucial for achieving better-quality analysis results. The **Pr
 Preprocessors
 -------------
 
-![](../images/Preprocess1.png)
+![](/widget-catalog/transform/images/Preprocess1.png)
 
 1. List of preprocessors.
 2. Discretization of continuous values:
@@ -51,12 +51,12 @@ Preprocessors
    - *Strategy* refers to how many variables should be on the output. *Fixed* returns a fixed number of top scored variables, while *Percentile* return the selected top percent of the features.
 6. *Select random features* outputs either a fixed number of features from the original data or a percentage. This is mainly used for advanced testing and educational purposes.
 
-![](../images/Preprocess2.png)
+![](/widget-catalog/transform/images/Preprocess2.png)
 
 1. Normalize adjusts values to a common scale. Center values by mean or median or omit centering altogether. Similar for scaling, one can scale by SD (standard deviation), by span or not at all.
 2. Randomize instances. Randomize classes shuffles class values and destroys connection between instances and class. Similarly, one can randomize features or meta data. If replicable shuffling is on, randomization results can be shared and repeated with a saved workflow. This is mainly used for advanced testing and educational purposes.
 3. *Remove sparse features* retains features that have more than a number/percentage of non-zero/missing values. The rest are discarded.
-4. Principal component analysis outputs results of a PCA transformation. Similar to the [PCA](../../unsupervised/PCA/) widget.
+4. Principal component analysis outputs results of a PCA transformation. Similar to the [PCA](/widget-catalog/transform/../unsupervised/PCA) widget.
 5. [CUR matrix decomposition](https://en.wikipedia.org/wiki/CUR_matrix_approximation) is a dimensionality reduction method, similar to SVD.
 
 Preprocessing for predictive modeling
@@ -66,29 +66,29 @@ When building predictive models, one has to be careful about how to do preproces
 
 1. Connect **Preprocess** to the learner. This will override the default preprocessing pipeline for the learner and apply only custom preprocessing pipeline (default preprocessing steps are described in each learner's documentation).
 
-   ![](../images/Preprocess-Models1.png)
+   ![](/widget-catalog/transform/images/Preprocess-Models1.png)
 
 2. Connect **Preprocess** to Test and Score. This will apply the preprocessors to each batch within cross-validation. Then the learner's preprocessors will be applied to the preprocessed subset.
 
-   ![](../images/Preprocess-Models2.png)
+   ![](/widget-catalog/transform/images/Preprocess-Models2.png)
 
 Finally, there's a wrong way to do it. Connecting **Preprocess** directly to the original data and outputting preprocessed data set will likely overfit the model. Don't do it.
 
-   ![](../images/Preprocess-Models3.png)
+   ![](/widget-catalog/transform/images/Preprocess-Models3.png)
 
 Examples
 --------
 
-In the first example, we have used the *heart_disease.tab* dataset available in the dropdown menu of the [File](../../data/file/) widget. then we used **Preprocess** to impute missing values and normalize features. We can observe the changes in the [Data Table](../../data/datatable/) and compare it to the non-processed data.
+In the first example, we have used the *heart_disease.tab* dataset available in the dropdown menu of the [File](/widget-catalog/transform/../data/file) widget. then we used **Preprocess** to impute missing values and normalize features. We can observe the changes in the [Data Table](/widget-catalog/transform/../data/datatable) and compare it to the non-processed data.
 
-![](../images/Preprocess-Example1.png)
+![](/widget-catalog/transform/images/Preprocess-Example1.png)
 
 In the second example, we show how to use **Preprocess** for predictive modeling.
 
-This time we are using the *heart_disease.tab* data from the [File](../../data/file/) widget. You can access the data in the dropdown menu. This is a dataset with 303 patients that came to the doctor suffering from a chest pain. After the tests were done, some patients were found to have diameter narrowing and others did not (this is our class variable).
+This time we are using the *heart_disease.tab* data from the [File](/widget-catalog/transform/../data/file) widget. You can access the data in the dropdown menu. This is a dataset with 303 patients that came to the doctor suffering from a chest pain. After the tests were done, some patients were found to have diameter narrowing and others did not (this is our class variable).
 
-Some values are missing in our data set, so we would like to impute missing values before evaluating the model. We do this by passing a preprocessor directly to [Test and Score](../../evaluate/testandscore/). In **Preprocess**, we set the correct preprocessing pipeline (in our example only a single preprocessor with *Impute missing values*), then connect it to the Preprocessor input of Test and Score.
+Some values are missing in our data set, so we would like to impute missing values before evaluating the model. We do this by passing a preprocessor directly to [Test and Score](/widget-catalog/transform/../evaluate/testandscore). In **Preprocess**, we set the correct preprocessing pipeline (in our example only a single preprocessor with *Impute missing values*), then connect it to the Preprocessor input of Test and Score.
 
-We also pass the data and the learner (in this case, a [Logistic Regression](../../model/logisticregression/)). This is the correct way to pass a preprocessor to cross-validation as each fold will independently get preprocessed in the training phase. This is particularly important for feature selection.
+We also pass the data and the learner (in this case, a [Logistic Regression](/widget-catalog/transform/../model/logisticregression)). This is the correct way to pass a preprocessor to cross-validation as each fold will independently get preprocessed in the training phase. This is particularly important for feature selection.
 
-![](../images/Preprocess-Example2.png)
+![](/widget-catalog/transform/images/Preprocess-Example2.png)

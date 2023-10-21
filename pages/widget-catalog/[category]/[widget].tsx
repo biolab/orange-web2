@@ -23,27 +23,6 @@ export interface Widget {
   url: string;
 }
 
-function addRelativePathToImages(
-  content: string,
-  imgRelativePath: string
-): string {
-  if (!imgRelativePath || !content) {
-    return content;
-  }
-
-  // Widgets specific fix
-  // some images have source ![](../../data/images/Preprocess-Models1.png)
-  const replacedImagesInDifferentFolder = content.replaceAll(
-    "../../",
-    "/widget-catalog/"
-  );
-
-  return replacedImagesInDifferentFolder.replaceAll(
-    "../images",
-    imgRelativePath
-  );
-}
-
 export async function getStaticPaths() {
   const paths = widgetCatalog.flatMap(([_, widgets]: any) =>
     widgets
@@ -71,14 +50,7 @@ export async function getStaticProps({ params }: any) {
   const mdFile = path.join(dir, `${params.widget}.md`);
   const fileContents = fs.readFileSync(mdFile, "utf8");
 
-  const { content } = matter(
-    addRelativePathToImages(
-      fileContents,
-      path.join("/widget-catalog", params.category, "images")
-    )
-  );
-
-  console.log(content);
+  const { content } = matter(fileContents);
 
   const mdxSource = await serialize(content, {
     mdxOptions: {

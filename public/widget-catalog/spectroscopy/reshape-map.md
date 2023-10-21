@@ -17,7 +17,7 @@ Builds or modifies the shape of the input dataset to create 2D maps from series 
 
 The **Reshape Map** widget transforms the input data to a map.
 
-![](../images/Reshape-Map-stamped.png)
+![](/widget-catalog/spectroscopy/images/Reshape-Map-stamped.png)
 
 1. Map shape:
    - The X dimension.

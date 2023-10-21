@@ -17,7 +17,7 @@ Compute significant bigrams and trigrams.
 
 **Collocations** finds frequently co-occurring words in a corpus. It displays bigrams or trigrams by the score.
 
-![](../images/Collocations.png)
+![](/widget-catalog/text-mining/images/Collocations.png)
 
 1. Settings: observe bigrams (sets of two co-occurring words) or trigrams (sets of three co-occurring words). Set the frequency threshold (remove n-grams with frequency lower than the threshold).
 2. Scoring method:
@@ -38,9 +38,9 @@ Example
 
 **Collocations** is mostly intended for data exploration. Here, we show how to observe bigrams that occur more than five times in the corpus. Bigrams are computed using the Pointwise Mutual Information statistics.
 
-We use the *grimm-tales-selected* data in the [Corpus](../corpus-widget/) and send the data to Collocations.
+We use the *grimm-tales-selected* data in the [Corpus](/widget-catalog/text-mining/corpus-widget) and send the data to Collocations.
 
-![](../images/Collocations-Example.png)
+![](/widget-catalog/text-mining/images/Collocations-Example.png)
 
 References
 ----------

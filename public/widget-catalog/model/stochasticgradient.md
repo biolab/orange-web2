@@ -19,7 +19,7 @@ Minimize an objective function using a stochastic approximation of gradient desc
 
 The **Stochastic Gradient Descent** widget uses [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function. For regression, it returns predictors as minimizers of the sum, i.e. M-estimators, and is especially useful for large-scale and sparse datasets.
 
-![](../images/StochasticGradientDescent-stamped.png)
+![](/widget-catalog/model/images/StochasticGradientDescent-stamped.png)
 
 1. Specify the name of the model. The default name is "SGD".
 2. Algorithm parameters:
@@ -69,20 +69,20 @@ SGD uses default preprocessing when no other preprocessors are given. It execute
 - imputes missing values with mean values
 - normalizes the data by centering to mean and scaling to standard deviation of 1
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Feature Scoring
 ---------------
 
-Stochastic Gradient Descent can be used with Rank for feature scoring. See [Learners as Scorers](../../../learners-as-scorers/index/) for an example.
+Stochastic Gradient Descent can be used with Rank for feature scoring. See [Learners as Scorers](/widget-catalog/model/../../learners-as-scorers/index) for an example.
 
 Examples
 --------
 
-For the classification task, we will use *iris* dataset and test two models on it. We connected [Stochastic Gradient Descent](../model/stochasticgradient.md) and [Tree](../model/tree.md) to [Test & Score](../evaluate/testandscore.md). We also connected [File](../../data/file/) to **Test & Score** and observed model performance in the widget.
+For the classification task, we will use *iris* dataset and test two models on it. We connected [Stochastic Gradient Descent](../model/stochasticgradient.md) and [Tree](../model/tree.md) to [Test & Score](../evaluate/testandscore.md). We also connected [File](/widget-catalog/model/../data/file) to **Test & Score** and observed model performance in the widget.
 
-![](../images/StochasticGradientDescent-classification.png)
+![](/widget-catalog/model/images/StochasticGradientDescent-classification.png)
 
-For the regression task, we will compare three different models to see which predict what kind of results. For the purpose of this example, the *housing* dataset is used. We connect the [File](../../data/file/) widget to **Stochastic Gradient Descent**, [Linear Regression](../model/linearregression.md) and [kNN](../model/knn.md) widget and all four to the [Predictions](../../evaluate/predictions/) widget.
+For the regression task, we will compare three different models to see which predict what kind of results. For the purpose of this example, the *housing* dataset is used. We connect the [File](/widget-catalog/model/../data/file) widget to **Stochastic Gradient Descent**, [Linear Regression](../model/linearregression.md) and [kNN](../model/knn.md) widget and all four to the [Predictions](/widget-catalog/model/../evaluate/predictions) widget.
 
-![](../images/StochasticGradientDescent-regression.png)
+![](/widget-catalog/model/images/StochasticGradientDescent-regression.png)

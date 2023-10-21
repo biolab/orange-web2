@@ -18,7 +18,7 @@ Interpolate spectra.
 
 The **Interpolate** widget enables you to align datasets with different wavenumbers. It has automatic interpolation or you can provide the reference data set to align with.
 
-![](../images/Interpolate-stamped.png)
+![](/widget-catalog/spectroscopy/images/Interpolate-stamped.png)
 
 1. Enable automatic interpolation: creates a new domain, which consequently enables interpolation of values on test data.
 2. Linear interval:
@@ -36,7 +36,7 @@ Now we would like to test on a separate data set, which has different wavenumber
 
 Well, Orange couldn't find any similarity between the two datasets, since the wavenumbers differ. This is why we need to interpolate first, to align the two data sets to the same scale. I will insert the **Interpolate** widget between **File - Test** and **Test & Score**. I will also provide the **File - Train** as the reference data set and select this as an option in **Interpolate**. Now the results in **Test & Score** are much better.
 
-![](../../images/Interpolate-Example2.png)
+![](/widget-catalog/spectroscopy/images/Interpolate-Example2.png)
 
 The second use case is a tad more advanced. We will use **Interpolate** to determine how much granularity we can afford to lose in our measurement. Say we wish to perform a diagnostic much faster. Could we measure only every 10th wavenumber? Or every 50th?
 
@@ -44,4 +44,4 @@ We will use the *Liver spectroscopy* data from the **Datasets** widget. Connect 
 
 Now, set the delta to, say, 50 and observe how the AUC changes. Not much. Try setting the delta to 100 or 150. The AUC is still high, which means the classifier is stable even at such a low resolution. This is a nice way to determine how much granularity you can afford to lose to be still able to achieve a good separation between class values.
 
-![](../../images/Interpolate-Example2.png)
+![](/widget-catalog/spectroscopy/images/Interpolate-Example2.png)

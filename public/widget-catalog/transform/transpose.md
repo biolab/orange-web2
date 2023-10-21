@@ -17,11 +17,11 @@ Transposes a data table.
 
 **Transpose** widget transposes data table.
 
-![](../images/transpose-stamped.png)
+![](/widget-catalog/transform/images/transpose-stamped.png)
 
 Example
 -------
 
-This is a simple workflow showing how to use **Transpose**. Connect the widget to [File](../data/file.md) widget. The output of **Transpose** is a transposed data table with rows as columns and columns as rows. You can observe the result in a [Data Table](../../data/datatable/).
+This is a simple workflow showing how to use **Transpose**. Connect the widget to [File](../data/file.md) widget. The output of **Transpose** is a transposed data table with rows as columns and columns as rows. You can observe the result in a [Data Table](/widget-catalog/transform/../data/datatable).
 
-![](../images/transpose-example.png)
+![](/widget-catalog/transform/images/transpose-example.png)

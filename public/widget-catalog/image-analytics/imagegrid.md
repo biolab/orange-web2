@@ -19,7 +19,7 @@ Displays images in a similarity grid.
 
 The **Image Grid** widget can display images from a dataset in a similarity grid - images with similar content are placed closer to each other. It can be used for image comparison, while looking for similarities or discrepancies between selected data instances (e.g. bacterial growth or bitmap representations of handwriting).
 
-![](../images/ImageGrid-stamped.png)
+![](/widget-catalog/image-analytics/images/ImageGrid-stamped.png)
 
 1. *Image Filename Attribute*: Attribute containing paths to images.
 2. *Image cell fit*: Resize scales the images to grid, while Crop crops them to squares.
@@ -33,8 +33,8 @@ Example
 
 **Image Grid** can be used to visualize similarity of images in a 2D projection. We have used 5 images of fruits and vegetables, namely orange, banana, strawberry, broccoli and cauliflower.
 
-We loaded the images with [Import Images](importimages.md) and embedded them with Inception v3 embedder in [Image Embedding](../imageembedding/).
+We loaded the images with [Import Images](importimages.md) and embedded them with Inception v3 embedder in [Image Embedding](/widget-catalog/image-analytics/imageembedding).
 
 Finally, we visualized the images in **Image Grid**. It is obvious that broccoli and cauliflower and much more alike than strawberry and banana.
 
-![](../images/ImageGrid-Example.png)
+![](/widget-catalog/image-analytics/images/ImageGrid-Example.png)

@@ -16,7 +16,7 @@ Read network graph file in Pajek format.
 
 The widget reads data in .net and .pajek formats. A complimentary .tab, .tsv or .csv data set can be provided for node information. Orange by default matches a file with the same name as .net file.
 
-![](../images/Network-File-stamped.png)
+![](/widget-catalog/networks/images/Network-File-stamped.png)
 
 1. Load network file. The widget construct a data table from the data whose filename matches the graph filename (i.e. *lastfm.net* and *lastfm.tab*) or, if no match is found, from the graph. A dropdown menu provides access to documentation data sets with *Browse documentation networks...*.
 2. The folder icon provides access to local data files.
@@ -27,6 +27,6 @@ The widget reads data in .net and .pajek formats. A complimentary .tab, .tsv or 
 Example
 -------
 
-We loaded the *lastfm.net* from documentation data set (dropdown → Browse documentation networks). The nicest way to observe network data is with the [Network Explorer](../networkexplorer/) widget. **Network File** widget automatically matched the corresponding data file (*lastfm.net* with *lastfm.tab*), so node attributes are available in the widget.
+We loaded the *lastfm.net* from documentation data set (dropdown → Browse documentation networks). The nicest way to observe network data is with the [Network Explorer](/widget-catalog/networks/networkexplorer) widget. **Network File** widget automatically matched the corresponding data file (*lastfm.net* with *lastfm.tab*), so node attributes are available in the widget.
 
-![](../images/network-file-example.png)
+![](/widget-catalog/networks/images/network-file-example.png)

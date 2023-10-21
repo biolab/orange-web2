@@ -19,7 +19,7 @@ Compute all pairwise attribute correlations.
 
 **Correlations** computes Pearson or Spearman correlation scores for all pairs of features in a dataset. These methods can only detect monotonic relationship.
 
-![](../images/Correlations-stamped.png)
+![](/widget-catalog/unsupervised/images/Correlations-stamped.png)
 
 1. Correlation measure:
    - Pairwise [Pearson](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) correlation.
@@ -31,10 +31,10 @@ Compute all pairwise attribute correlations.
 Example
 -------
 
-Correlations can be computed only for numeric (continuous) features, so we will use *housing* as an example data set. Load it in the [File](../file/) widget and connect it to **Correlations**. Positively correlated feature pairs will be at the top of the list and negatively correlated will be at the bottom.
+Correlations can be computed only for numeric (continuous) features, so we will use *housing* as an example data set. Load it in the [File](/widget-catalog/unsupervised/file) widget and connect it to **Correlations**. Positively correlated feature pairs will be at the top of the list and negatively correlated will be at the bottom.
 
-![](../images/Correlations-links.png)
+![](/widget-catalog/unsupervised/images/Correlations-links.png)
 
-Go to the most negatively correlated pair, DIS-NOX. Now connect [Scatter Plot](../../visualize/scatterplot/) to **Correlations** and set two outputs, Data to Data and Features to Features. Observe how the feature pair is immediately set in the scatter plot. Looks like the two features are indeed negatively correlated.
+Go to the most negatively correlated pair, DIS-NOX. Now connect [Scatter Plot](/widget-catalog/unsupervised/../visualize/scatterplot) to **Correlations** and set two outputs, Data to Data and Features to Features. Observe how the feature pair is immediately set in the scatter plot. Looks like the two features are indeed negatively correlated.
 
-![](../images/Correlations-Example.png)
+![](/widget-catalog/unsupervised/images/Correlations-Example.png)

@@ -19,7 +19,7 @@ A multi-layer perceptron (MLP) algorithm with backpropagation.
 
 The **Neural Network** widget uses sklearn's [Multi-layer Perceptron algorithm](http://scikit-learn.org/stable/modules/neural_networks_supervised.html) that can learn non-linear models as well as linear.
 
-![](../images/NeuralNetwork-stamped.png)
+![](/widget-catalog/model/images/NeuralNetwork-stamped.png)
 
 1. A name under which it will appear in other widgets. The default name is "Neural Network".
 2. Set model parameters:
@@ -51,15 +51,15 @@ Neural Network uses default preprocessing when no other preprocessors are given.
 - imputes missing values with mean values
 - normalizes the data by centering to mean and scaling to standard deviation of 1
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Examples
 --------
 
-The first example is a classification task on *iris* dataset. We compare the results of **Neural Network** with the [Logistic Regression](../../model/logisticregression/).
+The first example is a classification task on *iris* dataset. We compare the results of **Neural Network** with the [Logistic Regression](/widget-catalog/model/../model/logisticregression).
 
-![](../images/NN-Example-Test.png)
+![](/widget-catalog/model/images/NN-Example-Test.png)
 
-The second example is a prediction task, still using the *iris* data. This workflow shows how to use the *Learner* output. We input the **Neural Network** prediction model into [Predictions](../../evaluate/predictions/) and observe the predicted values.
+The second example is a prediction task, still using the *iris* data. This workflow shows how to use the *Learner* output. We input the **Neural Network** prediction model into [Predictions](/widget-catalog/model/../evaluate/predictions) and observe the predicted values.
 
-![](../images/NN-Example-Predict.png)
+![](/widget-catalog/model/images/NN-Example-Predict.png)

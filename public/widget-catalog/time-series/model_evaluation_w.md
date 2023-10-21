@@ -9,12 +9,12 @@ Evaluate different time series' models.
 
 **Inputs**
 
-- Time series: Time series as output by [As Timeseries](../as_timeseries/) widget.
-- Time series model(s): The time series model(s) to evaluate (e.g. [VAR](../var/) or [ARIMA](../arima/)).
+- Time series: Time series as output by [As Timeseries](/widget-catalog/time-series/as_timeseries) widget.
+- Time series model(s): The time series model(s) to evaluate (e.g. [VAR](/widget-catalog/time-series/var) or [ARIMA](/widget-catalog/time-series/arima)).
 
 Evaluate different time series' models. by comparing the errors they make in terms of: root mean squared error ([RMSE](https://en.wikipedia.org/wiki/Root-mean-square_deviation)), median absolute error ([MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)), mean absolute percent error ([MAPE](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)), prediction of change in direction (POCID), coefficient of determination ([R²](https://en.wikipedia.org/wiki/Coefficient_of_determination)), Akaike information criterion (AIC), and Bayesian information criterion (BIC).
 
-![](../images/model-evaluation-stamped.png)
+![](/widget-catalog/time-series/images/model-evaluation-stamped.png)
 
 1. Number of folds for time series cross-validation.
 2. Number of forecast steps to produce in each fold.
@@ -26,4 +26,4 @@ In-sample errors are the errors calculated on the training data itself. A stable
 
 ####See also
 
-[ARIMA Model](../arima/), [VAR Model](../var/)
+[ARIMA Model](/widget-catalog/time-series/arima), [VAR Model](/widget-catalog/time-series/var)

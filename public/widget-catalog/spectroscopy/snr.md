@@ -27,7 +27,7 @@ Use *Select axis: x* to select an axis that will act as the first element for yo
 
 Use *Select axis: y* to select an axis that will act as the second element for your coordinate system defined by a numeric meta.
 
-![](../images/snr_print.png)
+![](/widget-catalog/spectroscopy/images/snr_print.png)
 
 In the example above, the result will be:
 
@@ -39,7 +39,7 @@ ________________
 If you want to select only one axis:
 
 
-![](../images/snr_average_x.png)
+![](/widget-catalog/spectroscopy/images/snr_average_x.png)
 
 **output = Average(x)**
 
@@ -48,7 +48,7 @@ If you want to select only one axis:
  or
  
  
-![](../images/snr_std_y.png)
+![](/widget-catalog/spectroscopy/images/snr_std_y.png)
 
 **output = Standard Deviation(x)**
 

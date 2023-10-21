@@ -24,7 +24,7 @@ and displays a list of corresponding pathways. To explore the pathway,
 the user can click on any process from the list or arrange them by
 P-value to get the most relevant processes at the top.
 
-![](../images/kegg_pathways/KEGG-Pathways-stamped.png)
+![](/widget-catalog/bioinformatics/images/kegg_pathways/KEGG-Pathways-stamped.png)
 
 1.  Information on the input genes.
 2.  If you have a separate reference set in the input, tick *From
@@ -45,4 +45,4 @@ Example
 
 This simple example shows how to visualize interactions with **KEGG Pathways**. We have loaded the *Caffeine effect: time courses and dose response* (GDS2914) data with the **GEO Data Sets** widget. Then we have observed the pathways in **KEGG Pathways**. We have used reference from signal and selected *AGE-RAGE signaling pathway in diabetic complications*.
 
-![](../images/kegg_pathways/KEGG-Pathways-Example.png)
+![](/widget-catalog/bioinformatics/images/kegg_pathways/KEGG-Pathways-Example.png)

@@ -19,7 +19,7 @@ Displays one line per instance that shows how the instance’s prediction change
 
 The **ICE** (Individual Conditional Expectation) widget visualizes the dependence of the prediction on a feature for each instance separately, resulting in one line per instance, compared to one line overall in partial dependence plots.
 
-![](../images/ICE.png)
+![](/widget-catalog/explain/images/ICE.png)
 
 1. Select a target class.
 2. Select a feature.
@@ -40,4 +40,4 @@ In the following example, we use the ICE widget to explain a [Random Forest](htt
 
 By selecting some arbitrary lines, the selected instances of the input dataset appear on the output of the ICE widget.
 
-![](../images/ICE-example.png)
+![](/widget-catalog/explain/images/ICE-example.png)

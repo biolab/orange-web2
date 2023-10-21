@@ -18,7 +18,7 @@ A visualization of classification and regression trees.
 
 This is a versatile widget with 2-D visualization of [classification and regression trees](https://en.wikipedia.org/wiki/Decision_tree_learning). The user can select a node, instructing the widget to output the data associated with the node, thus enabling explorative data analysis.
 
-![](../images/TreeViewer-stamped.png)
+![](/widget-catalog/visualize/images/TreeViewer-stamped.png)
 
 1. Information on the input.
 2. Display options:
@@ -42,16 +42,16 @@ This is a versatile widget with 2-D visualization of [classification and regress
 Examples
 --------
 
-Below, is a simple classification schema, where we have read the data, constructed the decision tree and viewed it in our **Tree Viewer**. If both the viewer and [Tree](../../model/tree/) are open, any re-run of the tree induction algorithm will immediately affect the visualization. You can thus use this combination to explore how the parameters of the induction algorithm influence the structure of the resulting tree.
+Below, is a simple classification schema, where we have read the data, constructed the decision tree and viewed it in our **Tree Viewer**. If both the viewer and [Tree](/widget-catalog/visualize/../model/tree) are open, any re-run of the tree induction algorithm will immediately affect the visualization. You can thus use this combination to explore how the parameters of the induction algorithm influence the structure of the resulting tree.
 
-![](../images/TreeViewer-classification.png)
+![](/widget-catalog/visualize/images/TreeViewer-classification.png)
 
-Clicking on any node will output the related data instances. This is explored in the schema below that shows the subset in the data table and in the [Scatter Plot](../visualize/scatterplot.md). Make sure that the tree data is passed as a data subset; this can be done by connecting the **Scatter Plot** to the [File](../../data/file/) widget first, and connecting it to the **Tree Viewer** widget next. Selected data will be displayed as bold dots.
+Clicking on any node will output the related data instances. This is explored in the schema below that shows the subset in the data table and in the [Scatter Plot](../visualize/scatterplot.md). Make sure that the tree data is passed as a data subset; this can be done by connecting the **Scatter Plot** to the [File](/widget-catalog/visualize/../data/file) widget first, and connecting it to the **Tree Viewer** widget next. Selected data will be displayed as bold dots.
 
-**Tree Viewer** can also export labeled data. Connect [Data Table](../../data/datatable/) to **Tree Viewer** and set the link between widgets to *Data* instead of *Selected Data*. This will send the entire data to **Data Table** with an additional meta column labeling selected data instances (*Yes* for selected and *No* for the remaining).
+**Tree Viewer** can also export labeled data. Connect [Data Table](/widget-catalog/visualize/../data/datatable) to **Tree Viewer** and set the link between widgets to *Data* instead of *Selected Data*. This will send the entire data to **Data Table** with an additional meta column labeling selected data instances (*Yes* for selected and *No* for the remaining).
 
-![](../images/TreeViewer-selection.png)
+![](/widget-catalog/visualize/images/TreeViewer-selection.png)
 
-Finally, **Tree Viewer** can be used also for visualizing regression trees. Connect [Random Forest](../model/randomforest.md) to [File](../../data/file/) widget using *housing.tab* dataset. Then connect [Pythagorean Forest](../visualize/pythagoreanforest.md) to **Random Forest**. In **Pythagorean Forest** select a regression tree you wish to further analyze and pass it to the **Tree Viewer**. The widget will display the constructed tree. For visualizing larger trees, especially for regression, [Pythagorean Tree](../../visualize/pythagoreantree/) could be a better option.
+Finally, **Tree Viewer** can be used also for visualizing regression trees. Connect [Random Forest](../model/randomforest.md) to [File](/widget-catalog/visualize/../data/file) widget using *housing.tab* dataset. Then connect [Pythagorean Forest](../visualize/pythagoreanforest.md) to **Random Forest**. In **Pythagorean Forest** select a regression tree you wish to further analyze and pass it to the **Tree Viewer**. The widget will display the constructed tree. For visualizing larger trees, especially for regression, [Pythagorean Tree](/widget-catalog/visualize/../visualize/pythagoreantree) could be a better option.
 
-![](../images/TreeViewer-regression.png)
+![](/widget-catalog/visualize/images/TreeViewer-regression.png)

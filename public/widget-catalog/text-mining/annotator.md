@@ -25,7 +25,7 @@ and the value of the y-axis attribute determining the position on the vertical a
 Widget clusters documents according to annotation settings and assigns keywords to 
 each cluster. Keywords are extracted with the TF-IDF method.
 
-![](../images/Annotator.png)
+![](/widget-catalog/text-mining/images/Annotator.png)
 
 1. *Axis X* and *Axis Y* let you select attributes you will show in the widget.
    We suggest using the t-SNE widget before Annotator and selecting `t-SNE-x` 
@@ -77,10 +77,10 @@ identifies clusters on the map and annotates them with keywords representing a c
 
 We load the **Proposal to government** dataset from 
 [documents repository](https://file.biolab.si/text-semantics/data/proposals-to-government-1k/) 
-with the[Import Documents](importdocuments.md) widget. In the [Corpus](../corpus-widget/) widget, 
+with the[Import Documents](importdocuments.md) widget. In the [Corpus](/widget-catalog/text-mining/corpus-widget) widget, 
 we set variables used as text features and the title variable for display purposes.
 
-The [Document Embedding](../documentembedding/) widget embeds documents in the vector 
+The [Document Embedding](/widget-catalog/text-mining/documentembedding) widget embeds documents in the vector 
 space for the t-SNE widget to project them in two-dimensional space. 
 
 Annotated Corpus Map plots documents on the two-dimensional space. 
@@ -94,6 +94,6 @@ more focused on vehicles and registration. The yellow cluster includes documents
 related to work and students.
 
 We can select a subset of documents of interest and observe them in the 
-[Corpus Viewer](../corpusviewer/) widget connected to the output.
+[Corpus Viewer](/widget-catalog/text-mining/corpusviewer) widget connected to the output.
 
-![](../images/Annotator-Example.png)
+![](/widget-catalog/text-mining/images/Annotator-Example.png)
