@@ -16,7 +16,7 @@ The **File** widget [reads the input data file](https://docs.biolab.si/3/visual-
 
 The widget reads data from Excel (**.xlsx**), simple tab-delimited (**.txt**), comma-separated files (**.csv**) or URLs. For other formats see Other Formats section below.
 
-![](../images/File-stamped.png)
+![](/widget-catalog/data/images/File-stamped.png)
 
 1. Browse through previously opened data files, or load any of the sample ones.  
 2. Browse for a data file.
@@ -30,9 +30,9 @@ The widget reads data from Excel (**.xlsx**), simple tab-delimited (**.txt**), c
 Example
 -------
 
-Most Orange workflows would probably start with the **File** widget. In the schema below, the widget is used to read the data that is sent to both the [Data Table](../data/datatable.md) and the [Box Plot](../../visualize/boxplot/) widget.
+Most Orange workflows would probably start with the **File** widget. In the schema below, the widget is used to read the data that is sent to both the [Data Table](../data/datatable.md) and the [Box Plot](/widget-catalog/data/../visualize/boxplot) widget.
 
-![](../images/File-Workflow.png)
+![](/widget-catalog/data/images/File-Workflow.png)
 
 ### Loading your data
 
@@ -40,7 +40,7 @@ Most Orange workflows would probably start with the **File** widget. In the sche
 - To specify the domain and the type of the attribute, attribute names can be preceded with a label followed by a hash. Use c for class and m for meta attribute, i to ignore a column, and C, D, S for continuous, discrete and string attribute types. Examples: C#mpg, mS#name, i#dummy.
 - Orange's native format is a tab-delimited text file with three header rows. The first row contains attribute names, the second the type (*continuous*, *discrete* or *string*), and the third the optional element (*class*, *meta* or *time*).
 
-![](../images/spreadsheet-simple-head1.png)
+![](/widget-catalog/data/images/spreadsheet-simple-head1.png)
 
 Read more on loading your data [here](https://docs.biolab.si/3/visual-programming/loading-your-data/index.html).
 
@@ -48,8 +48,8 @@ Read more on loading your data [here](https://docs.biolab.si/3/visual-programmin
 
 Supported formats and the widgets to load them:
 
-- distance matrix: [Distance File](../../unsupervised/distancefile/)
-- predictive model: [Load Model](../../model/loadmodel/)
+- distance matrix: [Distance File](/widget-catalog/data/../unsupervised/distancefile)
+- predictive model: [Load Model](/widget-catalog/data/../model/loadmodel)
 - network: Network File from Network add-on
 - images: Import Images from Image Analytics add-on
 - text/corpus: Corpus or Import Documents from Text add-on

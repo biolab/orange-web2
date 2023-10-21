@@ -14,7 +14,7 @@ Alignment of multiple datasets with a diagram of correlation visualization.
 - Transformed Data: aligned data
 - Genes per n. Components
 
-![](../images/Align_Datasets-stamped.png)
+![](/widget-catalog/single-cell/images/Align_Datasets-stamped.png)
 
 1. Data source indicator
 2. Number of components for canonical correlation analysis.

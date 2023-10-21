@@ -19,11 +19,11 @@ Loads data from the New York Times' [Article Search API](https://developer.nytim
 
 To use the widget, you must enter [your own API key](https://developer.nytimes.com/signup).
 
-![](../images/NYTimes-stamped.png)
+![](/widget-catalog/text-mining/images/NYTimes-stamped.png)
 
 1. To begin your query, insert NY Times' Article Search API key. The key is securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won't be deleted when clearing widget settings.
 
-   ![](../images/NYT-API.png)
+   ![](/widget-catalog/text-mining/images/NYT-API.png)
 
 2. Set query parameters:
    - *Query*
@@ -36,10 +36,10 @@ To use the widget, you must enter [your own API key](https://developer.nytimes.c
 Example
 -------
 
-**NYTimes** is a data retrieving widget, similar to [Twitter](twitter-widget.md) and [Wikipedia](wikipedia-widget.md). As it can retrieve geolocations, that is geographical locations the article mentions, it is great in combination with [Document Map](../docmap/) widget.
+**NYTimes** is a data retrieving widget, similar to [Twitter](twitter-widget.md) and [Wikipedia](wikipedia-widget.md). As it can retrieve geolocations, that is geographical locations the article mentions, it is great in combination with [Document Map](/widget-catalog/text-mining/docmap) widget.
 
-![](../images/NYTimes-Example1.png)
+![](/widget-catalog/text-mining/images/NYTimes-Example1.png)
 
-First, let's query **NYTimes** for all articles on Slovenia. We can retrieve the articles found and view the results in [Corpus Viewer](../corpusviewer/). The widget displays all the retrieved features, but includes on selected features as text mining features.
+First, let's query **NYTimes** for all articles on Slovenia. We can retrieve the articles found and view the results in [Corpus Viewer](/widget-catalog/text-mining/corpusviewer). The widget displays all the retrieved features, but includes on selected features as text mining features.
 
-Now, let's inspect the distribution of geolocations from the articles mentioning Slovenia. We can do this with [Document Map](../docmap/). Unsurprisingly, Croatia and Hungary appear the most often in articles on Slovenia (discounting Slovenia itself), with the rest of Europe being mentioned very often as well.
+Now, let's inspect the distribution of geolocations from the articles mentioning Slovenia. We can do this with [Document Map](/widget-catalog/text-mining/docmap). Unsurprisingly, Croatia and Hungary appear the most often in articles on Slovenia (discounting Slovenia itself), with the rest of Europe being mentioned very often as well.

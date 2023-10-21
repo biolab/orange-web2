@@ -18,7 +18,7 @@ Show basic statistics for data features.
 
 The **Feature Statistics** widget provides a quick way to inspect and find interesting features in a given data set.
 
-![](../images/feature_statistics-stamped.png)
+![](/widget-catalog/data/images/feature_statistics-stamped.png)
 
 The Feature Statistics widget on the *heart-disease* data set.
 
@@ -31,14 +31,14 @@ The Feature Statistics widget on the *heart-disease* data set.
 Example
 -------
 
-The Feature Statistics widget is most often used after the [File](../../data/file/) widget to inspect and find potentially interesting features in the given data set. In the following examples, we use the *heart-disease* data set.
+The Feature Statistics widget is most often used after the [File](/widget-catalog/data/../data/file) widget to inspect and find potentially interesting features in the given data set. In the following examples, we use the *heart-disease* data set.
 
-![](../images/feature_statistics_workflow.png)
+![](/widget-catalog/data/images/feature_statistics_workflow.png)
 
 Once we have found a subset of potentially interesting features, or we have found features that we would like to exclude, we can simply select the features we want to keep. The widget outputs a new data set with only these features.
 
-![](../images/feature_statistics_example1.png)
+![](/widget-catalog/data/images/feature_statistics_example1.png)
 
 Alternatively, if we want to store feature statistics, we can use the *Statistics* output and manipulate those values as needed. In this example, we display the statistics in a table.
 
-![](../images/feature_statistics_example2.png)
+![](/widget-catalog/data/images/feature_statistics_example2.png)

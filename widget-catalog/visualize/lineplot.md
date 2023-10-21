@@ -19,7 +19,7 @@ Visualization of data profiles (e.g., time series).
 
 [Line plot](https://en.wikipedia.org/wiki/Line_chart) a type of plot which displays the data as a series of points, connected by straight line segments. It only works for numerical data, while categorical can be used for grouping of the data points.
 
-![](../images/LinePlot-stamped.png)
+![](/widget-catalog/visualize/images/LinePlot-stamped.png)
 
 1. Information on the input data.
 2. Select what you wish to display:
@@ -36,6 +36,6 @@ Example
 
 **Line Plot** is a standard visualization widget, which displays data profiles, normally of ordered numerical data. In this simple example, we will display the *iris* data in a line plot, grouped by the iris attribute. The plot shows how petal length nicely separates between class values.
 
-If we observe this in a [Scatter Plot](../../visualize/scatterplot/), we can confirm this is indeed so. Petal length is an interesting attribute for separation of classes, especially when enhanced with petal width, which is also nicely separated in the line plot.
+If we observe this in a [Scatter Plot](/widget-catalog/visualize/../visualize/scatterplot), we can confirm this is indeed so. Petal length is an interesting attribute for separation of classes, especially when enhanced with petal width, which is also nicely separated in the line plot.
 
-![](../images/LinePlot-Example.png)
+![](/widget-catalog/visualize/images/LinePlot-Example.png)

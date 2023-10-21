@@ -19,7 +19,7 @@ The **Select Columns** widget is used to manually compose your [data domain](htt
 
 Orange attributes have a type and are either discrete, continuous or a character string. The attribute type is marked with a symbol appearing before the name of the attribute (D, C, S, respectively).
 
-![](../images/SelectColumns-stamped.png)
+![](/widget-catalog/transform/images/SelectColumns-stamped.png)
 
 1. Left-out data attributes that will not be in the output data file
 2. Data attributes in the new data file
@@ -33,10 +33,10 @@ Orange attributes have a type and are either discrete, continuous or a character
 Examples
 --------
 
-In the workflow below, the *Iris* data from the [File](../data/file.md) widget is fed into the **Select Columns** widget, where we select to output only two attributes (namely petal width and petal length). We view both the original dataset and the dataset with selected columns in the [Data Table](../../data/datatable/) widget.
+In the workflow below, the *Iris* data from the [File](../data/file.md) widget is fed into the **Select Columns** widget, where we select to output only two attributes (namely petal width and petal length). We view both the original dataset and the dataset with selected columns in the [Data Table](/widget-catalog/transform/../data/datatable) widget.
 
-![](../images/SelectColumns-Example1.png)
+![](/widget-catalog/transform/images/SelectColumns-Example1.png)
 
 For a more complex use of the widget, we composed a workflow to redefine the classification problem in the *heart-disease* dataset. Originally, the task was to predict if the patient has a coronary artery diameter narrowing. We changed the problem to that of gender classification, based on age, chest pain and cholesterol level, and informatively kept the diameter narrowing as a meta attribute.
 
-![](../images/SelectColumns-Example2.png)
+![](/widget-catalog/transform/images/SelectColumns-Example2.png)

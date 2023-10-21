@@ -26,7 +26,7 @@ data (genes). Genes that are highly dysregulated are
 farther to the left and right, while highly significant fold changes appear higher on the plot.
 A combination of the two are those genes that are statistically significant.
 
-![](../images/volcano_plot/Volcano-Plot-stamped.png)
+![](/widget-catalog/bioinformatics/images/volcano_plot/Volcano-Plot-stamped.png)
 
 1.  Select the target label in *Target labels*. Labels depend on the 
     attributes in the input.
@@ -41,4 +41,4 @@ Example
 -------
 From the GEO Data Sets widget, we select *Breast cancer and docetaxel treatment* (GDS360) with 14 treatment resistant and 10 treatment sensitive tumors. We select *Genes in rows* as output. Then we use the **Volcano plot** widget to select the most interesting genes. We observe the selected data subset in a **Data Table**. The table shows selected genes with the additional log2 (ratio) and -log10 (P_value) columns. To visualize the difference in expression of each selected gene, we first transpose the data using **Transpose** widget and then use the **Box Plot** widget. This workflow can be accessed [here](https://download.biolab.si/download/files/workflows/orange/bioinformatics_volcano_plot.ows).
 
-![](../images/volcano_plot/Volcano-Plot-Example.png)
+![](/widget-catalog/bioinformatics/images/volcano_plot/Volcano-Plot-Example.png)

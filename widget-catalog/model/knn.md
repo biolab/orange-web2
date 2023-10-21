@@ -19,7 +19,7 @@ Predict according to the nearest training instances.
 
 The **kNN** widget uses the [kNN algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) that searches for k closest training examples in feature space and uses their average as prediction.
 
-![](../images/kNN-stamped.png)
+![](/widget-catalog/model/images/kNN-stamped.png)
 
 1. A name under which it will appear in other widgets. The default name is "kNN".
 2. Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.
@@ -45,15 +45,15 @@ kNN uses default preprocessing when no other preprocessors are given. It execute
 - imputes missing values with mean values
 - normalizes the data by centering to mean and scaling to standard deviation of 1
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Examples
 --------
 
-The first example is a classification task on *iris* dataset. We compare the results of [k-Nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) with the default model [Constant](../../model/constant/), which always predicts the majority class.
+The first example is a classification task on *iris* dataset. We compare the results of [k-Nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) with the default model [Constant](/widget-catalog/model/../model/constant), which always predicts the majority class.
 
-![](../images/Constant-classification.png)
+![](/widget-catalog/model/images/Constant-classification.png)
 
-The second example is a regression task. This workflow shows how to use the *Learner* output. For the purpose of this example, we used the *housing* dataset. We input the **kNN** prediction model into [Predictions](../../evaluate/predictions/) and observe the predicted values.
+The second example is a regression task. This workflow shows how to use the *Learner* output. For the purpose of this example, we used the *housing* dataset. We input the **kNN** prediction model into [Predictions](/widget-catalog/model/../evaluate/predictions) and observe the predicted values.
 
-![](../images/kNN-regression.png)
+![](/widget-catalog/model/images/kNN-regression.png)

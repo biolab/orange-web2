@@ -25,7 +25,7 @@ The widget does not save the data every time it receives a new signal in the inp
 
 If the file is saved to the same directory as the workflow or in the subtree of that directory, the widget remembers the relative path. Otherwise, it will store an absolute path but disable auto save for security reasons.
 
-![](../images/SaveData.png)
+![](/widget-catalog/data/images/SaveData.png)
 
 - *Add type annotations to header*: Include Orange's three-row header in the output file.
 - *Autosave when receiving new data*: Always save new data. Be careful! This will overwrite existing data on your system.
@@ -35,6 +35,6 @@ If the file is saved to the same directory as the workflow or in the subtree of 
 Example
 -------
 
-In the workflow below, we used the *Zoo* dataset. We loaded the data into the [Scatter Plot](../../visualize/scatterplot/) widget, with which we selected a subset of data instances and pushed them to the **Save Data** widget to store them in a file.
+In the workflow below, we used the *Zoo* dataset. We loaded the data into the [Scatter Plot](/widget-catalog/data/../visualize/scatterplot) widget, with which we selected a subset of data instances and pushed them to the **Save Data** widget to store them in a file.
 
-![](../images/Save-Workflow.png)
+![](/widget-catalog/data/images/Save-Workflow.png)

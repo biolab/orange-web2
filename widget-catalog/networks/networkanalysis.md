@@ -21,7 +21,7 @@ Statistical analysis of network data.
 
 ####Graph level
 
-![](../images/Network-Analysis-graph.png)
+![](/widget-catalog/networks/images/Network-Analysis-graph.png)
 
 - Number of nodes: number of vertices in a network.
 - Number of edges: number of connections in a network.
@@ -35,7 +35,7 @@ Statistical analysis of network data.
 
 ####Node level
 
-![](../images/Network-Analysis-nodes.png)
+![](/widget-catalog/networks/images/Network-Analysis-nodes.png)
 
 - Degree: number of edges per node.
 - In-degree: number of incoming edges in a directed graph.
@@ -49,8 +49,8 @@ Statistical analysis of network data.
 Example
 -------
 
-This simple example shows how **Network Analysis** can enrich the workflow. We have used *lastfm.net* as our input network from [Network File](../networkfile/) and sent it to **Network Analysis**. We've decided to compute *degree*, *degree centrality* and *closeness centrality* at node level.
+This simple example shows how **Network Analysis** can enrich the workflow. We have used *lastfm.net* as our input network from [Network File](/widget-catalog/networks/networkfile) and sent it to **Network Analysis**. We've decided to compute *degree*, *degree centrality* and *closeness centrality* at node level.
 
-We can visualize the network in [Network Explorer](../networkexplorer/). In the widget we color by *best tag*, as is the default for this data set. But now we can also set the size of the nodes to correspond to the computed *Degree centrality*. This is a great way to visualize the properties of the network.
+We can visualize the network in [Network Explorer](/widget-catalog/networks/networkexplorer). In the widget we color by *best tag*, as is the default for this data set. But now we can also set the size of the nodes to correspond to the computed *Degree centrality*. This is a great way to visualize the properties of the network.
 
-![](../images/network-analysis-example.png)
+![](/widget-catalog/networks/images/network-analysis-example.png)

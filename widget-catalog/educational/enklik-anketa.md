@@ -13,11 +13,11 @@ Import data from EnKlikAnketa (1ka.si) public URL.
 
 The **EnKlik Anketa** widget retrieves survey results obtained from the [EnKlikAnketa](http://english.1ka.si/) service. You need to create a public link to to retrieve the results. Go to the survey you wish to retrieve, then select Data (Podatki) tab and create a public link (javna povezava) at the top right corner.
 
-![](../images/public-link.png)
+![](/widget-catalog/educational/images/public-link.png)
 
 Then insert the link into the Public link URL field. The link should look something like this: https://www.1ka.si/podatki/123456/78A9B1CD/.
 
-![](../images/EnKlik-Anketa-stamped.png)
+![](/widget-catalog/educational/images/EnKlik-Anketa-stamped.png)
 
 1. A public link to the survey results. To observe the results live, set the reload rate (5s - 5 min).
 2. Attribute list. You can change the attribute type and role, just like in the **File** widget.
@@ -34,4 +34,4 @@ The widget sets questions from the survey as feature names. This, however, might
 
 **Edit Domain** enables us to change attribute names and even rename attribute values for discrete attributes. Now our attribute names are much easier to work with, as we can see in **Data Table (1)**.
 
-![](../images/EnKlik-Anketa-Example.png)
+![](/widget-catalog/educational/images/EnKlik-Anketa-Example.png)

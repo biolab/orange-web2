@@ -1,9 +1,9 @@
 ---
 author: "BIOLAB"
-date: '2011-09-07 10:30:00+00:00'
+date: "2011-09-07 10:30:00+00:00"
 draft: false
 title: "3D Visualizations in Orange"
-blog: ["opengl" ,"visualization" ]
+blog: ["opengl", "visualization"]
 oldUrl: "/blog/2011/09/07/3d-visualizations-in-orange/"
 ---
 
@@ -15,19 +15,19 @@ Widgets I worked on and are reasonably usable:
 
 #### ScatterPlot3D
 
-![](scatterplot3d.png__160x160_q95_crop_subject_location-291%2C305.jpg)
+![](scatterplot3d.jpg)
 
 Its GUI has the same options as the ordinary ScatterPlot (2D),with an additional dropdown for the third attribute (Z) and some new checkboxes (e.g. 2D/3D symbols). The data can be easily rotated, translated and scaled.Supports zoom levels and selections as well. VizRank works.Thanks to hardware acceleration, ScatterPlot3D is quite responsive even with largerdatasets (30k examples).
 
 #### LinProj3D
 
-![](linproj3d.png__160x160_q95_crop.jpg)
+![](linproj3d.jpg)
 
 LinProj3D is displayed using dark theme (themes are available in all 3D widgets).
 
 #### Sphereviz3D
 
-![](sphereviz.png__160x160_q95_crop.jpg)
+![](sphereviz.jpg)
 
 Sphereviz3D has 2D symbols option enabled (also available in all 3D widgets). VizRank has been modified to work with three dimensions; PCA and SPCA options under FreeViz return first three most important components when used in these widgets.
 

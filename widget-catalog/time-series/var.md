@@ -9,7 +9,7 @@ Model the time series using [vector autoregression (VAR) model](https://en.wikip
 
 **Inputs**
 
-- Time series: Time series as output by [As Timeseries](../as_timeseries/) widget.
+- Time series: Time series as output by [As Timeseries](/widget-catalog/time-series/as_timeseries) widget.
 
 **Outputs**
 
@@ -20,7 +20,7 @@ Model the time series using [vector autoregression (VAR) model](https://en.wikip
 
 Using this widget, you can model the time series using VAR model.
 
-![](../images/var-model-stamped.png)
+![](/widget-catalog/time-series/images/var-model-stamped.png)
 
 1. Model's name. By default, the name is derived from the model and its parameters.
 2. Desired model order (number of parameters).
@@ -34,8 +34,8 @@ Using this widget, you can model the time series using VAR model.
 Example
 -------
 
-![](../images/LineChart-Example.png)
+![](/widget-catalog/time-series/images/LineChart-Example.png)
 
 #### See also
 
-[ARIMA Model](arima.md), [Model Evaluation](../model_evaluation_w/)
+[ARIMA Model](arima.md), [Model Evaluation](/widget-catalog/time-series/model_evaluation_w)

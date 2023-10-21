@@ -17,7 +17,7 @@ Generate random data sample.
 
 **Random Data** allows creating random data sets, where variables correspond to the selected distributions. The user can specify the number of rows (samples) and the number of variables for each distribution. Distributions from the Scipy's [stats](https://docs.scipy.org/doc/scipy/reference/stats.html) module are used.
 
-![](../images/Random-Data1-stamped.png)
+![](/widget-catalog/educational/images/Random-Data1-stamped.png)
 
 1. [Normal](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html#scipy.stats.norm): A normal continuous random variable. Set the number of variables, the mean and the variance.
 2. [Bernoulli](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bernoulli.html#scipy.stats.bernoulli): A Bernoulli discrete random variable. Set the number of variables and the probability mass function.
@@ -28,7 +28,7 @@ Generate random data sample.
 7. *Add more variables...* enables selecting new distributions from the list and with that adding additional variables. Distributions can be removed by pressing an X in the top left corner of each distribution.
 8. Define the sample size (i.e. number of rows, default 1000) and press *Generate* to output the data set.
 
-![](../images/Random-Data2-stamped.png)
+![](/widget-catalog/educational/images/Random-Data2-stamped.png)
 
 1. [Hypergeometric](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html#scipy.stats.hypergeom): A hypergeometric discrete random variable. Set the number of variables, number of objects, positives and trials.
 2. [Negative binomial](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html#scipy.stats.nbinom): A negative binomial discrete random variable. Set the number of variables, number of successes and the probability of a success.
@@ -45,4 +45,4 @@ We normaly wouldn't create a data set with so many different distributions but r
 
 We observe the generated data in a **Data Table** and in **Distributions**.
 
-![](../images/Random-Data-Example.png)
+![](/widget-catalog/educational/images/Random-Data-Example.png)

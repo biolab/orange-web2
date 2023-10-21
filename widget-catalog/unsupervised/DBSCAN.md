@@ -17,7 +17,7 @@ Groups items using the DBSCAN clustering algorithm.
 
 The widget applies the [DBSCAN clustering](https://en.wikipedia.org/wiki/DBSCAN) algorithm to the data and outputs a new dataset with cluster labels as a meta attribute. The widget also shows the sorted graph with distances to k-th nearest neighbors. With k values set to **Core point neighbors** as suggested in the [methods article](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf). This gives the user the idea of an ideal selection for **Neighborhood distance** setting. As suggested by the authors, this parameter should be set to the first value in the first "valley" in the graph.
 
-![](../images/DBSCAN.png)
+![](/widget-catalog/unsupervised/images/DBSCAN.png)
 
 1. **Parameters**:
    - *Core point neighbors*: The number of neighbors for a point to be considered as a core point.
@@ -33,6 +33,6 @@ left and right you can select the right **Neighborhood distance**.
 Example
 -------
 
-In the following example, we connected the [File](../data/file.md) widget with the Iris dataset to the DBSCAN widget. In the DBSCAN widget, we set **Core points neighbors** parameter to 5. And select the **Neighborhood distance** to the value in the first "valley" in the graph. We show clusters in the [Scatter Plot](../../visualize/scatterplot/) widget.
+In the following example, we connected the [File](../data/file.md) widget with the Iris dataset to the DBSCAN widget. In the DBSCAN widget, we set **Core points neighbors** parameter to 5. And select the **Neighborhood distance** to the value in the first "valley" in the graph. We show clusters in the [Scatter Plot](/widget-catalog/unsupervised/../visualize/scatterplot) widget.
 
-![](../images/DBSCAN-Example.png)
+![](/widget-catalog/unsupervised/images/DBSCAN-Example.png)

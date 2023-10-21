@@ -14,7 +14,7 @@ Import a data table from a CSV formatted file.
 
 The **CSV File Import** widget reads comma-separated files and sends the dataset to its output channel. File separators can be commas, semicolons, spaces, tabs or manually-defined delimiters. The history of most recently opened files is maintained in the widget.
 
-*Data Frame* output can be used in the [Python Script](../../data/pythonscript/) widget by connecting it to the `in_object` input (e.g. `df = in_object`). Then it can be used a regular DataFrame.
+*Data Frame* output can be used in the [Python Script](/widget-catalog/data/../data/pythonscript) widget by connecting it to the `in_object` input (e.g. `df = in_object`). Then it can be used a regular DataFrame.
 
 ### Import Options
 
@@ -22,7 +22,7 @@ The import window where the user sets the import parameters. Can be re-opened by
 
 Right click on the column name to set the column type. Right click on the row index (on the left) to mark a row as a header, skipped or a normal data row.
 
-![](../images/CSVFileImport-ImportOptions-stamped.png)
+![](/widget-catalog/data/images/CSVFileImport-ImportOptions-stamped.png)
 
 1. File encoding. Default is UTF-8. See Encoding subchapter for details.
 2. Import settings:
@@ -49,7 +49,7 @@ Right click on the column name to set the column type. Right click on the row in
 
 The widget once the data is successfully imported.
 
-![](../images/CSVFileImport-widget-stamped.png)
+![](/widget-catalog/data/images/CSVFileImport-widget-stamped.png)
 
 1. The folder icon opens the dialogue for import the local .csv file. It can be used to either load the first file or change the existing file (load new data). The *File* dropdown stores paths to previously loaded data sets.
 2. Information on the imported data set. Reports on the number of instances (rows), variables (features or columns) and meta variables (special columns).
@@ -59,11 +59,11 @@ The widget once the data is successfully imported.
 
 The dialogue for settings custom encodings list in the Import Options - Encoding dropdown. Select *Customize Encodings List...* to change which encodings appear in the list. To save the changes, simply close the dialogue. Closing and reopening Orange (even with Reset widget settings) will not re-set the list. To do this, press *Restore Defaults*. To have all the available encodings in the list, press *Select all*.
 
-![](../images/CSVFileImport-encodings.png)
+![](/widget-catalog/data/images/CSVFileImport-encodings.png)
 
 Example
 -------
 
-**CSV File Import** works almost exactly like the [File](../data/file.md) widget, with the added options for importing different types of .csv files. In this workflow, the widget read the data from the file and sends it to the [Data Table](../../data/datatable/) for inspection.
+**CSV File Import** works almost exactly like the [File](../data/file.md) widget, with the added options for importing different types of .csv files. In this workflow, the widget read the data from the file and sends it to the [Data Table](/widget-catalog/data/../data/datatable) for inspection.
 
-![](../images/CSVFileImport-Example.png)
+![](/widget-catalog/data/images/CSVFileImport-Example.png)

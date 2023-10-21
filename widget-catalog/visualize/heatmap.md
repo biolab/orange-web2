@@ -20,7 +20,7 @@ Plots a heat map for a pair of attributes.
 
 The widget enables row selection with click and drag. One can zoom in with Ctrl++ (Cmd++) and zoom out with Ctrl+- (Cmd+-). Ctrl+0 (Cmd+0) resets zoom to the extended version, while Ctrl+9 (Cmd+9) reset it to the default.
 
-![](../images/HeatMap.png)
+![](/widget-catalog/visualize/images/HeatMap.png)
 
 1. The color pallette. Choose from linear, diverging, color-blind friendly, or other pallettes. **Low** and **High** are thresholds for the color palette (low for attributes with low values and high for attributes with high values). Selecting one of diverging palettes, which have two extreme colors and a neutral (black or white) color at the midpoint, enables an option to set a meaningful mid-point value (default is 0).
 2. Merge rows. If there are too many rows in the visualization, one can merge them with k-means algorithm into N selected clusters (default 50).
@@ -45,7 +45,7 @@ Row and column clustering is performed independently. Row clustering is computed
 
 
 
-![](../images/HeatMap-advanced.png)
+![](/widget-catalog/visualize/images/HeatMap-advanced.png)
 
 Examples
 --------
@@ -58,7 +58,7 @@ Heat map shows low expressions in blue and high expressions in yellow and white.
 
 Additionally, the plot is enhanced with row color on the right, showing which class the rows belong to.
 
-![](../images/HeatMap-Example1.png)
+![](/widget-catalog/visualize/images/HeatMap-Example1.png)
 
 ### Sentiment Analysis
 
@@ -66,7 +66,7 @@ Heat maps are great for visualizing any kind of comparable numeric variables, fo
 
 We used row clustering to place similar rows closer together, resulting in clear negative and positive groups. Now we can select negative children's books and explore which are they.
 
-![](../images/HeatMap-Example2.png)
+![](/widget-catalog/visualize/images/HeatMap-Example2.png)
 
 References
 ----------

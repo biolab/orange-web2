@@ -17,7 +17,7 @@ Detect Ekman's, Plutchik's or Profile of Mood States' emotions in tweets.
 
 **Tweet Profiler** retrieves information on sentiment from the server for each given tweet (or document). The widget sends data to the server, where a model computes emotion probabilities and/or scores. The widget support three classifications of emotion, namely [Ekman's](https://en.wikipedia.org/wiki/Paul_Ekman), [Plutchik's](https://en.wikipedia.org/wiki/Robert_Plutchik) and [Profile of Mood States (POMS)](https://en.wikipedia.org/wiki/Profile_of_mood_states).
 
-![](../images/Tweet-Profiler-stamped.png)
+![](/widget-catalog/text-mining/images/Tweet-Profiler-stamped.png)
 
 1. Options:
    - Attribute to use as content.
@@ -28,9 +28,9 @@ Detect Ekman's, Plutchik's or Profile of Mood States' emotions in tweets.
 Example
 -------
 
-We will use *election-tweets-2016.tab* for this example. Load the data with [Corpus](../corpus-widget/) and connect it to **Tweet Profiler**. We will use *Content* attribute for the analysis, Ekman's classification of emotion with multi-class option and we will output the result as class. We will observe the results in a **Box Plot**. In the widget, we have selected to observe the *Emotion* variable, grouped by *Author*. This way we can see which emotion prevails by which author.
+We will use *election-tweets-2016.tab* for this example. Load the data with [Corpus](/widget-catalog/text-mining/corpus-widget) and connect it to **Tweet Profiler**. We will use *Content* attribute for the analysis, Ekman's classification of emotion with multi-class option and we will output the result as class. We will observe the results in a **Box Plot**. In the widget, we have selected to observe the *Emotion* variable, grouped by *Author*. This way we can see which emotion prevails by which author.
 
-![](../images/Tweet-Profiler-Example.png)
+![](/widget-catalog/text-mining/images/Tweet-Profiler-Example.png)
 
 References
 ----------

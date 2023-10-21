@@ -17,14 +17,14 @@ Set color legend for variables.
 
 The **Color** widget sets the color legend for visualizations.
 
-![](../images/Color-stamped.png)
+![](/widget-catalog/data/images/Color-stamped.png)
 
 1. A list of discrete variables. Set the color of each variable by double-clicking on it. The widget also enables renaming variables by clicking on their names.
 2. A list of continuous variables. Click on the color strip to choose a different palette. To use the same palette for all variables, change it for one variable and click *Copy to all* that appears on the right. The widget also enables renaming variables by clicking on their names.
 3. Produce a report.
 4. Apply changes. If *Apply automatically* is ticked, changes will be communicated automatically. Alternatively, just click *Apply*.
 
-![](../images/Color-Continuous_unindexed.png)
+![](/widget-catalog/data/images/Color-Continuous_unindexed.png)
 
 Palettes for numeric variables are grouped and tagged by their properties.
 
@@ -41,10 +41,10 @@ Palettes for numeric variables are grouped and tagged by their properties.
 Example
 -------
 
-We chose to work with the *heart_disease* data set. We opened the color palette and selected two new colors for diameter narrowing variable. Then we opened the [Scatter Plot](../../visualize/scatterplot/) widget and viewed the changes made to the scatter plot.
+We chose to work with the *heart_disease* data set. We opened the color palette and selected two new colors for diameter narrowing variable. Then we opened the [Scatter Plot](/widget-catalog/data/../visualize/scatterplot) widget and viewed the changes made to the scatter plot.
 
-![](../images/Color-Example-Discrete.png)
+![](/widget-catalog/data/images/Color-Example-Discrete.png)
 
 To see the effect of color palettes for numeric variables, we color the points in the scatter plot by cholesterol and change the palette for this attribute in the Color widget.
 
-![](../images/Color-Example-Continuous.png)
+![](/widget-catalog/data/images/Color-Example-Continuous.png)

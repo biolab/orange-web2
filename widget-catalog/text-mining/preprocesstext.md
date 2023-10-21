@@ -17,7 +17,7 @@ Preprocesses corpus with selected methods.
 
 **Preprocess Text** splits your text into smaller units (tokens), filters them, runs [normalization](https://en.wikipedia.org/wiki/Stemming) (stemming, lemmatization), creates [n-grams](https://en.wikipedia.org/wiki/N-gram) and tags tokens with [part-of-speech](https://en.wikipedia.org/wiki/Part_of_speech) labels. Steps in the analysis are applied sequentially and can be reordered. Click and drag the preprocessor to change the order.
 
-![](../images/PreprocessText.png)
+![](/widget-catalog/text-mining/images/PreprocessText.png)
 
 1. Available preprocessors.
 2. **Transformation** transforms input data. It applies lowercase transformation by default.
@@ -46,7 +46,7 @@ Preprocesses corpus with selected methods.
     - [Lemmagen](https://github.com/vpodpecan/lemmagen3) applies a pre-trained model for normalizing data.
 5. **Filtering** removes or keeps a selection of words.
     - *Stopwords* removes stopwords from text (e.g. removes 'and', 'or', 'in'...). Select the language to filter by, English is set as default. You can also load your own list of stopwords provided in a simple \*.txt file with one stopword per line.
-      ![](../images/stopwords.png)
+      ![](/widget-catalog/text-mining/images/stopwords.png)
       Click 'browse' icon to select the file containing stopwords. If the file was properly loaded, its name will be displayed next to pre-loaded stopwords. Change 'English' to 'None' if you wish to filter out only the provided stopwords. Click 'reload' icon to reload the list of stopwords.
     - *Lexicon* keeps only words provided in the file. Load a \*.txt file with one word per line to use as lexicon. Click 'reload' icon to reload the lexicon.
     - *Regexp* removes words that match the regular expression. Default is set to remove punctuation.
@@ -75,12 +75,12 @@ Here are some useful regular expressions for quick filtering:
 Examples
 --------
 
-In the first example we will observe the effects of preprocessing on our text. We are working with *book-excerpts.tab* that we've loaded with [Corpus](corpus-widget.md) widget. We have connected **Preprocess Text** to **Corpus** and retained default preprocessing methods (lowercase, per-word tokenization and stopword removal). The only additional parameter we've added as outputting only the first 100 most frequent tokens. Then we connected **Preprocess Text** with [Word Cloud](../wordcloud/) to observe words that are the most frequent in our text. Play around with different parameters, to see how they transform the output.
+In the first example we will observe the effects of preprocessing on our text. We are working with *book-excerpts.tab* that we've loaded with [Corpus](corpus-widget.md) widget. We have connected **Preprocess Text** to **Corpus** and retained default preprocessing methods (lowercase, per-word tokenization and stopword removal). The only additional parameter we've added as outputting only the first 100 most frequent tokens. Then we connected **Preprocess Text** with [Word Cloud](/widget-catalog/text-mining/wordcloud) to observe words that are the most frequent in our text. Play around with different parameters, to see how they transform the output.
 
-![](../images/Preprocess-Text-Example1.png)
+![](/widget-catalog/text-mining/images/Preprocess-Text-Example1.png)
 
-The second example is slightly more complex. We first acquired our data with [Twitter](../twitter-widget/) widget. We quired the internet for tweets from users @HillaryClinton and @realDonaldTrump and got their tweets from the past two weeks, 242 in total.
+The second example is slightly more complex. We first acquired our data with [Twitter](/widget-catalog/text-mining/twitter-widget) widget. We quired the internet for tweets from users @HillaryClinton and @realDonaldTrump and got their tweets from the past two weeks, 242 in total.
 
-![](../images/Preprocess-Text-Example2.png)
+![](/widget-catalog/text-mining/images/Preprocess-Text-Example2.png)
 
-In **Preprocess Text** there's *Tweet* tokenization available, which retains hashtags, emojis, mentions and so on. However, this tokenizer doesn't get rid of punctuation, thus we expanded the Regexp filtering with symbols that we wanted to get rid of. We ended up with word-only tokens, which we displayed in [Word Cloud](../wordcloud/). Then we created a schema for predicting author based on tweet content, which is explained in more details in the documentation for [Twitter](../twitter-widget/) widget.
+In **Preprocess Text** there's *Tweet* tokenization available, which retains hashtags, emojis, mentions and so on. However, this tokenizer doesn't get rid of punctuation, thus we expanded the Regexp filtering with symbols that we wanted to get rid of. We ended up with word-only tokens, which we displayed in [Word Cloud](/widget-catalog/text-mining/wordcloud). Then we created a schema for predicting author based on tweet content, which is explained in more details in the documentation for [Twitter](/widget-catalog/text-mining/twitter-widget) widget.

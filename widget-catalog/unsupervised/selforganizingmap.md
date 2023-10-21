@@ -22,7 +22,7 @@ The points in the grid represent data instances. By default, the size of the poi
 
 Just like other visualization widgets, **Self-Organizing Maps** also supports interactive selection of groups. Use Shift key to select a new group and Ctr+Shift to add to the existing group.
 
-![](../images/Self-Organizing_Map-stamped.png)
+![](/widget-catalog/unsupervised/images/Self-Organizing_Map-stamped.png)
 
 1. SOM properties:
    - Set the grid type. Options are hexagonal or square grid.
@@ -38,4 +38,4 @@ Example
 
 Self-organizing maps are low-dimensional projections of the input data. We will use the *brown-selected* data and display the data instance in a 2-D projection. Seems like the three gene types are well-separated. We can select a subset from the grid and display it in a Data Table.
 
-![](../images/Self-Organizing_Map_Example.png)
+![](/widget-catalog/unsupervised/images/Self-Organizing_Map_Example.png)

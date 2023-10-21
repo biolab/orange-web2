@@ -22,7 +22,7 @@ The [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (short for "Adaptive boos
 
 **AdaBoost** works for both classification and regression.
 
-![](../images/AdaBoost-stamped.png)
+![](/widget-catalog/model/images/AdaBoost-stamped.png)
 
 1. The learner can be given a name under which it will appear in other widgets. The default name is "AdaBoost".
 2. Set the parameters. The base estimator is a tree and you can set:
@@ -45,15 +45,15 @@ AdaBoost uses default preprocessing when no other preprocessors are given. It ex
 - removes empty columns
 - imputes missing values with mean values
 
-To remove default preprocessing, connect an empty [Preprocess](../../data/preprocess/) widget to the learner.
+To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
 Examples
 --------
 
-For classification, we loaded the *iris* dataset. We used *AdaBoost*, [Tree](../model/tree.md) and [Logistic Regression](../model/logisticregression.md) and evaluated the models' performance in [Test & Score](../../evaluate/testandscore/).
+For classification, we loaded the *iris* dataset. We used *AdaBoost*, [Tree](../model/tree.md) and [Logistic Regression](../model/logisticregression.md) and evaluated the models' performance in [Test & Score](/widget-catalog/model/../evaluate/testandscore).
 
-![](../images/AdaBoost-classification.png)
+![](/widget-catalog/model/images/AdaBoost-classification.png)
 
-For regression, we loaded the *housing* dataset, sent the data instances to two different models (**AdaBoost** and [Tree](../model/tree.md)) and output them to the [Predictions](../../evaluate/predictions/) widget.
+For regression, we loaded the *housing* dataset, sent the data instances to two different models (**AdaBoost** and [Tree](../model/tree.md)) and output them to the [Predictions](/widget-catalog/model/../evaluate/predictions) widget.
 
-![](../images/AdaBoost-regression.png)
+![](/widget-catalog/model/images/AdaBoost-regression.png)

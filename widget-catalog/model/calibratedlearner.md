@@ -20,7 +20,7 @@ Wraps another learner with probability calibration and decision threshold optimi
 
 This learner produces a model that calibrates the distribution of class probabilities and optimizes decision threshold. The widget works only for binary classification tasks.
 
-![](../images/Calibrated-Learner-stamped.png)
+![](/widget-catalog/model/images/Calibrated-Learner-stamped.png)
 
 1. The name under which it will appear in other widgets. Default name is composed of the learner, calibration and optimization parameters.
 2. Probability calibration:
@@ -42,8 +42,8 @@ Example
 
 A simple example with **Calibrated Learner**. We are using the *titanic* data set as the widget requires binary class values (in this case they are 'survived' and 'not survived').
 
-We will use [Logistic Regression](../logisticregression/) as the base learner which will we calibrate with the default settings, that is with sigmoid optimization of distribution values and by optimizing the CA.
+We will use [Logistic Regression](/widget-catalog/model/logisticregression) as the base learner which will we calibrate with the default settings, that is with sigmoid optimization of distribution values and by optimizing the CA.
 
 Comparing the results with the uncalibrated **Logistic Regression** model we see that the calibrated model performs better.
 
-![](../images/Calibrated-Learner-Example.png)
+![](/widget-catalog/model/images/Calibrated-Learner-Example.png)

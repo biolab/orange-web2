@@ -25,7 +25,7 @@ advantage of this file loader and reduce total memory usage.
 By default, the widget will not load the dataset automatically. This prevents loading a large dataset into
 memory before the desired preprocessor chain is configured. Press the "Reload" button to load the data.
 
-![](../images/Tilefile-stamped.png)
+![](/widget-catalog/spectroscopy/images/Tilefile-stamped.png)
 
 1. Browse through previously opened data files, or load any of the sample ones.
 2. Browse for a data file.
@@ -48,6 +48,6 @@ Now information about the preprocessed dataset is displayed in the info box and 
 
 We can observe the preprocessed data in the **HyperSpectra** widget or in a **Data Table**.
 
-![](../images/Tilefile-Example.png)
+![](/widget-catalog/spectroscopy/images/Tilefile-Example.png)
 
 This example workflow can be found in *Help/Example Workflows*.

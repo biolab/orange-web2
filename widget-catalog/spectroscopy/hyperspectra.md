@@ -20,7 +20,7 @@ The **HyperSpectra** widget plots hyperspectra that were read from the *.map* fi
 
 At the top, **HyperSpectra** shows a 2D map of a slice of the spectra. At the bottom, a spectra plot is shown with the red line indicating the wavenumber slice we are observing at the top.
 
-![](../images/HyperSpectra-stamped.png)
+![](/widget-catalog/spectroscopy/images/HyperSpectra-stamped.png)
 
 1. Image values: define the transformation (usually an integral) of the spectra or use a feature to use as values for the plot. The former transformation can be an *integral from 0*, *integral from baseline*, *peak from 0*, *peak from baseline*, *closest value*, *X-value of maximum from 0* or *X-value of maximum from baseline*.
 2. The hyperspectral plot of the slice of the spectra.
@@ -32,6 +32,6 @@ At the top, **HyperSpectra** shows a 2D map of a slice of the spectra. At the bo
    - Axis x: define the attribute for the x axis
    - Axis y: define the attribute for the y axis
    - Color: select the color for the plot
-3. The spectral plot of the selected image region. It behaves like the [Spectra](../spectra/) widget.
+3. The spectral plot of the selected image region. It behaves like the [Spectra](/widget-catalog/spectroscopy/spectra) widget.
 4. Region selectors for the chosen integration method.
 5. Split between image and spectral view: move it to increase the image size.

@@ -19,7 +19,7 @@ Add new features to your dataset.
 
 For numeric variables, it sufices to provide a name and an expression.
 
-![](../images/feature-constructor1-stamped.png)
+![](/widget-catalog/transform/images/feature-constructor1-stamped.png)
 
 1. List of constructed variables
 2. Add or remove variables
@@ -32,7 +32,7 @@ For numeric variables, it sufices to provide a name and an expression.
 
 The following example shows construction of a categorical variable: its value is "lower" is "sepal length" is below 6, "mid" if it is at least 6 but below 7, and "higher" otherwise. Note that spaces need to be replaced by underscores (`sepal_length`).
 
-![](../images/feature-constructor2-stamped.png)
+![](/widget-catalog/transform/images/feature-constructor2-stamped.png)
 
 1. List of variable definitions
 2. Add or remove variables

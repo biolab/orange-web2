@@ -18,7 +18,7 @@ PCA linear transformation of input data.
 
 [Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) (PCA) computes the PCA linear transformation of the input data. It outputs either a transformed dataset with weights of individual instances or weights of principal components.
 
-![](../images/PCA-stamped.png)
+![](/widget-catalog/unsupervised/images/PCA-stamped.png)
 
 1. Select how many principal components you wish in your output. It is best to choose as few as possible with variance covered as high as possible. You can also set how much variance you wish to cover with your principal components.
 2. You can normalize data to adjust the values to common scale. If checked, columns are divided by their standard deviations.
@@ -41,10 +41,10 @@ The widget preprocesses the input data in the following order:
 Examples
 --------
 
-**PCA** can be used to simplify visualizations of large datasets. Below, we used the *Iris* dataset to show how we can improve the visualization of the dataset with PCA. The transformed data in the [Scatter Plot](../../visualize/scatterplot/) show a much clearer distinction between classes than the default settings.
+**PCA** can be used to simplify visualizations of large datasets. Below, we used the *Iris* dataset to show how we can improve the visualization of the dataset with PCA. The transformed data in the [Scatter Plot](/widget-catalog/unsupervised/../visualize/scatterplot) show a much clearer distinction between classes than the default settings.
 
-![](../images/PCAExample.png)
+![](/widget-catalog/unsupervised/images/PCAExample.png)
 
-The widget provides two outputs: transformed data and principal components. Transformed data are weights for individual instances in the new coordinate system, while components are the system descriptors (weights for principal components). When fed into the [Data Table](../../data/datatable/), we can see both outputs in numerical form. We used two data tables in order to provide a more clean visualization of the workflow, but you can also choose to edit the links in such a way that you display the data in just one data table. You only need to create two links and connect the *Transformed data* and *Components* inputs to the *Data* output.
+The widget provides two outputs: transformed data and principal components. Transformed data are weights for individual instances in the new coordinate system, while components are the system descriptors (weights for principal components). When fed into the [Data Table](/widget-catalog/unsupervised/../data/datatable), we can see both outputs in numerical form. We used two data tables in order to provide a more clean visualization of the workflow, but you can also choose to edit the links in such a way that you display the data in just one data table. You only need to create two links and connect the *Transformed data* and *Components* inputs to the *Data* output.
 
-![](../images/PCAExample2.png)
+![](/widget-catalog/unsupervised/images/PCAExample2.png)

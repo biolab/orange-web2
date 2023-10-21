@@ -17,11 +17,11 @@ Shows the match between classifiers' probability predictions and actual class pr
 
 The [Calibration Plot](https://en.wikipedia.org/wiki/Calibration_curve) plots probabilities predicted by the classifier(s) against actual class probabilities. We would use this widget to see whether a classifier is overly optimistic (gives predominantly positive results) or pessimistic (gives predominantly negative results). The widget can also output a calibrated model, where the user sets his/her own probability threshold.
 
-![](../images/Calibration-Plot.png)
+![](/widget-catalog/evaluate/images/Calibration-Plot.png)
 
 1. Select the desired target class from the drop down menu.
    - *Show rug*: If enabled, ticks are displayed at the bottom and the top of the graph, which represent negative and positive examples respectively. Their position corresponds to the classifier's probability prediction. Different colors represent different classifiers. At the bottom of the graph, the points to the left are those which are (correctly) assigned a low probability of the target class, and those to the right are incorrectly assigned high probabilities. At the top of the graph, the instances to the right are correctly assigned high probabilities and vice versa.
-   - Curves for individual folds: a curve is displayed for each fold from the [Test and Score](../testandscore/) widget.
+   - Curves for individual folds: a curve is displayed for each fold from the [Test and Score](/widget-catalog/evaluate/testandscore) widget.
 2. Choose which classifiers to plot. Colors in the list of classifiers correspond to colors used in the plot. The diagonal represents optimal behavior when *Calibration curve* is selected; the closer the classifier's curve gets, the more accurate its prediction probabilities are.
 3. Select the metric to calibrate:
    - *calibration curve*: displays calibration curves for multiple models. The options for smoothing functions are [Sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) or [Isotonic](https://en.wikipedia.org/wiki/Isotonic_regression) function.
@@ -42,18 +42,18 @@ The widget cannot output a model if the input data contains models obtained from
 Examples
 --------
 
-At the moment, only two widgets give the signal of the correct type for **Calibration Plot**: [Test and Score](../evaluate/../testandscore/) and [Predictions](../../evaluate/predictions/). The Calibration Plot will always follow one of them.
+At the moment, only two widgets give the signal of the correct type for **Calibration Plot**: [Test and Score](../evaluate//widget-catalog/evaluate/testandscore) and [Predictions](/widget-catalog/evaluate/../evaluate/predictions). The Calibration Plot will always follow one of them.
 
-Here is a typical example on the iris data, where we compare two classifiers (namely [Logistic Regression](../../model/logisticregression/) and [Random Forest](../model/randomforest.md)) and input them into [Test and Score](../evaluate/../testandscore/). Test and Score displays evaluation results for each classifier. Then we draw **Calibration Plot** to further analyze the performance of the classifiers. **Calibration Plot** enables you to see prediction accuracy of class probabilities in a plot.
+Here is a typical example on the iris data, where we compare two classifiers (namely [Logistic Regression](/widget-catalog/evaluate/../model/logisticregression) and [Random Forest](../model/randomforest.md)) and input them into [Test and Score](../evaluate//widget-catalog/evaluate/testandscore). Test and Score displays evaluation results for each classifier. Then we draw **Calibration Plot** to further analyze the performance of the classifiers. **Calibration Plot** enables you to see prediction accuracy of class probabilities in a plot.
 
 Judging by the observed curve, the classifier is overly "cautious". Even when it predicts probabilities of around 0.4, the actual class probability is still 0. Conversely, when the classifier is only 0.6 certain that the class is positive, the actual probability of positive class is already almost 1.
 
 The widget is set to optimize F1 score. The user can drag the vertical black line left or right to set the probability threshold for the select target value. The information on the calibrated classifier are displayed in the info box on the left.
 
-![](../images/Calibration-Plot-Example1.png)
+![](/widget-catalog/evaluate/images/Calibration-Plot-Example1.png)
 
-In the second example, we show how to use the widget to output a calibrated model. We use [Data Sampler](../data/datasampler.md) to split the data into training and test subsets. We pass both the training and test subsets to **Test and Score** and train a [Logistic Regression](../../model/logisticregression/) model, which we pass to **Calibration Plot**. Note that only a single calibrated model can be on the output, hence the user must select a single model from the classifier list.
+In the second example, we show how to use the widget to output a calibrated model. We use [Data Sampler](../data/datasampler.md) to split the data into training and test subsets. We pass both the training and test subsets to **Test and Score** and train a [Logistic Regression](/widget-catalog/evaluate/../model/logisticregression) model, which we pass to **Calibration Plot**. Note that only a single calibrated model can be on the output, hence the user must select a single model from the classifier list.
 
-Once the model is calibrated, we can pass it to [Predictions](../../evaluate/predictions/) and use it on training data.
+Once the model is calibrated, we can pass it to [Predictions](/widget-catalog/evaluate/../evaluate/predictions) and use it on training data.
 
-![](../images/Calibration-Plot-Example2.png)
+![](/widget-catalog/evaluate/images/Calibration-Plot-Example2.png)
