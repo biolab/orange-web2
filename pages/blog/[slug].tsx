@@ -125,7 +125,12 @@ export default function BlogPost({
       title={frontmatter.title}
       justSEO
       openGraph={{
-        type: "blog",
+        type: "article",
+        article: {
+          publishedTime: frontmatter.date,
+          authors: [frontmatter.author],
+          tags: frontmatter.blog,
+        },
         description: frontmatter.shortExcerpt,
         images: thumbImage
           ? [
