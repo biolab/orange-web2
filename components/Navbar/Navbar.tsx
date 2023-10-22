@@ -1,5 +1,4 @@
-import React, { useCallback, useState } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 import config from "config.json";
 import Link from "next/link";
 import BurgerButton from "./BurgerButton/BurgerButton";
