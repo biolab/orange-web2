@@ -87,7 +87,7 @@ const HeaderWrapper = styled.div`
   }
 
   img {
-    transform: translateY(27px);
+    transform: translateY(34px);
     position: absolute;
     right: 20%;
     z-index: 1;
