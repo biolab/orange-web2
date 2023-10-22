@@ -111,7 +111,7 @@ export const ContentStyle = styled.div`
     }
   }
 
-  * + *:not(li, a) {
+  * + *:not(li, a, code) {
     margin-top: 15px;
   }
 

@@ -62,14 +62,14 @@ export const GlobalStyle = createGlobalStyle`
 
   pre {
     display: block;
-    padding: 10px 14px;
+    padding: 20px;
     margin: 0 0 10px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.42857143;
     word-break: break-all;
     word-wrap: break-word;
     color: #000;
-    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
     border-radius: 5px;
     overflow-x: auto;
     word-wrap: normal;
@@ -81,18 +81,19 @@ export const GlobalStyle = createGlobalStyle`
       white-space: pre-wrap;
       background-color: transparent;
       border-radius: 0;
+      border: none;
     }
   }
 
   code {
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    white-space: nowrap;
-    border-radius: 4px;
-    white-space: pre-wrap;
+    padding: 2px 3px;
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+    border-radius: 0.375rem;
+    display: inline-block;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 82%;
   }
 
   ::selection {
