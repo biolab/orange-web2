@@ -1,9 +1,9 @@
 ---
 author: "BLAZ"
-date: '2013-10-03 02:50:00+00:00'
+date: "2013-10-03 02:50:00+00:00"
 draft: false
 title: "JMLR Publishes Article on Orange"
-blog: ["article" ,"jmlr" ,"scripting" ,"toolbox" ]
+blog: ["article", "jmlr", "scripting", "toolbox"]
 oldUrl: "/blog/2013/10/03/jmlr-publishes-article-on-orange/"
 ---
 
@@ -16,18 +16,18 @@ Demšar, J., Curk, T., & Erjavec, A. et al. Orange: Data Mining Toolbox in Pytho
 and bibtex entry:
 
 ```
-    @article{JMLR:demsar13a,
-      author  = {Janez Dem\v{s}ar and Toma\v{z} Curk and Ale\v{s} Erjavec and
-                 \v{C}rt Gorup and Toma\v{z} Ho\v{c}evar and Mitar Milutinovi\v{c} and
-                 Martin Mo\v{z}ina and Matija Polajnar andMarko Toplak and  
-                 An\v{z}e Stari\v{c} and Miha \v{S}tajdohar and Lan Umek and 
-                 Lan \v{Z}agar and Jure \v{Z}bontar and Marinka \v{Z}itnik and
-                 Bla\v{z} Zupan},
-      title   = {Orange: Data Mining Toolbox in Python},
-      journal = {Journal of Machine Learning Research},
-      year    = {2013},
-      volume  = {14},
-      pages   = {2349-2353},
-      url     = {http://jmlr.org/papers/v14/demsar13a.html}
-    }
+@article{JMLR:demsar13a,
+  author  = {Janez Dem\v{s}ar and Toma\v{z} Curk and Ale\v{s} Erjavec and
+              \v{C}rt Gorup and Toma\v{z} Ho\v{c}evar and Mitar Milutinovi\v{c} and
+              Martin Mo\v{z}ina and Matija Polajnar andMarko Toplak and
+              An\v{z}e Stari\v{c} and Miha \v{S}tajdohar and Lan Umek and
+              Lan \v{Z}agar and Jure \v{Z}bontar and Marinka \v{Z}itnik and
+              Bla\v{z} Zupan},
+  title   = {Orange: Data Mining Toolbox in Python},
+  journal = {Journal of Machine Learning Research},
+  year    = {2013},
+  volume  = {14},
+  pages   = {2349-2353},
+  url     = {http://jmlr.org/papers/v14/demsar13a.html}
+}
 ```

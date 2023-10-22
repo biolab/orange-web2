@@ -1,9 +1,9 @@
 ---
 author: "BIOLAB"
-date: '2011-09-02 05:47:00+00:00'
+date: "2011-09-02 05:47:00+00:00"
 draft: false
 title: "GSoC Review: Multi-label Classification Implementation"
-blog: ["classification" ,"gsoc" ,"multilabel" ]
+blog: ["classification", "gsoc", "multilabel"]
 oldUrl: "/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/"
 ---
 
@@ -17,141 +17,108 @@ In this project, two transformation methods and two algorithm adaptation methods
 
 Fortunately, benefiting from the Tab file format, the **ExampleTable** can store multi-label data without any modification. Now, we can add a special value – **label** into the **attributes** dictionary of the domain with value 1. In this way, if the attribute description has the keyword **label**, then it is a label; otherwise, it is a normal feature.
 
-
 ### What have been done in this project
-
-
-
 
 #### Transformation methods
 
-* br – Binary Relevance Learner (Tsoumakas & Katakis, 2007)
-* lp – Label Powerset Classification (Tsoumakas & Katakis, 2007)
-
-
+- br – Binary Relevance Learner (Tsoumakas & Katakis, 2007)
+- lp – Label Powerset Classification (Tsoumakas & Katakis, 2007)
 
 #### Algorithm Adaptation methods
 
-
-* mlknn – Multi-kNN Classification (Zhang & Zhou, 2007)
-* brknn – BR-kNN Classification (Spyromitros et al. 2008)
-
+- mlknn – Multi-kNN Classification (Zhang & Zhou, 2007)
+- brknn – BR-kNN Classification (Spyromitros et al. 2008)
 
 #### Evaluation methods
 
-
-* mlc_hamming_loss – Example-based Hamming Loss (Schapire and Singer 2000)
-* mlc_accuracy, mlc_precision, mlc_recall – Example-based accuracy, precision, recall (Godbole & Sarawagi, 2004)
-
-
+- mlc_hamming_loss – Example-based Hamming Loss (Schapire and Singer 2000)
+- mlc_accuracy, mlc_precision, mlc_recall – Example-based accuracy, precision, recall (Godbole & Sarawagi, 2004)
 
 #### Widgets
 
-
-* OWBR – Widget for Binary Relevance Learner
-* OWLP – Widget for Label Powerset Classification
-* OWMLkNN – Widget for Multi-kNN Classification
-* OWBRkNN – Widget for BR-kNN Classification
-* OWTestLearner – Widget for Evaluation
-
-
+- OWBR – Widget for Binary Relevance Learner
+- OWLP – Widget for Label Powerset Classification
+- OWMLkNN – Widget for Multi-kNN Classification
+- OWBRkNN – Widget for BR-kNN Classification
+- OWTestLearner – Widget for Evaluation
 
 #### File Format Extension
 
-
-* extend the loadARFF function to support sparse Weka format
-* new support [mulan xml and arff format](http://mulan.sourceforge.net/format.html)
-
-
+- extend the loadARFF function to support sparse Weka format
+- new support [mulan xml and arff format](http://mulan.sourceforge.net/format.html)
 
 ### Plan for the future
 
-
-* add more classification methods for multi-label, such as PT1 to PT6
-* add feature extraction method
-* add ranking-based evaluation methods
-
-
+- add more classification methods for multi-label, such as PT1 to PT6
+- add feature extraction method
+- add ranking-based evaluation methods
 
 ### How to use
 
-
 Basically, the way to use multi-label classification and evaluation is nearly the same as the single-label ones. The only difference between them is the different types of input data.
-
 
 #### Example for Classification
 
+```python
+import Orange
+
+data = Orange.data.Table("emotions.tab")
+
+classifier = Orange.multilabel.BinaryRelevanceLearner(data)
+
+for e in data:
+    c,p = classifier(e,Orange.classification.Classifier.GetBoth)
+    print c,p
+
+powerset_cliassifer = Orange.multilabel.LabelPowersetLearner(data)
+for e in data:
+    c,p = powerset_cliassifer(e,Orange.classification.Classifier.GetBoth)
+    print c,p
+
+mlknn_cliassifer = Orange.multilabel.MLkNNLearner(data,k=1)
+for e in data:
+    c,p = mlknn_cliassifer(e,Orange.classification.Classifier.GetBoth)
+    print c,p
+
+br_cliassifer = Orange.multilabel.BRkNNLearner(data,k=1)
+for e in data:
+    c,p = br_cliassifer(e,Orange.classification.Classifier.GetBoth)
+    print c,p
 ```
-    import Orange
-
-    data = Orange.data.Table("emotions.tab")
-
-    classifier = Orange.multilabel.BinaryRelevanceLearner(data)
-
-    for e in data:
-        c,p = classifier(e,Orange.classification.Classifier.GetBoth)
-        print c,p
-
-    powerset_cliassifer = Orange.multilabel.LabelPowersetLearner(data)
-    for e in data:
-        c,p = powerset_cliassifer(e,Orange.classification.Classifier.GetBoth)
-        print c,p
-
-    mlknn_cliassifer = Orange.multilabel.MLkNNLearner(data,k=1)
-    for e in data:
-        c,p = mlknn_cliassifer(e,Orange.classification.Classifier.GetBoth)
-        print c,p
-       
-    br_cliassifer = Orange.multilabel.BRkNNLearner(data,k=1)
-    for e in data:
-        c,p = br_cliassifer(e,Orange.classification.Classifier.GetBoth)
-        print c,p
-```
-
-
-
-
 
 #### Example for Evaluation
 
+```python
+import Orange
 
+learners = [
+    Orange.multilabel.BinaryRelevanceLearner(name="br"),
+    Orange.multilabel.BinaryRelevanceLearner(name="br", \
+        base_learner=Orange.classification.knn.kNNLearner),
+    Orange.multilabel.LabelPowersetLearner(name="lp"),
+    Orange.multilabel.LabelPowersetLearner(name="lp", \
+        base_learner=Orange.classification.knn.kNNLearner),
+    Orange.multilabel.MLkNNLearner(name="mlknn",k=5),
+    Orange.multilabel.BRkNNLearner(name="brknn",k=5),
+]
+
+data = Orange.data.Table("emotions.xml")
+
+res = Orange.evaluation.testing.cross_validation(learners, data,2)
+loss = Orange.evaluation.scoring.mlc_hamming_loss(res)
+accuracy = Orange.evaluation.scoring.mlc_accuracy(res)
+precision = Orange.evaluation.scoring.mlc_precision(res)
+recall = Orange.evaluation.scoring.mlc_recall(res)
+print 'loss=', loss
+print 'accuracy=', accuracy
+print 'precision=', precision
+print 'recall=', recall
 ```
-    import Orange
-
-    learners = [
-        Orange.multilabel.BinaryRelevanceLearner(name="br"),
-        Orange.multilabel.BinaryRelevanceLearner(name="br", \
-            base_learner=Orange.classification.knn.kNNLearner),
-        Orange.multilabel.LabelPowersetLearner(name="lp"),
-        Orange.multilabel.LabelPowersetLearner(name="lp", \
-            base_learner=Orange.classification.knn.kNNLearner),
-        Orange.multilabel.MLkNNLearner(name="mlknn",k=5),
-        Orange.multilabel.BRkNNLearner(name="brknn",k=5),
-    ]
-
-    data = Orange.data.Table("emotions.xml")
-
-    res = Orange.evaluation.testing.cross_validation(learners, data,2)
-    loss = Orange.evaluation.scoring.mlc_hamming_loss(res)
-    accuracy = Orange.evaluation.scoring.mlc_accuracy(res)
-    precision = Orange.evaluation.scoring.mlc_precision(res)
-    recall = Orange.evaluation.scoring.mlc_recall(res)
-    print 'loss=', loss
-    print 'accuracy=', accuracy
-    print 'precision=', precision
-    print 'recall=', recall
-```
-
-
-
-
 
 ### References
 
-
-* G. Tsoumakas and I. Katakis. _Multi-label classification: An overview". International Journal of Data Warehousing and Mining, 3(3):1-13, 2007._
-* E. Spyromitros, G. Tsoumakas, and I. Vlahavas, _An Empirical Study of Lazy Multilabel Classification Algorithms_. Proc. 5th Hellenic Conference on Artificial Intelligence (SETN 2008), Springer, Syros, Greece, 2008.
-* M. Zhang and Z. Zhou. _ML-KNN: A lazy learning approach to multi-label learning_. Pattern Recognition, 40, 7 (Jul. 2007), 2038-2048.
-* S. Godbole and S. Sarawagi. _Discriminative Methods for Multi-labeled Classification_, Proceedings of the 8th Pacific-Asia Conference on Knowledge Discovery and Data Mining, PAKDD 2004.
-* R. E. Schapire and Y. Singer. _Boostexter: a bossting-based system for text categorization_, Machine Learning, vol.39, no.2/3, 2000, pp:135-68.
-
+- G. Tsoumakas and I. Katakis. _Multi-label classification: An overview". International Journal of Data Warehousing and Mining, 3(3):1-13, 2007._
+- E. Spyromitros, G. Tsoumakas, and I. Vlahavas, _An Empirical Study of Lazy Multilabel Classification Algorithms_. Proc. 5th Hellenic Conference on Artificial Intelligence (SETN 2008), Springer, Syros, Greece, 2008.
+- M. Zhang and Z. Zhou. _ML-KNN: A lazy learning approach to multi-label learning_. Pattern Recognition, 40, 7 (Jul. 2007), 2038-2048.
+- S. Godbole and S. Sarawagi. _Discriminative Methods for Multi-labeled Classification_, Proceedings of the 8th Pacific-Asia Conference on Knowledge Discovery and Data Mining, PAKDD 2004.
+- R. E. Schapire and Y. Singer. _Boostexter: a bossting-based system for text categorization_, Machine Learning, vol.39, no.2/3, 2000, pp:135-68.

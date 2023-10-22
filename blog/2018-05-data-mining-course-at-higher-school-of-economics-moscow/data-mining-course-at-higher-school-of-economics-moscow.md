@@ -1,9 +1,19 @@
 ---
 author: "AJDA"
-date: '2018-05-03 11:37:28+00:00'
+date: "2018-05-03 11:37:28+00:00"
 draft: false
 title: "Data Mining Course at Higher School of Economics, Moscow"
-blog: ["analysis" ,"business intelligence" ,"classification" ,"education" ,"examples"  ,"python" ,"scripting" ,"workshop" ]
+blog:
+  [
+    "analysis",
+    "business intelligence",
+    "classification",
+    "education",
+    "examples",
+    "python",
+    "scripting",
+    "workshop",
+  ]
 oldUrl: "/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/"
 ---
 
@@ -17,88 +27,82 @@ One of the things we did was compute minimum cost of misclassifications. The sto
 
 First, import all the libraries we will need:
 
-```
-    import matplotlib.pyplot as plt
-    import numpy as np
-    
-    from Orange.data import Table
-    from Orange.classification import NaiveBayesLearner, TreeLearner
-    from Orange.evaluation import CrossValidation
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+from Orange.data import Table
+from Orange.classification import NaiveBayesLearner, TreeLearner
+from Orange.evaluation import CrossValidation
 ```
 
 Then load heart disease data (and print a sample).
 
+```python
+heart = Table("heart_disease")
+print(heart[:5])
 ```
-    heart = Table("heart_disease")
-    print(heart[:5])
-```
-
 
 Now, train classifiers and select probabilities of Naive Bayes for a patient being sick.
 
-```
-    scores = CrossValidation(heart, [NaiveBayesLearner(), TreeLearner()])
-    
-    #take probabilites of class 1 (sick) of NaiveBayesLearner
-    p1 = scores.probabilities[0][:, 1]
-    
-    #take actual class values
-    y = scores.actual
-    
-    #cost of false positive (patient classified as sick when healthy)
-    fp_cost = 500
-    
-    #cost of false negative (patient classified as healthy when sick)
-    fn_cost = 800
-```
+```python
+scores = CrossValidation(heart, [NaiveBayesLearner(), TreeLearner()])
 
+#take probabilites of class 1 (sick) of NaiveBayesLearner
+p1 = scores.probabilities[0][:, 1]
+
+#take actual class values
+y = scores.actual
+
+#cost of false positive (patient classified as sick when healthy)
+fp_cost = 500
+
+#cost of false negative (patient classified as healthy when sick)
+fn_cost = 800
+```
 
 Set counts, where we declare 0 patients being sick (threshold >1).
 
+```python
+fp = 0
+#start with threshold above 1 (no one is sick)
+fn = np.sum(y)
 ```
-    fp = 0
-    #start with threshold above 1 (no one is sick)
-    fn = np.sum(y)
-```
-
 
 For each threshold, compute the cost associated with each type of mistake.
 
-```
-    ps = []
-    costs = []
-    
-    #compute costs of classifying i patients as sick
-    for i in np.argsort(p1)[::-1]:
-        if y[i] == 0:
-            fp += 1
-        else:
-            fn -= 1
-        ps.append(p1[i])
-        costs.append(fp * fp_cost + fn * fn_cost)
-```
+```python
+ps = []
+costs = []
 
+#compute costs of classifying i patients as sick
+for i in np.argsort(p1)[::-1]:
+    if y[i] == 0:
+        fp += 1
+    else:
+        fn -= 1
+    ps.append(p1[i])
+    costs.append(fp * fp_cost + fn * fn_cost)
+```
 
 In the end, we get a list of probability thresholds and associated costs. Now let us find the minimum cost and its probability of a patient being sick.
 
+```python
+costs = np.array(costs)
+#find probability of a patient being sick at lowest cost
+print(ps[costs.argmin()])
 ```
-    costs = np.array(costs)
-    #find probability of a patient being sick at lowest cost
-    print(ps[costs.argmin()])
-```
-
 
 This means the threshold that minimizes our cost for a given classifier is 0.620655. Sara would send all the patients with a probability of being sick higher or equal than 0.620655  for further tests.
 
 At the end, we can also plot the cost to patients sent curve.
 
+```python
+fig, ax = plt.subplots()
+plt.plot(ps, costs)
+ax.set_xlabel('Patients sent')
+ax.set_ylabel('Cost')
 ```
-    fig, ax = plt.subplots()
-    plt.plot(ps, costs)
-    ax.set_xlabel('Patients sent')
-    ax.set_ylabel('Cost')
-```
-
 
 ![](image-1.png)
 
