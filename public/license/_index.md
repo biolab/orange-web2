@@ -15,4 +15,4 @@ Orange Widgets and Canvas are based on Qt, which is distributed under GPL 3.0 (a
 
 Orange add-ons may have additional licensing requirements. Please, see their respective license files.
 
-If you want to cite Orange or give it an attribution, you can find more information <a href="/citation">here</a>.
+If you want to cite Orange or give it an attribution, you can find more information <Link url="/citation" name="here" />.
