@@ -7,7 +7,6 @@ import { MDXRemote } from "next-mdx-remote";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import styled from "styled-components";
 import Link from "next/link";
-
 import { Heading2 } from "@components/UiKit/Typography";
 
 export async function getStaticProps() {
@@ -46,10 +45,6 @@ export default function GettingStarted({ frontmatter, mdxSource }: any) {
     </MainLayout>
   );
 }
-
-const ItemWithChevron = ({ header, ...rest }) => (
-  <Item {...rest} header={<>{header}</>} />
-);
 
 const StHeading2 = styled(Heading2)`
   margin-top: 30px;
