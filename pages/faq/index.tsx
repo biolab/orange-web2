@@ -14,7 +14,7 @@ export async function getStaticProps() {
     path.join("public", "faq", "_index.mdx"),
     "utf-8"
   );
-  const { data: frontmatter, content } = matter(mdFile);
+  const { content } = matter(mdFile);
   const mdxSource = await serialize(content, {
     mdxOptions: {
       format: "mdx",
@@ -22,11 +22,11 @@ export async function getStaticProps() {
   });
 
   return {
-    props: { frontmatter, mdxSource },
+    props: { mdxSource },
   };
 }
 
-export default function GettingStarted({ frontmatter, mdxSource }: any) {
+export default function GettingStarted({ mdxSource }: any) {
   return (
     <MainLayout title="FAQ">
       <MDXRemote
@@ -82,7 +82,7 @@ const AccordionItem = styled(Item)`
       border: none;
 
       &[aria-expanded="true"] {
-        background-color: #f6f6f6b7 !important;
+        background-color: #f6f6f6d3 !important;
         box-shadow: inset 0 -1px 0 0 ${(props) => props.theme.borderColor};
       }
 
