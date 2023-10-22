@@ -6,6 +6,7 @@ import {
   ScreenshotImage,
   VideoResponsive,
 } from "./MdContent.styled";
+import NextLink from "next/link";
 
 type ImageProps = {
   src: string;
@@ -36,6 +37,9 @@ const LinkNew = ({ url, name }: { url: string; name: string }) => {
     </a>
   );
 };
+const Link = ({ url, name }: { url: string; name: string }) => {
+  return <NextLink href={url}>{name}</NextLink>;
+};
 const YouTube = ({ embedId }: { embedId: string }) => (
   <VideoResponsive>
     <iframe
@@ -60,6 +64,7 @@ export default function MdContent({ content }: { content: any }) {
             YouTube,
             Figure,
             LinkNew,
+            Link,
             WindowScreenshot,
             WorkflowScreenshot: WindowScreenshot,
             img: Figure,

@@ -100,7 +100,7 @@ export default function Download() {
         <StDownloadWrapper>
           <StLeftColumn>
             <div>
-              <h2>Windows</h2>
+              <h2 id="win">Windows</h2>
               <h3>Standalone installer (default)</h3>
 
               <Link
@@ -126,7 +126,7 @@ export default function Download() {
             </div>
 
             <div>
-              <h2>macOS</h2>
+              <h2 id="mac">macOS</h2>
 
               <Link
                 href={`https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`}

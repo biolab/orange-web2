@@ -8,27 +8,15 @@ import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import styled from "styled-components";
 import Link from "next/link";
 import { Heading2 } from "@components/UiKit/Typography";
+import getIndexContent from "@utils/getIndexContent";
 
 export async function getStaticProps() {
-  const mdFile = fs.readFileSync(
-    path.join("public", "faq", "_index.mdx"),
-    "utf-8"
-  );
-  const { content } = matter(mdFile);
-  const mdxSource = await serialize(content, {
-    mdxOptions: {
-      format: "mdx",
-    },
-  });
-
-  return {
-    props: { mdxSource },
-  };
+  return await getIndexContent(path.join("public", "faq", "_index.mdx"));
 }
 
-export default function GettingStarted({ mdxSource }: any) {
+export default function GettingStarted({ mdxSource, frontmatter }: any) {
   return (
-    <MainLayout title="FAQ">
+    <MainLayout title={frontmatter.title}>
       <MDXRemote
         {...mdxSource}
         components={{
