@@ -5,10 +5,18 @@ draft: false
 title: "New Video Tutorials on Text Mining"
 thumbImage: "2020-09-28-text-tutorials.png"
 frontPageImage: "2020-09-28-text-tutorials.png"
-blog: ["text mining", "tutorial", "video", "twitter", "sentiment analysis", "embedding"]
+blog:
+  [
+    "text mining",
+    "tutorial",
+    "video",
+    "twitter",
+    "sentiment analysis",
+    "embedding",
+  ]
 shortExcerpt: "New video tutorials on text mining available on our YouTube channel."
 longExcerpt: "New video tutorials on text mining available on our YouTube channel."
-x2images: false  # true if using retina screenshots, else false
+x2images: false # true if using retina screenshots, else false
 oldUrl: "/blog/2020/2020-09-28-text-tutorials/"
 ---
 
@@ -18,18 +26,18 @@ Related: <LinkNew url="blog/2016/02/26/getting-started-series-pt2/" name="Gettin
 
 While [Twitter](https://orange.biolab.si/widget-catalog/text-mining/twitter-widget/) widget is not a new addition to the Text add-on, it has been missing a tutorial all this time. In the video, we describe how to use the widget and how to perform topic modelling on tweets.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HDkI6G4slzQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HDkI6G4slzQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 The second video describes sentiment analysis on tweets for monitoring topic or brand sentiment.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7Fnli0wc11g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7Fnli0wc11g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 The third video shows the alternative to computing a bag-of-words matrix. Document embeddings are a popular alternative, which can increase model's accuracy.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FPp3pDCw7u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FPp3pDCw7u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 Finally, we show how to compute a network from Twitter mentions. This tutorials also shows how to mix-and-match Orange components from different add-ons.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XE1_tPgfxoA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XE1_tPgfxoA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 Don't forget to <a href="https://www.youtube.com/c/OrangeDataMining">subscribe</a> to our channel for more videos! And give us a thumbs up if you enjoyed the tutorials. :)

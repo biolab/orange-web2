@@ -58,8 +58,8 @@ export const ContentStyle = styled.div`
   }
 
   p {
-    font-size: 22px;
-    line-height: 1.36;
+    font-size: 20px;
+    line-height: 1.4;
     color: ${({ theme }) => theme.blackLight};
 
     @media ${device.L} {
@@ -76,8 +76,8 @@ export const ContentStyle = styled.div`
     padding-left: 40px;
 
     li {
-      font-size: 22px;
-      line-height: 1.36;
+      font-size: 20px;
+      line-height: 1.4;
       color: ${({ theme }) => theme.blackLight};
 
       @media ${device.L} {
@@ -112,7 +112,7 @@ export const ContentStyle = styled.div`
   }
 
   * + *:not(li, a, code) {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   * + a[data-gallery],

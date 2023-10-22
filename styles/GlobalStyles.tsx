@@ -64,7 +64,7 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     padding: 20px;
     margin: 0 0 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.42857143;
     word-break: break-all;
     word-wrap: break-word;
@@ -75,7 +75,7 @@ export const GlobalStyle = createGlobalStyle`
     word-wrap: normal;
     
     code {
-      padding: 0;
+      padding: 0 !important;
       font-size: inherit;
       color: inherit;
       white-space: pre-wrap;

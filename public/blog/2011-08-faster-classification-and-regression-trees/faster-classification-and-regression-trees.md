@@ -1,9 +1,9 @@
 ---
 author: "BIOLAB"
-date: '2011-08-24 22:26:00+00:00'
+date: "2011-08-24 22:26:00+00:00"
 draft: false
 title: "Faster classification and regression trees"
-blog: ["classification" ,"regression" ,"tree" ]
+blog: ["classification", "regression", "tree"]
 oldUrl: "/blog/2011/08/24/faster-classification-and-regression-trees/"
 ---
 
@@ -11,24 +11,17 @@ oldUrl: "/blog/2011/08/24/faster-classification-and-regression-trees/"
 
 The motivation behind developing a new tree induction algorithm from scratch was to speed up the construction of random forests, but you can also use it as a standalone learner. **SimpleTreeLearner** uses gain ratio for classification and MSE for regression and can handle unknown values.
 
-
 ### Comparison with TreeLearner
-
 
 The graph below shows **SimpleTreeLearner** construction times on datasets bundled with Orange normalized to **TreeLearner**. Smaller is better.
 
 ![](simpletree_speed.png__600x641_q95_crop_upscale.png)
 
-
 The harmonic mean (average speedup) on all the benchmarks is 11.4.
-
 
 ### Usage
 
-
 The user can set four parameters:
-
-
 
 **maxMajority**
 
@@ -48,20 +41,18 @@ At every split an attribute will be skipped with probability skipProb. This para
 
 The code snippet below demonstrates the basic usage of **SimpleTreeLearner**. It behaves much like any other Orange learner would.
 
+```python
+import Orange
+
+data = Orange.data.Table("iris")
+
+# build classifier and classify train data
+classifier = Orange.classification.tree.SimpleTreeLearner(data, maxMajority=0.8)
+for ex in data:
+    print classifier(ex)
+
+# estimate classification accuracy with cross-validation
+learner = Orange.classification.tree.SimpleTreeLearner(minExamples=2)
+result = Orange.evaluation.testing.cross_validation([learner], data)
+print 'CA:', Orange.evaluation.scoring.CA(result)[0]
 ```
-    import Orange
-
-    data = Orange.data.Table("iris")
-
-    # build classifier and classify train data
-    classifier = Orange.classification.tree.SimpleTreeLearner(data, maxMajority=0.8)
-    for ex in data:
-        print classifier(ex)
-
-    # estimate classification accuracy with cross-validation
-    learner = Orange.classification.tree.SimpleTreeLearner(minExamples=2)
-    result = Orange.evaluation.testing.cross_validation([learner], data)
-    print 'CA:', Orange.evaluation.scoring.CA(result)[0]
-```
-
-

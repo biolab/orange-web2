@@ -13,6 +13,7 @@ import { Heading1 } from "@components/UiKit/TypographyHomepage";
 import device from "@styles/utils/breakpoints";
 import formatDate from "@utils/formatDate";
 import MainLayout from "@components/UiKit/MainLayout";
+import rehypeHighlight from "rehype-highlight";
 
 const BlogDetailWrapper = styled.div`
   padding: 80px 0;
@@ -97,7 +98,7 @@ export async function getStaticProps({
     {
       mdxOptions: {
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-        rehypePlugins: [getImageData], // Adds webp src, width and height to images
+        rehypePlugins: [rehypeHighlight as any, getImageData], // Adds webp src, width and height to images
       },
     }
   );

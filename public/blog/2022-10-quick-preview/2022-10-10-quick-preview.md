@@ -19,4 +19,4 @@ From Orange version 3.33, clicking these numbers shows a data preview. Currently
 
 My favorite use: select some data in visualization and see it without connecting any widget to the output.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WUhvpYk3gwY?playlist=WUhvpYk3gwY&loop=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WUhvpYk3gwY?playlist=WUhvpYk3gwY&loop=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

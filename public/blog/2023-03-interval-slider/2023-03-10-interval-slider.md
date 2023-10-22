@@ -43,7 +43,7 @@ Unlike `QPushButton`, `QSlider` is a complex control, consisting of subcontrols 
 
 The trick to paint a two-handled slider is to call `drawComplexControl` multiple times: first to draw the groove and tickmarks, and then twice, once for each handle. In the code fragment below, `self.opt` is a `QSliderOption`. Method `drawComplexControl` will put a handle at the position stored in `self.opt.sliderPosition`, hence we iterate it through `self._pos`, which stores the positions of our two handles.
 
-```
+```python
 # Draw groove and tickmarks
 self.opt.subControls = QStyle.SC_SliderGroove | QStyle.SC_SliderTickmarks
 self.style().drawComplexControl(QStyle.CC_Slider, self.opt, painter)
@@ -62,7 +62,7 @@ Drawing a native looking widget is only one part of the job. What happens when t
 
 `QStyle` implements several methods needed for interaction with complex controls. One is already used in `paintEvent`: we call `QStyle`'s `subControlRect(QStyle.CC_Slider, self.opt, QStyle.SC_SliderHandle)` to [obtain the logical coordinates of each handle](https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L223) in order to mark the interval between them.
 
-```
+```python
 args = QStyle.CC_Slider, self.opt, QStyle.SC_SliderHandle
 self.opt.sliderPosition = self._pos[0]
 x_left_handle = self.style().subControlRect(*args).right()
@@ -72,7 +72,7 @@ x_right_handle = self.style().subControlRect(*args).left()
 
 In `mousePressEvent`, we call `hitTestComplexControl(QStyle.CC_Slider, self.opt, event.pos(), self)`, which tells us which subcontrol (if any) of the slider contains `event.pos()`. As in `paintEvent`, we set `self.opt.sliderPosition` to each handle's position in turn, to see if `hitTestComplexControl` returns `QStyle.SC_SliderHandle` for any of them.
 
-```
+```python
 def mousePressEvent(self, event: QMouseEvent) -> None:
     self._dragged = self.NoHandle
     args = (QStyle.CC_Slider, self.opt, event.pos(), self)
@@ -90,7 +90,7 @@ The [code](https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026
 
 The third method of `QStyle`, which we use in [`mouseEvent`](https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L169) determines the slider value from handles position - which is again known only by the class that paints a platform-dependent slider. `sliderValueFromPosition` is given the slider span, (mouse) position and the total bounding rectangle of the slider, and returns the slider's value for that position.
 
-```
+```python
 distance = self.opt.maximum - self.opt.minimum
 pos = self.style().sliderValueFromPosition(
     0, distance, event.pos().x(), self.rect().width())
@@ -100,7 +100,7 @@ pos = self.style().sliderValueFromPosition(
 
 Using interval sliders is as trivial as using ordinary `QSliders`: initialize it with starting position, interval and options (if any), and connect the necessary signals.
 
-```
+```python
 slider = IntervalSlider(low, high * 100, minimum=0, maximum=100)
 self.slider.intervalChanged.connect(self.__on_slider_moved)
 ```
