@@ -13,6 +13,7 @@ import React from "react";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 import styled, { css } from "styled-components";
+import rehypeHighlight from "rehype-highlight";
 
 export interface Widget {
   title: string;
@@ -55,7 +56,7 @@ export async function getStaticProps({ params }: any) {
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-      rehypePlugins: [getImageData], // Add getImageData to add width and height to images
+      rehypePlugins: [rehypeHighlight as any, getImageData], // Add getImageData to add width and height to images
       format: "md",
     },
   });
