@@ -60,7 +60,14 @@ export default function Navbar() {
               <Styled.MenuList>
                 {config.menu.map(({ name, url }) => (
                   <li key={name}>
-                    <Link href={url}>{name}</Link>
+                    <Link
+                      onClick={() => {
+                        setNavOpened(false);
+                      }}
+                      href={url}
+                    >
+                      {name}
+                    </Link>
                   </li>
                 ))}
               </Styled.MenuList>
