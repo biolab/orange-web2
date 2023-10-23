@@ -7,7 +7,7 @@ import MainLayout from "@components/UiKit/MainLayout";
 import slugify from "@utils/slugify";
 
 const getIconWebpPath = (icon: string) => {
-  return `widget-catalog/${icon}`
+  return `/widget-catalog/${icon}`
     .replace("widget-icons", "widget-icons/__webp-images__")
     .replace(".png", ".webp");
 };

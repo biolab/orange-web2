@@ -43,7 +43,12 @@ export default function Navbar() {
     <Styled.Nav>
       <Adapt>
         <Styled.NavInner>
-          <Link href="/">
+          <Link
+            onClick={() => {
+              setNavOpened(false);
+            }}
+            href="/"
+          >
             <Image
               className="img-logo"
               src={LogoImage.src}

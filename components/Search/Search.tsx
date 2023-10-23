@@ -32,9 +32,9 @@ export const useOutsideClick = (
 const getPath = (url: string, _type: string) => {
   switch (_type) {
     case "blog":
-      return `/blog/${url}`;
+      return `/blog/${url}/`;
     case "widget":
-      return `/widget-catalog/${url}`;
+      return `/widget-catalog/${url}/`;
     default:
       return `/${url}`;
   }

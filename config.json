@@ -3,23 +3,23 @@
   "menu": [
     {
       "name": "Examples",
-      "url": "/examples"
+      "url": "/examples/"
     },
     {
       "name": "Download",
-      "url": "/download"
+      "url": "/download/"
     },
     {
       "name": "Blog",
-      "url": "/blog"
+      "url": "/blog/"
     },
     {
       "name": "Docs",
-      "url": "/docs"
+      "url": "/docs/"
     },
     {
       "name": "Workshops",
-      "url": "/workshops"
+      "url": "/workshops/"
     }
   ],
   "footer": [
@@ -28,23 +28,23 @@
       "pages": [
         {
           "name": "FAQ",
-          "url": "/faq"
+          "url": "/faq/"
         },
         {
           "name": "License",
-          "url": "/license"
+          "url": "/license/"
         },
         {
           "name": "Privacy",
-          "url": "/privacy"
+          "url": "/privacy/"
         },
         {
           "name": "Citation",
-          "url": "/citation"
+          "url": "/citation/"
         },
         {
           "name": "Contact",
-          "url": "/contact"
+          "url": "/contact/"
         }
       ]
     },
@@ -53,11 +53,11 @@
       "pages": [
         {
           "name": "Windows",
-          "url": "/download#win"
+          "url": "/download/#win"
         },
         {
           "name": "Mac OS",
-          "url": "/download#mac"
+          "url": "/download/#mac"
         }
       ]
     },
@@ -91,11 +91,11 @@
       "pages": [
         {
           "name": "Get started",
-          "url": "/getting-started"
+          "url": "/getting-started/"
         },
         {
           "name": "Widgets",
-          "url": "/widget-catalogue"
+          "url": "/widget-catalogue/"
         },
         {
           "name": "Scripting",
