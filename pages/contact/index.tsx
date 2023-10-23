@@ -10,6 +10,7 @@ import {
   AiOutlineExclamationCircle,
   AiOutlineLoading3Quarters,
 } from "react-icons/ai";
+import Content from "@components/Contact/Content";
 
 type Inputs = {
   name: string;
@@ -94,44 +95,7 @@ export default function Contact() {
     <MainLayout title="Contact">
       <Adapt $width650>
         <StForm onSubmit={handleSubmit(onSubmit)}>
-          <p>
-            Perhaps we have already answered your question in the{" "}
-            <StA href={"/faq"}>FAQ</StA>. If the answer isn’t there, feel free
-            to write to us.
-          </p>
-
-          <StParagraph>
-            We prefer to address any <b>support requests</b> and other general
-            questions about Orange in our{" "}
-            <StA href="https://discord.com/invite/FWrfeXV">
-              Discord chatroom.
-            </StA>
-          </StParagraph>
-
-          <p>
-            Please <b>report bugs</b>, issues, and anything unexpected on our{" "}
-            <StA href="https://github.com/biolab/orange3/issues">
-              GitHub issue tracker.
-            </StA>
-          </p>
-
-          <p>
-            Alternatively, for questions regarding the graphical user interface,
-            you may consult{" "}
-            <StA href="https://datascience.stackexchange.com/questions/tagged/orange">
-              Data Science Stack Exchange
-            </StA>
-            . For questions on the scripting layer (Python), please consult{" "}
-            <StA href="https://stackoverflow.com/questions/tagged/orange">
-              Stack Overflow
-            </StA>
-            .
-          </p>
-
-          <StParagraph>
-            For other inquiries of professional nature, such as business
-            proposals, reach us directly through the form below.
-          </StParagraph>
+          <Content />
 
           <FormField
             name="name"
@@ -196,15 +160,6 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
-
-const StParagraph = styled.p`
-  padding-top: 24px;
-  border-top: 1px solid ${({ theme }) => theme.borderColor};
-`;
-
-const StA = styled.a`
-  color: ${({ theme }) => theme.orange};
 `;
 
 const StLoader = styled(AiOutlineLoading3Quarters)`
