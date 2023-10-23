@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content="Orange Data Mining Toolbox"/><meta property="og:description" content="Orange Data Mining Toolbox"/><meta property="og:url" content="https://orangedatamining.com"/><meta property="og:image" content="/_next/static/media/orange-cover.b3a7732e.webp"/><meta property="og:image:width" content="1776"/><meta property="og:image:height" content="1008"/><meta property="og:site_name" content="Orange Data Mining"/><meta name="author" content="Bioinformatics Laboratory, University of Ljubljana"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css"/><title>Orange Data Mining - Learn with Paint Data</title><meta name="robots" content="index,follow"/><meta property="og:title" content="Orange Data Mining - Learn with Paint Data"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2015-07-10 07:00:54+00:00"/><meta property="article:author" content="AJDA"/><meta property="article:tag" content="classification"/><meta property="article:tag" content="clustering"/><meta property="article:tag" content="data"/><meta property="article:tag" content="examples"/><meta property="article:tag" content="plot"/><meta property="article:tag" content="visualization"/><meta name="next-head-count" content="23"/><link rel="preload" href="/_next/static/media/e7c7dbb62ddcf6fa-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/_next/static/css/148a6a0ea3cd708f.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/148a6a0ea3cd708f.css" crossorigin="" data-n-g=""/><link rel="preload" href="/_next/static/css/4ac7ed34d61ef456.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/4ac7ed34d61ef456.css" crossorigin="" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-21c828b96ad33382.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-0c7baedefba6b077.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-61a1de8ce4711ed8.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-5cf731f7ca37c3f5.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/110-f463c991b9377c97.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/blog/%5Bslug%5D-f1fbe7543c5d96e5.js" defer="" crossorigin=""></script><script src="/_next/static/mqeKqgdLtMqusMMeZ0kHf/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/mqeKqgdLtMqusMMeZ0kHf/_ssgManifest.js" defer="" crossorigin=""></script><style data-styled="" data-styled-version="5.3.6">.iSNtvJ{position:relative;max-width:1296px;margin-right:auto;margin-left:auto;padding-left:72px;padding-right:72px;height:100%;box-sizing:content-box;}/*!sc*/
+@media (max-width:1130px){.iSNtvJ{padding-left:30px;padding-right:30px;}}/*!sc*/
+@media (max-width:720px){.iSNtvJ{padding-left:15px;padding-right:15px;}}/*!sc*/
+.fJLXpS{position:relative;max-width:1296px;margin-right:auto;margin-left:auto;padding-left:72px;padding-right:72px;height:100%;box-sizing:content-box;max-width:714px;}/*!sc*/
+@media (max-width:1130px){.fJLXpS{padding-left:30px;padding-right:30px;}}/*!sc*/
+@media (max-width:720px){.fJLXpS{padding-left:15px;padding-right:15px;}}/*!sc*/
+data-styled.g1[id="sc-ef15f394-0"]{content:"iSNtvJ,fJLXpS,"}/*!sc*/
+.jyxOJT{position:relative;display:inline-block;max-width:100%;font-size:20px;line-height:1.25;font-weight:600;-webkit-text-decoration:none;text-decoration:none;color:#fff;padding:10px 15px;border-radius:5px;background-image:linear-gradient(180deg,#FE7A00 74.93%,#F65D18 100%);box-shadow:0px 10px 10px rgba(0,0,0,0.03);background-size:100%;cursor:pointer;z-index:2;}/*!sc*/
+@media (max-width:720px){.jyxOJT{font-size:18px;}}/*!sc*/
+.jyxOJT:before{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:inherit;background-image:linear-gradient(180deg,#ffbc44 100%,#FE7A00 100%);opacity:0;z-index:-100;-webkit-transition:opacity 0.45s;transition:opacity 0.45s;}/*!sc*/
+.jyxOJT:hover{color:#fff;}/*!sc*/
+.jyxOJT:hover:before{opacity:1;}/*!sc*/
+data-styled.g2[id="sc-b6ea565a-0"]{content:"jyxOJT,"}/*!sc*/
+.iQtqNS{background:#1F1F1F;padding:38px 0 25px;color:#fff;}/*!sc*/
+data-styled.g3[id="sc-c82ca4e2-0"]{content:"iQtqNS,"}/*!sc*/
+.iiCJUO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-column-gap:80px;column-gap:80px;row-gap:40px;margin-bottom:40px;}/*!sc*/
+@media (max-width:720px){.iiCJUO{display:grid;grid-template-columns:1fr 1fr;-webkit-column-gap:20px;column-gap:20px;}}/*!sc*/
+.iiCJUO h3{font-size:16px;font-weight:600;margin-bottom:12px;}/*!sc*/
+.iiCJUO li + li{margin-top:12px;}/*!sc*/
+data-styled.g4[id="sc-c82ca4e2-1"]{content:"iiCJUO,"}/*!sc*/
+.eWdALT{display:none;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:44px;height:34px;padding:6px;border-radius:5px;border:none;background:linear-gradient(180deg,#FE7A00 74.93%,#F65D18 100%);box-shadow:0px 10px 10px rgba(0,0,0,0.03);cursor:pointer;margin-left:auto;}/*!sc*/
+@media (max-width:920px){.eWdALT{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
+.eWdALT div{width:22px;height:2px;background:#fff;-webkit-transform-origin:1px;-ms-transform-origin:1px;transform-origin:1px;-webkit-transition:all 0.3s linear;transition:all 0.3s linear;}/*!sc*/
+data-styled.g5[id="sc-46d6b9d9-0"]{content:"eWdALT,"}/*!sc*/
+.jTcDmc{-webkit-clip:rect(0 0 0 0);clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px;}/*!sc*/
+data-styled.g6[id="sc-cdea7863-0"]{content:"jTcDmc,"}/*!sc*/
+.klNjip{height:80px;background:#fff;box-shadow:0px 4px 10px 4px rgba(0,0,0,0.04);}/*!sc*/
+data-styled.g7[id="sc-bac7f990-0"]{content:"klNjip,"}/*!sc*/
+.hOqLDN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;}/*!sc*/
+.hOqLDN .img-logo{width:115px;}/*!sc*/
+data-styled.g8[id="sc-bac7f990-1"]{content:"hOqLDN,"}/*!sc*/
+.cqbOTb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+@media (max-width:920px){.cqbOTb{display:block;position:absolute;top:80px;left:0;width:100%;z-index:1;padding:0 30px 30px;background-color:#fff;opacity:0;z-index:-9999;pointer-events:none;-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease;box-shadow:0 4px 10px -1px rgba(0,0,0,0.04);}}/*!sc*/
+@media (max-width:720px){.cqbOTb{padding:0 15px 15px;}}/*!sc*/
+data-styled.g9[id="sc-bac7f990-2"]{content:"cqbOTb,"}/*!sc*/
+.iRcXLS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+@media (max-width:920px){.iRcXLS{display:block;margin-bottom:15px;}}/*!sc*/
+.iRcXLS li + li{margin-left:26px;}/*!sc*/
+@media (max-width:920px){.iRcXLS li + li{margin-left:0;}}/*!sc*/
+.iRcXLS a{display:inline-block;font-size:1.25rem;line-height:1;color:#000000;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:color 0.3s;transition:color 0.3s;}/*!sc*/
+.iRcXLS a:hover{color:#FE7A00;}/*!sc*/
+@media (max-width:920px){.iRcXLS a{padding:8px 0;}}/*!sc*/
+data-styled.g10[id="sc-bac7f990-3"]{content:"iRcXLS,"}/*!sc*/
+.kSHWdx{position:relative;width:160px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:width 0.3s ease-in-out;transition:width 0.3s ease-in-out;margin-left:26px;}/*!sc*/
+@media (max-width:920px){.kSHWdx{width:auto;margin-left:0;}}/*!sc*/
+data-styled.g11[id="sc-bac7f990-4"]{content:"kSHWdx,"}/*!sc*/
+.hXYwkT{display:inline-block;position:absolute;top:0;right:42px;width:calc(100% - 42px);height:100%;font-size:16px;line-height:1.25;padding:10px 13px;background:#fff;border-radius:5px 0px 0px 5px;border:1px solid #D9D9D9;border-right:none;-webkit-transition:width 0.3s ease-in-out;transition:width 0.3s ease-in-out;}/*!sc*/
+@media (max-width:920px){.hXYwkT{display:none;}}/*!sc*/
+.hXYwkT::-webkit-input-placeholder{color:#D9D9D9;}/*!sc*/
+.hXYwkT::-moz-placeholder{color:#D9D9D9;}/*!sc*/
+.hXYwkT:-ms-input-placeholder{color:#D9D9D9;}/*!sc*/
+.hXYwkT::placeholder{color:#D9D9D9;}/*!sc*/
+data-styled.g12[id="sc-bac7f990-5"]{content:"hXYwkT,"}/*!sc*/
+.lfAUtN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#fff;margin-left:auto;-webkit-flex:0 0 42px;-ms-flex:0 0 42px;flex:0 0 42px;height:41px;border:1px solid #474747;border-radius:0px 5px 5px 0px;background-color:#474747;}/*!sc*/
+@media (max-width:920px){.lfAUtN{margin-left:0;}}/*!sc*/
+data-styled.g13[id="sc-bac7f990-6"]{content:"lfAUtN,"}/*!sc*/
+.eBQFeB{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}/*!sc*/
+data-styled.g18[id="sc-da66f971-0"]{content:"eBQFeB,"}/*!sc*/
+*,*:before,*:after{box-sizing:border-box;-webkit-font-smoothing:antialiased;}/*!sc*/
+html,body{height:100%;margin:0;}/*!sc*/
+html{font-family:'Source Sans Pro',sans-serif;font-weight:400;color:#000000;}/*!sc*/
+body{background:#fff;}/*!sc*/
+body,h1,h2,h3,h4,h5,h6,p,ol,ul{margin:0;padding:0;font-weight:normal;}/*!sc*/
+main{-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+ol,ul{list-style:none;}/*!sc*/
+figure{margin:0;}/*!sc*/
+img,video{display:block;max-width:100%;height:auto;}/*!sc*/
+a{color:unset;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+a:hover{color:unset;}/*!sc*/
+strong{font-weight:600;}/*!sc*/
+pre{display:block;padding:20px;margin:0 0 10px;font-size:14px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;color:#000;border:1px solid #ebebeb;border-radius:5px;overflow-x:auto;word-wrap:normal;}/*!sc*/
+pre code{padding:0 !important;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0;border:none;}/*!sc*/
+code{padding:2px 3px;background:#f7f7f7;border:1px solid #ededed;border-radius:0.375rem;display:inline-block;line-height:1.2;margin:0;font-size:82%;}/*!sc*/
+::selection{background-color:#FE7A00;color:#fff;}/*!sc*/
+.lg-container .lg-backdrop.in{opacity:0.75;}/*!sc*/
+.lg-container .lg-toolbar.lg-group,.lg-container .lg-outer .lg-thumb-outer{background:rgba(0,0,0,0.45);}/*!sc*/
+data-styled.g19[id="sc-global-dTKGWS1"]{content:"sc-global-dTKGWS1,"}/*!sc*/
+.KDZEp h1{font-size:44px;line-height:1.13;font-weight:700;color:#1F1F1F;}/*!sc*/
+@media (max-width:920px){.KDZEp h1{font-size:38px;}}/*!sc*/
+@media (max-width:720px){.KDZEp h1{font-size:32px;}}/*!sc*/
+.KDZEp h2{font-size:33px;line-height:1.13;font-weight:600;color:#1F1F1F;}/*!sc*/
+@media (max-width:920px){.KDZEp h2{font-size:30px;}}/*!sc*/
+@media (max-width:720px){.KDZEp h2{font-size:26px;}}/*!sc*/
+.KDZEp h3{font-size:28px;line-height:1.18;font-weight:600;color:#1F1F1F;}/*!sc*/
+@media (max-width:920px){.KDZEp h3{font-size:26px;}}/*!sc*/
+@media (max-width:720px){.KDZEp h3{font-size:24px;}}/*!sc*/
+.KDZEp h4{font-size:22px;line-height:1.18;font-weight:600;color:#1F1F1F;}/*!sc*/
+@media (max-width:720px){.KDZEp h4{font-size:20px;}}/*!sc*/
+.KDZEp p{font-size:20px;line-height:1.4;color:#1F1F1F;}/*!sc*/
+@media (max-width:1130px){.KDZEp p{font-size:20px;}}/*!sc*/
+@media (max-width:920px){.KDZEp p{font-size:18px;}}/*!sc*/
+.KDZEp ul,.KDZEp ol{padding-left:40px;}/*!sc*/
+.KDZEp ul li,.KDZEp ol li{font-size:20px;line-height:1.4;color:#1F1F1F;}/*!sc*/
+@media (max-width:1130px){.KDZEp ul li,.KDZEp ol li{font-size:20px;}}/*!sc*/
+@media (max-width:920px){.KDZEp ul li,.KDZEp ol li{font-size:18px;}}/*!sc*/
+.KDZEp ul li + li,.KDZEp ol li + li{margin-top:4px;}/*!sc*/
+.KDZEp ul{list-style:disc;}/*!sc*/
+.KDZEp ol{list-style:decimal;}/*!sc*/
+.KDZEp p a,.KDZEp li a{color:#FE7A00;}/*!sc*/
+.KDZEp p a:hover,.KDZEp li a:hover{-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.KDZEp * + *:not(li,a,code){margin-top:20px;}/*!sc*/
+.KDZEp * + a[data-gallery],.KDZEp * + video{margin-top:40px;}/*!sc*/
+.KDZEp a[data-gallery]{display:block;margin-bottom:40px;}/*!sc*/
+.KDZEp iframe,.KDZEp video{margin-bottom:40px;}/*!sc*/
+data-styled.g20[id="sc-1a44a5f6-0"]{content:"KDZEp,"}/*!sc*/
+.cXdfZy{font-size:62px;line-height:1.04;font-weight:700;color:#fff;color:#1F1F1F;}/*!sc*/
+@media (max-width:920px){.cXdfZy{font-size:50px;}}/*!sc*/
+@media (max-width:720px){.cXdfZy{font-size:42px;}}/*!sc*/
+data-styled.g23[id="sc-4d34df46-0"]{content:"cXdfZy,"}/*!sc*/
+.gCMEWD{padding:80px 0;}/*!sc*/
+@media (max-width:920px){.gCMEWD{padding:60px 0;}}/*!sc*/
+@media (max-width:720px){.gCMEWD{padding:40px 0;}}/*!sc*/
+data-styled.g30[id="sc-d99538e1-0"]{content:"gCMEWD,"}/*!sc*/
+.gSybOC{margin-bottom:30px;}/*!sc*/
+data-styled.g31[id="sc-d99538e1-1"]{content:"gSybOC,"}/*!sc*/
+.jttBvH{position:relative;}/*!sc*/
+data-styled.g32[id="sc-d99538e1-2"]{content:"jttBvH,"}/*!sc*/
+.dbPTsj{position:absolute;top:0;right:100%;width:200px;margin-right:50px;text-align:right;}/*!sc*/
+@media (max-width:1130px){.dbPTsj{position:unset;width:auto;text-align:left;margin:0 0 30px 0;}}/*!sc*/
+data-styled.g33[id="sc-d99538e1-3"]{content:"dbPTsj,"}/*!sc*/
+.jFYhEh{font-size:20px;line-height:1.25;color:#1F1F1F;text-transform:capitalize;color:#5651EC;}/*!sc*/
+@media (max-width:920px){.jFYhEh{font-size:18px;}}/*!sc*/
+.dYEBIG{font-size:20px;line-height:1.25;color:#1F1F1F;}/*!sc*/
+@media (max-width:920px){.dYEBIG{font-size:18px;}}/*!sc*/
+data-styled.g34[id="sc-d99538e1-4"]{content:"jFYhEh,dYEBIG,"}/*!sc*/
+</style></head><body><div id="__next"><div class="sc-da66f971-0 eBQFeB __className_667be3"><nav class="sc-bac7f990-0 klNjip"><div class="sc-ef15f394-0 iSNtvJ"><div class="sc-bac7f990-1 hOqLDN"><a href="/"><img alt="Orange Logo" loading="lazy" width="120" height="35" decoding="async" data-nimg="1" class="img-logo" style="color:transparent" src="/_next/static/media/logo-orange.faff1861.svg"/></a><div><button aria-label="Toggle navigation" class="sc-46d6b9d9-0 eWdALT"><div></div><div></div><div></div></button><div class="sc-bac7f990-2 cqbOTb"><ul class="sc-bac7f990-3 iRcXLS"><li><a href="/examples/">Examples</a></li><li><a href="/download/">Download</a></li><li><a href="/blog/">Blog</a></li><li><a href="/docs/">Docs</a></li><li><a href="/workshops/">Workshops</a></li></ul><form class="sc-bac7f990-4 kSHWdx"><div class="sc-bac7f990-5 hXYwkT">Search</div><button class="sc-bac7f990-6 lfAUtN"><img alt="Icon for search" loading="lazy" width="18" height="17" decoding="async" data-nimg="1" style="color:transparent" src="/_next/static/media/icon-search.459b2665.svg"/><span class="sc-cdea7863-0 jTcDmc">Search through page</span></button></form></div></div></div></div></nav><main><div class="sc-d99538e1-0 gCMEWD"><div class="sc-ef15f394-0 fJLXpS"><div class="sc-d99538e1-1 gSybOC"><p class="sc-d99538e1-4 jFYhEh"><strong>classification, clustering, data, examples, plot, visualization</strong></p><h1 class="sc-4d34df46-0 cXdfZy">Learn with Paint Data</h1></div><div class="sc-d99538e1-2 jttBvH"><div class="sc-d99538e1-3 dbPTsj"><p class="sc-d99538e1-4 dYEBIG"><strong>AJDA</strong></p><p class="sc-d99538e1-4 dYEBIG">Jul 10, 2015</p></div><div class="sc-1a44a5f6-0 KDZEp"><div class="lg-react-element "><p><strong>Paint Data</strong> widget might initially look like a kids’ game, but in combination with other Orange widgets it becomes a very simple and useful tool for conveying statistical concepts, such as <strong>k-means</strong>, <strong>hierarchical clustering</strong> and <strong>prediction models</strong> (like SVM, logistical regression, etc.).</p>
+<p>The widget enables you to draw your data on a 2-D plane. You can name the x and y axes, select the number of classes (which are represented by different colors) and then position the points on a graph.</p>
+<a href="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-Example.webp" data-gallery="true"><img alt="" loading="lazy" width="803" height="626" decoding="async" data-nimg="1" style="color:transparent" src="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-Example.webp"/></a>
+<p>Several painting tools allow you to manage your data set according to your specific needs; brush will paint several data instances at once, while put allows you paint a single data instance. Select a data subset and view it in the Data Table widget or zoom in to see the position of your points up close. Jitter and magnet are converse tools which allow either to spread the instances or draw them closer together.</p>
+<p>The data will be represented in a data table with two attributes, where their instances correspond to coordinates in the system. Such data set is great for demonstrating k-means and hierarchical clustering methods. Just like we do below. In the screenshot we see that k-means, with our particular settings, recognizes clusters way better than hierarchical clustering. It returns a score rank, where the best score (the one with the highest value) means the most likely number of clusters. Hierarchical clustering, however, doesn’t even group the right classes together.</p>
+<a href="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-k-means1.webp" data-gallery="true"><img alt="" loading="lazy" width="1600" height="1280" decoding="async" data-nimg="1" style="color:transparent" src="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-k-means1.webp"/></a>
+<p>Paint Data widget for comparing precision of k-means and hierarchical clustering methods.</p>
+<p>Another way to use <strong>Paint Data</strong> is to observe the performance of classification methods, where we can alter the graph to demonstrate improvement or deterioration of prediction models. By painting the data points we can try to construct the data set, which would be difficult for one but easy for another classifier. Say, why does linear SVM fail on the data set below?</p>
+<a href="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-TestLearners.webp" data-gallery="true"><img alt="" loading="lazy" width="1200" height="960" decoding="async" data-nimg="1" style="color:transparent" src="/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-TestLearners.webp"/></a>
+<p>Use Paint Data to compare prediction quality of several classifiers.</p>
+<p>Happy painting!</p></div></div></div></div></div></main><footer class="sc-c82ca4e2-0 iQtqNS"><div class="sc-ef15f394-0 iSNtvJ"><div class="sc-c82ca4e2-1 iiCJUO"><div><h3>Orange</h3><ul><li><a href="/faq/">FAQ</a></li><li><a href="/license/">License</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/citation/">Citation</a></li><li><a href="/contact/">Contact</a></li></ul></div><div><h3>Download</h3><ul><li><a href="/download/#win">Windows</a></li><li><a href="/download/#mac">Mac OS</a></li></ul></div><div><h3>Community</h3><ul><li><a href="https://twitter.com/OrangeDataMiner">Twitter</a></li><li><a href="https://www.facebook.com/orangedatamining">Facebook</a></li><li><a href="https://datascience.stackexchange.com/questions/tagged/orange">Stack Exchange</a></li><li><a href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g">YouTube</a></li><li><a href="https://discord.com/invite/FWrfeXV">Discord</a></li></ul></div><div><h3>Documentation</h3><ul><li><a href="/getting-started/">Get started</a></li><li><a href="/widget-catalogue/">Widgets</a></li><li><a href="https://orange3.readthedocs.io/projects/orange-data-mining-library/en/latest/">Scripting</a></li></ul></div><div><h3>Developers</h3><ul><li><a href="https://github.com/biolab/orange3">GitHub</a></li><li><a href="http://docs.biolab.si/3/development/">Getting started</a></li></ul></div><div><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J" target="_blank" rel="noreferrer" class="sc-b6ea565a-0 jyxOJT">Donate to Orange</a></div></div><p>Copyright © University of Ljubljana</p></div></footer></div></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{"frontmatter":{"author":"AJDA","date":"2015-07-10 07:00:54+00:00","draft":false,"title":"Learn with Paint Data","blog":["classification","clustering","data","examples","plot","visualization"],"oldUrl":"/blog/2015/07/10/learn-with-paint-data/"},"content":{"compiledSource":"/*@jsxRuntime automatic @jsxImportSource react*/\nconst {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];\nconst {useMDXComponents: _provideComponents} = arguments[0];\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    p: \"p\",\n    strong: \"strong\",\n    img: \"img\"\n  }, _provideComponents(), props.components);\n  return _jsxs(_Fragment, {\n    children: [_jsxs(_components.p, {\n      children: [_jsx(_components.strong, {\n        children: \"Paint Data\"\n      }), \" widget might initially look like a kids’ game, but in combination with other Orange widgets it becomes a very simple and useful tool for conveying statistical concepts, such as \", _jsx(_components.strong, {\n        children: \"k-means\"\n      }), \", \", _jsx(_components.strong, {\n        children: \"hierarchical clustering\"\n      }), \" and \", _jsx(_components.strong, {\n        children: \"prediction models\"\n      }), \" (like SVM, logistical regression, etc.).\"]\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"The widget enables you to draw your data on a 2-D plane. You can name the x and y axes, select the number of classes (which are represented by different colors) and then position the points on a graph.\"\n    }), \"\\n\", _jsx(_components.img, {\n      src: \"/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-Example.webp\",\n      alt: \"\",\n      width: \"803\",\n      height: \"626\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Several painting tools allow you to manage your data set according to your specific needs; brush will paint several data instances at once, while put allows you paint a single data instance. Select a data subset and view it in the Data Table widget or zoom in to see the position of your points up close. Jitter and magnet are converse tools which allow either to spread the instances or draw them closer together.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"The data will be represented in a data table with two attributes, where their instances correspond to coordinates in the system. Such data set is great for demonstrating k-means and hierarchical clustering methods. Just like we do below. In the screenshot we see that k-means, with our particular settings, recognizes clusters way better than hierarchical clustering. It returns a score rank, where the best score (the one with the highest value) means the most likely number of clusters. Hierarchical clustering, however, doesn’t even group the right classes together.\"\n    }), \"\\n\", _jsx(_components.img, {\n      src: \"/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-k-means1.webp\",\n      alt: \"\",\n      width: \"1600\",\n      height: \"1280\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Paint Data widget for comparing precision of k-means and hierarchical clustering methods.\"\n    }), \"\\n\", _jsxs(_components.p, {\n      children: [\"Another way to use \", _jsx(_components.strong, {\n        children: \"Paint Data\"\n      }), \" is to observe the performance of classification methods, where we can alter the graph to demonstrate improvement or deterioration of prediction models. By painting the data points we can try to construct the data set, which would be difficult for one but easy for another classifier. Say, why does linear SVM fail on the data set below?\"]\n    }), \"\\n\", _jsx(_components.img, {\n      src: \"/blog/2015-07-learn-with-paint-data/__webp-images__/PaintData-TestLearners.webp\",\n      alt: \"\",\n      width: \"1200\",\n      height: \"960\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Use Paint Data to compare prediction quality of several classifiers.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Happy painting!\"\n    })]\n  });\n}\nfunction MDXContent(props = {}) {\n  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {\n    children: _jsx(_createMdxContent, props)\n  })) : _createMdxContent(props);\n}\nreturn {\n  default: MDXContent\n};\n","frontmatter":{},"scope":{}},"thumbImage":null},"__N_SSG":true},"page":"/blog/[slug]","query":{"slug":"learn-with-paint-data"},"buildId":"mqeKqgdLtMqusMMeZ0kHf","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
