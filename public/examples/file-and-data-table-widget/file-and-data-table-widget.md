@@ -1,6 +1,6 @@
 ---
 title: "File and Data Table"
-images: ["file-and-data-table-widget.webp"]
+images: ["file-and-data-table-widget.png"]
 type: "workflows"
 blog_link: ""
 video: ""

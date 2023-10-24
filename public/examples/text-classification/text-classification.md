@@ -1,6 +1,6 @@
 ---
 title: "Text Classification"
-images: ["text-classification.webp"]
+images: ["text-classification.png"]
 type: "workflows"
 blog_link: ""
 video: "https://youtu.be/zO_zwKZCULo"

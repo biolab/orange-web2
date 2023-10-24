@@ -1,11 +1,17 @@
 ---
 title: "Cross Validation for Survival Models"
-images: ["730_c_index_cross_validation.webp"]
+images: ["730_c_index_cross_validation.png"]
 type: "workflows"
 blog: ""
 video: ""
 download: "730_c_index_cross_validation.ows"
-workflows: ["Survival Analysis", "Cox Regression", "Concordance Index", "Cross Validation"]
+workflows:
+  [
+    "Survival Analysis",
+    "Cox Regression",
+    "Concordance Index",
+    "Cross Validation",
+  ]
 weight: 730
 ---
 

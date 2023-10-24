@@ -1,6 +1,6 @@
 ---
 title: "Cross Validation"
-images: ["cross-validation.webp"]
+images: ["cross-validation.png"]
 type: "workflows"
 blog_link: ""
 video: ""

@@ -1,11 +1,12 @@
 ---
 title: "Explore Subpopulations with Distinct Risk Profiles"
-images: ["740_hierarhical_clustering.webp"]
+images: ["740_hierarhical_clustering.png"]
 type: "workflows"
 blog: ""
 video: ""
 download: "740_hierarhical_clustering.ows"
-workflows: ["Survival Analysis", "Clustering", "Hierarchical Clustering", "Box Plot"]
+workflows:
+  ["Survival Analysis", "Clustering", "Hierarchical Clustering", "Box Plot"]
 weight: 740
 ---
 
