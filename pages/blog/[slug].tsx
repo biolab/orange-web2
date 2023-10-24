@@ -125,6 +125,7 @@ export default function BlogPost({
     <MainLayout
       title={frontmatter.title}
       justSEO
+      $width714
       openGraph={{
         type: "article",
         article: {

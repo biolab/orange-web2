@@ -16,12 +16,14 @@ const MainLayout = ({
   justSEO,
   openGraph,
   $width650,
+  $width714,
 }: {
   children: React.ReactNode | React.ReactNode[];
   title?: string;
   justSEO?: boolean;
   openGraph?: OpenGraph;
   $width650?: boolean;
+  $width714?: boolean;
 }) => {
   const seo = React.useMemo(
     () => (
@@ -47,7 +49,7 @@ const MainLayout = ({
   return (
     <>
       {seo}
-      <Adapt $mt $mb $width650={$width650}>
+      <Adapt $mt $mb $width650={$width650} $width714={$width714}>
         {title && <H1> {title}</H1>}
         {children}
       </Adapt>
