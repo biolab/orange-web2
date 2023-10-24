@@ -3,21 +3,15 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import React from "react";
 import Adapt from "@components/UiKit/Adapt";
 import {
-  AiOutlineInfoCircle,
-  AiOutlineExclamationCircle,
-} from "react-icons/ai";
-import {
   FormField,
   OptionsFormField,
   RadioFormField,
-  StButton,
   StButtonWithLoader,
   StCostWrapper,
   StForm,
   StFormField,
-  StLoader,
-  StNotice,
 } from "@components/Form/FormFields";
+import Alert, { AlertType } from "@components/Alert/Alert";
 
 type Inputs = {
   name: string;
@@ -240,17 +234,17 @@ export default function TrainingInquiry() {
 
           <StButtonWithLoader loading={loading} />
 
-          {success && (
-            <StNotice>
-              <AiOutlineInfoCircle /> The training inquiry was successfully sent
-            </StNotice>
-          )}
-          {error && (
-            <StNotice $warning>
-              <AiOutlineExclamationCircle /> Something went wrong, please try
-              again or contact us at orange@biolab.si
-            </StNotice>
-          )}
+          <Alert
+            show={success}
+            type={AlertType.SUCCESS}
+            text="The training inquiry was successfully sent"
+          />
+          <Alert
+            show={error}
+            type={AlertType.ERROR}
+            text="Something went wrong, please try
+              again or contact us at orange@biolab.si"
+          />
         </StForm>
       </Adapt>
     </MainLayout>

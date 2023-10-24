@@ -180,25 +180,6 @@ export const StLoader = styled(AiOutlineLoading3Quarters)`
   animation: ${rotate} 0.6s linear infinite;
 `;
 
-export const StNotice = styled.p<{ $warning?: boolean }>`
-  padding: 20px;
-  border-radius: 5px;
-  border: 1px solid ${(props) => props.theme.borderColor};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-
-  svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-
-  color: ${(props) => (props.$warning ? "#e91e62" : "#4BB543")};
-  background-color: ${(props) => (props.$warning ? "#e91e6211" : "#4bb54310")};
-`;
-
 export const StButtonWithLoader = ({ loading }: { loading: boolean }) => {
   return (
     <StButton disabled={loading} type="submit" value="Submit">

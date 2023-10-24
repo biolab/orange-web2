@@ -2,20 +2,14 @@ import MainLayout from "@components/UiKit/MainLayout";
 import { useForm, SubmitHandler } from "react-hook-form";
 import React from "react";
 import Adapt from "@components/UiKit/Adapt";
-import {
-  AiOutlineInfoCircle,
-  AiOutlineExclamationCircle,
-} from "react-icons/ai";
 import Content from "@components/Contact/Content";
 import {
   FormField,
-  StButton,
   StButtonWithLoader,
   StForm,
   StFormField,
-  StLoader,
-  StNotice,
 } from "@components/Form/FormFields";
+import Alert, { AlertType } from "@components/Alert/Alert";
 
 type Inputs = {
   name: string;
@@ -106,17 +100,17 @@ export default function Contact() {
 
           <StButtonWithLoader loading={loading} />
 
-          {success && (
-            <StNotice>
-              <AiOutlineInfoCircle /> Your message was successfully sent
-            </StNotice>
-          )}
-          {error && (
-            <StNotice $warning>
-              <AiOutlineExclamationCircle /> Something went wrong, please try
-              again or contact us at orange@biolab.si
-            </StNotice>
-          )}
+          <Alert
+            show={success}
+            type={AlertType.SUCCESS}
+            text="Your message was successfully sent"
+          />
+          <Alert
+            show={error}
+            type={AlertType.ERROR}
+            text="Something went wrong, please try
+              again or contact us at orange@biolab.si"
+          />
         </StForm>
       </Adapt>
     </MainLayout>
