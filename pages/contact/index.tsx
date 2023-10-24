@@ -40,7 +40,6 @@ export default function Contact() {
             name="name"
             placeholder="Enter your name"
             register={register}
-            required
           />
 
           <FormField
@@ -48,19 +47,21 @@ export default function Contact() {
             placeholder="Enter a contact email"
             type="email"
             register={register}
+            required
           />
 
           <FormField
             name="Subject"
             placeholder="Enter a subject"
             register={register}
+            required
           />
 
           <StFormField>
             <label htmlFor={"Message"}>message</label>
             <textarea
               placeholder="Write us a message"
-              {...register("Message", { required: false })}
+              {...register("Message", { required: true })}
             ></textarea>
           </StFormField>
 
