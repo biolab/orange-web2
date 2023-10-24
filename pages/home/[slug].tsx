@@ -10,6 +10,7 @@ import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import path from "path";
 import getPublicFilePath from "@utils/getPublicFilePath";
 import slugify from "@utils/slugify";
+import MainLayout from "@components/UiKit/MainLayout";
 
 function getHomeContent() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "home", "[slug]"));
@@ -37,18 +38,25 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }: { params: { slug: string } }) {
+export async function getStaticProps({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
   const pageData = getHomeContent().find((post: any) => post.slug === slug);
 
   const mdFile = fs.readFileSync(pageData!.fullFilePath, "utf-8");
   const { data: frontmatter, content } = matter(mdFile);
 
-  const mdxSource = await serialize(addRelativePathToImages(content, pageData!.publicFilePath), {
-    mdxOptions: {
-      remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-      rehypePlugins: [getImageData], // Adds webp src, width and height to images
-    },
-  });
+  const mdxSource = await serialize(
+    addRelativePathToImages(content, pageData!.publicFilePath),
+    {
+      mdxOptions: {
+        remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
+        rehypePlugins: [getImageData], // Adds webp src, width and height to images
+      },
+    }
+  );
 
   return {
     props: {
@@ -58,11 +66,16 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   };
 }
 
-export default function BlogPost({ title, mdxSource }: { title: string; mdxSource: any }) {
+export default function BlogPost({
+  title,
+  mdxSource,
+}: {
+  title: string;
+  mdxSource: any;
+}) {
   return (
-    <div>
-      <h1>{title}</h1>
+    <MainLayout title={title} $width650>
       <MdContent content={mdxSource} />
-    </div>
+    </MainLayout>
   );
 }

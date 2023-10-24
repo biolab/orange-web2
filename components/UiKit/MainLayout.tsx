@@ -6,7 +6,7 @@ import Adapt from "./Adapt";
 import { Heading1 } from "./Typography";
 
 const H1 = styled(Heading1)`
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
   text-align: center;
 `;
 
@@ -15,11 +15,13 @@ const MainLayout = ({
   title,
   justSEO,
   openGraph,
+  $width650,
 }: {
   children: React.ReactNode | React.ReactNode[];
   title?: string;
   justSEO?: boolean;
   openGraph?: OpenGraph;
+  $width650?: boolean;
 }) => {
   const seo = React.useMemo(
     () => (
@@ -45,7 +47,7 @@ const MainLayout = ({
   return (
     <>
       {seo}
-      <Adapt $mt $mb>
+      <Adapt $mt $mb $width650={$width650}>
         {title && <H1> {title}</H1>}
         {children}
       </Adapt>
