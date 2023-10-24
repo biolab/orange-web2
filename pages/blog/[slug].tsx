@@ -145,7 +145,7 @@ export default function BlogPost({
       }}
     >
       <BlogDetailWrapper>
-        <Adapt $width714>
+        <Adapt $width714 $mb>
           <BlogDetailHeader>
             <Text $colorPurple $capitalize>
               <strong>{frontmatter.blog.join(", ")}</strong>

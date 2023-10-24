@@ -64,7 +64,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 15px;
     margin: 0 0 10px;
     font-size: 14px;
-    line-height: 1.42857143;
     word-break: break-all;
     word-wrap: break-word;
     color: #000;
@@ -81,6 +80,7 @@ export const GlobalStyle = createGlobalStyle`
       background-color: transparent;
       border-radius: 0;
       border: none;
+      line-height: 1.35;
     }
   }
 
@@ -92,7 +92,7 @@ export const GlobalStyle = createGlobalStyle`
     display: inline-block;
     line-height: 1.2;
     margin: 0;
-    font-size: 82%;
+    font-size: 78%;
   }
 
   ::selection {

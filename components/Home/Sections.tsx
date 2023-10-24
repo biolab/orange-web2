@@ -17,9 +17,6 @@ const SectionSingleItem = styled.div`
   @media ${device.M} {
     padding: 50px 0;
   }
-  @media ${device.S} {
-    padding: 40px 0;
-  }
 
   > div {
     padding: 0 0 0 35px;
@@ -103,9 +100,17 @@ export default function HomeSections({ sections }: { sections: any }) {
               <Heading2>{section.title}</Heading2>
               <MDXRemote {...section.mdxSource} />
 
-              {section.learnMore && <LinkMore href={`home/${slugify(section.title)}`}> Learn more</LinkMore>}
+              {section.learnMore && (
+                <LinkMore href={`home/${slugify(section.title)}`}>
+                  {" "}
+                  Learn more
+                </LinkMore>
+              )}
               {section.video && (
-                <LinkMore href={`https://www.youtube.com/watch?v=${section.video}&autoplay=1`} target="_blank">
+                <LinkMore
+                  href={`https://www.youtube.com/watch?v=${section.video}&autoplay=1`}
+                  target="_blank"
+                >
                   Watch video
                 </LinkMore>
               )}

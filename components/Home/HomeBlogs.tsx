@@ -8,13 +8,10 @@ import device from "@styles/utils/breakpoints";
 
 const SectionHomeBlogs = styled.section`
   position: relative;
-  padding: 70px 0;
+  padding: 60px 0 80px;
 
   @media ${device.M} {
-    padding: 50px 0;
-  }
-  @media ${device.S} {
-    padding: 30px 0;
+    padding: 42px 0 50px;
   }
 
   &::after {
@@ -39,7 +36,7 @@ const ExposedHomeBlog = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
 
-  @media ${device.S} {
+  @media ${device.M} {
     flex: 0 0 100%;
     max-width: 100%;
     padding-right: 0;
@@ -88,11 +85,11 @@ const ListHomeBlog = styled.div`
   max-width: 50%;
   padding-left: 70px;
 
-  @media ${device.M} {
-    padding-left: 50px;
+  @media ${device.L} {
+    padding-left: 48px;
   }
 
-  @media ${device.S} {
+  @media ${device.M} {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
@@ -108,13 +105,16 @@ const ListItem = styled.div`
   &:first-child {
     padding-top: 0;
 
-    @media ${device.S} {
+    @media ${device.M} {
+      margin-top: 30px;
       padding-top: 30px;
+      border-top: 1px solid ${({ theme }) => theme.borderColor};
     }
   }
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 0;
   }
 
   h3 {
