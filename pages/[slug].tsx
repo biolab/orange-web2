@@ -29,7 +29,7 @@ export default function HomeSlug({
   frontmatter: any;
 }) {
   return (
-    <MainLayout title={frontmatter.title} $width714 $mb>
+    <MainLayout title={frontmatter.title} $width714>
       <MdContent content={mdxSource} />
     </MainLayout>
   );
