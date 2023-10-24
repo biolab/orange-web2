@@ -15,7 +15,7 @@ const PaginationWrapper = styled.div`
 const PageButton = styled.button<{ $active?: boolean }>`
   font-size: 16px;
   line-height: 1.25;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
   padding: 0;
   border: 0;
   width: 30px;

@@ -6,12 +6,21 @@ import styled from "styled-components";
 import AddonsImage from "@public/download/download-addons.webp";
 import Image from "@components/Image/Image";
 import device from "@styles/utils/breakpoints";
+import { AiOutlineDownload } from "react-icons/ai";
+
+export const downloadLinks = {
+  macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`,
+  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12-arm64.dmg`,
+  win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
+  portableOrange: `https://download.biolab.si/download/files/Orange3-${config.version}.zip`,
+};
 
 const StDownloadWrapper = styled.div`
   display: flex;
   gap: 112px;
   margin-bottom: 90px;
-  font-size: 22px;
+  font-size: 18px;
+  color: ${({ theme }) => theme.blackLight1};
 
   @media ${device.M} {
     flex-direction: column;
@@ -22,15 +31,15 @@ const StDownloadWrapper = styled.div`
   h2 {
     font-size: 34px;
     font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 54px;
+    margin-bottom: 32px;
+    margin-top: 64px;
   }
 
   h3 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 8px;
-    margin-top: 42px;
+    margin-bottom: 6px;
+    margin-top: 32px;
   }
 
   a {
@@ -43,8 +52,18 @@ const StDownloadWrapper = styled.div`
   }
 
   p {
-    margin-top: 8px;
     margin-bottom: 8px;
+  }
+`;
+
+const StSmall = styled.p<{ $mt?: boolean }>`
+  font-size: 16px;
+  color: ${({ theme }) => theme.blackLight2};
+
+  ${(props) => props.$mt && "margin-top: 28px;"}
+
+  b {
+    font-weight: 600;
   }
 `;
 
@@ -91,6 +110,22 @@ const StAdapt = styled(Adapt)`
   overflow: hidden;
 `;
 
+const StLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+`;
+
+const DownloadLink = ({ href, text }: { href: string; text: string }) => {
+  return (
+    <StLink href={href}>
+      <AiOutlineDownload />
+      {text}
+    </StLink>
+  );
+};
+
 export default function Download() {
   return (
     <div>
@@ -103,40 +138,49 @@ export default function Download() {
               <h2 id="win">Windows</h2>
               <h3>Standalone installer (default)</h3>
 
-              <Link
-                href={`https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`}
-              >
-                Orange3-${config.version}-Miniconda-x86_64.exe (64 bit)
-              </Link>
+              <DownloadLink
+                href={downloadLinks.win}
+                text={`Orange3-${config.version}-Miniconda-x86_64.exe (64 bit)`}
+              />
 
-              <p>Can be used without administrative priviledges.</p>
+              <StSmall>Can be used without administrative priviledges.</StSmall>
 
               <h3>Portable Orange</h3>
 
-              <Link
-                href={`https://download.biolab.si/download/files/Orange3-${config.version}.zip`}
-              >
-                Orange3-{config.version}.zip
-              </Link>
+              <DownloadLink
+                href={downloadLinks.portableOrange}
+                text={`Orange3-${config.version}.zip`}
+              />
 
-              <p>
+              <StSmall>
                 No installation needed. Just extract the archive and open the
                 shortcut in the extracted folder.
-              </p>
+              </StSmall>
             </div>
 
             <div>
               <h2 id="mac">macOS</h2>
 
-              <Link
-                href={`https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`}
-              >
-                Orange3-{config.version}-Python3.8.8.dmg
-              </Link>
+              <h3>Orange for Apple silicon</h3>
+              <DownloadLink
+                href={downloadLinks.macosArm}
+                text={`Orange3-${config.version}-Python3.9.12-arm64.dmg`}
+              />
 
-              <p>
-                A universal bundle with everything packed in and ready to use.
-              </p>
+              <h3>Orange for Intel</h3>
+
+              <DownloadLink
+                href={downloadLinks.macos}
+                text={`Orange3-${config.version}-Python3.8.8.dmg`}
+              />
+
+              <StSmall $mt>
+                <b>Not sure which installer to select?</b> Click the Apple logo
+                in the top-left corner of your screen, select About This Mac,
+                and check the Chip or Processor field. If you see Apple, select
+                the Orange for Apple Silicon installer. If you see Intel, select
+                the Orange for Intel.
+              </StSmall>
             </div>
 
             <div>

@@ -49,7 +49,7 @@ const ExposedHomeBlog = styled.div`
     font-size: 44px;
     line-height: 1.09;
     font-weight: 700;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
     margin-bottom: 10px;
 
     @media ${device.L} {
@@ -121,7 +121,7 @@ const ListItem = styled.div`
     font-size: 24px;
     line-height: 1.16;
     font-weight: 600;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
     margin-bottom: 6px;
 
     @media ${device.L} {
@@ -183,7 +183,7 @@ const ListImageWrapper = styled.figure`
 const ListBodyText = styled.p`
   font-size: 18px;
   line-height: 1.44;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
 
   @media ${device.L} {
     font-size: 16px;
@@ -197,7 +197,7 @@ const ListBodyText = styled.p`
 const Date = styled.p<{ $small?: boolean }>`
   font-size: 16px;
   line-height: 1.2;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
   margin-bottom: 10px;
 
   ${({ $small }) => $small && `font-size: 14px; margin-bottom: 5px;`};

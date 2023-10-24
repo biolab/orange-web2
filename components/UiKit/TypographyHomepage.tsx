@@ -13,7 +13,7 @@ export const Heading1 = styled.h1<{ $colorBlack?: boolean }>`
   @media ${device.S} {
     font-size: 42px;
   }
-  ${({ $colorBlack, theme }) => $colorBlack && `color: ${theme.blackLight}`};
+  ${({ $colorBlack, theme }) => $colorBlack && `color: ${theme.blackLight1}`};
 `;
 
 export const Heading2 = styled.h2`

@@ -6,12 +6,7 @@ import Adapt from "@components/UiKit/Adapt";
 import HeroImage from "@public/download/download-hero-image.webp";
 import Image from "@components/Image/Image";
 import device from "@styles/utils/breakpoints";
-
-const downloadLinks = {
-  macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`,
-  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12-arm64.dmg`,
-  win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
-};
+import { downloadLinks } from "pages/download";
 
 function getOS() {
   let userAgent = window.navigator.userAgent.toLowerCase(),
@@ -34,7 +29,7 @@ function DownloadButton({ os }: { os: string | null }) {
       return "";
     }
 
-    return os === "Mac OS" ? downloadLinks.macos : downloadLinks.win;
+    return os === "Mac OS" ? "#mac" : downloadLinks.win;
   }, [os]);
 
   if (!os) {
@@ -64,7 +59,7 @@ export default function DownloadHeader() {
           alt="Download orange"
         />
 
-        <h1>{os ? "Suggested download" : "Download"}</h1>
+        <h1>{os ? "Suggested download" : "Download Orange"}</h1>
         <DownloadButton os={os} />
       </Adapt>
     </HeaderWrapper>
@@ -76,6 +71,7 @@ const HeaderWrapper = styled.div`
   padding-top: 66px;
   padding-bottom: 66px;
   min-height: 262px;
+  position: relative;
 
   h1 {
     position: relative;
@@ -87,9 +83,10 @@ const HeaderWrapper = styled.div`
   }
 
   img {
-    transform: translateY(34px);
+    transform: translateY(21px);
     position: absolute;
     right: 20%;
+    bottom: 0px;
     z-index: 1;
 
     @media ${device.M} {

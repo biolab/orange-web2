@@ -7,7 +7,7 @@ export const ContentStyle = styled.div`
     font-size: 44px;
     line-height: 1.13;
     font-weight: 700;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
 
     @media ${device.M} {
       font-size: 38px;
@@ -21,7 +21,7 @@ export const ContentStyle = styled.div`
     font-size: 33px;
     line-height: 1.13;
     font-weight: 600;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
 
     @media ${device.M} {
       font-size: 30px;
@@ -35,7 +35,7 @@ export const ContentStyle = styled.div`
     font-size: 28px;
     line-height: 1.18;
     font-weight: 600;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
 
     @media ${device.M} {
       font-size: 26px;
@@ -50,7 +50,7 @@ export const ContentStyle = styled.div`
     font-size: 22px;
     line-height: 1.18;
     font-weight: 600;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
 
     @media ${device.S} {
       font-size: 20px;
@@ -60,7 +60,7 @@ export const ContentStyle = styled.div`
   p {
     font-size: 20px;
     line-height: 1.4;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
 
     @media ${device.L} {
       font-size: 20px;
@@ -78,7 +78,7 @@ export const ContentStyle = styled.div`
     li {
       font-size: 20px;
       line-height: 1.4;
-      color: ${({ theme }) => theme.blackLight};
+      color: ${({ theme }) => theme.blackLight1};
 
       @media ${device.L} {
         font-size: 20px;

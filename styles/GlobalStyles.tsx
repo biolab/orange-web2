@@ -61,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
 
   pre {
     display: block;
-    padding: 20px;
+    padding: 15px;
     margin: 0 0 10px;
     font-size: 14px;
     line-height: 1.42857143;

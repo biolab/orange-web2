@@ -53,7 +53,7 @@ const Author = styled.div`
 const Text = styled.p<{ $colorPurple?: boolean; $capitalize?: boolean }>`
   font-size: 20px;
   line-height: 1.25;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
 
   @media ${device.M} {
     font-size: 18px;
