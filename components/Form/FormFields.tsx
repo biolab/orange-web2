@@ -198,3 +198,17 @@ export const StNotice = styled.p<{ $warning?: boolean }>`
   color: ${(props) => (props.$warning ? "#e91e62" : "#4BB543")};
   background-color: ${(props) => (props.$warning ? "#e91e6211" : "#4bb54310")};
 `;
+
+export const StButtonWithLoader = ({ loading }: { loading: boolean }) => {
+  return (
+    <StButton disabled={loading} type="submit" value="Submit">
+      {loading ? (
+        <>
+          <StLoader />
+        </>
+      ) : (
+        "Submit"
+      )}
+    </StButton>
+  );
+};

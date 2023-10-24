@@ -11,6 +11,7 @@ import {
   OptionsFormField,
   RadioFormField,
   StButton,
+  StButtonWithLoader,
   StCostWrapper,
   StForm,
   StFormField,
@@ -237,15 +238,7 @@ export default function TrainingInquiry() {
             </p>
           </StCostWrapper>
 
-          <StButton disabled={loading} type="submit" value="Submit">
-            {loading ? (
-              <>
-                <StLoader />
-              </>
-            ) : (
-              "Submit"
-            )}
-          </StButton>
+          <StButtonWithLoader loading={loading} />
 
           {success && (
             <StNotice>

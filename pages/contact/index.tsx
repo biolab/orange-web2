@@ -10,6 +10,7 @@ import Content from "@components/Contact/Content";
 import {
   FormField,
   StButton,
+  StButtonWithLoader,
   StForm,
   StFormField,
   StLoader,
@@ -103,15 +104,7 @@ export default function Contact() {
             ></textarea>
           </StFormField>
 
-          <StButton disabled={loading} type="submit" value="Submit">
-            {loading ? (
-              <>
-                <StLoader />
-              </>
-            ) : (
-              "Submit"
-            )}
-          </StButton>
+          <StButtonWithLoader loading={loading} />
 
           {success && (
             <StNotice>
