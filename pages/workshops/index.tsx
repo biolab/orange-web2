@@ -1,7 +1,7 @@
 import HeroHeader from "@components/HeroHeader/HeroHeader";
 import Adapt from "@components/UiKit/Adapt";
 import MainLayout from "@components/UiKit/MainLayout";
-import img from "@public/home/orange_illustration_landing.webp";
+import img from "@public/home/orange_illustration_landing.jpg";
 import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
