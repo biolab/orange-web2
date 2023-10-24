@@ -10,6 +10,7 @@ import {
   StFormField,
 } from "@components/Form/FormFields";
 import Alert, { AlertType } from "@components/Alert/Alert";
+import { usePostForm } from "@hooks/usePostForm";
 
 type Inputs = {
   name: string;
@@ -25,44 +26,9 @@ export default function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const [loading, setLoading] = React.useState(false);
-  const [success, setSuccess] = React.useState(false);
-  const [error, setError] = React.useState(false);
-
-  const onSubmit: SubmitHandler<Inputs> = React.useCallback(async (data) => {
-    setLoading(true);
-    setSuccess(false);
-    setError(false);
-
-    const searchParams = new URLSearchParams({
-      ...data,
-    } as any);
-
-    try {
-      const response = await fetch("https://service.biolab.si/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        },
-
-        body: searchParams.toString(),
-      });
-
-      const data = await response.json();
-
-      setLoading(false);
-
-      if (data.Status === 400) {
-        setError(true);
-        return;
-      }
-
-      setSuccess(true);
-    } catch (error) {
-      setLoading(false);
-      setError(true);
-    }
-  }, []);
+  const { error, success, loading, onSubmit } = usePostForm(
+    "https://service.biolab.si/contact",
+  );
 
   return (
     <MainLayout title="Contact">
