@@ -46,6 +46,7 @@ cypress/screenshots
 blogPosts.json
 search.json
 public/**/__webp-images__
+public/**/__optimized-images__
 
 external
 

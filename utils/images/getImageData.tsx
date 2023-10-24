@@ -4,7 +4,7 @@ import { Node } from "unist";
 import { visit } from "unist-util-visit";
 import probe, { ProbeResult } from "probe-image-size";
 import { readFileSync } from "fs";
-import { getWebpPath } from "./getWebpPath";
+import { getOptimizedImagePath } from "./getWebpPath";
 
 interface FlowElement {
   name: "mdxJsxFlowElement";
@@ -81,7 +81,7 @@ export function getImageData(this: Processor) {
           ...node.properties,
           width: size.width,
           height: size.height,
-          src: getWebpPath(imgSrc),
+          src: getOptimizedImagePath(imgSrc),
         };
       }
     }
@@ -108,7 +108,11 @@ export function getImageData(this: Processor) {
         node.attributes.push(
           { type: "mdxJsxAttribute", name: "width", value: size.width },
           { type: "mdxJsxAttribute", name: "height", value: size.height },
-          { type: "mdxJsxAttribute", name: "src", value: getWebpPath(imgSrc) }
+          {
+            type: "mdxJsxAttribute",
+            name: "src",
+            value: getOptimizedImagePath(imgSrc),
+          }
         );
       }
     }

@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import probe from "probe-image-size";
 import getAllMdFilesInDir from "../utils/getAllMdFilesInDir.js";
-import { getWebpPath } from "../utils/images/getWebpPath.js";
+import { getOptimizedImagePath } from "../utils/images/getWebpPath.js";
 import getPublicFilePath from "../utils/getPublicFilePath.js";
 import slugify from "../utils/slugify.js";
 
@@ -14,7 +14,7 @@ function getImageSizeAttributes(src) {
 
   let size = null;
 
-  const webpSrc = getWebpPath(src);
+  const webpSrc = getOptimizedImagePath(src);
 
   try {
     const img = fs.readFileSync(`public${webpSrc}`);
