@@ -7,7 +7,7 @@ import {
   FormField,
   StButtonWithLoader,
   StForm,
-  StFormField,
+  TextArea,
 } from "@components/Form/FormFields";
 import Alert, { AlertType } from "@components/Alert/Alert";
 import { usePostForm } from "@hooks/usePostForm";
@@ -57,13 +57,12 @@ export default function Contact() {
             required
           />
 
-          <StFormField>
-            <label htmlFor={"Message"}>message</label>
-            <textarea
-              placeholder="Write us a message"
-              {...register("Message", { required: true })}
-            ></textarea>
-          </StFormField>
+          <TextArea
+            name="Message"
+            register={register}
+            placeholder="Write us a message"
+            required
+          />
 
           <StButtonWithLoader loading={loading} />
 

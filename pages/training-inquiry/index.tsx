@@ -1,5 +1,5 @@
 import MainLayout from "@components/UiKit/MainLayout";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import React from "react";
 import Adapt from "@components/UiKit/Adapt";
 import {
@@ -9,7 +9,7 @@ import {
   StButtonWithLoader,
   StCostWrapper,
   StForm,
-  StFormField,
+  TextArea,
 } from "@components/Form/FormFields";
 import Alert, { AlertType } from "@components/Alert/Alert";
 import { usePostForm } from "@hooks/usePostForm";
@@ -158,13 +158,12 @@ export default function TrainingInquiry() {
             register={register}
           />
 
-          <StFormField>
-            <label htmlFor={"message"}>message</label>
-            <textarea
-              placeholder="Write us a message"
-              {...register("message", { required: false })}
-            ></textarea>
-          </StFormField>
+          <TextArea
+            name="message"
+            register={register}
+            placeholder="Write us a message"
+            required={false}
+          />
 
           <StCostWrapper>
             <p>

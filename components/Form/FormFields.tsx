@@ -84,6 +84,28 @@ export const OptionsFormField = ({
   );
 };
 
+export const TextArea = ({
+  name,
+  register,
+  placeholder,
+  required = false,
+}: {
+  name: string;
+  register: UseFormRegister<any>;
+  placeholder?: string;
+  required?: boolean;
+}) => {
+  return (
+    <StFormField>
+      <label htmlFor={name}>{name}</label>
+      <textarea
+        placeholder={placeholder}
+        {...register(name, { required })}
+      ></textarea>
+    </StFormField>
+  );
+};
+
 export const StButton = styled(Button)`
   border: none;
 
@@ -125,7 +147,7 @@ export const StCostWrapper = styled.div`
   }
 `;
 
-export const StFormField = styled.div`
+const StFormField = styled.div`
   label,
   p {
     display: block;
