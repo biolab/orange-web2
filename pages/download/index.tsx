@@ -3,7 +3,7 @@ import Link from "next/link";
 import config from "config.json";
 import Adapt from "@components/UiKit/Adapt";
 import styled from "styled-components";
-import AddonsImage from "@public/download/download-addons.webp";
+import AddonsImage from "@public/download/download-addons.png";
 import Image from "@components/Image/Image";
 import device from "@styles/utils/breakpoints";
 import { AiOutlineDownload } from "react-icons/ai";
