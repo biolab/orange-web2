@@ -51,8 +51,7 @@ export default function Blog({
 
   React.useEffect(() => {
     setItems(selectedTag ? filteredData : blogs.slice(1));
-    setPage(0);
-  }, [blogs, filteredData, selectedTag, setItems, setPage]);
+  }, [blogs, filteredData, selectedTag, setItems]);
 
   return (
     <MainLayout title="Blog">

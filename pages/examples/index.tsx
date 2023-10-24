@@ -85,8 +85,7 @@ export default function Examples({
 
   React.useEffect(() => {
     setItems(selectedTag ? filteredData : examples);
-    setPage(0);
-  }, [examples, filteredData, selectedTag, setItems, setPage]);
+  }, [examples, filteredData, selectedTag, setItems]);
 
   return (
     <MainLayout title="Examples">

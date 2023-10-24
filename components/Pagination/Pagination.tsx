@@ -61,7 +61,7 @@ export default function Pagination({
   noOfPages,
   page,
 }: {
-  setPage: React.Dispatch<React.SetStateAction<number>>;
+  setPage: (value: number) => void;
   noOfPages: number;
   page: number;
 }) {
@@ -91,7 +91,7 @@ export default function Pagination({
         <PageButtonNavigation
           $previous
           onClick={() => {
-            setPage((v) => v - 1);
+            setPage(page - 1);
           }}
         >
           <Image
@@ -143,7 +143,7 @@ export default function Pagination({
       {page !== noOfPages - 1 && (
         <PageButtonNavigation
           onClick={() => {
-            setPage((v) => v + 1);
+            setPage(page + 1);
           }}
         >
           Next
