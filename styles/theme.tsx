@@ -1,7 +1,7 @@
 export type ThemeType = typeof theme;
 
 export const theme = {
-  black: "#00000",
+  black: "#000000",
   blackLight1: "#1F1F1F",
   blackLight2: "#666666",
   gray: "#474747",
