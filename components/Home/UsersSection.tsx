@@ -244,6 +244,7 @@ export default function UsersSection({
                       onClick={() => {
                         instanceRef.current?.moveToIdx(idx);
                       }}
+                      aria-label={`Slide ${idx}`}
                       className={
                         "dot" + (currentSlide === idx ? " active" : "")
                       }

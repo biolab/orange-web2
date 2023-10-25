@@ -217,7 +217,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
             </h2>
             <BodyText>{lastBlog.shortExcerpt}</BodyText>
             <Link href={`blog/${lastBlog.url}`}>
-              <Image {...lastBlog.thumbImage} alt="" />
+              <Image {...lastBlog.thumbImage} alt={lastBlog.title} />
             </Link>
           </ExposedHomeBlog>
 
@@ -234,7 +234,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
                   </ListContentWrapper>
                   <ListImageWrapper>
                     <Link href={`blog/${url}`}>
-                      <Image {...thumbImage} alt="" />
+                      <Image {...thumbImage} alt={title} />
                     </Link>
                   </ListImageWrapper>
                 </ListItem>
