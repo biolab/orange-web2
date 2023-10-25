@@ -1,6 +1,6 @@
 ---
 title: "Keyword-Based Text Document Scoring"
-images: ["text-keyword-based-scoring.webp"]
+images: ["text-keyword-based-scoring.png"]
 type: "workflows"
 blog_link: ""
 video: ""

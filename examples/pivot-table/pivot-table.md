@@ -1,6 +1,6 @@
 ---
 title: "Pivot Table"
-images: ["pivot-table.webp"]
+images: ["pivot-table.png"]
 type: "workflows"
 blog_link: ""
 video: ""

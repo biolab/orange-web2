@@ -1,6 +1,6 @@
 ---
 title: "Interactive Visualizations"
-images: ["scatterplot-data-table.webp"]
+images: ["scatterplot-data-table.png"]
 type: "workflows"
 blog_link: ""
 video: ""

@@ -1,6 +1,6 @@
 ---
 title: "Ontology Generation from Keywords"
-images: ["text-ontology.webp"]
+images: ["text-ontology.png"]
 type: "workflows"
 blog_link: ""
 video: ""

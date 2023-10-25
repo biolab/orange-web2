@@ -1,6 +1,6 @@
 ---
 title: "Semantic Document Map"
-images: ["text-semantic-document-map.webp"]
+images: ["text-semantic-document-map.png"]
 type: "workflows"
 blog_link: ""
 video: ""

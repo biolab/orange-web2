@@ -1,6 +1,6 @@
 ---
 title: "Mental health of tech employees in times of COVID-19"
-images: ["mental-health.webp"]
+images: ["mental-health.png"]
 type: "workflows"
 blog_link: "https://ocean.sagepub.com/blog/mental-health-of-tech-employees-in-times-of-covid-19"
 video: ""

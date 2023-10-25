@@ -1,6 +1,6 @@
 ---
 title: "Text Mining for Social Sciences"
-image: "Text_Mining.webp"
+image: "Text_Mining.jpg"
 ---
 
 ### Why should you attend?
