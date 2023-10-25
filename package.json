@@ -12,6 +12,7 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
     "preRequirements": "yarn generate:search && yarn generate:images && yarn generate:optimizedAssets",
     "generate:images": "node scripts/convertImages",
     "generate:optimizedAssets": "node scripts/optimizeAssets",
@@ -55,6 +56,7 @@
     "styled-components": "^5"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^13.5.6",
     "@types/imagemin": "^8.0.0",
     "@types/imagemin-webp": "^7.0.0",
     "@types/lunr": "^2.3.4",
