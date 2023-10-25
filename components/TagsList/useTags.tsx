@@ -3,24 +3,28 @@ import React from "react";
 
 export default function useTags<T>(data: T[], tagProp: string) {
   const router = useRouter();
-  const [selectedTag, setSelectedTag] = React.useState<string | null>(
-    (router.query.tag as string) || null
-  );
 
-  React.useEffect(() => {
-    setSelectedTag(router.query.tag as string);
+  const selectedTag = React.useMemo(() => {
+    if (!router.query.tag) {
+      return null;
+    }
+
+    return router.query.tag as string;
   }, [router.query.tag]);
 
   const onTagClick = React.useCallback(
     (tag: string) => {
       const remove = selectedTag === tag;
 
+      delete router.query.page;
+
       if (remove) {
+        delete router.query.tag;
+
         router.push(
           {
             query: {
               ...router.query,
-              tag: undefined,
             },
           },
           undefined,

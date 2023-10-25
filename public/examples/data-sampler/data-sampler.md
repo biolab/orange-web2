@@ -1,6 +1,6 @@
 ---
 title: "Train and Test Data"
-images: ["data-sampler.webp"]
+images: ["data-sampler.png"]
 type: "workflows"
 blog_link: ""
 video: ""

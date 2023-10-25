@@ -53,7 +53,7 @@ const Author = styled.div`
 const Text = styled.p<{ $colorPurple?: boolean; $capitalize?: boolean }>`
   font-size: 20px;
   line-height: 1.25;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
 
   @media ${device.M} {
     font-size: 18px;
@@ -125,6 +125,7 @@ export default function BlogPost({
     <MainLayout
       title={frontmatter.title}
       justSEO
+      $width714
       openGraph={{
         type: "article",
         article: {
@@ -145,7 +146,7 @@ export default function BlogPost({
       }}
     >
       <BlogDetailWrapper>
-        <Adapt $width714>
+        <Adapt $width714 $mb>
           <BlogDetailHeader>
             <Text $colorPurple $capitalize>
               <strong>{frontmatter.blog.join(", ")}</strong>

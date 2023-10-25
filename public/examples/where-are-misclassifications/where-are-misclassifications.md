@@ -1,6 +1,6 @@
 ---
 title: "Where Are Misclassifications"
-images: ["misclassifications.webp"]
+images: ["misclassifications.png"]
 type: "workflows"
 blog_link: ""
 video: ""

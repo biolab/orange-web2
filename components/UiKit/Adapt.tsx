@@ -8,7 +8,6 @@ const Adapt = styled.div<{
   $width714?: boolean;
   $width924?: boolean;
 }>`
-  position: relative;
   max-width: ${({ theme }) => theme.adaptMaxWidth};
   margin-right: auto;
   margin-left: auto;

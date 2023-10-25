@@ -1,6 +1,6 @@
 ---
 title: "Document Map Annotation"
-images: ["text-annotator.webp"]
+images: ["text-annotator.png"]
 type: "workflows"
 blog_link: ""
 video: ""

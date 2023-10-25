@@ -1,7 +1,7 @@
 import HeroHeader from "@components/HeroHeader/HeroHeader";
 import Adapt from "@components/UiKit/Adapt";
 import MainLayout from "@components/UiKit/MainLayout";
-import img from "@public/home/orange_illustration_landing.webp";
+import img from "@optimizedAssets/orange_illustration_landing.png";
 import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
@@ -13,8 +13,8 @@ import MdContent from "@components/MdContent/MdContent";
 import Button from "@components/UiKit/Button";
 import React from "react";
 import Image from "@components/Image/Image";
-import getImageSize from "@utils/images/getImageSize";
-import TestimonialImage from "@public/workshops/janez.webp";
+import getOptimizedImageAttributes from "@utils/images/getOptimizedImageAttributes";
+import TestimonialImage from "@optimizedAssets/janez_demsar.png";
 import device from "@styles/utils/breakpoints";
 
 export async function getStaticProps() {
@@ -34,7 +34,9 @@ export async function getStaticProps() {
     sections.push({
       ...frontmatter,
       image: frontmatter.image
-        ? getImageSize(path.join(path.sep, dirInPublic, frontmatter.image))
+        ? getOptimizedImageAttributes(
+            path.join(path.sep, dirInPublic, frontmatter.image)
+          )
         : null,
       mdxSource,
     });

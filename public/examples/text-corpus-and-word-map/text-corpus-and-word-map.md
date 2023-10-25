@@ -1,6 +1,6 @@
 ---
 title: "Corpus and Word Maps"
-images: ["text-corpus-and-word-map.webp"]
+images: ["text-corpus-and-word-map.png"]
 type: "workflows"
 blog_link: ""
 video: ""

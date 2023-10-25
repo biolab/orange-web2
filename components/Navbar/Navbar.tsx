@@ -9,6 +9,7 @@ import Adapt from "@components/UiKit/Adapt";
 import SrOnly from "@components/UiKit/SrOnly";
 import * as Styled from "./Navbar.styled";
 import { SearchContext } from "@components/Search/Search.context";
+import { useRouter } from "next/router";
 
 function Search({ onSearchClick }: { onSearchClick: () => void }) {
   const { setShowSearch } = React.useContext(SearchContext);
@@ -38,12 +39,22 @@ function Search({ onSearchClick }: { onSearchClick: () => void }) {
 
 export default function Navbar() {
   const [navOpened, setNavOpened] = React.useState(false);
+  const router = useRouter();
+
+  React.useEffect(() => {
+    setNavOpened(false);
+  }, [router.pathname]);
 
   return (
     <Styled.Nav>
       <Adapt>
         <Styled.NavInner>
-          <Link href="/">
+          <Link
+            onClick={() => {
+              setNavOpened(false);
+            }}
+            href="/"
+          >
             <Image
               className="img-logo"
               src={LogoImage.src}

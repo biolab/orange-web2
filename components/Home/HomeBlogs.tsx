@@ -8,13 +8,10 @@ import device from "@styles/utils/breakpoints";
 
 const SectionHomeBlogs = styled.section`
   position: relative;
-  padding: 70px 0;
+  padding: 60px 0 80px;
 
   @media ${device.M} {
-    padding: 50px 0;
-  }
-  @media ${device.S} {
-    padding: 30px 0;
+    padding: 42px 0 50px;
   }
 
   &::after {
@@ -39,7 +36,7 @@ const ExposedHomeBlog = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
 
-  @media ${device.S} {
+  @media ${device.M} {
     flex: 0 0 100%;
     max-width: 100%;
     padding-right: 0;
@@ -49,7 +46,7 @@ const ExposedHomeBlog = styled.div`
     font-size: 44px;
     line-height: 1.09;
     font-weight: 700;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
     margin-bottom: 10px;
 
     @media ${device.L} {
@@ -88,11 +85,11 @@ const ListHomeBlog = styled.div`
   max-width: 50%;
   padding-left: 70px;
 
-  @media ${device.M} {
-    padding-left: 50px;
+  @media ${device.L} {
+    padding-left: 48px;
   }
 
-  @media ${device.S} {
+  @media ${device.M} {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
@@ -108,20 +105,23 @@ const ListItem = styled.div`
   &:first-child {
     padding-top: 0;
 
-    @media ${device.S} {
+    @media ${device.M} {
+      margin-top: 30px;
       padding-top: 30px;
+      border-top: 1px solid ${({ theme }) => theme.borderColor};
     }
   }
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 0;
   }
 
   h3 {
     font-size: 24px;
     line-height: 1.16;
     font-weight: 600;
-    color: ${({ theme }) => theme.blackLight};
+    color: ${({ theme }) => theme.blackLight1};
     margin-bottom: 6px;
 
     @media ${device.L} {
@@ -183,7 +183,7 @@ const ListImageWrapper = styled.figure`
 const ListBodyText = styled.p`
   font-size: 18px;
   line-height: 1.44;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
 
   @media ${device.L} {
     font-size: 16px;
@@ -197,7 +197,7 @@ const ListBodyText = styled.p`
 const Date = styled.p<{ $small?: boolean }>`
   font-size: 16px;
   line-height: 1.2;
-  color: ${({ theme }) => theme.blackLight};
+  color: ${({ theme }) => theme.blackLight1};
   margin-bottom: 10px;
 
   ${({ $small }) => $small && `font-size: 14px; margin-bottom: 5px;`};
@@ -217,7 +217,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
             </h2>
             <BodyText>{lastBlog.shortExcerpt}</BodyText>
             <Link href={`blog/${lastBlog.url}`}>
-              <Image {...lastBlog.thumbImage} alt="" />
+              <Image {...lastBlog.thumbImage} alt={lastBlog.title} />
             </Link>
           </ExposedHomeBlog>
 
@@ -234,7 +234,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
                   </ListContentWrapper>
                   <ListImageWrapper>
                     <Link href={`blog/${url}`}>
-                      <Image {...thumbImage} alt="" />
+                      <Image {...thumbImage} alt={title} />
                     </Link>
                   </ListImageWrapper>
                 </ListItem>

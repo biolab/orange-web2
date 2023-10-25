@@ -2,9 +2,7 @@ import type { VFile } from "vfile";
 import { Processor } from "unified";
 import { Node } from "unist";
 import { visit } from "unist-util-visit";
-import probe, { ProbeResult } from "probe-image-size";
-import { readFileSync } from "fs";
-import { getWebpPath } from "./getWebpPath";
+import getOptimizedImageAttributes from "./getOptimizedImageAttributes";
 
 interface FlowElement {
   name: "mdxJsxFlowElement";
@@ -65,50 +63,38 @@ export function getImageData(this: Processor) {
     });
 
     for (let node of imageNodes) {
-      let size: ProbeResult | null = null;
+      const imageDate = getOptimizedImageAttributes(node.properties.src);
 
-      const imgSrc = node.properties.src;
-
-      try {
-        const img = readFileSync(`public${imgSrc}`);
-        size = probe.sync(img);
-      } catch (e) {
-        throw new Error();
-      }
-
-      if (size) {
+      if (imageDate) {
         node.properties = {
           ...node.properties,
-          width: size.width,
-          height: size.height,
-          src: getWebpPath(imgSrc),
+          width: imageDate.width,
+          height: imageDate.height,
+          src: imageDate.src,
         };
       }
     }
 
     for (let node of JsxNodes) {
-      let size: ProbeResult | null = null;
-
       const imgSrc = node.attributes.find(
         (attribute) => (attribute.name = "src")
       )!.value as string;
 
-      try {
-        const img = readFileSync(`public${imgSrc}`);
-        size = probe.sync(img);
-      } catch (e: any) {
-        throw new Error(e);
-      }
+      const imageDate = getOptimizedImageAttributes(imgSrc);
 
-      if (size) {
+      if (imageDate) {
         node.attributes = node.attributes.filter(
           (attribute) => (attribute.name = "src")
         );
 
         node.attributes.push(
-          { type: "mdxJsxAttribute", name: "width", value: size.width },
-          { type: "mdxJsxAttribute", name: "height", value: size.height },
-          { type: "mdxJsxAttribute", name: "src", value: getWebpPath(imgSrc) }
+          { type: "mdxJsxAttribute", name: "width", value: imageDate.width },
+          { type: "mdxJsxAttribute", name: "height", value: imageDate.height },
+          {
+            type: "mdxJsxAttribute",
+            name: "src",
+            value: imageDate.src,
+          }
         );
       }
     }

@@ -1,6 +1,6 @@
 ---
 title: "Twitter Data Analysis"
-images: ["twitter.webp"]
+images: ["twitter.png"]
 type: "workflows"
 blog_link: ""
 video: "https://youtu.be/HDkI6G4slzQ"

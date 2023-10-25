@@ -149,7 +149,7 @@ const Dots = styled.div`
 
     &:hover,
     &.active {
-      background-color: ${({ theme }) => theme.blackLight};
+      background-color: ${({ theme }) => theme.blackLight1};
     }
   }
 `;
@@ -189,49 +189,65 @@ export default function UsersSection({
 
           <SliderWrapper>
             <div className="keen-slider" ref={sliderRef}>
-              {testimonials.map(({ title, position, institution, image, text }) => (
-                <Slide key={title} className="keen-slider__slide">
-                  <p>{text}</p>
+              {testimonials.map(
+                ({ title, position, institution, image, text }) => (
+                  <Slide key={title} className="keen-slider__slide">
+                    <p>{text}</p>
 
-                  <User>
-                    <Image {...image} alt="" />
+                    <User>
+                      <Image {...image} alt="" />
 
-                    <div>
-                      <p>
-                        <strong>{title}</strong>
-                      </p>
-                      <p>
-                        {position} ({institution})
-                      </p>
-                    </div>
-                  </User>
-                </Slide>
-              ))}
+                      <div>
+                        <p>
+                          <strong>{title}</strong>
+                        </p>
+                        <p>
+                          {position} ({institution})
+                        </p>
+                      </div>
+                    </User>
+                  </Slide>
+                )
+              )}
             </div>
             {loaded && instanceRef.current && (
               <>
                 <Arrow
                   left
-                  onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
+                  onClick={(e: any) =>
+                    e.stopPropagation() || instanceRef.current?.prev()
+                  }
                   disabled={currentSlide === 0}
                 />
 
                 <Arrow
-                  onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
-                  disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
+                  onClick={(e: any) =>
+                    e.stopPropagation() || instanceRef.current?.next()
+                  }
+                  disabled={
+                    currentSlide ===
+                    instanceRef.current.track.details.slides.length - 1
+                  }
                 />
               </>
             )}
             {loaded && instanceRef.current && (
               <Dots>
-                {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => {
+                {[
+                  ...Array(
+                    instanceRef.current.track.details.slides.length
+                  ).keys(),
+                ].map((idx) => {
                   return (
                     <button
                       key={idx}
                       onClick={() => {
                         instanceRef.current?.moveToIdx(idx);
                       }}
-                      className={"dot" + (currentSlide === idx ? " active" : "")}
+                      aria-label={`Slide ${idx}`}
+                      className={
+                        "dot" + (currentSlide === idx ? " active" : "")
+                      }
                     ></button>
                   );
                 })}
@@ -244,12 +260,18 @@ export default function UsersSection({
   );
 }
 
-function Arrow(props: { disabled: boolean; left?: boolean; onClick: (e: any) => void }) {
+function Arrow(props: {
+  disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
+}) {
   const disabeld = props.disabled ? " arrow--disabled" : "";
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${props.left ? "arrow--left" : "arrow--right"} ${disabeld}`}
+      className={`arrow ${
+        props.left ? "arrow--left" : "arrow--right"
+      } ${disabeld}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 19 31"
     >

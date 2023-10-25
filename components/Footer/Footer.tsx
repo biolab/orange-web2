@@ -6,7 +6,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  background: ${({ theme }) => theme.blackLight};
+  background: ${({ theme }) => theme.blackLight1};
   padding: 38px 0 25px;
   color: #fff;
 `;

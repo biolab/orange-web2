@@ -1,6 +1,6 @@
 ---
 title: "Classification Tree"
-images: ["tree-scatterplot.webp"]
+images: ["tree-scatterplot.png"]
 type: "workflows"
 blog_link: ""
 video: ""

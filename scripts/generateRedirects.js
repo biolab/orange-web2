@@ -6,12 +6,12 @@ function writeRedirects() {
     .filter((post) => !!post.oldUrl)
     .map((post) => ({
       source: post.oldUrl,
-      destination: `/blog/${post.url}`,
+      destination: `/blog/${post.url}/`,
     }));
 
   redirects.push({
     source: "/workflows/",
-    destination: "/examples",
+    destination: "/examples/",
   });
 
   fs.writeFile("redirects.json", JSON.stringify(redirects), function (err) {
