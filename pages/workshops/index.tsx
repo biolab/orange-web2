@@ -13,7 +13,7 @@ import MdContent from "@components/MdContent/MdContent";
 import Button from "@components/UiKit/Button";
 import React from "react";
 import Image from "@components/Image/Image";
-import getImageSize from "@utils/images/getImageSize";
+import getOptimizedImageAttributes from "@utils/images/getOptimizedImageAttributes";
 import TestimonialImage from "@public/workshops/janez_demsar.png";
 import device from "@styles/utils/breakpoints";
 
@@ -34,7 +34,9 @@ export async function getStaticProps() {
     sections.push({
       ...frontmatter,
       image: frontmatter.image
-        ? getImageSize(path.join(path.sep, dirInPublic, frontmatter.image))
+        ? getOptimizedImageAttributes(
+            path.join(path.sep, dirInPublic, frontmatter.image)
+          )
         : null,
       mdxSource,
     });

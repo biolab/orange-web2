@@ -24,6 +24,7 @@ function getAllFolders(path) {
 
 const allFolders = [
   ...getAllFolders("public/blog"),
+  ...getAllFolders("public/home/[slug]"),
   ...getAllFolders("public/widget-catalog").flatMap((path) =>
     getAllFolders(path)
   ),
