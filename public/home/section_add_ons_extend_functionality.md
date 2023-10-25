@@ -1,6 +1,6 @@
 ---
 title: "Add-ons Extend Functionality"
-image: "add_ons.webp"
+image: "add_ons.png"
 video: "OANsA6fMJKg?start=6"
 weight: 50
 ---

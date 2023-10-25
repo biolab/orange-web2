@@ -1,6 +1,6 @@
 ---
 title: "Load Text Corpus from the Server Repository"
-images: ["text-loading-from-repository.webp"]
+images: ["text-loading-from-repository.png"]
 type: "workflows"
 blog_link: ""
 video: ""

@@ -7,7 +7,8 @@
       "@scripts/*": ["scripts/*"],
       "@components/*": ["components/*"],
       "@public/*": ["public/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@optimizedAssets/*": ["public/assets/__optimized-images__/*"]
     },
     "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],

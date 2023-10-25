@@ -2,7 +2,7 @@ import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-import getImageSize from "@utils/images/getImageSize";
+import getOptimizedImageAttributes from "@utils/images/getOptimizedImageAttributes";
 import { serialize } from "next-mdx-remote/serialize";
 import HomeSections from "@components/Home/Sections";
 import HomeHeader from "@components/Home/Header";
@@ -28,7 +28,9 @@ export async function getStaticProps() {
       ...frontmatter,
       mdxSource,
       image: frontmatter.image
-        ? getImageSize(path.join(path.sep, "home", frontmatter.image))
+        ? getOptimizedImageAttributes(
+            path.join(path.sep, "home", frontmatter.image)
+          )
         : null,
     });
   }
@@ -53,7 +55,9 @@ export async function getStaticProps() {
     testimonialsData.push({
       ...frontmatter,
       image: frontmatter.image
-        ? getImageSize(path.join(path.sep, "home", frontmatter.image))
+        ? getOptimizedImageAttributes(
+            path.join(path.sep, "home", frontmatter.image)
+          )
         : null,
     });
   }

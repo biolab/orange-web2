@@ -8,10 +8,10 @@ Install dependencies
 yarn install
 ```
 
-Generate images
+Run preRequirements (generates search and optimized images)
 
 ```bash
-yarn generate:images
+yarn preRequirements
 ```
 
 Run development server

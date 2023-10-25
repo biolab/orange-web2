@@ -1,6 +1,6 @@
 ---
 title: "Visual Programming"
-image: "visual_programming.webp"
+image: "visual_programming.png"
 learnMore: true
 weight: 30
 video: "lb-x36xqJ-E?start=6"

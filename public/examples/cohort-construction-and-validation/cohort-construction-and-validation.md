@@ -1,6 +1,6 @@
 ---
 title: "Cohort Construction and Validation"
-images: ["720_cohort_construction_and_validation.webp"]
+images: ["720_cohort_construction_and_validation.png"]
 type: "workflows"
 blog: ""
 video: ""

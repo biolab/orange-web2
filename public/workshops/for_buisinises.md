@@ -1,6 +1,6 @@
 ---
 title: "Data Mining for Business"
-image: "Data-Mining-for-Business.webp"
+image: "Data-Mining-for-Business.jpg"
 ---
 
 ### Why should you attend?

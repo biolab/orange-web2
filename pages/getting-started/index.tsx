@@ -1,7 +1,7 @@
 import HomeSections from "@components/Home/Sections";
 import Adapt from "@components/UiKit/Adapt";
 import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
-import getImageSize from "@utils/images/getImageSize";
+import getOptimizedImageAttributes from "@utils/images/getOptimizedImageAttributes";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
@@ -22,7 +22,7 @@ export async function getStaticProps() {
       ...frontmatter,
       mdxSource,
       image: frontmatter.image
-        ? getImageSize(
+        ? getOptimizedImageAttributes(
             path.join(path.sep, "getting-started", frontmatter.image)
           )
         : null,

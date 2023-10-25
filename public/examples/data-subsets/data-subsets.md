@@ -1,6 +1,6 @@
 ---
 title: "Visalization of Data Subsets"
-images: ["scatterplot-visualize-subset.webp"]
+images: ["scatterplot-visualize-subset.png"]
 type: "workflows"
 blog_link: ""
 video: ""

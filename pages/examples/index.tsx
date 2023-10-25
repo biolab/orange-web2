@@ -10,7 +10,9 @@ import matter from "gray-matter";
 import getAllMdFilesInDir from "@utils/getAllMdFilesInDir";
 import Image from "@components/Image/Image";
 import TagsList from "@components/TagsList/TagsList";
-import getImageSize, { ImageProps } from "@utils/images/getImageSize";
+import getOptimizedImageAttributes, {
+  ImageProps,
+} from "@utils/images/getOptimizedImageAttributes";
 import path from "path";
 import MainLayout from "@components/UiKit/MainLayout";
 import useTags from "@components/TagsList/useTags";
@@ -50,7 +52,7 @@ export async function getStaticProps() {
       ...(frontmatter as IExample),
       images:
         frontmatter.images?.map((image: string) =>
-          getImageSize(path.join(path.sep, dirInPublic, image))
+          getOptimizedImageAttributes(path.join(path.sep, dirInPublic, image))
         ) || [],
       content: mdxSource,
     });
