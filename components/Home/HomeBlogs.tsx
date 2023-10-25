@@ -5,6 +5,7 @@ import { BlogMetadata } from "pages/blog";
 import styled from "styled-components";
 import Adapt from "@components/UiKit/Adapt";
 import device from "@styles/utils/breakpoints";
+import formateDate from "@utils/formatDate";
 
 const SectionHomeBlogs = styled.section`
   position: relative;
@@ -211,7 +212,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
       <Adapt>
         <Inner>
           <ExposedHomeBlog>
-            <Date>{lastBlog.date}</Date>
+            <Date>{formateDate(lastBlog.date)}</Date>
             <h2>
               <Link href={`blog/${lastBlog.url}`}>{lastBlog.title}</Link>
             </h2>
@@ -226,7 +227,7 @@ export default function HomeBlogs({ blogs }: { blogs: BlogMetadata[] }) {
               return (
                 <ListItem key={title}>
                   <ListContentWrapper>
-                    <Date $small>{date}</Date>
+                    <Date $small>{formateDate(date)}</Date>
                     <h3>
                       <Link href={`blog/${url}`}>{title}</Link>
                     </h3>
