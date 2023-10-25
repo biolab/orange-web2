@@ -3,7 +3,7 @@ import Button from "@components/UiKit/Button";
 import config from "config.json";
 import styled from "styled-components";
 import Adapt from "@components/UiKit/Adapt";
-import HeroImage from "@public/download/download-hero.png";
+import HeroImage from "@optimizedAssets/download-hero.png";
 import Image from "@components/Image/Image";
 import device from "@styles/utils/breakpoints";
 import { downloadLinks } from "pages/download";

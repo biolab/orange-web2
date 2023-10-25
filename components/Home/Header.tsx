@@ -1,5 +1,5 @@
 import Button from "@components/UiKit/Button";
-import img from "@public/home/orange_illustration_landing.png";
+import img from "@optimizedAssets/orange_illustration_landing.png";
 import HeroHeader from "@components/HeroHeader/HeroHeader";
 
 export default function HomeHeader() {
