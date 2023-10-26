@@ -52,7 +52,7 @@ export async function getStaticProps() {
       ...(frontmatter as IExample),
       images:
         frontmatter.images?.map((image: string) =>
-          getOptimizedImageAttributes(path.join(path.sep, dirInPublic, image))
+          getOptimizedImageAttributes(path.join(path.sep, dirInPublic, image)),
         ) || [],
       content: mdxSource,
     });
@@ -75,14 +75,15 @@ export default function Examples({
   examples: IExample[];
   tags: string[];
 }) {
-  const { filteredData, selectedTag, onTagClick } = useTags(
+  const { filteredData, selectedTag, allTags, onTagClick } = useTags(
     examples,
-    "workflows"
+    "workflows",
+    tags,
   );
 
   const { itemsOnPage, setPage, page, noOfPages, setItems } = usePagination(
     examples,
-    5
+    5,
   );
 
   React.useEffect(() => {
@@ -91,13 +92,17 @@ export default function Examples({
 
   return (
     <MainLayout title="Examples">
-      <TagsList tags={tags} selectedTag={selectedTag} onTagClick={onTagClick} />
+      <TagsList
+        tags={allTags}
+        selectedTag={selectedTag}
+        onTagClick={onTagClick}
+      />
       <StyledListWrapper>
         {itemsOnPage.map(
           ({ title, images, content, workflows: workflowTags, download }) => (
             <Item key={title}>
               <ItemContent>
-                <BlogTags tags={workflowTags} />
+                <BlogTags tags={workflowTags} onTagClick={onTagClick} />
                 <h2>{title}</h2>
 
                 <StContentWrapper>
@@ -119,7 +124,7 @@ export default function Examples({
                   ))}
               </ItemImage>
             </Item>
-          )
+          ),
         )}
       </StyledListWrapper>
 

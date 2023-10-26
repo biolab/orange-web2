@@ -87,8 +87,7 @@ const SliderWrapper = styled.div`
 
 const Slide = styled.div`
   background: #ffffff;
-  border: 1px solid #d9d9d9;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid ${(props) => props.theme.borderColor};
   border-radius: 6px;
   padding: 60px;
 
@@ -207,7 +206,7 @@ export default function UsersSection({
                       </div>
                     </User>
                   </Slide>
-                )
+                ),
               )}
             </div>
             {loaded && instanceRef.current && (
@@ -235,7 +234,7 @@ export default function UsersSection({
               <Dots>
                 {[
                   ...Array(
-                    instanceRef.current.track.details.slides.length
+                    instanceRef.current.track.details.slides.length,
                   ).keys(),
                 ].map((idx) => {
                   return (

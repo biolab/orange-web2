@@ -9,9 +9,11 @@ import formateDate from "@utils/formatDate";
 export default function FeaturedBlog({
   blog,
   show,
+  onTagClick,
 }: {
   blog: BlogMetadata;
   show: boolean;
+  onTagClick: (tag: string) => void;
 }) {
   const { title, url, date, thumbImage, shortExcerpt, author, tags } = blog;
 
@@ -34,7 +36,7 @@ export default function FeaturedBlog({
       </Styled.FBImageWrapper>
 
       <Styled.FBContentWrapper>
-        <BlogTags tags={tags} big={true} />
+        <BlogTags tags={tags} big={true} onTagClick={onTagClick} />
         <Heading1>
           <Link href={`blog/${url}`}>{title}</Link>
         </Heading1>

@@ -21,13 +21,18 @@ export const Heading1 = styled.h1`
   ${LinkInsideH};
 `;
 
-export const Heading2 = styled.h2`
+export const Heading2 = styled.h2<{ $mb6?: boolean }>`
   font-size: 22px;
   line-height: 1.18;
   font-weight: 600;
   margin-bottom: 16px;
   color: ${({ theme }) => theme.blackLight1};
 
+  ${(props) =>
+    props.$mb6 &&
+    css`
+      margin-bottom: 6px;
+    `}
   ${LinkInsideH};
 `;
 

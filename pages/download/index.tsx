@@ -56,11 +56,8 @@ const StDownloadWrapper = styled.div`
   }
 `;
 
-const StSmall = styled.p<{ $mt?: boolean }>`
-  font-size: 16px;
-  color: ${({ theme }) => theme.blackLight2};
-
-  ${(props) => props.$mt && "margin-top: 28px;"}
+const StDisclaimer = styled.p`
+  margin-top: 28px;
 
   b {
     font-weight: 600;
@@ -143,7 +140,7 @@ export default function Download() {
                 text={`Orange3-${config.version}-Miniconda-x86_64.exe (64 bit)`}
               />
 
-              <StSmall>Can be used without administrative priviledges.</StSmall>
+              <p>Can be used without administrative priviledges.</p>
 
               <h3>Portable Orange</h3>
 
@@ -152,10 +149,10 @@ export default function Download() {
                 text={`Orange3-${config.version}.zip`}
               />
 
-              <StSmall>
+              <p>
                 No installation needed. Just extract the archive and open the
                 shortcut in the extracted folder.
-              </StSmall>
+              </p>
             </div>
 
             <div>
@@ -174,13 +171,13 @@ export default function Download() {
                 text={`Orange3-${config.version}-Python3.8.8.dmg`}
               />
 
-              <StSmall $mt>
+              <StDisclaimer>
                 <b>Not sure which installer to select?</b> Click the Apple logo
                 in the top-left corner of your screen, select About This Mac,
                 and check the Chip or Processor field. If you see Apple, select
                 the Orange for Apple Silicon installer. If you see Intel, select
                 the Orange for Intel.
-              </StSmall>
+              </StDisclaimer>
             </div>
 
             <div>
