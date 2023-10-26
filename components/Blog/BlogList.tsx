@@ -32,7 +32,7 @@ export default function BlogList({
             )}
 
             <BlogTags tags={tags} onTagClick={onTagClick} />
-            <Heading2>
+            <Heading2 $mb6>
               <Link href={`blog/${url}`}>{title}</Link>
             </Heading2>
             <BodyText>{shortExcerpt}</BodyText>
