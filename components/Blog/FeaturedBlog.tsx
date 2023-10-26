@@ -26,10 +26,11 @@ export default function FeaturedBlog({
         {thumbImage && (
           <Link href={`blog/${url}`}>
             <Image
+              priority
               src={thumbImage.src}
               width={thumbImage.width}
               height={thumbImage.height}
-              alt=""
+              alt={title}
             />
           </Link>
         )}

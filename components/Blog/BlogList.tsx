@@ -16,16 +16,20 @@ export default function BlogList({
   return (
     <Styled.BlogList>
       {blogs.map(
-        ({ title, url, date, thumbImage, shortExcerpt, author, tags }) => (
+        (
+          { title, url, date, thumbImage, shortExcerpt, author, tags },
+          index,
+        ) => (
           <Styled.BlogListItem key={url}>
             {thumbImage && (
               <Styled.BlogListImageWrapper>
                 <Link href={`blog/${url}`}>
                   <Image
+                    priority={index < 3}
                     src={thumbImage.src}
                     width={thumbImage.width}
                     height={thumbImage.height}
-                    alt=""
+                    alt={title}
                   />
                 </Link>
               </Styled.BlogListImageWrapper>
