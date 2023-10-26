@@ -5,7 +5,7 @@ import HeroHeader from "@components/HeroHeader/HeroHeader";
 export default function HomeHeader() {
   return (
     <HeroHeader
-      title={"Data mining Fruitful and fun"}
+      title={"Data Mining Fruitful and Fun"}
       img={img}
       bodyText={"Open source machine learning and data visualization."}
       extra={
