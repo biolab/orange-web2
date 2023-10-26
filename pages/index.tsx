@@ -16,7 +16,7 @@ export async function getStaticProps() {
   const mdFiles = getAllMdFilesInDir(path.join("public", "home"));
 
   const sections = mdFiles.filter((file) => file.includes("section_"));
-  const sectionsData = [];
+  const sectionsData: any[] = [];
 
   for (const file of sections) {
     const mdFile = fs.readFileSync(file, "utf-8");
@@ -29,7 +29,7 @@ export async function getStaticProps() {
       mdxSource,
       image: frontmatter.image
         ? getOptimizedImageAttributes(
-            path.join(path.sep, "home", frontmatter.image)
+            path.join(path.sep, "home", frontmatter.image),
           )
         : null,
     });
@@ -37,12 +37,12 @@ export async function getStaticProps() {
 
   const donateMdFile = mdFiles.find((file) => file.includes("donate.md"));
   const { data: donateFrontmatter } = matter(
-    fs.readFileSync(donateMdFile!, "utf-8")!
+    fs.readFileSync(donateMdFile!, "utf-8")!,
   );
 
   const usersMdFile = mdFiles.find((file) => file.includes("orange_users.md"));
   const { data: usersFrontmatter } = matter(
-    fs.readFileSync(usersMdFile!, "utf-8")!
+    fs.readFileSync(usersMdFile!, "utf-8")!,
   );
 
   const testimonials = mdFiles.filter((file) => file.includes("testimonials"));
@@ -56,7 +56,7 @@ export async function getStaticProps() {
       ...frontmatter,
       image: frontmatter.image
         ? getOptimizedImageAttributes(
-            path.join(path.sep, "home", frontmatter.image)
+            path.join(path.sep, "home", frontmatter.image),
           )
         : null,
     });
