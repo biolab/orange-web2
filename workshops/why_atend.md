@@ -16,7 +16,7 @@ image: "Intro-to-Data-Mining.jpg"
 - Classification and predictive modeling.
 - Analysis of survey data, data from marketing, and voting data.
 
-### Included
+### Included:
 
 - One-day 5-hour hands-on course on key approaches of data science
 - Lecture notes (~40 pages) with extra explanations, illustrations and examples

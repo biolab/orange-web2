@@ -3,7 +3,7 @@ title: "Orange users"
 weight: 40
 ---
 
-# Education in Data Science
+## Education in Data Science
 
 Orange is the perfect tool for hands-on training. Teachers enjoy the clear program design and the visual explorations of data and models. Students benefit from the flexibility of the tool and the power to invent new combinations of data mining methods. The educational strength of Orange comes from the combination of visual programming and interactive visualizations. We have also designed some educational widgets that have been explicitly created to support teaching.
 
@@ -22,6 +22,7 @@ Not everything is a line. We can use linear regression on augmented data input w
 <Figure src="overfitting-poly.thumb.png" caption="Polynomial expansion of input data can lead to interesting data fits, but also to overfitting." />
 
 ## Regularization
+
 If overfitting leads to the explosion of the values of the coefficients, it could easily be prevented by requesting the optimization to keep these low. That is exactly the idea behind regularization. In the workflow below, Polynomial Regression was given a regularized model. No more overfitting! It is also great to explore how the strength of regularization smooths the resulting model and reduces the values of coefficients.
 
 <Figure src="regularization.thumb.png" caption="Regularization smooths the model and reduces the value of model coefficients." />
