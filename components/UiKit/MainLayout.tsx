@@ -25,7 +25,7 @@ const MainLayout = ({
   $width714,
   titleLeft,
 }: {
-  children: React.ReactNode | React.ReactNode[];
+  children?: React.ReactNode | React.ReactNode[];
   title?: string;
   justSEO?: boolean;
   openGraph?: OpenGraph;
