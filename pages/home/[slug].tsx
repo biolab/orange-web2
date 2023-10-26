@@ -55,7 +55,7 @@ export async function getStaticProps({
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
         rehypePlugins: [getImageData], // Adds webp src, width and height to images
       },
-    }
+    },
   );
 
   return {
@@ -74,7 +74,7 @@ export default function BlogPost({
   mdxSource: any;
 }) {
   return (
-    <MainLayout title={title} $width650>
+    <MainLayout title={title} $width650 titleLeft>
       <MdContent content={mdxSource} />
     </MainLayout>
   );
