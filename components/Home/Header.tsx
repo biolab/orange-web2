@@ -6,7 +6,7 @@ import config from "../../config.json";
 export default function HomeHeader() {
   return (
     <HeroHeader
-      title={"Data mining Fruitful and fun"}
+      title={"Data Mining Fruitful and Fun"}
       img={img}
       bodyText={"Open source machine learning and data visualization."}
       extra={

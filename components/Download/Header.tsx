@@ -59,7 +59,7 @@ export default function DownloadHeader() {
           alt="Download orange"
         />
 
-        <h1>{os ? "Suggested download" : "Download Orange"}</h1>
+        <h1>{os ? "Suggested Download" : "Download Orange"}</h1>
         <DownloadButton os={os} />
       </Adapt>
     </HeaderWrapper>
