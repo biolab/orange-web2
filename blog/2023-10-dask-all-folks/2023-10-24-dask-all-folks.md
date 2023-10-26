@@ -2,7 +2,7 @@
 author: "Noah Novšak"
 date: "2023-10-24"
 draft: false
-title: "Dask all Folks: preparing large datasets"
+title: "Dask all Folks: Preparing Large Datasets"
 thumbImage: "2023-10-24-dask-all-folks.png"
 frontPageImage: "2023-10-24-dask-all-folks.png"
 blog: ["dask", "development"]
