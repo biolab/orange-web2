@@ -64,7 +64,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      sections: sectionsData,
+      sections: sectionsData.sort((a, b) => b.weight - a.weight),
       usersSection: {
         ...usersFrontmatter,
         testimonials: testimonialsData,
