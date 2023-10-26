@@ -12,19 +12,10 @@ enum LSKeys {
 export default function CookieBanner() {
   const router = useRouter();
   const [show, setShow] = React.useState(false);
-  const [GAEnabled, setGAEnabled] = React.useState(false);
 
   React.useEffect(() => {
     setShow(true);
-    setGAEnabled(true);
   }, []);
-
-  const analyticsEnabled = React.useMemo(() => {
-    if (!GAEnabled) {
-      return false;
-    }
-    return !localStorage.getItem(LSKeys.analyticsDisabled);
-  }, [GAEnabled]);
 
   const _show = React.useMemo(() => {
     if (!show) {
@@ -38,34 +29,22 @@ export default function CookieBanner() {
     localStorage.setItem(LSKeys.cookieBannerDismissed, "true");
   }, []);
 
-  const optOut = React.useCallback(() => {
-    setGAEnabled(false);
-    localStorage.setItem(LSKeys.analyticsDisabled, "true");
-    dismiss();
-  }, [dismiss]);
-
   return (
     <>
-      {analyticsEnabled && (
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-J6PJZF75EX" />
-      )}
-      {analyticsEnabled && (
-        <Script id="google-analytics">
-          {`
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J6PJZF75EX" />
+      <Script id="google-analytics">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
           gtag('config', 'G-J6PJZF75EX');
         `}
-        </Script>
-      )}
-
+      </Script>
       <StWrapper $show={_show}>
         <div>
           <p>This site uses cookies to improve your experience.</p>
           <StButtonsWrapper>
-            <StButton onClick={optOut}>Opt out</StButton>
             <StButton onClick={() => router.push("/privacy")}>Details</StButton>
             <StButton onClick={dismiss} $white>
               Understand
@@ -80,7 +59,9 @@ export default function CookieBanner() {
 const StButtonsWrapper = styled.div`
   display: flex;
   gap: 12px;
+  justify-content: flex-end;
 `;
+
 const StWrapper = styled.div<{ $show: boolean }>`
   position: fixed;
   bottom: 20px;
@@ -126,7 +107,6 @@ const StButton = styled.button<{ $white?: boolean }>`
   ${(props) =>
     props.$white
       ? css`
-          margin-left: auto;
           background: #fff;
           color: ${(props) => props.theme.blackLight1};
           border: 1px solid #fff;
