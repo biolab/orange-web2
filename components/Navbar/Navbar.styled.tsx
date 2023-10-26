@@ -93,7 +93,7 @@ export const MenuList = styled.ul`
 
 export const SearchWrapper = styled.form`
   position: relative;
-  width: 160px;
+  width: 142px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -142,6 +142,7 @@ export const SearchButton = styled.button`
   border: 1px solid #474747;
   border-radius: 0px 5px 5px 0px;
   background-color: ${({ theme }) => theme.gray};
+
   @media ${device.M} {
     margin-left: 0;
   }
