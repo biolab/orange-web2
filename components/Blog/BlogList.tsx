@@ -6,7 +6,13 @@ import BlogTags from "./Tags";
 import * as Styled from "./Blog.styled";
 import formateDate from "@utils/formatDate";
 
-export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
+export default function BlogList({
+  blogs,
+  onTagClick,
+}: {
+  blogs: BlogMetadata[];
+  onTagClick: (tag: string) => void;
+}) {
   return (
     <Styled.BlogList>
       {blogs.map(
@@ -25,7 +31,7 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
               </Styled.BlogListImageWrapper>
             )}
 
-            <BlogTags tags={tags} />
+            <BlogTags tags={tags} onTagClick={onTagClick} />
             <Heading2>
               <Link href={`blog/${url}`}>{title}</Link>
             </Heading2>
@@ -34,7 +40,7 @@ export default function BlogList({ blogs }: { blogs: BlogMetadata[] }) {
               <strong>{author}</strong>, {formateDate(date)}
             </BodyText>
           </Styled.BlogListItem>
-        )
+        ),
       )}
     </Styled.BlogList>
   );

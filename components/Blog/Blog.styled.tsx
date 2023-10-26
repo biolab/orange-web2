@@ -57,6 +57,10 @@ export const BlogTag = styled.p<{ $big?: boolean }>`
   margin-bottom: 6px;
   text-transform: capitalize;
 
+  span {
+    cursor: pointer;
+  }
+
   ${({ $big }) =>
     $big &&
     css`

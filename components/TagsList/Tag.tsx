@@ -8,6 +8,7 @@ const Tag = styled.button<{ $active?: boolean }>`
   border: 1px solid ${({ theme }) => theme.purple};
   color: ${({ theme }) => theme.purple};
   cursor: pointer;
+  text-transform: capitalize;
 
   ${({ $active, theme }) =>
     $active &&

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-export default function useTags<T>(data: T[], tagProp: string) {
+export default function useTags<T>(data: T[], tagProp: string, tags: string[]) {
   const router = useRouter();
 
   const selectedTag = React.useMemo(() => {
@@ -28,7 +28,7 @@ export default function useTags<T>(data: T[], tagProp: string) {
             },
           },
           undefined,
-          { shallow: true }
+          { shallow: true },
         );
 
         return;
@@ -42,25 +42,31 @@ export default function useTags<T>(data: T[], tagProp: string) {
           },
         },
         undefined,
-        { shallow: true }
+        { shallow: true },
       );
     },
-    [router, selectedTag]
+    [router, selectedTag],
   );
 
   const filteredData = React.useMemo(
     () =>
       selectedTag
-        ? data.filter((example: any) =>
-            (example[tagProp] as string)?.includes(selectedTag)
+        ? data.filter(
+            (example: any) =>
+              (example[tagProp] as string)?.includes(selectedTag),
           )
         : data,
-    [data, selectedTag, tagProp]
+    [data, selectedTag, tagProp],
   );
+
+  const allTags = React.useMemo(() => {
+    return [...new Set([...tags, ...(selectedTag ? [selectedTag] : [])])];
+  }, [selectedTag, tags]);
 
   return {
     filteredData,
     selectedTag,
     onTagClick,
+    allTags,
   };
 }

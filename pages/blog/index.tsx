@@ -39,7 +39,11 @@ export default function Blog({
   blogs: BlogMetadata[];
   tags: string[];
 }) {
-  const { filteredData, selectedTag, onTagClick } = useTags(blogs, "tags");
+  const { filteredData, selectedTag, allTags, onTagClick } = useTags(
+    blogs,
+    "tags",
+    tags,
+  );
 
   const {
     itemsOnPage: blogsOnPage,
@@ -55,9 +59,17 @@ export default function Blog({
 
   return (
     <MainLayout title="Blog">
-      <TagsList tags={tags} selectedTag={selectedTag} onTagClick={onTagClick} />
-      <FeaturedBlog blog={blogs[0]} show={page === 0 && !selectedTag} />
-      <BlogList blogs={blogsOnPage} />
+      <TagsList
+        tags={allTags}
+        selectedTag={selectedTag}
+        onTagClick={onTagClick}
+      />
+      <FeaturedBlog
+        blog={blogs[0]}
+        show={page === 0 && !selectedTag}
+        onTagClick={onTagClick}
+      />
+      <BlogList blogs={blogsOnPage} onTagClick={onTagClick} />
       <Pagination noOfPages={noOfPages} page={page} setPage={setPage} />
     </MainLayout>
   );
