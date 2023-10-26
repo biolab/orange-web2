@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { CodeSyntax } from "./libs/CodeSyntax.style";
 import { LightGallery } from "./libs/LightGalery.style";
 
 export const GlobalStyle = createGlobalStyle`
@@ -101,4 +102,5 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ${LightGallery};
+  ${CodeSyntax};
 `;

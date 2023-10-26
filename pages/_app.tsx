@@ -31,11 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
           name="author"
           content="Bioinformatics Laboratory, University of Ljubljana"
         />
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css"
-        ></link>
       </Head>
       <GlobalStyle />
       <Layout>
