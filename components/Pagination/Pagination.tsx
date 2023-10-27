@@ -97,6 +97,7 @@ export default function Pagination({
     <PaginationWrapper>
       {page !== 0 && (
         <PageButtonNavigation
+          aria-label="previous page"
           $previous
           onClick={() => {
             setPage(page - 1);
@@ -150,6 +151,7 @@ export default function Pagination({
 
       {page !== noOfPages - 1 && (
         <PageButtonNavigation
+          aria-label="next page"
           onClick={() => {
             setPage(page + 1);
           }}
