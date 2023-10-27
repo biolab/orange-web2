@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import device from "@styles/utils/breakpoints";
+import Link from "next/link";
 
-const LinkMore = styled.a`
+const LinkMore = styled(Link)`
   display: inline-block;
   font-size: 22px;
   line-height: 1.36;
@@ -12,7 +13,9 @@ const LinkMore = styled.a`
   background-size: 8px;
   background-repeat: no-repeat;
   padding-right: 20px;
-  transition: background-position 0.3s, opacity 0.3s;
+  transition:
+    background-position 0.3s,
+    opacity 0.3s;
   margin: 15px 25px 10px 0;
 
   @media ${device.L} {

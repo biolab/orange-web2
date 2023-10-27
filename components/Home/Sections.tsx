@@ -101,7 +101,7 @@ export default function HomeSections({ sections }: { sections: any }) {
               <MDXRemote {...section.mdxSource} />
 
               {section.learnMore && (
-                <LinkMore href={`home/${slugify(section.title)}`}>
+                <LinkMore href={`/home/${slugify(section.title)}`}>
                   {" "}
                   Learn more
                 </LinkMore>
@@ -115,7 +115,7 @@ export default function HomeSections({ sections }: { sections: any }) {
                 </LinkMore>
               )}
               {section.buttonText && section.buttonURL && (
-                <LinkMore href={section.buttonURL} target="_blank">
+                <LinkMore href={section.buttonURL}>
                   {section.buttonText}
                 </LinkMore>
               )}
