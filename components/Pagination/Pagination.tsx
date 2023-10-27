@@ -1,3 +1,4 @@
+import device from "@styles/utils/breakpoints";
 import React from "react";
 import styled, { css } from "styled-components";
 import Image from "../../components/Image/Image";
@@ -18,8 +19,8 @@ const PageButton = styled.button<{ $active?: boolean }>`
   color: ${({ theme }) => theme.blackLight1};
   padding: 0;
   border: 0;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -36,10 +37,17 @@ const PageButtonNavigation = styled.button<{ $previous?: boolean }>`
   font-size: 16px;
   line-height: 1.25;
   color: ${({ theme }) => theme.purple};
-  padding: 3px 5px;
+  padding: 6px 5px;
+  min-width: 32px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media ${device.XS} {
+    span {
+      display: none;
+    }
+  }
 
   &:hover {
     img {
@@ -100,7 +108,7 @@ export default function Pagination({
             height={ArrowImage.height}
             alt=""
           />
-          Previous
+          <span>Previous</span>
         </PageButtonNavigation>
       )}
 
@@ -146,7 +154,7 @@ export default function Pagination({
             setPage(page + 1);
           }}
         >
-          Next
+          <span>Next</span>
           <Image
             src={ArrowImage.src}
             width={ArrowImage.width}
