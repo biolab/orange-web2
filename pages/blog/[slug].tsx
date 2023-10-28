@@ -72,9 +72,23 @@ const Text = styled.p<{ $colorPurple?: boolean; $capitalize?: boolean }>`
 `;
 
 export async function getStaticPaths() {
-  const paths = getBlogsMetadata().map((post: any) => ({
+  const paths: {
+    params: { slug: string };
+  }[] = getBlogsMetadata().map((post: any) => ({
     params: { slug: post.url },
   }));
+
+  var slugsSet = new Set();
+
+  paths.forEach(({ params: { slug } }) => {
+    if (slugsSet.has(slug)) {
+      throw new Error(
+        `Looks like there are two blogs with the same title or url: ${slug}`,
+      );
+    }
+
+    slugsSet.add(slug);
+  });
 
   return {
     paths,
@@ -88,7 +102,7 @@ export async function getStaticProps({
   params: { slug: string };
 }) {
   const { fullFilePath, publicFilePath, thumbImage } = getBlogsMetadata().find(
-    (post: any) => post.url === slug
+    (post: any) => post.url === slug,
   );
   const mdFile = fs.readFileSync(fullFilePath, "utf-8");
   const { data: frontmatter, content } = matter(mdFile);
@@ -100,7 +114,7 @@ export async function getStaticProps({
         remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
         rehypePlugins: [rehypeHighlight as any, getImageData], // Adds webp src, width and height to images
       },
-    }
+    },
   );
 
   return {
