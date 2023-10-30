@@ -13,7 +13,12 @@ export default function ImageGallery({
   selector: string;
 }) {
   return (
-    <LightGallery selector={selector} speed={0} plugins={[lgThumbnail, lgZoom]}>
+    <LightGallery
+      licenseKey="802D513B-8F014005-B1420555-B06EDFC7"
+      selector={selector}
+      speed={0}
+      plugins={[lgThumbnail, lgZoom]}
+    >
       {children}
     </LightGallery>
   );
