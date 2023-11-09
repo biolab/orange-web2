@@ -4,8 +4,8 @@ date: "2023-11-08"
 draft: false
 title: "From Data Portals to Portals of Doom: Avoiding it with Dask"
 url: "dask-survival-analysis"
-thumbImage: "orange-not-responding.png"
-frontPageImage: "orange-not-responding.png"
+thumbImage: "orange-not-responding-thumb.png"
+frontPageImage: "orange-not-responding-thumb.png"
 blog: ["dask", "survival analysis"]
 shortExcerpt: "Circumvent the limitations of second-hand data portals: Orange with Dask enables you to process big data sets while ensuring the source's authenticity and enabling custom workflows." 
 longExcerpt: "Circumvent the limitations of second-hand data portals: Orange with Dask enables you to process big data sets while ensuring the source's authenticity and enabling custom workflows."
