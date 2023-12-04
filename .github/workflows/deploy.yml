@@ -3,6 +3,12 @@ name: Node.js CI
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches:
+      - main
+
+  # Manually trigger workflow
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,16 +24,16 @@ jobs:
           sudo apt-get install -y glibc-tools  # required for catchsegv
           sudo apt-get install -y libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libegl1-mesa libxcb-shape0 libxcb-cursor0
 
-      # - name: Setup Python
-      #   uses: actions/setup-python@v4
-      #   with:
-      #     python-version: "3.10"
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
 
-      # - name: Build widget catalog
-      #   run: |
-      #     pip install -U setuptools pip
-      #     pip install orange-canvas-core pyqt6==6.5.*
-      #     bash scripts/build-widget-catalog.sh
+      - name: Build widget catalog
+        run: |
+          pip install -U setuptools pip
+          pip install orange-canvas-core pyqt6==6.5.*
+          bash scripts/build-widget-catalog.sh
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
@@ -41,6 +47,7 @@ jobs:
         run: yarn run build && yarn run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
