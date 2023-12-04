@@ -50,6 +50,8 @@ export async function getStaticProps() {
 
     examples.push({
       ...(frontmatter as IExample),
+      download:
+        path.join(path.sep, dirInPublic, frontmatter.download),
       images:
         frontmatter.images?.map((image: string) =>
           getOptimizedImageAttributes(path.join(path.sep, dirInPublic, image)),
@@ -111,7 +113,7 @@ export default function Examples({
 
                 <Button
                   as="a"
-                  href={`https://download.biolab.si/download/files/workflows/orange/${download}`}
+                  href={...download}
                 >
                   Download
                 </Button>
