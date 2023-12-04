@@ -4,7 +4,7 @@ images: ["text-semantic-document-map.png"]
 type: "workflows"
 blog_link: ""
 video: ""
-download: "text-semantic-word-map.ows"
+download: "text-semantic-document-map.ows"
 workflows: ["Text Mining"]
 weight: 652
 ---
