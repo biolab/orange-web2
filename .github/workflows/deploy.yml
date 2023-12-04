@@ -3,6 +3,12 @@ name: Node.js CI
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches:
+      - main
+
+  # Manually trigger workflow
+  workflow_dispatch:
 
 jobs:
   build:
@@ -41,6 +47,7 @@ jobs:
         run: yarn run build && yarn run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
