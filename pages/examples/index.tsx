@@ -113,7 +113,7 @@ export default function Examples({
 
                 <Button
                   as="a"
-                  href={...download}
+                  href={download}
                 >
                   Download
                 </Button>
