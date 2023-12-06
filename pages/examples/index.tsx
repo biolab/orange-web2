@@ -29,6 +29,7 @@ interface IExample {
   workflows: string[];
   content: MDXRemoteSerializeResult;
   download: string;
+  weight: number;
 }
 
 export async function getStaticProps() {
@@ -57,6 +58,7 @@ export async function getStaticProps() {
           getOptimizedImageAttributes(path.join(path.sep, dirInPublic, image)),
         ) || [],
       content: mdxSource,
+      weight: frontmatter.weight || 999999,
     });
   }
 
@@ -64,7 +66,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      examples,
+      examples: examples.sort((a, b) => (a.weight - b.weight)),
       tags: getTopTags(tags),
     },
   };
