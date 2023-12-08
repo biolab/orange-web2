@@ -2,6 +2,10 @@
   "version": "3.36.1",
   "menu": [
     {
+      "name": "Screenshots",
+      "url": "/screenshots/"
+    },
+    {
       "name": "Examples",
       "url": "/examples/"
     },
