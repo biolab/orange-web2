@@ -11,11 +11,13 @@ import path from "path";
 import MainLayout from "@components/UiKit/MainLayout";
 import device from "@styles/utils/breakpoints";
 import ImageGallery from "@components/ImageGallery/ImageGallery";
+import sortByWeight from "@utils/sortByWeight";
 
 interface IScreenshots {
   title: string;
   image: ImageProps;
   thumbnailImage: ImageProps;
+  weight: number;
 }
 
 export async function getStaticProps() {
@@ -29,19 +31,19 @@ export async function getStaticProps() {
     const { data: frontmatter } = matter(mdFile);
 
     screenshots.push({
-      title: frontmatter.title,
+      ...frontmatter,
       image: getOptimizedImageAttributes(
         path.join(path.sep, dirInPublic, frontmatter.image),
       ) as ImageProps,
       thumbnailImage: getOptimizedImageAttributes(
         path.join(path.sep, dirInPublic, frontmatter.thumbnailImage),
       ) as ImageProps,
-    });
+    } as IScreenshots);
   }
 
   return {
     props: {
-      screenshots,
+      screenshots: sortByWeight(screenshots),
     },
   };
 }
