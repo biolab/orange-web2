@@ -3,5 +3,5 @@ export default function sortByWeight(items: any[]) {
     throw new Error("Item is not an array");
   }
 
-  return items.sort((a, b) => a.weight || 99999 - b.weight || 99999);
+  return items.sort((a, b) => (a.weight || 99999) - (b.weight || 99999));
 }
