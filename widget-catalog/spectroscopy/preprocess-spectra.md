@@ -37,8 +37,7 @@ Below is an example of the **Preprocess Spectra** widget in action with some exp
 Preprocessing Methods
 ---------------------
 
-- Cut (keep): Select the cutoff value of the spectral area you wish to keep.
-- Cut (remove): Select the cutoff value of the spectral area you wish to discard.
+- Cut: Select the cutoff value of the spectral area and whether you wish to keep or discard that area.
 - Gaussian smoothing: apply Gaussian smoothing.
 - Savitzky-Golay Filter: apply Savitzky-Golay filter.
 - Baseline Correction: correct the baseline
