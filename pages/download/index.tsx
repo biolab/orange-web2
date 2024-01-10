@@ -168,7 +168,7 @@ export default function Download() {
 
               <DownloadLink
                 href={downloadLinks.macos}
-                text={`Orange3-${config.version}-Python3.8.8.dmg`}
+                text={`Orange3-${config.version}-Python3.9.12.dmg`}
               />
 
               <StDisclaimer>
