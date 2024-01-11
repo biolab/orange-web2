@@ -1,6 +1,6 @@
 ---
 author: "Žan Mervič"
-date: "2024-01-09"
+date: "2024-01-11"
 draft: false
 title: "Scoring Sheets: Transform Data into Insightful Scores"
 url: "explain-scoring-sheet"
