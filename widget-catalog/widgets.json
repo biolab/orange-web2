@@ -2222,11 +2222,11 @@
     "url": "yahoo_finance"
    },
    {
-    "title": "As Timeseries",
+    "title": "Form Timeseries",
     "category": "Time Series",
     "keywords": [],
     "background": "#33aaff",
-    "icon": "widget-icons/Time Series-As Timeseries.png",
+    "icon": "widget-icons/Time Series-Form Timeseries.png",
     "url": "as_timeseries"
    },
    {

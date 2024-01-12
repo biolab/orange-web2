@@ -1,9 +1,9 @@
 ---
-title: "As Timeseries"
+title: "Form Timeseries"
 category: "Time Series"
 ---
-As Timeseries
-=============
+Form Timeseries
+===============
 
 Reinterpret a **Table** object as a Timeseries object.
 
