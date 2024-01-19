@@ -9,8 +9,8 @@ import device from "@styles/utils/breakpoints";
 import { AiOutlineDownload } from "react-icons/ai";
 
 export const downloadLinks = {
-  macos: `https://download.biolab.si/download/files/Orange3-3.36.1-Python3.9.12.dmg`,
-  macosArm: `https://download.biolab.si/download/files/Orange3-3.36.1-Python3.9.12-arm64.dmg`,
+  macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`,
+  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12-arm64.dmg`,
   win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
   portableOrange: `https://download.biolab.si/download/files/Orange3-${config.version}.zip`,
 };
@@ -158,21 +158,17 @@ export default function Download() {
             <div>
               <h2 id="mac">macOS</h2>
 
-              <p>
-                <b>Note: </b> due to some problems with 3.36.2 on MacOS we, for now, still distribute 3.36.1.
-              </p>
- 
               <h3>Orange for Apple silicon</h3>
               <DownloadLink
                 href={downloadLinks.macosArm}
-                text={`Orange3-3.36.1-Python3.9.12-arm64.dmg`}
+                text={`Orange3-${config.version}-Python3.9.12-arm64.dmg`}
               />
 
               <h3>Orange for Intel</h3>
 
               <DownloadLink
                 href={downloadLinks.macos}
-                text={`Orange3-3.36.1-Python3.9.12.dmg`}
+                text={`Orange3-${config.version}-Python3.9.12.dmg`}
               />
 
               <StDisclaimer>
