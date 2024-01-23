@@ -1,5 +1,5 @@
 ---
-title: "Orange users"
+title: "Teach with Orange"
 weight: 40
 ---
 
