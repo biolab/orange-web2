@@ -184,14 +184,13 @@ export default function Download() {
               <h2>Other platforms</h2>
               <h3>Anaconda</h3>
               <p>
-                If you are using python provided by Anaconda distribution, you
-                are almost ready to go. Add conda-forge to the list of channels
+                Add conda-forge to the list of channels
                 you can install packages from (and make it default)
               </p>
               <pre>
                 <code>
-                  conda config --add channels conda-forge conda config --set
-                  channel_priority strict
+                  conda config --add channels conda-forge<br />
+                  conda config --set channel_priority strict
                 </code>
               </pre>
               <p>and run</p>
@@ -199,16 +198,26 @@ export default function Download() {
                 <code>conda install orange3</code>
               </pre>
 
-              <p>
-                A universal bundle with everything packed in and ready to use.
-              </p>
-
               <h3>Pip</h3>
               <p>
-                Orange can also be installed from the Python Package Index. You
+                Orange can also be installed from PyPI. You
                 may need additional system packages provided by your
                 distribution.
               </p>
+
+              <p>
+                If your system does not already provide PyQt, install
+                it from PyPI
+              </p>
+
+              <pre>
+                <code>pip install PyQt5 PyQtWebEngine</code>
+              </pre>
+
+              <p>
+                Finally, install Orange
+              </p>
+
               <pre>
                 <code>pip install orange3</code>
               </pre>
@@ -227,6 +236,8 @@ export default function Download() {
                   README.md
                 </a>
               </p>
+
+              <h3>Running Orange</h3>
 
               <p>To run Orange Canvas run</p>
               <pre>
