@@ -6,10 +6,6 @@
       "url": "/screenshots/"
     },
     {
-      "name": "Examples",
-      "url": "/examples/"
-    },
-    {
       "name": "Download",
       "url": "/download/"
     },
@@ -24,6 +20,10 @@
     {
       "name": "Workshops",
       "url": "/workshops/"
+    },
+    {
+      "name": "Donate",
+      "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
     }
   ],
   "footer": [
