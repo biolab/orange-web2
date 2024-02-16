@@ -54,6 +54,7 @@
     },
     {
       "title": "Download",
+      "url": "/download/",
       "pages": [
         {
           "name": "Windows",
@@ -62,6 +63,10 @@
         {
           "name": "Mac OS",
           "url": "/download/#mac"
+        },
+        {
+          "name": "Other platforms",
+          "url": "/download/#other"
         }
       ]
     },
@@ -92,10 +97,19 @@
     },
     {
       "title": "Documentation",
+      "url": "/docs/",
       "pages": [
         {
           "name": "Get started",
           "url": "/getting-started/"
+        },
+        {
+          "name": "YouTube tutorials",
+          "url": "https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g"
+        },
+        {
+          "name": "Example workflows",
+          "url": "/examples/"
         },
         {
           "name": "Widgets",

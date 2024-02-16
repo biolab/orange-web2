@@ -181,7 +181,7 @@ export default function Download() {
             </div>
 
             <div>
-              <h2>Other platforms</h2>
+              <h2 id="other">Other platforms</h2>
               <h3>Anaconda</h3>
 
               <p>
