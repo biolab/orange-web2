@@ -40,9 +40,14 @@ export default function Footer() {
     <StyledFooter>
       <Adapt>
         <LinksWrapper>
-          {config.footer.map(({ title, pages }) => (
+          {config.footer.map(({ title, url, pages }) => (
             <div key={title}>
-              <h3>{title}</h3>
+              {url && (
+                  <h3><Link href={url}>{title}</Link></h3>
+              )}
+              {!url && (
+                  <h3>{title}</h3>
+              )}
 
               <ul>
                 {pages.map(({ name, url }) => (
