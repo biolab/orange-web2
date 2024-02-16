@@ -183,6 +183,17 @@ export default function Download() {
             <div>
               <h2>Other platforms</h2>
               <h3>Anaconda</h3>
+
+              <p>
+                Create and activate a conda environment for Orange (optional, but recommended)
+              </p>
+              <pre>
+                <code>
+                  conda create python=3.10 --yes --name orange3<br />
+                  conda activate orange3
+                </code>
+              </pre>
+
               <p>
                 Add conda-forge to the list of channels
                 you can install packages from (and make it default)
@@ -239,7 +250,7 @@ export default function Download() {
 
               <h3>Running Orange</h3>
 
-              <p>To run Orange Canvas run</p>
+              <p>To run Orange Canvas run (activate the corresponding environment first if needed)</p>
               <pre>
                 <code>python -m Orange.canvas</code>
               </pre>
