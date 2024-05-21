@@ -2,7 +2,7 @@
 author: "Pavlin Poličar"
 date: "2024-05-14"
 draft: false
-title: Orange uses the fastest t-SNE implementation in Python
+title: Orange Data Mining uses the fastest t-SNE implementation in Python
 url: "fastest-tsne-library"
 thumbImage: "tsne.png"
 frontPageImage: "tsne.png"
