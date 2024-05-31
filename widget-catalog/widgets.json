@@ -789,6 +789,15 @@
     "url": "adaboost"
    },
    {
+    "title": "PLS",
+    "category": "Model",
+    "keywords": [
+     "partial least squares"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-PLS.png"
+   },
+   {
     "title": "Curve Fit",
     "category": "Model",
     "keywords": [
@@ -927,6 +936,14 @@
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Calibration Plot.png",
     "url": "calibrationplot"
+   },
+   {
+    "title": "Permutation Plot",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Permutation Plot.png",
+    "url": "permutationplot"
    }
   ]
  ],
@@ -1905,6 +1922,14 @@
     "background": "light-blue",
     "icon": "widget-icons/Single Cell-Dot Matrix.png",
     "url": "dot_matrix"
+   },
+   {
+    "title": "Spatial Autocorrelation Scorer",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Spatial Autocorrelation Scorer.png",
+    "url": "spatial_autocorrelation"
    }
   ]
  ],
