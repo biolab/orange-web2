@@ -9,8 +9,8 @@ import device from "@styles/utils/breakpoints";
 import { AiOutlineDownload } from "react-icons/ai";
 
 export const downloadLinks = {
-  macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12.dmg`,
-  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.9.12-arm64.dmg`,
+  macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.10.11-x86_64.dmg`,
+  macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.11.8-arm64.dmg`,
   win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
   portableOrange: `https://download.biolab.si/download/files/Orange3-${config.version}.zip`,
 };
@@ -137,7 +137,7 @@ export default function Download() {
 
               <DownloadLink
                 href={downloadLinks.win}
-                text={`Orange3-${config.version}-Miniconda-x86_64.exe (64 bit)`}
+                text={downloadLinks.win.split("/").pop() || `Orange3-${config.version}-Miniconda-x86_64.exe`}
               />
 
               <p>Can be used without administrative priviledges.</p>
@@ -146,7 +146,7 @@ export default function Download() {
 
               <DownloadLink
                 href={downloadLinks.portableOrange}
-                text={`Orange3-${config.version}.zip`}
+                text={downloadLinks.portableOrange.split("/").pop() || `Orange3-${config.version}.zip`}
               />
 
               <p>
@@ -161,14 +161,14 @@ export default function Download() {
               <h3>Orange for Apple silicon</h3>
               <DownloadLink
                 href={downloadLinks.macosArm}
-                text={`Orange3-${config.version}-Python3.9.12-arm64.dmg`}
+                text={downloadLinks.macosArm.split("/").pop() || `Orange3-${config.version}-arm64.dmg`}
               />
 
               <h3>Orange for Intel</h3>
 
               <DownloadLink
                 href={downloadLinks.macos}
-                text={`Orange3-${config.version}-Python3.9.12.dmg`}
+                text={downloadLinks.macos.split("/").pop() || `Orange3-${config.version}-x86_64.dmg`}
               />
 
               <StDisclaimer>
