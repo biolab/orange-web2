@@ -15,9 +15,11 @@ oldUrl: "/blog/2023/2023-09-18-fairness-dataset-bias/"
 
 Artificial intelligence and machine learning are increasingly used in everyday decisions that deeply impact individuals. This includes areas like employment, court sentencing, and credit application approvals. It's crucial that these decision-making tools don't favor certain demographic groups over others.
 
-Bias in machine learning can stem from multiple sources. It might arise from skewed training data or the model's design. This bias can result in unequal model outcomes: unprivileged groups might receive lower salaries despite having similar qualifications as privileged ones or face longer prison sentences for identical crimes. Such biases can significantly affect individuals' lives.
+Bias in machine learning can stem from multiple sources. It might arise from skewed training data or the model's design. This bias can result in unequal model outcomes: members of unprivileged groups might receive lower salaries despite having similar qualifications as those in privileged ones or face longer prison sentences for identical crimes. Such biases can significantly affect individuals' lives.
 
-For example, in the "Adult" dataset, a notable bias exists between male and female genders. When predicting if a person's salary is "> 50K" or "≤ 50K", females tend to be classified as "≤ 50K" more frequently than their male counterparts with similar attributes. This disparity showcases the dataset's bias, which can lead to biased and unfair predictions.
+For example, in the "Adult" dataset, a notable bias exists between male and female genders. When predicting if a person's salary is "> 50K" or "≤ 50K", females tend to be classified as "≤ 50K" more frequently than their male counterparts. This disparity showcases the dataset's bias, which can lead to biased and unfair predictions.
+
+Another example, in a popular "COMPAS" dataset, bias exists between African American and Caucasian defendants. When predicting the likelihood of recidivism, African American defendants tend to be falsely classified as "high risk" more frequently than Caucasian defendants while Caucasian defendants are falsely classified as "low risk" more frequently than African American defendants. This disparity showcases a type of bias, that we don't want to see in our models.
 
 ### But why is it a problem to have models that reflect real-world bias?
 
@@ -25,7 +27,7 @@ In essence, machine learning models that merely mimic real-world biases perpetua
 
 Furthermore, creating models that actively seek to reduce or eliminate bias is essential for maintaining trust in AI and machine learning systems. When people see these systems merely replicating past biases, they are less likely to trust and adopt them. In contrast, fairness-aware models can be trusted to make decisions that prioritize justice and equity over merely echoing the patterns in the data.
 
-Recognizing these challenges, there has been a surge in efforts to mitigate this bias. The outcome has been the development of models that aim for balanced outcomes for all demographic groups or maintain consistent true positive rates across them. Mitigating bias might mean a slight dip in overall accuracy, but it is a necessary trade-off to ensure fairness in our models. Using fairness algorithms is ethical and highly beneficial to ensure people's trust in machine learning and AI.
+Recognizing these challenges, there has been a surge in efforts to mitigate this bias. The outcome has been the development of models that aim for balanced outcomes for all demographic groups, maintain consistent true positive rates across them or try to minimize any other form of bias. Mitigating bias might mean a slight dip in overall accuracy, but it is a necessary trade-off to ensure fairness in our models. Using fairness algorithms is ethical and highly beneficial to ensure people's trust in machine learning and AI.
 
 ## Introducing the Fairness add-on in Orange
 
@@ -78,9 +80,8 @@ Using the As Fairness Data widget, we will define "sex" as the protected attribu
 
 <WindowScreenshot src="2023-09-18-fairness-dataset-bias-use-case.png" />
 
-The results show that the dataset exhibits bias: the disparate impact is 0.358, and the statistical parity difference stands at -0.196. In an ideal scenario signifying no bias, these values would be 1 and 0, respectively. We can further visualize the dataset's bias using the Box Plot.
+The results show that the dataset exhibits bias: the disparate impact is 0.36, and the statistical parity difference stands at -0.195. In an ideal scenario signifying no bias, these values would be 1 and 0, respectively. We can further visualize the dataset's bias using the Box Plot.
 
 <WindowScreenshot src="2023-09-18-fairness-dataset-bias-box-plot.png" />
 
-The Box Plot illustrates the distribution of the target variable across both privileged and unprivileged groups. Hovering over the plot reveals that only 10.95% of the females in the dataset belong to the favorable class, in contrast to the 30.57% of males. By dividing the percentage of the favorable class for the unprivileged group by that of the privileged group, we arrive at a disparate impact value of 0.358—precisely what the Dataset Bias widget determined. We can do a similar calculation for the statistical parity difference.
-
+The Box Plot illustrates the distribution of the target variable across both privileged and unprivileged groups. Hovering over the plot reveals that only 10.93% of the females in the dataset belong to the favorable class, in contrast to the 30.38% of males. By dividing the percentage of the favorable class for the unprivileged group by that of the privileged group, we arrive at a disparate impact value of 0.36—precisely what the Dataset Bias widget determined. We can do a similar calculation for the statistical parity difference.
