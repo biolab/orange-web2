@@ -15,13 +15,13 @@ Previously, we introduced and explained different fairness algorithms that can b
 
 ## Hiding Protected Attribute:
 
-Our setup is the following: we have two workflows, and both are using the adult data set. In the first workflow, we will train a logistic regression model using Reweighing as a preprocessor and a regular logistic regression model as a baseline on data that has not been modified. The second workflow uses the same dataset but with the protected attribute removed. We will then compare the predictions of the two workflows using a Box Plot.
+Our setup is the following: we have two workflows, and both are using the adult data set. In the first workflow, we will train a logistic regression model using Reweighing as a preprocessor and a regular logistic regression model as a baseline on data that has not been modified. The second workflow uses the same dataset but with the protected attribute hidden from the models. We will then compare the predictions of the two workflows using a Box Plot.
 
 <WindowScreenshot src="2023-09-19-fairness-hiding-protected-attribute-use-case-1.png" />
 
 <WindowScreenshot src="2023-09-19-fairness-hiding-protected-attribute-use-case-2.png" />
 
-The two workflows are very similar, the only difference being the extra learner used in the first workflow, the reweighted learner, and two Select Columns widgets used in the second workflow. The first Select Columns widget is used to remove the protected attribute from the data, and the second one is used to add it back after the predictions are made so that we can compare the predictions of the two workflows using a Box Plot widget.
+The two workflows are very similar, the only difference being the extra learner used in the first workflow, the reweighted learner, and the Select Columns widget used in the second workflow. The Select Columns widget is used to hide the protected attribute from the models, by moving it to the meta-attributes.
 
 In this example, we will not be able to use the scores to compare the fairness metrics of the models because we could not calculate the fairness metrics for the workflow with the hidden protected attribute. This is because the protected attribute is required to calculate the fairness metrics. Saying that we can still compare the accuracy scores of the models. Here are the scores for the reweighted model, the baseline model, and the model learning on altered data:
 
@@ -35,11 +35,11 @@ Instead of using the scores to compare the models, we will visualize the fairnes
 
 The box plots show that the baseline model results are very similar to the model learning on data with the protected attribute removed. In contrast, the reweighted model results are very different. The ratio of favorable prediction is much more similar when using debiasing compared to the baseline model and the model learning on data with the protected attribute removed.
 
-A similar observation can be made for the Equalized Odds Difference and Average Odds Difference fairness metrics. Using a similar setup as in the [previous blog post](/blog/2023-09-19-fairness-equal-odds-postprocessing/), we visualized the True Positive Rate for each group using the mosaic display widget. We trained one model using the Equalized Odds Postprocessing widget and one on data with the protected attribute "age" hidden. Here are the results:
+A similar observation can be made for the Equalized Odds Difference and Average Odds Difference fairness metrics. Using a similar setup as in the [previous blog post](/blog/2023-09-19-fairness-equal-odds-postprocessing/), we visualized the True Positive Rate for each group using the box plot widget. We trained one model using the Equalized Odds Postprocessing widget and one on data with the protected attribute "age" hidden. Here are the results:
 
-<WindowScreenshot src="2023-09-19-fairness-hiding-protected-attribute-mosaic.png" />
+<WindowScreenshot src="2023-09-19-fairness-hiding-protected-attribute-box-plot-2.png" />
 
-In the visualizations, the red part of each column represents the true positive rate for each group; you can ignore the width of the columns as that represents the number of instances in each group, which is irrelevant to us. We can see that the difference in True Positive Rate between the two groups is much smaller when using the Equal Odds Postprocessing widget. 
+In the visualizations, the red part of each row represents the true positive rate for each group. We can see that the difference in True Positive Rate between the two groups is much smaller when using the Equal Odds Postprocessing widget. 
 
 ## Why and how?
 
@@ -54,3 +54,5 @@ In this workflow, we set the "sex" attribute as the target variable and use a Lo
 <WindowScreenshot src="2023-09-19-fairness-hiding-protected-attribute-sex-scores.png" />
 
 We can see that the model has a very high accuracy score, which means that the other features in the dataset are correlated with the protected attribute. This means that even if we remove the protected attribute from the dataset, the model can still infer it from the other features. This is why it is crucial to use fairness algorithms instead of simply removing the protected attribute.
+
+The other reason might be that the sex attribute is not very important for making predictions. We tested this by calculating feature importance for the models. We found that sex is the second lest important feature for making predictions. This means, that the protected attribute - sex, does not directly influence the predictions.
