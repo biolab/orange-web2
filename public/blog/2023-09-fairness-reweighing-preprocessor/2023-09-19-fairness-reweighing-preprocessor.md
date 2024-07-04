@@ -20,13 +20,13 @@ With the fairness addon and widgets that come with it, we also introduced four b
 - Disparate Impact (DI): The ratio of favorable outcomes for an unprivileged group to that of the privileged group. An ideal value of 1.0 means the ratio is the same for both groups.
   - DI < 1.0: The privileged group receives favorable outcomes at a higher rate than the unprivileged group.
   - DI > 1.0: The privileged group receives favorable outcomes at a lower rate than the unprivileged group.
-- Statistical Parity Difference (SPD): Very similar to disparate impact. Instead of the ratio, it measures the difference in favorable outcomes. An ideal value is 0.0.
+- Statistical Parity Difference (SPD): The difference in favorable outcomes. An ideal value is 0.0.
   - SPD < 0: The privileged group has a higher rate of favorable outcomes.
   - SPD > 0: The privileged group has a lower rate of favorable outcomes.
 - Average Odds Difference (AOD): This metric calculates the average difference between the true positive rates (correctly predicting a positive outcome) and false positive rates (incorrectly predicting a positive outcome) for both the privileged and unprivileged groups. A value of 0.0 indicates equal rates for both groups, signifying fairness.
   - AOD < 0: Indicates bias in favor of the privileged group.
   - AOD > 0: Indicates bias against the privileged group.
-- Equal Opportunity Difference (EOD): Similar to the Average Odds Difference. It measures the difference in true positive rates. An ideal value is 0.0, indicating the difference in true positive rates is the same for both groups.
+- Equal Opportunity Difference (EOD): The difference in true positive rates. An ideal value is 0.0, indicating the difference in true positive rates is the same for both groups.
   - EOD < 0: The privileged group has a higher true positive rate.
   - EOD > 0: The privileged group has a lower true positive rate.
 
@@ -52,16 +52,16 @@ Like the previous blog, we will not use the As Fairness Data widget to select fa
 
 <WindowScreenshot src="2023-09-19-fairness-reweighing-preprocessor-scores.png" />
 
-The results show that the model using reweighing as a preprocessor achieved better fairness scores than the model without reweighing at the cost of slightly lower accuracy. The Reweighing algorithm mainly focuses on the Disparate Impact and Statistical Parity Difference metrics, which reflect the ratio and difference between the favorable outcomes of the unprivileged and privileged groups. 
+The results show that the model using reweighing as a preprocessor achieved better fairness scores than the model without reweighing at the cost of slightly lower accuracy.
 
-In this case the ratio of favorable outcomes went from 0.869 to 0.952, while the difference went from -0.105 to -0.038. Both metrics indicate less bias towards the unprivileged group.
+In this case DI metric went from 0.869 to 0.952, SPD went from -0.105 to -0.038, EOD went from -0.055 to -0.009 and AOD went from -0.093 to -0.015. All metrics indicate less bias towards the unprivileged group.
 
-We can easily visualize the results using a box plot. For a clearer visualization, we have used the Edit Domain widget to merge all values of each protected group into one, which resulted in two groups: males and females.
+We can easily visualize the Disparate Impact metric using a box plot. For a clearer visualization, we have used the Edit Domain widget to merge all values of each protected group into one, which resulted in two groups: males and females.
 
 <WindowScreenshot src="2023-09-19-fairness-reweighing-preprocessor-box-plot-bias.png" />
 
 <WindowScreenshot src="2023-09-19-fairness-reweighing-preprocessor-box-plot-debias.png" />
 
-The first box plot shows the ratio of favorable and unfavorable outcomes for the unprivileged and privileged groups for predictions from the model without reweighing. The second box plot shows the same for the model with reweighing. 
+The first box plot shows the ratio of favorable and unfavorable outcomes for the unprivileged and privileged groups (DI) from the model without reweighing. The second box plot shows the same for the model with reweighing. 
 
 We can see that when using reweighing the amount of favorable outcomes increased for the unprivileged group and decreased for the privileged group bringing the ratios closer between the two groups.
