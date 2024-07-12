@@ -6,7 +6,7 @@
 		<node id="2" name="Combine Preprocessors" qualified_name="orangecontrib.fairness.widgets.owcombinepreprocessors.OWCombinePreprocessors" project_name="Orange3-Fairness" version="" title="Combine Preprocessors " position="(470.16666666666674, 266.0)" />
 		<node id="3" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="Preprocess" position="(268.16666666666663, 274.0)" />
 		<node id="4" name="Reweighing" qualified_name="orangecontrib.fairness.widgets.owreweighing.OWReweighing" project_name="Orange3-Fairness" version="" title="Reweighing" position="(296.16666666666674, 165.0)" />
-		<node id="5" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(1050.1666666666667, 377.0)" />
+		<node id="5" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(1048.166666666667, 377.0)" />
 		<node id="6" name="Weighted Logistic Regression" qualified_name="orangecontrib.fairness.widgets.owweightedlogisticregression.OWWeightedLogisticRegression" project_name="Orange3-Fairness" version="" title="Weighted Logistic Regression" position="(603.1666666666667, 491.0)" />
 		<node id="7" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="Preprocess" position="(438.16666666666674, 491.0)" />
 		<node id="8" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(397.0, 376.0)" />
@@ -170,20 +170,20 @@ YmV1Lg==
 </properties>
 		<properties node_id="6" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': 'Weighted Logistic Regression Bias', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x9a\x00\x00\x01\x02\x00\x00\x03e\x00\x00\x02\x11\x00\x00\x02\x9b\x00\x00\x01 \x00\x00\x03d\x00\x00\x02\x10\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\x9b\x00\x00\x01 \x00\x00\x03d\x00\x00\x02\x10', '__version__': 2}</properties>
 		<properties node_id="7" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01R\x00\x00\x00`\x00\x00\x03\x89\x00\x00\x01\x1e\x00\x00\x01S\x00\x00\x00~\x00\x00\x03\x88\x00\x00\x01\x1d\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01S\x00\x00\x00~\x00\x00\x03\x88\x00\x00\x01\x1d', 'storedsettings': {'name': '', 'preprocessors': [('orange.preprocess.impute', {}), ('orange.preprocess.scale', {}), ('orange.preprocess.continuize', {}), ('orange.preprocess.scale', {})]}, '__version__': 2}</properties>
-		<properties node_id="8" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe1\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xff\x00\x00\x00\x80\x00\x00\x05\x00\x00\x00\x02\x92\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91', 'selected_id': 'core\\german-credit-data.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
-		<properties node_id="9" format="pickle">gASVqAIAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UjAtDYXRlZ29yaWNhbJQojBdQ
-ZXJzb25hbCBzdGF0dXMgYW5kIHNleJQojCFmZW1hbGUtZGl2b3JjZWQvc2VwYXJhdGVkL21hcnJp
-ZWSUjBdtYWxlLWRpdm9yY2VkL3NlcGFyYXRlZJSMFG1hbGUtbWFycmllZC93aWRvd2VklIwLbWFs
-ZS1zaW5nbGWUdJSMFHByaXZpbGVnZWRfcGFfdmFsdWVzlIxCWydtYWxlLWRpdm9yY2VkL3NlcGFy
-YXRlZCcsICdtYWxlLW1hcnJpZWQvd2lkb3dlZCcsICdtYWxlLXNpbmdsZSddlIaUhZSJdJSGlF2U
-jBFDYXRlZ29yaWVzTWFwcGluZ5RdlChoBYwGZmVtYWxllIaUaAaMBG1hbGWUhpRoB4wEbWFsZZSG
-lGgIjARtYWxllIaUZYWUhpRhc4wWX21lcmdlX2RpYWxvZ19zZXR0aW5nc5R9lIwgT3JhbmdlLndp
-ZGdldHMuZGF0YS5vd2VkaXRkb21haW6UaAOTlChoBGgJaA2JdJSBlH2UKIwRZnJlcXVlbnRfYWJz
-X3NwaW6USwqMEWZyZXF1ZW50X3JlbF9zcGlulEdAJAAAAAAAAIwNbl92YWx1ZXNfc3BpbpRLBIwO
-bmFtZV9saW5lX2VkaXSUjARtYWxllHVzjBJjb250cm9sQXJlYVZpc2libGWUiIwRb3V0cHV0X3Rh
-YmxlX25hbWWUjACUjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGxAAAAZwAABLIA
-AAKOAAABsQAAAGcAAASyAAACjgAAAAAAAAAABgAAAAGxAAAAZwAABLIAAAKOlIwLX192ZXJzaW9u
-X1+USwN1Lg==
+		<properties node_id="8" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe1\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'language': 'English', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xff\x00\x00\x00\x80\x00\x00\x05\x00\x00\x00\x02\x92\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91', 'selected_id': 'core/german-credit-data.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="9" format="pickle">gASVpAIAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UjAtDYXRlZ29yaWNhbJSMF1Bl
+cnNvbmFsIHN0YXR1cyBhbmQgc2V4lCiMIWZlbWFsZS1kaXZvcmNlZC9zZXBhcmF0ZWQvbWFycmll
+ZJSMF21hbGUtZGl2b3JjZWQvc2VwYXJhdGVklIwUbWFsZS1tYXJyaWVkL3dpZG93ZWSUjAttYWxl
+LXNpbmdsZZR0lIwUcHJpdmlsZWdlZF9wYV92YWx1ZXOUjEJbJ21hbGUtZGl2b3JjZWQvc2VwYXJh
+dGVkJywgJ21hbGUtbWFycmllZC93aWRvd2VkJywgJ21hbGUtc2luZ2xlJ12UhpSFlIeUhpRdlIwR
+Q2F0ZWdvcmllc01hcHBpbmeUXZQoaAWMBmZlbWFsZZSGlGgGjARtYWxllIaUaAeMBG1hbGWUhpRo
+CIwEbWFsZZSGlGWFlIaUYXOMFl9tZXJnZV9kaWFsb2dfc2V0dGluZ3OUfZSMIE9yYW5nZS53aWRn
+ZXRzLmRhdGEub3dlZGl0ZG9tYWlulGgDk5RoBGgJaA2HlIGUfZQojBFmcmVxdWVudF9hYnNfc3Bp
+bpRLCowRZnJlcXVlbnRfcmVsX3NwaW6UR0AkAAAAAAAAjA1uX3ZhbHVlc19zcGlulEsEjA5uYW1l
+X2xpbmVfZWRpdJSMBG1hbGWUdXOMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFvdXRwdXRfdGFibGVf
+bmFtZZSMAJSME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAALL///m9AAADRf///CMA
+AACy///5vQAAA0X///wjAAAAAQAAAAAMAAAAALL///m9AAADRf///COUjAtfX3ZlcnNpb25fX5RL
+BHUu
 </properties>
 	</node_properties>
 	<session_state>

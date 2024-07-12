@@ -32,7 +32,7 @@ As seen from the image, there are some unique parameters for this widget:
 
 Now that we know how the Adversarial Debiasing widget works and how to use it, let us look at a real-world example for a classification task. 
 
-For this example, we will use the [Adult dataset](https://archive.ics.uci.edu/ml/datasets/adult), which we have used [before](/blog/2023-08-23-fairness-dataset-bias/). The Adult dataset consists of 48824 instances with 15 attributes describing demographic details from the 1994 census. The primary task is to predict if an individual earns more than $50,000 annually. Unlike previously, we will not use the As Fairness widget to select fairness attributes; instead, we will keep the default ones, "sex" for the protected attribute and "male" for the privileged protected attribute value. 
+For this example, we will use the [Adult dataset](https://archive.ics.uci.edu/ml/datasets/adult), which we have used [before](/blog/2023-08-23-fairness-dataset-bias/). The Adult dataset consists of 48842 instances with 15 attributes describing demographic details from the 1994 census. The primary task is to predict if an individual earns more than $50,000 annually. Unlike previously, we will not use the As Fairness widget to select fairness attributes; instead, we will keep the default ones, "sex" for the protected attribute and "male" for the privileged protected attribute value. 
 
 We will train two Adversarial Debiasing models, one with and one without debiasing, and compare them to Random Forests.
 
@@ -40,9 +40,9 @@ We will train two Adversarial Debiasing models, one with and one without debiasi
 
 <WindowScreenshot src="2023-09-19-fairness-adversarial-debiasing-scores.png" />
 
-Test and Score shows that debiasing improved fairness metrics, particularly Disparate Impact, and Statistical Parity Difference. Without debiasing, the results are similar to that of the Random Forest model. Disparate Impact moved from 0.294 to 1.051, while Statistical Parity Difference went from -0.180 to 0.006, indicating a near-zero bias between these groups regarding favorable outcomes.
+Test and Score shows that debiasing improved fairness metrics, particularly Disparate Impact, and Statistical Parity Difference. Without debiasing, the results are similar to that of the Random Forest model. Disparate Impact moved from 0.277 to 1.065, while Statistical Parity Difference went from -0.178 to 0.008, indicating a near-zero bias between these groups regarding favorable outcomes.
 
-However, this does not mean all forms of bias were addressed. Equal Opportunity Difference and Average Odds Difference metrics worsened from -0.097 to 0.358 and -0.087 to 0.197, respectively. This suggests that even though the algorithm has been optimized for specific fairness criteria, other biases have emerged or become more pronounced.
+However, this does not mean all forms of bias were addressed. Equal Opportunity Difference and Average Odds Difference metrics worsened from -0.127 to 0.343 and -0.101 to 0.190, respectively. This suggests that even though the algorithm has been optimized for specific fairness criteria, other biases have emerged or become more pronounced.
 
 Why is this happening?
 
@@ -58,6 +58,6 @@ Next, let us look at the Box Plot widget. We will use it to show the Disparate I
 
 <WindowScreenshot src="2023-09-19-fairness-adversarial-debiasing-box-plot-debias.png" />
 
-From the first box plot we can see that when using the model without debiasing, males (the privileged group) tends to get classified with ">50K" (the favorable class) more often than females (the unprivileged grouo) do. This is reflected in the Disparate Impact and Statistical Parity Difference metrics which are 0.294 and -0.180, respectively, both below their optimal value, indicating bias towards the unprivileged group.
+From the first box plot we can see that when using the model without debiasing, males (the privileged group) tends to get classified with ">50K" (the favorable class) more often than females (the unprivileged group) do. This is reflected in the Disparate Impact and Statistical Parity Difference metrics which are 0.277 and -0.178, respectively, both below their optimal value, indicating bias towards the unprivileged group.
 
-In the second box plot, we can see that when using the model with debiasing, males and females get classified with the favorable class at a very similar rate. This is also indicated by the Disparate Impact and Statistical Parity Difference metrics which are 1.051 and 0.006, respectively, both very close to their optimal value, indicating a negligible amount of bias towards the privileged group.
+In the second box plot, we can see that when using the model with debiasing, males and females get classified with the favorable class at a very similar rate. This is also indicated by the Disparate Impact and Statistical Parity Difference metrics which are 1.065 and 0.008, respectively, both very close to their optimal value, indicating a negligible amount of bias towards the privileged group.
