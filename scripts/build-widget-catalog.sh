@@ -30,6 +30,8 @@ wget -qO- https://github.com/biolab/orange3-associate/archive/master.tar.gz | ta
 mv orange3-associate-master orange3-associate
 wget -qO- https://github.com/biolab/orange3-explain/archive/master.tar.gz | tar -zxf -
 mv orange3-explain-master orange3-explain
+wget -qO- https://github.com/biolab/orange3-fairness/archive/refs/heads/main.tar.gz | tar -zxf -
+mv orange3-fairness-main orange3-fairness
 cd ..
 
 # Screen must be 24bpp lest pyqt5 crashes, see pytest-dev/pytest-qt/35
@@ -49,6 +51,7 @@ catchsegv xvfb-run -a -s "$XVFBARGS" python scripts/copy_docs.py \
   external/orange3-educational/doc/ \
   external/orange3-timeseries/doc/ \
   external/orange3-associate/doc/ \
-  external/orange3-explain/doc/
+  external/orange3-explain/doc/ \
+  external/orange3-fairness/doc/
 
 rm -rf external
