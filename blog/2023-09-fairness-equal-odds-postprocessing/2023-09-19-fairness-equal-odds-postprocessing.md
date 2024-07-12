@@ -54,13 +54,13 @@ We can also see that the model's accuracy using the Equal Odds Postprocessing wi
 
 When using the Equal Odds Postprocessing, it is worth noting that the AUC value is not an accurate representation of the model's performance. This is because the Equal Odds Postprocessing algorithm changes only the predictions of the model, not the prediction probabilities. This means the AUC value would be calculated from the original model's prediction probabilities, not the adjusted ones. We have decided to alter the prediction probabilities when using the Equal Odds Postprocessing widget to 1 if the prediction is of the positive class and 0 otherwise. This is done to ensure that the AUC value is calculated from the adjusted predictions, which is a more accurate representation of the model's performance but still not a perfect one.
 
-Next, let us look at the mosaic display widget. We will use it to show the True Positive Rate for each group and thus the Equal Opportunity Difference metric, which is the difference of the True Positive Rates between unprivileged and privileged groups. To do this, we first had to use the Select Rows widget to keep only the instances with a positive class because we are not interested in the True Negative Rate. This was the result:
+Next, let us look at the box-plot widget. We will use it to show the True Positive Rate for each group and thus the Equal Opportunity Difference metric, which is the difference of the True Positive Rates between unprivileged and privileged groups. To do this, we first had to use the Select Rows widget to keep only the instances with a positive class because we are not interested in the True/False Negative Rate. This was the result:
     
-<WindowScreenshot src="2023-09-19-fairness-equal-odds-postprocessing-mosaic-bias.png" />
+<WindowScreenshot src="2023-09-19-fairness-equal-odds-postprocessing-box-plot-bias.png" />
 
-<WindowScreenshot src="2023-09-19-fairness-equal-odds-postprocessing-mosaic-debias.png" />
+<WindowScreenshot src="2023-09-19-fairness-equal-odds-postprocessing-box-plot-debias.png" />
 
-In the visualizations, each column's red and blue parts represent the true positive and false negative rates, respectively, for each group. You can ignore the width of the columns as that represents the number of instances in each group, which is irrelevant to us. 
+In the visualizations, each rows's red and blue parts represent the true positive and false negative rates, respectively, for each group.
 
 In the first visualization, which represents predictions from the model without debiasing, we can see that the privileged group (≥ 26) has a higher True Positive Rate than the unprivileged group (< 26). This can be considered unfair towards the unprivileged group because it means a loan candidate from the unprivileged group is more likely to be falsely rejected, because of the higher false negative rate, than a loan candidate from the privileged group.
 

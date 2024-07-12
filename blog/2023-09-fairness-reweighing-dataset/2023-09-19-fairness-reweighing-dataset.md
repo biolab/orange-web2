@@ -29,6 +29,8 @@ For this illustration, we will use the [Compas dataset](https://github.com/propu
 
 Contrary to the example in the previous blog, we will not use the As Fairness widget to select fairness attributes. This is because datasets with a fairness tag come with default fairness attributes. Specifically, for the Compas dataset, "race" is identified as the protected attribute, with "Caucasian" set as the privileged, protected attribute value.
 
+We will only keep instances with race value "Caucasian" or "African-American" as it is done in most studies using the COMPAS dataset.
+
 <WindowScreenshot src="2023-09-19-fairness-reweighing-dataset-use-case.png" />
 
 From the results, we can see that after reweighing the dataset, bias decreased substantially, nearing zero. Let us start by highlighting instances with lower or higher weights in the distribution widget to understand how the reweighing process assigned weights. Following this, we will analyze which combinations of protected attributes and classes were allocated these distinct weights.
@@ -41,7 +43,7 @@ In the distributions widget we selected instances which have been assigned a wei
 
 The box plot widget reveals that lower weights were given to instances of unprivileged groups with unfavorable class values and privileged groups with favorable class values. The opposite is true for the higher weights. The results show that the reweighing algorithm assigned weights to the instances in a way that will encourage the model to prioritize learning from underrepresented groups while de-emphasizing overrepresented groups.
 
-In the context of the dataset, the reweighing algorithm recognized that there were more instances with the race "Caucasian" and the favorable class value "no" than any other race and the opposite for the unfavorable class value "yes". Because of this, it assigned the instances with the race "Caucasian" and the class value "no" a lower weight, encouraging the model to focus less on these instances, while giving the instances of other races with the class value "no" a higher weight, encouraging the model to focus more on these instances. The same is true for the class value "yes" but in the opposite direction.
+In the context of the dataset, the reweighing algorithm recognized that there were more instances with the race "Caucasian" and the favorable class value "no" than for race "African-American" and the opposite for the unfavorable class value "yes". Because of this, it assigned the instances with the race "Caucasian" and the class value "no" a lower weight, encouraging the model to focus less on these instances, while giving the instances of the race "African-American" with the class value "no" a higher weight, encouraging the model to focus more on these instances. The same is true for the class value "yes" but in the opposite direction.
 
 Another way to see the effects of using the Reweighing widget on a dataset is to use a Data Table widget, where we can see that a new meta attribute called weights has been added to the dataset. This attribute contains the weights assigned to each instance.
 
