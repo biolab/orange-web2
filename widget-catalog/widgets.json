@@ -2453,5 +2453,69 @@
     "url": "ice"
    }
   ]
+ ],
+ [
+  "Fairness",
+  [
+   {
+    "title": "As Fairness Data",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-As Fairness Data.png",
+    "url": "as-fairness-data"
+   },
+   {
+    "title": "Dataset Bias",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Dataset Bias.png",
+    "url": "dataset-bias"
+   },
+   {
+    "title": "Reweighing",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Reweighing.png",
+    "url": "reweighing"
+   },
+   {
+    "title": "Adversarial Debiasing",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Adversarial Debiasing.png",
+    "url": "adversarial-debiasing"
+   },
+   {
+    "title": "Equalized Odds Postprocessing",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Equalized Odds Postprocessing.png",
+    "url": "equalized-odds-postprocessing"
+   },
+   {
+    "title": "Weighted Logistic Regression",
+    "category": "Fairness",
+    "keywords": [
+     "weighted",
+     "logistic",
+     "regression"
+    ],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Weighted Logistic Regression.png",
+    "url": "weighted-logistic-regression"
+   },
+   {
+    "title": "Combine Preprocessors",
+    "category": "Fairness",
+    "keywords": [],
+    "background": "#FFE559",
+    "icon": "widget-icons/Fairness-Combine Preprocessors.png"
+   }
+  ]
  ]
 ]
