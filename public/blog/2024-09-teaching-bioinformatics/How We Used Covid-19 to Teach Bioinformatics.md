@@ -2,7 +2,7 @@
 author: "Pavlin Poličar"
 date: "2024-08-10"
 draft: false
-title: Diving into Data: How We Used COVID-19 to Teach Bioinformatics
+title: Diving into Data: "How We Used COVID-19 to Teach Bioinformatics"
 url: "new-blog"
 thumbImage: "2024-08-10-Pavlin-Mont.png"
 frontPageImage: "2024-08-10-Pavlin-Mont.png"
