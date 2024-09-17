@@ -32,6 +32,6 @@ The **Adversarial Debiasing** widget requires TensorFlow in order to work. Becau
 Example
 -------
 
-In this example we will try to obtain bias free predictions using the `Adversarial Debiasing` widget. First we include the widget into the canvas and tune the settings to suit our needs. What is important here is to tick the `Use debiasing` box and set the `Adversary Loss Weight` to more than 0 if we want to see the effect of the debiasing. We then connect the widget along with the dataset into the `Test & Score` widget to evaluate the performance of the model. In the evaluation results we can see the performance of the model as well as the fairness metrics for its predictions.
+In this example we will try to obtain bias free predictions using the **Adversarial Debiasing** widget. First we include the widget into the canvas and tune the settings to suit our needs. What is important here is to tick the `Use debiasing` box and set the `Adversary Loss Weight` to more than 0 if we want to see the effect of the debiasing. We then connect the widget along with the dataset into the `Test & Score` widget to evaluate the performance of the model. In the evaluation results we can see the performance of the model as well as the fairness metrics for its predictions.
 
 ![](/widget-catalog/fairness/images/adversarial-debiasing-example.png)

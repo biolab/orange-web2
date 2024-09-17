@@ -24,11 +24,11 @@ Applies the reweighing algorithm to the dataset.
 Example
 -------
 
-The first example shows how the `Reweighing` widget can be used to preprocess a dataset. First load a fairness dataset, in this case we will use the compas analysis dataset. We than split the dataset into a training and testing set using the `Data Sampler` widget. We connect the training set to the `Reweighing` widget which will train the algorithm and create a preprocessor. The preprocessor can be connected to the `Apply Domain` widget along with the testing set to apply the same transformation to the testing set. The preprocessed testing set can then be connected to the `Dataset Bias` widget to evaluate the bias of the dataset.
+The first example shows how the **Reweighing** widget can be used to preprocess a dataset. First load a fairness dataset, in this case we will use the compas analysis dataset. We than split the dataset into a training and testing set using the `Data Sampler` widget. We connect the training set to the **Reweighing** widget which will train the algorithm and create a preprocessor. The preprocessor can be connected to the `Apply Domain` widget along with the testing set to apply the same transformation to the testing set. The preprocessed testing set can then be connected to the `Dataset Bias` widget to evaluate the bias of the dataset.
 
 ![](/widget-catalog/fairness/images/reweighing-dataset-example.png)
 
-The second example demonstrates how to use the `Reweighing` widget as a preprocessor for a learner widget. We use it by connecting it and any other preprocessors we want to use into the `Combine Preprocessors` widget which we connect into the `Weighted Logistic Regression` widget. We then connect a dataset with fairness attributes and the learner into the `Test & Score` widget to evaluate the performance of the learner. In the evaluation results we can see the performance of the learner as well as the fairness metrics for its predictions.
+The second example demonstrates how to use the **Reweighing** widget as a preprocessor for a learner widget. We use it by connecting it and any other preprocessors we want to use into the `Combine Preprocessors` widget which we connect into the `Weighted Logistic Regression` widget. We then connect a dataset with fairness attributes and the learner into the `Test & Score` widget to evaluate the performance of the learner. In the evaluation results we can see the performance of the learner as well as the fairness metrics for its predictions.
 
 ![](/widget-catalog/fairness/images/reweighing-preprocessor-example.png)
 

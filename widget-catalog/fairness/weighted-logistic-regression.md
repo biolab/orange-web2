@@ -24,4 +24,4 @@ Besides the support for weights it works in the exact same way as the normal [Lo
 Example
 -------
 
-The example of how to use the `Weighted Logistic Regression` can be found on the [Reweighing](/widget-catalog/fairness/reweighing) widget documentation. An example of how to use the `Logistic Regression` widget in general can be found on the [Logistic Regression](https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/model/logisticregression.html) widget documentation.
+The example of how to use the **Weighted Logistic Regression** can be found on the [Reweighing](/widget-catalog/fairness/reweighing) widget documentation. An example of how to use the `Logistic Regression` widget in general can be found on the [Logistic Regression](https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/model/logisticregression.html) widget documentation.

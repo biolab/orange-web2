@@ -22,6 +22,6 @@ Postprocessing Fairness algorithm
 Example
 -------
 
-In this example we will use the `Equalized Odds Postprocessing` to debias the predictions of a linear regression model. All we need to do is include the `Equalized Odds Postprocessing` widget in our workflow and connect any model and desired preprocessors to it. We then connect the `Equalized Odds Postprocessing` to the `Test & Score` widget along with the dataset to evaluate the performance of the model with postprocessing.
+In this example we will use the **Equalized Odds Postprocessing** to debias the predictions of a linear regression model. All we need to do is include the **Equalized Odds Postprocessing** widget in our workflow and connect any model and desired preprocessors to it. We then connect the **Equalized Odds Postprocessing** to the `Test & Score` widget along with the dataset to evaluate the performance of the model with postprocessing.
 
 ![](/widget-catalog/fairness/images/equal-odds-postprocessing-example.png)
