@@ -28,4 +28,3 @@ Given this success, we decided to share our course with the broader academic com
 Courses like Introduction to Bioinformatics serve as wonderful testing grounds for our various ideas about how to effectively teach complex topics like machine learning and bioinformatics. When successful, these ideas sometimes make their way into Orange. Developing visual programming tools for complex topics such as these democratizes these tools, making them available to the more general audience, with perhaps limited or no experience in programming and software development.
 
 ![](2024-08-10-Pavlin-Mont1.png)
-
