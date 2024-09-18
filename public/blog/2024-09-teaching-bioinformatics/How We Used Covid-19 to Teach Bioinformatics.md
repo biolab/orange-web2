@@ -5,7 +5,7 @@ draft: false
 title: "Diving into Data: How We Used COVID-19 to Teach Bioinformatics"
 url: "covid-for-teaching-bioinformatics"
 thumbImage: "2024-08-10-Pavlin-Mont2.png"
-frontPageImage: "2024-08-10-Pavlin-Mont.png"
+frontPageImage: "2024-08-10-Pavlin-Mont2.png"
 blog: ["new", "course", "bioinformatics"]
 shortExcerpt: "During the COVID-19 pandemic, we completely redesigned our Introduction to Bioinformatics course. Every year since then, the students' feedback has been overwhelmingly positive. This summer, Pavlin Poličar presented the course at the International Conference on Intelligent Systems for Molecular Biology (ISMB) in Montreal, Canada."
 longExcerpt: "During thr COVID-19 pandemic, we completely redesigned our Introduction to Bioinformatics course. Every year since then, the students' feedback has been overwhelmingly positive. Earlier this summer, Pavlin Poličar presented the course at the International Conference on Intelligent Systems for Molecular Biology (ISMB) in Montreal, Canada. Courses like this serve as wonderful testing grounds for our various ideas about how to effectively teach complex topics like machine learning and bioinformatics. When successful, these ideas sometimes make their way into Orange."
@@ -22,6 +22,8 @@ And so, we went to the drawing board and completely redesigned our Introduction 
 We have been running this course for several years now, doing our best to improve the assignments every year. Each year, we ask students for feedback, and, each year, the feedback has been overwhelmingly positive. This is perhaps surprising since the days of the strict COVID lockdowns are far behind us, but it seems that the virus still manages to capture the attention of our students.
 
 Given this success, we decided to share our course with the broader academic community. Earlier this summer, Pavlin Poličar traveled to Montreal and presented this course at the International Conference on Intelligent Systems for Molecular Biology (ISMB). You can read the full paper titled “Teaching bioinformatics through the analysis of SARS-CoV-2: project-based training for computer science students” in [Bioinformatics](https://academic.oup.com/bioinformatics/article/40/Supplement_1/i20/7700875) and access the assignments on [GitHub](https://github.com/IB-ULFRI). We also provide [instructor notes](https://github.com/IB-ULFRI/instructor-notes) to guide educators through the logistics of setting up the course.
+
+![](2024-08-10-Pavlin-Mont.png)
 
 ![](2024-08-10-Pavlin-Mont2.png)
 
