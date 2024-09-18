@@ -4,8 +4,8 @@ date: "2024-08-10"
 draft: false
 title: "Diving into Data: How We Used COVID-19 to Teach Bioinformatics"
 url: "covid-for-teaching-bioinformatics"
-thumbImage: "2024-08-10-Pavlin-Mont.png"
-frontPageImage: "2024-08-10-Pavlin-Mont.png"
+thumbImage: "2024-08-10-Pavlin-Mont2.png"
+frontPageImage: "2024-08-10-Pavlin-Mont2.png"
 blog: ["new", "course", "bioinformatics"]
 shortExcerpt: "During the COVID-19 pandemic, we completely redesigned our Introduction to Bioinformatics course. Every year since then, the students' feedback has been overwhelmingly positive. This summer, Pavlin Poličar presented the course at the International Conference on Intelligent Systems for Molecular Biology (ISMB) in Montreal, Canada."
 longExcerpt: "During thr COVID-19 pandemic, we completely redesigned our Introduction to Bioinformatics course. Every year since then, the students' feedback has been overwhelmingly positive. Earlier this summer, Pavlin Poličar presented the course at the International Conference on Intelligent Systems for Molecular Biology (ISMB) in Montreal, Canada. Courses like this serve as wonderful testing grounds for our various ideas about how to effectively teach complex topics like machine learning and bioinformatics. When successful, these ideas sometimes make their way into Orange."
@@ -23,9 +23,10 @@ We have been running this course for several years now, doing our best to improv
 
 Given this success, we decided to share our course with the broader academic community. Earlier this summer, Pavlin Poličar traveled to Montreal and presented this course at the International Conference on Intelligent Systems for Molecular Biology (ISMB). You can read the full paper titled “Teaching bioinformatics through the analysis of SARS-CoV-2: project-based training for computer science students” in [Bioinformatics](https://academic.oup.com/bioinformatics/article/40/Supplement_1/i20/7700875) and access the assignments on [GitHub](https://github.com/IB-ULFRI). We also provide [instructor notes](https://github.com/IB-ULFRI/instructor-notes) to guide educators through the logistics of setting up the course.
 
+![](2024-08-10-Pavlin-Mont.png)
+
 ![](2024-08-10-Pavlin-Mont2.png)
 
 Courses like Introduction to Bioinformatics serve as wonderful testing grounds for our various ideas about how to effectively teach complex topics like machine learning and bioinformatics. When successful, these ideas sometimes make their way into Orange. Developing visual programming tools for complex topics such as these democratizes these tools, making them available to the more general audience, with perhaps limited or no experience in programming and software development.
 
 ![](2024-08-10-Pavlin-Mont1.png)
-
