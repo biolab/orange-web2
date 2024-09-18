@@ -4,7 +4,7 @@ date: "2024-08-10"
 draft: false
 title: "Diving into Data: How We Used COVID-19 to Teach Bioinformatics"
 url: "covid-for-teaching-bioinformatics"
-thumbImage: "2024-08-10-Pavlin-Mont.png"
+thumbImage: "2024-08-10-Pavlin-Mont2.png"
 frontPageImage: "2024-08-10-Pavlin-Mont.png"
 blog: ["new", "course", "bioinformatics"]
 shortExcerpt: "During the COVID-19 pandemic, we completely redesigned our Introduction to Bioinformatics course. Every year since then, the students' feedback has been overwhelmingly positive. This summer, Pavlin Poličar presented the course at the International Conference on Intelligent Systems for Molecular Biology (ISMB) in Montreal, Canada."
