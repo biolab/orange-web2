@@ -11,7 +11,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 export const downloadLinks = {
   macos: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.10.11-x86_64.dmg`,
   macosArm: `https://download.biolab.si/download/files/Orange3-${config.version}-Python3.11.8-arm64.dmg`,
-  win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniconda-x86_64.exe`,
+  win: `https://download.biolab.si/download/files/Orange3-${config.version}-Miniforge-x86_64.exe`,
   portableOrange: `https://download.biolab.si/download/files/Orange3-${config.version}.zip`,
 };
 
