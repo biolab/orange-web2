@@ -107,3 +107,11 @@ Common uses of these constraints would be:
  - Limiting the *center* position to some range of x values
  - Setting a minimum *amplitude* to force positive peaks
  - Setting a maximum *sigma* to exclude unreasonably wide peaks
+
+Advanced
+--------
+
+Unlike the majority of widgets, **Peak Fit** uses multiple processes during fitting to improve 
+responsiveness and performance. By default this is limited to 2 extra processes, but this can be
+overridden by setting the environment variable `QUASAR_N_PROCESSES` to the desired number, or `all`
+to use the default value returned by `os.cpu_count()`.

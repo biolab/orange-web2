@@ -635,6 +635,18 @@
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Nomogram.png",
     "url": "nomogram"
+   },
+   {
+    "title": "Scoring Sheet Viewer",
+    "category": "Visualize",
+    "keywords": [
+     "scoring",
+     "sheet",
+     "viewer"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Scoring Sheet Viewer.png",
+    "url": "scoringsheetviewer"
    }
   ]
  ],
@@ -776,6 +788,17 @@
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Naive Bayes.png",
     "url": "naivebayes"
+   },
+   {
+    "title": "Scoring Sheet",
+    "category": "Model",
+    "keywords": [
+     "scoring",
+     "sheet"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Scoring Sheet.png",
+    "url": "scoringsheet"
    },
    {
     "title": "AdaBoost",
@@ -944,6 +967,14 @@
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Permutation Plot.png",
     "url": "permutationplot"
+   },
+   {
+    "title": "Parameter Fitter",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Parameter Fitter.png",
+    "url": "parameterfitter"
    }
   ]
  ],
