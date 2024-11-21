@@ -13,7 +13,7 @@ longExcerpt: "How can Orange support the needs of teachers and children in the p
 
 How do we harness children's curiosity about the world and society we live in, with data in its different forms, while also encouraging critical thinking and reflection?
 
-The aim of the [DALI4US] (https://www.dali4us.eu/) project is not to train data scientists, but to equip primary school teachers with the skills, knowledge, confidence, and enthusiasm to bring data exploration into upper primary schools in Ireland, Luxembourg, and Slovenia. With some insightful experimental teacher training sessions behind us, the how of the next steps was at the center of our discussions in the project meeting in Luxembourg. 
+The aim of the [DALI4US](https://www.dali4us.eu/) project is not to train data scientists, but to equip primary school teachers with the skills, knowledge, confidence, and enthusiasm to bring data exploration into upper primary schools in Ireland, Luxembourg, and Slovenia. With some insightful experimental teacher training sessions behind us, the how of the next steps was at the center of our discussions in the project meeting in Luxembourg. 
 
 ![](DB3a.png)
 

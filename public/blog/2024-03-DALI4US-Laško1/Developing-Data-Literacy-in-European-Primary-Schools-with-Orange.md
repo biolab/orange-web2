@@ -22,7 +22,7 @@ The project focuses on developing:
 -	professional teacher training and school leader training programme on data literacy
 -	evidence-based policy recommendations.
 
-The first experimental sessions inspired by our [Pumice project] (https://pumice.si/en/) with about 15 teachers from the participating countries already took place this year in Laško, Slovenia, where we were also visited by Janja Zupančič, the Slovene state secretary responsible for pre-school education, primary and music education, and education of children and adolescents with special needs. She warmly expressed her support for the initiative of the project and also met the teachers taking part in the experimental workshops. 
+The first experimental sessions inspired by our [Pumice project](https://pumice.si/en/) with about 15 teachers from the participating countries already took place this year in Laško, Slovenia, where we were also visited by Janja Zupančič, the Slovene state secretary responsible for pre-school education, primary and music education, and education of children and adolescents with special needs. She warmly expressed her support for the initiative of the project and also met the teachers taking part in the experimental workshops. 
 
 <img src="DB1a.png" />
 
