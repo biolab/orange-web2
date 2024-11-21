@@ -1,7 +1,8 @@
+---
 author: "Erika Funa"
 date: "2024-10-23"
 draft: false
-title: "Luxebourgish Teachers Experiment with Orange in Nature"
+title: "Luxembourgish Teachers Experiment with Orange in Nature"
 url: "Orange-Luxembourg-nature"
 thumbImage: "DB3b.png"
 frontPageImage: "DB3b.png"
