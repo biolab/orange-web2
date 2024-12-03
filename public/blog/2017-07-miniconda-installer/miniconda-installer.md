@@ -11,11 +11,11 @@ Orange has a new friend! It's Miniconda, Anaconda's little sister.
 
 
 
-For a long time, the idea was to utilize the friendly nature of Miniconda to install Orange dependencies, which often misbehaved on some platforms. Miniconda provides Orange with Python 3.6 and conda installer, which is then used to handle everything Orange needs for proper functioning. So sssssss-mooth!
+For a long time, the idea was to utilize the friendly nature of Miniconda to install Orange dependencies, which often misbehaved on some platforms (I see you, Windows!). Orange Miniconda-based package provides Orange with Python 3.6 and conda installer, which is then used to handle everything Orange needs for proper functioning. So sssssss-mooth!
 
-[Miniconda Installer](https://orange.biolab.si/download/files/Orange3-3.4.4-Miniconda-x86_64.exe)
+[All installers (including Miniconda)](https://orangedatamining.com/download/)
 
-Please know that our Miniconda installer is in a beta state, but we are inviting adventurous testers to try it and report any bugs they find to our [issue tracker](https://github.com/biolab/orange3/issues/new?title=Problem%20with%20miniconda%20installer) [there won't be any of course! ;) ].
+The Miniconda package is only available for Windows. Please know that our Miniconda installer is in a beta state, but we are inviting adventurous testers to try it and report any bugs they find to our [issue tracker](https://github.com/biolab/orange3/issues/new?title=Problem%20with%20miniconda%20installer) [there won't be any of course! ;) ].
 
 
 
