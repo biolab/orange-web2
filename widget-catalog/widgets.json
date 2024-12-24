@@ -1326,6 +1326,14 @@
     "keywords": [],
     "background": "light-blue",
     "icon": "widget-icons/Spectroscopy-Align Stack.png"
+   },
+   {
+    "title": "4+ Angle Polarisation",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-4+ Angle Polarisation.png",
+    "url": "polar"
    }
   ]
  ],
