@@ -92,10 +92,11 @@ def parse_rst(text: str) -> docutils.nodes.document:
 
 def get_title(fn):
     """ Get title (widget name) from Orange's documentation md files """
-    for l in open(fn, "rt"):
-        l = l.strip()
-        if l:
-            return l
+    with open(fn, "rt") as f:
+        for l in f:
+            l = l.strip()
+            if l:
+                return l
 
 
 class LinkCheckerVisitor(docutils.nodes.GenericNodeVisitor):
