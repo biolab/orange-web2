@@ -44,6 +44,13 @@ Multiple Inputs
 ![](/widget-catalog/spectroscopy/images/Polar-Example2.PNG)
 
 
+Advanced
+--------
+
+Unlike the majority of widgets, **Polar** uses multiple processes during fitting to improve 
+responsiveness and performance. By default this is limited to 2 extra processes, but this can be
+overridden by setting the environment variable `QUASAR_N_PROCESSES` to the desired number, or `all`
+to use the default value returned by `os.cpu_count()`.
 
 
 References
