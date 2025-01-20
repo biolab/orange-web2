@@ -1,6 +1,6 @@
 ---
 author: "Martin Špendl"
-date: "2025-01-17"
+date: "2025-01-20"
 draft: false
 title: "Foundation models in Orange with just a few lines of code"
 thumbImage: "ESM2-thumb.png"
