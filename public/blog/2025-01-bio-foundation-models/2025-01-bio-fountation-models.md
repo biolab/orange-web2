@@ -73,11 +73,11 @@ NOTE: Executing this code might take a few minutes up to an hour depending on yo
 
 <WindowScreenshot src="query-ESM-2.png" />
 
-Let’s inspect what does our table look like now. In addition to our protein data, there are 320 columns representing the embedding. These values do now have meaning on their own, but we will see how to extract some information out of them shortly. Since the computation of embeddings took quite a few time, let’s store the data first, before doing any further analysis.
+Let’s inspect what our table looks like now. In addition to our protein data, there are 320 columns representing the embedding. These values do now have meaning on their own, but we will see how to extract some information out of them shortly. Since the computation of embeddings took quite some time, let’s store the data first, before doing any further analysis.
 
 ### Step 2: Visualizing Embeddings with t-SNE
 
-Now that we have the embeddings, let’s make sense of them visually. Using a t-SNE plot, we’ll turn these high-dimensional numbers into a simple 2D scatter plot. This makes it easy to spot clusters of proteins with similar structures. Even proteins without known structures can find their place in these clusters, helping us discover hidden relationships between them. If you want to inspect any of these groups, select them on the plot while holding the Shift key. We can inspect proteins in each group in the DataTable and change their group label to something more meaningful. Lastly, we can see different groups of proteins with respect to their structures, eventhough we did not have to compare any structures at all. Isn’t that amazing.
+Now that we have the embeddings, let’s make sense of them visually. Using a t-SNE plot, we’ll turn these high-dimensional numbers into a simple 2D scatter plot. This makes it easy to spot clusters of proteins with similar structures. Even proteins without known structures can find their place in these clusters, helping us discover hidden relationships between them. If you want to inspect any of these groups, select them on the plot while holding the Shift key. We can inspect proteins in each group in the DataTable and change their group label to something more meaningful. Lastly, we can see different groups of proteins with respect to their structures, even though we did not have to compare any structures at all. Isn’t that amazing?
 
 <WindowScreenshot src="analyse-ESM-2-embeddings.png" />
 
