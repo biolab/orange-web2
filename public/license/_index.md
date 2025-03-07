@@ -9,6 +9,8 @@ Orange is free software; you can redistribute it and/or modify it under the term
 
 Orange is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
+Screenshots of Orange workflows, interfaces, and visualizations can be freely used in educational materials, books, and research publications under the terms of the GPL license. However, users should ensure that datasets and any third-party content included in screenshots comply with their respective copyright terms.
+
 Orange documentation, content on its website and other non-code content are all available under Creative Commons Attribution-ShareAlike license unless specified otherwise. Attribution should be made to Orange, Data Mining Fruitful & Fun, with a link to its website <a href="https://orange.biolab.si/">https://orange.biolab.si/</a>.
 
 Orange Widgets and Canvas are based on Qt, which is distributed under GPL 3.0 (as well as LGPL 2.1, see <a href="https://www.qt.io/licensing/">https://www.qt.io/licensing/</a>.
