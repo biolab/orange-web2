@@ -818,7 +818,8 @@
      "partial least squares"
     ],
     "background": "#FAC1D9",
-    "icon": "widget-icons/Model-PLS.png"
+    "icon": "widget-icons/Model-PLS.png",
+    "url": "pls"
    },
    {
     "title": "Curve Fit",
@@ -911,6 +912,16 @@
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Predictions.png",
     "url": "predictions"
+   },
+   {
+    "title": "Feature as Predictor",
+    "category": "Evaluate",
+    "keywords": [
+     "column",
+     "predictor"
+    ],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Feature as Predictor.png"
    },
    {
     "title": "Confusion Matrix",

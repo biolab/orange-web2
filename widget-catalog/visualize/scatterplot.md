@@ -17,12 +17,13 @@ Scatter plot visualization with exploratory analysis and intelligent data visual
 
 - Selected Data: instances selected from the plot
 - Data: data with an additional column showing whether a point is selected
+- Features: list of attributes
 
-The **Scatter Plot** widget provides a 2-dimensional scatter plot visualization. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis. Various properties of the graph, like color, size and shape of the points, axis titles, maximum point size and jittering can be adjusted on the left side of the widget. A snapshot below shows the scatter plot of the *Iris* dataset with the coloring matching of the class attribute.
+The **Scatter Plot** widget provides a 2-dimensional scatter plot visualization. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis. Various properties of the graph, like color, size and shape of the points, point labels, maximum point size and jittering can be adjusted on the left side of the widget. A snapshot below shows the scatter plot of the *Iris* dataset with the coloring matching the class attribute.
 
 ![](/widget-catalog/visualize/images/Scatterplot-Iris-stamped.png)
 
-1. Select the x and y attribute. Optimize your projection with **Find Informative Projections**. This feature scores attribute pairs by average classification accuracy and returns the top scoring pair with a simultaneous visualization update.
+1. Select the x and y attribute. Optimize your projection with **Find Informative Projections**. This feature scores attribute pairs by average classification accuracy/lowest R2 and returns the top scoring pair with a simultaneous visualization update. The buttons on the right enable showing confidence intervals.
 2. *Attributes*: Set the color of the displayed points (you will get colors for categorical values and blue-green-yellow points for numeric). Set label, shape and size to differentiate between points. *Label only selected points* allows you to select individual data instances and label only those.
 3. Set symbol size and opacity for all data points. Set [jittering](https://en.wikipedia.org/wiki/Jitter) to prevent the dots overlapping. Jittering will randomly scatter point only around categorical values. If *Jitter numeric values* is checked, points are also scattered around their actual numeric values.
    - *Show color regions* colors the graph by class (see the screenshot below).
@@ -81,4 +82,4 @@ The **Scatter Plot** can be combined with any widget that outputs a list of sele
 References
 ----------
 
-Gregor Leban and Blaz Zupan and Gaj Vidmar and Ivan Bratko (2006) VizRank: Data Visualization Guided by Machine Learning. Data Mining and Knowledge Discovery, 13 (2). pp. 119-136. Available [here](http://eprints.fri.uni-lj.si/210/).
+Gregor Leban, Blaz Zupan, Gaj Vidmar and Ivan Bratko (2006) VizRank: Data Visualization Guided by Machine Learning. Data Mining and Knowledge Discovery, 13 (2). pp. 119-136. Available [here](http://eprints.fri.uni-lj.si/210/).

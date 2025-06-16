@@ -17,19 +17,18 @@ Visualization of data profiles (e.g., time series).
 - Selected Data: instances selected from the plot
 - Data: data with an additional column showing whether a point is selected
 
-[Line plot](https://en.wikipedia.org/wiki/Line_chart) a type of plot which displays the data as a series of points, connected by straight line segments. It only works for numerical data, while categorical can be used for grouping of the data points.
+[Line plot](https://en.wikipedia.org/wiki/Line_chart) displays the data as a series of points, connected by straight line segments. It only works for numerical data, while categorical can be used for grouping the data points.
 
 ![](/widget-catalog/visualize/images/LinePlot-stamped.png)
 
-1. Information on the input data.
-2. Select what you wish to display:
+1. Select what you wish to display:
    - Lines show individual data instances in a plot.
    - Range shows the range of data points between 10th and 90th percentile.
-   - Mean adds the line for mean value. If group by is selected, means will be displayed per each group value.
+   - Mean adds the line for mean value. If *Group by* is selected, the means will be displayed per each group value.
    - Error bars show the standard deviation of each attribute.
-3. Select a categorical attribute to use for grouping of data instances. Use None to show ungrouped data.
-4. *Select, zoom, pan and zoom to fit* are the options for exploring the graph. The manual selection of data instances works as a line selection, meaning the data under the selected line plots will be sent on the output. Scroll in or out for zoom. When hovering over an individual axis, scrolling will zoom only by the hovered-on axis (vertical or horizontal zoom).
-5. If *Send Automatically* is ticked, changes are communicated automatically. Alternatively, click *Send*.
+2. Select a categorical attribute to use for grouping of data instances. Use *None* to show ungrouped data.
+3. *Select*, *zoom*, *pan* and *zoom to fit* are the options for exploring the graph. The manual selection of data instances works as a line selection, meaning the data under the selected line plots will be sent on the output. Scroll in or out for zoom. When hovering over an individual axis, scrolling will zoom only by the hovered-on axis (vertical or horizontal zoom).
+4. If *Send Automatically* is ticked, changes are communicated automatically. Alternatively, click *Send*.
 
 Example
 -------

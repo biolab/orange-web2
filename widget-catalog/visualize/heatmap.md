@@ -20,20 +20,20 @@ Plots a heat map for a pair of attributes.
 
 The widget enables row selection with click and drag. One can zoom in with Ctrl++ (Cmd++) and zoom out with Ctrl+- (Cmd+-). Ctrl+0 (Cmd+0) resets zoom to the extended version, while Ctrl+9 (Cmd+9) reset it to the default.
 
-![](/widget-catalog/visualize/images/HeatMap.png)
+![](/widget-catalog/visualize/images/HeatMap-stamped.png)
 
-1. The color pallette. Choose from linear, diverging, color-blind friendly, or other pallettes. **Low** and **High** are thresholds for the color palette (low for attributes with low values and high for attributes with high values). Selecting one of diverging palettes, which have two extreme colors and a neutral (black or white) color at the midpoint, enables an option to set a meaningful mid-point value (default is 0).
+1. The color pallette. Choose from linear, diverging, color-blind friendly, or other pallettes. **Range** defines the low or high threshold for the color palette (left for attributes with low values and right for attributes with high values). Selecting one of diverging palettes, which have two extreme colors and a neutral (black or white) color at the midpoint, enables an option to set a meaningful mid-point value (default is 0).
 2. Merge rows. If there are too many rows in the visualization, one can merge them with k-means algorithm into N selected clusters (default 50).
 3. Cluster columns and rows:
    - **None** (lists attributes and rows as found in the dataset)
-   - **Clustering** (clusters data by similarity with hierarchical clustering on Euclidean distances and with average linkage)
+   - **Clustering** (clusters data by similarity with hierarchical clustering on Euclidean distances and with Ward linkage)
    - **Clustering with ordered leaves** (same as clustering, but it additionally maximizes the sum of similarities of adjacent elements)
 4. Split rows or columns by a categorical variable. If the data contains a class variable, rows will be automatically split by class.
-5. Set what is displayed in the plot in **Annotation & Legend**.
+5. **Annotation & Legend** sets what is displayed in the plot:
    - If *Show legend* is ticked, a color chart will be displayed above the map.
    - If *Stripes with averages* is ticked, a new line with attribute averages will be displayed on the left.
-   **Row Annotations** adds annotations to each instance on the right. Color colors the instances with the corresponding value of the selected categorical variable.
-   **Column Annotations** adds annotation to each variable at the selected position (default is Top). Color colors the columns with the corresponding value of the selected column annotation.
+   **Row Annotations** adds annotations to each instance on the right. *Color* colors the instances with the corresponding value of the selected categorical variable.
+   **Column Annotations** adds annotation to each variable at the selected position (default is Top). *Color* colors the columns with the corresponding value of the selected column annotation.
 6. If *Keep aspect ratio* is ticked, each value will be displayed with a square (proportionate to the map).
 7. If *Send Automatically* is ticked, changes are communicated automatically. Alternatively, click *Send*.
 
@@ -42,8 +42,6 @@ The widget enables row selection with click and drag. One can zoom in with Ctrl+
 Heat map enables some neat plot enhancements. Such options are clustering of rows and/or columns for better data organization, row and column annotations, and splitting the data by categorical variables.
 
 Row and column clustering is performed independently. Row clustering is computed from Euclidean distances, while column clustering uses Pearson correlation coefficients. Hierarchical clustering is based on the Ward linkage method. Clustering with optimal leaf ordering reorders left and right branches in the dendrogram to minimize the sum of distances between adjacent leaves (Bar-Joseph et al. 2001).
-
-
 
 ![](/widget-catalog/visualize/images/HeatMap-advanced.png)
 
@@ -56,13 +54,13 @@ The **Heat Map** below displays attribute values for the *brown-selected* data s
 
 Heat map shows low expressions in blue and high expressions in yellow and white. For better organization, we added *Clustering (opt. ordering)* to the columns, which puts columns with similar profiles closer together. In this way we can see the conditions that result in low expressions for ribosomal genes in the lower right corner.
 
-Additionally, the plot is enhanced with row color on the right, showing which class the rows belong to.
+We have selected some Proteas encoding genes with high expressions under the spo-mid condition. We can observe which genes these are in a [Data Table](/widget-catalog/visualize/../data/datatable).
 
 ![](/widget-catalog/visualize/images/HeatMap-Example1.png)
 
 ### Sentiment Analysis
 
-Heat maps are great for visualizing any kind of comparable numeric variables, for example sentiment in a collection of documents. We will take *book-excerpts* corpus from the **Corpus** widget and pass it to the **Sentiment Analysis** widget, which computes sentiment scores for each document. The output of sentiment analysis are four columns, positive, negative, and neutral sentiment score, and a compound score that aggregates the previous scores into a single number. Positive compound values (white) represent positive documents, while negative (blue) represent negative documents.
+Heat maps are great for visualizing any kind of comparable numeric variables, for example sentiment in a collection of documents. We will take *book-excerpts* corpus from the [Corpus](https://orangedatamining.com/widget-catalog/text-mining/corpus-widget/) widget and pass it to the [Sentiment Analysis](https://orangedatamining.com/widget-catalog/text-mining/sentimentanalysis/) widget, which computes VADER sentiment scores for each document. The output of sentiment analysis are four columns, positive, negative, and neutral sentiment score, and a compound score that aggregates the previous scores into a single number. Positive compound values (white) represent positive documents, while negative (blue) represent negative documents.
 
 We used row clustering to place similar rows closer together, resulting in clear negative and positive groups. Now we can select negative children's books and explore which are they.
 

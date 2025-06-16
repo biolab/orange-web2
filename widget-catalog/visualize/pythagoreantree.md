@@ -12,9 +12,11 @@ Pythagorean tree visualization for classification or regression trees.
 - Tree: tree model
 - Selected Data: instances selected from the tree
 
-**Pythagorean Trees** are plane fractals that can be used to depict general tree hierarchies as presented in an article by [Fabian Beck and co-authors](http://publications.fbeck.com/ivapp14-pythagoras.pdf). In our case, they are used for visualizing and exploring tree models, such as [Tree](/widget-catalog/visualize/../model/tree).
+**Pythagorean Trees** are plane fractals that can be used to depict general tree hierarchies as presented in an article by [Fabian Beck and co-authors](http://publications.fbeck.com/ivapp14-pythagoras.pdf). Pythagorean Tree is an alternative to the [Tree Viewer](../visualize/treeviewer.md), both of which are used for visualizing the [Tree](/widget-catalog/visualize/../model/tree) model. While **Tree Viewer** is easier to interpret, Pythagorean trees are more compact.
 
-![](/widget-catalog/visualize/images/Pythagorean-Tree1-stamped.png)
+Pythagorean Tree is interactive: click on any of the nodes (squares) to select training data instances that were associated with that node.
+
+![](/widget-catalog/visualize/images/PythagoreanTree-stamped.png)
 
 1. Information on the input tree model.
 2. Visualization parameters:
@@ -26,28 +28,19 @@ Pythagorean tree visualization for classification or regression trees.
 3. Plot properties:
     - *Enable tooltips*: display node information upon hovering.
     - *Show legend*: shows color legend for the plot.
-4. Reporting:
-    - *Save Image*: save the visualization to a SVG or PNG file.
-    - *Report*: add visualization to the report.
+4. Redraw the visualization. 
 
 Pythagorean Tree can visualize both classification and regression trees. Below is an example for regression tree. The only difference between the two is that regression tree doesn't enable coloring by class, but can color by class mean or standard deviation.
 
-![](/widget-catalog/visualize/images/Pythagorean-Tree1-continuous.png)
+![](/widget-catalog/visualize/images/PythagoreanTree-continuous.png)
 
 Example
 -------
 
-The workflow from the screenshot below demonstrates the difference between [Tree Viewer](../visualize/treeviewer.md) and Pythagorean Tree. They can both visualize [Tree](/widget-catalog/visualize/../model/tree), but Pythagorean visualization takes less space and is more compact, even for a small [Iris flower](https://en.wikipedia.org/wiki/Iris_flower_data_set) dataset. For both visualization widgets, we have hidden the control area on the left by clicking on the splitter between control and visualization area.
+Here is a simple workflow for the **Pythagorean Tree** widget. We have used the *iris* dataset for this example. We pass the data to the [Tree](/widget-catalog/visualize/../model/tree) model to build a decision tree. Then, we pass the model to the Pythagorean Tree widget, which visually represents the constructed model.
 
-![](/widget-catalog/visualize/images/Pythagorean-Tree-comparison.png)
+![](/widget-catalog/visualize/images/PythagoreanTree-Example.png)
 
-Pythagorean Tree is interactive: click on any of the nodes (squares) to select training data instances that were associated with that node. The following workflow explores these feature.
-
-![](/widget-catalog/visualize/images/Pythagorean-Tree-scatterplot-workflow.png)
-
-The selected data instances are shown as a subset in the [Scatter Plot](../visualize/scatterplot.md), sent to the [Data Table](../data/datatable.md) and examined in the [Box Plot](/widget-catalog/visualize/../visualize/boxplot). We have used brown-selected dataset in this example. The tree and scatter plot are shown below; the selected node in the tree has a black outline.
-
-![](/widget-catalog/visualize/images/Pythagorean-Tree-scatterplot.png)
 
 References
 ----------
