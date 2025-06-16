@@ -6,6 +6,9 @@ mkdir external
 cd external
 wget -qO- https://github.com/biolab/orange3/archive/stable.tar.gz | tar -zxf -
 mv orange3-stable orange3
+rm -rf orange3/doc/visual-programming
+wget -qO- https://github.com/biolab/orange3-doc-visual-programming/archive/stable.tar.gz | tar -zxf -
+mv orange3-doc-visual-programming-stable orange3/doc/visual-programming
 wget -qO- https://github.com/quasars/orange-spectroscopy/archive/master.tar.gz | tar -zxf -
 mv orange-spectroscopy-master orange-spectroscopy
 wget -qO- https://github.com/biolab/orange3-text/archive/stable.tar.gz | tar -zxf -
