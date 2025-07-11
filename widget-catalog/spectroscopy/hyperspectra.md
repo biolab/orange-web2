@@ -26,7 +26,7 @@ At the top, **HyperSpectra** shows a 2D map of a slice of the spectra. At the bo
 2. The hyperspectral plot of the slice of the spectra.
    - Zoom in (Z): zoom in to the area selected from the hyperspectral plot
    - Zoom to fit (backspace): return to the original plot
-   - Select (square) (S): select an area from the plot by clicking at the top left corner and then the bottom right corner of the desired selection area
+   - Select (rectangle) (S): select a rectangular area
    - Select (polygon) (P): select an area by circumscribing a polygon
    - Save graph (Mod + S): save the visualization as a .png, .svg or .pdf file.
    - Axis x: define the attribute for the x axis
