@@ -63,13 +63,14 @@ export function getImageData(this: Processor) {
     });
 
     for (let node of imageNodes) {
+      const givenWidth = node.properties.width;
       const imageDate = getOptimizedImageAttributes(node.properties.src);
 
       if (imageDate) {
         node.properties = {
           ...node.properties,
-          width: imageDate.width,
-          height: imageDate.height,
+          width: givenWidth || imageDate.width,
+          height: givenWidth ? imageDate.height * (givenWidth /imageDate.width) : imageDate.height,
           src: imageDate.src,
         };
       }
