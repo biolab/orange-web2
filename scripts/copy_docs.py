@@ -31,7 +31,7 @@ category: "%s"
 
 
 def copy_images(name, content, source, dest):
-    regex_images = "!\[.*\]\((.*?)\)"
+    regex_images = r"!\[.*\]\((.*?)\)"
     matches = re.findall(regex_images, content)
     for match in matches:
         if not is_absolute(match):
@@ -49,7 +49,7 @@ def copy_images(name, content, source, dest):
 
 
 def change_references(md_file, content, category, dest):
-    regex_ref = "\[.*\]\((.*?)\)"
+    regex_ref = r"\[.*\]\((.*?)\)"
     matches_ref = re.findall(regex_ref, content)
     for ref in matches_ref:
         if not is_absolute(ref):
