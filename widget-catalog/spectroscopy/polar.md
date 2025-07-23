@@ -18,7 +18,7 @@ Calculates vibrational mode orientation from polarized infrared spectroscopy dat
 
 The **4+ Angle Polarization** widget allows you to calculate orientation information of selected features using polarized spectroscopy data collected at 4 or more polarization angles. The implemented algorithm is the same as that outlined by Hikima et al. (2013)<sup>1</sup>
 
-If you use this widget for your data analysis, please cite the articles in which the <a href="https://doi.org/10.1021/ma302560q">method (Hikima et al. (2013)<sup>1</sup>)</a> and <a href="#references">widget (Gassner et al. (2025)<sup>2</sup>)</a> are introduced.
+If you use this widget for your data analysis, please cite the articles in which the <a href="https://doi.org/10.1021/ma302560q">method (Hikima et al. (2013)<sup>1</sup>)</a> and <a href="https://doi.org/10.1016/j.compbiomed.2025.110573">widget (Gassner et al. (2025)<sup>2</sup>)</a> are introduced.
 
 ![](/widget-catalog/spectroscopy/images/Polar-stamped.png)
 
@@ -58,4 +58,4 @@ References
 
 
 1. Hikima, Y.;  Morikawa, J.; Hashimoto, T., Wavenumber Dependence of FT-IR Image of Molecular Orientation in Banded Spherulites of Poly(3-hydroxybutyrate) and Poly(L-lactic acid). Macromolecules 2013, 46, 1582-1590.
-2. Gassner, C.; Vongsvivut, J.; Ryu, M.; Ng, S.H.; Toplak, M.; Takkalkar, P.; Fac, M.L.; Sims, N.A.; Wood, B.R.; Tobin, M.J.; Juodkazis, S.; Morikawa, J., 4+ Angle Polarization: New Multiple-Angle FTIR Polarization Widget for Molecular Orientation Analysis in the Open-Source Quasar Platform.
+2. Gassner, C.; Vongsvivut, J.; Ryu, M.; Ng, S.H.; Toplak, M.; Vijayakumar, A.; Takkalkar, P.; Fac, M.L.; Sims, N.A.; Wood, B.R.; Tobin, M.J.; Juodkazis, S.; Morikawa, J., Bridging spectroscopy and advanced molecular orientation analysis with new 4＋ angle polarization toolbox in Quasar. Computers in Biology and Medicine 2025, 196, 110573
