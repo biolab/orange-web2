@@ -14,6 +14,7 @@ import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 import styled, { css } from "styled-components";
 import rehypeHighlight from "rehype-highlight";
+import rehypeAttrs from "rehype-attr";
 
 export interface Widget {
   title: string;
@@ -46,6 +47,20 @@ export async function getStaticPaths() {
   };
 }
 
+function preprocessMarkdown(content: string): string {
+  /* Replace, e.g. ![](image.jpg){width="300"}
+     with ![](image.jpg)<!--rehype:width=300-->
+    so that rehype-attr will process it.
+
+    We may add other attributes in the future.
+
+    I'd prefer remark-attr instead of rehype-attr,
+    but it is broken and unmaintained since 2020. */
+  return content.replace(/(!\[\]\([^)]+\))\{width="([^"]+)"\}/g, (_, img, width) => {
+    return `${img}<!--rehype:width=${width}-->`;
+  });
+}
+
 export async function getStaticProps({ params }: any) {
   const dir = path.join("public", "widget-catalog", params.category);
   const mdFile = path.join(dir, `${params.widget}.md`);
@@ -53,10 +68,14 @@ export async function getStaticProps({ params }: any) {
 
   const { content } = matter(fileContents);
 
-  const mdxSource = await serialize(content, {
+  const processedContent = preprocessMarkdown(content);
+  const mdxSource = await serialize(processedContent, {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkUnwrapImages], // Add remarkGfm to support MD tables
-      rehypePlugins: [rehypeHighlight as any, getImageData], // Add getImageData to add width and height to images
+      rehypePlugins: [
+        [rehypeAttrs, { properties: 'attr' }],
+        rehypeHighlight as any,
+        getImageData], // Add getImageData to add width and height to images
       format: "md",
     },
   });
