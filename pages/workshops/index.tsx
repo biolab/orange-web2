@@ -64,13 +64,17 @@ export default function Workshops({
   return (
     <>
       <HeroHeader
-        title={"Spoznajte umetno inteligenco"}
+        title={"Classroom Training"}
         img={img}
         bodyText={
-          "Pridružite se nam na tečajih, kjer boste spoznali, kako resnično deluje sodobna umetna inteligenca in kako jo lahko takoj uporabite v svojem podjetju in pri odločanju. Resnične podatke bomo raziskovali vizualno in intuitivno, brez zapletene matematike in programiranja."
+          "After only a few hours of in-class training you will understand key machine learning algorithms and be able to apply them to a wide range of problems. No coding, no math - just visualizations and interactive data exploration!"
         }
       />
-      <MainLayout title={"Tečaji umetne inteligence"}>
+      <MainLayout title="Pick the right course for you">
+        <StSubtitle>
+          or <Link href={"/training-inquiry"}>contact us</Link> for a
+          custom-designed course
+        </StSubtitle>
         <StAdapt $width924>
           <StTabs>
             {sections.map(({ title }) => {
@@ -113,16 +117,26 @@ export default function Workshops({
 
           <StTestimonialWrapper>
             <p>
-              “Priporočil bi predvsem tistim, ki jih zanima 
-              svet podatkovne analitike in vizualizacij. Orodje Orange 
-              sem prvič spoznal na temu izobraževanju. Menim, da gre 
-              za odlično in nadvse uporabno orodje za poglobljeno 
-              analiziranje in raziskavo podatkov. Če ne drugega, bi 
-              to izobraževanje priporočal že z vidika spoznavanja 
-              zelo dobrega orodja, ki je po vrhu še plod slovenskega 
-              znanja in izkušenj.“
+              “Playing with data is fun. It&apos;s like a detective story, where
+              data gives you clues and you dig ever deeper into the mystery
+              until finding the hidden treasure, the cunning murderer, or the
+              mischievous gene.”
             </p>
 
+            <StAuthorWrapper>
+              <Image
+                src={TestimonialImage.src}
+                width={TestimonialImage.width}
+                height={TestimonialImage.height}
+                alt="Janez Demšar"
+              />
+              <div>
+                <p>
+                  <b>Janez Demšar, prof. dr.</b>
+                </p>
+                <p>Lecturer</p>
+              </div>
+            </StAuthorWrapper>
           </StTestimonialWrapper>
         </StAdapt>
       </MainLayout>
