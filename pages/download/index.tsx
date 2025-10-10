@@ -140,7 +140,7 @@ export default function Download() {
                 text={downloadLinks.win.split("/").pop() || `Orange3-${config.version}-Miniconda-x86_64.exe`}
               />
 
-              <p>Can be used without administrative priviledges.</p>
+              <p>Can be used without administrative privileges.</p>
 
               <h3>Portable Orange</h3>
 
