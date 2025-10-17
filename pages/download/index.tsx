@@ -189,7 +189,7 @@ export default function Download() {
               </p>
               <pre>
                 <code>
-                  conda create python=3.10 --yes --name orange3<br />
+                  conda create python=3.11 --yes --name orange3<br />
                   conda activate orange3
                 </code>
               </pre>
@@ -222,7 +222,7 @@ export default function Download() {
               </p>
 
               <pre>
-                <code>pip install PyQt5 PyQtWebEngine</code>
+                <code>pip install PyQt6 PyQt6-WebEngine</code>
               </pre>
 
               <p>
