@@ -45,6 +45,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.47.0",
     "react-icons": "^4.11.0",
+    "rehype-attr": "^4.0.2",
     "rehype-highlight": "^7.0.0",
     "remark-gfm": "^3.0.1",
     "remark-unwrap-images": "^3.0.1",
@@ -65,8 +66,8 @@
     "cypress": "^11.2.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^3.0.3",
     "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-pngquant": "^9.0.2"
+    "imagemin-pngquant": "^9.0.2",
+    "prettier": "^3.0.3"
   }
 }
