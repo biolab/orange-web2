@@ -12,7 +12,7 @@ longExcerpt: "As part of the DALI4US project, over 70 Slovenian teachers and 200
 
 <WindowScreenshot src="IMG_1350.png" />
 
-The [DALI4US](https://www.dali4us.eu) project continues! In the 2025/26 school year, teachers in Ireland, Luxembourg, and Slovenia will embark on *four journeys into artificial intelligence* together with their students. They will independently carry out four activities designed to help them explore different areas of AI in a hands-on approach. In Slovenia, we're thrilled to be collaborating with over 70 teachers and more than 2000 students from 51 primary schools!
+The [DALI4US](https://www.dali4us.eu) project continues! In the 2025/26 school year, teachers in Ireland, Luxembourg, and Slovenia will embark on *four excursions into artificial intelligence* together with their students. They will independently carry out four activities designed to help them explore different areas of AI in a hands-on approach. In Slovenia, we're thrilled to be collaborating with over 70 teachers and more than 2000 students from 51 primary schools!
 
 We've selected four activities from the [Pumice website](https://gairdin.eu) and made them even more practical and accessible - in fact, for part of each lesson, teachers won't need a computer at all! First, students will try to solve a problem on their own, and then, in the second part of the lesson, they'll explore how a computer tackles the same challenge. 
 
