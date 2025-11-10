@@ -14,8 +14,6 @@ After months of preparation, the [DALI4US](https://www.dali4us.eu) project has o
 
 During the introductory webinar, we presented the four challenges that teachers will explore with their students. The teachers got to know our team from the University of Ljubljana, Faculty of Computer and Information Science, learned more about the practical details of the activities, and met fellow participants from the Slovenian cohort of the DALI4US project.
 
-<WindowScreenshot src="IMG_001.png" />
-
 During the meeting, we shared all the materials teachers will need to start the activities - including [written instructions](https://notes.biolab.si/books/dali4us/izleti-v-ui) and short [video tutorials](https://lnkd.in/daJezTr4).
 
 <WindowScreenshot src="IMG_002.png" />
