@@ -1,0 +1,25 @@
+---
+author: "Ajda Pretnar Žagar"
+date: "2025-12-17"
+draft: false
+title: "Orange Essentials: Saving and Sharing Workflows"
+thumbImage: "oe5.png"
+frontPageImage: "oe5.png"
+blog: ["video", "tutorial", "visualization", "saving", "workflows"]
+shortExcerpt: "A new YouTube tutorial shows how to save and share workflows in Orange."
+longExcerpt: "The fifth video in the Orange Essentials series shows how to save Orange workflows and share them with your colleagues."
+---
+
+We've launched a new video series on YouTube! It is called Orange Essentials, and it covers the technical basics of working with Orange, from installation and setting up a workflow to sharing the results and interactive data exploration. It features seven short videos, which are launched weekly.
+
+The fifth video shows how to save Orange workflows. They are saved in the .ows format, which is essentially XML under the hood. A simple Ctrl+S/Cmd+S will open the save dialogue, where you can select where to store the workflow. Remember, the workflows store widget settings and the workflow structure, but not the data.
+
+<WindowScreenshot src="xml.png" />
+
+To enable full reproducibility of the workflow, you must always include data along with the workflow. Typically, Orange will look for the corresponding data file in the location of the workflow. Alternatively, you can find the data yourself, and the workflow will run with all the saved settings.
+
+A good practice is to always start creating new workflows by clearing widget settings. You can do this under *Options* --> *Reset widget settings*.
+
+<YouTube embedId="-HRewR1YMfc" />
+
+The development of the Orange Essentials video series was possible thanks to the NumFocus [Small Development Grant](https://numfocus.org/programs/small-development-grants).
