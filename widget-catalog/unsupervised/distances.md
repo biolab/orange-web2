@@ -15,45 +15,43 @@ Computes distances between rows/columns in a dataset.
 
 - Distances: distance matrix
 
-The **Distances** widget computes distances between rows or columns in a dataset. By default, the data will be normalized to ensure equal treatment of individual features. Normalization is always done column-wise.
+The **Distances** widget computes distances between rows or columns in a dataset. By default, *Euclidean (normalized)* distance metric is used, to ensure equal treatment of individual features. Normalization is always done column-wise. In case of missing values, the widget automatically imputes the average value of the row or the column. The widget works for both numeric and categorical data. In case of categorical data, the distance is 0 if the two values are the same ('green' and 'green') and 1 if they are not ('green' and 'blue').
 
 Sparse data can only be used with Euclidean, Manhattan and Cosine metric.
 
 The resulting distance matrix can be fed further to [Hierarchical Clustering](/widget-catalog/unsupervised/hierarchicalclustering) for uncovering groups in the data, to [Distance Map](distancemap.md) or [Distance Matrix](distancematrix.md) for visualizing the distances (Distance Matrix can be quite slow for larger data sets), to [MDS](/widget-catalog/unsupervised/mds) for mapping the data instances using the distance matrix and finally, saved with [Save Distance Matrix](savedistancematrix.md). Distance file can be loaded with [Distance File](/widget-catalog/unsupervised/distancefile).
 
-Distances work well with Orange add-ons, too. The distance matrix can be fed to Network from Distances (Network add-on) to convert the matrix into a graph and to Duplicate Detection (Text add-on) to find duplicate documents in the corpus.
+Distances work well with Orange add-ons, too. The distance matrix can be fed to [Network from Distances](https://orangedatamining.com/widget-catalog/networks/networkfromdistances/) (Network add-on) to convert the matrix into a graph and to [Duplicate Detection](https://orangedatamining.com/widget-catalog/text-mining/duplicatedetection/) (Text add-on) to find duplicate documents in the corpus.
 
-![](/widget-catalog/unsupervised/images/Distances-stamped.png)
+![](/widget-catalog/unsupervised/images/Distances-stamped.png){width=70%}
 
 1. Choose whether to measure distances between rows or columns.
 2. Choose the *Distance Metric*:
+   - [Euclidean (normalized)](https://en.wikipedia.org/wiki/Euclidean_distance) ("straight line", distance between two points). Normalization is always done column-wise. Values are zero centered and scaled.
    - [Euclidean](https://en.wikipedia.org/wiki/Euclidean_distance) ("straight line", distance between two points)
-   - [Manhattan](https://en.wiktionary.org/wiki/Manhattan_distance) (the sum of absolute differences for all attributes)
+   - [Manhattan (normalized)](https://en.wiktionary.org/wiki/Manhattan_distance) (the sum of absolute differences for all attributes)
+   - [Manhattan](https://en.wiktionary.org/wiki/Manhattan_distance) (the sum of absolute differences for all attributes). Normalization is always done column-wise. Values are zero centered and scaled.
+   - [Mahalanobis](https://en.wikipedia.org/wiki/Mahalanobis_distance) (distance between a point and a probability distribution)
+   - [Hamming](https://en.wikipedia.org/wiki/Hamming_distance) (the number of features at which the corresponding values are different)
    - [Cosine](https://en.wikipedia.org/wiki/Cosine_similarity) (the cosine of the angle between two vectors of an inner product space). Orange computes the cosine distance, which is 1-similarity.
-   - [Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) (the size of the intersection divided by the size of the union of the sample sets)
-   - [Spearman](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)(linear correlation between the rank of the values, remapped as a distance in a [0, 1] interval)
-   - [Spearman absolute](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)(linear correlation between the rank of the absolute values, remapped as a distance in a [0, 1] interval)
    - [Pearson](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient) (linear correlation between the values, remapped as a distance in a [0, 1] interval)
    - [Pearson absolute](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient) (linear correlation between the absolute values, remapped as a distance in a [0, 1] interval)
-   - [Hamming](https://en.wikipedia.org/wiki/Hamming_distance) (the number of features at which the corresponding values are different)
-   - [Bhattacharyya distance](https://en.wikipedia.org/wiki/Bhattacharyya_distance) (Similarity between two probability distributions, not a real distance as it doesn't obey triangle inequality.)
-
-   Normalize the features. Normalization is always done column-wise. Values are zero centered and scaled.
-   In case of missing values, the widget automatically imputes the average value of the row or the column.
-   The widget works for both numeric and categorical data. In case of categorical data, the distance is 0 if the two values are the same ('green' and 'green') and 1 if they are not ('green' and 'blue').
+   - [Spearman](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)(linear correlation between the rank of the values, remapped as a distance in a [0, 1] interval)
+   - [Spearman absolute](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)(linear correlation between the rank of the absolute values, remapped as a distance in a [0, 1] interval)
+   - [Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) (the size of the intersection divided by the size of the union of the sample sets)
 3. Tick *Apply Automatically* to automatically commit changes to other widgets. Alternatively, press '*Apply*'.
 
 Examples
 --------
 
-The first example shows a typical use of the **Distances** widget. We are using the *iris.tab* data from the [File](../data/file.md) widget. We compute distances between data instances (rows) and pass the result to the [Hierarchical Clustering](/widget-catalog/unsupervised/hierarchicalclustering). This is a simple workflow to find groups of data instances.
+The first example shows a typical use of the **Distances** widget. We are using the *zoo.tab* data from the [File](../data/file.md) widget. We compute distances between data instances (rows) and pass the result to the [Hierarchical Clustering](/widget-catalog/unsupervised/hierarchicalclustering). This is a simple workflow to find groups of data instances.
 
-![](/widget-catalog/unsupervised/images/Distances-Example1-rows.png)
+![](/widget-catalog/unsupervised/images/Distances-Example1.1.png)
 
-Alternatively, we can compute distance between columns and find how similar our features are.
+Alternatively, we can compute distance between columns and find how similar our features are. Here, we are using *housing* dataset for demonstration (as *zoo* does not contain numeric features for computing distances between columns).
 
-![](/widget-catalog/unsupervised/images/Distances-Example1-columns.png)
+![](/widget-catalog/unsupervised/images/Distances-Example1.2.png)
 
-The second example shows how to visualize the resulting distance matrix. A nice way to observe data similarity is in a [Distance Map](distancemap.md) or in [MDS](/widget-catalog/unsupervised/mds).
+The second example shows how to visualize the resulting distance matrix on the *zoo* dataset. A nice way to observe data similarity is in a [Distance Map](distancemap.md) or in [MDS](/widget-catalog/unsupervised/mds).
 
 ![](/widget-catalog/unsupervised/images/Distances-Example2.png)

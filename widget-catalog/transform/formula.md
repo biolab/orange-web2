@@ -15,40 +15,34 @@ Add new features to your dataset.
 
 - Data: dataset with additional features
 
-**Formula** allows computing new columns by combining the existing ones with a user-defined expression. The resulting column can be categorical, numerical or textual.
-
+**Formula** allows computing new columns by combining the existing ones with a user-defined expression. The resulting column can be categorical, numerical, textual, or datetime.
 For numeric variables, it sufices to provide a name and an expression.
 
-![](/widget-catalog/transform/images/feature-constructor1-stamped.png)
+![](/widget-catalog/transform/images/Formula-stamped.png)
 
-1. List of constructed variables
-2. Add or remove variables
-3. New feature name
-4. Expression in Python
-5. Select a feature
-6. Select a function
-7. Produce a report
-8. Press *Send* to communicate changes
+1. Add new variable.
+2. Remove selected variable.
+3. New variable name.
+4. Expression in Python.
+5. If checked, the option will place selected variable in metas.
+6. Select a feature.
+7. Select a function.
+8. Assign values to categorical variables.
+9. A list of new variables.
+10. Press *Send* to communicate changes.
 
-The following example shows construction of a categorical variable: its value is "lower" is "sepal length" is below 6, "mid" if it is at least 6 but below 7, and "higher" otherwise. Note that spaces need to be replaced by underscores (`sepal_length`).
+Example
+-------
 
-![](/widget-catalog/transform/images/feature-constructor2-stamped.png)
+Here is a short example using the *iris* data set from the [File](/widget-catalog/transform/../data/file) widget. We constructed three new variables, one numeric, one categorical, and one textual. For the numeric variable, we computed a square of *petal length* using the expression `petal_length**2`. For the categorical variable, we mapped *sepal length* to three new categories using the expression `0 if sepal_length < 6 else 1 if sepal_length < 7 else 2`. We also mapped the newly-created bins to values 0, 1, and 2. Finally, for the text variable, we removed the redundant *iris* label from class values, retaining only the species name using the expression `iris.split("-")[1]`.
 
-1. List of variable definitions
-2. Add or remove variables
-3. New feature name
-4. Expression in Python
-5. If checked, the feature is put among meta attributes
-6. Select a feature to use in expression
-7. Select a function to use in expression
-8. Optional list of values, used to define their order
-9. Press *Send* to compute and output data
+We can observe the changes in a [Data Table](/widget-catalog/transform/../data/datatable) widget.
 
-Hints
------
+![](/widget-catalog/transform/images/Formula-Example.png)
+
+### Python math language
 
 If you are unfamiliar with Python math language, here's a quick introduction.
-
 Expressions can use the following operators:
 - `+`, `-`, `*`, `/`: addition, subtraction, multiplication, division
 - `//`: integer division
@@ -57,6 +51,6 @@ Expressions can use the following operators:
 - `<`, `>`, `<=`, `>=` less than, greater than, less or equal, greater or equal
 - `==` equal
 - `!=` not equal
-- if-else: *value* `if` *condition* else *other-value* (see the above example
+- if-else: *value* `if` *condition* else *other-value* (see the above example)
 
 See more [here](http://www.tutorialspoint.com/python/python_basic_operators.htm).

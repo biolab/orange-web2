@@ -15,11 +15,11 @@ Removes unused attribute values and useless attributes, sorts the remaining valu
 
 - Data: filtered dataset
 
-Definitions of nominal attributes sometimes contain values which don’t appear in the data. Even if this does not happen in the original data, filtering the data, selecting exemplary subsets and alike can remove all examples for which the attribute has some particular value. Such values clutter data presentation, especially various visualizations, and should be removed.
+Definitions of nominal attributes sometimes contain values which don’t appear in the data. Even if this does not happen in the original data, filtering the data, selecting exemplary subsets and alike can remove all examples for which the attribute has some particular value. Such values clutter data presentation, especially in various visualizations, and should be removed.
 
 After purging an attribute, it may become single-valued or, in extreme case, have no values at all (if the value of this attribute was undefined for all examples). In such cases, the attribute can be removed.
 
-A different issue is the order of attribute values: if the data is read from a file in a format in which values are not declared in advance, they are sorted “in order of appearance”. Sometimes we would prefer to have them sorted alphabetically.
+A different issue is the order of attribute values: if the data is read from a file in a format in which values are not declared in advance, they are sorted "in order of appearance". Sometimes we would prefer to have them sorted alphabetically.
 
 ![](/widget-catalog/transform/images/PurgeDomain-stamped.png)
 
@@ -40,6 +40,8 @@ Example
 
 The **Purge Domain** widget would typically appear after data filtering, for instance when selecting a subset of visualized examples.
 
-In the above schema, we play with the *adult.tab* dataset: we visualize it and select a portion of the data, which contains only four out of the five original classes. To get rid of the empty class, we put the data through **Purge Domain** before going on to the [Box Plot](/widget-catalog/transform/../visualize/boxplot) widget. The latter shows only the four classes which are in the **Purge Data** output. To see the effect of data purification, uncheck *Remove unused class variable values* and observe the effect this has on [Box Plot](/widget-catalog/transform/../visualize/boxplot).
+In the workflow below, we show the *adult.tab* dataset from the [Datasets](/widget-catalog/transform/../data/datasets) widget. We visualize it and select instances with income >50k. Incidentally, one group in the *workclass* doesn't contain any samples with income higher than 50k.
 
-![](/widget-catalog/transform/images/PurgeDomain-example.png)
+To get rid of the empty category, we put the data through **Purge Domain** before going on to the [Distributions](../visualize/distributions.md) widget. The latter shows only the seven categories which are in the **Purge Data** output. To see the effect of data purification, observe the data after [Box Plot](/widget-catalog/transform/../visualize/boxplot) in another Distributions widget.
+
+![](/widget-catalog/transform/images/PurgeDomain-Example.png)

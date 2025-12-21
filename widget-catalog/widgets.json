@@ -123,11 +123,14 @@
     "url": "color"
    },
    {
-    "title": "Feature Statistics",
+    "title": "Column Statistics",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "feature",
+     "variable"
+    ],
     "background": "#FFD39F",
-    "icon": "widget-icons/Data-Feature Statistics.png",
+    "icon": "widget-icons/Data-Column Statistics.png",
     "url": "featurestatistics"
    },
    {
@@ -191,6 +194,23 @@
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Transpose.png",
     "url": "transpose"
+   },
+   {
+    "title": "Split",
+    "category": "Transform",
+    "keywords": [
+     "text to columns",
+     "word encoding",
+     "questionnaire",
+     "survey",
+     "term",
+     "word presence",
+     "word counts",
+     "categorical encoding",
+     "indicator variables"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Split.png"
    },
    {
     "title": "Merge Data",
@@ -921,7 +941,8 @@
      "predictor"
     ],
     "background": "#C3F3F3",
-    "icon": "widget-icons/Evaluate-Feature as Predictor.png"
+    "icon": "widget-icons/Evaluate-Feature as Predictor.png",
+    "url": "featureaspredictor"
    },
    {
     "title": "Confusion Matrix",

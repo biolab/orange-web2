@@ -18,18 +18,15 @@ Selects a subset of data instances from an input dataset.
 
 The **Data Sampler** widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processed after the input dataset is provided and *Sample Data* is pressed.
 
-![](/widget-catalog/transform/images/DataSampler-stamped.png)
+![](/widget-catalog/transform/images/DataSampler-stamped.png){width=50%}
 
-1. Information on the input and output dataset.
-2. The desired sampling method:
-   - **Fixed proportion of data** returns a selected percentage of the entire data (e.g. 70% of all the data)
+1. The desired sampling method:
+   - **Fixed proportion of data** returns a selected percentage of data instances (e.g. 70% of all the data).
    - **Fixed sample size** returns a selected number of data instances with a chance to set *Sample with replacement*, which always samples from the entire dataset (does not subtract instances already in the subset). With replacement, you can generate more instances than available in the input dataset.
    - [Cross Validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) partitions data instances into the specified number of complementary subsets. Following a typical validation schema, all subsets except the one selected by the user are output as Data Sample, and the selected subset goes to Remaining Data. (Note: In older versions, the outputs were swapped. If the widget is loaded from an older workflow, it switches to compatibility mode.)
    - [Bootstrap](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)) infers the sample from the population statistic.
-3. *Replicable sampling* maintains sampling patterns that can be carried
-   across users, while *stratify sample* mimics the composition of the
-   input dataset.
-4. Press *Sample Data* to output the data sample.
+2. *Replicable sampling* maintains sampling patterns that can be carried across users, while *stratify sample* mimics the composition of the input dataset.
+3. Press *Sample Data* to output the data sample.
 
 If all data instances are selected (by setting the proportion to 100 % or setting the fixed sample size to the entire data size), output instances are still shuffled.
 
@@ -49,10 +46,10 @@ Then we connected two outputs to the [Test & Score](../evaluate/testandscore.md)
 Over/Undersampling
 ------------------
 
-**Data Sampler** can also be used to oversample a minority class or undersample majority class in the data. Let us show an example for oversampling. First, separate the minority class using a [Select Rows](../data/selectrows.md) widget. We are using the *iris* data from the [File](/widget-catalog/transform/../data/file) widget. The data set has 150 data instances, 50 of each class. Let us oversample, say, *iris-setosa*.
+**Data Sampler** can also be used to oversample a minority class or undersample majority class in the data. Let us show an example for oversampling. First, separate the minority class using a [Select Rows](../data/selectrows.md) widget. We are using the *heart-disease* data from the [File](/widget-catalog/transform/../data/file) widget. The data set has 303 data instances, 139 for class 1, and 164 for class 0. Let us oversample class 1, to achieve equal distribution.
 
-In **Select Rows**, set the condition to *iris is iris-setosa*. This will output 50 instances of the *iris-setosa* class. Now, connect *Matching Data* into the **Data Sampler**, select *Fixed sample size*, set it to, say, 100 and select *Sample with replacement*. Upon pressing *Sample Data*, the widget will output 100 instances of *iris-setosa* class, some of which will be duplicated (because we used *Sample with replacement*).
+In **Select Rows**, set the condition to *diameter narrowing is 1*. This will output 139 instances of class *1*. Now, connect *Matching Data* into the **Data Sampler**, select *Fixed sample size*, set it to 164 (size of majority class) and select *Sample with replacement*. Upon pressing *Sample Data*, the widget will output 164 instances of class *1*, some of which will be duplicated (because we used *Sample with replacement*).
 
-Finally, use [Concatenate](../data/concatenate) to join the oversampled instances and the *Unmatched Data* output of the **Select Rows** widget. This outputs a data set with 200 instances. We can observe the final results in the [Distributions](/widget-catalog/transform/../visualize/distributions).
+Finally, use [Concatenate](../data/concatenate) to join the oversampled instances and the *Unmatched Data* output of the **Select Rows** widget. This outputs a data set with 164 instances. We can observe the final results in the [Distributions](/widget-catalog/transform/../visualize/distributions).
 
 ![](/widget-catalog/transform/images/DataSampler-Example-OverUnderSampling.png)

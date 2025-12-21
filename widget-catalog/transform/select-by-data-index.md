@@ -20,10 +20,7 @@ Match instances by index from data subset.
 
 **Select by Data Index** enables matching the data by indices. Each row in a data set has an index and given a subset, this widget can match these indices to indices from the reference data. Most often it is used to retrieve the original data from the transformed data (say, from PCA space).
 
-![](/widget-catalog/transform/images/Select-by-Data-Index-stamped.png)
-
-1. Information on the reference data set. This data is used as index reference.
-2. Information on the data subset. The indices of this data set are used to find matching data in the reference data set. Matching data are on the output by default.
+![](/widget-catalog/transform/images/SelectByDataIndex.png)
 
 Example
 -------
@@ -34,4 +31,4 @@ Now we will select an interesting subset (we could also select the entire data s
 
 Connect the original data and the subset from [Scatter Plot](/widget-catalog/transform/../visualize/scatterplot) to **Select by Data Index**. The widget will match the indices of the subset with the indices of the reference (original) data and output the matching reference data. A final inspection in another [Data Table](/widget-catalog/transform/../data/datatable) confirms the data on the output is from the original data space.
 
-![](/widget-catalog/transform/images/Select-by-Data-Index-Example1.png)
+![](/widget-catalog/transform/images/SelectByDataIndex-Example.png)

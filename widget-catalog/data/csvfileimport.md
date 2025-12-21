@@ -16,7 +16,7 @@ The **CSV File Import** widget reads comma-separated files and sends the dataset
 
 *Data Frame* output can be used in the [Python Script](/widget-catalog/data/../data/pythonscript) widget by connecting it to the `in_object` input (e.g. `df = in_object`). Then it can be used a regular DataFrame.
 
-### Import Options
+## Import Options
 
 The import window where the user sets the import parameters. Can be re-opened by pressing *Import Options* in the widget.
 
@@ -45,7 +45,7 @@ Right click on the column name to set the column type. Right click on the row in
    - *Ignore*: do not output the column.
 4. Pressing *Reset* will return the settings to the previously set state (saved by pressing OK in the Import Options dialogue). *Restore Defaults* will set the settings to their default values. *Cancel* aborts the import, while *OK* imports the data and saves the settings.
 
-### Widget
+## Widget
 
 The widget once the data is successfully imported.
 
@@ -55,7 +55,7 @@ The widget once the data is successfully imported.
 2. Information on the imported data set. Reports on the number of instances (rows), variables (features or columns) and meta variables (special columns).
 3. *Import Options* re-opens the import dialogue where the user can set delimiters, encodings, text fields and so on. *Cancel* aborts data import. *Reload* imports the file once again, adding to the data any changes made in the original file.
 
-### Encoding
+## Encoding
 
 The dialogue for settings custom encodings list in the Import Options - Encoding dropdown. Select *Customize Encodings List...* to change which encodings appear in the list. To save the changes, simply close the dialogue. Closing and reopening Orange (even with Reset widget settings) will not re-set the list. To do this, press *Restore Defaults*. To have all the available encodings in the list, press *Select all*.
 

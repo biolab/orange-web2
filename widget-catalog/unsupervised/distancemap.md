@@ -16,13 +16,13 @@ Visualizes distances between items.
 - Data: instances selected from the matrix
 - Features: attributes selected from the matrix
 
-The **Distance Map** visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.
+The **Distance Map** visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots. Conceptually, it is similar to the [Heat Map](/widget-catalog/unsupervised/../visualize/heatmap) widget.
 
-Distances are most often those between instances ("*rows*" in the [Distances](/widget-catalog/unsupervised/../unsupervised/distances) widget) or attributes ("*columns*" in Distances widget). The only suitable input for **Distance Map** is the [Distances](/widget-catalog/unsupervised/../unsupervised/distances) widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the **Distances** widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you [Continuize](/widget-catalog/unsupervised/../data/continuize) them first.
+Distances are most often those between instances ("*rows*" in the [Distances](distances.md) widget) or attributes ("*columns*" in Distances widget). The two suitable inputs for **Distance Map** are the [Distances](distances.md) and the [Distance File](distancefile.md) widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the **Distances** widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you [Continuize](/widget-catalog/unsupervised/../data/continuize) them first.
 
-The snapshot shows distances between columns in the *heart disease* data, where smaller distances are represented with light and larger with dark orange. The matrix is symmetric and the diagonal is a light shade of orange - no attribute is different from itself. Symmetricity is always assumed, while the diagonal may also be non-zero.
+The snapshot shows distances between columns in the *heart_disease* data, where smaller distances are represented with blue and larger with yellow/white. The matrix is symmetric and the diagonal is blue - no attribute is different from itself. Symmetricity is always assumed, while the diagonal may also be non-zero.
 
-![](/widget-catalog/unsupervised/images/DistanceMap-stamped.png)
+![](/widget-catalog/unsupervised/images/DistanceMap-stamped.png){width=500px}
 
 1. *Element sorting* arranges elements in the map by
    - None (lists instances as found in the dataset)
@@ -30,27 +30,21 @@ The snapshot shows distances between columns in the *heart disease* data, where 
    - **Clustering with ordered leaves** (maximizes the sum of similarities of adjacent elements)
 2. *Colors*
    - **Colors** (select the color palette for your distance map)
-   - **Low** and **High** are thresholds for the color palette (low for instances or attributes with low distances and high for instances or attributes with high distances).
+   - **Range**: Define the low and high thresholds for the color palette (low for instances or attributes with low distances and high for instances or attributes with high distances).
 3. Select *Annotations*.
 4. If *Send Selected Automatically* is on, the data subset is communicated automatically, otherwise you need to press *Send Selected*.
-5. Press *Save Image* if you want to save the created image to your computer.
-6. Produce a report.
 
-Normally, a color palette is used to visualize the entire range of distances appearing in the matrix. This can be changed by setting the low and high threshold. In this way we ignore the differences in distances outside this interval and visualize the interesting part of the distribution.
+Normally, a color palette is used to visualize the entire range of distances appearing in the matrix. This can be changed by setting the low and high threshold. In this way, we ignore the differences in distances outside this interval and visualize the interesting part of the distribution.
 
-Below, we visualized the most correlated attributes (distances by columns) in the *heart disease* dataset by setting the color threshold for high distances to the minimum. We get a predominantly black square, where attributes with the lowest distance scores are represented by a lighter shade of the selected color schema (in our case: orange). Beside the diagonal line, we see that in our example *ST by exercise* and *major vessels colored* are the two attributes closest together.
+Below, we visualized the most correlated attributes (distances by columns) in the *heart_disease* dataset by lowering the color threshold for high distances. We get a predominantly white square, where attributes with the lowest distance scores are represented by blue. We see that, beside the diagonal line, *age* and *major vessels colored* are the two attributes closest together.
 
-![](/widget-catalog/unsupervised/images/DistanceMap-Highlighted.png)
+![](/widget-catalog/unsupervised/images/DistanceMap-Threshold.png){width=400px}
 
 The user can select a region in the map with the usual click-and-drag of the cursor. When a part of the map is selected, the widget outputs all items from the selected cells.
 
-Examples
---------
+Example
+-------
 
-The first workflow shows a very standard use of the **Distance Map** widget. We select 70% of the original *Iris* data as our sample and view the distances between rows in **Distance Map**.
-
-![](/widget-catalog/unsupervised/images/DistanceMap-Example1.png)
-
-In the second example, we use the *heart disease* data again and select a subset of women only from the [Scatter Plot](../visualize/scatterplot.md). Then, we visualize distances between columns in the **Distance Map**. Since the subset also contains some discrete data, the [Distances](/widget-catalog/unsupervised/../unsupervised/distances) widget warns us it will ignore the discrete features, thus we will see only continuous instances/attributes in the map.
+The workflow shows a very standard use of the **Distance Map** widget. We select the *Iris* data and view the distances between rows in **Distance Map**.
 
 ![](/widget-catalog/unsupervised/images/DistanceMap-Example.png)

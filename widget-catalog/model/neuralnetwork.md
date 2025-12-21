@@ -23,22 +23,22 @@ The **Neural Network** widget uses sklearn's [Multi-layer Perceptron algorithm](
 
 1. A name under which it will appear in other widgets. The default name is "Neural Network".
 2. Set model parameters:
-   - Neurons per hidden layer: defined as the ith element represents the number of neurons in the ith hidden layer. E.g. a neural network with 3 layers can be defined as 2, 3, 2.
-   - Activation function for the hidden layer:
+   - *Neurons in hidden layers*: the setting represents the number of neurons in the i-th hidden layer. E.g. a neural network with 3 layers can be defined as `2,3,2`.
+   - *Activation* function for the hidden layer:
       - Identity: no-op activation, useful to implement linear bottleneck
       - Logistic: the logistic sigmoid function
       - tanh: the hyperbolic tan function
       - ReLu: the rectified linear unit function
-   - Solver for weight optimization:
+   - *Solver* for weight optimization:
       - L-BFGS-B: an optimizer in the family of quasi-Newton methods
       - SGD: stochastic gradient descent
       - Adam: stochastic gradient-based optimizer
-   - Alpha: L2 penalty (regularization term) parameter
-   - Max iterations: maximum number of iterations
+   - *Regularization*: L2 penalty (regularization term) parameter
+   - *Maximal number of iterations*: highest number of iterations
+   - *Replicable training*: if ticked, training results can be reproduced.
 
    Other parameters are set to [sklearn's defaults](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html).
-3. Produce a report.
-4. When the box is ticked (*Apply Automatically*), the widget will communicate changes automatically. Alternatively, click *Apply*.
+3. When *Apply Automatically* is ticked, the widget will communicate changes automatically. Alternatively, click *Apply*.
 
 Preprocessing
 -------------
@@ -53,13 +53,9 @@ Neural Network uses default preprocessing when no other preprocessors are given.
 
 To remove default preprocessing, connect an empty [Preprocess](/widget-catalog/model/../data/preprocess) widget to the learner.
 
-Examples
---------
+Example
+-------
 
-The first example is a classification task on *iris* dataset. We compare the results of **Neural Network** with the [Logistic Regression](/widget-catalog/model/../model/logisticregression).
+The example is a classification task on the *iris* dataset from the [File](../data/file.md) widget. We compare the results of **Neural Network** with the [Logistic Regression](../model/logisticregression.md) in the [Test and Score](/widget-catalog/model/../evaluate/testandscore) widget.
 
-![](/widget-catalog/model/images/NN-Example-Test.png)
-
-The second example is a prediction task, still using the *iris* data. This workflow shows how to use the *Learner* output. We input the **Neural Network** prediction model into [Predictions](/widget-catalog/model/../evaluate/predictions) and observe the predicted values.
-
-![](/widget-catalog/model/images/NN-Example-Predict.png)
+![](/widget-catalog/model/images/NeuralNetwork-Example.png)
