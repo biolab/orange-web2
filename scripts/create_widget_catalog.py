@@ -54,7 +54,7 @@ class WidgetCatalog:
                     "doc": doc,
                     "icon": icon,
                     "background": category.background,
-                    "keywords": widget.keywords,
+                    "keywords": [k for k in widget.keywords if k != "_keywords"],
                 })
 
         with open(path.join(self.output_dir, "widgets.json"), 'wt') as f:
