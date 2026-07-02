@@ -6,7 +6,7 @@ title: "Gairdin: Gnomes with the Youngest Students"
 slug: "gairdin-gnomes-with-the-youngest-students"
 thumbImage: "IMG_gnomes.png"
 frontPageImage: "IMG_gnomes.png"
-blog: ["education", "schools"]
+blog: ["education", "schools", "workshop"]
 shortExcerpt: "We explored what the gnomes are doing together with the youngest primary school students and had a lot of fun along the way."
 longExcerpt: "We explored what the gnomes are doing together with the youngest primary school students and had a lot of fun along the way."
 ---
