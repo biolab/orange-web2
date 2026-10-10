@@ -1,5 +1,6 @@
 import MainLayout from "@components/UiKit/MainLayout";
 import { useForm } from "react-hook-form";
+import { Turnstile } from "react-turnstile";
 import React from "react";
 import Adapt from "@components/UiKit/Adapt";
 import {
@@ -117,6 +118,8 @@ export default function TrainingInquiry() {
     { price: total },
   );
 
+  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
+
   return (
     <MainLayout title="Get in touch">
       <Adapt $width650>
@@ -190,7 +193,11 @@ export default function TrainingInquiry() {
             </p>
           </StCostWrapper>
 
-          <StButtonWithLoader loading={loading} />
+          <Turnstile
+            sitekey="0x4AAAAAAFTAXoM1kexQt8TP"
+            onVerify={setTurnstileToken} />
+
+          <StButtonWithLoader loading={loading || !turnstileToken} />
 
           <Alert
             show={success}
