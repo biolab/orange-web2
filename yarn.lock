@@ -4843,6 +4843,11 @@ react-transition-state@^2.1.1:
   resolved "https://registry.yarnpkg.com/react-transition-state/-/react-transition-state-2.1.1.tgz#1601a6177926b647041b7d598bf124321ab8d25b"
   integrity sha512-kQx5g1FVu9knoz1T1WkapjUgFz08qQ/g1OmuWGi3/AoEFfS0kStxrPlZx81urjCXdz2d+1DqLpU6TyLW/Ro04Q==
 
+react-turnstile@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-turnstile/-/react-turnstile-1.1.5.tgz#96b85bb65fcfa4517a0d53f6ac23084030daee10"
+  integrity sha512-VTL5OeHAatzCEVQxAZox70/TPmhKxEbNgtr++dg+8zm9QrWKuoU9E0+7gqmycOSCDZuJFzvMMLKQb5PVUPLV6w==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

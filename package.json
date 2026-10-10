@@ -45,6 +45,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.47.0",
     "react-icons": "^4.11.0",
+    "react-turnstile": "^1.1.5",
     "rehype-attr": "^4.0.2",
     "rehype-highlight": "^7.0.0",
     "remark-gfm": "^3.0.1",

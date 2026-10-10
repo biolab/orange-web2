@@ -1,5 +1,6 @@
 import MainLayout from "@components/UiKit/MainLayout";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Turnstile } from "react-turnstile";
 import React from "react";
 import Adapt from "@components/UiKit/Adapt";
 import Content from "@components/Contact/Content";
@@ -29,6 +30,8 @@ export default function Contact() {
   const { error, success, loading, onSubmit } = usePostForm(
     "https://service.biolab.si/contact",
   );
+
+  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
 
   return (
     <MainLayout title="Contact">
@@ -64,7 +67,11 @@ export default function Contact() {
             required
           />
 
-          <StButtonWithLoader loading={loading} />
+          <Turnstile
+            sitekey="0x4AAAAAAFTAXoM1kexQt8TP"
+            onVerify={setTurnstileToken} />
+
+          <StButtonWithLoader loading={loading || !turnstileToken} />
 
           <Alert
             show={success}
