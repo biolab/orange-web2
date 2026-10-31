@@ -70,6 +70,42 @@ const ContentWrapper = styled.div`
   }
 `;
 
+const Highlight = styled.div`
+  margin-top: 60px;
+
+  @media ${device.M} {
+    margin-top: 40px;
+  }
+`;
+
+const HighlightHeading = styled.h3`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: ${({ theme }) => theme.blackLight1};
+  margin-bottom: 20px;
+
+  @media ${device.M} {
+    font-size: 28px;
+  }
+`;
+
+const Badge = styled.span`
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: ${({ theme }) => theme.orange};
+  border-radius: 4px;
+  padding: 6px 10px;
+`;
+
 const ImageWrapper = styled.figure`
   flex: 0 0 62%;
   max-width: 62%;
@@ -118,6 +154,23 @@ export default function HomeSections({ sections }: { sections: any }) {
                 <LinkMore href={section.buttonURL}>
                   {section.buttonText}
                 </LinkMore>
+              )}
+
+              {section.highlight && (
+                <Highlight>
+                  <HighlightHeading>
+                    {section.highlight.badge && (
+                      <Badge>{section.highlight.badge}</Badge>
+                    )}
+                    {section.highlight.title}
+                  </HighlightHeading>
+                  <MDXRemote {...section.highlight.mdxSource} />
+                  {section.highlight.linkText && section.highlight.linkURL && (
+                    <LinkMore href={section.highlight.linkURL} target="_blank">
+                      {section.highlight.linkText}
+                    </LinkMore>
+                  )}
+                </Highlight>
               )}
             </ContentWrapper>
 

@@ -23,10 +23,17 @@ export async function getStaticProps() {
     const { data: frontmatter, content } = matter(mdFile);
 
     const mdxSource = await serialize(content);
+    const highlight = frontmatter.highlight
+      ? {
+          ...frontmatter.highlight,
+          mdxSource: await serialize(frontmatter.highlight.text ?? ""),
+        }
+      : null;
 
     sectionsData.push({
       ...frontmatter,
       mdxSource,
+      highlight,
       image: frontmatter.image
         ? getOptimizedImageAttributes(
             path.join(path.sep, "home", frontmatter.image),
