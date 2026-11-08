@@ -113,12 +113,12 @@ export default function TrainingInquiry() {
     };
   }, [formValues]);
 
+  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
+
   const { error, success, loading, onSubmit } = usePostForm(
     "https://service.biolab.si/contact/training",
-    { price: total },
+    { price: total, turnstileToken },
   );
-
-  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
 
   return (
     <MainLayout title="Get in touch">
