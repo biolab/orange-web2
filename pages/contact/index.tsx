@@ -27,11 +27,12 @@ export default function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
 
+  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
+
   const { error, success, loading, onSubmit } = usePostForm(
     "https://service.biolab.si/contact",
+    { turnstileToken }
   );
-
-  const [turnstileToken, setTurnstileToken] = React.useState<string | null>(null);
 
   return (
     <MainLayout title="Contact">
