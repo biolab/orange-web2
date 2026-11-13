@@ -117,7 +117,10 @@
    {
     "title": "Color",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "palette",
+     "legend"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Color.png",
     "url": "color"
@@ -199,15 +202,15 @@
     "title": "Split",
     "category": "Transform",
     "keywords": [
-     "text to columns",
-     "word encoding",
+     "text",
+     "columns",
+     "word",
+     "encoding",
      "questionnaire",
      "survey",
      "term",
-     "word presence",
-     "word counts",
-     "categorical encoding",
-     "indicator variables"
+     "counts",
+     "indicator"
     ],
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Split.png"
@@ -247,7 +250,13 @@
    {
     "title": "Unique",
     "category": "Transform",
-    "keywords": [],
+    "keywords": [
+     "unique",
+     "distinct",
+     "remove",
+     "duplicates",
+     "filter"
+    ],
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Unique.png",
     "url": "unique"
@@ -835,7 +844,9 @@
     "title": "PLS",
     "category": "Model",
     "keywords": [
-     "partial least squares"
+     "partial",
+     "least",
+     "squares"
     ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-PLS.png",
@@ -877,7 +888,10 @@
    {
     "title": "Stacking",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "stacking",
+     "ensemble"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Stacking.png",
     "url": "stacking"
@@ -1003,7 +1017,11 @@
    {
     "title": "Parameter Fitter",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "parameter",
+     "fitter",
+     "tuning"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Parameter Fitter.png",
     "url": "parameterfitter"
@@ -1051,7 +1069,10 @@
    {
     "title": "Correlations",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "pearson",
+     "spearman"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Correlations.png",
     "url": "correlations"
@@ -1093,7 +1114,9 @@
    {
     "title": "Louvain Clustering",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "community"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Louvain Clustering.png",
     "url": "louvainclustering"
@@ -1101,7 +1124,10 @@
    {
     "title": "DBSCAN",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "density based clustering",
+     "clustering"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-DBSCAN.png",
     "url": "DBSCAN"
@@ -1143,7 +1169,12 @@
    {
     "title": "Neighbors",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "knn",
+     "nearest neighbors",
+     "distance",
+     "similarity"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Neighbors.png",
     "url": "neighbors"
