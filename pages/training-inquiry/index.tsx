@@ -164,7 +164,7 @@ export default function TrainingInquiry() {
           <TextArea
             name="message"
             register={register}
-            placeholder="Write us a message"
+            placeholder="Please tell us more about your training needs"
             required={false}
           />
 
